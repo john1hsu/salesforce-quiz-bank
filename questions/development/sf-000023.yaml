@@ -1,0 +1,18 @@
+id: sf-000023
+product_area: development
+true_statement: Future method parameters are limited to primitives and collections of primitives, so records are passed as IDs and queried inside the method.
+false_statement: Future method parameters can include sObjects and custom types, so records are passed directly instead of being queried inside the method.
+explanation: Future methods only take primitive values, arrays or collections of them; sObjects are blocked because the record may change before the method runs. Passing sObjects and custom types is a Queueable Apex capability, not a future method one.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/asynchronous-apex.md
+  commit: 10c815686f3ae95b6dc7f6a39c6d9dcad8708f34
+  blob: 887a94defb6ebeb06737bee7b5a7c8023546dddf
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:asynchronous-apex
+- kt:future-methods
+difficulty: 2
+created: '2026-11-09'
+status: active

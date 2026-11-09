@@ -1,0 +1,18 @@
+id: sf-000021
+product_area: development
+true_statement: Batch Apex hands records to the execute method in chunks of 200 by default, and up to 2,000 when start returns a QueryLocator.
+false_statement: Batch Apex hands records to the execute method in chunks of 2,000 by default, and up to 10,000 when start returns a QueryLocator.
+explanation: The default batch chunk is 200 records; a QueryLocator lets you raise it to at most 2,000. The false version inflates both numbers, and each chunk still runs as its own transaction with fresh limits.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/asynchronous-apex.md
+  commit: 10c815686f3ae95b6dc7f6a39c6d9dcad8708f34
+  blob: 887a94defb6ebeb06737bee7b5a7c8023546dddf
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:asynchronous-apex
+- kt:batch-apex
+difficulty: 2
+created: '2026-11-09'
+status: active

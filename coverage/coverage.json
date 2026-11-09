@@ -1,6 +1,6 @@
 {
  "totals": {
-  "active": 20
+  "active": 23
  },
  "areas": {
   "architecture-practice": {
@@ -16,6 +16,9 @@
    "active": 3
   },
   "data-model": {
+   "active": 3
+  },
+  "development": {
    "active": 3
   },
   "devops-and-alm": {
@@ -48,6 +51,9 @@
    "active": 3
   },
   "articles/data-model/lookup-vs-master-detail.md": {
+   "active": 3
+  },
+  "articles/development/asynchronous-apex.md": {
    "active": 3
   },
   "articles/devops-and-alm/unlocked-packages.md": {

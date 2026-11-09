@@ -1,7 +1,7 @@
 {
  "version": 1,
- "count": 20,
- "active": 20,
+ "count": 23,
+ "active": 23,
  "questions": [
   {
    "id": "sf-000001",
@@ -343,6 +343,58 @@
    "difficulty": 3,
    "status": "active",
    "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/lookup-vs-master-detail.md"
+  },
+  {
+   "id": "sf-000021",
+   "area": "development",
+   "t": "Batch Apex hands records to the execute method in chunks of 200 by default, and up to 2,000 when start returns a QueryLocator.",
+   "f": "Batch Apex hands records to the execute method in chunks of 2,000 by default, and up to 10,000 when start returns a QueryLocator.",
+   "x": "The default batch chunk is 200 records; a QueryLocator lets you raise it to at most 2,000. The false version inflates both numbers, and each chunk still runs as its own transaction with fresh limits.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:asynchronous-apex",
+    "kt:batch-apex"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/asynchronous-apex.md"
+  },
+  {
+   "id": "sf-000022",
+   "area": "development",
+   "t": "A synchronous transaction can enqueue up to 50 Queueable jobs, but an asynchronous transaction such as a batch can enqueue only one.",
+   "f": "A synchronous transaction can enqueue only one Queueable job, but an asynchronous transaction such as a batch can enqueue up to 50.",
+   "x": "The 50-job allowance applies to an ordinary synchronous transaction, while async contexts like batch are held to a single enqueued job. The false statement reverses which context gets which limit.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:asynchronous-apex",
+    "kt:queueable-apex",
+    "kt:governor-limits"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/asynchronous-apex.md"
+  },
+  {
+   "id": "sf-000023",
+   "area": "development",
+   "t": "Future method parameters are limited to primitives and collections of primitives, so records are passed as IDs and queried inside the method.",
+   "f": "Future method parameters can include sObjects and custom types, so records are passed directly instead of being queried inside the method.",
+   "x": "Future methods only take primitive values, arrays or collections of them; sObjects are blocked because the record may change before the method runs. Passing sObjects and custom types is a Queueable Apex capability, not a future method one.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:asynchronous-apex",
+    "kt:future-methods"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/asynchronous-apex.md"
   }
  ]
 }

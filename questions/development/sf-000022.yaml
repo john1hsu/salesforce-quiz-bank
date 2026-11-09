@@ -1,0 +1,19 @@
+id: sf-000022
+product_area: development
+true_statement: A synchronous transaction can enqueue up to 50 Queueable jobs, but an asynchronous transaction such as a batch can enqueue only one.
+false_statement: A synchronous transaction can enqueue only one Queueable job, but an asynchronous transaction such as a batch can enqueue up to 50.
+explanation: The 50-job allowance applies to an ordinary synchronous transaction, while async contexts like batch are held to a single enqueued job. The false statement reverses which context gets which limit.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/asynchronous-apex.md
+  commit: 10c815686f3ae95b6dc7f6a39c6d9dcad8708f34
+  blob: 887a94defb6ebeb06737bee7b5a7c8023546dddf
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:asynchronous-apex
+- kt:queueable-apex
+- kt:governor-limits
+difficulty: 2
+created: '2026-11-09'
+status: active
