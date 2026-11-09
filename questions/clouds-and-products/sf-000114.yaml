@@ -1,0 +1,20 @@
+id: sf-000114
+product_area: clouds-and-products
+true_statement: Collaborative Forecasts allows only four forecast types to be active at a time; more require a request to Salesforce Customer Support.
+false_statement: Collaborative Forecasts allows only ten forecast types to be active at a time; more require a request to Salesforce Customer Support.
+explanation: The active forecast type limit is four, and going beyond it means contacting Customer Support; ten is not the stated limit.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/sales-cloud.md
+  commit: ee7571c675638f9605db9044cd8e6d5432c21c41
+  blob: 9f453f7af2c7a2da04d47c1e879d96080f13db30
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:sales-cloud-consultant-certification
+concepts:
+- kt:sales-cloud
+- kt:collaborative-forecasts
+difficulty: 2
+created: '2026-11-09'
+status: active

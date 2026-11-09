@@ -1,19 +1,19 @@
 {
  "totals": {
-  "active": 104
+  "active": 119
  },
  "areas": {
   "architecture-practice": {
    "active": 12
   },
   "automation": {
-   "active": 10
+   "active": 16
   },
   "clouds-and-products": {
-   "active": 6
+   "active": 12
   },
   "data-cloud-and-ai": {
-   "active": 6
+   "active": 9
   },
   "data-model": {
    "active": 9
@@ -62,10 +62,22 @@
   "articles/automation/flow-orchestrator.md": {
    "active": 3
   },
+  "articles/automation/process-automation.md": {
+   "active": 3
+  },
   "articles/automation/record-triggered-flow.md": {
    "active": 1
   },
+  "articles/automation/screen-flow.md": {
+   "active": 3
+  },
+  "articles/clouds-and-products/experience-cloud.md": {
+   "active": 3
+  },
   "articles/clouds-and-products/omni-channel.md": {
+   "active": 3
+  },
+  "articles/clouds-and-products/sales-cloud.md": {
    "active": 3
   },
   "articles/clouds-and-products/service-cloud.md": {
@@ -75,6 +87,9 @@
    "active": 3
   },
   "articles/data-cloud-and-ai/agentforce.md": {
+   "active": 3
+  },
+  "articles/data-cloud-and-ai/data-cloud.md": {
    "active": 3
   },
   "articles/data-model/data-skew.md": {

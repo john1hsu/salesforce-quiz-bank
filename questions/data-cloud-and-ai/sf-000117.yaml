@@ -1,0 +1,18 @@
+id: sf-000117
+product_area: data-cloud-and-ai
+true_statement: In Data 360, ingested or federated data first lands in data lake objects in its source shape, before mapping to data model objects.
+false_statement: In Data 360, ingested or federated data first lands in data model objects in its source shape, before mapping to data lake objects.
+explanation: Data lake objects are the raw landing containers; their fields are then mapped onto the Customer 360 Data Model to form data model objects, so the false statement reverses the order.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/data-cloud.md
+  commit: ee7571c675638f9605db9044cd8e6d5432c21c41
+  blob: 93d16c9ce064e1c662c5c3d91e16074c808f5dba
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:data-cloud
+- kt:data-model-objects
+difficulty: 1
+created: '2026-11-09'
+status: active

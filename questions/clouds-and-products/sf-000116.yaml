@@ -1,0 +1,20 @@
+id: sf-000116
+product_area: clouds-and-products
+true_statement: When person accounts are enabled, converting a lead that has no company name creates a person account.
+false_statement: When person accounts are enabled, converting a lead that has no company name creates a business account named after the lead.
+explanation: With person accounts on, a lead without a company name converts into a person account; a business account is created from the company name, which this lead lacks.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/sales-cloud.md
+  commit: ee7571c675638f9605db9044cd8e6d5432c21c41
+  blob: 9f453f7af2c7a2da04d47c1e879d96080f13db30
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:sales-cloud-consultant-certification
+concepts:
+- kt:sales-cloud
+- kt:lead-conversion
+difficulty: 2
+created: '2026-11-09'
+status: active

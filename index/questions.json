@@ -1,7 +1,7 @@
 {
  "version": 1,
- "count": 104,
- "active": 104,
+ "count": 119,
+ "active": 119,
  "questions": [
   {
    "id": "sf-000001",
@@ -1759,6 +1759,265 @@
    "difficulty": 3,
    "status": "active",
    "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/autolaunched-flow.md"
+  },
+  {
+   "id": "sf-000105",
+   "area": "automation",
+   "t": "An approval process's default submission action locks the record so that only approvers and admins can edit it while the request is pending.",
+   "f": "An approval process's default submission action locks the record so that only the submitter and admins can edit it while the request is pending.",
+   "x": "By default, submitting for approval locks the record, leaving edit rights with approvers and administrators. The submitter is not the one who keeps edit access.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:process-automation",
+    "kt:approval-processes"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/process-automation.md"
+  },
+  {
+   "id": "sf-000106",
+   "area": "automation",
+   "t": "Salesforce Help calls before-save flows the best-performing record-triggered option, because they are limited to updating the triggering record.",
+   "f": "Salesforce Help calls after-save flows the best-performing record-triggered option, because they are limited to updating the triggering record.",
+   "x": "Before-save (fast field update) flows change the triggering record inside the original save without an extra DML, which is why Salesforce rates them fastest. After-save flows can touch other records and need additional DML, so they are not the fastest option.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:process-automation"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/process-automation.md"
+  },
+  {
+   "id": "sf-000107",
+   "area": "automation",
+   "t": "Automation on the after-undelete event must be built with an Apex trigger, because record-triggered flows do not support that event.",
+   "f": "Automation on the after-undelete event must be built with a record-triggered flow, because Apex triggers do not support that event.",
+   "x": "Flow has no after-undelete support, which leaves Apex triggers as the only option for that event. The false statement swaps which tool handles it.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:process-automation",
+    "kt:apex-triggers"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/process-automation.md"
+  },
+  {
+   "id": "sf-000108",
+   "area": "automation",
+   "t": "A top-level screen flow runs in user context by default, so the running user's object and field permissions apply.",
+   "f": "A top-level screen flow runs in system context without sharing by default, so the running user's object and field permissions are ignored.",
+   "x": "Screen flows default to user context, applying the launching user's profile and permission sets; system context is an opt-in choice, and system without sharing is meant to be used sparingly.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:screen-flow",
+    "kt:salesforce-sharing-model"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/screen-flow.md"
+  },
+  {
+   "id": "sf-000109",
+   "area": "automation",
+   "t": "Reactive screen components in a screen flow require the flow to use API version 59.0 or later.",
+   "f": "Reactive screen components in a screen flow require the flow to use API version 52.0 or later.",
+   "x": "Salesforce ties screen-flow reactivity to API version 59.0 or later; 52.0 is too early a version for the feature.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:screen-flow"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/screen-flow.md"
+  },
+  {
+   "id": "sf-000110",
+   "area": "automation",
+   "t": "In a reactive screen flow, the $Flow global variable is reactive, while $Organization, $Profile and custom labels are not.",
+   "f": "In a reactive screen flow, the $Profile global variable is reactive, while $Flow, $Organization and custom labels are not.",
+   "x": "Only $Flow reacts to changes on the screen; $Organization, $Profile, custom labels and custom settings do not, so the false statement swaps the one reactive global variable.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:screen-flow"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/screen-flow.md"
+  },
+  {
+   "id": "sf-000111",
+   "area": "clouds-and-products",
+   "t": "Changes to an LWR Experience Cloud site appear to visitors only after the site is republished, because its components are fixed at publish time.",
+   "f": "Changes to an Aura Experience Cloud site appear to visitors only after the site is republished, because its components are fixed at publish time.",
+   "x": "LWR sites freeze their components when published and serve them as static content, so edits need a republish; that publish-time behaviour is the LWR difference, not an Aura one.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:experience-cloud",
+    "kt:lightning-web-components"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/experience-cloud.md"
+  },
+  {
+   "id": "sf-000112",
+   "area": "clouds-and-products",
+   "t": "The Customer Community license has no roles or sharing rules, so sites built on it rely on sharing sets to give users record access.",
+   "f": "The Partner Community license has no roles or sharing rules, so sites built on it rely on sharing sets to give users record access.",
+   "x": "Customer Community is the high-volume tier without roles or sharing rules, which is why it depends on sharing sets; Partner Community includes roles, sharing rules and reports.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:experience-cloud",
+    "kt:role-hierarchy",
+    "kt:salesforce-sharing-model"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/experience-cloud.md"
+  },
+  {
+   "id": "sf-000113",
+   "area": "clouds-and-products",
+   "t": "With secure guest user record access enabled, guest users' org-wide defaults are fixed at Private and only sharing rules can grant them record access.",
+   "f": "With secure guest user record access enabled, guest users' org-wide defaults are fixed at Public Read Only and sharing sets can grant them record access.",
+   "x": "Secure guest access locks guest defaults to Private and allows only sharing rules to open records to them; neither Public Read Only defaults nor sharing sets apply.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:experience-cloud",
+    "kt:organization-wide-defaults"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/experience-cloud.md"
+  },
+  {
+   "id": "sf-000114",
+   "area": "clouds-and-products",
+   "t": "Collaborative Forecasts allows only four forecast types to be active at a time; more require a request to Salesforce Customer Support.",
+   "f": "Collaborative Forecasts allows only ten forecast types to be active at a time; more require a request to Salesforce Customer Support.",
+   "x": "The active forecast type limit is four, and going beyond it means contacting Customer Support; ten is not the stated limit.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:sales-cloud-consultant-certification"
+   ],
+   "concepts": [
+    "kt:sales-cloud",
+    "kt:collaborative-forecasts"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/sales-cloud.md"
+  },
+  {
+   "id": "sf-000115",
+   "area": "clouds-and-products",
+   "t": "Changing the rollup setting in Collaborative Forecasts deletes existing forecast adjustments for all active forecast types.",
+   "f": "Changing the rollup setting in Collaborative Forecasts deletes existing forecast adjustments only for the forecast type being edited.",
+   "x": "The rollup setting applies across forecasting, so changing it wipes adjustments for every active forecast type, not just one.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:sales-cloud-consultant-certification"
+   ],
+   "concepts": [
+    "kt:sales-cloud",
+    "kt:collaborative-forecasts"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/sales-cloud.md"
+  },
+  {
+   "id": "sf-000116",
+   "area": "clouds-and-products",
+   "t": "When person accounts are enabled, converting a lead that has no company name creates a person account.",
+   "f": "When person accounts are enabled, converting a lead that has no company name creates a business account named after the lead.",
+   "x": "With person accounts on, a lead without a company name converts into a person account; a business account is created from the company name, which this lead lacks.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:sales-cloud-consultant-certification"
+   ],
+   "concepts": [
+    "kt:sales-cloud",
+    "kt:lead-conversion"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/sales-cloud.md"
+  },
+  {
+   "id": "sf-000117",
+   "area": "data-cloud-and-ai",
+   "t": "In Data 360, ingested or federated data first lands in data lake objects in its source shape, before mapping to data model objects.",
+   "f": "In Data 360, ingested or federated data first lands in data model objects in its source shape, before mapping to data lake objects.",
+   "x": "Data lake objects are the raw landing containers; their fields are then mapped onto the Customer 360 Data Model to form data model objects, so the false statement reverses the order.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:data-cloud",
+    "kt:data-model-objects"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/data-cloud.md"
+  },
+  {
+   "id": "sf-000118",
+   "area": "data-cloud-and-ai",
+   "t": "Accelerated Query caching in Data 360 keeps a local copy of federated data refreshed between every 15 minutes and every 7 days.",
+   "f": "Accelerated Query caching in Data 360 keeps a local copy of federated data refreshed between every 1 minute and every 24 hours.",
+   "x": "The cache refresh interval ranges from 15 minutes to 7 days; the 1-minute to 24-hour range is not what Salesforce states.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:data-cloud",
+    "kt:zero-copy-data-federation"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/data-cloud.md"
+  },
+  {
+   "id": "sf-000119",
+   "area": "data-cloud-and-ai",
+   "t": "An incremental cache refresh in Data 360 only upserts, so deleted source records stay in the cache until a full refresh runs.",
+   "f": "An incremental cache refresh in Data 360 upserts and deletes, so deleted source records are removed from the cache on the next refresh.",
+   "x": "Incremental refresh only inserts and updates; deletions are picked up only by a full refresh, so stale deleted rows can linger in the cache.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:data-cloud",
+    "kt:zero-copy-data-federation"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/data-cloud.md"
   }
  ]
 }

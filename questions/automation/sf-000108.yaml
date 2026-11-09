@@ -1,0 +1,18 @@
+id: sf-000108
+product_area: automation
+true_statement: A top-level screen flow runs in user context by default, so the running user's object and field permissions apply.
+false_statement: A top-level screen flow runs in system context without sharing by default, so the running user's object and field permissions are ignored.
+explanation: Screen flows default to user context, applying the launching user's profile and permission sets; system context is an opt-in choice, and system without sharing is meant to be used sparingly.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/screen-flow.md
+  commit: ee7571c675638f9605db9044cd8e6d5432c21c41
+  blob: 5e72cd19b9d0250576908d5f269372e71261eb29
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:screen-flow
+- kt:salesforce-sharing-model
+difficulty: 1
+created: '2026-11-09'
+status: active

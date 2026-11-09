@@ -1,0 +1,18 @@
+id: sf-000118
+product_area: data-cloud-and-ai
+true_statement: Accelerated Query caching in Data 360 keeps a local copy of federated data refreshed between every 15 minutes and every 7 days.
+false_statement: Accelerated Query caching in Data 360 keeps a local copy of federated data refreshed between every 1 minute and every 24 hours.
+explanation: The cache refresh interval ranges from 15 minutes to 7 days; the 1-minute to 24-hour range is not what Salesforce states.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/data-cloud.md
+  commit: ee7571c675638f9605db9044cd8e6d5432c21c41
+  blob: 93d16c9ce064e1c662c5c3d91e16074c808f5dba
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:data-cloud
+- kt:zero-copy-data-federation
+difficulty: 2
+created: '2026-11-09'
+status: active

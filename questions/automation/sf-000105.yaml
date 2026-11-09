@@ -1,0 +1,18 @@
+id: sf-000105
+product_area: automation
+true_statement: An approval process's default submission action locks the record so that only approvers and admins can edit it while the request is pending.
+false_statement: An approval process's default submission action locks the record so that only the submitter and admins can edit it while the request is pending.
+explanation: By default, submitting for approval locks the record, leaving edit rights with approvers and administrators. The submitter is not the one who keeps edit access.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/process-automation.md
+  commit: ee7571c675638f9605db9044cd8e6d5432c21c41
+  blob: 82c92557919af3d3845423780ce300929c8f215e
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:process-automation
+- kt:approval-processes
+difficulty: 2
+created: '2026-11-09'
+status: active

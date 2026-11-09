@@ -1,0 +1,18 @@
+id: sf-000119
+product_area: data-cloud-and-ai
+true_statement: An incremental cache refresh in Data 360 only upserts, so deleted source records stay in the cache until a full refresh runs.
+false_statement: An incremental cache refresh in Data 360 upserts and deletes, so deleted source records are removed from the cache on the next refresh.
+explanation: Incremental refresh only inserts and updates; deletions are picked up only by a full refresh, so stale deleted rows can linger in the cache.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/data-cloud.md
+  commit: ee7571c675638f9605db9044cd8e6d5432c21c41
+  blob: 93d16c9ce064e1c662c5c3d91e16074c808f5dba
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:data-cloud
+- kt:zero-copy-data-federation
+difficulty: 3
+created: '2026-11-09'
+status: active

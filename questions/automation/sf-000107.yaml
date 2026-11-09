@@ -1,0 +1,18 @@
+id: sf-000107
+product_area: automation
+true_statement: Automation on the after-undelete event must be built with an Apex trigger, because record-triggered flows do not support that event.
+false_statement: Automation on the after-undelete event must be built with a record-triggered flow, because Apex triggers do not support that event.
+explanation: Flow has no after-undelete support, which leaves Apex triggers as the only option for that event. The false statement swaps which tool handles it.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/process-automation.md
+  commit: ee7571c675638f9605db9044cd8e6d5432c21c41
+  blob: 82c92557919af3d3845423780ce300929c8f215e
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:process-automation
+- kt:apex-triggers
+difficulty: 3
+created: '2026-11-09'
+status: active

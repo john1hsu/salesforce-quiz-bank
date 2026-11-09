@@ -1,0 +1,19 @@
+id: sf-000112
+product_area: clouds-and-products
+true_statement: The Customer Community license has no roles or sharing rules, so sites built on it rely on sharing sets to give users record access.
+false_statement: The Partner Community license has no roles or sharing rules, so sites built on it rely on sharing sets to give users record access.
+explanation: Customer Community is the high-volume tier without roles or sharing rules, which is why it depends on sharing sets; Partner Community includes roles, sharing rules and reports.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/experience-cloud.md
+  commit: ee7571c675638f9605db9044cd8e6d5432c21c41
+  blob: 079abb6cf331636b6d4399c098a4a02f6a921a25
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:experience-cloud
+- kt:role-hierarchy
+- kt:salesforce-sharing-model
+difficulty: 2
+created: '2026-11-09'
+status: active

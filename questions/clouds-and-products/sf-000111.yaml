@@ -1,0 +1,18 @@
+id: sf-000111
+product_area: clouds-and-products
+true_statement: Changes to an LWR Experience Cloud site appear to visitors only after the site is republished, because its components are fixed at publish time.
+false_statement: Changes to an Aura Experience Cloud site appear to visitors only after the site is republished, because its components are fixed at publish time.
+explanation: LWR sites freeze their components when published and serve them as static content, so edits need a republish; that publish-time behaviour is the LWR difference, not an Aura one.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/experience-cloud.md
+  commit: ee7571c675638f9605db9044cd8e6d5432c21c41
+  blob: 079abb6cf331636b6d4399c098a4a02f6a921a25
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:experience-cloud
+- kt:lightning-web-components
+difficulty: 2
+created: '2026-11-09'
+status: active

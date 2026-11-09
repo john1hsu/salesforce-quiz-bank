@@ -1,0 +1,17 @@
+id: sf-000109
+product_area: automation
+true_statement: Reactive screen components in a screen flow require the flow to use API version 59.0 or later.
+false_statement: Reactive screen components in a screen flow require the flow to use API version 52.0 or later.
+explanation: Salesforce ties screen-flow reactivity to API version 59.0 or later; 52.0 is too early a version for the feature.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/screen-flow.md
+  commit: ee7571c675638f9605db9044cd8e6d5432c21c41
+  blob: 5e72cd19b9d0250576908d5f269372e71261eb29
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:screen-flow
+difficulty: 2
+created: '2026-11-09'
+status: active

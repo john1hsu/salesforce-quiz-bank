@@ -1,0 +1,17 @@
+id: sf-000110
+product_area: automation
+true_statement: In a reactive screen flow, the $Flow global variable is reactive, while $Organization, $Profile and custom labels are not.
+false_statement: In a reactive screen flow, the $Profile global variable is reactive, while $Flow, $Organization and custom labels are not.
+explanation: Only $Flow reacts to changes on the screen; $Organization, $Profile, custom labels and custom settings do not, so the false statement swaps the one reactive global variable.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/screen-flow.md
+  commit: ee7571c675638f9605db9044cd8e6d5432c21c41
+  blob: 5e72cd19b9d0250576908d5f269372e71261eb29
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:screen-flow
+difficulty: 3
+created: '2026-11-09'
+status: active

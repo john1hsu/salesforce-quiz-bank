@@ -1,0 +1,17 @@
+id: sf-000106
+product_area: automation
+true_statement: Salesforce Help calls before-save flows the best-performing record-triggered option, because they are limited to updating the triggering record.
+false_statement: Salesforce Help calls after-save flows the best-performing record-triggered option, because they are limited to updating the triggering record.
+explanation: Before-save (fast field update) flows change the triggering record inside the original save without an extra DML, which is why Salesforce rates them fastest. After-save flows can touch other records and need additional DML, so they are not the fastest option.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/process-automation.md
+  commit: ee7571c675638f9605db9044cd8e6d5432c21c41
+  blob: 82c92557919af3d3845423780ce300929c8f215e
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:process-automation
+difficulty: 2
+created: '2026-11-09'
+status: active

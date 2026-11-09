@@ -1,0 +1,18 @@
+id: sf-000113
+product_area: clouds-and-products
+true_statement: With secure guest user record access enabled, guest users' org-wide defaults are fixed at Private and only sharing rules can grant them record access.
+false_statement: With secure guest user record access enabled, guest users' org-wide defaults are fixed at Public Read Only and sharing sets can grant them record access.
+explanation: Secure guest access locks guest defaults to Private and allows only sharing rules to open records to them; neither Public Read Only defaults nor sharing sets apply.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/experience-cloud.md
+  commit: ee7571c675638f9605db9044cd8e6d5432c21c41
+  blob: 079abb6cf331636b6d4399c098a4a02f6a921a25
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:experience-cloud
+- kt:organization-wide-defaults
+difficulty: 3
+created: '2026-11-09'
+status: active
