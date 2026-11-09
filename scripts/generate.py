@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Helpers for the hourly generation run.
+"""Helpers for the daily generation run.
 
   pick  Decide this run's work: refresh stale pairs first, otherwise the source article
         with the fewest pairs. Prints JSON.

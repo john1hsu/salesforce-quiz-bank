@@ -1,6 +1,6 @@
-# Salesforce quiz bank: hourly run playbook
+# Salesforce quiz bank: daily run playbook
 
-This repo is a bank of paired true/false questions generated from [john1hsu/salesforce-knowledge-graph](https://github.com/john1hsu/salesforce-knowledge-graph). An hourly scheduled run makes **one commit** of up to **3 pairs**: it either refreshes stale pairs or writes new ones. It commits directly to `main` only when every check passes. Read `SCHEMA.md` before writing.
+This repo is a bank of paired true/false questions generated from [john1hsu/salesforce-knowledge-graph](https://github.com/john1hsu/salesforce-knowledge-graph). A daily scheduled run handles up to **100 pairs**: it refreshes stale pairs first, then spends the rest of the budget on new ones, at most **3 per article**. Everything goes to `main` as **one combined commit** with one push, and only when every check passes. Read `SCHEMA.md` before writing.
 
 ## 1. Sync
 
@@ -20,13 +20,17 @@ This marks active pairs stale when they were verified for an older release than 
 
 ## 3. Pick this run's work
 
+The budget is 100 pairs per run (refreshed plus new). Repeat this step until the budget is used or `pick` returns `"none"`:
+
 ```bash
 python3 scripts/generate.py pick --n 3
 ```
 
 - `"mode": "refresh"` → do step 4a for every pair in `batch`.
 - `"mode": "generate"` → do step 4b for `article`, writing `n` pairs.
-- `"mode": "none"` → if step 2 marked anything stale, commit that (step 5) with the message `quiz: mark <n> pairs stale`; otherwise stop without committing.
+- `"mode": "none"` → stop picking and go to step 5. If nothing was refreshed or added but step 2 marked pairs stale, commit that with the message `quiz: mark <n> pairs stale`; if nothing changed at all, stop without committing.
+
+Don't commit between picks. Run `python3 scripts/validate.py --source .source/salesforce-knowledge-graph` after roughly every 15 new pairs to catch problems early.
 
 Stale pairs always come before new ones. Pairs whose article hasn't been refreshed for the current release yet are skipped ("blocked on source") until it has.
 
@@ -78,13 +82,15 @@ git commit -m "<message>"
 git pull --rebase origin main && git push origin main
 ```
 
-- If validation fails on a new or replacement pair, delete that pair's file, rewrite it once, and validate again. If it still fails, discard all changes (`git checkout -- . && git clean -fd questions`), commit nothing, and report the failure in the run output.
-- Commit messages: `quiz: +<n> pairs from <article path>` for new pairs, `quiz: refresh <n> pairs for <release>` for refreshes. In the body, list one line per pair (`sf-000123: verified` / `superseded by sf-000130` / `retired: <why>` / `added`).
-- If the push is rejected, pull --rebase, re-run `build_index.py`, commit and push again (once).
+- Make **one** commit for the whole run, containing every refresh and new pair, and push it once.
+- If validation fails on a new or replacement pair, delete that pair's file, rewrite it once, and validate again. If it still fails, drop just that pair (remove its new file, or undo that refresh) and carry on, so the final commit always validates. Report dropped pairs in the run output.
+- Commit message subject: `quiz: refresh <r> pairs, +<n> pairs from <k> articles` (drop the part that is zero). In the body, list one line per pair (`sf-000123: verified` / `superseded by sf-000130` / `retired: <why>` / `added`).
+- If the push is rejected, pull --rebase, re-run `build_index.py`, amend that same commit (don't add a second one) and push again (once).
 
 ## Don'ts
 
-- Don't write more than 3 pairs, or combine new pairs with refreshes, in one run.
+- Don't handle more than 100 pairs in one run, or write more than 3 pairs from one article in one run.
+- Don't make more than one commit or push per run.
 - Don't edit `index/` or `coverage/` by hand; `build_index.py` writes them.
 - Don't delete question files or reuse an id; retire instead.
 - Don't edit salesforce-knowledge-graph from this run.

@@ -1,6 +1,6 @@
 # Salesforce quiz bank
 
-A bank of paired true/false Salesforce questions, generated hourly from the cited articles in [salesforce-knowledge-graph](https://github.com/john1hsu/salesforce-knowledge-graph). Each pair holds a true statement and a plausible false twin; quizzes show one side at random.
+A bank of paired true/false Salesforce questions, generated daily from the cited articles in [salesforce-knowledge-graph](https://github.com/john1hsu/salesforce-knowledge-graph). Each pair holds a true statement and a plausible false twin; quizzes show one side at random.
 
 ## Practice on your phone
 
@@ -31,15 +31,15 @@ Scores go to a git-ignored `.quiz-progress.jsonl`, or `--progress <path>` (for e
 | `scripts/generate.py` | Picks the next article and turns drafted pairs into files |
 | `scripts/refresh.py` | Marks pairs stale after a release or source change, and verifies, supersedes or retires them |
 | `scripts/build_index.py` | Writes the index and coverage files |
-| `CLAUDE.md` | The hourly run's playbook |
+| `CLAUDE.md` | The daily run's playbook |
 
-### Hourly run
+### Daily run
 
-Each run commits up to 3 pairs directly to `main`, only if every check passes:
+Once a day, a scheduled run handles up to 100 pairs and pushes them to `main` as one combined commit, only if every check passes:
 
 1. Mark stale any pair verified for an older release, or whose source article changed.
-2. If stale pairs are ready (their article was already refreshed for the new release), re-verify 3 of them: beta/pilot facts first, then limits and numbers.
-3. Otherwise write 3 new pairs from the article with the fewest pairs (up to 6 per article).
+2. Re-verify every stale pair that is ready (its article was already refreshed for the new release): beta/pilot facts first, then limits and numbers.
+3. Spend the rest of the 100-pair budget on new pairs, up to 3 per article per run, starting with the articles that have the fewest pairs (up to 6 per article).
 
 ### Release updates
 
