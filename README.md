@@ -4,6 +4,8 @@ A bank of paired true/false Salesforce questions, generated hourly from the cite
 
 ## Practice on your phone
 
+**Open the app: [john1hsu.github.io/salesforce-quiz-bank](https://john1hsu.github.io/salesforce-quiz-bank/)**
+
 The app in `app/` is published with GitHub Pages: **swipe right for true, left for false** (or tap the buttons). After each answer you see the explanation, the release it was verified for, and a link to the source article. Questions are drawn completely at random. Scores stay on your phone; "Copy score history" exports them. Add it to your home screen to use it offline.
 
 ## Practice in the terminal
