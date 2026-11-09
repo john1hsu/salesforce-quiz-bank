@@ -1,6 +1,6 @@
 // Offline support: the app shell is cached; questions.json is fetched fresh when online
 // and served from the cache when there's no signal.
-const CACHE = "sfqb-v1";
+const CACHE = "sfqb-v2";
 const SHELL = ["./", "index.html", "styles.css", "app.js", "manifest.json", "icon-192.png", "icon-512.png", "apple-touch-icon.png"];
 
 self.addEventListener("install", (event) => {

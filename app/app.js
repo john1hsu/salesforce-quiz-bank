@@ -285,6 +285,9 @@
     if (el.practice.hidden || !session) return;
     if (!el.card.hidden && e.key === "ArrowRight") { e.preventDefault(); flyAndAnswer(true); }
     else if (!el.card.hidden && e.key === "ArrowLeft") { e.preventDefault(); flyAndAnswer(false); }
+    // On the explanation screen, Right arrow moves on like "Next question".
+    // Ignore auto-repeat so holding the key after answering doesn't skip the explanation.
+    else if (!el.feedback.hidden && e.key === "ArrowRight" && !e.repeat) { e.preventDefault(); nextCard(); }
   });
 
   // ---------- load ----------
