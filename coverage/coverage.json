@@ -1,6 +1,6 @@
 {
  "totals": {
-  "active": 26
+  "active": 29
  },
  "areas": {
   "architecture-practice": {
@@ -29,6 +29,9 @@
   },
   "integration": {
    "active": 1
+  },
+  "platform-architecture": {
+   "active": 3
   },
   "security-and-sharing": {
    "active": 1
@@ -67,6 +70,9 @@
   },
   "articles/integration/platform-events.md": {
    "active": 1
+  },
+  "articles/platform-architecture/governor-limits.md": {
+   "active": 3
   },
   "articles/security-and-sharing/organization-wide-defaults.md": {
    "active": 1

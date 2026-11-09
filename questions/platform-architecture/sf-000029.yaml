@@ -1,0 +1,17 @@
+id: sf-000029
+product_area: platform-architecture
+true_statement: Certified managed packages get their own allocation for most per-transaction limits, but CPU time is shared across the whole transaction.
+false_statement: Certified managed packages get their own allocation for most per-transaction limits, but SOQL queries are shared across the whole transaction.
+explanation: Security-reviewed managed packages receive separate per-namespace counts for limits such as SOQL queries, up to a cumulative 11x cap. Heap, CPU time, execution time and namespace count remain shared by everything in the transaction.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/governor-limits.md
+  commit: ee7571c675638f9605db9044cd8e6d5432c21c41
+  blob: e782f2c498b1136ea90f5baed2344672e4e57cea
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:governor-limits
+difficulty: 3
+created: '2026-11-09'
+status: active

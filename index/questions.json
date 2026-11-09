@@ -1,7 +1,7 @@
 {
  "version": 1,
- "count": 26,
- "active": 26,
+ "count": 29,
+ "active": 29,
  "questions": [
   {
    "id": "sf-000001",
@@ -446,6 +446,56 @@
    "difficulty": 3,
    "status": "active",
    "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/application-lifecycle-management.md"
+  },
+  {
+   "id": "sf-000027",
+   "area": "platform-architecture",
+   "t": "A synchronous Apex transaction can issue up to 100 SOQL queries, while an asynchronous transaction can issue up to 200.",
+   "f": "A synchronous Apex transaction can issue up to 150 SOQL queries, while an asynchronous transaction can issue up to 300.",
+   "x": "The per-transaction SOQL query cap is 100 in synchronous Apex and doubles to 200 in asynchronous Apex. The figure 150 belongs to the DML statement limit, not SOQL queries.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:governor-limits",
+    "kt:asynchronous-apex"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/governor-limits.md"
+  },
+  {
+   "id": "sf-000028",
+   "area": "platform-architecture",
+   "t": "A screen flow starts a new transaction each time the user clicks Next, so each screen's work gets its own set of governor limits.",
+   "f": "A screen flow runs as one transaction from its first screen to its last, so the work on every screen shares one set of governor limits.",
+   "x": "Each Next click in a screen flow begins a fresh transaction with fresh limits. It is an autolaunched flow, not a screen flow, that runs inside the launching transaction and shares its limits.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:governor-limits",
+    "kt:flow-builder"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/governor-limits.md"
+  },
+  {
+   "id": "sf-000029",
+   "area": "platform-architecture",
+   "t": "Certified managed packages get their own allocation for most per-transaction limits, but CPU time is shared across the whole transaction.",
+   "f": "Certified managed packages get their own allocation for most per-transaction limits, but SOQL queries are shared across the whole transaction.",
+   "x": "Security-reviewed managed packages receive separate per-namespace counts for limits such as SOQL queries, up to a cumulative 11x cap. Heap, CPU time, execution time and namespace count remain shared by everything in the transaction.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:governor-limits"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/governor-limits.md"
   }
  ]
 }

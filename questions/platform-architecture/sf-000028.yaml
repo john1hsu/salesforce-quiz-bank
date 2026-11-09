@@ -1,0 +1,18 @@
+id: sf-000028
+product_area: platform-architecture
+true_statement: A screen flow starts a new transaction each time the user clicks Next, so each screen's work gets its own set of governor limits.
+false_statement: A screen flow runs as one transaction from its first screen to its last, so the work on every screen shares one set of governor limits.
+explanation: Each Next click in a screen flow begins a fresh transaction with fresh limits. It is an autolaunched flow, not a screen flow, that runs inside the launching transaction and shares its limits.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/governor-limits.md
+  commit: ee7571c675638f9605db9044cd8e6d5432c21c41
+  blob: e782f2c498b1136ea90f5baed2344672e4e57cea
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:governor-limits
+- kt:flow-builder
+difficulty: 2
+created: '2026-11-09'
+status: active

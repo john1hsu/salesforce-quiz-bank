@@ -1,0 +1,18 @@
+id: sf-000027
+product_area: platform-architecture
+true_statement: A synchronous Apex transaction can issue up to 100 SOQL queries, while an asynchronous transaction can issue up to 200.
+false_statement: A synchronous Apex transaction can issue up to 150 SOQL queries, while an asynchronous transaction can issue up to 300.
+explanation: The per-transaction SOQL query cap is 100 in synchronous Apex and doubles to 200 in asynchronous Apex. The figure 150 belongs to the DML statement limit, not SOQL queries.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/governor-limits.md
+  commit: ee7571c675638f9605db9044cd8e6d5432c21c41
+  blob: e782f2c498b1136ea90f5baed2344672e4e57cea
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:governor-limits
+- kt:asynchronous-apex
+difficulty: 2
+created: '2026-11-09'
+status: active
