@@ -1,0 +1,17 @@
+id: sf-000008
+product_area: architecture-practice
+true_statement: Salesforce suggests starting a new solution with the Trust and Reliability pillars as foundations before addressing the other three Well-Architected pillars.
+false_statement: Salesforce suggests starting a new solution with the Operational Excellence and Fairness pillars as foundations before addressing the other three Well-Architected pillars.
+explanation: The framework treats Trust and Reliability as the base layer for new solutions, with the remaining pillars layered on after. Operational Excellence and Fairness are among the pillars addressed once that foundation is in place.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/well-architected-framework.md
+  commit: f3aa9842c023b324e5ae9a1f8bbdd60127cc6ac1
+  blob: f34357ad89a82131079d054eafe0b0532c7d5687
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:well-architected-framework
+difficulty: 3
+created: '2026-11-09'
+status: active

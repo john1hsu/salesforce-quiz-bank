@@ -1,0 +1,18 @@
+id: sf-000007
+product_area: architecture-practice
+true_statement: In the five-pillar Well-Architected Framework, the five-phase Agent Development Lifecycle sits under the Operational Excellence pillar.
+false_statement: In the five-pillar Well-Architected Framework, the five-phase Agent Development Lifecycle sits under the Trust pillar.
+explanation: The Agent Development Lifecycle is part of Operational Excellence, alongside observability, DevOps and incident management. Trust covers agent permissions, auditing and security boundaries, not the agent build lifecycle.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/well-architected-framework.md
+  commit: f3aa9842c023b324e5ae9a1f8bbdd60127cc6ac1
+  blob: f34357ad89a82131079d054eafe0b0532c7d5687
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:well-architected-framework
+- kt:agent-development-lifecycle
+difficulty: 2
+created: '2026-11-09'
+status: active

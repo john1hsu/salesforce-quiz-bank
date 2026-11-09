@@ -1,0 +1,18 @@
+id: sf-000006
+product_area: architecture-practice
+true_statement: The Well-Architected Reliability pillar recommends treating 70% of a governor limit as the operational ceiling for a solution.
+false_statement: The Well-Architected Reliability pillar recommends treating 90% of a governor limit as the operational ceiling for a solution.
+explanation: Reliability guidance tells architects to plan as if 70% of a limit is the practical maximum, leaving headroom for growth and spikes. Running up to 90% would leave far less margin than the framework advises.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/well-architected-framework.md
+  commit: f3aa9842c023b324e5ae9a1f8bbdd60127cc6ac1
+  blob: f34357ad89a82131079d054eafe0b0532c7d5687
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:well-architected-framework
+- kt:governor-limits
+difficulty: 2
+created: '2026-11-09'
+status: active

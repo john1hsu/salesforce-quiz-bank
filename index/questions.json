@@ -1,7 +1,7 @@
 {
  "version": 1,
- "count": 5,
- "active": 5,
+ "count": 8,
+ "active": 8,
  "questions": [
   {
    "id": "sf-000001",
@@ -89,6 +89,56 @@
    "difficulty": 2,
    "status": "active",
    "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/multi-factor-authentication.md"
+  },
+  {
+   "id": "sf-000006",
+   "area": "architecture-practice",
+   "t": "The Well-Architected Reliability pillar recommends treating 70% of a governor limit as the operational ceiling for a solution.",
+   "f": "The Well-Architected Reliability pillar recommends treating 90% of a governor limit as the operational ceiling for a solution.",
+   "x": "Reliability guidance tells architects to plan as if 70% of a limit is the practical maximum, leaving headroom for growth and spikes. Running up to 90% would leave far less margin than the framework advises.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:well-architected-framework",
+    "kt:governor-limits"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/well-architected-framework.md"
+  },
+  {
+   "id": "sf-000007",
+   "area": "architecture-practice",
+   "t": "In the five-pillar Well-Architected Framework, the five-phase Agent Development Lifecycle sits under the Operational Excellence pillar.",
+   "f": "In the five-pillar Well-Architected Framework, the five-phase Agent Development Lifecycle sits under the Trust pillar.",
+   "x": "The Agent Development Lifecycle is part of Operational Excellence, alongside observability, DevOps and incident management. Trust covers agent permissions, auditing and security boundaries, not the agent build lifecycle.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:well-architected-framework",
+    "kt:agent-development-lifecycle"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/well-architected-framework.md"
+  },
+  {
+   "id": "sf-000008",
+   "area": "architecture-practice",
+   "t": "Salesforce suggests starting a new solution with the Trust and Reliability pillars as foundations before addressing the other three Well-Architected pillars.",
+   "f": "Salesforce suggests starting a new solution with the Operational Excellence and Fairness pillars as foundations before addressing the other three Well-Architected pillars.",
+   "x": "The framework treats Trust and Reliability as the base layer for new solutions, with the remaining pillars layered on after. Operational Excellence and Fairness are among the pillars addressed once that foundation is in place.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:well-architected-framework"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/well-architected-framework.md"
   }
  ]
 }
