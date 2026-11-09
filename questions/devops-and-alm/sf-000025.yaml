@@ -1,0 +1,18 @@
+id: sf-000025
+product_area: devops-and-alm
+true_statement: Lifecycle Center, formerly DevOps Center, is turned on from Setup in a hub org with no package to install.
+false_statement: Lifecycle Center, formerly DevOps Center, is turned on by installing a managed package from AppExchange into a hub org.
+explanation: 'Lifecycle Center is built into the platform: you enable it in the hub org''s Setup and nothing needs to be installed. The claim that it ships as an AppExchange managed package is wrong.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/application-lifecycle-management.md
+  commit: ee7571c675638f9605db9044cd8e6d5432c21c41
+  blob: 2a48e1af828a9b147034e9b12c8bc6b6500671b7
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:application-lifecycle-management
+- kt:devops-center
+difficulty: 2
+created: '2026-11-09'
+status: active

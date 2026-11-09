@@ -1,6 +1,6 @@
 {
  "totals": {
-  "active": 23
+  "active": 26
  },
  "areas": {
   "architecture-practice": {
@@ -22,7 +22,7 @@
    "active": 3
   },
   "devops-and-alm": {
-   "active": 1
+   "active": 4
   },
   "identity": {
    "active": 1
@@ -54,6 +54,9 @@
    "active": 3
   },
   "articles/development/asynchronous-apex.md": {
+   "active": 3
+  },
+  "articles/devops-and-alm/application-lifecycle-management.md": {
    "active": 3
   },
   "articles/devops-and-alm/unlocked-packages.md": {

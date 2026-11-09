@@ -1,7 +1,7 @@
 {
  "version": 1,
- "count": 23,
- "active": 23,
+ "count": 26,
+ "active": 26,
  "questions": [
   {
    "id": "sf-000001",
@@ -395,6 +395,57 @@
    "difficulty": 2,
    "status": "active",
    "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/asynchronous-apex.md"
+  },
+  {
+   "id": "sf-000024",
+   "area": "devops-and-alm",
+   "t": "In the org-based development model the production org is the source of truth, while the package-based model makes the source control repository the source of truth.",
+   "f": "In the org-based development model the source control repository is the source of truth, while the package-based model makes the production org the source of truth.",
+   "x": "Org-based teams treat production as the authoritative record and ship changes together in one manifest-driven deployment. Package-based teams build scratch orgs from repository source, so version control holds the truth; the false statement swaps the two models.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:application-lifecycle-management",
+    "kt:scratch-orgs"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/application-lifecycle-management.md"
+  },
+  {
+   "id": "sf-000025",
+   "area": "devops-and-alm",
+   "t": "Lifecycle Center, formerly DevOps Center, is turned on from Setup in a hub org with no package to install.",
+   "f": "Lifecycle Center, formerly DevOps Center, is turned on by installing a managed package from AppExchange into a hub org.",
+   "x": "Lifecycle Center is built into the platform: you enable it in the hub org's Setup and nothing needs to be installed. The claim that it ships as an AppExchange managed package is wrong.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:application-lifecycle-management",
+    "kt:devops-center"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/application-lifecycle-management.md"
+  },
+  {
+   "id": "sf-000026",
+   "area": "devops-and-alm",
+   "t": "Uninstalling an unlocked package deletes the components it contains, so package boundaries and deprecation plans need care up front.",
+   "f": "Uninstalling an unlocked package leaves its components in the org as unpackaged metadata, so package boundaries can be changed freely later.",
+   "x": "Removing an unlocked package removes its components along with it, which is why the article warns to plan boundaries and deprecation early. The components are not left behind as loose metadata.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:application-lifecycle-management",
+    "kt:unlocked-packages"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/application-lifecycle-management.md"
   }
  ]
 }

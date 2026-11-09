@@ -1,0 +1,18 @@
+id: sf-000026
+product_area: devops-and-alm
+true_statement: Uninstalling an unlocked package deletes the components it contains, so package boundaries and deprecation plans need care up front.
+false_statement: Uninstalling an unlocked package leaves its components in the org as unpackaged metadata, so package boundaries can be changed freely later.
+explanation: Removing an unlocked package removes its components along with it, which is why the article warns to plan boundaries and deprecation early. The components are not left behind as loose metadata.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/application-lifecycle-management.md
+  commit: ee7571c675638f9605db9044cd8e6d5432c21c41
+  blob: 2a48e1af828a9b147034e9b12c8bc6b6500671b7
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:application-lifecycle-management
+- kt:unlocked-packages
+difficulty: 3
+created: '2026-11-09'
+status: active
