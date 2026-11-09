@@ -1,0 +1,19 @@
+id: sf-000224
+product_area: security-and-sharing
+true_statement: Per the archived Summer '20 Security Guide, an object can have 300 sharing rules, of which up to 50 may be criteria-based or guest rules.
+false_statement: Per the archived Summer '20 Security Guide, an object can have 300 sharing rules, of which up to 200 may be criteria-based or guest rules.
+explanation: The guide caps the total at 300 per object with a sub-limit of 50 for criteria-based and guest user rules. Check your org's current allocations before relying on them.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/sharing-rules.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: 90e8fac7f088fce092555794d976b200923c442a
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:sharing-and-visibility-architect-certification
+concepts:
+- kt:sharing-rules
+difficulty: 3
+created: '2026-11-09'
+status: active

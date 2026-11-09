@@ -1,0 +1,19 @@
+id: sf-000191
+product_area: identity
+true_statement: An OAuth 2.0 refresh token is presented only to the authorization server, never to resource servers.
+false_statement: An OAuth 2.0 refresh token is presented to resource servers in place of an access token once it expires.
+explanation: Refresh tokens are exchanged at the token endpoint for new access tokens. Resource servers accept only access tokens.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/oauth-2-0.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: 81b04062fb128dda06227ecbd3f47a5de95210d9
+verified_release: Winter '27
+feature_status: concept
+certs:
+- kt:identity-and-access-management-architect-certification
+concepts:
+- kt:oauth-2-0
+difficulty: 2
+created: '2026-11-09'
+status: active

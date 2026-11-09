@@ -1,0 +1,20 @@
+id: sf-000196
+product_area: identity
+true_statement: For an OpenID Connect Auth. Provider, Salesforce checks the ID token against the issuer and user-info response but doesn't verify its signature.
+false_statement: For an OpenID Connect Auth. Provider, Salesforce verifies the ID token's signature before checking it against the issuer and user-info response.
+explanation: Signature validation isn't done automatically. If it matters, the registration handler should validate the token itself with Auth.JWTUtil.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/openid-connect-authentication-providers.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: f2b451fb263b9d541c8fd6966f20045f9573db1f
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:identity-and-access-management-architect-certification
+concepts:
+- kt:openid-connect-authentication-providers
+- kt:apex
+difficulty: 3
+created: '2026-11-09'
+status: active

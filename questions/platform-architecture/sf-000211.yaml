@@ -1,0 +1,18 @@
+id: sf-000211
+product_area: platform-architecture
+true_statement: The query optimizer considers a custom index when a filter matches under 10% of records, capped at 333,333 records.
+false_statement: The query optimizer considers a custom index when a filter matches under 30% of records, capped at one million records.
+explanation: Custom indexes have the stricter 10% threshold with a 333,333-record cap. The 30% figure with a one-million cap is the starting point for standard indexes.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/large-data-volumes.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: 46e37c7cf6a3391c47387e71aef57b63f0bd50ec
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:large-data-volumes
+- kt:query-optimizer-selectivity
+difficulty: 3
+created: '2026-11-09'
+status: active

@@ -1,0 +1,20 @@
+id: sf-000225
+product_area: security-and-sharing
+true_statement: Sharing rules can only widen access; they can never make access stricter than the organization-wide default.
+false_statement: Sharing rules can widen or narrow access, making it stricter than the organization-wide default for selected users.
+explanation: Sharing rules add lateral exceptions on top of a restrictive baseline. To narrow what users see, a different control such as restriction rules is needed.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/sharing-rules.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: 90e8fac7f088fce092555794d976b200923c442a
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:sharing-and-visibility-architect-certification
+concepts:
+- kt:sharing-rules
+- kt:organization-wide-defaults
+difficulty: 1
+created: '2026-11-09'
+status: active

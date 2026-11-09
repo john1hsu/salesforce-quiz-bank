@@ -1,0 +1,20 @@
+id: sf-000189
+product_area: identity
+true_statement: With enhanced domains, Experience Cloud sites are served at MyDomainName.my.site.com.
+false_statement: With enhanced domains, Experience Cloud sites are served at MyDomainName.my.salesforce-sites.com.
+explanation: Enhanced domains put the My Domain name in every URL. Experience Cloud sites use my.site.com, while my.salesforce-sites.com is the format for Salesforce Sites.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/my-domain.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: f144a42e609b62eda3d1527659367430917ce493
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:identity-and-access-management-architect-certification
+concepts:
+- kt:my-domain
+- kt:experience-cloud
+difficulty: 2
+created: '2026-11-09'
+status: active

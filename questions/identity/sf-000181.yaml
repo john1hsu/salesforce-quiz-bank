@@ -1,0 +1,20 @@
+id: sf-000181
+product_area: identity
+true_statement: Email verification for Experience Cloud sign-up is included, but SMS verification needs the Identity Verification Credits add-on.
+false_statement: SMS verification for Experience Cloud sign-up is included, but email verification needs the Identity Verification Credits add-on.
+explanation: Verifying by email costs nothing extra. Sending codes by text message consumes Identity Verification Credits, which are bought as an add-on.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/experience-cloud-identity.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: d40a8bfa9738e7e41118027e8245ccb7dcf6b5ee
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:identity-and-access-management-architect-certification
+concepts:
+- kt:experience-cloud-identity
+- kt:multi-factor-authentication
+difficulty: 2
+created: '2026-11-09'
+status: active

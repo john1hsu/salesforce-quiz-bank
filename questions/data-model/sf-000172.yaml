@@ -1,0 +1,18 @@
+id: sf-000172
+product_area: data-model
+true_statement: A single SOQL query can include at most 55 child-to-parent relationships and at most 20 parent-to-child relationships.
+false_statement: A single SOQL query can include at most 20 child-to-parent relationships and at most 55 parent-to-child relationships.
+explanation: The ceiling is 55 for child-to-parent traversals and 20 for parent-to-child subqueries. Each type in a TYPEOF clause counts toward the limit, but reusing a relationship counts once.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/object-relationships.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: 2a01bc44df889f4d3dc6bf62f7651e3996eca130
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:object-relationships
+- kt:soql
+difficulty: 2
+created: '2026-11-09'
+status: active

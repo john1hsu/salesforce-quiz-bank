@@ -1,0 +1,21 @@
+id: sf-000192
+product_area: identity
+true_statement: Salesforce restricted creating new connected apps in Spring '26 and recommends external client apps for new integrations.
+false_statement: Salesforce restricted creating new external client apps in Spring '26 and recommends connected apps for new integrations.
+explanation: External client apps are the recommended OAuth client registration going forward. New connected app creation has been restricted since Spring '26.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/oauth-2-0.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: 81b04062fb128dda06227ecbd3f47a5de95210d9
+verified_release: Winter '27
+feature_status: concept
+certs:
+- kt:identity-and-access-management-architect-certification
+concepts:
+- kt:oauth-2-0
+- kt:connected-apps
+- kt:external-client-apps
+difficulty: 2
+created: '2026-11-09'
+status: active

@@ -1,0 +1,18 @@
+id: sf-000144
+product_area: integration
+true_statement: Creating, editing or deleting named credentials requires the Manage Named Credentials or Customize Applications permission.
+false_statement: Creating, editing or deleting named credentials requires the Modify All Data or Author Apex permission.
+explanation: Credential administration is gated by Manage Named Credentials or Customize Applications, while just viewing them needs View Setup and Configuration.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/named-credentials.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: 2f3245201749e51bd50641a02a911dc856391bc0
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:named-credentials
+- kt:integration-security
+difficulty: 2
+created: '2026-11-09'
+status: active

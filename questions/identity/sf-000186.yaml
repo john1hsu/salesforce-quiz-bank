@@ -1,0 +1,17 @@
+id: sf-000186
+product_area: identity
+true_statement: If an architect certification has lapsed for more than one maintenance cycle, the exam has to be retaken.
+false_statement: If an architect certification has lapsed for more than one maintenance cycle, completing the missed maintenance badges reinstates it.
+explanation: A recently expired credential may be reinstated through a support case, though not guaranteed. Once it has lapsed beyond one cycle, the only route back is passing the exam again.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/identity-and-access-management-architect-certification.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: 496112bdba6ce7d83cfb823a16ed55985f4a5405
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:identity-and-access-management-architect-certification
+difficulty: 2
+created: '2026-11-09'
+status: active

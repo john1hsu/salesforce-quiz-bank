@@ -1,0 +1,18 @@
+id: sf-000209
+product_area: integration
+true_statement: gRPC caps a Pub/Sub API publish request at 4 MB, and Salesforce recommends keeping batches at or below 3 MB.
+false_statement: gRPC caps a Pub/Sub API publish request at 1 MB, and Salesforce recommends keeping batches at or below 500 KB.
+explanation: A request over 4 MB fails and closes the stream, so batches of about 3 MB and 200 events are advised. The 1 MB figure is the size limit for a single event.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/pub-sub-api.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: 95f34ed5d5cea0802997f9f7dc1f447a68cf8a82
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:pub-sub-api
+- kt:platform-event-allocations
+difficulty: 3
+created: '2026-11-09'
+status: active

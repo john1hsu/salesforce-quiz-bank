@@ -1,0 +1,18 @@
+id: sf-000136
+product_area: devops-and-alm
+true_statement: A managed 2GP package version can be promoted to released only if code coverage was computed and is at least 75%.
+false_statement: A managed 2GP package version can be promoted to released only if code coverage was computed and is at least 50%.
+explanation: Promotion requires a version created with code coverage calculated and at least 75% Apex coverage, with every trigger covered. Versions built with --skip-validation can't be promoted.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/second-generation-managed-packages.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: fc9e434b322242a21c86a897c6c19a3701a2b2eb
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:second-generation-managed-packages
+- kt:apex-testing
+difficulty: 2
+created: '2026-11-09'
+status: active

@@ -1,0 +1,19 @@
+id: sf-000134
+product_area: devops-and-alm
+true_statement: An Enterprise Edition Dev Hub allows 40 active scratch orgs and 80 scratch org creations per day.
+false_statement: An Enterprise Edition Dev Hub allows 100 active scratch orgs and 200 scratch org creations per day.
+explanation: Enterprise Dev Hubs get 40 active and 80 daily. The 100 active and 200 daily allocation belongs to Unlimited and Performance editions.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/scratch-orgs.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: f59d0ef682454db82485bb43fd4b8c7bf9a1ed54
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:scratch-orgs
+- kt:dev-hub
+- kt:scratch-org-allocations
+difficulty: 2
+created: '2026-11-09'
+status: active

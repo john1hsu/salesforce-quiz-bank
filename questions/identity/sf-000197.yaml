@@ -1,0 +1,19 @@
+id: sf-000197
+product_area: identity
+true_statement: The Execute Registration As user for an Auth. Provider's registration handler needs the Manage Users permission.
+false_statement: The Execute Registration As user for an Auth. Provider's registration handler needs the Modify All Data permission.
+explanation: The handler creates and updates users, so its run-as user needs Manage Users. A dedicated service account keeps registration working if an admin leaves.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/openid-connect-authentication-providers.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: f2b451fb263b9d541c8fd6966f20045f9573db1f
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:identity-and-access-management-architect-certification
+concepts:
+- kt:openid-connect-authentication-providers
+difficulty: 2
+created: '2026-11-09'
+status: active

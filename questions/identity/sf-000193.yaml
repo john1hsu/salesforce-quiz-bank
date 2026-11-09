@@ -1,0 +1,20 @@
+id: sf-000193
+product_area: identity
+true_statement: The Salesforce OAuth JWT bearer flow never issues a refresh token, and scopes can't be requested in the assertion.
+false_statement: The Salesforce OAuth JWT bearer flow issues a refresh token with each access token, and scopes are requested in the assertion.
+explanation: JWT bearer returns only an access token, with scopes coming from the app's policy or API Access Control. The server simply signs a new JWT when it needs another token.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/oauth-2-flows-in-salesforce.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: 6e5107a80e469eb2aba65213871d8b97bf3a2dc9
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:identity-and-access-management-architect-certification
+concepts:
+- kt:oauth-2-flows-in-salesforce
+- kt:oauth-2-0
+difficulty: 3
+created: '2026-11-09'
+status: active

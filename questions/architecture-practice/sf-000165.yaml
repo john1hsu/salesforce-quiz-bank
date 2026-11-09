@@ -1,0 +1,18 @@
+id: sf-000165
+product_area: architecture-practice
+true_statement: Well-Architected code guidance recommends thin triggers that delegate to handler classes, with SOQL centralised in selector classes.
+false_statement: Well-Architected code guidance recommends keeping business logic in trigger bodies, with SOQL centralised in selector classes.
+explanation: Logic written directly in trigger files grows hard to test and is listed as an anti-pattern. Triggers should hand off to handlers, with logic in service classes and queries in selectors.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/technical-debt-in-salesforce.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: 49b363441a77832e79e27c71a56a2e13cbc544af
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:technical-debt-in-salesforce
+- kt:apex-triggers
+difficulty: 2
+created: '2026-11-09'
+status: active

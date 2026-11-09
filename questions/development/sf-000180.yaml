@@ -1,0 +1,18 @@
+id: sf-000180
+product_area: development
+true_statement: Per the Winter '27 Apex guide, Apex at API version 67.0 or later runs in user context by default, enforcing the user's sharing and permissions.
+false_statement: Per the Winter '27 Apex guide, Apex at API version 67.0 or later runs in system mode by default, ignoring the user's sharing and permissions.
+explanation: From API 67.0, Apex defaults to user context, applying sharing, field-level security and object permissions. Versions 66.0 and earlier default to system mode.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/soql.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: 28b07950068e9c890c39c232ae547c6263312f64
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:soql
+- kt:apex
+difficulty: 3
+created: '2026-11-09'
+status: active

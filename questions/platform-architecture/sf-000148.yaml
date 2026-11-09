@@ -1,0 +1,18 @@
+id: sf-000148
+product_area: platform-architecture
+true_statement: An Apex transaction trying to lock a record already locked by another transaction waits up to 10 seconds before an exception is thrown.
+false_statement: An Apex transaction trying to lock a record already locked by another transaction waits up to 60 seconds before an exception is thrown.
+explanation: The lock wait is capped at 10 seconds, after which a QueryException or DmlException is raised; API clients see this as UNABLE_TO_LOCK_ROW.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/record-locking.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: a1bfd58571dd2e3e4bcf995bb3573c55d38772b8
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:record-locking
+- kt:transaction-control
+difficulty: 2
+created: '2026-11-09'
+status: active

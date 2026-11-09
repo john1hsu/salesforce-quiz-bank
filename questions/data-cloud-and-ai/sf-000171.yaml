@@ -1,0 +1,18 @@
+id: sf-000171
+product_area: data-cloud-and-ai
+true_statement: Prompt templates run in Lightning Experience on Enterprise, Performance and Unlimited editions with an Einstein or Agentforce add-on.
+false_statement: Prompt templates run in Lightning Experience on Professional, Enterprise and Unlimited editions with no add-on required.
+explanation: Prompt Builder needs Enterprise, Performance or Unlimited edition plus an Einstein or Agentforce add-on or Agentforce Foundations. Some template types need further add-ons.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/prompt-builder.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: 956855e343bb5770fd7613eea2453e96e84ecd1c
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:prompt-builder
+- kt:agentforce
+difficulty: 2
+created: '2026-11-09'
+status: active

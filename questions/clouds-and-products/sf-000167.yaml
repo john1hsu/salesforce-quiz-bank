@@ -1,0 +1,18 @@
+id: sf-000167
+product_area: clouds-and-products
+true_statement: In Lightning Knowledge, kinds of articles are modeled as record types on Knowledge__kav instead of separate article type objects.
+false_statement: In Lightning Knowledge, each kind of article gets its own object pair, such as FAQ__kav, instead of a record type.
+explanation: Lightning Knowledge keeps all articles in Knowledge__ka and Knowledge__kav and uses record types to vary layouts. Separate per-type object pairs were the Classic article-type model.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/knowledge-base.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: ddbf2100198f23b36c710c436fa0051355d1923a
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:knowledge-base
+- kt:record-types
+difficulty: 2
+created: '2026-11-09'
+status: active

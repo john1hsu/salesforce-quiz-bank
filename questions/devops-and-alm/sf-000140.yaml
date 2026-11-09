@@ -1,0 +1,18 @@
+id: sf-000140
+product_area: devops-and-alm
+true_statement: The Dev Hub setting that enables source tracking in sandboxes applies only to sandboxes created or refreshed after it is turned on.
+false_statement: The Dev Hub setting that enables source tracking in sandboxes applies at once to all existing sandboxes, with no refresh needed.
+explanation: The org-wide switch in production affects sandboxes created or refreshed afterward, so existing ones need a refresh. The per-sandbox setting is the alternative and tracks only later changes.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/source-tracking.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: 09b74fe773746cf219643f3ea0aaecc696c1698d
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:source-tracking
+- kt:dev-hub
+difficulty: 2
+created: '2026-11-09'
+status: active

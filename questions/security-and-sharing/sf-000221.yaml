@@ -1,0 +1,20 @@
+id: sf-000221
+product_area: security-and-sharing
+true_statement: Restriction rules don't limit users with View All Data or View All Records, who still see every record.
+false_statement: Restriction rules also limit users with View All Data or View All Records, overriding those permissions.
+explanation: Broad permissions such as View All Data, View All Records and Modify All bypass restriction rules, as does code running in system mode.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/restriction-rules.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: d9a8f7963484c6901a6405cd4ecb618614748e16
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:sharing-and-visibility-architect-certification
+concepts:
+- kt:restriction-rules
+- kt:salesforce-sharing-model
+difficulty: 2
+created: '2026-11-09'
+status: active

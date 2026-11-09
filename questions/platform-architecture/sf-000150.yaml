@@ -1,0 +1,18 @@
+id: sf-000150
+product_area: platform-architecture
+true_statement: If more than 100 records in a Bulk API batch can't get locks, the rest of the batch is requeued, up to 10 times before it fails.
+false_statement: If more than 100 records in a Bulk API batch can't get locks, the rest of the batch is requeued, up to 3 times before it fails.
+explanation: Bulk API retries the remainder of a lock-starved batch as many as 10 times before marking it permanently failed. Individual failed records are not retried and must be resubmitted.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/record-locking.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: a1bfd58571dd2e3e4bcf995bb3573c55d38772b8
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:record-locking
+- kt:bulk-api-2
+difficulty: 3
+created: '2026-11-09'
+status: active

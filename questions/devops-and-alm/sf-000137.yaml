@@ -1,0 +1,18 @@
+id: sf-000137
+product_area: devops-and-alm
+true_statement: Several managed 2GP packages can share one namespace, and Salesforce advises using a single namespace across a partner's packages.
+false_statement: Each managed 2GP package needs its own namespace, so a partner's packages can't share one namespace.
+explanation: Sharing a namespace across packages is a key change from 1GP. Salesforce recommends one namespace for all of a partner's packages because it simplifies sharing code between them.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/second-generation-managed-packages.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: fc9e434b322242a21c86a897c6c19a3701a2b2eb
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:second-generation-managed-packages
+- kt:namespace-registry
+difficulty: 2
+created: '2026-11-09'
+status: active

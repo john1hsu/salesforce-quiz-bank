@@ -1,0 +1,18 @@
+id: sf-000156
+product_area: public-sector-and-compliance
+true_statement: A DISA provisional authorization is a pre-approval; each mission owner's authorizing official still issues its own Authority to Operate.
+false_statement: A DISA provisional authorization serves as the Authority to Operate for every DoD mission owner using that cloud offering.
+explanation: DISA grants a provisional authorization to a specific cloud offering. Each mission owner still assesses its own risk and grants an ATO, so an org inherits controls but isn't authorized on its own.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/il4-and-il5.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: fa0412943d3153d59b80e44bdbe28d83c665154f
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:il4-and-il5
+- kt:dod-cloud-computing-srg
+difficulty: 2
+created: '2026-11-09'
+status: active

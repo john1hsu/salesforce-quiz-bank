@@ -1,0 +1,18 @@
+id: sf-000212
+product_area: platform-architecture
+true_statement: Skinny tables are limited to 200 columns and are copied automatically only to Full sandboxes.
+false_statement: Skinny tables are limited to 200 columns and are copied automatically to every sandbox type.
+explanation: Skinny tables are created by Salesforce Support and only Full sandboxes receive them automatically. They also can't include fields from other objects.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/large-data-volumes.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: 46e37c7cf6a3391c47387e71aef57b63f0bd50ec
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:large-data-volumes
+- kt:skinny-tables
+difficulty: 3
+created: '2026-11-09'
+status: active

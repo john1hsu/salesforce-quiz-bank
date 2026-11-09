@@ -1,0 +1,19 @@
+id: sf-000158
+product_area: architecture-practice
+true_statement: Salesforce's data-integration guidance defaults to minimising replication, accessing data in place through virtualization such as Salesforce Connect.
+false_statement: Salesforce's data-integration guidance defaults to replicating external data into the org, using virtualization such as Salesforce Connect only as a last resort.
+explanation: The guide asks each project to name a source of truth and avoid copying records that don't need to live in the org; virtualization is the preferred way to reach them.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/data-architecture.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: 83562d834668626ff9f3600108892c8ed1629a91
+verified_release: Winter '27
+feature_status: concept
+certs:
+- kt:platform-data-architect-certification
+concepts:
+- kt:data-architecture
+difficulty: 2
+created: '2026-11-09'
+status: active

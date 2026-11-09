@@ -1,0 +1,20 @@
+id: sf-000190
+product_area: identity
+true_statement: RFC 9700 requires public OAuth clients to use PKCE with the S256 method.
+false_statement: RFC 9700 requires public OAuth clients to use PKCE with the plain method.
+explanation: The 2025 OAuth security best practice makes PKCE with S256 mandatory for public clients. The plain method is weaker and is forbidden outright in the OAuth 2.1 draft.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/oauth-2-0.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: 81b04062fb128dda06227ecbd3f47a5de95210d9
+verified_release: Winter '27
+feature_status: concept
+certs:
+- kt:identity-and-access-management-architect-certification
+concepts:
+- kt:oauth-2-0
+- kt:integration-security
+difficulty: 3
+created: '2026-11-09'
+status: active

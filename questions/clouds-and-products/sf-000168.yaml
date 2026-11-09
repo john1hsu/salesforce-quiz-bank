@@ -1,0 +1,17 @@
+id: sf-000168
+product_area: clouds-and-products
+true_statement: All internal users can read Knowledge articles by default, but creating and editing them requires the Knowledge User license.
+false_statement: All internal users can create and edit Knowledge articles by default, but reading them requires the Knowledge User license.
+explanation: Reading is open to internal users; authoring needs the Knowledge User license, enabled with a checkbox on the user record.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/knowledge-base.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: ddbf2100198f23b36c710c436fa0051355d1923a
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:knowledge-base
+difficulty: 1
+created: '2026-11-09'
+status: active

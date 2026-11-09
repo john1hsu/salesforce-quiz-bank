@@ -1,0 +1,19 @@
+id: sf-000220
+product_area: security-and-sharing
+true_statement: An object can have two active restriction rules in Enterprise and Developer editions, and five in Performance and Unlimited.
+false_statement: An object can have five active restriction rules in Enterprise and Developer editions, and ten in Performance and Unlimited.
+explanation: The per-object cap is two in Enterprise and Developer and five in Performance and Unlimited. For any one user, only one restriction or scoping rule per object should apply.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/restriction-rules.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: d9a8f7963484c6901a6405cd4ecb618614748e16
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:sharing-and-visibility-architect-certification
+concepts:
+- kt:restriction-rules
+difficulty: 2
+created: '2026-11-09'
+status: active

@@ -1,0 +1,18 @@
+id: sf-000175
+product_area: data-model
+true_statement: Enabling person accounts requires the organization-wide default for contacts to be Controlled by Parent.
+false_statement: Enabling person accounts requires the organization-wide default for contacts to be Private.
+explanation: Contacts must inherit access from their account before person accounts can be turned on. The other prerequisites are a business account record type and Read on contacts wherever profiles can read accounts.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/person-accounts.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: 1443fb89fa7612a70c632bfdd59a4aff0613ae84
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:person-accounts
+- kt:organization-wide-defaults
+difficulty: 2
+created: '2026-11-09'
+status: active

@@ -1,0 +1,20 @@
+id: sf-000203
+product_area: identity
+true_statement: A user's Federation ID must be unique within an org, and a user present in several orgs should carry the same value in each.
+false_statement: A user's Federation ID must be unique across all Salesforce orgs, so a user present in several orgs needs a different value in each.
+explanation: Uniqueness is enforced per org. Reusing the same Federation ID for one person across orgs lets a single IdP identity sign in everywhere.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/single-sign-on-saml.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: 8a793970d66ce3c3639747f8b74900f12444d70a
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:identity-and-access-management-architect-certification
+concepts:
+- kt:single-sign-on-saml
+- kt:salesforce-identity
+difficulty: 2
+created: '2026-11-09'
+status: active

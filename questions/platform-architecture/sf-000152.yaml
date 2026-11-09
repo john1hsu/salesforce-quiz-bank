@@ -1,0 +1,18 @@
+id: sf-000152
+product_area: platform-architecture
+true_statement: Metadata is copied into every sandbox, but data is copied only into Full and Partial Copy sandboxes.
+false_statement: Both metadata and data are copied into every sandbox, including Developer and Developer Pro sandboxes.
+explanation: Metadata and data follow different lifecycles. Every sandbox gets the org's metadata, while only Full and Partial Copy sandboxes receive data.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/salesforce-platform.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: 175348496e14b3e99b82eaa2639eb69dc26050fd
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:salesforce-platform
+- kt:metadata-driven-architecture
+difficulty: 1
+created: '2026-11-09'
+status: active

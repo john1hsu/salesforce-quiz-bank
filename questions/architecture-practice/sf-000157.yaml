@@ -1,0 +1,21 @@
+id: sf-000157
+product_area: architecture-practice
+true_statement: Salesforce's large-data-volume guidance advises keeping any one user from owning more than 10,000 records.
+false_statement: Salesforce's large-data-volume guidance advises keeping any one user from owning more than 100,000 records.
+explanation: Ownership concentration drives sharing computation and locking cost, so the guidance sets 10,000 records per owner, the same figure it uses for children under one parent.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/data-architecture.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: 83562d834668626ff9f3600108892c8ed1629a91
+verified_release: Winter '27
+feature_status: concept
+certs:
+- kt:platform-data-architect-certification
+concepts:
+- kt:data-architecture
+- kt:large-data-volumes
+- kt:data-skew
+difficulty: 2
+created: '2026-11-09'
+status: active

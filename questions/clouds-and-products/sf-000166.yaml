@@ -1,0 +1,17 @@
+id: sf-000166
+product_area: clouds-and-products
+true_statement: Once Lightning Knowledge is enabled in an org, it can't be turned off, so it's wise to try it in a sandbox first.
+false_statement: Once Lightning Knowledge is enabled in an org, it can be switched back to Classic Knowledge from Knowledge Settings at any time.
+explanation: Enabling Lightning Knowledge is a one-way switch. Because it can't be undone, Salesforce suggests testing it in a sandbox before production.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/knowledge-base.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: ddbf2100198f23b36c710c436fa0051355d1923a
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:knowledge-base
+difficulty: 2
+created: '2026-11-09'
+status: active

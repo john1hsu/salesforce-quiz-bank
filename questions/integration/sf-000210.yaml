@@ -1,0 +1,18 @@
+id: sf-000210
+product_area: integration
+true_statement: 'Pub/Sub API subscriptions are pull-based: the client sends a FetchRequest saying how many events it can handle.'
+false_statement: 'Pub/Sub API subscriptions are push-based: the server streams each new event as soon as it is published, without client flow control.'
+explanation: Clients request a number of events and the server delivers up to that count before waiting for the next request. This flow control protects slow consumers during spikes.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/pub-sub-api.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: 95f34ed5d5cea0802997f9f7dc1f447a68cf8a82
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:pub-sub-api
+- kt:event-driven-architecture
+difficulty: 2
+created: '2026-11-09'
+status: active

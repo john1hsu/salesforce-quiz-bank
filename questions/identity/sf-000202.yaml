@@ -1,0 +1,19 @@
+id: sf-000202
+product_area: identity
+true_statement: A Salesforce SAML configuration can match the incoming user by Salesforce username, Federation ID or User ID.
+false_statement: A Salesforce SAML configuration can match the incoming user by email address, Federation ID or employee number.
+explanation: 'The SAML Identity Type setting offers exactly three keys: username, Federation ID and User ID. The value is read from the NameIdentifier or a named attribute.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/single-sign-on-saml.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: 8a793970d66ce3c3639747f8b74900f12444d70a
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:identity-and-access-management-architect-certification
+concepts:
+- kt:single-sign-on-saml
+difficulty: 2
+created: '2026-11-09'
+status: active

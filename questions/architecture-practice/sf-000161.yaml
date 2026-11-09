@@ -1,0 +1,22 @@
+id: sf-000161
+product_area: architecture-practice
+true_statement: System Architect is granted after passing Platform Developer, Development Lifecycle and Deployment Architect, Identity and Access Management Architect and Integration Architect.
+false_statement: System Architect is granted after passing Platform Developer, Development Lifecycle and Deployment Architect, Identity and Access Management Architect and Platform Data Architect.
+explanation: The System Architect stack ends with Integration Architect, matching its focus on off-platform systems. Platform Data Architect belongs to the Application Architect stack instead.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/salesforce-architect.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: 0b8d93a891e6cec8da8c44ec465606e58e1042b7
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:application-architect-certification
+- kt:system-architect-certification
+- kt:certified-technical-architect
+concepts:
+- kt:salesforce-architect
+- kt:system-architect-certification
+difficulty: 2
+created: '2026-11-09'
+status: active

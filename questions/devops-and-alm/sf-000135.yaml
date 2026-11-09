@@ -1,0 +1,18 @@
+id: sf-000135
+product_area: devops-and-alm
+true_statement: Deleting a scratch org frees an active slot, but its creation still counts against the Dev Hub's daily allocation.
+false_statement: Deleting a scratch org frees an active slot and also refunds its creation from the Dev Hub's daily allocation.
+explanation: Active and daily limits are tracked separately. The daily count is a rolling 24-hour tally of successful creations, so deletion doesn't give it back.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/scratch-orgs.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: f59d0ef682454db82485bb43fd4b8c7bf9a1ed54
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:scratch-orgs
+- kt:scratch-org-allocations
+difficulty: 3
+created: '2026-11-09'
+status: active

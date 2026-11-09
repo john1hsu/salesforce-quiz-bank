@@ -1,0 +1,21 @@
+id: sf-000204
+product_area: identity
+true_statement: In a Salesforce SAML configuration, the Entity ID must match an Audience value in the IdP's assertion.
+false_statement: In a Salesforce SAML configuration, the Entity ID must match the Issuer element in the IdP's assertion.
+explanation: The Entity ID identifies the org, usually its My Domain URL, and is checked against the assertion's Audience. The Issuer field is the one that must match the IdP's Issuer element.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/single-sign-on-saml.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: 8a793970d66ce3c3639747f8b74900f12444d70a
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:identity-and-access-management-architect-certification
+concepts:
+- kt:single-sign-on-saml
+- kt:my-domain
+- kt:saml-2-0
+difficulty: 3
+created: '2026-11-09'
+status: active

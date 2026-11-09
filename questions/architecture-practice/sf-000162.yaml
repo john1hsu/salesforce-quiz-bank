@@ -1,0 +1,23 @@
+id: sf-000162
+product_area: architecture-practice
+true_statement: In the CTA review board exam, candidates have 180 minutes to design a solution and 45 minutes to present it.
+false_statement: In the CTA review board exam, candidates have 60 minutes to design a solution and 30 minutes to present it.
+explanation: The full review board exam allows 180 minutes of design and 45 of presentation. The 60 and 30 minute timings belong to the shorter online review board evaluation that comes first.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/salesforce-architect.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: 0b8d93a891e6cec8da8c44ec465606e58e1042b7
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:application-architect-certification
+- kt:system-architect-certification
+- kt:certified-technical-architect
+concepts:
+- kt:salesforce-architect
+- kt:certified-technical-architect
+- kt:cta-review-board
+difficulty: 3
+created: '2026-11-09'
+status: active

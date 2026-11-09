@@ -1,0 +1,18 @@
+id: sf-000155
+product_area: public-sector-and-compliance
+true_statement: At IL5, cloud providers must physically separate federal tenants from non-federal tenants such as state and local governments.
+false_statement: At IL5, cloud providers may host federal tenants alongside state and local governments using only logical separation.
+explanation: IL5 accepts logical separation between DoD and other federal tenants, but non-federal tenants must be physically separated. Shared hardware with virtual separation is allowed only at IL4.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/il4-and-il5.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: fa0412943d3153d59b80e44bdbe28d83c665154f
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:il4-and-il5
+- kt:dod-cloud-computing-srg
+difficulty: 3
+created: '2026-11-09'
+status: active

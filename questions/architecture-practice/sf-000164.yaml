@@ -1,0 +1,18 @@
+id: sf-000164
+product_area: architecture-practice
+true_statement: Well-Architected guidance warns that teams who never budget for debt repayment face a large refactoring project every 18 to 24 months.
+false_statement: Well-Architected guidance warns that teams who never budget for debt repayment face a large refactoring project every 5 to 7 years.
+explanation: When debt goes unrecorded and sprints leave no room to fix it, the backlog resurfaces as a big refactor roughly every 18 to 24 months. Tracking debt and paying it down continuously avoids that.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/technical-debt-in-salesforce.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: 49b363441a77832e79e27c71a56a2e13cbc544af
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:technical-debt-in-salesforce
+- kt:well-architected-framework
+difficulty: 2
+created: '2026-11-09'
+status: active

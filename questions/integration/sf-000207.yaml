@@ -1,0 +1,17 @@
+id: sf-000207
+product_area: integration
+true_statement: A Bulk API 2.0 ingest job can stay open for at most 24 hours, and its results can be retrieved for 7 days after completion.
+false_statement: A Bulk API 2.0 ingest job can stay open for at most 7 days, and its results can be retrieved for 24 hours after completion.
+explanation: Open jobs must be closed within a day. Once a job finishes, its success and failure results stay available for seven days before the job is deleted.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/bulk-api-2.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: 459ea9ca158f7b5b11ff7265f013487dbef864bc
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:bulk-api-2
+difficulty: 2
+created: '2026-11-09'
+status: active

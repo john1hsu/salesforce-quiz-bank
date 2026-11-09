@@ -1,0 +1,18 @@
+id: sf-000205
+product_area: integration
+true_statement: A Bulk API 2.0 ingest job accepts up to 150 MB of base64-encoded CSV, so Salesforce suggests raw uploads under 100 MB.
+false_statement: A Bulk API 2.0 ingest job accepts up to 1 GB of base64-encoded CSV, so Salesforce suggests raw uploads under 750 MB.
+explanation: The cap is 150 MB after base64 encoding, which inflates data by about half. Keeping the raw file under 100 MB leaves room for that growth.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/bulk-api-2.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: 459ea9ca158f7b5b11ff7265f013487dbef864bc
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:bulk-api-2
+- kt:bulk-api-allocations
+difficulty: 2
+created: '2026-11-09'
+status: active

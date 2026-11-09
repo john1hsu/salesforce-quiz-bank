@@ -1,0 +1,20 @@
+id: sf-000198
+product_area: identity
+true_statement: An Auth. Provider's consumer secret is replaced with a placeholder when retrieved through the Metadata API.
+false_statement: An Auth. Provider's consumer secret is retrieved in plain text through the Metadata API, so it deploys with the definition.
+explanation: Since November 2022 retrievals mask the secret. Deployments have to restore it or it must be re-entered in Setup.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/openid-connect-authentication-providers.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: f2b451fb263b9d541c8fd6966f20045f9573db1f
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:identity-and-access-management-architect-certification
+concepts:
+- kt:openid-connect-authentication-providers
+- kt:metadata-api
+difficulty: 2
+created: '2026-11-09'
+status: active

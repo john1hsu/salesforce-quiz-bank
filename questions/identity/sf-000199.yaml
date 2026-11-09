@@ -1,0 +1,19 @@
+id: sf-000199
+product_area: identity
+true_statement: Lightning Experience users get the App Launcher by default, while Classic users need the Use Identity Features permission.
+false_statement: Classic users get the App Launcher by default, while Lightning Experience users need the Use Identity Features permission.
+explanation: The App Launcher is built into Lightning Experience. In Salesforce Classic it appears only for users granted Use Identity Features.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/salesforce-identity.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: 408ae63d487cdb21798c8b71af5b0e324614619b
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:identity-and-access-management-architect-certification
+concepts:
+- kt:salesforce-identity
+difficulty: 2
+created: '2026-11-09'
+status: active

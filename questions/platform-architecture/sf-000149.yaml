@@ -1,0 +1,18 @@
+id: sf-000149
+product_area: platform-architecture
+true_statement: Making a callout automatically releases any record locks taken with SOQL FOR UPDATE in that transaction.
+false_statement: Making a callout keeps record locks taken with SOQL FOR UPDATE in place until the transaction commits.
+explanation: A callout drops FOR UPDATE locks and logs a FOR_UPDATE_LOCKS_RELEASE event, so a lock, callout, update sequence loses its protection. Keep callouts out of the locked window.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/record-locking.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: a1bfd58571dd2e3e4bcf995bb3573c55d38772b8
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:record-locking
+- kt:soql
+difficulty: 3
+created: '2026-11-09'
+status: active

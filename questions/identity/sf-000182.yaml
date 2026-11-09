@@ -1,0 +1,20 @@
+id: sf-000182
+product_area: identity
+true_statement: If no default account is set for site self-registration and person accounts are enabled, Salesforce creates person accounts for new users.
+false_statement: If no default account is set for site self-registration, Salesforce puts every new user's contact under one shared placeholder account it creates.
+explanation: Self-registration normally links new contacts to a configured default account. With none set, Salesforce falls back to person accounts, but only when the org has them enabled.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/experience-cloud-identity.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: d40a8bfa9738e7e41118027e8245ccb7dcf6b5ee
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:identity-and-access-management-architect-certification
+concepts:
+- kt:experience-cloud-identity
+- kt:person-accounts
+difficulty: 3
+created: '2026-11-09'
+status: active

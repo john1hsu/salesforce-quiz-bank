@@ -1,0 +1,17 @@
+id: sf-000145
+product_area: platform-architecture
+true_statement: During a scheduled Hyperforce migration, a production org is read-only for about three hours.
+false_statement: During a scheduled Hyperforce migration, a production org is read-only for about 24 hours.
+explanation: The cutover makes production read-only for roughly three hours inside the Preferred Maintenance Window. Sandboxes are fully inaccessible during their window.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/hyperforce.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: fe8a9b039e4eef4b8cea4d69d39b6ca1579f98ad
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:hyperforce
+difficulty: 2
+created: '2026-11-09'
+status: active

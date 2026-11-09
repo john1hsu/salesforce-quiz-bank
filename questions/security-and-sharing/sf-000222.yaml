@@ -1,0 +1,19 @@
+id: sf-000222
+product_area: security-and-sharing
+true_statement: Restriction rule criteria support only the equals operator, with no AND, OR or formula logic.
+false_statement: Restriction rule criteria support equals and not-equals operators combined with AND and OR logic.
+explanation: Each criterion is a single-field equality check, optionally with comma-separated values. Complex conditions usually need a helper field kept up to date by automation.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/restriction-rules.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: d9a8f7963484c6901a6405cd4ecb618614748e16
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:sharing-and-visibility-architect-certification
+concepts:
+- kt:restriction-rules
+difficulty: 2
+created: '2026-11-09'
+status: active

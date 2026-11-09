@@ -1,0 +1,18 @@
+id: sf-000213
+product_area: platform-architecture
+true_statement: To delete a million or more records, Salesforce's LDV guide recommends the hard-delete option of Bulk API or Bulk API 2.0.
+false_statement: To delete a million or more records, Salesforce's LDV guide recommends a normal delete and letting the Recycle Bin empty itself.
+explanation: Soft-deleted rows stay in the Recycle Bin and still weigh on performance. Hard delete skips that, and children should be deleted before parents.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/large-data-volumes.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: 46e37c7cf6a3391c47387e71aef57b63f0bd50ec
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:large-data-volumes
+- kt:bulk-api-2
+difficulty: 2
+created: '2026-11-09'
+status: active

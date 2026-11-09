@@ -1,0 +1,20 @@
+id: sf-000223
+product_area: security-and-sharing
+true_statement: Guest user sharing rules can grant only Read Only access to unauthenticated site visitors.
+false_statement: Guest user sharing rules can grant Read Only or Read/Write access to unauthenticated site visitors.
+explanation: Guest rules are limited to Read Only. With secure guest record access on, they are the only way to share records with guests, and they expose every matching record at once.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/sharing-rules.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: 90e8fac7f088fce092555794d976b200923c442a
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:sharing-and-visibility-architect-certification
+concepts:
+- kt:sharing-rules
+- kt:experience-cloud
+difficulty: 2
+created: '2026-11-09'
+status: active

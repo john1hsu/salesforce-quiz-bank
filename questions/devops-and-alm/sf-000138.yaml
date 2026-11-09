@@ -1,0 +1,17 @@
+id: sf-000138
+product_area: devops-and-alm
+true_statement: A beta version of a managed 2GP package can't be upgraded, so betas should be kept out of sandboxes in the release pipeline.
+false_statement: A beta version of a managed 2GP package can be upgraded in place to a released version, so betas are safe in pipeline sandboxes.
+explanation: Package versions start as beta and must be promoted to become managed-released. An installed beta has no upgrade path, which makes it a dead end in any org you plan to keep.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/second-generation-managed-packages.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: fc9e434b322242a21c86a897c6c19a3701a2b2eb
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:second-generation-managed-packages
+difficulty: 2
+created: '2026-11-09'
+status: active

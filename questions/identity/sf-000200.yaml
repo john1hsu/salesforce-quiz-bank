@@ -1,0 +1,20 @@
+id: sf-000200
+product_area: identity
+true_statement: Each Developer Edition org comes with five External Identity licenses.
+false_statement: Each Developer Edition org comes with 100 External Identity licenses.
+explanation: Developer Edition includes five External Identity licenses for trying out customer identity. In production they are sold in blocks of active users.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/salesforce-identity.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: 408ae63d487cdb21798c8b71af5b0e324614619b
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:identity-and-access-management-architect-certification
+concepts:
+- kt:salesforce-identity
+- kt:external-identity-license
+difficulty: 2
+created: '2026-11-09'
+status: active

@@ -1,0 +1,18 @@
+id: sf-000130
+product_area: devops-and-alm
+true_statement: Dev Hub can be enabled in Developer, Enterprise, Performance and Unlimited editions, but it can't be enabled in a sandbox.
+false_statement: Dev Hub can be enabled in a full sandbox as well as in Developer, Enterprise, Performance and Unlimited editions.
+explanation: Dev Hub must live in a production or Developer Edition org of a supported edition; sandboxes are excluded. It also can't be turned off once enabled.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/salesforce-dx.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: aa35c7ef6a9ead90cd535a44cffcbc26ceea282c
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:salesforce-dx
+- kt:dev-hub
+difficulty: 2
+created: '2026-11-09'
+status: active

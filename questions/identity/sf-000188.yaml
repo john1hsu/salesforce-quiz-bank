@@ -1,0 +1,19 @@
+id: sf-000188
+product_area: identity
+true_statement: After a My Domain rename, only the most recent previous name redirects, so successive renames break older links.
+false_statement: After a My Domain rename, every previous name keeps redirecting, so successive renames never break older links.
+explanation: Salesforce redirects just the last former hostname. Renaming twice leaves the oldest URLs broken, which is why hard-coded URLs need review.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/my-domain.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: f144a42e609b62eda3d1527659367430917ce493
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:identity-and-access-management-architect-certification
+concepts:
+- kt:my-domain
+difficulty: 2
+created: '2026-11-09'
+status: active

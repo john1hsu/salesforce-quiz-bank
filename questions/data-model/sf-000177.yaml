@@ -1,0 +1,18 @@
+id: sf-000177
+product_area: data-model
+true_statement: In Lightning lead conversion, a lead with a blank Company becomes a person account, and one with a Company becomes a business account.
+false_statement: In Lightning lead conversion, a lead with a filled-in Company becomes a person account, and one with a blank Company becomes a business account.
+explanation: 'The Company field decides the account type on conversion: blank means an individual, so a person account is created. That''s why separate lead record types and layouts are advised.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/person-accounts.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: 1443fb89fa7612a70c632bfdd59a4aff0613ae84
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:person-accounts
+- kt:sales-cloud
+difficulty: 2
+created: '2026-11-09'
+status: active

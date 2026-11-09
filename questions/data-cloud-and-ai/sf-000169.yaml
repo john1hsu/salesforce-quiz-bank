@@ -1,0 +1,17 @@
+id: sf-000169
+product_area: data-cloud-and-ai
+true_statement: A Field Generation prompt template reaches users only after Dynamic Forms is enabled, the template is selected on the field and the page assigned.
+false_statement: A Field Generation prompt template reaches users as soon as it is activated, with no change to the record page needed.
+explanation: Field Generation templates surface through the record page, so the page must use Dynamic Forms with the template set on the field. Users then click the Einstein icon to get a suggestion.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/prompt-builder.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: 956855e343bb5770fd7613eea2453e96e84ecd1c
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:prompt-builder
+difficulty: 2
+created: '2026-11-09'
+status: active

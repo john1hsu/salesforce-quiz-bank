@@ -1,0 +1,18 @@
+id: sf-000163
+product_area: architecture-practice
+true_statement: Salesforce Optimizer flags objects with more than 350 fields, although the per-object maximum can reach 800 depending on edition.
+false_statement: Salesforce Optimizer flags objects with more than 100 fields, although the per-object maximum can reach 800 depending on edition.
+explanation: Optimizer treats 350 fields on one object as a warning sign well below the hard ceiling of up to 800. It also flags piles of sharing rules, flows and multiple triggers on one object.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/technical-debt-in-salesforce.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: 49b363441a77832e79e27c71a56a2e13cbc544af
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:technical-debt-in-salesforce
+- kt:salesforce-optimizer
+difficulty: 2
+created: '2026-11-09'
+status: active

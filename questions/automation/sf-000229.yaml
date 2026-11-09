@@ -1,0 +1,18 @@
+id: sf-000229
+product_area: automation
+true_statement: Once a classic approval process has been activated, you can't add, delete or reorder its steps, even after deactivating it.
+false_statement: Once a classic approval process has been activated, you can add, delete or reorder its steps as soon as you deactivate it.
+explanation: Activation permanently fixes a classic process's step structure and reject or skip behaviour; deactivating doesn't reopen it. Testing in a sandbox first avoids having to rebuild the process.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/approval-processes.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: 8bc55a870eaf3db16a7eabed9253f3db32451555
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:approval-processes
+- kt:process-automation
+difficulty: 2
+created: '2026-11-09'
+status: active

@@ -1,0 +1,20 @@
+id: sf-000195
+product_area: identity
+true_statement: In the Salesforce client credentials flow, every access token carries the permissions of the app's designated run-as user.
+false_statement: In the Salesforce client credentials flow, every access token carries the permissions of the admin who approved the app.
+explanation: The app is configured with a run-as user and tokens act with that user's access. Salesforce advises a dedicated integration user limited by permission sets.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/oauth-2-flows-in-salesforce.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: 6e5107a80e469eb2aba65213871d8b97bf3a2dc9
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:identity-and-access-management-architect-certification
+concepts:
+- kt:oauth-2-flows-in-salesforce
+- kt:external-client-apps
+difficulty: 2
+created: '2026-11-09'
+status: active

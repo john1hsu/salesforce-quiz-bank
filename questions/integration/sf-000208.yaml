@@ -1,0 +1,17 @@
+id: sf-000208
+product_area: integration
+true_statement: A Pub/Sub API subscribe call can request at most 100 events in total across its fetch requests.
+false_statement: A Pub/Sub API subscribe call can request at most 2,000 events in total across its fetch requests.
+explanation: Requests above 100 events are treated as 100. The client asks for more once it has processed what it received.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/pub-sub-api.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: 95f34ed5d5cea0802997f9f7dc1f447a68cf8a82
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:pub-sub-api
+difficulty: 2
+created: '2026-11-09'
+status: active

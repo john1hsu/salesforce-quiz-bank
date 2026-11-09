@@ -1,0 +1,18 @@
+id: sf-000142
+product_area: integration
+true_statement: On an external credential, a named principal uses one identity for the whole org, while a per-user principal authenticates each user individually.
+false_statement: On an external credential, a per-user principal uses one identity for the whole org, while a named principal authenticates each user individually.
+explanation: Named principals share a single org-wide identity; per-user principals hold each user's own authentication. Either way, the running user needs a mapped permission set or profile to call out.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/named-credentials.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: 2f3245201749e51bd50641a02a911dc856391bc0
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:named-credentials
+- kt:permission-sets
+difficulty: 2
+created: '2026-11-09'
+status: active

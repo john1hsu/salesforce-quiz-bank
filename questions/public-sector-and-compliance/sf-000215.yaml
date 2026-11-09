@@ -1,0 +1,19 @@
+id: sf-000215
+product_area: public-sector-and-compliance
+true_statement: Hyperforce Operating Zones are offered only on Hyperforce running on AWS.
+false_statement: Hyperforce Operating Zones are offered only on Hyperforce running on Google Cloud.
+explanation: The Operating Zone offering runs on the AWS substrate. Hyperforce on Google Cloud is a planned footprint, not where Operating Zones run.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/data-residency.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: 6f5b6bd27b20b7f7bccb8dc333d2c003dce3132e
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:data-residency
+- kt:hyperforce
+- kt:hyperforce-operating-zones
+difficulty: 2
+created: '2026-11-09'
+status: active

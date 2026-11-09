@@ -1,0 +1,18 @@
+id: sf-000216
+product_area: public-sector-and-compliance
+true_statement: The Hyperforce Switzerland Operating Zone keeps data in Switzerland but is supported by EU-based staff.
+false_statement: The Hyperforce Switzerland Operating Zone keeps data in Switzerland and is supported only by staff based in Switzerland.
+explanation: The Swiss zone provides in-country storage, while support comes from personnel in the EU. Customers with Swiss-only staffing needs should take that into account.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/data-residency.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: 6f5b6bd27b20b7f7bccb8dc333d2c003dce3132e
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:data-residency
+- kt:hyperforce-operating-zones
+difficulty: 3
+created: '2026-11-09'
+status: active

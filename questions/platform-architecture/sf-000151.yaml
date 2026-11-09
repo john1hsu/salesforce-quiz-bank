@@ -1,0 +1,17 @@
+id: sf-000151
+product_area: platform-architecture
+true_statement: In each seasonal release, Salesforce upgrades sandboxes 4 to 6 weeks before it upgrades production orgs.
+false_statement: In each seasonal release, Salesforce upgrades sandboxes 1 to 2 weeks after it upgrades production orgs.
+explanation: Sandboxes get the new release first, several weeks ahead of production, giving teams time to test. Customers can't choose their own upgrade date.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/salesforce-platform.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: 175348496e14b3e99b82eaa2639eb69dc26050fd
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:salesforce-platform
+difficulty: 1
+created: '2026-11-09'
+status: active

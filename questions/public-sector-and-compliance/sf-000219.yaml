@@ -1,0 +1,18 @@
+id: sf-000219
+product_area: public-sector-and-compliance
+true_statement: Salesforce warns that AppExchange apps generally fall outside its FedRAMP authorization boundary, even if built natively on the platform.
+false_statement: Salesforce states that natively built AppExchange apps automatically fall inside its FedRAMP authorization boundary.
+explanation: Authorization covers a specific offering and boundary. Installed apps, even native ones, usually aren't included and need separate review.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/fedramp.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: 76ad9b68fd57625188f033da8be450b0b84fc53a
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:fedramp
+- kt:government-cloud-plus
+difficulty: 2
+created: '2026-11-09'
+status: active

@@ -1,0 +1,18 @@
+id: sf-000131
+product_area: devops-and-alm
+true_statement: In a Salesforce DX project, custom objects are decomposed into subdirectories by default to ease navigation and reduce merge conflicts.
+false_statement: In a Salesforce DX project, custom objects stay as one large file by default and are decomposed only after opting in with sourceBehaviorOptions.
+explanation: Source format splits custom objects and their translations into subfolders out of the box. The opt-in sourceBehaviorOptions setting is for other types, such as permission sets and custom labels.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/salesforce-dx.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: aa35c7ef6a9ead90cd535a44cffcbc26ceea282c
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:salesforce-dx
+- kt:metadata-api
+difficulty: 2
+created: '2026-11-09'
+status: active

@@ -1,0 +1,19 @@
+id: sf-000194
+product_area: identity
+true_statement: The OAuth username-password flow is blocked by default in orgs created in Summer '23 or later, though it can be re-enabled.
+false_statement: The OAuth username-password flow is allowed by default in orgs created in Summer '23 or later, though admins can block it.
+explanation: Newer orgs start with the username-password flow blocked. Salesforce recommends keeping it and the user-agent flow blocked and using JWT bearer or client credentials instead.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/oauth-2-flows-in-salesforce.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: 6e5107a80e469eb2aba65213871d8b97bf3a2dc9
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:identity-and-access-management-architect-certification
+concepts:
+- kt:oauth-2-flows-in-salesforce
+difficulty: 2
+created: '2026-11-09'
+status: active

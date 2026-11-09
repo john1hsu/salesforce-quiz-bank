@@ -1,0 +1,18 @@
+id: sf-000133
+product_area: devops-and-alm
+true_statement: A scratch org's lifespan can be set from 1 to 30 days with --duration-days, and it defaults to 7 days.
+false_statement: A scratch org's lifespan can be set from 1 to 90 days with --duration-days, and it defaults to 30 days.
+explanation: The CLI accepts a duration between 1 and 30 days and uses 7 when none is given. After expiry the org is gone for good.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/scratch-orgs.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: f59d0ef682454db82485bb43fd4b8c7bf9a1ed54
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:scratch-orgs
+- kt:salesforce-cli
+difficulty: 2
+created: '2026-11-09'
+status: active

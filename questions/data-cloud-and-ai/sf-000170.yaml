@@ -1,0 +1,18 @@
+id: sf-000170
+product_area: data-cloud-and-ai
+true_statement: Apex grounding for a prompt template is an @InvocableMethod whose capabilityType matches the template type.
+false_statement: Apex grounding for a prompt template is an @AuraEnabled method whose capabilityType matches the template type.
+explanation: Grounding Apex uses an invocable method that takes a list of requests and returns a list of responses, with capabilityType tying it to the template type. It must be deployed before it shows up as a resource.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/prompt-builder.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: 956855e343bb5770fd7613eea2453e96e84ecd1c
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:prompt-builder
+- kt:apex
+difficulty: 3
+created: '2026-11-09'
+status: active

@@ -1,0 +1,18 @@
+id: sf-000146
+product_area: platform-architecture
+true_statement: On Hyperforce, mission-critical services and data are replicated across at least three availability zones.
+false_statement: On Hyperforce, mission-critical services and data are replicated across at least two availability zones.
+explanation: Hyperforce's resilience design keeps critical services and data in a minimum of three availability zones, and backups go to other Hyperforce instances.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/hyperforce.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: fe8a9b039e4eef4b8cea4d69d39b6ca1579f98ad
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:hyperforce
+- kt:salesforce-platform
+difficulty: 2
+created: '2026-11-09'
+status: active

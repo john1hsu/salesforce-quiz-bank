@@ -1,7 +1,7 @@
 {
  "version": 1,
- "count": 129,
- "active": 129,
+ "count": 229,
+ "active": 229,
  "questions": [
   {
    "id": "sf-000001",
@@ -2183,6 +2183,1768 @@
    "difficulty": 2,
    "status": "active",
    "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/dev-hub.md"
+  },
+  {
+   "id": "sf-000130",
+   "area": "devops-and-alm",
+   "t": "Dev Hub can be enabled in Developer, Enterprise, Performance and Unlimited editions, but it can't be enabled in a sandbox.",
+   "f": "Dev Hub can be enabled in a full sandbox as well as in Developer, Enterprise, Performance and Unlimited editions.",
+   "x": "Dev Hub must live in a production or Developer Edition org of a supported edition; sandboxes are excluded. It also can't be turned off once enabled.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:salesforce-dx",
+    "kt:dev-hub"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/salesforce-dx.md"
+  },
+  {
+   "id": "sf-000131",
+   "area": "devops-and-alm",
+   "t": "In a Salesforce DX project, custom objects are decomposed into subdirectories by default to ease navigation and reduce merge conflicts.",
+   "f": "In a Salesforce DX project, custom objects stay as one large file by default and are decomposed only after opting in with sourceBehaviorOptions.",
+   "x": "Source format splits custom objects and their translations into subfolders out of the box. The opt-in sourceBehaviorOptions setting is for other types, such as permission sets and custom labels.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:salesforce-dx",
+    "kt:metadata-api"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/salesforce-dx.md"
+  },
+  {
+   "id": "sf-000132",
+   "area": "devops-and-alm",
+   "t": "In sfdx-project.json, only one packageDirectories entry can be the default, and that directory receives retrieved changes.",
+   "f": "In sfdx-project.json, several packageDirectories entries can be marked default, and retrieved changes are split across them.",
+   "x": "The packageDirectories list is required and allows exactly one default directory. That default gets retrieved source and is used for second-generation packages.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:salesforce-dx",
+    "kt:salesforce-cli"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/salesforce-dx.md"
+  },
+  {
+   "id": "sf-000133",
+   "area": "devops-and-alm",
+   "t": "A scratch org's lifespan can be set from 1 to 30 days with --duration-days, and it defaults to 7 days.",
+   "f": "A scratch org's lifespan can be set from 1 to 90 days with --duration-days, and it defaults to 30 days.",
+   "x": "The CLI accepts a duration between 1 and 30 days and uses 7 when none is given. After expiry the org is gone for good.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:scratch-orgs",
+    "kt:salesforce-cli"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/scratch-orgs.md"
+  },
+  {
+   "id": "sf-000134",
+   "area": "devops-and-alm",
+   "t": "An Enterprise Edition Dev Hub allows 40 active scratch orgs and 80 scratch org creations per day.",
+   "f": "An Enterprise Edition Dev Hub allows 100 active scratch orgs and 200 scratch org creations per day.",
+   "x": "Enterprise Dev Hubs get 40 active and 80 daily. The 100 active and 200 daily allocation belongs to Unlimited and Performance editions.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:scratch-orgs",
+    "kt:dev-hub",
+    "kt:scratch-org-allocations"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/scratch-orgs.md"
+  },
+  {
+   "id": "sf-000135",
+   "area": "devops-and-alm",
+   "t": "Deleting a scratch org frees an active slot, but its creation still counts against the Dev Hub's daily allocation.",
+   "f": "Deleting a scratch org frees an active slot and also refunds its creation from the Dev Hub's daily allocation.",
+   "x": "Active and daily limits are tracked separately. The daily count is a rolling 24-hour tally of successful creations, so deletion doesn't give it back.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:scratch-orgs",
+    "kt:scratch-org-allocations"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/scratch-orgs.md"
+  },
+  {
+   "id": "sf-000136",
+   "area": "devops-and-alm",
+   "t": "A managed 2GP package version can be promoted to released only if code coverage was computed and is at least 75%.",
+   "f": "A managed 2GP package version can be promoted to released only if code coverage was computed and is at least 50%.",
+   "x": "Promotion requires a version created with code coverage calculated and at least 75% Apex coverage, with every trigger covered. Versions built with --skip-validation can't be promoted.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:second-generation-managed-packages",
+    "kt:apex-testing"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/second-generation-managed-packages.md"
+  },
+  {
+   "id": "sf-000137",
+   "area": "devops-and-alm",
+   "t": "Several managed 2GP packages can share one namespace, and Salesforce advises using a single namespace across a partner's packages.",
+   "f": "Each managed 2GP package needs its own namespace, so a partner's packages can't share one namespace.",
+   "x": "Sharing a namespace across packages is a key change from 1GP. Salesforce recommends one namespace for all of a partner's packages because it simplifies sharing code between them.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:second-generation-managed-packages",
+    "kt:namespace-registry"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/second-generation-managed-packages.md"
+  },
+  {
+   "id": "sf-000138",
+   "area": "devops-and-alm",
+   "t": "A beta version of a managed 2GP package can't be upgraded, so betas should be kept out of sandboxes in the release pipeline.",
+   "f": "A beta version of a managed 2GP package can be upgraded in place to a released version, so betas are safe in pipeline sandboxes.",
+   "x": "Package versions start as beta and must be promoted to become managed-released. An installed beta has no upgrade path, which makes it a dead end in any org you plan to keep.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:second-generation-managed-packages"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/second-generation-managed-packages.md"
+  },
+  {
+   "id": "sf-000139",
+   "area": "devops-and-alm",
+   "t": "Among sandboxes, source tracking is supported only in Developer and Developer Pro sandboxes, not in Partial Copy or Full sandboxes.",
+   "f": "Among sandboxes, source tracking is supported in every sandbox type, including Partial Copy and Full sandboxes.",
+   "x": "Tracking can be enabled only in the two developer sandbox types. For Partial Copy, Full or other untracked orgs, metadata has to be moved explicitly with manifests or packages.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:source-tracking",
+    "kt:sandbox-types"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/source-tracking.md"
+  },
+  {
+   "id": "sf-000140",
+   "area": "devops-and-alm",
+   "t": "The Dev Hub setting that enables source tracking in sandboxes applies only to sandboxes created or refreshed after it is turned on.",
+   "f": "The Dev Hub setting that enables source tracking in sandboxes applies at once to all existing sandboxes, with no refresh needed.",
+   "x": "The org-wide switch in production affects sandboxes created or refreshed afterward, so existing ones need a refresh. The per-sandbox setting is the alternative and tracks only later changes.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:source-tracking",
+    "kt:dev-hub"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/source-tracking.md"
+  },
+  {
+   "id": "sf-000141",
+   "area": "devops-and-alm",
+   "t": "Salesforce CLI learns what changed in an org for source tracking by reading the SourceMember object through the Tooling API.",
+   "f": "Salesforce CLI learns what changed in an org for source tracking by reading the Setup Audit Trail through the Metadata API.",
+   "x": "After a deployment the CLI waits for SourceMember, a Tooling API object, to update and reads it to detect server-side changes. Deployments themselves still go through the Metadata API.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:source-tracking",
+    "kt:tooling-api",
+    "kt:metadata-api"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/source-tracking.md"
+  },
+  {
+   "id": "sf-000142",
+   "area": "integration",
+   "t": "On an external credential, a named principal uses one identity for the whole org, while a per-user principal authenticates each user individually.",
+   "f": "On an external credential, a per-user principal uses one identity for the whole org, while a named principal authenticates each user individually.",
+   "x": "Named principals share a single org-wide identity; per-user principals hold each user's own authentication. Either way, the running user needs a mapped permission set or profile to call out.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:named-credentials",
+    "kt:permission-sets"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/named-credentials.md"
+  },
+  {
+   "id": "sf-000143",
+   "area": "integration",
+   "t": "Access tokens and other named credential secrets can't be packaged, so they must be populated after install through Setup or the Connect API.",
+   "f": "Access tokens and other named credential secrets are packaged with the credential, so they arrive populated after install.",
+   "x": "Packages carry the credential definitions but not the secrets. Release plans need a step to fill in tokens in each target org.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:named-credentials"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/named-credentials.md"
+  },
+  {
+   "id": "sf-000144",
+   "area": "integration",
+   "t": "Creating, editing or deleting named credentials requires the Manage Named Credentials or Customize Applications permission.",
+   "f": "Creating, editing or deleting named credentials requires the Modify All Data or Author Apex permission.",
+   "x": "Credential administration is gated by Manage Named Credentials or Customize Applications, while just viewing them needs View Setup and Configuration.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:named-credentials",
+    "kt:integration-security"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/named-credentials.md"
+  },
+  {
+   "id": "sf-000145",
+   "area": "platform-architecture",
+   "t": "During a scheduled Hyperforce migration, a production org is read-only for about three hours.",
+   "f": "During a scheduled Hyperforce migration, a production org is read-only for about 24 hours.",
+   "x": "The cutover makes production read-only for roughly three hours inside the Preferred Maintenance Window. Sandboxes are fully inaccessible during their window.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:hyperforce"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/hyperforce.md"
+  },
+  {
+   "id": "sf-000146",
+   "area": "platform-architecture",
+   "t": "On Hyperforce, mission-critical services and data are replicated across at least three availability zones.",
+   "f": "On Hyperforce, mission-critical services and data are replicated across at least two availability zones.",
+   "x": "Hyperforce's resilience design keeps critical services and data in a minimum of three availability zones, and backups go to other Hyperforce instances.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:hyperforce",
+    "kt:salesforce-platform"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/hyperforce.md"
+  },
+  {
+   "id": "sf-000147",
+   "area": "platform-architecture",
+   "t": "In Hyperforce, a cell is the unit formerly called an instance or pod, acting as both a scale unit and a blast-radius boundary.",
+   "f": "In Hyperforce, a grid is the unit formerly called an instance or pod, acting as both a scale unit and a blast-radius boundary.",
+   "x": "A cell holds one or more orgs and limits the impact of failures. A grid is a larger grouping of Hyperforce instances that share a control plane.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:hyperforce",
+    "kt:multitenancy"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/hyperforce.md"
+  },
+  {
+   "id": "sf-000148",
+   "area": "platform-architecture",
+   "t": "An Apex transaction trying to lock a record already locked by another transaction waits up to 10 seconds before an exception is thrown.",
+   "f": "An Apex transaction trying to lock a record already locked by another transaction waits up to 60 seconds before an exception is thrown.",
+   "x": "The lock wait is capped at 10 seconds, after which a QueryException or DmlException is raised; API clients see this as UNABLE_TO_LOCK_ROW.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:record-locking",
+    "kt:transaction-control"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/record-locking.md"
+  },
+  {
+   "id": "sf-000149",
+   "area": "platform-architecture",
+   "t": "Making a callout automatically releases any record locks taken with SOQL FOR UPDATE in that transaction.",
+   "f": "Making a callout keeps record locks taken with SOQL FOR UPDATE in place until the transaction commits.",
+   "x": "A callout drops FOR UPDATE locks and logs a FOR_UPDATE_LOCKS_RELEASE event, so a lock, callout, update sequence loses its protection. Keep callouts out of the locked window.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:record-locking",
+    "kt:soql"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/record-locking.md"
+  },
+  {
+   "id": "sf-000150",
+   "area": "platform-architecture",
+   "t": "If more than 100 records in a Bulk API batch can't get locks, the rest of the batch is requeued, up to 10 times before it fails.",
+   "f": "If more than 100 records in a Bulk API batch can't get locks, the rest of the batch is requeued, up to 3 times before it fails.",
+   "x": "Bulk API retries the remainder of a lock-starved batch as many as 10 times before marking it permanently failed. Individual failed records are not retried and must be resubmitted.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:record-locking",
+    "kt:bulk-api-2"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/record-locking.md"
+  },
+  {
+   "id": "sf-000151",
+   "area": "platform-architecture",
+   "t": "In each seasonal release, Salesforce upgrades sandboxes 4 to 6 weeks before it upgrades production orgs.",
+   "f": "In each seasonal release, Salesforce upgrades sandboxes 1 to 2 weeks after it upgrades production orgs.",
+   "x": "Sandboxes get the new release first, several weeks ahead of production, giving teams time to test. Customers can't choose their own upgrade date.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:salesforce-platform"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/salesforce-platform.md"
+  },
+  {
+   "id": "sf-000152",
+   "area": "platform-architecture",
+   "t": "Metadata is copied into every sandbox, but data is copied only into Full and Partial Copy sandboxes.",
+   "f": "Both metadata and data are copied into every sandbox, including Developer and Developer Pro sandboxes.",
+   "x": "Metadata and data follow different lifecycles. Every sandbox gets the org's metadata, while only Full and Partial Copy sandboxes receive data.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:salesforce-platform",
+    "kt:metadata-driven-architecture"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/salesforce-platform.md"
+  },
+  {
+   "id": "sf-000153",
+   "area": "platform-architecture",
+   "t": "Custom metadata types are metadata that can be packaged and deployed, whereas custom settings are data.",
+   "f": "Custom settings are metadata that can be packaged and deployed, whereas custom metadata types are data.",
+   "x": "Custom metadata records travel with deployments and packages. Custom settings values are data, so they have to be loaded separately in each org.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:salesforce-platform",
+    "kt:metadata-driven-architecture"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/salesforce-platform.md"
+  },
+  {
+   "id": "sf-000154",
+   "area": "public-sector-and-compliance",
+   "t": "DoD Impact Level 5 is built on the FedRAMP High baseline, while Impact Level 4 starts from FedRAMP Moderate.",
+   "f": "DoD Impact Level 5 is built on the FedRAMP Moderate baseline, while Impact Level 4 starts from FedRAMP Low.",
+   "x": "IL4 adds DoD controls on top of FedRAMP Moderate. IL5, which covers higher-sensitivity CUI and unclassified NSS data, uses FedRAMP High as its base.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:il4-and-il5",
+    "kt:fedramp-high",
+    "kt:fedramp"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/il4-and-il5.md"
+  },
+  {
+   "id": "sf-000155",
+   "area": "public-sector-and-compliance",
+   "t": "At IL5, cloud providers must physically separate federal tenants from non-federal tenants such as state and local governments.",
+   "f": "At IL5, cloud providers may host federal tenants alongside state and local governments using only logical separation.",
+   "x": "IL5 accepts logical separation between DoD and other federal tenants, but non-federal tenants must be physically separated. Shared hardware with virtual separation is allowed only at IL4.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:il4-and-il5",
+    "kt:dod-cloud-computing-srg"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/il4-and-il5.md"
+  },
+  {
+   "id": "sf-000156",
+   "area": "public-sector-and-compliance",
+   "t": "A DISA provisional authorization is a pre-approval; each mission owner's authorizing official still issues its own Authority to Operate.",
+   "f": "A DISA provisional authorization serves as the Authority to Operate for every DoD mission owner using that cloud offering.",
+   "x": "DISA grants a provisional authorization to a specific cloud offering. Each mission owner still assesses its own risk and grants an ATO, so an org inherits controls but isn't authorized on its own.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:il4-and-il5",
+    "kt:dod-cloud-computing-srg"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/il4-and-il5.md"
+  },
+  {
+   "id": "sf-000157",
+   "area": "architecture-practice",
+   "t": "Salesforce's large-data-volume guidance advises keeping any one user from owning more than 10,000 records.",
+   "f": "Salesforce's large-data-volume guidance advises keeping any one user from owning more than 100,000 records.",
+   "x": "Ownership concentration drives sharing computation and locking cost, so the guidance sets 10,000 records per owner, the same figure it uses for children under one parent.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [
+    "kt:platform-data-architect-certification"
+   ],
+   "concepts": [
+    "kt:data-architecture",
+    "kt:large-data-volumes",
+    "kt:data-skew"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/data-architecture.md"
+  },
+  {
+   "id": "sf-000158",
+   "area": "architecture-practice",
+   "t": "Salesforce's data-integration guidance defaults to minimising replication, accessing data in place through virtualization such as Salesforce Connect.",
+   "f": "Salesforce's data-integration guidance defaults to replicating external data into the org, using virtualization such as Salesforce Connect only as a last resort.",
+   "x": "The guide asks each project to name a source of truth and avoid copying records that don't need to live in the org; virtualization is the preferred way to reach them.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [
+    "kt:platform-data-architect-certification"
+   ],
+   "concepts": [
+    "kt:data-architecture"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/data-architecture.md"
+  },
+  {
+   "id": "sf-000159",
+   "area": "architecture-practice",
+   "t": "Salesforce's data-integration guidance warns against building an integration strategy on stewardship tools like Data Loader or the Data Import Wizard.",
+   "f": "Salesforce's data-integration guidance recommends building an integration strategy on stewardship tools like Data Loader or the Data Import Wizard.",
+   "x": "Data Loader and the Import Wizard are for data stewardship tasks. Integration tooling should be chosen by weighing the ESB or ETL estate, timing, skills, volume and platform limits.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [
+    "kt:platform-data-architect-certification"
+   ],
+   "concepts": [
+    "kt:data-architecture",
+    "kt:data-migration-strategy"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/data-architecture.md"
+  },
+  {
+   "id": "sf-000160",
+   "area": "architecture-practice",
+   "t": "Passing Platform App Builder, Platform Data Architect, Platform Developer and Sharing and Visibility Architect grants the Application Architect credential.",
+   "f": "Passing Platform App Builder, Platform Data Architect, Platform Developer and Sharing and Visibility Architect grants the System Architect credential.",
+   "x": "Those four exams make up the Application Architect stack, focused on native features, data modelling and sharing. System Architect comes from a different set centred on integration, identity and deployment.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:application-architect-certification",
+    "kt:system-architect-certification",
+    "kt:certified-technical-architect"
+   ],
+   "concepts": [
+    "kt:salesforce-architect",
+    "kt:application-architect-certification"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/salesforce-architect.md"
+  },
+  {
+   "id": "sf-000161",
+   "area": "architecture-practice",
+   "t": "System Architect is granted after passing Platform Developer, Development Lifecycle and Deployment Architect, Identity and Access Management Architect and Integration Architect.",
+   "f": "System Architect is granted after passing Platform Developer, Development Lifecycle and Deployment Architect, Identity and Access Management Architect and Platform Data Architect.",
+   "x": "The System Architect stack ends with Integration Architect, matching its focus on off-platform systems. Platform Data Architect belongs to the Application Architect stack instead.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:application-architect-certification",
+    "kt:system-architect-certification",
+    "kt:certified-technical-architect"
+   ],
+   "concepts": [
+    "kt:salesforce-architect",
+    "kt:system-architect-certification"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/salesforce-architect.md"
+  },
+  {
+   "id": "sf-000162",
+   "area": "architecture-practice",
+   "t": "In the CTA review board exam, candidates have 180 minutes to design a solution and 45 minutes to present it.",
+   "f": "In the CTA review board exam, candidates have 60 minutes to design a solution and 30 minutes to present it.",
+   "x": "The full review board exam allows 180 minutes of design and 45 of presentation. The 60 and 30 minute timings belong to the shorter online review board evaluation that comes first.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:application-architect-certification",
+    "kt:system-architect-certification",
+    "kt:certified-technical-architect"
+   ],
+   "concepts": [
+    "kt:salesforce-architect",
+    "kt:certified-technical-architect",
+    "kt:cta-review-board"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/salesforce-architect.md"
+  },
+  {
+   "id": "sf-000163",
+   "area": "architecture-practice",
+   "t": "Salesforce Optimizer flags objects with more than 350 fields, although the per-object maximum can reach 800 depending on edition.",
+   "f": "Salesforce Optimizer flags objects with more than 100 fields, although the per-object maximum can reach 800 depending on edition.",
+   "x": "Optimizer treats 350 fields on one object as a warning sign well below the hard ceiling of up to 800. It also flags piles of sharing rules, flows and multiple triggers on one object.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:technical-debt-in-salesforce",
+    "kt:salesforce-optimizer"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/technical-debt-in-salesforce.md"
+  },
+  {
+   "id": "sf-000164",
+   "area": "architecture-practice",
+   "t": "Well-Architected guidance warns that teams who never budget for debt repayment face a large refactoring project every 18 to 24 months.",
+   "f": "Well-Architected guidance warns that teams who never budget for debt repayment face a large refactoring project every 5 to 7 years.",
+   "x": "When debt goes unrecorded and sprints leave no room to fix it, the backlog resurfaces as a big refactor roughly every 18 to 24 months. Tracking debt and paying it down continuously avoids that.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:technical-debt-in-salesforce",
+    "kt:well-architected-framework"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/technical-debt-in-salesforce.md"
+  },
+  {
+   "id": "sf-000165",
+   "area": "architecture-practice",
+   "t": "Well-Architected code guidance recommends thin triggers that delegate to handler classes, with SOQL centralised in selector classes.",
+   "f": "Well-Architected code guidance recommends keeping business logic in trigger bodies, with SOQL centralised in selector classes.",
+   "x": "Logic written directly in trigger files grows hard to test and is listed as an anti-pattern. Triggers should hand off to handlers, with logic in service classes and queries in selectors.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:technical-debt-in-salesforce",
+    "kt:apex-triggers"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/technical-debt-in-salesforce.md"
+  },
+  {
+   "id": "sf-000166",
+   "area": "clouds-and-products",
+   "t": "Once Lightning Knowledge is enabled in an org, it can't be turned off, so it's wise to try it in a sandbox first.",
+   "f": "Once Lightning Knowledge is enabled in an org, it can be switched back to Classic Knowledge from Knowledge Settings at any time.",
+   "x": "Enabling Lightning Knowledge is a one-way switch. Because it can't be undone, Salesforce suggests testing it in a sandbox before production.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:knowledge-base"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/knowledge-base.md"
+  },
+  {
+   "id": "sf-000167",
+   "area": "clouds-and-products",
+   "t": "In Lightning Knowledge, kinds of articles are modeled as record types on Knowledge__kav instead of separate article type objects.",
+   "f": "In Lightning Knowledge, each kind of article gets its own object pair, such as FAQ__kav, instead of a record type.",
+   "x": "Lightning Knowledge keeps all articles in Knowledge__ka and Knowledge__kav and uses record types to vary layouts. Separate per-type object pairs were the Classic article-type model.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:knowledge-base",
+    "kt:record-types"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/knowledge-base.md"
+  },
+  {
+   "id": "sf-000168",
+   "area": "clouds-and-products",
+   "t": "All internal users can read Knowledge articles by default, but creating and editing them requires the Knowledge User license.",
+   "f": "All internal users can create and edit Knowledge articles by default, but reading them requires the Knowledge User license.",
+   "x": "Reading is open to internal users; authoring needs the Knowledge User license, enabled with a checkbox on the user record.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:knowledge-base"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/knowledge-base.md"
+  },
+  {
+   "id": "sf-000169",
+   "area": "data-cloud-and-ai",
+   "t": "A Field Generation prompt template reaches users only after Dynamic Forms is enabled, the template is selected on the field and the page assigned.",
+   "f": "A Field Generation prompt template reaches users as soon as it is activated, with no change to the record page needed.",
+   "x": "Field Generation templates surface through the record page, so the page must use Dynamic Forms with the template set on the field. Users then click the Einstein icon to get a suggestion.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:prompt-builder"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/prompt-builder.md"
+  },
+  {
+   "id": "sf-000170",
+   "area": "data-cloud-and-ai",
+   "t": "Apex grounding for a prompt template is an @InvocableMethod whose capabilityType matches the template type.",
+   "f": "Apex grounding for a prompt template is an @AuraEnabled method whose capabilityType matches the template type.",
+   "x": "Grounding Apex uses an invocable method that takes a list of requests and returns a list of responses, with capabilityType tying it to the template type. It must be deployed before it shows up as a resource.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:prompt-builder",
+    "kt:apex"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/prompt-builder.md"
+  },
+  {
+   "id": "sf-000171",
+   "area": "data-cloud-and-ai",
+   "t": "Prompt templates run in Lightning Experience on Enterprise, Performance and Unlimited editions with an Einstein or Agentforce add-on.",
+   "f": "Prompt templates run in Lightning Experience on Professional, Enterprise and Unlimited editions with no add-on required.",
+   "x": "Prompt Builder needs Enterprise, Performance or Unlimited edition plus an Einstein or Agentforce add-on or Agentforce Foundations. Some template types need further add-ons.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:prompt-builder",
+    "kt:agentforce"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/prompt-builder.md"
+  },
+  {
+   "id": "sf-000172",
+   "area": "data-model",
+   "t": "A single SOQL query can include at most 55 child-to-parent relationships and at most 20 parent-to-child relationships.",
+   "f": "A single SOQL query can include at most 20 child-to-parent relationships and at most 55 parent-to-child relationships.",
+   "x": "The ceiling is 55 for child-to-parent traversals and 20 for parent-to-child subqueries. Each type in a TYPEOF clause counts toward the limit, but reusing a relationship counts once.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:object-relationships",
+    "kt:soql"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/object-relationships.md"
+  },
+  {
+   "id": "sf-000173",
+   "area": "data-model",
+   "t": "A hierarchical relationship is a special lookup that exists only on the User object, used for chains such as managers.",
+   "f": "A hierarchical relationship is a special lookup that can be added to any custom object to model parent-child chains.",
+   "x": "Hierarchical relationships are limited to User, which is how fields like Manager link one user to another. Other objects use standard lookup or master-detail fields.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:object-relationships"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/object-relationships.md"
+  },
+  {
+   "id": "sf-000174",
+   "area": "data-model",
+   "t": "Custom objects on the detail side of a master-detail relationship can't use sharing rules, manual sharing or queues.",
+   "f": "Custom objects on the detail side of a master-detail relationship can use sharing rules and queues, but not manual sharing.",
+   "x": "Detail records inherit access from their master and have no owner of their own, so sharing rules, manual sharing and queues are all unavailable to them.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:object-relationships",
+    "kt:lookup-vs-master-detail",
+    "kt:salesforce-sharing-model"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/object-relationships.md"
+  },
+  {
+   "id": "sf-000175",
+   "area": "data-model",
+   "t": "Enabling person accounts requires the organization-wide default for contacts to be Controlled by Parent.",
+   "f": "Enabling person accounts requires the organization-wide default for contacts to be Private.",
+   "x": "Contacts must inherit access from their account before person accounts can be turned on. The other prerequisites are a business account record type and Read on contacts wherever profiles can read accounts.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:person-accounts",
+    "kt:organization-wide-defaults"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/person-accounts.md"
+  },
+  {
+   "id": "sf-000176",
+   "area": "data-model",
+   "t": "Person accounts can be enabled for customer Experience Cloud sites but not for partner sites.",
+   "f": "Person accounts can be enabled for partner Experience Cloud sites but not for customer sites.",
+   "x": "Person accounts work with customer-facing sites, which suits B2C self-service. Partner sites aren't supported for them.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:person-accounts",
+    "kt:experience-cloud-identity"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/person-accounts.md"
+  },
+  {
+   "id": "sf-000177",
+   "area": "data-model",
+   "t": "In Lightning lead conversion, a lead with a blank Company becomes a person account, and one with a Company becomes a business account.",
+   "f": "In Lightning lead conversion, a lead with a filled-in Company becomes a person account, and one with a blank Company becomes a business account.",
+   "x": "The Company field decides the account type on conversion: blank means an individual, so a person account is created. That's why separate lead record types and layouts are advised.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:person-accounts",
+    "kt:sales-cloud"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/person-accounts.md"
+  },
+  {
+   "id": "sf-000178",
+   "area": "development",
+   "t": "In a SOQL query, the OFFSET clause can skip at most 2,000 rows.",
+   "f": "In a SOQL query, the OFFSET clause can skip at most 50,000 rows.",
+   "x": "OFFSET is capped at 2,000 rows, so it isn't suited to paging through large result sets. The 50,000 figure is the per-transaction cap on records retrieved by SOQL in Apex.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:soql",
+    "kt:governor-limits"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/soql.md"
+  },
+  {
+   "id": "sf-000179",
+   "area": "development",
+   "t": "Apex allows 100 SOQL queries per synchronous transaction and 200 per asynchronous transaction.",
+   "f": "Apex allows 200 SOQL queries per synchronous transaction and 100 per asynchronous transaction.",
+   "x": "Asynchronous Apex gets the larger allowance of 200 queries, synchronous code gets 100. Queries inside loops are the usual way to exceed it.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:soql",
+    "kt:governor-limits",
+    "kt:apex"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/soql.md"
+  },
+  {
+   "id": "sf-000180",
+   "area": "development",
+   "t": "Per the Winter '27 Apex guide, Apex at API version 67.0 or later runs in user context by default, enforcing the user's sharing and permissions.",
+   "f": "Per the Winter '27 Apex guide, Apex at API version 67.0 or later runs in system mode by default, ignoring the user's sharing and permissions.",
+   "x": "From API 67.0, Apex defaults to user context, applying sharing, field-level security and object permissions. Versions 66.0 and earlier default to system mode.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:soql",
+    "kt:apex"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/soql.md"
+  },
+  {
+   "id": "sf-000181",
+   "area": "identity",
+   "t": "Email verification for Experience Cloud sign-up is included, but SMS verification needs the Identity Verification Credits add-on.",
+   "f": "SMS verification for Experience Cloud sign-up is included, but email verification needs the Identity Verification Credits add-on.",
+   "x": "Verifying by email costs nothing extra. Sending codes by text message consumes Identity Verification Credits, which are bought as an add-on.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:identity-and-access-management-architect-certification"
+   ],
+   "concepts": [
+    "kt:experience-cloud-identity",
+    "kt:multi-factor-authentication"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/experience-cloud-identity.md"
+  },
+  {
+   "id": "sf-000182",
+   "area": "identity",
+   "t": "If no default account is set for site self-registration and person accounts are enabled, Salesforce creates person accounts for new users.",
+   "f": "If no default account is set for site self-registration, Salesforce puts every new user's contact under one shared placeholder account it creates.",
+   "x": "Self-registration normally links new contacts to a configured default account. With none set, Salesforce falls back to person accounts, but only when the org has them enabled.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:identity-and-access-management-architect-certification"
+   ],
+   "concepts": [
+    "kt:experience-cloud-identity",
+    "kt:person-accounts"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/experience-cloud-identity.md"
+  },
+  {
+   "id": "sf-000183",
+   "area": "identity",
+   "t": "A Login Discovery page runs an Apex class implementing Auth.LoginDiscoveryHandler, which can send one-time codes via Site.passwordlessLogin.",
+   "f": "A Login Discovery page runs an Apex class implementing Auth.RegistrationHandler, which can send one-time codes via Site.passwordlessLogin.",
+   "x": "LoginDiscoveryHandler's login method finds the user from the identifier and decides the challenge, such as a passwordless code or a redirect to an identity provider. RegistrationHandler is a different interface.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:identity-and-access-management-architect-certification"
+   ],
+   "concepts": [
+    "kt:experience-cloud-identity",
+    "kt:headless-identity"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/experience-cloud-identity.md"
+  },
+  {
+   "id": "sf-000184",
+   "area": "identity",
+   "t": "A candidate who fails the CTA Architect Evaluation receives feedback and may re-register after six months.",
+   "f": "A candidate who fails the CTA Architect Evaluation receives feedback and may re-register after 30 days.",
+   "x": "The online evaluation has a six-month wait before another attempt. Passing it is what makes a candidate eligible for the Architect Review Board exam.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:identity-and-access-management-architect-certification",
+    "kt:certified-technical-architect"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/identity-and-access-management-architect-certification.md"
+  },
+  {
+   "id": "sf-000185",
+   "area": "identity",
+   "t": "Rescheduling the Architect Review Board exam without a fee requires at least 30 days' notice.",
+   "f": "Rescheduling the Architect Review Board exam without a fee requires at least 7 days' notice.",
+   "x": "Fee-free rescheduling needs 30 days' notice. The review board is currently held online until further notice.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:identity-and-access-management-architect-certification",
+    "kt:certified-technical-architect"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/identity-and-access-management-architect-certification.md"
+  },
+  {
+   "id": "sf-000186",
+   "area": "identity",
+   "t": "If an architect certification has lapsed for more than one maintenance cycle, the exam has to be retaken.",
+   "f": "If an architect certification has lapsed for more than one maintenance cycle, completing the missed maintenance badges reinstates it.",
+   "x": "A recently expired credential may be reinstated through a support case, though not guaranteed. Once it has lapsed beyond one cycle, the only route back is passing the exam again.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:identity-and-access-management-architect-certification"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/identity-and-access-management-architect-certification.md"
+  },
+  {
+   "id": "sf-000187",
+   "area": "identity",
+   "t": "A My Domain name can be 3 to 34 characters in production and sandboxes, but only 3 to 27 in a Developer Edition org.",
+   "f": "A My Domain name can be 3 to 63 characters in production and sandboxes, but only 3 to 27 in a Developer Edition org.",
+   "x": "Production and sandbox names allow up to 34 characters of letters, numbers and hyphens, and can't start with a hyphen. Developer Edition orgs are capped at 27.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:identity-and-access-management-architect-certification"
+   ],
+   "concepts": [
+    "kt:my-domain"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/my-domain.md"
+  },
+  {
+   "id": "sf-000188",
+   "area": "identity",
+   "t": "After a My Domain rename, only the most recent previous name redirects, so successive renames break older links.",
+   "f": "After a My Domain rename, every previous name keeps redirecting, so successive renames never break older links.",
+   "x": "Salesforce redirects just the last former hostname. Renaming twice leaves the oldest URLs broken, which is why hard-coded URLs need review.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:identity-and-access-management-architect-certification"
+   ],
+   "concepts": [
+    "kt:my-domain"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/my-domain.md"
+  },
+  {
+   "id": "sf-000189",
+   "area": "identity",
+   "t": "With enhanced domains, Experience Cloud sites are served at MyDomainName.my.site.com.",
+   "f": "With enhanced domains, Experience Cloud sites are served at MyDomainName.my.salesforce-sites.com.",
+   "x": "Enhanced domains put the My Domain name in every URL. Experience Cloud sites use my.site.com, while my.salesforce-sites.com is the format for Salesforce Sites.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:identity-and-access-management-architect-certification"
+   ],
+   "concepts": [
+    "kt:my-domain",
+    "kt:experience-cloud"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/my-domain.md"
+  },
+  {
+   "id": "sf-000190",
+   "area": "identity",
+   "t": "RFC 9700 requires public OAuth clients to use PKCE with the S256 method.",
+   "f": "RFC 9700 requires public OAuth clients to use PKCE with the plain method.",
+   "x": "The 2025 OAuth security best practice makes PKCE with S256 mandatory for public clients. The plain method is weaker and is forbidden outright in the OAuth 2.1 draft.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [
+    "kt:identity-and-access-management-architect-certification"
+   ],
+   "concepts": [
+    "kt:oauth-2-0",
+    "kt:integration-security"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/oauth-2-0.md"
+  },
+  {
+   "id": "sf-000191",
+   "area": "identity",
+   "t": "An OAuth 2.0 refresh token is presented only to the authorization server, never to resource servers.",
+   "f": "An OAuth 2.0 refresh token is presented to resource servers in place of an access token once it expires.",
+   "x": "Refresh tokens are exchanged at the token endpoint for new access tokens. Resource servers accept only access tokens.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [
+    "kt:identity-and-access-management-architect-certification"
+   ],
+   "concepts": [
+    "kt:oauth-2-0"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/oauth-2-0.md"
+  },
+  {
+   "id": "sf-000192",
+   "area": "identity",
+   "t": "Salesforce restricted creating new connected apps in Spring '26 and recommends external client apps for new integrations.",
+   "f": "Salesforce restricted creating new external client apps in Spring '26 and recommends connected apps for new integrations.",
+   "x": "External client apps are the recommended OAuth client registration going forward. New connected app creation has been restricted since Spring '26.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [
+    "kt:identity-and-access-management-architect-certification"
+   ],
+   "concepts": [
+    "kt:oauth-2-0",
+    "kt:connected-apps",
+    "kt:external-client-apps"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/oauth-2-0.md"
+  },
+  {
+   "id": "sf-000193",
+   "area": "identity",
+   "t": "The Salesforce OAuth JWT bearer flow never issues a refresh token, and scopes can't be requested in the assertion.",
+   "f": "The Salesforce OAuth JWT bearer flow issues a refresh token with each access token, and scopes are requested in the assertion.",
+   "x": "JWT bearer returns only an access token, with scopes coming from the app's policy or API Access Control. The server simply signs a new JWT when it needs another token.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:identity-and-access-management-architect-certification"
+   ],
+   "concepts": [
+    "kt:oauth-2-flows-in-salesforce",
+    "kt:oauth-2-0"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/oauth-2-flows-in-salesforce.md"
+  },
+  {
+   "id": "sf-000194",
+   "area": "identity",
+   "t": "The OAuth username-password flow is blocked by default in orgs created in Summer '23 or later, though it can be re-enabled.",
+   "f": "The OAuth username-password flow is allowed by default in orgs created in Summer '23 or later, though admins can block it.",
+   "x": "Newer orgs start with the username-password flow blocked. Salesforce recommends keeping it and the user-agent flow blocked and using JWT bearer or client credentials instead.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:identity-and-access-management-architect-certification"
+   ],
+   "concepts": [
+    "kt:oauth-2-flows-in-salesforce"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/oauth-2-flows-in-salesforce.md"
+  },
+  {
+   "id": "sf-000195",
+   "area": "identity",
+   "t": "In the Salesforce client credentials flow, every access token carries the permissions of the app's designated run-as user.",
+   "f": "In the Salesforce client credentials flow, every access token carries the permissions of the admin who approved the app.",
+   "x": "The app is configured with a run-as user and tokens act with that user's access. Salesforce advises a dedicated integration user limited by permission sets.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:identity-and-access-management-architect-certification"
+   ],
+   "concepts": [
+    "kt:oauth-2-flows-in-salesforce",
+    "kt:external-client-apps"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/oauth-2-flows-in-salesforce.md"
+  },
+  {
+   "id": "sf-000196",
+   "area": "identity",
+   "t": "For an OpenID Connect Auth. Provider, Salesforce checks the ID token against the issuer and user-info response but doesn't verify its signature.",
+   "f": "For an OpenID Connect Auth. Provider, Salesforce verifies the ID token's signature before checking it against the issuer and user-info response.",
+   "x": "Signature validation isn't done automatically. If it matters, the registration handler should validate the token itself with Auth.JWTUtil.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:identity-and-access-management-architect-certification"
+   ],
+   "concepts": [
+    "kt:openid-connect-authentication-providers",
+    "kt:apex"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/openid-connect-authentication-providers.md"
+  },
+  {
+   "id": "sf-000197",
+   "area": "identity",
+   "t": "The Execute Registration As user for an Auth. Provider's registration handler needs the Manage Users permission.",
+   "f": "The Execute Registration As user for an Auth. Provider's registration handler needs the Modify All Data permission.",
+   "x": "The handler creates and updates users, so its run-as user needs Manage Users. A dedicated service account keeps registration working if an admin leaves.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:identity-and-access-management-architect-certification"
+   ],
+   "concepts": [
+    "kt:openid-connect-authentication-providers"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/openid-connect-authentication-providers.md"
+  },
+  {
+   "id": "sf-000198",
+   "area": "identity",
+   "t": "An Auth. Provider's consumer secret is replaced with a placeholder when retrieved through the Metadata API.",
+   "f": "An Auth. Provider's consumer secret is retrieved in plain text through the Metadata API, so it deploys with the definition.",
+   "x": "Since November 2022 retrievals mask the secret. Deployments have to restore it or it must be re-entered in Setup.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:identity-and-access-management-architect-certification"
+   ],
+   "concepts": [
+    "kt:openid-connect-authentication-providers",
+    "kt:metadata-api"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/openid-connect-authentication-providers.md"
+  },
+  {
+   "id": "sf-000199",
+   "area": "identity",
+   "t": "Lightning Experience users get the App Launcher by default, while Classic users need the Use Identity Features permission.",
+   "f": "Classic users get the App Launcher by default, while Lightning Experience users need the Use Identity Features permission.",
+   "x": "The App Launcher is built into Lightning Experience. In Salesforce Classic it appears only for users granted Use Identity Features.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:identity-and-access-management-architect-certification"
+   ],
+   "concepts": [
+    "kt:salesforce-identity"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/salesforce-identity.md"
+  },
+  {
+   "id": "sf-000200",
+   "area": "identity",
+   "t": "Each Developer Edition org comes with five External Identity licenses.",
+   "f": "Each Developer Edition org comes with 100 External Identity licenses.",
+   "x": "Developer Edition includes five External Identity licenses for trying out customer identity. In production they are sold in blocks of active users.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:identity-and-access-management-architect-certification"
+   ],
+   "concepts": [
+    "kt:salesforce-identity",
+    "kt:external-identity-license"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/salesforce-identity.md"
+  },
+  {
+   "id": "sf-000201",
+   "area": "identity",
+   "t": "In inbound SSO, an external identity provider authenticates the user and Salesforce acts as the service provider.",
+   "f": "In inbound SSO, Salesforce authenticates the user as the identity provider and signs them in to third-party apps.",
+   "x": "Inbound means users arrive at Salesforce already authenticated by another IdP. Salesforce acting as the identity provider for other apps is outbound SSO.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:identity-and-access-management-architect-certification"
+   ],
+   "concepts": [
+    "kt:salesforce-identity",
+    "kt:single-sign-on-saml"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/salesforce-identity.md"
+  },
+  {
+   "id": "sf-000202",
+   "area": "identity",
+   "t": "A Salesforce SAML configuration can match the incoming user by Salesforce username, Federation ID or User ID.",
+   "f": "A Salesforce SAML configuration can match the incoming user by email address, Federation ID or employee number.",
+   "x": "The SAML Identity Type setting offers exactly three keys: username, Federation ID and User ID. The value is read from the NameIdentifier or a named attribute.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:identity-and-access-management-architect-certification"
+   ],
+   "concepts": [
+    "kt:single-sign-on-saml"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/single-sign-on-saml.md"
+  },
+  {
+   "id": "sf-000203",
+   "area": "identity",
+   "t": "A user's Federation ID must be unique within an org, and a user present in several orgs should carry the same value in each.",
+   "f": "A user's Federation ID must be unique across all Salesforce orgs, so a user present in several orgs needs a different value in each.",
+   "x": "Uniqueness is enforced per org. Reusing the same Federation ID for one person across orgs lets a single IdP identity sign in everywhere.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:identity-and-access-management-architect-certification"
+   ],
+   "concepts": [
+    "kt:single-sign-on-saml",
+    "kt:salesforce-identity"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/single-sign-on-saml.md"
+  },
+  {
+   "id": "sf-000204",
+   "area": "identity",
+   "t": "In a Salesforce SAML configuration, the Entity ID must match an Audience value in the IdP's assertion.",
+   "f": "In a Salesforce SAML configuration, the Entity ID must match the Issuer element in the IdP's assertion.",
+   "x": "The Entity ID identifies the org, usually its My Domain URL, and is checked against the assertion's Audience. The Issuer field is the one that must match the IdP's Issuer element.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:identity-and-access-management-architect-certification"
+   ],
+   "concepts": [
+    "kt:single-sign-on-saml",
+    "kt:my-domain",
+    "kt:saml-2-0"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/single-sign-on-saml.md"
+  },
+  {
+   "id": "sf-000205",
+   "area": "integration",
+   "t": "A Bulk API 2.0 ingest job accepts up to 150 MB of base64-encoded CSV, so Salesforce suggests raw uploads under 100 MB.",
+   "f": "A Bulk API 2.0 ingest job accepts up to 1 GB of base64-encoded CSV, so Salesforce suggests raw uploads under 750 MB.",
+   "x": "The cap is 150 MB after base64 encoding, which inflates data by about half. Keeping the raw file under 100 MB leaves room for that growth.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:bulk-api-2",
+    "kt:bulk-api-allocations"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/bulk-api-2.md"
+  },
+  {
+   "id": "sf-000206",
+   "area": "integration",
+   "t": "Bulk API 2.0 ingest jobs draw on the 15,000 daily batches shared with Bulk API 1.0, but query jobs don't consume batches.",
+   "f": "Bulk API 2.0 query jobs draw on the 15,000 daily batches shared with Bulk API 1.0, but ingest jobs don't consume batches.",
+   "x": "Only ingest work counts against the shared batch allocation. Query jobs have their own limits of 10,000 jobs and 1 TB of results per rolling 24 hours.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:bulk-api-2",
+    "kt:bulk-api-allocations",
+    "kt:bulk-api-1"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/bulk-api-2.md"
+  },
+  {
+   "id": "sf-000207",
+   "area": "integration",
+   "t": "A Bulk API 2.0 ingest job can stay open for at most 24 hours, and its results can be retrieved for 7 days after completion.",
+   "f": "A Bulk API 2.0 ingest job can stay open for at most 7 days, and its results can be retrieved for 24 hours after completion.",
+   "x": "Open jobs must be closed within a day. Once a job finishes, its success and failure results stay available for seven days before the job is deleted.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:bulk-api-2"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/bulk-api-2.md"
+  },
+  {
+   "id": "sf-000208",
+   "area": "integration",
+   "t": "A Pub/Sub API subscribe call can request at most 100 events in total across its fetch requests.",
+   "f": "A Pub/Sub API subscribe call can request at most 2,000 events in total across its fetch requests.",
+   "x": "Requests above 100 events are treated as 100. The client asks for more once it has processed what it received.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:pub-sub-api"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/pub-sub-api.md"
+  },
+  {
+   "id": "sf-000209",
+   "area": "integration",
+   "t": "gRPC caps a Pub/Sub API publish request at 4 MB, and Salesforce recommends keeping batches at or below 3 MB.",
+   "f": "gRPC caps a Pub/Sub API publish request at 1 MB, and Salesforce recommends keeping batches at or below 500 KB.",
+   "x": "A request over 4 MB fails and closes the stream, so batches of about 3 MB and 200 events are advised. The 1 MB figure is the size limit for a single event.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:pub-sub-api",
+    "kt:platform-event-allocations"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/pub-sub-api.md"
+  },
+  {
+   "id": "sf-000210",
+   "area": "integration",
+   "t": "Pub/Sub API subscriptions are pull-based: the client sends a FetchRequest saying how many events it can handle.",
+   "f": "Pub/Sub API subscriptions are push-based: the server streams each new event as soon as it is published, without client flow control.",
+   "x": "Clients request a number of events and the server delivers up to that count before waiting for the next request. This flow control protects slow consumers during spikes.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:pub-sub-api",
+    "kt:event-driven-architecture"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/pub-sub-api.md"
+  },
+  {
+   "id": "sf-000211",
+   "area": "platform-architecture",
+   "t": "The query optimizer considers a custom index when a filter matches under 10% of records, capped at 333,333 records.",
+   "f": "The query optimizer considers a custom index when a filter matches under 30% of records, capped at one million records.",
+   "x": "Custom indexes have the stricter 10% threshold with a 333,333-record cap. The 30% figure with a one-million cap is the starting point for standard indexes.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:large-data-volumes",
+    "kt:query-optimizer-selectivity"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/large-data-volumes.md"
+  },
+  {
+   "id": "sf-000212",
+   "area": "platform-architecture",
+   "t": "Skinny tables are limited to 200 columns and are copied automatically only to Full sandboxes.",
+   "f": "Skinny tables are limited to 200 columns and are copied automatically to every sandbox type.",
+   "x": "Skinny tables are created by Salesforce Support and only Full sandboxes receive them automatically. They also can't include fields from other objects.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:large-data-volumes",
+    "kt:skinny-tables"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/large-data-volumes.md"
+  },
+  {
+   "id": "sf-000213",
+   "area": "platform-architecture",
+   "t": "To delete a million or more records, Salesforce's LDV guide recommends the hard-delete option of Bulk API or Bulk API 2.0.",
+   "f": "To delete a million or more records, Salesforce's LDV guide recommends a normal delete and letting the Recycle Bin empty itself.",
+   "x": "Soft-deleted rows stay in the Recycle Bin and still weigh on performance. Hard delete skips that, and children should be deleted before parents.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:large-data-volumes",
+    "kt:bulk-api-2"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/large-data-volumes.md"
+  },
+  {
+   "id": "sf-000214",
+   "area": "public-sector-and-compliance",
+   "t": "The Hyperforce EU Operating Zone treats all 27 member states as one zone, so customers can't choose a specific EU country.",
+   "f": "The Hyperforce EU Operating Zone lets customers choose a specific EU member state in which to keep their data.",
+   "x": "The EU Operating Zone is a single region spanning the whole bloc. Its value is in-region support and contractual transfer limits, not country-level placement.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:data-residency",
+    "kt:hyperforce-operating-zones"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/data-residency.md"
+  },
+  {
+   "id": "sf-000215",
+   "area": "public-sector-and-compliance",
+   "t": "Hyperforce Operating Zones are offered only on Hyperforce running on AWS.",
+   "f": "Hyperforce Operating Zones are offered only on Hyperforce running on Google Cloud.",
+   "x": "The Operating Zone offering runs on the AWS substrate. Hyperforce on Google Cloud is a planned footprint, not where Operating Zones run.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:data-residency",
+    "kt:hyperforce",
+    "kt:hyperforce-operating-zones"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/data-residency.md"
+  },
+  {
+   "id": "sf-000216",
+   "area": "public-sector-and-compliance",
+   "t": "The Hyperforce Switzerland Operating Zone keeps data in Switzerland but is supported by EU-based staff.",
+   "f": "The Hyperforce Switzerland Operating Zone keeps data in Switzerland and is supported only by staff based in Switzerland.",
+   "x": "The Swiss zone provides in-country storage, while support comes from personnel in the EU. Customers with Swiss-only staffing needs should take that into account.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:data-residency",
+    "kt:hyperforce-operating-zones"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/data-residency.md"
+  },
+  {
+   "id": "sf-000217",
+   "area": "public-sector-and-compliance",
+   "t": "Under FedRAMP's 2026 relabelling, Class C corresponds to the Moderate baseline and Class D to High.",
+   "f": "Under FedRAMP's 2026 relabelling, Class C corresponds to the High baseline and Class D to Moderate.",
+   "x": "The letters rise with impact: Class B covers Low and LI-SaaS, Class C is Moderate and Class D is High. Salesforce now calls Government Cloud Plus Class D.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:fedramp",
+    "kt:fedramp-high"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/fedramp.md"
+  },
+  {
+   "id": "sf-000218",
+   "area": "public-sector-and-compliance",
+   "t": "If any one of confidentiality, integrity or availability is rated High under FedRAMP, the whole system must meet the High baseline.",
+   "f": "If one of confidentiality, integrity or availability is rated High under FedRAMP, only that objective needs High controls.",
+   "x": "FedRAMP baselines can't be tailored per security objective. The highest of the three FIPS 199 ratings sets the baseline for the entire system.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:fedramp",
+    "kt:fips-199"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/fedramp.md"
+  },
+  {
+   "id": "sf-000219",
+   "area": "public-sector-and-compliance",
+   "t": "Salesforce warns that AppExchange apps generally fall outside its FedRAMP authorization boundary, even if built natively on the platform.",
+   "f": "Salesforce states that natively built AppExchange apps automatically fall inside its FedRAMP authorization boundary.",
+   "x": "Authorization covers a specific offering and boundary. Installed apps, even native ones, usually aren't included and need separate review.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:fedramp",
+    "kt:government-cloud-plus"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/fedramp.md"
+  },
+  {
+   "id": "sf-000220",
+   "area": "security-and-sharing",
+   "t": "An object can have two active restriction rules in Enterprise and Developer editions, and five in Performance and Unlimited.",
+   "f": "An object can have five active restriction rules in Enterprise and Developer editions, and ten in Performance and Unlimited.",
+   "x": "The per-object cap is two in Enterprise and Developer and five in Performance and Unlimited. For any one user, only one restriction or scoping rule per object should apply.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:sharing-and-visibility-architect-certification"
+   ],
+   "concepts": [
+    "kt:restriction-rules"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/restriction-rules.md"
+  },
+  {
+   "id": "sf-000221",
+   "area": "security-and-sharing",
+   "t": "Restriction rules don't limit users with View All Data or View All Records, who still see every record.",
+   "f": "Restriction rules also limit users with View All Data or View All Records, overriding those permissions.",
+   "x": "Broad permissions such as View All Data, View All Records and Modify All bypass restriction rules, as does code running in system mode.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:sharing-and-visibility-architect-certification"
+   ],
+   "concepts": [
+    "kt:restriction-rules",
+    "kt:salesforce-sharing-model"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/restriction-rules.md"
+  },
+  {
+   "id": "sf-000222",
+   "area": "security-and-sharing",
+   "t": "Restriction rule criteria support only the equals operator, with no AND, OR or formula logic.",
+   "f": "Restriction rule criteria support equals and not-equals operators combined with AND and OR logic.",
+   "x": "Each criterion is a single-field equality check, optionally with comma-separated values. Complex conditions usually need a helper field kept up to date by automation.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:sharing-and-visibility-architect-certification"
+   ],
+   "concepts": [
+    "kt:restriction-rules"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/restriction-rules.md"
+  },
+  {
+   "id": "sf-000223",
+   "area": "security-and-sharing",
+   "t": "Guest user sharing rules can grant only Read Only access to unauthenticated site visitors.",
+   "f": "Guest user sharing rules can grant Read Only or Read/Write access to unauthenticated site visitors.",
+   "x": "Guest rules are limited to Read Only. With secure guest record access on, they are the only way to share records with guests, and they expose every matching record at once.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:sharing-and-visibility-architect-certification"
+   ],
+   "concepts": [
+    "kt:sharing-rules",
+    "kt:experience-cloud"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/sharing-rules.md"
+  },
+  {
+   "id": "sf-000224",
+   "area": "security-and-sharing",
+   "t": "Per the archived Summer '20 Security Guide, an object can have 300 sharing rules, of which up to 50 may be criteria-based or guest rules.",
+   "f": "Per the archived Summer '20 Security Guide, an object can have 300 sharing rules, of which up to 200 may be criteria-based or guest rules.",
+   "x": "The guide caps the total at 300 per object with a sub-limit of 50 for criteria-based and guest user rules. Check your org's current allocations before relying on them.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:sharing-and-visibility-architect-certification"
+   ],
+   "concepts": [
+    "kt:sharing-rules"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/sharing-rules.md"
+  },
+  {
+   "id": "sf-000225",
+   "area": "security-and-sharing",
+   "t": "Sharing rules can only widen access; they can never make access stricter than the organization-wide default.",
+   "f": "Sharing rules can widen or narrow access, making it stricter than the organization-wide default for selected users.",
+   "x": "Sharing rules add lateral exceptions on top of a restrictive baseline. To narrow what users see, a different control such as restriction rules is needed.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:sharing-and-visibility-architect-certification"
+   ],
+   "concepts": [
+    "kt:sharing-rules",
+    "kt:organization-wide-defaults"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/sharing-rules.md"
+  },
+  {
+   "id": "sf-000226",
+   "area": "architecture-practice",
+   "t": "Salesforce's Apex testing guidance says bulk trigger tests should use at least 20 records.",
+   "f": "Salesforce's Apex testing guidance says bulk trigger tests should use at least 2,000 records.",
+   "x": "Testing triggers with 20 or more records exercises bulk behaviour. Good suites also cover single records, negative cases and different users via runAs.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:testing-strategy",
+    "kt:apex-testing"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/testing-strategy.md"
+  },
+  {
+   "id": "sf-000227",
+   "area": "architecture-practice",
+   "t": "Well-Architected guidance maps integration testing to Partial Copy sandboxes and performance testing to Full Copy sandboxes.",
+   "f": "Well-Architected guidance maps integration testing to Full Copy sandboxes and performance testing to Partial Copy sandboxes.",
+   "x": "Partial Copy sandboxes carry representative data for integration tests, while Full Copy sandboxes mirror production for performance testing and staging. Developer sandboxes host unit testing.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:testing-strategy",
+    "kt:sandbox-types",
+    "kt:environment-strategy"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/testing-strategy.md"
+  },
+  {
+   "id": "sf-000228",
+   "area": "architecture-practice",
+   "t": "Well-Architected guidance suggests load testing quarterly at 3x to 5x current production volumes.",
+   "f": "Well-Architected guidance suggests load testing once a year at 10x current production volumes.",
+   "x": "The recommendation is a quarterly load test at three to five times today's volume, ahead of major releases. Salesforce Support should be told before performance tests run.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:testing-strategy",
+    "kt:scale-test"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/testing-strategy.md"
+  },
+  {
+   "id": "sf-000229",
+   "area": "automation",
+   "t": "Once a classic approval process has been activated, you can't add, delete or reorder its steps, even after deactivating it.",
+   "f": "Once a classic approval process has been activated, you can add, delete or reorder its steps as soon as you deactivate it.",
+   "x": "Activation permanently fixes a classic process's step structure and reject or skip behaviour; deactivating doesn't reopen it. Testing in a sandbox first avoids having to rebuild the process.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:approval-processes",
+    "kt:process-automation"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/approval-processes.md"
   }
  ]
 }

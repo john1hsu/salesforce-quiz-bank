@@ -1,0 +1,20 @@
+id: sf-000159
+product_area: architecture-practice
+true_statement: Salesforce's data-integration guidance warns against building an integration strategy on stewardship tools like Data Loader or the Data Import Wizard.
+false_statement: Salesforce's data-integration guidance recommends building an integration strategy on stewardship tools like Data Loader or the Data Import Wizard.
+explanation: Data Loader and the Import Wizard are for data stewardship tasks. Integration tooling should be chosen by weighing the ESB or ETL estate, timing, skills, volume and platform limits.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/data-architecture.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: 83562d834668626ff9f3600108892c8ed1629a91
+verified_release: Winter '27
+feature_status: concept
+certs:
+- kt:platform-data-architect-certification
+concepts:
+- kt:data-architecture
+- kt:data-migration-strategy
+difficulty: 2
+created: '2026-11-09'
+status: active

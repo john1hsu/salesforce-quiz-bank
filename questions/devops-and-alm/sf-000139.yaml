@@ -1,0 +1,18 @@
+id: sf-000139
+product_area: devops-and-alm
+true_statement: Among sandboxes, source tracking is supported only in Developer and Developer Pro sandboxes, not in Partial Copy or Full sandboxes.
+false_statement: Among sandboxes, source tracking is supported in every sandbox type, including Partial Copy and Full sandboxes.
+explanation: Tracking can be enabled only in the two developer sandbox types. For Partial Copy, Full or other untracked orgs, metadata has to be moved explicitly with manifests or packages.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/source-tracking.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: 09b74fe773746cf219643f3ea0aaecc696c1698d
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:source-tracking
+- kt:sandbox-types
+difficulty: 2
+created: '2026-11-09'
+status: active

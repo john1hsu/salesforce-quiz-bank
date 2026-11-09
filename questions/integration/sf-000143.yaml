@@ -1,0 +1,17 @@
+id: sf-000143
+product_area: integration
+true_statement: Access tokens and other named credential secrets can't be packaged, so they must be populated after install through Setup or the Connect API.
+false_statement: Access tokens and other named credential secrets are packaged with the credential, so they arrive populated after install.
+explanation: Packages carry the credential definitions but not the secrets. Release plans need a step to fill in tokens in each target org.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/named-credentials.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: 2f3245201749e51bd50641a02a911dc856391bc0
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:named-credentials
+difficulty: 2
+created: '2026-11-09'
+status: active

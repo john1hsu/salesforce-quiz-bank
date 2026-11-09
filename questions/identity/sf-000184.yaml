@@ -1,0 +1,18 @@
+id: sf-000184
+product_area: identity
+true_statement: A candidate who fails the CTA Architect Evaluation receives feedback and may re-register after six months.
+false_statement: A candidate who fails the CTA Architect Evaluation receives feedback and may re-register after 30 days.
+explanation: The online evaluation has a six-month wait before another attempt. Passing it is what makes a candidate eligible for the Architect Review Board exam.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/identity-and-access-management-architect-certification.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: 496112bdba6ce7d83cfb823a16ed55985f4a5405
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:identity-and-access-management-architect-certification
+- kt:certified-technical-architect
+difficulty: 2
+created: '2026-11-09'
+status: active

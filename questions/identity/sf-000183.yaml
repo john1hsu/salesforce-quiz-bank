@@ -1,0 +1,20 @@
+id: sf-000183
+product_area: identity
+true_statement: A Login Discovery page runs an Apex class implementing Auth.LoginDiscoveryHandler, which can send one-time codes via Site.passwordlessLogin.
+false_statement: A Login Discovery page runs an Apex class implementing Auth.RegistrationHandler, which can send one-time codes via Site.passwordlessLogin.
+explanation: LoginDiscoveryHandler's login method finds the user from the identifier and decides the challenge, such as a passwordless code or a redirect to an identity provider. RegistrationHandler is a different interface.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/experience-cloud-identity.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: d40a8bfa9738e7e41118027e8245ccb7dcf6b5ee
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:identity-and-access-management-architect-certification
+concepts:
+- kt:experience-cloud-identity
+- kt:headless-identity
+difficulty: 3
+created: '2026-11-09'
+status: active

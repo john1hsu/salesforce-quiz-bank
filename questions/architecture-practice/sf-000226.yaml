@@ -1,0 +1,18 @@
+id: sf-000226
+product_area: architecture-practice
+true_statement: Salesforce's Apex testing guidance says bulk trigger tests should use at least 20 records.
+false_statement: Salesforce's Apex testing guidance says bulk trigger tests should use at least 2,000 records.
+explanation: Testing triggers with 20 or more records exercises bulk behaviour. Good suites also cover single records, negative cases and different users via runAs.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/testing-strategy.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: 810f7295a5e611446f6a23c885d5c27d71eb8809
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:testing-strategy
+- kt:apex-testing
+difficulty: 2
+created: '2026-11-09'
+status: active

@@ -1,0 +1,19 @@
+id: sf-000174
+product_area: data-model
+true_statement: Custom objects on the detail side of a master-detail relationship can't use sharing rules, manual sharing or queues.
+false_statement: Custom objects on the detail side of a master-detail relationship can use sharing rules and queues, but not manual sharing.
+explanation: Detail records inherit access from their master and have no owner of their own, so sharing rules, manual sharing and queues are all unavailable to them.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/object-relationships.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: 2a01bc44df889f4d3dc6bf62f7651e3996eca130
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:object-relationships
+- kt:lookup-vs-master-detail
+- kt:salesforce-sharing-model
+difficulty: 2
+created: '2026-11-09'
+status: active

@@ -1,47 +1,50 @@
 {
  "totals": {
-  "active": 129
+  "active": 229
  },
  "areas": {
   "architecture-practice": {
-   "active": 12
+   "active": 24
   },
   "automation": {
-   "active": 16
-  },
-  "clouds-and-products": {
-   "active": 12
-  },
-  "data-cloud-and-ai": {
-   "active": 12
-  },
-  "data-model": {
-   "active": 12
-  },
-  "development": {
-   "active": 12
-  },
-  "devops-and-alm": {
    "active": 17
   },
+  "clouds-and-products": {
+   "active": 15
+  },
+  "data-cloud-and-ai": {
+   "active": 15
+  },
+  "data-model": {
+   "active": 18
+  },
+  "development": {
+   "active": 15
+  },
+  "devops-and-alm": {
+   "active": 29
+  },
   "identity": {
-   "active": 7
+   "active": 31
   },
   "integration": {
-   "active": 4
+   "active": 13
   },
   "platform-architecture": {
-   "active": 12
+   "active": 24
   },
   "public-sector-and-compliance": {
-   "active": 6
+   "active": 15
   },
   "security-and-sharing": {
-   "active": 7
+   "active": 13
   }
  },
  "articles": {
   "articles/architecture-practice/archiving-strategy.md": {
+   "active": 3
+  },
+  "articles/architecture-practice/data-architecture.md": {
    "active": 3
   },
   "articles/architecture-practice/data-migration-strategy.md": {
@@ -50,8 +53,20 @@
   "articles/architecture-practice/environment-strategy.md": {
    "active": 3
   },
+  "articles/architecture-practice/salesforce-architect.md": {
+   "active": 3
+  },
+  "articles/architecture-practice/technical-debt-in-salesforce.md": {
+   "active": 3
+  },
+  "articles/architecture-practice/testing-strategy.md": {
+   "active": 3
+  },
   "articles/architecture-practice/well-architected-framework.md": {
    "active": 3
+  },
+  "articles/automation/approval-processes.md": {
+   "active": 1
   },
   "articles/automation/autolaunched-flow.md": {
    "active": 3
@@ -72,6 +87,9 @@
    "active": 3
   },
   "articles/clouds-and-products/experience-cloud.md": {
+   "active": 3
+  },
+  "articles/clouds-and-products/knowledge-base.md": {
    "active": 3
   },
   "articles/clouds-and-products/omni-channel.md": {
@@ -95,6 +113,9 @@
   "articles/data-cloud-and-ai/einstein-trust-layer.md": {
    "active": 3
   },
+  "articles/data-cloud-and-ai/prompt-builder.md": {
+   "active": 3
+  },
   "articles/data-model/data-skew.md": {
    "active": 3
   },
@@ -102,6 +123,12 @@
    "active": 3
   },
   "articles/data-model/lookup-vs-master-detail.md": {
+   "active": 3
+  },
+  "articles/data-model/object-relationships.md": {
+   "active": 3
+  },
+  "articles/data-model/person-accounts.md": {
    "active": 3
   },
   "articles/data-model/roll-up-summary-field.md": {
@@ -117,6 +144,9 @@
    "active": 3
   },
   "articles/development/asynchronous-apex.md": {
+   "active": 3
+  },
+  "articles/development/soql.md": {
    "active": 3
   },
   "articles/devops-and-alm/application-lifecycle-management.md": {
@@ -137,25 +167,76 @@
   "articles/devops-and-alm/salesforce-cli.md": {
    "active": 3
   },
+  "articles/devops-and-alm/salesforce-dx.md": {
+   "active": 3
+  },
+  "articles/devops-and-alm/scratch-orgs.md": {
+   "active": 3
+  },
+  "articles/devops-and-alm/second-generation-managed-packages.md": {
+   "active": 3
+  },
+  "articles/devops-and-alm/source-tracking.md": {
+   "active": 3
+  },
   "articles/devops-and-alm/unlocked-packages.md": {
    "active": 1
   },
   "articles/identity/connected-apps.md": {
    "active": 3
   },
+  "articles/identity/experience-cloud-identity.md": {
+   "active": 3
+  },
   "articles/identity/external-client-apps.md": {
+   "active": 3
+  },
+  "articles/identity/identity-and-access-management-architect-certification.md": {
    "active": 3
   },
   "articles/identity/multi-factor-authentication.md": {
    "active": 1
   },
+  "articles/identity/my-domain.md": {
+   "active": 3
+  },
+  "articles/identity/oauth-2-0.md": {
+   "active": 3
+  },
+  "articles/identity/oauth-2-flows-in-salesforce.md": {
+   "active": 3
+  },
+  "articles/identity/openid-connect-authentication-providers.md": {
+   "active": 3
+  },
+  "articles/identity/salesforce-identity.md": {
+   "active": 3
+  },
+  "articles/identity/single-sign-on-saml.md": {
+   "active": 3
+  },
+  "articles/integration/bulk-api-2.md": {
+   "active": 3
+  },
   "articles/integration/change-data-capture.md": {
+   "active": 3
+  },
+  "articles/integration/named-credentials.md": {
    "active": 3
   },
   "articles/integration/platform-events.md": {
    "active": 1
   },
+  "articles/integration/pub-sub-api.md": {
+   "active": 3
+  },
   "articles/platform-architecture/governor-limits.md": {
+   "active": 3
+  },
+  "articles/platform-architecture/hyperforce.md": {
+   "active": 3
+  },
+  "articles/platform-architecture/large-data-volumes.md": {
    "active": 3
   },
   "articles/platform-architecture/multitenancy.md": {
@@ -164,10 +245,25 @@
   "articles/platform-architecture/order-of-execution.md": {
    "active": 3
   },
+  "articles/platform-architecture/record-locking.md": {
+   "active": 3
+  },
+  "articles/platform-architecture/salesforce-platform.md": {
+   "active": 3
+  },
   "articles/platform-architecture/sandbox-types.md": {
    "active": 3
   },
+  "articles/public-sector-and-compliance/data-residency.md": {
+   "active": 3
+  },
+  "articles/public-sector-and-compliance/fedramp.md": {
+   "active": 3
+  },
   "articles/public-sector-and-compliance/government-cloud-plus.md": {
+   "active": 3
+  },
+  "articles/public-sector-and-compliance/il4-and-il5.md": {
    "active": 3
   },
   "articles/public-sector-and-compliance/public-sector-solutions.md": {
@@ -176,10 +272,16 @@
   "articles/security-and-sharing/organization-wide-defaults.md": {
    "active": 1
   },
+  "articles/security-and-sharing/restriction-rules.md": {
+   "active": 3
+  },
   "articles/security-and-sharing/role-hierarchy.md": {
    "active": 3
   },
   "articles/security-and-sharing/salesforce-sharing-model.md": {
+   "active": 3
+  },
+  "articles/security-and-sharing/sharing-rules.md": {
    "active": 3
   }
  }

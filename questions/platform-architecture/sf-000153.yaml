@@ -1,0 +1,18 @@
+id: sf-000153
+product_area: platform-architecture
+true_statement: Custom metadata types are metadata that can be packaged and deployed, whereas custom settings are data.
+false_statement: Custom settings are metadata that can be packaged and deployed, whereas custom metadata types are data.
+explanation: Custom metadata records travel with deployments and packages. Custom settings values are data, so they have to be loaded separately in each org.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/salesforce-platform.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: 175348496e14b3e99b82eaa2639eb69dc26050fd
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:salesforce-platform
+- kt:metadata-driven-architecture
+difficulty: 2
+created: '2026-11-09'
+status: active

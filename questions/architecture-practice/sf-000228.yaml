@@ -1,0 +1,18 @@
+id: sf-000228
+product_area: architecture-practice
+true_statement: Well-Architected guidance suggests load testing quarterly at 3x to 5x current production volumes.
+false_statement: Well-Architected guidance suggests load testing once a year at 10x current production volumes.
+explanation: The recommendation is a quarterly load test at three to five times today's volume, ahead of major releases. Salesforce Support should be told before performance tests run.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/testing-strategy.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: 810f7295a5e611446f6a23c885d5c27d71eb8809
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:testing-strategy
+- kt:scale-test
+difficulty: 2
+created: '2026-11-09'
+status: active

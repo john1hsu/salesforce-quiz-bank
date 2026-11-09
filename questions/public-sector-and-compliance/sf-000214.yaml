@@ -1,0 +1,18 @@
+id: sf-000214
+product_area: public-sector-and-compliance
+true_statement: The Hyperforce EU Operating Zone treats all 27 member states as one zone, so customers can't choose a specific EU country.
+false_statement: The Hyperforce EU Operating Zone lets customers choose a specific EU member state in which to keep their data.
+explanation: The EU Operating Zone is a single region spanning the whole bloc. Its value is in-region support and contractual transfer limits, not country-level placement.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/data-residency.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: 6f5b6bd27b20b7f7bccb8dc333d2c003dce3132e
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:data-residency
+- kt:hyperforce-operating-zones
+difficulty: 2
+created: '2026-11-09'
+status: active

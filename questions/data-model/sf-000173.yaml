@@ -1,0 +1,17 @@
+id: sf-000173
+product_area: data-model
+true_statement: A hierarchical relationship is a special lookup that exists only on the User object, used for chains such as managers.
+false_statement: A hierarchical relationship is a special lookup that can be added to any custom object to model parent-child chains.
+explanation: Hierarchical relationships are limited to User, which is how fields like Manager link one user to another. Other objects use standard lookup or master-detail fields.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/object-relationships.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: 2a01bc44df889f4d3dc6bf62f7651e3996eca130
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:object-relationships
+difficulty: 1
+created: '2026-11-09'
+status: active

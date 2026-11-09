@@ -1,0 +1,18 @@
+id: sf-000217
+product_area: public-sector-and-compliance
+true_statement: Under FedRAMP's 2026 relabelling, Class C corresponds to the Moderate baseline and Class D to High.
+false_statement: Under FedRAMP's 2026 relabelling, Class C corresponds to the High baseline and Class D to Moderate.
+explanation: 'The letters rise with impact: Class B covers Low and LI-SaaS, Class C is Moderate and Class D is High. Salesforce now calls Government Cloud Plus Class D.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/fedramp.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: 76ad9b68fd57625188f033da8be450b0b84fc53a
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:fedramp
+- kt:fedramp-high
+difficulty: 2
+created: '2026-11-09'
+status: active

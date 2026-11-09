@@ -1,0 +1,19 @@
+id: sf-000227
+product_area: architecture-practice
+true_statement: Well-Architected guidance maps integration testing to Partial Copy sandboxes and performance testing to Full Copy sandboxes.
+false_statement: Well-Architected guidance maps integration testing to Full Copy sandboxes and performance testing to Partial Copy sandboxes.
+explanation: Partial Copy sandboxes carry representative data for integration tests, while Full Copy sandboxes mirror production for performance testing and staging. Developer sandboxes host unit testing.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/testing-strategy.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: 810f7295a5e611446f6a23c885d5c27d71eb8809
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:testing-strategy
+- kt:sandbox-types
+- kt:environment-strategy
+difficulty: 2
+created: '2026-11-09'
+status: active

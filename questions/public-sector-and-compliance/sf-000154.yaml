@@ -1,0 +1,19 @@
+id: sf-000154
+product_area: public-sector-and-compliance
+true_statement: DoD Impact Level 5 is built on the FedRAMP High baseline, while Impact Level 4 starts from FedRAMP Moderate.
+false_statement: DoD Impact Level 5 is built on the FedRAMP Moderate baseline, while Impact Level 4 starts from FedRAMP Low.
+explanation: IL4 adds DoD controls on top of FedRAMP Moderate. IL5, which covers higher-sensitivity CUI and unclassified NSS data, uses FedRAMP High as its base.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/il4-and-il5.md
+  commit: 1a9626507b2858110c996adbfa985703bee41fd5
+  blob: fa0412943d3153d59b80e44bdbe28d83c665154f
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:il4-and-il5
+- kt:fedramp-high
+- kt:fedramp
+difficulty: 2
+created: '2026-11-09'
+status: active
