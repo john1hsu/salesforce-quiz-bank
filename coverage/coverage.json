@@ -1,6 +1,6 @@
 {
  "totals": {
-  "active": 14
+  "active": 17
  },
  "areas": {
   "architecture-practice": {
@@ -10,6 +10,9 @@
    "active": 4
   },
   "clouds-and-products": {
+   "active": 3
+  },
+  "data-cloud-and-ai": {
    "active": 3
   },
   "devops-and-alm": {
@@ -36,6 +39,9 @@
    "active": 1
   },
   "articles/clouds-and-products/omni-channel.md": {
+   "active": 3
+  },
+  "articles/data-cloud-and-ai/agent-development-lifecycle.md": {
    "active": 3
   },
   "articles/devops-and-alm/unlocked-packages.md": {

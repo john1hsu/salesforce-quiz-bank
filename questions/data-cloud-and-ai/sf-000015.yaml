@@ -1,0 +1,18 @@
+id: sf-000015
+product_area: data-cloud-and-ai
+true_statement: Agentforce Testing Center accepts up to 1,000 test cases in a single test.
+false_statement: Agentforce Testing Center accepts up to 100 test cases in a single test.
+explanation: Testing Center caps a single test at 1,000 test cases, alongside a limit of 10 concurrent test jobs in a 10-hour window. A 100-case ceiling understates the limit tenfold.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/agent-development-lifecycle.md
+  commit: 91f8675154c337a548ff9902de9162f1a8c8a1fe
+  blob: 8958a9628b7291db48db5c3761b1d9222cc10983
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:agent-development-lifecycle
+- kt:agentforce-testing-center
+difficulty: 2
+created: '2026-11-09'
+status: active

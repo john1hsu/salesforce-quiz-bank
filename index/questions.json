@@ -1,7 +1,7 @@
 {
  "version": 1,
- "count": 14,
- "active": 14,
+ "count": 17,
+ "active": 17,
  "questions": [
   {
    "id": "sf-000001",
@@ -241,6 +241,57 @@
    "difficulty": 3,
    "status": "active",
    "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/omni-channel.md"
+  },
+  {
+   "id": "sf-000015",
+   "area": "data-cloud-and-ai",
+   "t": "Agentforce Testing Center accepts up to 1,000 test cases in a single test.",
+   "f": "Agentforce Testing Center accepts up to 100 test cases in a single test.",
+   "x": "Testing Center caps a single test at 1,000 test cases, alongside a limit of 10 concurrent test jobs in a 10-hour window. A 100-case ceiling understates the limit tenfold.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:agent-development-lifecycle",
+    "kt:agentforce-testing-center"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/agent-development-lifecycle.md"
+  },
+  {
+   "id": "sf-000016",
+   "area": "data-cloud-and-ai",
+   "t": "Agent tests should run in sandboxes with realistic data, never in production, because test runs can modify CRM records.",
+   "f": "Agent tests can run safely in production because test runs are read-only and never modify CRM records.",
+   "x": "The lifecycle keeps agent testing out of production since a test run can change real CRM records. Sandboxes with realistic data are the intended place for it, so the read-only claim is wrong.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:agent-development-lifecycle",
+    "kt:sandbox-types"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/agent-development-lifecycle.md"
+  },
+  {
+   "id": "sf-000017",
+   "area": "data-cloud-and-ai",
+   "t": "In the pro-code Agent Script workflow, activation, not publishing, is what makes a new agent version reachable by users.",
+   "f": "In the pro-code Agent Script workflow, publishing, not activation, is what makes a new agent version reachable by users.",
+   "x": "Publishing an Agent Script bundle only produces an inactive runnable version. Users reach it once it is activated as a separate step, so publishing alone does not put it live.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:agent-development-lifecycle",
+    "kt:agentforce-dx"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/agent-development-lifecycle.md"
   }
  ]
 }

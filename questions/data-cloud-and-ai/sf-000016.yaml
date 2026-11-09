@@ -1,0 +1,18 @@
+id: sf-000016
+product_area: data-cloud-and-ai
+true_statement: Agent tests should run in sandboxes with realistic data, never in production, because test runs can modify CRM records.
+false_statement: Agent tests can run safely in production because test runs are read-only and never modify CRM records.
+explanation: The lifecycle keeps agent testing out of production since a test run can change real CRM records. Sandboxes with realistic data are the intended place for it, so the read-only claim is wrong.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/agent-development-lifecycle.md
+  commit: 91f8675154c337a548ff9902de9162f1a8c8a1fe
+  blob: 8958a9628b7291db48db5c3761b1d9222cc10983
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:agent-development-lifecycle
+- kt:sandbox-types
+difficulty: 2
+created: '2026-11-09'
+status: active
