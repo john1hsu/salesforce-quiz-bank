@@ -1,6 +1,6 @@
 {
  "totals": {
-  "active": 74
+  "active": 89
  },
  "areas": {
   "architecture-practice": {
@@ -31,7 +31,10 @@
    "active": 4
   },
   "platform-architecture": {
-   "active": 3
+   "active": 12
+  },
+  "public-sector-and-compliance": {
+   "active": 6
   },
   "security-and-sharing": {
    "active": 1
@@ -117,6 +120,21 @@
    "active": 1
   },
   "articles/platform-architecture/governor-limits.md": {
+   "active": 3
+  },
+  "articles/platform-architecture/multitenancy.md": {
+   "active": 3
+  },
+  "articles/platform-architecture/order-of-execution.md": {
+   "active": 3
+  },
+  "articles/platform-architecture/sandbox-types.md": {
+   "active": 3
+  },
+  "articles/public-sector-and-compliance/government-cloud-plus.md": {
+   "active": 3
+  },
+  "articles/public-sector-and-compliance/public-sector-solutions.md": {
    "active": 3
   },
   "articles/security-and-sharing/organization-wide-defaults.md": {

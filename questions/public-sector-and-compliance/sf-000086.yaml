@@ -1,0 +1,18 @@
+id: sf-000086
+product_area: public-sector-and-compliance
+true_statement: Government Cloud Plus's FedRAMP High authorization covers the service boundary, so each agency still issues its own ATO against the package.
+false_statement: Government Cloud Plus's FedRAMP High authorization acts as a blanket ATO, so agencies no longer issue their own ATO against the package.
+explanation: The FedRAMP authorization applies to Salesforce's boundary, not to an agency's org; the dozens of ATO letters on the Marketplace are separate agency decisions. It is not a blanket ATO for every customer.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/government-cloud-plus.md
+  commit: ee7571c675638f9605db9044cd8e6d5432c21c41
+  blob: 56635ca54604be79423eea27c3a9d885f5f7049b
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:government-cloud-plus
+- kt:fedramp-high
+difficulty: 3
+created: '2026-11-09'
+status: active

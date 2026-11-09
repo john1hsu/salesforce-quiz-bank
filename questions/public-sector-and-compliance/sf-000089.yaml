@@ -1,0 +1,17 @@
+id: sf-000089
+product_area: public-sector-and-compliance
+true_statement: Under Public Sector Solutions usage-based pricing, application record types left unmapped default to License and Permit Management, which can inflate usage counts.
+false_statement: Under Public Sector Solutions usage-based pricing, application record types left unmapped default to Grants Management, which can inflate usage counts.
+explanation: The admin guide warns that unmapped application record types fall back to License and Permit Management. Grants Management is not the default bucket.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/public-sector-solutions.md
+  commit: ee7571c675638f9605db9044cd8e6d5432c21c41
+  blob: 9259b185ce53593c8bc4d20255e6b8d9bdf6be4d
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:public-sector-solutions
+difficulty: 3
+created: '2026-11-09'
+status: active

@@ -1,0 +1,18 @@
+id: sf-000077
+product_area: platform-architecture
+true_statement: Salesforce's query optimizer keeps tenant-, group- and user-level statistics and runs pre-queries to measure selectivity before choosing a plan.
+false_statement: Salesforce's query optimizer keeps only table-level statistics shared by all tenants and picks a plan without measuring selectivity first.
+explanation: Conventional statistics ignore what each user can see, so the platform tracks statistics per tenant, group and user and checks selectivity with pre-queries before planning.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/multitenancy.md
+  commit: ee7571c675638f9605db9044cd8e6d5432c21c41
+  blob: ef21718d84575e6f8cea665a527acfa88c07b663
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:multitenancy
+- kt:query-optimizer-selectivity
+difficulty: 3
+created: '2026-11-09'
+status: active

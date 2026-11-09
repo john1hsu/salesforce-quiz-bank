@@ -1,0 +1,17 @@
+id: sf-000081
+product_area: platform-architecture
+true_statement: Buying a Full sandbox add-on also brings 15 extra Developer sandboxes.
+false_statement: Buying a Full sandbox add-on also brings 5 extra Developer sandboxes.
+explanation: 'Each paid sandbox add-on comes with bonus Developer sandboxes: 5 with Developer Pro, 10 with Partial Copy and 15 with Full. Five is the Developer Pro bonus, not the Full one.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/sandbox-types.md
+  commit: ee7571c675638f9605db9044cd8e6d5432c21c41
+  blob: 7a8f0702831ad633ad4d89590cbf10421f2c290f
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:sandbox-types
+difficulty: 2
+created: '2026-11-09'
+status: active

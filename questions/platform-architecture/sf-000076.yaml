@@ -1,0 +1,17 @@
+id: sf-000076
+product_area: platform-architecture
+true_statement: In SalesforceDB the tenant ID is part of the primary key, which clusters each tenant's data together in a shared database.
+false_statement: In SalesforceDB each tenant gets its own separate physical database, which keeps each tenant's data together.
+explanation: One instance runs a single shared database and schema; isolation comes from the tenant ID in the primary key, tenant predicates on queries and per-tenant encryption keys, not separate databases.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/multitenancy.md
+  commit: ee7571c675638f9605db9044cd8e6d5432c21c41
+  blob: ef21718d84575e6f8cea665a527acfa88c07b663
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:multitenancy
+difficulty: 2
+created: '2026-11-09'
+status: active

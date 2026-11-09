@@ -1,0 +1,18 @@
+id: sf-000085
+product_area: public-sector-and-compliance
+true_statement: MuleSoft Government Cloud Plus permits only connectors that are tagged as FIPS 140-3 verified.
+false_statement: MuleSoft Government Cloud Plus permits any Anypoint connector, as long as the Private Space has outbound internet access turned on.
+explanation: MuleSoft's government control plane restricts connectors to those tagged FIPS 140-3 verified. Enabling outbound access does not lift that restriction, so arbitrary connectors are not allowed.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/government-cloud-plus.md
+  commit: ee7571c675638f9605db9044cd8e6d5432c21c41
+  blob: 56635ca54604be79423eea27c3a9d885f5f7049b
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:government-cloud-plus
+- kt:mulesoft-anypoint-platform
+difficulty: 2
+created: '2026-11-09'
+status: active

@@ -1,0 +1,18 @@
+id: sf-000082
+product_area: platform-architecture
+true_statement: A sandbox template is required when creating a Partial Copy sandbox and optional when creating a Full sandbox.
+false_statement: A sandbox template is required when creating a Full sandbox and optional when creating a Partial Copy sandbox.
+explanation: Partial Copy sandboxes need a template to choose the sample data, while a Full sandbox copies all data and can take a template only optionally. The false version reverses them.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/sandbox-types.md
+  commit: ee7571c675638f9605db9044cd8e6d5432c21c41
+  blob: 7a8f0702831ad633ad4d89590cbf10421f2c290f
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:sandbox-types
+- kt:sandbox-templates
+difficulty: 2
+created: '2026-11-09'
+status: active

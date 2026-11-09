@@ -1,7 +1,7 @@
 {
  "version": 1,
- "count": 74,
- "active": 74,
+ "count": 89,
+ "active": 89,
  "questions": [
   {
    "id": "sf-000001",
@@ -1247,6 +1247,260 @@
    "difficulty": 3,
    "status": "active",
    "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/change-data-capture.md"
+  },
+  {
+   "id": "sf-000075",
+   "area": "platform-architecture",
+   "t": "Creating a custom object in Salesforce stores its definition as metadata instead of creating a new physical database table.",
+   "f": "Creating a custom object in Salesforce runs DDL that creates a new physical database table for that object.",
+   "x": "The platform keeps object definitions as metadata and materializes them at runtime, so schema changes need no locks or downtime. No per-object table is created.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:multitenancy",
+    "kt:metadata-driven-architecture"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/multitenancy.md"
+  },
+  {
+   "id": "sf-000076",
+   "area": "platform-architecture",
+   "t": "In SalesforceDB the tenant ID is part of the primary key, which clusters each tenant's data together in a shared database.",
+   "f": "In SalesforceDB each tenant gets its own separate physical database, which keeps each tenant's data together.",
+   "x": "One instance runs a single shared database and schema; isolation comes from the tenant ID in the primary key, tenant predicates on queries and per-tenant encryption keys, not separate databases.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:multitenancy"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/multitenancy.md"
+  },
+  {
+   "id": "sf-000077",
+   "area": "platform-architecture",
+   "t": "Salesforce's query optimizer keeps tenant-, group- and user-level statistics and runs pre-queries to measure selectivity before choosing a plan.",
+   "f": "Salesforce's query optimizer keeps only table-level statistics shared by all tenants and picks a plan without measuring selectivity first.",
+   "x": "Conventional statistics ignore what each user can see, so the platform tracks statistics per tenant, group and user and checks selectivity with pre-queries before planning.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:multitenancy",
+    "kt:query-optimizer-selectivity"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/multitenancy.md"
+  },
+  {
+   "id": "sf-000078",
+   "area": "platform-architecture",
+   "t": "During a record save, before-save record-triggered flows run before all before triggers.",
+   "f": "During a record save, before-save record-triggered flows run after all before triggers.",
+   "x": "The server runs before-save flows first and then the before triggers, all ahead of custom validation. The false version reverses that order.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:order-of-execution",
+    "kt:record-triggered-flow",
+    "kt:apex-triggers"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/order-of-execution.md"
+  },
+  {
+   "id": "sf-000079",
+   "area": "platform-architecture",
+   "t": "A workflow field update fires before-update and after-update triggers once more, but custom validation rules do not run again.",
+   "f": "A workflow field update runs custom validation rules once more, but before-update and after-update triggers do not fire again.",
+   "x": "The extra save caused by a workflow field update re-fires update triggers, even for an original insert, while custom validation, flows and duplicate rules are skipped on that pass.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:order-of-execution",
+    "kt:apex-triggers"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/order-of-execution.md"
+  },
+  {
+   "id": "sf-000080",
+   "area": "platform-architecture",
+   "t": "Record-triggered flows with no trigger order value run after flows numbered 1 to 1,000 and before flows numbered 1,001 to 2,000.",
+   "f": "Record-triggered flows with no trigger order value run after all flows numbered 1 to 2,000.",
+   "x": "Numbered flows 1 to 1,000 go first, then unnumbered flows by activation date, then 1,001 to 2,000. Unnumbered flows are not pushed to the very end.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:order-of-execution",
+    "kt:record-triggered-flow",
+    "kt:flow-trigger-explorer"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/order-of-execution.md"
+  },
+  {
+   "id": "sf-000081",
+   "area": "platform-architecture",
+   "t": "Buying a Full sandbox add-on also brings 15 extra Developer sandboxes.",
+   "f": "Buying a Full sandbox add-on also brings 5 extra Developer sandboxes.",
+   "x": "Each paid sandbox add-on comes with bonus Developer sandboxes: 5 with Developer Pro, 10 with Partial Copy and 15 with Full. Five is the Developer Pro bonus, not the Full one.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:sandbox-types"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/sandbox-types.md"
+  },
+  {
+   "id": "sf-000082",
+   "area": "platform-architecture",
+   "t": "A sandbox template is required when creating a Partial Copy sandbox and optional when creating a Full sandbox.",
+   "f": "A sandbox template is required when creating a Full sandbox and optional when creating a Partial Copy sandbox.",
+   "x": "Partial Copy sandboxes need a template to choose the sample data, while a Full sandbox copies all data and can take a template only optionally. The false version reverses them.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:sandbox-types",
+    "kt:sandbox-templates"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/sandbox-types.md"
+  },
+  {
+   "id": "sf-000083",
+   "area": "platform-architecture",
+   "t": "A sandbox that nobody logs into for 180 days becomes eligible for deletion, and a deleted sandbox cannot be recovered.",
+   "f": "A sandbox that nobody logs into for 365 days becomes eligible for deletion, and a deleted sandbox cannot be recovered.",
+   "x": "Salesforce flags sandboxes with no logins for 180 days as eligible for deletion, and deletion is permanent. A full year of inactivity is longer than the actual threshold.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:sandbox-types"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/sandbox-types.md"
+  },
+  {
+   "id": "sf-000084",
+   "area": "public-sector-and-compliance",
+   "t": "Salesforce Government Cloud Plus holds a FedRAMP authorization at the High security impact level, granted through the Joint Authorization Board.",
+   "f": "Salesforce Government Cloud Plus holds a FedRAMP authorization at the Moderate security impact level, granted through the Joint Authorization Board.",
+   "x": "Government Cloud Plus launched with a FedRAMP High provisional ATO from the JAB and is listed at the High impact level on the FedRAMP Marketplace. Moderate is the wrong impact level.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:government-cloud-plus",
+    "kt:fedramp-high"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/government-cloud-plus.md"
+  },
+  {
+   "id": "sf-000085",
+   "area": "public-sector-and-compliance",
+   "t": "MuleSoft Government Cloud Plus permits only connectors that are tagged as FIPS 140-3 verified.",
+   "f": "MuleSoft Government Cloud Plus permits any Anypoint connector, as long as the Private Space has outbound internet access turned on.",
+   "x": "MuleSoft's government control plane restricts connectors to those tagged FIPS 140-3 verified. Enabling outbound access does not lift that restriction, so arbitrary connectors are not allowed.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:government-cloud-plus",
+    "kt:mulesoft-anypoint-platform"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/government-cloud-plus.md"
+  },
+  {
+   "id": "sf-000086",
+   "area": "public-sector-and-compliance",
+   "t": "Government Cloud Plus's FedRAMP High authorization covers the service boundary, so each agency still issues its own ATO against the package.",
+   "f": "Government Cloud Plus's FedRAMP High authorization acts as a blanket ATO, so agencies no longer issue their own ATO against the package.",
+   "x": "The FedRAMP authorization applies to Salesforce's boundary, not to an agency's org; the dozens of ATO letters on the Marketplace are separate agency decisions. It is not a blanket ATO for every customer.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:government-cloud-plus",
+    "kt:fedramp-high"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/government-cloud-plus.md"
+  },
+  {
+   "id": "sf-000087",
+   "area": "public-sector-and-compliance",
+   "t": "When preparing a Public Sector Solutions org, person accounts should be enabled before OmniStudio is installed.",
+   "f": "When preparing a Public Sector Solutions org, person accounts should be enabled only after OmniStudio is installed.",
+   "x": "Trailhead's org-prep guidance says to turn on person accounts first and install OmniStudio afterwards. Reversing that order goes against the recommended setup sequence.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:public-sector-solutions",
+    "kt:person-accounts",
+    "kt:omnistudio"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/public-sector-solutions.md"
+  },
+  {
+   "id": "sf-000088",
+   "area": "public-sector-and-compliance",
+   "t": "In Public Sector Solutions, the Business Rules Engine automates eligibility and fee decisions using expression sets and decision matrices.",
+   "f": "In Public Sector Solutions, Action Plans automate eligibility and fee decisions using expression sets and decision matrices.",
+   "x": "Eligibility and fee logic is handled by the Business Rules Engine, with Decision Explainer showing why a rule fired. Action Plans supply task checklists for inspections or reviews, not rules evaluation.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:public-sector-solutions",
+    "kt:business-rules-engine"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/public-sector-solutions.md"
+  },
+  {
+   "id": "sf-000089",
+   "area": "public-sector-and-compliance",
+   "t": "Under Public Sector Solutions usage-based pricing, application record types left unmapped default to License and Permit Management, which can inflate usage counts.",
+   "f": "Under Public Sector Solutions usage-based pricing, application record types left unmapped default to Grants Management, which can inflate usage counts.",
+   "x": "The admin guide warns that unmapped application record types fall back to License and Permit Management. Grants Management is not the default bucket.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:public-sector-solutions"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/public-sector-solutions.md"
   }
  ]
 }

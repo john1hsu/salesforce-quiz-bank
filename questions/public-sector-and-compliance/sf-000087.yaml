@@ -1,0 +1,19 @@
+id: sf-000087
+product_area: public-sector-and-compliance
+true_statement: When preparing a Public Sector Solutions org, person accounts should be enabled before OmniStudio is installed.
+false_statement: When preparing a Public Sector Solutions org, person accounts should be enabled only after OmniStudio is installed.
+explanation: Trailhead's org-prep guidance says to turn on person accounts first and install OmniStudio afterwards. Reversing that order goes against the recommended setup sequence.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/public-sector-solutions.md
+  commit: ee7571c675638f9605db9044cd8e6d5432c21c41
+  blob: 9259b185ce53593c8bc4d20255e6b8d9bdf6be4d
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:public-sector-solutions
+- kt:person-accounts
+- kt:omnistudio
+difficulty: 2
+created: '2026-11-09'
+status: active

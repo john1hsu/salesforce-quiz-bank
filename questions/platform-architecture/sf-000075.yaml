@@ -1,0 +1,18 @@
+id: sf-000075
+product_area: platform-architecture
+true_statement: Creating a custom object in Salesforce stores its definition as metadata instead of creating a new physical database table.
+false_statement: Creating a custom object in Salesforce runs DDL that creates a new physical database table for that object.
+explanation: The platform keeps object definitions as metadata and materializes them at runtime, so schema changes need no locks or downtime. No per-object table is created.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/multitenancy.md
+  commit: ee7571c675638f9605db9044cd8e6d5432c21c41
+  blob: ef21718d84575e6f8cea665a527acfa88c07b663
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:multitenancy
+- kt:metadata-driven-architecture
+difficulty: 1
+created: '2026-11-09'
+status: active
