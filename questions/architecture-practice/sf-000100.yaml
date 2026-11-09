@@ -1,0 +1,17 @@
+id: sf-000100
+product_area: architecture-practice
+true_statement: For migration loads, insert is the fastest operation, followed by update, with upsert the slowest.
+false_statement: For migration loads, upsert is the fastest operation, followed by update, with insert the slowest.
+explanation: Insert is quickest and upsert slowest, so the guidance suggests splitting upserts into separate create and update passes where possible. The false ordering is reversed.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/data-migration-strategy.md
+  commit: ee7571c675638f9605db9044cd8e6d5432c21c41
+  blob: f1bf6b403f22e744d5ec84434208dd0a7d7377dc
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:data-migration-strategy
+difficulty: 2
+created: '2026-11-09'
+status: active

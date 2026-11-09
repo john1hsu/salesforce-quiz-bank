@@ -1,0 +1,18 @@
+id: sf-000098
+product_area: architecture-practice
+true_statement: In Salesforce Archive, master-detail children are archived with their parent automatically, while lookup children are included only through configuration.
+false_statement: In Salesforce Archive, lookup children are archived with their parent automatically, while master-detail children are included only through configuration.
+explanation: Salesforce Archive keeps relationships intact by moving master-detail children along with the parent by default; lookup children must be added in the policy. The false statement swaps the two relationship types.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/archiving-strategy.md
+  commit: ee7571c675638f9605db9044cd8e6d5432c21c41
+  blob: eb04e3d628c2b4b779c73a4765402b25edf9c476
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:archiving-strategy
+- kt:salesforce-archive
+difficulty: 2
+created: '2026-11-09'
+status: active

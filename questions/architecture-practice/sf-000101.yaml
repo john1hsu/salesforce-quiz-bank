@@ -1,0 +1,17 @@
+id: sf-000101
+product_area: architecture-practice
+true_statement: During a large initial load, set target objects' org-wide defaults to Public Read/Write so no sharing rows are computed, then tighten them afterward.
+false_statement: During a large initial load, set target objects' org-wide defaults to Private so no sharing rows are computed, then open them up afterward.
+explanation: Public Read/Write avoids sharing calculations while data streams in; defaults are tightened to Private or Public Read Only once the load is done. Private during the load is what generates the sharing work.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/data-migration-strategy.md
+  commit: ee7571c675638f9605db9044cd8e6d5432c21c41
+  blob: f1bf6b403f22e744d5ec84434208dd0a7d7377dc
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:data-migration-strategy
+difficulty: 3
+created: '2026-11-09'
+status: active

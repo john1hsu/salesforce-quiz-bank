@@ -1,0 +1,18 @@
+id: sf-000104
+product_area: automation
+true_statement: If an autolaunched flow element exceeds a governor limit, the whole transaction rolls back even when that element has a fault connector.
+false_statement: If an autolaunched flow element exceeds a governor limit and has a fault connector, only that element's work rolls back and the flow follows the fault path.
+explanation: Limit breaches cannot be caught by a fault connector; the entire transaction is rolled back. The false statement treats a limit breach like an ordinary handled fault.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/autolaunched-flow.md
+  commit: ee7571c675638f9605db9044cd8e6d5432c21c41
+  blob: 6e4670ff07f6a71d184a0b6b3b38e0e938e64cd4
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:autolaunched-flow
+- kt:governor-limits
+difficulty: 3
+created: '2026-11-09'
+status: active

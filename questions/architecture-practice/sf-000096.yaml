@@ -1,0 +1,18 @@
+id: sf-000096
+product_area: architecture-practice
+true_statement: Salesforce's large-data-volume guidance recommends archiving or discarding data at the rate it arrives, so the active record set stays roughly constant.
+false_statement: Salesforce's large-data-volume guidance recommends archiving data in one annual clean-up once storage limits are reached, letting the active set grow in between.
+explanation: The LDV best practices say to remove data at the rate it comes in so performance does not degrade as volume grows. Infrequent, limit-driven clean-ups are what a deliberate archiving strategy is meant to replace.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/archiving-strategy.md
+  commit: ee7571c675638f9605db9044cd8e6d5432c21c41
+  blob: eb04e3d628c2b4b779c73a4765402b25edf9c476
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:archiving-strategy
+- kt:large-data-volumes
+difficulty: 2
+created: '2026-11-09'
+status: active

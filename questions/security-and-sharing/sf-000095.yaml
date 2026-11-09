@@ -1,0 +1,19 @@
+id: sf-000095
+product_area: security-and-sharing
+true_statement: Full Access to a record can come only from managed sharing such as ownership; a manual share is limited to lower access levels.
+false_statement: Full Access to a record can be granted through a manual share, in addition to managed sharing such as ownership.
+explanation: Full Access (the All level) is reserved for platform-managed grants like ownership. Manual shares cannot hand it out, so the false statement overstates what manual sharing can do.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/salesforce-sharing-model.md
+  commit: ee7571c675638f9605db9044cd8e6d5432c21c41
+  blob: 43bc821e38db74de28f637212adff7cef1eb03c2
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:sharing-and-visibility-architect-certification
+concepts:
+- kt:salesforce-sharing-model
+difficulty: 2
+created: '2026-11-09'
+status: active

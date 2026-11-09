@@ -1,0 +1,20 @@
+id: sf-000103
+product_area: automation
+true_statement: Autolaunched and screen flows can be called as subflows, but record-triggered flows cannot be referenced from another flow.
+false_statement: Autolaunched and record-triggered flows can be called as subflows, but screen flows cannot be referenced from another flow.
+explanation: Both autolaunched and screen flows work as subflows; record-triggered flows cannot be called from a parent flow. That is why shared logic usually lives in an autolaunched flow.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/autolaunched-flow.md
+  commit: ee7571c675638f9605db9044cd8e6d5432c21c41
+  blob: 6e4670ff07f6a71d184a0b6b3b38e0e938e64cd4
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:autolaunched-flow
+- kt:subflows
+- kt:record-triggered-flow
+- kt:screen-flow
+difficulty: 2
+created: '2026-11-09'
+status: active

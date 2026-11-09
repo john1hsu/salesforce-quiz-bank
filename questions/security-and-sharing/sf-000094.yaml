@@ -1,0 +1,20 @@
+id: sf-000094
+product_area: security-and-sharing
+true_statement: When a record's owner changes, its manual shares are deleted, but its Apex managed shares are kept.
+false_statement: When a record's owner changes, its Apex managed shares are deleted, but its manual shares are kept.
+explanation: Apex managed shares survive an ownership change or owner deactivation, while user-managed manual shares are removed when the owner changes. The false statement swaps which kind persists.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/salesforce-sharing-model.md
+  commit: ee7571c675638f9605db9044cd8e6d5432c21c41
+  blob: 43bc821e38db74de28f637212adff7cef1eb03c2
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:sharing-and-visibility-architect-certification
+concepts:
+- kt:salesforce-sharing-model
+- kt:apex-managed-sharing
+difficulty: 2
+created: '2026-11-09'
+status: active

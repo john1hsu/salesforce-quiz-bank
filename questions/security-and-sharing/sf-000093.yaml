@@ -1,0 +1,20 @@
+id: sf-000093
+product_area: security-and-sharing
+true_statement: Manual sharing is offered only when an object's organization-wide default is Private or Public Read Only.
+false_statement: Manual sharing is offered only when an object's organization-wide default is Public Read/Write or Controlled by Parent.
+explanation: 'Manual sharing opens a record beyond the baseline, so it is only available when the default is restrictive: Private or Public Read Only. With Public Read/Write there is nothing more to open.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/salesforce-sharing-model.md
+  commit: ee7571c675638f9605db9044cd8e6d5432c21c41
+  blob: 43bc821e38db74de28f637212adff7cef1eb03c2
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:sharing-and-visibility-architect-certification
+concepts:
+- kt:salesforce-sharing-model
+- kt:organization-wide-defaults
+difficulty: 2
+created: '2026-11-09'
+status: active

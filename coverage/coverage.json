@@ -1,13 +1,13 @@
 {
  "totals": {
-  "active": 89
+  "active": 104
  },
  "areas": {
   "architecture-practice": {
-   "active": 6
+   "active": 12
   },
   "automation": {
-   "active": 7
+   "active": 10
   },
   "clouds-and-products": {
    "active": 6
@@ -37,14 +37,23 @@
    "active": 6
   },
   "security-and-sharing": {
-   "active": 1
+   "active": 7
   }
  },
  "articles": {
+  "articles/architecture-practice/archiving-strategy.md": {
+   "active": 3
+  },
+  "articles/architecture-practice/data-migration-strategy.md": {
+   "active": 3
+  },
   "articles/architecture-practice/environment-strategy.md": {
    "active": 3
   },
   "articles/architecture-practice/well-architected-framework.md": {
+   "active": 3
+  },
+  "articles/automation/autolaunched-flow.md": {
    "active": 3
   },
   "articles/automation/flow-builder.md": {
@@ -139,6 +148,12 @@
   },
   "articles/security-and-sharing/organization-wide-defaults.md": {
    "active": 1
+  },
+  "articles/security-and-sharing/role-hierarchy.md": {
+   "active": 3
+  },
+  "articles/security-and-sharing/salesforce-sharing-model.md": {
+   "active": 3
   }
  }
 }

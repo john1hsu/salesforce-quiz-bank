@@ -1,0 +1,17 @@
+id: sf-000090
+product_area: security-and-sharing
+true_statement: Salesforce orgs created in Spring '21 or later can have up to 5,000 roles, while older orgs start at 500.
+false_statement: Salesforce orgs created in Spring '21 or later can have up to 10,000 roles, while older orgs start at 1,000.
+explanation: The sharing architecture guide gives 5,000 roles for newer orgs and 500 for older ones, which can request more from Support. The 10,000 and 1,000 figures are inflated.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/role-hierarchy.md
+  commit: ee7571c675638f9605db9044cd8e6d5432c21c41
+  blob: 466924b6dfd38f330715bc5079294ebcc3dde620
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:role-hierarchy
+difficulty: 2
+created: '2026-11-09'
+status: active

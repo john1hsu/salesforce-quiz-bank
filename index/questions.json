@@ -1,7 +1,7 @@
 {
  "version": 1,
- "count": 89,
- "active": 89,
+ "count": 104,
+ "active": 104,
  "questions": [
   {
    "id": "sf-000001",
@@ -1501,6 +1501,264 @@
    "difficulty": 3,
    "status": "active",
    "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/public-sector-solutions.md"
+  },
+  {
+   "id": "sf-000090",
+   "area": "security-and-sharing",
+   "t": "Salesforce orgs created in Spring '21 or later can have up to 5,000 roles, while older orgs start at 500.",
+   "f": "Salesforce orgs created in Spring '21 or later can have up to 10,000 roles, while older orgs start at 1,000.",
+   "x": "The sharing architecture guide gives 5,000 roles for newer orgs and 500 for older ones, which can request more from Support. The 10,000 and 1,000 figures are inflated.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:role-hierarchy"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/role-hierarchy.md"
+  },
+  {
+   "id": "sf-000091",
+   "area": "security-and-sharing",
+   "t": "The Grant Access Using Hierarchies setting can be cleared only for custom objects; for standard objects, hierarchy access is always on.",
+   "f": "The Grant Access Using Hierarchies setting can be cleared only for standard objects; for custom objects, hierarchy access is always on.",
+   "x": "Standard objects always grant access up the role hierarchy, while custom objects expose a checkbox (checked by default) that can switch it off. The false statement reverses the two.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:role-hierarchy",
+    "kt:organization-wide-defaults"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/role-hierarchy.md"
+  },
+  {
+   "id": "sf-000092",
+   "area": "security-and-sharing",
+   "t": "Salesforce recommends keeping the role hierarchy to no more than 10 levels of branches.",
+   "f": "Salesforce recommends keeping the role hierarchy to no more than 25 levels of branches.",
+   "x": "Salesforce's sharing architecture guidance suggests a maximum depth of about 10 branch levels. Twenty-five levels is well beyond that recommendation.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:role-hierarchy"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/role-hierarchy.md"
+  },
+  {
+   "id": "sf-000093",
+   "area": "security-and-sharing",
+   "t": "Manual sharing is offered only when an object's organization-wide default is Private or Public Read Only.",
+   "f": "Manual sharing is offered only when an object's organization-wide default is Public Read/Write or Controlled by Parent.",
+   "x": "Manual sharing opens a record beyond the baseline, so it is only available when the default is restrictive: Private or Public Read Only. With Public Read/Write there is nothing more to open.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:sharing-and-visibility-architect-certification"
+   ],
+   "concepts": [
+    "kt:salesforce-sharing-model",
+    "kt:organization-wide-defaults"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/salesforce-sharing-model.md"
+  },
+  {
+   "id": "sf-000094",
+   "area": "security-and-sharing",
+   "t": "When a record's owner changes, its manual shares are deleted, but its Apex managed shares are kept.",
+   "f": "When a record's owner changes, its Apex managed shares are deleted, but its manual shares are kept.",
+   "x": "Apex managed shares survive an ownership change or owner deactivation, while user-managed manual shares are removed when the owner changes. The false statement swaps which kind persists.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:sharing-and-visibility-architect-certification"
+   ],
+   "concepts": [
+    "kt:salesforce-sharing-model",
+    "kt:apex-managed-sharing"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/salesforce-sharing-model.md"
+  },
+  {
+   "id": "sf-000095",
+   "area": "security-and-sharing",
+   "t": "Full Access to a record can come only from managed sharing such as ownership; a manual share is limited to lower access levels.",
+   "f": "Full Access to a record can be granted through a manual share, in addition to managed sharing such as ownership.",
+   "x": "Full Access (the All level) is reserved for platform-managed grants like ownership. Manual shares cannot hand it out, so the false statement overstates what manual sharing can do.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:sharing-and-visibility-architect-certification"
+   ],
+   "concepts": [
+    "kt:salesforce-sharing-model"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/salesforce-sharing-model.md"
+  },
+  {
+   "id": "sf-000096",
+   "area": "architecture-practice",
+   "t": "Salesforce's large-data-volume guidance recommends archiving or discarding data at the rate it arrives, so the active record set stays roughly constant.",
+   "f": "Salesforce's large-data-volume guidance recommends archiving data in one annual clean-up once storage limits are reached, letting the active set grow in between.",
+   "x": "The LDV best practices say to remove data at the rate it comes in so performance does not degrade as volume grows. Infrequent, limit-driven clean-ups are what a deliberate archiving strategy is meant to replace.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:archiving-strategy",
+    "kt:large-data-volumes"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/archiving-strategy.md"
+  },
+  {
+   "id": "sf-000097",
+   "area": "architecture-practice",
+   "t": "Custom big objects used as an archive enforce object and field permissions, but they do not support sharing rules, triggers or flows.",
+   "f": "Custom big objects used as an archive enforce object and field permissions and support sharing rules and flows, but not triggers.",
+   "x": "Big objects scale to billions of records but only honour object and field permissions; sharing rules, triggers and flows are all unsupported. Claiming sharing rules and flows work is wrong.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:archiving-strategy",
+    "kt:big-objects"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/archiving-strategy.md"
+  },
+  {
+   "id": "sf-000098",
+   "area": "architecture-practice",
+   "t": "In Salesforce Archive, master-detail children are archived with their parent automatically, while lookup children are included only through configuration.",
+   "f": "In Salesforce Archive, lookup children are archived with their parent automatically, while master-detail children are included only through configuration.",
+   "x": "Salesforce Archive keeps relationships intact by moving master-detail children along with the parent by default; lookup children must be added in the policy. The false statement swaps the two relationship types.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:archiving-strategy",
+    "kt:salesforce-archive"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/archiving-strategy.md"
+  },
+  {
+   "id": "sf-000099",
+   "area": "architecture-practice",
+   "t": "Salesforce's loading guidance recommends Bulk API 2.0 for operations above 2,000 records and bulkified synchronous calls below that.",
+   "f": "Salesforce's loading guidance recommends Bulk API 2.0 for operations above 50,000 records and bulkified synchronous calls below that.",
+   "x": "The large-data-volume loading guide sets the Bulk API 2.0 threshold at 2,000 records, using REST Composite or SOAP below it. 50,000 is not the stated cutoff.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:data-migration-strategy",
+    "kt:bulk-api-2"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/data-migration-strategy.md"
+  },
+  {
+   "id": "sf-000100",
+   "area": "architecture-practice",
+   "t": "For migration loads, insert is the fastest operation, followed by update, with upsert the slowest.",
+   "f": "For migration loads, upsert is the fastest operation, followed by update, with insert the slowest.",
+   "x": "Insert is quickest and upsert slowest, so the guidance suggests splitting upserts into separate create and update passes where possible. The false ordering is reversed.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:data-migration-strategy"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/data-migration-strategy.md"
+  },
+  {
+   "id": "sf-000101",
+   "area": "architecture-practice",
+   "t": "During a large initial load, set target objects' org-wide defaults to Public Read/Write so no sharing rows are computed, then tighten them afterward.",
+   "f": "During a large initial load, set target objects' org-wide defaults to Private so no sharing rows are computed, then open them up afterward.",
+   "x": "Public Read/Write avoids sharing calculations while data streams in; defaults are tightened to Private or Public Read Only once the load is done. Private during the load is what generates the sharing work.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:data-migration-strategy"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/data-migration-strategy.md"
+  },
+  {
+   "id": "sf-000102",
+   "area": "automation",
+   "t": "To start an autolaunched flow from a record page layout, use a custom button, because actions can call only screen flows.",
+   "f": "To start an autolaunched flow from a record page layout, use an action, because custom buttons can call only screen flows.",
+   "x": "Actions look like buttons but can launch only screen flows, so a screenless autolaunched flow needs a custom button. The false statement reverses which one is restricted.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:autolaunched-flow",
+    "kt:screen-flow"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/autolaunched-flow.md"
+  },
+  {
+   "id": "sf-000103",
+   "area": "automation",
+   "t": "Autolaunched and screen flows can be called as subflows, but record-triggered flows cannot be referenced from another flow.",
+   "f": "Autolaunched and record-triggered flows can be called as subflows, but screen flows cannot be referenced from another flow.",
+   "x": "Both autolaunched and screen flows work as subflows; record-triggered flows cannot be called from a parent flow. That is why shared logic usually lives in an autolaunched flow.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:autolaunched-flow",
+    "kt:subflows",
+    "kt:record-triggered-flow",
+    "kt:screen-flow"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/autolaunched-flow.md"
+  },
+  {
+   "id": "sf-000104",
+   "area": "automation",
+   "t": "If an autolaunched flow element exceeds a governor limit, the whole transaction rolls back even when that element has a fault connector.",
+   "f": "If an autolaunched flow element exceeds a governor limit and has a fault connector, only that element's work rolls back and the flow follows the fault path.",
+   "x": "Limit breaches cannot be caught by a fault connector; the entire transaction is rolled back. The false statement treats a limit breach like an ordinary handled fault.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:autolaunched-flow",
+    "kt:governor-limits"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/autolaunched-flow.md"
   }
  ]
 }

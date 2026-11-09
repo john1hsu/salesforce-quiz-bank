@@ -1,0 +1,18 @@
+id: sf-000091
+product_area: security-and-sharing
+true_statement: The Grant Access Using Hierarchies setting can be cleared only for custom objects; for standard objects, hierarchy access is always on.
+false_statement: The Grant Access Using Hierarchies setting can be cleared only for standard objects; for custom objects, hierarchy access is always on.
+explanation: Standard objects always grant access up the role hierarchy, while custom objects expose a checkbox (checked by default) that can switch it off. The false statement reverses the two.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/role-hierarchy.md
+  commit: ee7571c675638f9605db9044cd8e6d5432c21c41
+  blob: 466924b6dfd38f330715bc5079294ebcc3dde620
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:role-hierarchy
+- kt:organization-wide-defaults
+difficulty: 2
+created: '2026-11-09'
+status: active
