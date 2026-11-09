@@ -1,0 +1,18 @@
+id: sf-000012
+product_area: clouds-and-products
+true_statement: In an Omni-Channel routing configuration, the queue with the lowest Routing Priority number is served first.
+false_statement: In an Omni-Channel routing configuration, the queue with the highest Routing Priority number is served first.
+explanation: 'Routing Priority works in ascending order: a smaller number means the queue''s work is distributed sooner. Omni-Channel also factors in how long items have waited and which queue members are available, but a higher number never jumps the line.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/omni-channel.md
+  commit: 91f8675154c337a548ff9902de9162f1a8c8a1fe
+  blob: a4ce2d9258804f8e7a88b49324ab30812b8df679
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:omni-channel
+- kt:queues
+difficulty: 2
+created: '2026-11-09'
+status: active

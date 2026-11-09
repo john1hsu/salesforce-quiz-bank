@@ -1,6 +1,6 @@
 {
  "totals": {
-  "active": 11
+  "active": 14
  },
  "areas": {
   "architecture-practice": {
@@ -8,6 +8,9 @@
   },
   "automation": {
    "active": 4
+  },
+  "clouds-and-products": {
+   "active": 3
   },
   "devops-and-alm": {
    "active": 1
@@ -31,6 +34,9 @@
   },
   "articles/automation/record-triggered-flow.md": {
    "active": 1
+  },
+  "articles/clouds-and-products/omni-channel.md": {
+   "active": 3
   },
   "articles/devops-and-alm/unlocked-packages.md": {
    "active": 1

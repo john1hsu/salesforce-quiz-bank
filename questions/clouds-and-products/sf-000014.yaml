@@ -1,0 +1,19 @@
+id: sf-000014
+product_area: clouds-and-products
+true_statement: With Omni-Channel skills-based routing, a record's required skills are evaluated when it enters a queue, so later edits to its skills have no effect until it is requeued.
+false_statement: With Omni-Channel skills-based routing, a record's required skills are re-evaluated whenever it is edited, so later edits to its skills take effect immediately.
+explanation: Skills are checked at the moment a record lands in an Omni-Channel queue. Changing the skills afterward does nothing until the record is assigned to a queue again; if nobody qualifies, the item sits on the Skills Backlog tab.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/omni-channel.md
+  commit: 91f8675154c337a548ff9902de9162f1a8c8a1fe
+  blob: a4ce2d9258804f8e7a88b49324ab30812b8df679
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:omni-channel
+- kt:skills-based-routing
+- kt:queues
+difficulty: 3
+created: '2026-11-09'
+status: active

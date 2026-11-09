@@ -1,0 +1,18 @@
+id: sf-000013
+product_area: clouds-and-products
+true_statement: When a custom Omni-Channel presence configuration is assigned to both a user and that user's profile, the user-level assignment takes precedence.
+false_statement: When a custom Omni-Channel presence configuration is assigned to both a user and that user's profile, the profile-level assignment takes precedence.
+explanation: Presence configurations can be assigned to profiles or to individual users, and the individual assignment wins over the profile one. A user can only hold one presence configuration at a time, so adding them to another removes them from the first.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/omni-channel.md
+  commit: 91f8675154c337a548ff9902de9162f1a8c8a1fe
+  blob: a4ce2d9258804f8e7a88b49324ab30812b8df679
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:omni-channel
+- kt:presence-configuration
+difficulty: 2
+created: '2026-11-09'
+status: active

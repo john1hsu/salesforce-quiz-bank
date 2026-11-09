@@ -1,7 +1,7 @@
 {
  "version": 1,
- "count": 11,
- "active": 11,
+ "count": 14,
+ "active": 14,
  "questions": [
   {
    "id": "sf-000001",
@@ -189,6 +189,58 @@
    "difficulty": 3,
    "status": "active",
    "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/flow-builder.md"
+  },
+  {
+   "id": "sf-000012",
+   "area": "clouds-and-products",
+   "t": "In an Omni-Channel routing configuration, the queue with the lowest Routing Priority number is served first.",
+   "f": "In an Omni-Channel routing configuration, the queue with the highest Routing Priority number is served first.",
+   "x": "Routing Priority works in ascending order: a smaller number means the queue's work is distributed sooner. Omni-Channel also factors in how long items have waited and which queue members are available, but a higher number never jumps the line.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:omni-channel",
+    "kt:queues"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/omni-channel.md"
+  },
+  {
+   "id": "sf-000013",
+   "area": "clouds-and-products",
+   "t": "When a custom Omni-Channel presence configuration is assigned to both a user and that user's profile, the user-level assignment takes precedence.",
+   "f": "When a custom Omni-Channel presence configuration is assigned to both a user and that user's profile, the profile-level assignment takes precedence.",
+   "x": "Presence configurations can be assigned to profiles or to individual users, and the individual assignment wins over the profile one. A user can only hold one presence configuration at a time, so adding them to another removes them from the first.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:omni-channel",
+    "kt:presence-configuration"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/omni-channel.md"
+  },
+  {
+   "id": "sf-000014",
+   "area": "clouds-and-products",
+   "t": "With Omni-Channel skills-based routing, a record's required skills are evaluated when it enters a queue, so later edits to its skills have no effect until it is requeued.",
+   "f": "With Omni-Channel skills-based routing, a record's required skills are re-evaluated whenever it is edited, so later edits to its skills take effect immediately.",
+   "x": "Skills are checked at the moment a record lands in an Omni-Channel queue. Changing the skills afterward does nothing until the record is assigned to a queue again; if nobody qualifies, the item sits on the Skills Backlog tab.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:omni-channel",
+    "kt:skills-based-routing",
+    "kt:queues"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/omni-channel.md"
   }
  ]
 }
