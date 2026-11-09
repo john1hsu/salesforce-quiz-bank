@@ -1,0 +1,18 @@
+id: sf-000036
+product_area: clouds-and-products
+true_statement: New cases need automation, such as an Apex trigger, to fill their Entitlement field; entitlements are not added to cases automatically.
+false_statement: New cases get their Entitlement field filled automatically from the related account, so no extra automation is needed to apply entitlements.
+explanation: Salesforce does not attach entitlements to new cases on its own, which is why the Trailhead example uses an Apex trigger that looks up the contact and then the account. The false statement assumes an automatic default that does not exist.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/service-cloud.md
+  commit: ee7571c675638f9605db9044cd8e6d5432c21c41
+  blob: 600ccbd9e4ece132e800448c36ff1c7e40993681
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:service-cloud
+- kt:entitlement-management
+difficulty: 2
+created: '2026-11-09'
+status: active

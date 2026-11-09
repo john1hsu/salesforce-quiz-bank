@@ -1,0 +1,19 @@
+id: sf-000044
+product_area: data-model
+true_statement: A user who must own very many records should have no role, or sit alone in a separate top-level role, to limit sharing recalculation.
+false_statement: A user who must own very many records should sit at the bottom of the role hierarchy, under their manager's role, to limit sharing recalculation.
+explanation: Keeping a skewed owner out of the hierarchy, or isolated in its own top-level role, avoids recalculating access for everyone above them. Placing them beneath a manager adds more users whose access must be updated when ownership or roles change.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/data-skew.md
+  commit: ee7571c675638f9605db9044cd8e6d5432c21c41
+  blob: cadacb4348fb2d82a3176b989a2c963d61316931
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:data-skew
+- kt:role-hierarchy
+- kt:sharing-recalculation
+difficulty: 2
+created: '2026-11-09'
+status: active

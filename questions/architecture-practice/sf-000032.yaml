@@ -1,0 +1,18 @@
+id: sf-000032
+product_area: architecture-practice
+true_statement: A newly created sandbox that is not activated within 30 days is deleted.
+false_statement: A newly created sandbox that is not activated within 90 days is deleted.
+explanation: The activation window for a new sandbox is 30 days; after that, an unactivated sandbox is removed. 90 days is not the documented window.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/environment-strategy.md
+  commit: ee7571c675638f9605db9044cd8e6d5432c21c41
+  blob: f948cd269fdbff8fd8cf94b77aacc21f612d0300
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:environment-strategy
+- kt:sandbox-types
+difficulty: 2
+created: '2026-11-09'
+status: active

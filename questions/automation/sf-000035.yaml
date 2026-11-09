@@ -1,0 +1,18 @@
+id: sf-000035
+product_area: automation
+true_statement: Orchestration steps that run at the same time are batched into one transaction, so their SOQL, DML and CPU time add up together.
+false_statement: Orchestration steps that run at the same time each get their own transaction, so their SOQL, DML and CPU time are counted separately.
+explanation: Concurrent steps are grouped by user context and flow version and executed in a single transaction, so governor limit usage accumulates across the batch. Treating each step as its own transaction is the mistake the false statement makes.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/flow-orchestrator.md
+  commit: ee7571c675638f9605db9044cd8e6d5432c21c41
+  blob: 00fe49e173e06536997d5dfc7abb5c784c7a4a45
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:flow-orchestrator
+- kt:governor-limits
+difficulty: 3
+created: '2026-11-09'
+status: active

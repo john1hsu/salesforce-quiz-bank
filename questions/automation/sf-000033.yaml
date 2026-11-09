@@ -1,0 +1,19 @@
+id: sf-000033
+product_area: automation
+true_statement: In Flow Orchestrator, an interactive step runs a screen flow and creates a work item, while a background step runs an autolaunched flow.
+false_statement: In Flow Orchestrator, an interactive step runs an autolaunched flow and creates a work item, while a background step runs a screen flow.
+explanation: Interactive steps need a person, so they run an active screen flow and create a work item for the assignee. Background steps need no user and run an autolaunched flow; the false statement swaps the flow types.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/flow-orchestrator.md
+  commit: ee7571c675638f9605db9044cd8e6d5432c21c41
+  blob: 00fe49e173e06536997d5dfc7abb5c784c7a4a45
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:flow-orchestrator
+- kt:screen-flow
+- kt:autolaunched-flow
+difficulty: 1
+created: '2026-11-09'
+status: active

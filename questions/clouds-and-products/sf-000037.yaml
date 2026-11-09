@@ -1,0 +1,18 @@
+id: sf-000037
+product_area: clouds-and-products
+true_statement: If no business hours are set, entitlement milestone timers use the org default of 24/7, so deadlines can expire overnight.
+false_statement: If no business hours are set, entitlement milestone timers pause outside weekday working hours, so deadlines can expire only during the day.
+explanation: Without business hours, milestones fall back to the org default of 24/7 and keep counting through nights and weekends. They do not pause outside working hours unless business hours are configured.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/service-cloud.md
+  commit: ee7571c675638f9605db9044cd8e6d5432c21c41
+  blob: 600ccbd9e4ece132e800448c36ff1c7e40993681
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:service-cloud
+- kt:entitlement-management
+difficulty: 2
+created: '2026-11-09'
+status: active

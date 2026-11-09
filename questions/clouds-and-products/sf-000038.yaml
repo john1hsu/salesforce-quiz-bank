@@ -1,0 +1,18 @@
+id: sf-000038
+product_area: clouds-and-products
+true_statement: In the Lightning Service Console, records open as primary tabs and their related records open as subtabs.
+false_statement: In the Lightning Service Console, related records open as primary tabs and the records they belong to open as subtabs.
+explanation: The console's tab model puts the main record in a primary tab and opens records related to it as subtabs underneath. The false statement inverts that hierarchy.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/service-cloud.md
+  commit: ee7571c675638f9605db9044cd8e6d5432c21c41
+  blob: 600ccbd9e4ece132e800448c36ff1c7e40993681
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:service-cloud
+- kt:lightning-service-console
+difficulty: 1
+created: '2026-11-09'
+status: active

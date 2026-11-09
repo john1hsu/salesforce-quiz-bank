@@ -1,0 +1,18 @@
+id: sf-000030
+product_area: architecture-practice
+true_statement: A Partial Copy sandbox can be refreshed every 5 days, while a Full sandbox can be refreshed every 29 days.
+false_statement: A Partial Copy sandbox can be refreshed every 29 days, while a Full sandbox can be refreshed every 5 days.
+explanation: Partial Copy sandboxes hold a sampled subset of data and have the shorter 5-day refresh interval; Full sandboxes copy all data and wait 29 days between refreshes. The false statement swaps the two intervals.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/environment-strategy.md
+  commit: ee7571c675638f9605db9044cd8e6d5432c21c41
+  blob: f948cd269fdbff8fd8cf94b77aacc21f612d0300
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:environment-strategy
+- kt:sandbox-types
+difficulty: 2
+created: '2026-11-09'
+status: active

@@ -1,22 +1,22 @@
 {
  "totals": {
-  "active": 29
+  "active": 44
  },
  "areas": {
   "architecture-practice": {
-   "active": 3
+   "active": 6
   },
   "automation": {
-   "active": 4
+   "active": 7
   },
   "clouds-and-products": {
-   "active": 3
+   "active": 6
   },
   "data-cloud-and-ai": {
-   "active": 3
+   "active": 6
   },
   "data-model": {
-   "active": 3
+   "active": 6
   },
   "development": {
    "active": 3
@@ -38,10 +38,16 @@
   }
  },
  "articles": {
+  "articles/architecture-practice/environment-strategy.md": {
+   "active": 3
+  },
   "articles/architecture-practice/well-architected-framework.md": {
    "active": 3
   },
   "articles/automation/flow-builder.md": {
+   "active": 3
+  },
+  "articles/automation/flow-orchestrator.md": {
    "active": 3
   },
   "articles/automation/record-triggered-flow.md": {
@@ -50,7 +56,16 @@
   "articles/clouds-and-products/omni-channel.md": {
    "active": 3
   },
+  "articles/clouds-and-products/service-cloud.md": {
+   "active": 3
+  },
   "articles/data-cloud-and-ai/agent-development-lifecycle.md": {
+   "active": 3
+  },
+  "articles/data-cloud-and-ai/agentforce.md": {
+   "active": 3
+  },
+  "articles/data-model/data-skew.md": {
    "active": 3
   },
   "articles/data-model/lookup-vs-master-detail.md": {

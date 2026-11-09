@@ -1,0 +1,18 @@
+id: sf-000041
+product_area: data-cloud-and-ai
+true_statement: In the classic Agentforce builder, the reasoning engine picks a subagent using only subagent names and classification descriptions.
+false_statement: In the classic Agentforce builder, the reasoning engine picks a subagent using subagent names, instructions and the full list of actions.
+explanation: Atlas classifies a request first, looking only at names and classification descriptions; instructions and actions are loaded after a subagent is chosen. That is why short, non-overlapping names matter.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/agentforce.md
+  commit: ee7571c675638f9605db9044cd8e6d5432c21c41
+  blob: 45909db7b667b734454b8d8cda9395b67959d9e8
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:agentforce
+- kt:atlas-reasoning-engine
+difficulty: 3
+created: '2026-11-09'
+status: active

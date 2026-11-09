@@ -1,0 +1,18 @@
+id: sf-000040
+product_area: data-cloud-and-ai
+true_statement: Rules that must always hold, such as refund eligibility, belong in Agentforce action code, filters or Agent Script rather than in agent instructions.
+false_statement: Rules that must always hold, such as refund eligibility, belong in Agentforce agent instructions rather than in action code, filters or Agent Script.
+explanation: Instructions are natural language that the model interprets, so they are not deterministic and cannot enforce hard rules. Action code, filters and Agent Script run deterministically, which is why fixed rules go there.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/agentforce.md
+  commit: ee7571c675638f9605db9044cd8e6d5432c21c41
+  blob: 45909db7b667b734454b8d8cda9395b67959d9e8
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:agentforce
+- kt:agent-script
+difficulty: 2
+created: '2026-11-09'
+status: active

@@ -1,0 +1,18 @@
+id: sf-000031
+product_area: architecture-practice
+true_statement: According to Salesforce Help, Full sandboxes are the only sandbox type that supports performance testing, load testing and staging.
+false_statement: According to Salesforce Help, Partial Copy sandboxes are the only sandbox type that supports performance testing, load testing and staging.
+explanation: Salesforce Help reserves performance testing, load testing and staging for Full sandboxes, which copy all production data. Partial Copy sandboxes hold only a template-defined sample of data, so they are not the designated load-test environment.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/environment-strategy.md
+  commit: ee7571c675638f9605db9044cd8e6d5432c21c41
+  blob: f948cd269fdbff8fd8cf94b77aacc21f612d0300
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:environment-strategy
+- kt:sandbox-types
+difficulty: 2
+created: '2026-11-09'
+status: active

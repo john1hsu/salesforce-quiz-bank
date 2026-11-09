@@ -1,0 +1,19 @@
+id: sf-000043
+product_area: data-model
+true_statement: Lookup skew can occur on any lookup field, including custom ones, because it comes from record locking rather than the sharing model.
+false_statement: Lookup skew can occur only under a private sharing model, because it comes from sharing recalculation rather than record locking.
+explanation: Saving a record locks the target of each lookup field, so many records pointing at one target contend for locks regardless of sharing settings. Unlike account skew, lookup skew is not tied to the sharing model.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/data-skew.md
+  commit: ee7571c675638f9605db9044cd8e6d5432c21c41
+  blob: cadacb4348fb2d82a3176b989a2c963d61316931
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:data-skew
+- kt:record-locking
+- kt:salesforce-sharing-model
+difficulty: 3
+created: '2026-11-09'
+status: active

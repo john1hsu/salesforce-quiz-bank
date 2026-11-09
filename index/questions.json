@@ -1,7 +1,7 @@
 {
  "version": 1,
- "count": 29,
- "active": 29,
+ "count": 44,
+ "active": 44,
  "questions": [
   {
    "id": "sf-000001",
@@ -496,6 +496,261 @@
    "difficulty": 3,
    "status": "active",
    "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/governor-limits.md"
+  },
+  {
+   "id": "sf-000030",
+   "area": "architecture-practice",
+   "t": "A Partial Copy sandbox can be refreshed every 5 days, while a Full sandbox can be refreshed every 29 days.",
+   "f": "A Partial Copy sandbox can be refreshed every 29 days, while a Full sandbox can be refreshed every 5 days.",
+   "x": "Partial Copy sandboxes hold a sampled subset of data and have the shorter 5-day refresh interval; Full sandboxes copy all data and wait 29 days between refreshes. The false statement swaps the two intervals.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:environment-strategy",
+    "kt:sandbox-types"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/environment-strategy.md"
+  },
+  {
+   "id": "sf-000031",
+   "area": "architecture-practice",
+   "t": "According to Salesforce Help, Full sandboxes are the only sandbox type that supports performance testing, load testing and staging.",
+   "f": "According to Salesforce Help, Partial Copy sandboxes are the only sandbox type that supports performance testing, load testing and staging.",
+   "x": "Salesforce Help reserves performance testing, load testing and staging for Full sandboxes, which copy all production data. Partial Copy sandboxes hold only a template-defined sample of data, so they are not the designated load-test environment.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:environment-strategy",
+    "kt:sandbox-types"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/environment-strategy.md"
+  },
+  {
+   "id": "sf-000032",
+   "area": "architecture-practice",
+   "t": "A newly created sandbox that is not activated within 30 days is deleted.",
+   "f": "A newly created sandbox that is not activated within 90 days is deleted.",
+   "x": "The activation window for a new sandbox is 30 days; after that, an unactivated sandbox is removed. 90 days is not the documented window.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:environment-strategy",
+    "kt:sandbox-types"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/environment-strategy.md"
+  },
+  {
+   "id": "sf-000033",
+   "area": "automation",
+   "t": "In Flow Orchestrator, an interactive step runs a screen flow and creates a work item, while a background step runs an autolaunched flow.",
+   "f": "In Flow Orchestrator, an interactive step runs an autolaunched flow and creates a work item, while a background step runs a screen flow.",
+   "x": "Interactive steps need a person, so they run an active screen flow and create a work item for the assignee. Background steps need no user and run an autolaunched flow; the false statement swaps the flow types.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:flow-orchestrator",
+    "kt:screen-flow",
+    "kt:autolaunched-flow"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/flow-orchestrator.md"
+  },
+  {
+   "id": "sf-000034",
+   "area": "automation",
+   "t": "An orchestration fails if a step's flow receives more than 32,768 combined characters of input, so pass a record ID instead of a whole record.",
+   "f": "An orchestration fails if a step's flow receives more than 65,536 combined characters of input, so pass a record ID instead of a whole record.",
+   "x": "The documented input cap for a step's called flow is 32,768 combined characters, and passing whole records is the usual way to exceed it. 65,536 is not the limit.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:flow-orchestrator"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/flow-orchestrator.md"
+  },
+  {
+   "id": "sf-000035",
+   "area": "automation",
+   "t": "Orchestration steps that run at the same time are batched into one transaction, so their SOQL, DML and CPU time add up together.",
+   "f": "Orchestration steps that run at the same time each get their own transaction, so their SOQL, DML and CPU time are counted separately.",
+   "x": "Concurrent steps are grouped by user context and flow version and executed in a single transaction, so governor limit usage accumulates across the batch. Treating each step as its own transaction is the mistake the false statement makes.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:flow-orchestrator",
+    "kt:governor-limits"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/flow-orchestrator.md"
+  },
+  {
+   "id": "sf-000036",
+   "area": "clouds-and-products",
+   "t": "New cases need automation, such as an Apex trigger, to fill their Entitlement field; entitlements are not added to cases automatically.",
+   "f": "New cases get their Entitlement field filled automatically from the related account, so no extra automation is needed to apply entitlements.",
+   "x": "Salesforce does not attach entitlements to new cases on its own, which is why the Trailhead example uses an Apex trigger that looks up the contact and then the account. The false statement assumes an automatic default that does not exist.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:service-cloud",
+    "kt:entitlement-management"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/service-cloud.md"
+  },
+  {
+   "id": "sf-000037",
+   "area": "clouds-and-products",
+   "t": "If no business hours are set, entitlement milestone timers use the org default of 24/7, so deadlines can expire overnight.",
+   "f": "If no business hours are set, entitlement milestone timers pause outside weekday working hours, so deadlines can expire only during the day.",
+   "x": "Without business hours, milestones fall back to the org default of 24/7 and keep counting through nights and weekends. They do not pause outside working hours unless business hours are configured.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:service-cloud",
+    "kt:entitlement-management"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/service-cloud.md"
+  },
+  {
+   "id": "sf-000038",
+   "area": "clouds-and-products",
+   "t": "In the Lightning Service Console, records open as primary tabs and their related records open as subtabs.",
+   "f": "In the Lightning Service Console, related records open as primary tabs and the records they belong to open as subtabs.",
+   "x": "The console's tab model puts the main record in a primary tab and opens records related to it as subtabs underneath. The false statement inverts that hierarchy.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:service-cloud",
+    "kt:lightning-service-console"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/service-cloud.md"
+  },
+  {
+   "id": "sf-000039",
+   "area": "data-cloud-and-ai",
+   "t": "Salesforce advises keeping an Agentforce agent to about 10-15 subagents, with no more than 15 actions per subagent.",
+   "f": "Salesforce advises keeping an Agentforce agent to about 10-15 subagents, with no more than 50 actions per subagent.",
+   "x": "The guidance caps actions at 15 per subagent because overlapping, cluttered options make classification less consistent. 50 actions per subagent is well beyond that recommendation.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:agentforce"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/agentforce.md"
+  },
+  {
+   "id": "sf-000040",
+   "area": "data-cloud-and-ai",
+   "t": "Rules that must always hold, such as refund eligibility, belong in Agentforce action code, filters or Agent Script rather than in agent instructions.",
+   "f": "Rules that must always hold, such as refund eligibility, belong in Agentforce agent instructions rather than in action code, filters or Agent Script.",
+   "x": "Instructions are natural language that the model interprets, so they are not deterministic and cannot enforce hard rules. Action code, filters and Agent Script run deterministically, which is why fixed rules go there.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:agentforce",
+    "kt:agent-script"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/agentforce.md"
+  },
+  {
+   "id": "sf-000041",
+   "area": "data-cloud-and-ai",
+   "t": "In the classic Agentforce builder, the reasoning engine picks a subagent using only subagent names and classification descriptions.",
+   "f": "In the classic Agentforce builder, the reasoning engine picks a subagent using subagent names, instructions and the full list of actions.",
+   "x": "Atlas classifies a request first, looking only at names and classification descriptions; instructions and actions are loaded after a subagent is chosen. That is why short, non-overlapping names matter.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:agentforce",
+    "kt:atlas-reasoning-engine"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/agentforce.md"
+  },
+  {
+   "id": "sf-000042",
+   "area": "data-model",
+   "t": "Salesforce treats it as ownership skew when a single user owns more than 10,000 records of one object.",
+   "f": "Salesforce treats it as ownership skew when a single user owns more than 100,000 records of one object.",
+   "x": "The ownership skew threshold Salesforce gives is 10,000 records of a single object owned by one user, the same figure used for parent-child skew. 100,000 overstates it tenfold.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:data-skew"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/data-skew.md"
+  },
+  {
+   "id": "sf-000043",
+   "area": "data-model",
+   "t": "Lookup skew can occur on any lookup field, including custom ones, because it comes from record locking rather than the sharing model.",
+   "f": "Lookup skew can occur only under a private sharing model, because it comes from sharing recalculation rather than record locking.",
+   "x": "Saving a record locks the target of each lookup field, so many records pointing at one target contend for locks regardless of sharing settings. Unlike account skew, lookup skew is not tied to the sharing model.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:data-skew",
+    "kt:record-locking",
+    "kt:salesforce-sharing-model"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/data-skew.md"
+  },
+  {
+   "id": "sf-000044",
+   "area": "data-model",
+   "t": "A user who must own very many records should have no role, or sit alone in a separate top-level role, to limit sharing recalculation.",
+   "f": "A user who must own very many records should sit at the bottom of the role hierarchy, under their manager's role, to limit sharing recalculation.",
+   "x": "Keeping a skewed owner out of the hierarchy, or isolated in its own top-level role, avoids recalculating access for everyone above them. Placing them beneath a manager adds more users whose access must be updated when ownership or roles change.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:data-skew",
+    "kt:role-hierarchy",
+    "kt:sharing-recalculation"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/data-skew.md"
   }
  ]
 }
