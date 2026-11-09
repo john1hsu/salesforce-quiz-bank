@@ -1,7 +1,7 @@
 {
  "version": 1,
- "count": 119,
- "active": 119,
+ "count": 129,
+ "active": 129,
  "questions": [
   {
    "id": "sf-000001",
@@ -2018,6 +2018,171 @@
    "difficulty": 3,
    "status": "active",
    "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/data-cloud.md"
+  },
+  {
+   "id": "sf-000120",
+   "area": "data-cloud-and-ai",
+   "t": "Einstein Trust Layer data masking can be enabled for embedded features such as Work Summaries, but it is disabled for agents.",
+   "f": "Einstein Trust Layer data masking can be enabled for agents, but it is disabled for embedded features such as Work Summaries.",
+   "x": "Admins can turn masking on for embedded features like Service Replies and Work Summaries, while agents run with masking disabled, so agent designs must lean on permissions and grounding scope.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:einstein-trust-layer",
+    "kt:agentforce"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/einstein-trust-layer.md"
+  },
+  {
+   "id": "sf-000121",
+   "area": "data-cloud-and-ai",
+   "t": "Einstein Trust Layer audit and feedback data is stored in Data Cloud data model objects such as GenAIGatewayRequest.",
+   "f": "Einstein Trust Layer audit and feedback data is stored in Event Monitoring log files such as GenAIGatewayRequest.",
+   "x": "The audit trail and feedback land in Data Cloud data model objects and are analysed with Data Cloud tools like the Query Editor, not in Event Monitoring logs.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:einstein-trust-layer",
+    "kt:data-cloud"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/einstein-trust-layer.md"
+  },
+  {
+   "id": "sf-000122",
+   "area": "data-cloud-and-ai",
+   "t": "The Trust Layer's toxicity check rolls category scores into one score between 0 and 1, where a higher score means more toxic.",
+   "f": "The Trust Layer's toxicity check rolls category scores into one score between 0 and 100, where a lower score means more toxic.",
+   "x": "Toxicity results are combined into a single 0-to-1 score where higher values indicate more toxic content; the scale is not 0 to 100 and the direction is not inverted.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:einstein-trust-layer"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/einstein-trust-layer.md"
+  },
+  {
+   "id": "sf-000123",
+   "area": "data-model",
+   "t": "On a junction object, the first master-detail field created becomes the primary relationship and supplies the junction's owner, page colour and icon.",
+   "f": "On a junction object, the second master-detail field created becomes the primary relationship and supplies the junction's owner, page colour and icon.",
+   "x": "Creation order decides primacy: the first master-detail field is primary, and junction records take their owner and look from that primary master; the second field is secondary.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:junction-object",
+    "kt:lookup-vs-master-detail"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/junction-object.md"
+  },
+  {
+   "id": "sf-000124",
+   "area": "data-model",
+   "t": "When both master records of a junction record are deleted, the junction record is removed permanently rather than sent to the Recycle Bin.",
+   "f": "When both master records of a junction record are deleted, the junction record is sent to the Recycle Bin rather than removed permanently.",
+   "x": "Deleting one master sends its junction records to the Recycle Bin, but deleting both masters removes the junction record permanently.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:junction-object"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/junction-object.md"
+  },
+  {
+   "id": "sf-000125",
+   "area": "data-model",
+   "t": "A parent with more than 200 junction records can't be deleted while the junction has a roll-up summary field rolling up to the other parent.",
+   "f": "A parent with more than 2,000 junction records can't be deleted while the junction has a roll-up summary field rolling up to the other parent.",
+   "x": "The deletion block applies above 200 junction records when a roll-up to the other parent exists; the junction records must be deleted first. The threshold is 200, not 2,000.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:junction-object",
+    "kt:roll-up-summary-field"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/junction-object.md"
+  },
+  {
+   "id": "sf-000126",
+   "area": "development",
+   "t": "A single Apex request can carry anywhere from 1 to 50,000 records, so code must be bulkified rather than written one record at a time.",
+   "f": "A single Apex request can carry anywhere from 1 to 200 records, so code must be bulkified rather than written one record at a time.",
+   "x": "Salesforce says a request may contain 1 to 50,000 records, which is why record-by-record code hits governor limits; 200 understates the range.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:apex",
+    "kt:governor-limits"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/apex.md"
+  },
+  {
+   "id": "sf-000127",
+   "area": "development",
+   "t": "Unlike Java, Apex is case-insensitive and adds a global access modifier that exposes code across namespaces.",
+   "f": "Like Java, Apex is case-sensitive and adds a global access modifier that exposes code across namespaces.",
+   "x": "Apex differs from Java by ignoring case in identifiers and keywords; the global modifier for cross-namespace exposure is an Apex addition, but case sensitivity is not shared with Java.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:apex"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/apex.md"
+  },
+  {
+   "id": "sf-000128",
+   "area": "development",
+   "t": "When Apex is saved, the server compiles it into an abstract instruction set stored as metadata and run by the Apex runtime interpreter.",
+   "f": "When Apex is saved, the server compiles it into JavaScript stored as metadata and run in the user's browser when the code is invoked.",
+   "x": "Apex never runs on the client: saving compiles it into instructions kept as metadata, which the server's interpreter executes when an action invokes the code.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:apex"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/apex.md"
+  },
+  {
+   "id": "sf-000129",
+   "area": "devops-and-alm",
+   "t": "Dev Hub can't be enabled in a sandbox, and once enabled in an org it can't be turned off.",
+   "f": "Dev Hub can be enabled in a full sandbox, and once enabled in an org it can be turned off again.",
+   "x": "Dev Hub is enabled in a production, Developer Edition or trial org, never a sandbox, and the switch is one-way; the false twin allows a sandbox and claims it is reversible.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:dev-hub"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/dev-hub.md"
   }
  ]
 }

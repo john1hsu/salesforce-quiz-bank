@@ -1,0 +1,18 @@
+id: sf-000121
+product_area: data-cloud-and-ai
+true_statement: Einstein Trust Layer audit and feedback data is stored in Data Cloud data model objects such as GenAIGatewayRequest.
+false_statement: Einstein Trust Layer audit and feedback data is stored in Event Monitoring log files such as GenAIGatewayRequest.
+explanation: The audit trail and feedback land in Data Cloud data model objects and are analysed with Data Cloud tools like the Query Editor, not in Event Monitoring logs.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/einstein-trust-layer.md
+  commit: ee7571c675638f9605db9044cd8e6d5432c21c41
+  blob: ef070e152c93350d4c3aa1ccea4a1f1cfba27792
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:einstein-trust-layer
+- kt:data-cloud
+difficulty: 2
+created: '2026-11-09'
+status: active

@@ -1,0 +1,17 @@
+id: sf-000129
+product_area: devops-and-alm
+true_statement: Dev Hub can't be enabled in a sandbox, and once enabled in an org it can't be turned off.
+false_statement: Dev Hub can be enabled in a full sandbox, and once enabled in an org it can be turned off again.
+explanation: Dev Hub is enabled in a production, Developer Edition or trial org, never a sandbox, and the switch is one-way; the false twin allows a sandbox and claims it is reversible.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/dev-hub.md
+  commit: ee7571c675638f9605db9044cd8e6d5432c21c41
+  blob: fc59ed49ab38ec0d5aeecc7a5d2156b4f919dea8
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:dev-hub
+difficulty: 2
+created: '2026-11-09'
+status: active

@@ -1,6 +1,6 @@
 {
  "totals": {
-  "active": 119
+  "active": 129
  },
  "areas": {
   "architecture-practice": {
@@ -13,16 +13,16 @@
    "active": 12
   },
   "data-cloud-and-ai": {
-   "active": 9
+   "active": 12
   },
   "data-model": {
-   "active": 9
+   "active": 12
   },
   "development": {
-   "active": 9
+   "active": 12
   },
   "devops-and-alm": {
-   "active": 16
+   "active": 17
   },
   "identity": {
    "active": 7
@@ -92,7 +92,13 @@
   "articles/data-cloud-and-ai/data-cloud.md": {
    "active": 3
   },
+  "articles/data-cloud-and-ai/einstein-trust-layer.md": {
+   "active": 3
+  },
   "articles/data-model/data-skew.md": {
+   "active": 3
+  },
+  "articles/data-model/junction-object.md": {
    "active": 3
   },
   "articles/data-model/lookup-vs-master-detail.md": {
@@ -107,6 +113,9 @@
   "articles/development/apex-triggers.md": {
    "active": 3
   },
+  "articles/development/apex.md": {
+   "active": 3
+  },
   "articles/development/asynchronous-apex.md": {
    "active": 3
   },
@@ -115,6 +124,9 @@
   },
   "articles/devops-and-alm/change-sets.md": {
    "active": 3
+  },
+  "articles/devops-and-alm/dev-hub.md": {
+   "active": 1
   },
   "articles/devops-and-alm/devops-center.md": {
    "active": 3

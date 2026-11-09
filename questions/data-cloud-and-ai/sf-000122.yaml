@@ -1,0 +1,17 @@
+id: sf-000122
+product_area: data-cloud-and-ai
+true_statement: The Trust Layer's toxicity check rolls category scores into one score between 0 and 1, where a higher score means more toxic.
+false_statement: The Trust Layer's toxicity check rolls category scores into one score between 0 and 100, where a lower score means more toxic.
+explanation: Toxicity results are combined into a single 0-to-1 score where higher values indicate more toxic content; the scale is not 0 to 100 and the direction is not inverted.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/einstein-trust-layer.md
+  commit: ee7571c675638f9605db9044cd8e6d5432c21c41
+  blob: ef070e152c93350d4c3aa1ccea4a1f1cfba27792
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:einstein-trust-layer
+difficulty: 2
+created: '2026-11-09'
+status: active

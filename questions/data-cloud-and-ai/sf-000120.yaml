@@ -1,0 +1,18 @@
+id: sf-000120
+product_area: data-cloud-and-ai
+true_statement: Einstein Trust Layer data masking can be enabled for embedded features such as Work Summaries, but it is disabled for agents.
+false_statement: Einstein Trust Layer data masking can be enabled for agents, but it is disabled for embedded features such as Work Summaries.
+explanation: Admins can turn masking on for embedded features like Service Replies and Work Summaries, while agents run with masking disabled, so agent designs must lean on permissions and grounding scope.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/einstein-trust-layer.md
+  commit: ee7571c675638f9605db9044cd8e6d5432c21c41
+  blob: ef070e152c93350d4c3aa1ccea4a1f1cfba27792
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:einstein-trust-layer
+- kt:agentforce
+difficulty: 2
+created: '2026-11-09'
+status: active

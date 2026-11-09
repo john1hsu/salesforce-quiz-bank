@@ -1,0 +1,17 @@
+id: sf-000127
+product_area: development
+true_statement: Unlike Java, Apex is case-insensitive and adds a global access modifier that exposes code across namespaces.
+false_statement: Like Java, Apex is case-sensitive and adds a global access modifier that exposes code across namespaces.
+explanation: Apex differs from Java by ignoring case in identifiers and keywords; the global modifier for cross-namespace exposure is an Apex addition, but case sensitivity is not shared with Java.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/apex.md
+  commit: ee7571c675638f9605db9044cd8e6d5432c21c41
+  blob: 4aca2723593c462a9a996092ec7e673c62356427
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:apex
+difficulty: 1
+created: '2026-11-09'
+status: active

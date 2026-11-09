@@ -1,0 +1,17 @@
+id: sf-000124
+product_area: data-model
+true_statement: When both master records of a junction record are deleted, the junction record is removed permanently rather than sent to the Recycle Bin.
+false_statement: When both master records of a junction record are deleted, the junction record is sent to the Recycle Bin rather than removed permanently.
+explanation: Deleting one master sends its junction records to the Recycle Bin, but deleting both masters removes the junction record permanently.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/junction-object.md
+  commit: ee7571c675638f9605db9044cd8e6d5432c21c41
+  blob: 80823f83cc8c2c438742e9f4761426692d81ab19
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:junction-object
+difficulty: 3
+created: '2026-11-09'
+status: active

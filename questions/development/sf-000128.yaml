@@ -1,0 +1,17 @@
+id: sf-000128
+product_area: development
+true_statement: When Apex is saved, the server compiles it into an abstract instruction set stored as metadata and run by the Apex runtime interpreter.
+false_statement: When Apex is saved, the server compiles it into JavaScript stored as metadata and run in the user's browser when the code is invoked.
+explanation: 'Apex never runs on the client: saving compiles it into instructions kept as metadata, which the server''s interpreter executes when an action invokes the code.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/apex.md
+  commit: ee7571c675638f9605db9044cd8e6d5432c21c41
+  blob: 4aca2723593c462a9a996092ec7e673c62356427
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:apex
+difficulty: 1
+created: '2026-11-09'
+status: active
