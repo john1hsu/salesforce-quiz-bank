@@ -9,7 +9,7 @@ The app in `app/` is published with GitHub Pages: **swipe right for true, left f
 ## Practice in the terminal
 
 ```bash
-pip install pyyaml
+pip install -r requirements.txt
 python3 scripts/quiz.py                                   # 10 random questions
 python3 scripts/quiz.py --area security-and-sharing --n 25
 python3 scripts/quiz.py --cert kt:integration-architect-certification
@@ -55,7 +55,7 @@ Stale pairs are left out of quizzes.
 ## Local setup
 
 ```bash
-pip install pyyaml
+pip install -r requirements.txt
 git clone --depth 1 https://github.com/john1hsu/salesforce-knowledge-graph .source/salesforce-knowledge-graph
 python3 scripts/validate.py --source .source/salesforce-knowledge-graph
 python3 -m http.server   # then open http://localhost:8000/app/
