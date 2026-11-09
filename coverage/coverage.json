@@ -1,0 +1,39 @@
+{
+ "totals": {
+  "active": 5
+ },
+ "areas": {
+  "automation": {
+   "active": 1
+  },
+  "devops-and-alm": {
+   "active": 1
+  },
+  "identity": {
+   "active": 1
+  },
+  "integration": {
+   "active": 1
+  },
+  "security-and-sharing": {
+   "active": 1
+  }
+ },
+ "articles": {
+  "articles/automation/record-triggered-flow.md": {
+   "active": 1
+  },
+  "articles/devops-and-alm/unlocked-packages.md": {
+   "active": 1
+  },
+  "articles/identity/multi-factor-authentication.md": {
+   "active": 1
+  },
+  "articles/integration/platform-events.md": {
+   "active": 1
+  },
+  "articles/security-and-sharing/organization-wide-defaults.md": {
+   "active": 1
+  }
+ }
+}

@@ -1,0 +1,18 @@
+id: sf-000003
+product_area: automation
+true_statement: A before-save (fast field updates) record-triggered flow can change fields only on the record that triggered it.
+false_statement: A before-save (fast field updates) record-triggered flow can update fields on related records as well as on the record that triggered it.
+explanation: Before-save flows support only Assignment, Decision, Get Records and Loop elements and can change fields only on the triggering record. Creating, updating or deleting related records requires an after-save path.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/record-triggered-flow.md
+  commit: eaa09f2d3680083b0228ad1bdc4b1896c1c57934
+  blob: fd0dad1996c54e37d3b3814e983e6306f2e29535
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:record-triggered-flow
+- kt:order-of-execution
+difficulty: 1
+created: '2026-11-09'
+status: active

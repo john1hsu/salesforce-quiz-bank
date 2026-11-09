@@ -1,0 +1,6 @@
+# Local clone of the source repo used by the scripts
+.source/
+# Private quiz scores (quiz.py); keep them out of this public repo
+.quiz-progress.jsonl
+__pycache__/
+_site/

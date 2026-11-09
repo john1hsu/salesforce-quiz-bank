@@ -1,0 +1,17 @@
+id: sf-000002
+product_area: integration
+true_statement: High-volume platform event messages are retained on the event bus for 72 hours.
+false_statement: High-volume platform event messages are retained on the event bus for 24 hours.
+explanation: High-volume platform event messages stay on the event bus for 72 hours. The 24-hour window applies only to legacy standard-volume events defined before Spring '19, and new standard-volume events can no longer be defined.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/platform-events.md
+  commit: eaa09f2d3680083b0228ad1bdc4b1896c1c57934
+  blob: ac5bbdc0dbc120326b85375a890e296b35a9f82c
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:platform-events
+difficulty: 2
+created: '2026-11-09'
+status: active

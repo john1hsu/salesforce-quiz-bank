@@ -1,0 +1,94 @@
+{
+ "version": 1,
+ "count": 5,
+ "active": 5,
+ "questions": [
+  {
+   "id": "sf-000001",
+   "area": "security-and-sharing",
+   "t": "An object's Default External Access can never be set more permissively than its Default Internal Access.",
+   "f": "An object's Default External Access can be set more permissively than its Default Internal Access, so partner users can see more than employees.",
+   "x": "Each object has separate internal and external organization-wide defaults, and the external value can never be more permissive than the internal one. Salesforce recommends setting every external default to Private.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:sharing-and-visibility-architect-certification"
+   ],
+   "concepts": [
+    "kt:organization-wide-defaults",
+    "kt:experience-cloud"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/organization-wide-defaults.md"
+  },
+  {
+   "id": "sf-000002",
+   "area": "integration",
+   "t": "High-volume platform event messages are retained on the event bus for 72 hours.",
+   "f": "High-volume platform event messages are retained on the event bus for 24 hours.",
+   "x": "High-volume platform event messages stay on the event bus for 72 hours. The 24-hour window applies only to legacy standard-volume events defined before Spring '19, and new standard-volume events can no longer be defined.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:platform-events"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/platform-events.md"
+  },
+  {
+   "id": "sf-000003",
+   "area": "automation",
+   "t": "A before-save (fast field updates) record-triggered flow can change fields only on the record that triggered it.",
+   "f": "A before-save (fast field updates) record-triggered flow can update fields on related records as well as on the record that triggered it.",
+   "x": "Before-save flows support only Assignment, Decision, Get Records and Loop elements and can change fields only on the triggering record. Creating, updating or deleting related records requires an after-save path.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:record-triggered-flow",
+    "kt:order-of-execution"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/record-triggered-flow.md"
+  },
+  {
+   "id": "sf-000004",
+   "area": "devops-and-alm",
+   "t": "Apex in an unlocked package version must reach 75% code coverage before the version can be promoted and installed in production.",
+   "f": "Apex in an unlocked package version must reach 85% code coverage before the version can be promoted and installed in production.",
+   "x": "Unlocked package versions need 75% Apex code coverage to be promoted and installed in production. Org-dependent unlocked packages skip the coverage check.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:unlocked-packages",
+    "kt:apex-testing"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/unlocked-packages.md"
+  },
+  {
+   "id": "sf-000005",
+   "area": "identity",
+   "t": "Since June 26, 2026, Salesforce requires phishing-resistant MFA for privileged users such as System Administrators and users with Modify All Data.",
+   "f": "Since June 26, 2026, Salesforce requires phishing-resistant MFA for every user, including standard users with no administrative permissions.",
+   "x": "MFA is enforced for all users, but the phishing-resistant requirement applies only to privileged users: System Administrators and anyone with Modify All Data, View All Data, Customize Application or Author Apex. Other users can still use methods such as Salesforce Authenticator or TOTP apps.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:identity-and-access-management-architect-certification"
+   ],
+   "concepts": [
+    "kt:multi-factor-authentication"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/multi-factor-authentication.md"
+  }
+ ]
+}

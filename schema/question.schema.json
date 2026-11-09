@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/john1hsu/salesforce-quiz-bank/schema/question.schema.json",
+  "title": "Salesforce true/false question pair",
+  "description": "One file per pair in questions/<product_area>/<id>.yaml. scripts/validate.py enforces this schema plus content checks (negation-only pairs, duplicates, exam-style wording, source drift).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "product_area", "true_statement", "false_statement", "explanation", "source",
+               "verified_release", "feature_status", "concepts", "difficulty", "created", "status"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^sf-\\d{6}$", "description": "Stable and never reused, even after retirement." },
+    "product_area": { "type": "string", "description": "Same as the source article's domain and the folder name." },
+    "true_statement": { "type": "string", "minLength": 20, "maxLength": 280 },
+    "false_statement": { "type": "string", "minLength": 20, "maxLength": 280,
+      "description": "A plausible twin: changes a limit, default, edition, permission or feature, not just adds 'not'." },
+    "explanation": { "type": "string", "minLength": 60, "description": "Why the true statement is true and the false one is false." },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["repo", "path", "commit", "blob"],
+      "properties": {
+        "repo": { "type": "string", "examples": ["john1hsu/salesforce-knowledge-graph"] },
+        "path": { "type": "string", "pattern": "^articles/[a-z0-9-]+/[a-z0-9-]+\\.md$" },
+        "commit": { "type": "string", "pattern": "^[0-9a-f]{40}$", "description": "Source repo HEAD when the pair was written or last verified." },
+        "blob": { "type": "string", "pattern": "^[0-9a-f]{40}$", "description": "Git blob of the article at that point; a different blob means the article changed (drift)." }
+      }
+    },
+    "verified_release": { "type": "string", "pattern": "^(Spring|Summer|Winter) '\\d{2}$", "description": "Last Salesforce release this pair was checked against." },
+    "feature_status": { "enum": ["current", "beta", "pilot", "deprecated", "retired", "concept"],
+      "description": "Lifecycle of the feature, copied from the source article (current = GA)." },
+    "certs": { "type": "array", "items": { "type": "string", "pattern": "^kt:[a-z0-9-]+$" },
+      "description": "Certifications from the article's coveredBy edges." },
+    "concepts": { "type": "array", "minItems": 1, "items": { "type": "string", "pattern": "^kt:[a-z0-9-]+$" } },
+    "related": { "type": "array", "items": { "type": "string", "pattern": "^sf-\\d{6}$" } },
+    "supersedes": { "type": "string", "pattern": "^sf-\\d{6}$", "description": "The retired pair this one replaced when a fact changed." },
+    "difficulty": { "enum": [1, 2, 3] },
+    "created": { "type": "string", "format": "date" },
+    "status": { "enum": ["active", "stale", "retired"] },
+    "stale_reason": { "type": "string" },
+    "retired_reason": { "type": "string" }
+  }
+}

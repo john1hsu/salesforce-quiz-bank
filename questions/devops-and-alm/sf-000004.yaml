@@ -1,0 +1,18 @@
+id: sf-000004
+product_area: devops-and-alm
+true_statement: Apex in an unlocked package version must reach 75% code coverage before the version can be promoted and installed in production.
+false_statement: Apex in an unlocked package version must reach 85% code coverage before the version can be promoted and installed in production.
+explanation: Unlocked package versions need 75% Apex code coverage to be promoted and installed in production. Org-dependent unlocked packages skip the coverage check.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/unlocked-packages.md
+  commit: eaa09f2d3680083b0228ad1bdc4b1896c1c57934
+  blob: a20d538b53b68e9e4e3afce64a5bb21558ec1920
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:unlocked-packages
+- kt:apex-testing
+difficulty: 1
+created: '2026-11-09'
+status: active

@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Salesforce True or False</title>
+  <meta name="description" content="Swipe through true/false Salesforce questions built from salesforce-knowledge-graph.">
+  <meta name="theme-color" content="#EEF2F5" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#121820" media="(prefers-color-scheme: dark)">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="SF True/False">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icon-192.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main id="app">
+    <!-- Setup -->
+    <section id="setup" class="screen" aria-labelledby="setup-title">
+      <header class="setup-head">
+        <h1 id="setup-title">Salesforce true or false</h1>
+        <p class="lede">Swipe right if the statement is true, left if it's false.</p>
+        <div class="demo" aria-hidden="true">
+          <span class="demo-false">← False</span>
+          <span class="demo-card"></span>
+          <span class="demo-true">True →</span>
+        </div>
+      </header>
+
+      <form id="setup-form" class="setup-form">
+        <label class="field">
+          <span>Product area</span>
+          <select id="f-area"><option value="">All areas</option></select>
+        </label>
+        <label class="field">
+          <span>Certification</span>
+          <select id="f-cert"><option value="">Any certification</option></select>
+        </label>
+        <fieldset class="field">
+          <legend>Questions per session</legend>
+          <div class="segmented" id="f-length">
+            <label><input type="radio" name="length" value="10" checked><span>10</span></label>
+            <label><input type="radio" name="length" value="25"><span>25</span></label>
+            <label><input type="radio" name="length" value="50"><span>50</span></label>
+            <label><input type="radio" name="length" value="all"><span>All</span></label>
+          </div>
+        </fieldset>
+        <p id="pool-count" class="pool-count" aria-live="polite"></p>
+        <button type="submit" id="start" class="btn btn-primary">Start practice</button>
+      </form>
+
+      <section class="history" aria-labelledby="history-title">
+        <h2 id="history-title">Recent sessions</h2>
+        <ol id="history-list" class="history-list"></ol>
+        <p id="history-empty" class="muted">Your scores show up here. They're saved on this phone only.</p>
+        <button type="button" id="export" class="btn btn-quiet" hidden>Copy score history</button>
+      </section>
+      <p id="load-error" class="error" role="alert" hidden></p>
+    </section>
+
+    <!-- Practice -->
+    <section id="practice" class="screen" hidden aria-label="Practice">
+      <header class="bar">
+        <button type="button" id="quit" class="btn-text">End</button>
+        <span id="progress-text" class="progress-text"></span>
+        <span id="score-text" class="score-text"></span>
+      </header>
+      <div class="progress" aria-hidden="true"><span id="progress-fill"></span></div>
+
+      <div class="stage">
+        <article id="card" class="card" tabindex="0" aria-describedby="card-hint">
+          <p id="card-area" class="card-area"></p>
+          <p id="card-text" class="card-text"></p>
+          <div class="card-hints" id="card-hint">
+            <span class="hint-false">← False</span>
+            <span class="hint-true">True →</span>
+          </div>
+          <div class="stamp stamp-true" aria-hidden="true">True</div>
+          <div class="stamp stamp-false" aria-hidden="true">False</div>
+        </article>
+
+        <article id="feedback" class="feedback" hidden aria-live="polite">
+          <p id="verdict" class="verdict"></p>
+          <p id="answer-line" class="answer-line"></p>
+          <div id="true-version" class="true-version" hidden>
+            <p class="muted">The true version</p>
+            <p id="true-text"></p>
+          </div>
+          <p id="explanation" class="explanation"></p>
+          <p class="meta"><span id="release"></span> <a id="source-link" target="_blank" rel="noopener">Read the source article</a></p>
+          <button type="button" id="next" class="btn btn-primary">Next question</button>
+        </article>
+      </div>
+
+      <div class="answer-buttons" id="answer-buttons">
+        <button type="button" id="btn-false" class="btn btn-false">False</button>
+        <button type="button" id="btn-true" class="btn btn-true">True</button>
+      </div>
+    </section>
+
+    <!-- Results -->
+    <section id="results" class="screen" hidden aria-labelledby="results-title">
+      <h1 id="results-title" class="results-score"></h1>
+      <p id="results-note" class="lede"></p>
+      <button type="button" id="again" class="btn btn-primary">Practice again</button>
+      <button type="button" id="change" class="btn btn-quiet">Change filters</button>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

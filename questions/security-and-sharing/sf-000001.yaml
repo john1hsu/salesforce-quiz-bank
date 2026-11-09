@@ -1,0 +1,20 @@
+id: sf-000001
+product_area: security-and-sharing
+true_statement: An object's Default External Access can never be set more permissively than its Default Internal Access.
+false_statement: An object's Default External Access can be set more permissively than its Default Internal Access, so partner users can see more than employees.
+explanation: Each object has separate internal and external organization-wide defaults, and the external value can never be more permissive than the internal one. Salesforce recommends setting every external default to Private.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/organization-wide-defaults.md
+  commit: eaa09f2d3680083b0228ad1bdc4b1896c1c57934
+  blob: c541e89bc65841a6d8a91b168ba74e42aa540752
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:sharing-and-visibility-architect-certification
+concepts:
+- kt:organization-wide-defaults
+- kt:experience-cloud
+difficulty: 2
+created: '2026-11-09'
+status: active
