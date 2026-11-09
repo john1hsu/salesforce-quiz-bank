@@ -1,0 +1,18 @@
+id: sf-000056
+product_area: devops-and-alm
+true_statement: Deploying a change set that contains Apex to production runs all local tests by default, but deploying it to a sandbox runs no tests automatically.
+false_statement: Deploying a change set that contains Apex runs all local tests by default, whether the target is production or a sandbox.
+explanation: Local tests run by default only when the target is production; sandbox deployments skip automatic test runs. The false statement wrongly extends the production behaviour to sandboxes.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/change-sets.md
+  commit: ee7571c675638f9605db9044cd8e6d5432c21c41
+  blob: 79eeef2b83eb7542dec236620b29811d0e5b86db
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:change-sets
+- kt:apex-testing
+difficulty: 2
+created: '2026-11-09'
+status: active

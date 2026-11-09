@@ -1,0 +1,17 @@
+id: sf-000053
+product_area: development
+true_statement: If a bulk API call fires a trigger, valid records can save while failing ones are rejected; if Apex DML fires it, one error rolls back the whole operation.
+false_statement: If Apex DML fires a trigger, valid records can save while failing ones are rejected; if a bulk API call fires it, one error rolls back the whole operation.
+explanation: Partial success is the behaviour for bulk API calls, whereas Apex DML is all-or-nothing when a trigger throws an error. The false statement swaps the two callers.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/apex-triggers.md
+  commit: ee7571c675638f9605db9044cd8e6d5432c21c41
+  blob: b1377e97b677b1564b10f0ecfcae55635189ccb7
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:apex-triggers
+difficulty: 3
+created: '2026-11-09'
+status: active

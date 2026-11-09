@@ -1,0 +1,17 @@
+id: sf-000058
+product_area: devops-and-alm
+true_statement: In a DevOps Center pipeline, each stage has its own source control branch, and promotion merges it into the next stage's branch before deploying.
+false_statement: In a DevOps Center pipeline, all stages share one source control branch, and promotion deploys that branch straight to the next stage's org.
+explanation: Every pipeline stage maps to its own branch; promoting merges the current stage's branch into the next one and then deploys to that stage's org. Stages do not share a single branch.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/devops-center.md
+  commit: ee7571c675638f9605db9044cd8e6d5432c21c41
+  blob: 3240b675d58f1517ac70c3dd2577ee910459f1f5
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:devops-center
+difficulty: 2
+created: '2026-11-09'
+status: active

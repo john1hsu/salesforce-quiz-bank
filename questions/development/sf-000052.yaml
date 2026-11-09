@@ -1,0 +1,17 @@
+id: sf-000052
+product_area: development
+true_statement: Field changes made to Trigger.new in a before trigger are saved without a separate DML statement.
+false_statement: Field changes made to Trigger.new in an after trigger are saved without a separate DML statement.
+explanation: Before triggers run before the save, so values set on Trigger.new persist automatically. In after triggers the triggering records are read-only, so that is the wrong context for such edits.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/apex-triggers.md
+  commit: ee7571c675638f9605db9044cd8e6d5432c21c41
+  blob: b1377e97b677b1564b10f0ecfcae55635189ccb7
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:apex-triggers
+difficulty: 1
+created: '2026-11-09'
+status: active

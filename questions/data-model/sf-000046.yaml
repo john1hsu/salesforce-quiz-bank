@@ -1,0 +1,17 @@
+id: sf-000046
+product_area: data-model
+true_statement: Roll-up summary fields offer COUNT, SUM, MIN and MAX, with no native average.
+false_statement: Roll-up summary fields offer COUNT, SUM, AVERAGE and MAX, with no native minimum.
+explanation: The four roll-up types are COUNT, SUM, MIN and MAX. Averages are not available natively, while MIN is, so the false statement swaps the supported and missing operations.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/roll-up-summary-field.md
+  commit: ee7571c675638f9605db9044cd8e6d5432c21c41
+  blob: 28aeb5785f5794844bfe6088ece937e5c74e58b0
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:roll-up-summary-field
+difficulty: 1
+created: '2026-11-09'
+status: active

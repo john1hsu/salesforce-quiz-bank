@@ -1,0 +1,17 @@
+id: sf-000059
+product_area: devops-and-alm
+true_statement: DevOps Center is unavailable in both Government Cloud Plus and the EU Operating Zone.
+false_statement: DevOps Center is available in Government Cloud Plus but unavailable in the EU Operating Zone.
+explanation: Neither Government Cloud Plus nor the EU Operating Zone supports it, and Help warns that enabling the managed package in Government Cloud Plus can move data outside the authorization boundary.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/devops-center.md
+  commit: ee7571c675638f9605db9044cd8e6d5432c21c41
+  blob: 3240b675d58f1517ac70c3dd2577ee910459f1f5
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:devops-center
+difficulty: 2
+created: '2026-11-09'
+status: active

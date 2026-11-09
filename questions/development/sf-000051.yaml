@@ -1,0 +1,17 @@
+id: sf-000051
+product_area: development
+true_statement: When DML affects more than 200 records, an Apex trigger runs once per batch of 200, and Trigger.size reports only the current batch.
+false_statement: When DML affects more than 2,000 records, an Apex trigger runs once per batch of 2,000, and Trigger.size reports only the current batch.
+explanation: Trigger invocations are chunked at 200 records, so a large DML operation fires the trigger several times and Trigger.size counts only the batch at hand. 2,000 is not the trigger batch size.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/apex-triggers.md
+  commit: ee7571c675638f9605db9044cd8e6d5432c21c41
+  blob: b1377e97b677b1564b10f0ecfcae55635189ccb7
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:apex-triggers
+difficulty: 2
+created: '2026-11-09'
+status: active

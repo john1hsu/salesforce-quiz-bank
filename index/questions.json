@@ -1,7 +1,7 @@
 {
  "version": 1,
- "count": 44,
- "active": 44,
+ "count": 59,
+ "active": 59,
  "questions": [
   {
    "id": "sf-000001",
@@ -751,6 +751,252 @@
    "difficulty": 2,
    "status": "active",
    "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/data-skew.md"
+  },
+  {
+   "id": "sf-000045",
+   "area": "data-model",
+   "t": "An object starts with 25 roll-up summary fields; Salesforce Support can raise that, but 40 per object is the hard maximum.",
+   "f": "An object starts with 25 roll-up summary fields; Salesforce Support can raise that, but 100 per object is the hard maximum.",
+   "x": "The default allocation is 25 per object and Support can increase it only up to a hard ceiling of 40. A 100-field ceiling does not exist.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:roll-up-summary-field"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/roll-up-summary-field.md"
+  },
+  {
+   "id": "sf-000046",
+   "area": "data-model",
+   "t": "Roll-up summary fields offer COUNT, SUM, MIN and MAX, with no native average.",
+   "f": "Roll-up summary fields offer COUNT, SUM, AVERAGE and MAX, with no native minimum.",
+   "x": "The four roll-up types are COUNT, SUM, MIN and MAX. Averages are not available natively, while MIN is, so the false statement swaps the supported and missing operations.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:roll-up-summary-field"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/roll-up-summary-field.md"
+  },
+  {
+   "id": "sf-000047",
+   "area": "data-model",
+   "t": "After a detail record saves, its parent's roll-up is recalculated and the parent saves, which can cascade to a grandparent's roll-up.",
+   "f": "After a detail record saves, its parent's roll-up is recalculated by a nightly batch job, so a grandparent's roll-up updates the next day.",
+   "x": "Roll-up recalculation is a step in the save order of execution: the parent is recalculated and saved right away, and a change there can trigger the grandparent's roll-up in turn. There is no nightly batch for native roll-ups.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:roll-up-summary-field",
+    "kt:order-of-execution"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/roll-up-summary-field.md"
+  },
+  {
+   "id": "sf-000048",
+   "area": "development",
+   "t": "Since API version 24.0, Apex test methods see only the data they create, apart from setup objects such as User and Profile, unless SeeAllData=true is set.",
+   "f": "Since API version 24.0, Apex test methods see all existing org records by default, unless the class is annotated with SeeAllData=false.",
+   "x": "Tests are isolated from org data by default; only a few setup-style objects stay visible, and SeeAllData=true is the opt-in to see the rest. The false statement reverses the default.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:apex-testing",
+    "kt:test-data-factory"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/apex-testing.md"
+  },
+  {
+   "id": "sf-000049",
+   "area": "development",
+   "t": "Asynchronous jobs enqueued after Test.startTest() are executed synchronously when Test.stopTest() is called, so a test can assert on their results.",
+   "f": "Asynchronous jobs enqueued after Test.startTest() run in the background after the test method ends, so a test can only check that they were queued.",
+   "x": "Test.stopTest() collects the future, Queueable and batch work enqueued since startTest and runs it synchronously, which is how tests verify async Apex. They do not run later in the background.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:apex-testing",
+    "kt:asynchronous-apex"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/apex-testing.md"
+  },
+  {
+   "id": "sf-000050",
+   "area": "development",
+   "t": "Changes a test method makes to records created in @TestSetup are rolled back when that method ends, so each method sees the original data.",
+   "f": "Changes a test method makes to records created in @TestSetup carry over to later test methods, so each method sees the previous method's edits.",
+   "x": "Each test method runs in its own transaction and its changes to the shared setup records are rolled back afterwards. Later methods therefore start from the data exactly as @TestSetup created it.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:apex-testing"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/apex-testing.md"
+  },
+  {
+   "id": "sf-000051",
+   "area": "development",
+   "t": "When DML affects more than 200 records, an Apex trigger runs once per batch of 200, and Trigger.size reports only the current batch.",
+   "f": "When DML affects more than 2,000 records, an Apex trigger runs once per batch of 2,000, and Trigger.size reports only the current batch.",
+   "x": "Trigger invocations are chunked at 200 records, so a large DML operation fires the trigger several times and Trigger.size counts only the batch at hand. 2,000 is not the trigger batch size.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:apex-triggers"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/apex-triggers.md"
+  },
+  {
+   "id": "sf-000052",
+   "area": "development",
+   "t": "Field changes made to Trigger.new in a before trigger are saved without a separate DML statement.",
+   "f": "Field changes made to Trigger.new in an after trigger are saved without a separate DML statement.",
+   "x": "Before triggers run before the save, so values set on Trigger.new persist automatically. In after triggers the triggering records are read-only, so that is the wrong context for such edits.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:apex-triggers"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/apex-triggers.md"
+  },
+  {
+   "id": "sf-000053",
+   "area": "development",
+   "t": "If a bulk API call fires a trigger, valid records can save while failing ones are rejected; if Apex DML fires it, one error rolls back the whole operation.",
+   "f": "If Apex DML fires a trigger, valid records can save while failing ones are rejected; if a bulk API call fires it, one error rolls back the whole operation.",
+   "x": "Partial success is the behaviour for bulk API calls, whereas Apex DML is all-or-nothing when a trigger throws an error. The false statement swaps the two callers.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:apex-triggers"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/apex-triggers.md"
+  },
+  {
+   "id": "sf-000054",
+   "area": "devops-and-alm",
+   "t": "Change sets can move only between orgs affiliated with the same production org, such as production and one of its sandboxes.",
+   "f": "Change sets can move between any two Salesforce orgs, such as two separate production orgs, once a deployment connection is set up.",
+   "x": "Deployment connections can link only orgs that share a production org, like production and its sandboxes or two sibling sandboxes. Unrelated orgs, including separate production orgs, cannot exchange change sets.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:change-sets",
+    "kt:sandbox-types"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/change-sets.md"
+  },
+  {
+   "id": "sf-000055",
+   "area": "devops-and-alm",
+   "t": "An inbound or outbound change set can hold up to 10,000 files of metadata, the same cap as a Metadata API deploy.",
+   "f": "An inbound or outbound change set can hold up to 5,000 files of metadata, half the cap of a Metadata API deploy.",
+   "x": "Change sets share the Metadata API's per-operation limit of 10,000 files. The 5,000-file figure is wrong, and the two tools do not have different caps.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:change-sets",
+    "kt:metadata-api"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/change-sets.md"
+  },
+  {
+   "id": "sf-000056",
+   "area": "devops-and-alm",
+   "t": "Deploying a change set that contains Apex to production runs all local tests by default, but deploying it to a sandbox runs no tests automatically.",
+   "f": "Deploying a change set that contains Apex runs all local tests by default, whether the target is production or a sandbox.",
+   "x": "Local tests run by default only when the target is production; sandbox deployments skip automatic test runs. The false statement wrongly extends the production behaviour to sandboxes.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:change-sets",
+    "kt:apex-testing"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/change-sets.md"
+  },
+  {
+   "id": "sf-000057",
+   "area": "devops-and-alm",
+   "t": "DevOps Center's Analytics tab reports DORA metrics that can be viewed for up to 90 days.",
+   "f": "DevOps Center's Analytics tab reports DORA metrics that can be viewed for up to 30 days.",
+   "x": "DORA metrics in the Analytics tab cover a window of up to 90 days. The 30-day figure belongs to the separate Agentforce Vibes activity dashboard, not to DORA metrics.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:devops-center"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/devops-center.md"
+  },
+  {
+   "id": "sf-000058",
+   "area": "devops-and-alm",
+   "t": "In a DevOps Center pipeline, each stage has its own source control branch, and promotion merges it into the next stage's branch before deploying.",
+   "f": "In a DevOps Center pipeline, all stages share one source control branch, and promotion deploys that branch straight to the next stage's org.",
+   "x": "Every pipeline stage maps to its own branch; promoting merges the current stage's branch into the next one and then deploys to that stage's org. Stages do not share a single branch.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:devops-center"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/devops-center.md"
+  },
+  {
+   "id": "sf-000059",
+   "area": "devops-and-alm",
+   "t": "DevOps Center is unavailable in both Government Cloud Plus and the EU Operating Zone.",
+   "f": "DevOps Center is available in Government Cloud Plus but unavailable in the EU Operating Zone.",
+   "x": "Neither Government Cloud Plus nor the EU Operating Zone supports it, and Help warns that enabling the managed package in Government Cloud Plus can move data outside the authorization boundary.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:devops-center"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/devops-center.md"
   }
  ]
 }

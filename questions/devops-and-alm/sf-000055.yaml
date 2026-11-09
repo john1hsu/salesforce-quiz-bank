@@ -1,0 +1,18 @@
+id: sf-000055
+product_area: devops-and-alm
+true_statement: An inbound or outbound change set can hold up to 10,000 files of metadata, the same cap as a Metadata API deploy.
+false_statement: An inbound or outbound change set can hold up to 5,000 files of metadata, half the cap of a Metadata API deploy.
+explanation: Change sets share the Metadata API's per-operation limit of 10,000 files. The 5,000-file figure is wrong, and the two tools do not have different caps.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/change-sets.md
+  commit: ee7571c675638f9605db9044cd8e6d5432c21c41
+  blob: 79eeef2b83eb7542dec236620b29811d0e5b86db
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:change-sets
+- kt:metadata-api
+difficulty: 2
+created: '2026-11-09'
+status: active

@@ -1,0 +1,17 @@
+id: sf-000050
+product_area: development
+true_statement: Changes a test method makes to records created in @TestSetup are rolled back when that method ends, so each method sees the original data.
+false_statement: Changes a test method makes to records created in @TestSetup carry over to later test methods, so each method sees the previous method's edits.
+explanation: Each test method runs in its own transaction and its changes to the shared setup records are rolled back afterwards. Later methods therefore start from the data exactly as @TestSetup created it.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/apex-testing.md
+  commit: ee7571c675638f9605db9044cd8e6d5432c21c41
+  blob: 0e277ffd72cd7f948413ede55d6b99c14b2e19c6
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:apex-testing
+difficulty: 2
+created: '2026-11-09'
+status: active
