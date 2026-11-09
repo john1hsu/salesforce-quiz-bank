@@ -1,0 +1,17 @@
+id: sf-000010
+product_area: automation
+true_statement: In Flow Builder, Run and Debug always execute the most recently saved version of the flow, not unsaved edits.
+false_statement: In Flow Builder, Run and Debug always execute the currently active version of the flow, not unsaved edits.
+explanation: Run and Debug use whatever version was saved last, even if a different version is the one activated for users. Activation only controls which version users run.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/flow-builder.md
+  commit: 91f8675154c337a548ff9902de9162f1a8c8a1fe
+  blob: fd0af4b6a6fb0f8b5daf6d9d37a1bbc4db3536d1
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:flow-builder
+difficulty: 2
+created: '2026-11-09'
+status: active

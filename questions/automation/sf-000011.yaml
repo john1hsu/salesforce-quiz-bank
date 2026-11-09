@@ -1,0 +1,18 @@
+id: sf-000011
+product_area: automation
+true_statement: The Salesforce Architects decision guide recommends Flow for record-triggered automation on objects with fewer than 15 automations per object.
+false_statement: The Salesforce Architects decision guide recommends Flow for record-triggered automation on objects with fewer than 50 automations per object.
+explanation: The guide's density table treats fewer than 15 automations per object as low density, where Flow fits. Higher-density objects and complex cross-object logic are steered toward Apex triggers instead.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/flow-builder.md
+  commit: 91f8675154c337a548ff9902de9162f1a8c8a1fe
+  blob: fd0af4b6a6fb0f8b5daf6d9d37a1bbc4db3536d1
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:flow-builder
+- kt:apex-triggers
+difficulty: 3
+created: '2026-11-09'
+status: active

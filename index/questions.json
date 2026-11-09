@@ -1,7 +1,7 @@
 {
  "version": 1,
- "count": 8,
- "active": 8,
+ "count": 11,
+ "active": 11,
  "questions": [
   {
    "id": "sf-000001",
@@ -139,6 +139,56 @@
    "difficulty": 3,
    "status": "active",
    "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/well-architected-framework.md"
+  },
+  {
+   "id": "sf-000009",
+   "area": "automation",
+   "t": "In a record-triggered flow, invocable Apex actions can be called only from the after-save (Actions and Related Records) context.",
+   "f": "In a record-triggered flow, invocable Apex actions can be called only from the before-save (Fast Field Updates) context.",
+   "x": "Invocable Apex is limited to after-save record-triggered flows. Before-save flows are meant for cheap updates to the triggering record itself and cannot call invocable actions.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:flow-builder",
+    "kt:record-triggered-flow"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/flow-builder.md"
+  },
+  {
+   "id": "sf-000010",
+   "area": "automation",
+   "t": "In Flow Builder, Run and Debug always execute the most recently saved version of the flow, not unsaved edits.",
+   "f": "In Flow Builder, Run and Debug always execute the currently active version of the flow, not unsaved edits.",
+   "x": "Run and Debug use whatever version was saved last, even if a different version is the one activated for users. Activation only controls which version users run.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:flow-builder"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/flow-builder.md"
+  },
+  {
+   "id": "sf-000011",
+   "area": "automation",
+   "t": "The Salesforce Architects decision guide recommends Flow for record-triggered automation on objects with fewer than 15 automations per object.",
+   "f": "The Salesforce Architects decision guide recommends Flow for record-triggered automation on objects with fewer than 50 automations per object.",
+   "x": "The guide's density table treats fewer than 15 automations per object as low density, where Flow fits. Higher-density objects and complex cross-object logic are steered toward Apex triggers instead.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:flow-builder",
+    "kt:apex-triggers"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/flow-builder.md"
   }
  ]
 }

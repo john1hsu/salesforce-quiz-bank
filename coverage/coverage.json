@@ -1,13 +1,13 @@
 {
  "totals": {
-  "active": 8
+  "active": 11
  },
  "areas": {
   "architecture-practice": {
    "active": 3
   },
   "automation": {
-   "active": 1
+   "active": 4
   },
   "devops-and-alm": {
    "active": 1
@@ -24,6 +24,9 @@
  },
  "articles": {
   "articles/architecture-practice/well-architected-framework.md": {
+   "active": 3
+  },
+  "articles/automation/flow-builder.md": {
    "active": 3
   },
   "articles/automation/record-triggered-flow.md": {

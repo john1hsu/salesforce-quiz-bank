@@ -1,0 +1,18 @@
+id: sf-000009
+product_area: automation
+true_statement: In a record-triggered flow, invocable Apex actions can be called only from the after-save (Actions and Related Records) context.
+false_statement: In a record-triggered flow, invocable Apex actions can be called only from the before-save (Fast Field Updates) context.
+explanation: Invocable Apex is limited to after-save record-triggered flows. Before-save flows are meant for cheap updates to the triggering record itself and cannot call invocable actions.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/flow-builder.md
+  commit: 91f8675154c337a548ff9902de9162f1a8c8a1fe
+  blob: fd0af4b6a6fb0f8b5daf6d9d37a1bbc4db3536d1
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:flow-builder
+- kt:record-triggered-flow
+difficulty: 2
+created: '2026-11-09'
+status: active
