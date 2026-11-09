@@ -1,0 +1,17 @@
+id: sf-000060
+product_area: devops-and-alm
+true_statement: A Metadata API deploy or retrieve .zip can be at most 39 MB compressed and 600 MB uncompressed.
+false_statement: A Metadata API deploy or retrieve .zip can be at most 50 MB compressed and 600 MB uncompressed.
+explanation: The compressed cap is 39 MB, set below the 50 MB SOAP message limit because base-64 encoding inflates the payload. 50 MB is the SOAP message limit, not the .zip cap.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/metadata-api.md
+  commit: ee7571c675638f9605db9044cd8e6d5432c21c41
+  blob: 97be687ba37ae82bb6b822997d40df167f0b9088
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:metadata-api
+difficulty: 2
+created: '2026-11-09'
+status: active

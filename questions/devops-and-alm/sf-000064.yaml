@@ -1,0 +1,18 @@
+id: sf-000064
+product_area: devops-and-alm
+true_statement: Just-in-time Salesforce CLI plugins, such as code-analyzer, install automatically the first time one of their commands runs.
+false_statement: Just-in-time Salesforce CLI plugins, such as code-analyzer, must be installed manually with sf plugins install before their first use.
+explanation: Just-in-time plugins are fetched automatically on first use and then kept current by sf update. Manual sf plugins install is how user-installed plugins are added.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/salesforce-cli.md
+  commit: ee7571c675638f9605db9044cd8e6d5432c21c41
+  blob: f5b6c86935d21e3b858451d70afea5592f6df01c
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:salesforce-cli
+- kt:code-analyzer
+difficulty: 2
+created: '2026-11-09'
+status: active

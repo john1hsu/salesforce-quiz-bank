@@ -1,7 +1,7 @@
 {
  "version": 1,
- "count": 59,
- "active": 59,
+ "count": 74,
+ "active": 74,
  "questions": [
   {
    "id": "sf-000001",
@@ -997,6 +997,256 @@
    "difficulty": 2,
    "status": "active",
    "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/devops-center.md"
+  },
+  {
+   "id": "sf-000060",
+   "area": "devops-and-alm",
+   "t": "A Metadata API deploy or retrieve .zip can be at most 39 MB compressed and 600 MB uncompressed.",
+   "f": "A Metadata API deploy or retrieve .zip can be at most 50 MB compressed and 600 MB uncompressed.",
+   "x": "The compressed cap is 39 MB, set below the 50 MB SOAP message limit because base-64 encoding inflates the payload. 50 MB is the SOAP message limit, not the .zip cap.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:metadata-api"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/metadata-api.md"
+  },
+  {
+   "id": "sf-000061",
+   "area": "devops-and-alm",
+   "t": "RunLocalTests is the default test level for Metadata API production deployments that contain Apex.",
+   "f": "RunAllTestsInOrg is the default test level for Metadata API production deployments that contain Apex.",
+   "x": "Production deployments with Apex default to RunLocalTests, which skips tests from installed managed and unlocked packages. RunAllTestsInOrg must be chosen explicitly.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:metadata-api",
+    "kt:apex-testing"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/metadata-api.md"
+  },
+  {
+   "id": "sf-000062",
+   "area": "devops-and-alm",
+   "t": "With the RunSpecifiedTests test level, each class and trigger in a deployment needs at least 75% code coverage on its own.",
+   "f": "With the RunSpecifiedTests test level, only the aggregate code coverage across the whole deployment needs to reach 75%.",
+   "x": "RunSpecifiedTests is stricter than an aggregate check: every class and trigger must individually reach 75% coverage from the named tests, so a high overall average is not enough.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:metadata-api",
+    "kt:apex-testing"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/metadata-api.md"
+  },
+  {
+   "id": "sf-000063",
+   "area": "devops-and-alm",
+   "t": "For CI, the recommended Salesforce CLI login is the JWT flow, which needs a certificate, its private key and an external client app.",
+   "f": "For CI, the recommended Salesforce CLI login is the web flow, which opens a browser and uses the default Salesforce CLI connected app.",
+   "x": "The JWT flow runs headless and is the recommended CI option. The web flow opens a browser, so it suits interactive work rather than unattended pipelines.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:salesforce-cli",
+    "kt:external-client-apps"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/salesforce-cli.md"
+  },
+  {
+   "id": "sf-000064",
+   "area": "devops-and-alm",
+   "t": "Just-in-time Salesforce CLI plugins, such as code-analyzer, install automatically the first time one of their commands runs.",
+   "f": "Just-in-time Salesforce CLI plugins, such as code-analyzer, must be installed manually with sf plugins install before their first use.",
+   "x": "Just-in-time plugins are fetched automatically on first use and then kept current by sf update. Manual sf plugins install is how user-installed plugins are added.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:salesforce-cli",
+    "kt:code-analyzer"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/salesforce-cli.md"
+  },
+  {
+   "id": "sf-000065",
+   "area": "devops-and-alm",
+   "t": "The Salesforce CLI stable channel is released weekly, with a release candidate shipped alongside each stable release.",
+   "f": "The Salesforce CLI stable channel is released monthly, with a release candidate shipped alongside each stable release.",
+   "x": "Stable releases come out every week, each paired with a release candidate, while nightly builds are daily. A monthly cadence understates how often the CLI changes.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:salesforce-cli"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/salesforce-cli.md"
+  },
+  {
+   "id": "sf-000066",
+   "area": "identity",
+   "t": "A connected app's Permitted Users policy defaults to All users may self-authorize, so each user approves the app on first use.",
+   "f": "A connected app's Permitted Users policy defaults to Admin approved users are pre-authorized, so access comes only from profiles or permission sets.",
+   "x": "Self-authorization is the default; admin-approved access must be chosen explicitly, and switching to it immediately cuts off users without a profile or permission set grant.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:connected-apps"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/connected-apps.md"
+  },
+  {
+   "id": "sf-000067",
+   "area": "identity",
+   "t": "The Use Any API Client permission lets a user reach any connected app, even one restricted to admin-approved users.",
+   "f": "The Use Any API Client permission lets a user reach any self-authorize connected app, but not one restricted to admin-approved users.",
+   "x": "This permission bypasses the admin-approved restriction entirely, which is why holders of it should be audited. It is not limited to self-authorize apps.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:connected-apps"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/connected-apps.md"
+  },
+  {
+   "id": "sf-000068",
+   "area": "identity",
+   "t": "Tightening a connected app's refresh token policy does not end active sessions, because the policy is checked only when a refresh token is used.",
+   "f": "Tightening a connected app's refresh token policy ends active sessions at once, because the policy is checked on every API request.",
+   "x": "The refresh token policy is evaluated only at the moment a refresh token is exchanged, so existing sessions keep running until then. It is not checked on each request.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:connected-apps",
+    "kt:oauth-2-flows-in-salesforce"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/connected-apps.md"
+  },
+  {
+   "id": "sf-000069",
+   "area": "identity",
+   "t": "When a sandbox is created or refreshed, only packaged external client apps are copied into it, not local ones.",
+   "f": "When a sandbox is created or refreshed, both local and packaged external client apps are copied into it.",
+   "x": "Local external client apps stay in their home org and are skipped by sandbox copies; only packaged ones come across, so sandbox setup has to account for that.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:external-client-apps",
+    "kt:sandbox-types"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/external-client-apps.md"
+  },
+  {
+   "id": "sf-000070",
+   "area": "identity",
+   "t": "In an external client app, the subscriber admin's Policies stay local and are never packaged, while the developer's Settings travel in the package.",
+   "f": "In an external client app, the developer's Settings stay local and are never packaged, while the subscriber admin's Policies travel in the package.",
+   "x": "Developers own the Settings, which ship in the package; subscriber admins own the Policies, which they tune per org and which are never packaged. The false version reverses the roles.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:external-client-apps",
+    "kt:second-generation-managed-packages"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/external-client-apps.md"
+  },
+  {
+   "id": "sf-000071",
+   "area": "identity",
+   "t": "An external client app's global OAuth settings should be kept out of the package, in a long-lived org such as the Dev Hub.",
+   "f": "An external client app's global OAuth settings should be included in the package, so every subscriber org holds its own copy.",
+   "x": "Global OAuth settings, which hold the consumer details, belong in a non-ephemeral org that outlives the packages, such as the Dev Hub. Packaging them is explicitly discouraged.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:external-client-apps",
+    "kt:second-generation-managed-packages"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/external-client-apps.md"
+  },
+  {
+   "id": "sf-000072",
+   "area": "integration",
+   "t": "Without the Change Data Capture add-on, an org can select at most 5 entities for change events across all channels.",
+   "f": "Without the Change Data Capture add-on, an org can select at most 50 entities for change events across all channels.",
+   "x": "The base allocation caps selected entities at 5 across all channels; the add-on removes that cap. 50 is not the base limit.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:change-data-capture",
+    "kt:change-data-capture-allocations"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/change-data-capture.md"
+  },
+  {
+   "id": "sf-000073",
+   "area": "integration",
+   "t": "An Apex change event trigger receives batches of up to 2,000 change event messages by default.",
+   "f": "An Apex change event trigger receives batches of up to 200 change event messages by default.",
+   "x": "Change event triggers run asynchronously after commit and take up to 2,000 messages per batch by default, ten times the 200 stated in the false version.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:change-data-capture",
+    "kt:apex-triggers"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/change-data-capture.md"
+  },
+  {
+   "id": "sf-000074",
+   "area": "integration",
+   "t": "Change Data Capture applies field-level security to what a subscriber receives, but it does not apply sharing settings.",
+   "f": "Change Data Capture applies sharing settings to what a subscriber receives, but it does not apply field-level security.",
+   "x": "Field-level security restricts which fields a subscriber sees, while record sharing is not enforced on change events. The false version swaps the two.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:change-data-capture"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/change-data-capture.md"
   }
  ]
 }

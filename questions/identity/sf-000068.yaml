@@ -1,0 +1,18 @@
+id: sf-000068
+product_area: identity
+true_statement: Tightening a connected app's refresh token policy does not end active sessions, because the policy is checked only when a refresh token is used.
+false_statement: Tightening a connected app's refresh token policy ends active sessions at once, because the policy is checked on every API request.
+explanation: The refresh token policy is evaluated only at the moment a refresh token is exchanged, so existing sessions keep running until then. It is not checked on each request.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/connected-apps.md
+  commit: ee7571c675638f9605db9044cd8e6d5432c21c41
+  blob: ddaa3025bf77af05d8debf5e5641bd30abe39f13
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:connected-apps
+- kt:oauth-2-flows-in-salesforce
+difficulty: 3
+created: '2026-11-09'
+status: active

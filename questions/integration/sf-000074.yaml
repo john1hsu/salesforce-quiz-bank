@@ -1,0 +1,17 @@
+id: sf-000074
+product_area: integration
+true_statement: Change Data Capture applies field-level security to what a subscriber receives, but it does not apply sharing settings.
+false_statement: Change Data Capture applies sharing settings to what a subscriber receives, but it does not apply field-level security.
+explanation: Field-level security restricts which fields a subscriber sees, while record sharing is not enforced on change events. The false version swaps the two.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/change-data-capture.md
+  commit: ee7571c675638f9605db9044cd8e6d5432c21c41
+  blob: 220580af17a586c594c53285e92aa1acd137c2f6
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:change-data-capture
+difficulty: 3
+created: '2026-11-09'
+status: active

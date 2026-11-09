@@ -1,0 +1,18 @@
+id: sf-000061
+product_area: devops-and-alm
+true_statement: RunLocalTests is the default test level for Metadata API production deployments that contain Apex.
+false_statement: RunAllTestsInOrg is the default test level for Metadata API production deployments that contain Apex.
+explanation: Production deployments with Apex default to RunLocalTests, which skips tests from installed managed and unlocked packages. RunAllTestsInOrg must be chosen explicitly.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/metadata-api.md
+  commit: ee7571c675638f9605db9044cd8e6d5432c21c41
+  blob: 97be687ba37ae82bb6b822997d40df167f0b9088
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:metadata-api
+- kt:apex-testing
+difficulty: 2
+created: '2026-11-09'
+status: active

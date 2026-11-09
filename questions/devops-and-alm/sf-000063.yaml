@@ -1,0 +1,18 @@
+id: sf-000063
+product_area: devops-and-alm
+true_statement: For CI, the recommended Salesforce CLI login is the JWT flow, which needs a certificate, its private key and an external client app.
+false_statement: For CI, the recommended Salesforce CLI login is the web flow, which opens a browser and uses the default Salesforce CLI connected app.
+explanation: The JWT flow runs headless and is the recommended CI option. The web flow opens a browser, so it suits interactive work rather than unattended pipelines.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/salesforce-cli.md
+  commit: ee7571c675638f9605db9044cd8e6d5432c21c41
+  blob: f5b6c86935d21e3b858451d70afea5592f6df01c
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:salesforce-cli
+- kt:external-client-apps
+difficulty: 2
+created: '2026-11-09'
+status: active

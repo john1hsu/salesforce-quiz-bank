@@ -1,6 +1,6 @@
 {
  "totals": {
-  "active": 59
+  "active": 74
  },
  "areas": {
   "architecture-practice": {
@@ -22,13 +22,13 @@
    "active": 9
   },
   "devops-and-alm": {
-   "active": 10
+   "active": 16
   },
   "identity": {
-   "active": 1
+   "active": 7
   },
   "integration": {
-   "active": 1
+   "active": 4
   },
   "platform-architecture": {
    "active": 3
@@ -92,11 +92,26 @@
   "articles/devops-and-alm/devops-center.md": {
    "active": 3
   },
+  "articles/devops-and-alm/metadata-api.md": {
+   "active": 3
+  },
+  "articles/devops-and-alm/salesforce-cli.md": {
+   "active": 3
+  },
   "articles/devops-and-alm/unlocked-packages.md": {
    "active": 1
   },
+  "articles/identity/connected-apps.md": {
+   "active": 3
+  },
+  "articles/identity/external-client-apps.md": {
+   "active": 3
+  },
   "articles/identity/multi-factor-authentication.md": {
    "active": 1
+  },
+  "articles/integration/change-data-capture.md": {
+   "active": 3
   },
   "articles/integration/platform-events.md": {
    "active": 1

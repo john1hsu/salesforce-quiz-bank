@@ -1,0 +1,17 @@
+id: sf-000066
+product_area: identity
+true_statement: A connected app's Permitted Users policy defaults to All users may self-authorize, so each user approves the app on first use.
+false_statement: A connected app's Permitted Users policy defaults to Admin approved users are pre-authorized, so access comes only from profiles or permission sets.
+explanation: Self-authorization is the default; admin-approved access must be chosen explicitly, and switching to it immediately cuts off users without a profile or permission set grant.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/connected-apps.md
+  commit: ee7571c675638f9605db9044cd8e6d5432c21c41
+  blob: ddaa3025bf77af05d8debf5e5641bd30abe39f13
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:connected-apps
+difficulty: 2
+created: '2026-11-09'
+status: active

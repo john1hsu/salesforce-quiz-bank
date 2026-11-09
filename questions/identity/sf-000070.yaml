@@ -1,0 +1,18 @@
+id: sf-000070
+product_area: identity
+true_statement: In an external client app, the subscriber admin's Policies stay local and are never packaged, while the developer's Settings travel in the package.
+false_statement: In an external client app, the developer's Settings stay local and are never packaged, while the subscriber admin's Policies travel in the package.
+explanation: Developers own the Settings, which ship in the package; subscriber admins own the Policies, which they tune per org and which are never packaged. The false version reverses the roles.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/external-client-apps.md
+  commit: ee7571c675638f9605db9044cd8e6d5432c21c41
+  blob: c77b8bfa4441adebbaa66b48d4f691b4e4a0dc96
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:external-client-apps
+- kt:second-generation-managed-packages
+difficulty: 2
+created: '2026-11-09'
+status: active

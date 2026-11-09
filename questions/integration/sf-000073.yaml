@@ -1,0 +1,18 @@
+id: sf-000073
+product_area: integration
+true_statement: An Apex change event trigger receives batches of up to 2,000 change event messages by default.
+false_statement: An Apex change event trigger receives batches of up to 200 change event messages by default.
+explanation: Change event triggers run asynchronously after commit and take up to 2,000 messages per batch by default, ten times the 200 stated in the false version.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/change-data-capture.md
+  commit: ee7571c675638f9605db9044cd8e6d5432c21c41
+  blob: 220580af17a586c594c53285e92aa1acd137c2f6
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:change-data-capture
+- kt:apex-triggers
+difficulty: 2
+created: '2026-11-09'
+status: active
