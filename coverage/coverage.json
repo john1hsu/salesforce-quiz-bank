@@ -1,6 +1,6 @@
 {
  "totals": {
-  "active": 17
+  "active": 20
  },
  "areas": {
   "architecture-practice": {
@@ -13,6 +13,9 @@
    "active": 3
   },
   "data-cloud-and-ai": {
+   "active": 3
+  },
+  "data-model": {
    "active": 3
   },
   "devops-and-alm": {
@@ -42,6 +45,9 @@
    "active": 3
   },
   "articles/data-cloud-and-ai/agent-development-lifecycle.md": {
+   "active": 3
+  },
+  "articles/data-model/lookup-vs-master-detail.md": {
    "active": 3
   },
   "articles/devops-and-alm/unlocked-packages.md": {

@@ -1,0 +1,18 @@
+id: sf-000020
+product_area: data-model
+true_statement: Converting a lookup to a master-detail relationship switches the child object's org-wide default to Controlled by Parent.
+false_statement: Converting a lookup to a master-detail relationship keeps the child object's existing org-wide default, such as Private.
+explanation: Once the relationship becomes master-detail, the detail records take their access from the master, so the child's org-wide default changes to Controlled by Parent. Its earlier sharing setting does not survive the conversion.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/lookup-vs-master-detail.md
+  commit: 84d8a0d501f8e8705191a9b89fad85969434d980
+  blob: a4c58ed6d5cd847270520ae8008b7a81993ceb90
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:lookup-vs-master-detail
+- kt:salesforce-sharing-model
+difficulty: 3
+created: '2026-11-09'
+status: active

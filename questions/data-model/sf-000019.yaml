@@ -1,0 +1,18 @@
+id: sf-000019
+product_area: data-model
+true_statement: Roll-up summary fields can be created only on the master side of a master-detail relationship.
+false_statement: Roll-up summary fields can be created on the parent side of either a lookup or a master-detail relationship.
+explanation: Declarative COUNT, SUM, MIN and MAX roll-ups are a feature of master-detail parents only. A lookup parent cannot host a roll-up summary field, which is one reason to pick master-detail.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/lookup-vs-master-detail.md
+  commit: 84d8a0d501f8e8705191a9b89fad85969434d980
+  blob: a4c58ed6d5cd847270520ae8008b7a81993ceb90
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:lookup-vs-master-detail
+- kt:roll-up-summary-field
+difficulty: 1
+created: '2026-11-09'
+status: active

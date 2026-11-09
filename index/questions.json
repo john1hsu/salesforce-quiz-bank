@@ -1,7 +1,7 @@
 {
  "version": 1,
- "count": 17,
- "active": 17,
+ "count": 20,
+ "active": 20,
  "questions": [
   {
    "id": "sf-000001",
@@ -292,6 +292,57 @@
    "difficulty": 2,
    "status": "active",
    "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/agent-development-lifecycle.md"
+  },
+  {
+   "id": "sf-000018",
+   "area": "data-model",
+   "t": "A custom object can have at most 2 master-detail relationships, though it can have many lookup relationships.",
+   "f": "A custom object can have at most 3 master-detail relationships, though it can have many lookup relationships.",
+   "x": "Salesforce caps a custom object at two master-detail relationship fields, while lookups have no such small cap. Three is the number of custom detail levels allowed in a multilevel chain, not the per-object master-detail limit.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:lookup-vs-master-detail",
+    "kt:object-relationships"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/lookup-vs-master-detail.md"
+  },
+  {
+   "id": "sf-000019",
+   "area": "data-model",
+   "t": "Roll-up summary fields can be created only on the master side of a master-detail relationship.",
+   "f": "Roll-up summary fields can be created on the parent side of either a lookup or a master-detail relationship.",
+   "x": "Declarative COUNT, SUM, MIN and MAX roll-ups are a feature of master-detail parents only. A lookup parent cannot host a roll-up summary field, which is one reason to pick master-detail.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:lookup-vs-master-detail",
+    "kt:roll-up-summary-field"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/lookup-vs-master-detail.md"
+  },
+  {
+   "id": "sf-000020",
+   "area": "data-model",
+   "t": "Converting a lookup to a master-detail relationship switches the child object's org-wide default to Controlled by Parent.",
+   "f": "Converting a lookup to a master-detail relationship keeps the child object's existing org-wide default, such as Private.",
+   "x": "Once the relationship becomes master-detail, the detail records take their access from the master, so the child's org-wide default changes to Controlled by Parent. Its earlier sharing setting does not survive the conversion.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:lookup-vs-master-detail",
+    "kt:salesforce-sharing-model"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/lookup-vs-master-detail.md"
   }
  ]
 }

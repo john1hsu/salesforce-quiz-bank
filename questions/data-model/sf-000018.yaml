@@ -1,0 +1,18 @@
+id: sf-000018
+product_area: data-model
+true_statement: A custom object can have at most 2 master-detail relationships, though it can have many lookup relationships.
+false_statement: A custom object can have at most 3 master-detail relationships, though it can have many lookup relationships.
+explanation: Salesforce caps a custom object at two master-detail relationship fields, while lookups have no such small cap. Three is the number of custom detail levels allowed in a multilevel chain, not the per-object master-detail limit.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/lookup-vs-master-detail.md
+  commit: 84d8a0d501f8e8705191a9b89fad85969434d980
+  blob: a4c58ed6d5cd847270520ae8008b7a81993ceb90
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:lookup-vs-master-detail
+- kt:object-relationships
+difficulty: 2
+created: '2026-11-09'
+status: active
