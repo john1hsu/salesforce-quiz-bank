@@ -1,0 +1,19 @@
+id: sf-000320
+product_area: data-model
+true_statement: Inserting a big object record whose index values already exist overwrites the existing record instead of creating a duplicate.
+false_statement: Inserting a big object record whose index values already exist fails with a duplicate error instead of overwriting the record.
+explanation: 'Big object writes are idempotent on the index: a matching index overwrites the stored record. That is why a failed load can simply be retried.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/big-objects.md
+  commit: 7581ad0b96602285af0f512d9ea7379718c7aea4
+  blob: 8bd64e51083da6f076e6e92d77d83a1ede35e72b
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:platform-data-architect-certification
+concepts:
+- kt:big-objects
+difficulty: 2
+created: '2026-11-10'
+status: active

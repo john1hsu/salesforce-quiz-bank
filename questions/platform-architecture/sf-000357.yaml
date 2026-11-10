@@ -1,0 +1,18 @@
+id: sf-000357
+product_area: platform-architecture
+true_statement: Salesforce reruns customers' unit tests on each platform release to catch changes that would break their customizations.
+false_statement: Salesforce reruns customers' unit tests only when the customer deploys new Apex to production, not on platform releases.
+explanation: Because the kernel and tenant metadata evolve separately, Salesforce runs customers' tests on each release to detect breaking changes. That safeguard only works if the tests exist.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/metadata-driven-architecture.md
+  commit: 7581ad0b96602285af0f512d9ea7379718c7aea4
+  blob: fcde4a3f42a701ec566ee7f2112e1d1c8659c70c
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:metadata-driven-architecture
+- kt:apex
+difficulty: 2
+created: '2026-11-10'
+status: active

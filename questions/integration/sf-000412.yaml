@@ -1,0 +1,21 @@
+id: sf-000412
+product_area: integration
+true_statement: Bulk API 2.0 processes batches in parallel with no serial mode, so record ordering across batches isn't guaranteed.
+false_statement: Bulk API 2.0 offers a serial processing mode that guarantees record ordering across batches.
+explanation: Bulk API 2.0 always runs batches in parallel and commits each independently. Ordering isn't guaranteed and parallelism can raise lock contention.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/batch-data-synchronization.md
+  commit: 7581ad0b96602285af0f512d9ea7379718c7aea4
+  blob: 9570dfa25a304849c30419830562aef32da28364
+verified_release: Winter '27
+feature_status: concept
+certs:
+- kt:integration-architect-certification
+concepts:
+- kt:batch-data-synchronization
+- kt:bulk-api-2
+- kt:record-locking
+difficulty: 2
+created: '2026-11-10'
+status: active

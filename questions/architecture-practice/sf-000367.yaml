@@ -1,0 +1,17 @@
+id: sf-000367
+product_area: architecture-practice
+true_statement: The Salesforce Certified Technical Architect credential launched in 2011.
+false_statement: The Salesforce Certified Technical Architect credential launched in 2017.
+explanation: The CTA dates from 2011, with the first ten certified that September. 2017 is when Dreamforce introduced the domain architect certifications as stepping stones.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/certified-technical-architect.md
+  commit: 7581ad0b96602285af0f512d9ea7379718c7aea4
+  blob: 47f7537f3146304cfc0b8444925e9d1d0f6f3d88
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:certified-technical-architect
+difficulty: 1
+created: '2026-11-10'
+status: active

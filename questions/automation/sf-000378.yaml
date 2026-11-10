@@ -1,0 +1,18 @@
+id: sf-000378
+product_area: automation
+true_statement: A schedule-triggered flow runs as the Default Workflow User set in Process Automation Settings.
+false_statement: A schedule-triggered flow runs as the user who last activated it, regardless of Process Automation Settings.
+explanation: The running user comes from the Default Workflow User in Process Automation Settings, which therefore must be filled in before the flow can run.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/schedule-triggered-flow.md
+  commit: 7581ad0b96602285af0f512d9ea7379718c7aea4
+  blob: 9798c65839e443d316e6a92de86fa6204e701c41
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:schedule-triggered-flow
+- kt:process-automation-settings
+difficulty: 2
+created: '2026-11-10'
+status: active

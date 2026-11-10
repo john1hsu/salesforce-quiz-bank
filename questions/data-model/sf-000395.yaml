@@ -1,0 +1,20 @@
+id: sf-000395
+product_area: data-model
+true_statement: On Account, the 20-field history tracking limit is shared between business accounts and person accounts.
+false_statement: On Account, business accounts and person accounts each get their own separate 20-field history tracking limit.
+explanation: Field History Tracking allows 20 tracked fields per object, and on Account that one budget covers both business and person account fields.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/field-history-tracking.md
+  commit: 7581ad0b96602285af0f512d9ea7379718c7aea4
+  blob: e74ac516aaf0baa6c0889964781ef86291859c5a
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:platform-data-architect-certification
+concepts:
+- kt:field-history-tracking
+- kt:person-accounts
+difficulty: 2
+created: '2026-11-10'
+status: active

@@ -1,0 +1,17 @@
+id: sf-000390
+product_area: data-cloud-and-ai
+true_statement: In Agent Script, every user message begins processing at the start_agent block.
+false_statement: In Agent Script, each user message begins processing at the subagent that handled the previous message.
+explanation: Each turn starts at start_agent and runs instructions top to bottom, rebuilding the prompt as variables change, rather than resuming in the last subagent.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/agent-script.md
+  commit: 7581ad0b96602285af0f512d9ea7379718c7aea4
+  blob: 80b22b895947aeab977b2f2407b4154a798d3c1b
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:agent-script
+difficulty: 3
+created: '2026-11-10'
+status: active

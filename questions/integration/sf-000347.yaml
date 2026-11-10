@@ -1,0 +1,20 @@
+id: sf-000347
+product_area: integration
+true_statement: Anypoint Runtime Fabric is a container service that the customer runs in its own data center or in AWS or Azure.
+false_statement: Anypoint Runtime Fabric is a container service that MuleSoft operates for the customer across its global cloud regions.
+explanation: Runtime Fabric is customer-operated infrastructure on premises or in AWS or Azure. The MuleSoft-operated managed option is CloudHub, not Runtime Fabric.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/mulesoft-anypoint-platform.md
+  commit: 7581ad0b96602285af0f512d9ea7379718c7aea4
+  blob: 8424f067dd8479a58a64ae61d36db63fbeb5520a
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:integration-architect-certification
+concepts:
+- kt:mulesoft-anypoint-platform
+- kt:mule-runtime-engine
+difficulty: 2
+created: '2026-11-10'
+status: active

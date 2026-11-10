@@ -1,0 +1,17 @@
+id: sf-000392
+product_area: data-cloud-and-ai
+true_statement: In the legacy Atlas engine, the prompt for a turn includes recent conversation history, typically the last six turns.
+false_statement: In the legacy Atlas engine, the prompt for a turn includes recent conversation history, typically the last twenty turns.
+explanation: The legacy engine builds each prompt from the subagent's scope, instructions and actions plus the user message and about six recent turns of history.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/atlas-reasoning-engine.md
+  commit: 7581ad0b96602285af0f512d9ea7379718c7aea4
+  blob: 86db863aee43b6e1799ee21c1b4ee1b89f07cdb2
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:atlas-reasoning-engine
+difficulty: 3
+created: '2026-11-10'
+status: active

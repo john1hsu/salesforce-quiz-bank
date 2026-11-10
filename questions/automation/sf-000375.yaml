@@ -1,0 +1,18 @@
+id: sf-000375
+product_area: automation
+true_statement: Pending scheduled-path runs don't appear in Flow Trigger Explorer; admins view and delete them on the Time-Based Automations setup page.
+false_statement: Pending scheduled-path runs are viewed and deleted in Flow Trigger Explorer rather than on the Time-Based Automations setup page.
+explanation: The explorer lists flows and their order, not individual queued runs. Queued scheduled-path instances are managed from the Time-Based Automations page.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/flow-trigger-explorer.md
+  commit: 7581ad0b96602285af0f512d9ea7379718c7aea4
+  blob: ac938f1d749b73c34ce479ca3696fedc507e9551
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:flow-trigger-explorer
+- kt:record-triggered-flow
+difficulty: 2
+created: '2026-11-10'
+status: active

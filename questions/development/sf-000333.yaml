@@ -1,0 +1,17 @@
+id: sf-000333
+product_area: development
+true_statement: Custom metadata usage is counted by each field's maximum size, so a nearly empty text area still uses 255 characters per record.
+false_statement: Custom metadata usage is counted by the characters actually stored, so a nearly empty text area uses only the characters it holds.
+explanation: The 10-million-character allotment is consumed by field size, not content. Picklists and checkboxes count as 10 characters regardless of value.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/custom-metadata-types.md
+  commit: 7581ad0b96602285af0f512d9ea7379718c7aea4
+  blob: 43e9dd729532ceb6dd4c12dd073b6aa499f84e3b
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:custom-metadata-types
+difficulty: 3
+created: '2026-11-10'
+status: active

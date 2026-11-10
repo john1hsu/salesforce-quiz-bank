@@ -1,0 +1,18 @@
+id: sf-000335
+product_area: development
+true_statement: A Transaction Finalizer can re-enqueue a failed Queueable job up to five consecutive times.
+false_statement: A Transaction Finalizer can re-enqueue a failed Queueable job up to ten consecutive times.
+explanation: Finalizers run after the job ends, including after an unhandled exception, and may re-enqueue the job after failures, but only five consecutive times, not ten.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/queueable-apex.md
+  commit: 7581ad0b96602285af0f512d9ea7379718c7aea4
+  blob: 46f5b0df50a6e9235f7c7da9235fcd3d370bcf2b
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:queueable-apex
+- kt:transaction-finalizers
+difficulty: 2
+created: '2026-11-10'
+status: active

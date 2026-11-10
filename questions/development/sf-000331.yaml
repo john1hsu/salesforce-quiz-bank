@@ -1,0 +1,19 @@
+id: sf-000331
+product_area: development
+true_statement: Custom metadata type records deploy with packages and change sets, whereas custom settings deploy only their definitions.
+false_statement: Custom settings records deploy with packages and change sets, whereas custom metadata types deploy only their definitions.
+explanation: Because custom metadata records are themselves metadata, they travel with the app. Custom settings and custom objects move only their structure, and their records must be loaded separately.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/custom-metadata-types.md
+  commit: 7581ad0b96602285af0f512d9ea7379718c7aea4
+  blob: 43e9dd729532ceb6dd4c12dd073b6aa499f84e3b
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:custom-metadata-types
+- kt:custom-settings
+- kt:change-sets
+difficulty: 2
+created: '2026-11-10'
+status: active

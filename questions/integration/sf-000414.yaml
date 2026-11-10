@@ -1,0 +1,20 @@
+id: sf-000414
+product_area: integration
+true_statement: In the Data Virtualization pattern, the integration is always started by an event on the Salesforce side, such as a user action or search.
+false_statement: In the Data Virtualization pattern, the integration is always started by an event in the external system, such as a source record change.
+explanation: 'Virtual integration is synchronous and initiated from Salesforce: a user action, a search or a record update triggers the live query to the source.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/data-virtualization.md
+  commit: 7581ad0b96602285af0f512d9ea7379718c7aea4
+  blob: ce9a729c2280ca695d5144508c81520955ecdd6e
+verified_release: Winter '27
+feature_status: concept
+certs:
+- kt:integration-architect-certification
+concepts:
+- kt:data-virtualization
+- kt:integration-patterns
+difficulty: 2
+created: '2026-11-10'
+status: active

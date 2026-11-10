@@ -1,0 +1,20 @@
+id: sf-000360
+product_area: platform-architecture
+true_statement: SystemModstamp is indexed by default but LastModifiedDate is not, so filtering on SystemModstamp is the selective choice.
+false_statement: LastModifiedDate is indexed by default but SystemModstamp is not, so filtering on LastModifiedDate is the selective choice.
+explanation: SystemModstamp is among the default indexed fields, while LastModifiedDate is unindexed, which is why Trailhead recommends SystemModstamp for date-based filters.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/query-optimizer-selectivity.md
+  commit: 7581ad0b96602285af0f512d9ea7379718c7aea4
+  blob: bba9a2828b23bdc1881ba0170403adb3957bc830
+verified_release: Winter '27
+feature_status: concept
+certs:
+- kt:platform-data-architect-certification
+concepts:
+- kt:query-optimizer-selectivity
+- kt:soql
+difficulty: 2
+created: '2026-11-10'
+status: active

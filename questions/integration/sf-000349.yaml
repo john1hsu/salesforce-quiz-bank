@@ -1,0 +1,18 @@
+id: sf-000349
+product_area: integration
+true_statement: Calling the REST API Limits resource requires the View Setup and Configuration permission.
+false_statement: Calling the REST API Limits resource requires the Modify All Data permission.
+explanation: The Limits resource, which returns each org allocation with its maximum and remaining value, needs View Setup and Configuration. Modify All Data is not the required permission.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/rest-api.md
+  commit: 7581ad0b96602285af0f512d9ea7379718c7aea4
+  blob: 0754fb2c536af607663316c0c1f4143de2358654
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:rest-api
+- kt:api-request-limits
+difficulty: 2
+created: '2026-11-10'
+status: active

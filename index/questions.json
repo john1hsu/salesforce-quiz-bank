@@ -1,7 +1,7 @@
 {
  "version": 1,
- "count": 309,
- "active": 309,
+ "count": 409,
+ "active": 409,
  "questions": [
   {
    "id": "sf-000001",
@@ -5360,6 +5360,1783 @@
    "difficulty": 2,
    "status": "active",
    "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/workflow-rules.md"
+  },
+  {
+   "id": "sf-000313",
+   "area": "clouds-and-products",
+   "t": "On Tableau Cloud, multi-factor authentication is required for all users.",
+   "f": "On Tableau Cloud, multi-factor authentication is required only for site administrators.",
+   "x": "Tableau Cloud enforces MFA for every user, not just admins. Because Cloud also lacks direct Active Directory, LDAP and Kerberos sign-in, identity is integrated through SAML or OIDC.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:tableau"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/tableau.md"
+  },
+  {
+   "id": "sf-000314",
+   "area": "clouds-and-products",
+   "t": "Tableau Next is licensed separately, as Creator or Consumer, rather than through the Viewer, Explorer and Creator licenses of Tableau by Tableau.",
+   "f": "Tableau Next is licensed through the same Viewer, Explorer and Creator licenses used by Tableau Cloud and Tableau Server.",
+   "x": "Tableau Next and the original Tableau portfolio are separate products with separate licenses. Tableau Next uses Creator and Consumer licenses; Viewer, Explorer and Creator belong to Tableau by Tableau.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:tableau",
+    "kt:tableau-next"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/tableau.md"
+  },
+  {
+   "id": "sf-000315",
+   "area": "clouds-and-products",
+   "t": "The Tableau+ bundle, which adds Data 360 credits and Tableau Next to user licenses, is offered only for Tableau Cloud.",
+   "f": "The Tableau+ bundle, which adds Data 360 credits and Tableau Next to user licenses, is offered for both Tableau Cloud and Tableau Server.",
+   "x": "Tableau+ is a Cloud-only bundle. Self-managed Tableau Server customers can't buy it, so the bundle presumes the hosted deployment.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:tableau",
+    "kt:tableau-next",
+    "kt:data-cloud"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/tableau.md"
+  },
+  {
+   "id": "sf-000316",
+   "area": "data-cloud-and-ai",
+   "t": "Zero copy file federation reads external files with Data 360's own compute, so it avoids the warehouse's compute fees.",
+   "f": "Zero copy query federation reads external files with Data 360's own compute, so it avoids the warehouse's compute fees.",
+   "x": "File federation bypasses the external warehouse's compute layer and reads storage directly. Query federation sends queries to the external engine over JDBC, so it can incur that platform's compute charges.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:data-cloud-consultant-certification"
+   ],
+   "concepts": [
+    "kt:zero-copy-data-federation",
+    "kt:data-virtualization"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/zero-copy-data-federation.md"
+  },
+  {
+   "id": "sf-000317",
+   "area": "data-cloud-and-ai",
+   "t": "Under zero copy query federation, change-triggered features such as data actions work only when caching is enabled.",
+   "f": "Under zero copy file federation, change-triggered features such as data actions work only when caching is enabled.",
+   "x": "Query federation can't see changes in the external system unless caching is on. File federation can detect external changes without caching, so it doesn't carry that restriction.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:data-cloud-consultant-certification"
+   ],
+   "concepts": [
+    "kt:zero-copy-data-federation"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/zero-copy-data-federation.md"
+  },
+  {
+   "id": "sf-000318",
+   "area": "data-cloud-and-ai",
+   "t": "A federated external data lake object, and any DMO mapped to one, cannot be included in a zero copy data share.",
+   "f": "A federated external data lake object can be included in a zero copy data share, though a DMO mapped to one cannot.",
+   "x": "Federated data can't be re-shared out of Data 360: both the external DLO and DMOs mapped to it are excluded from zero copy data shares.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:data-cloud-consultant-certification"
+   ],
+   "concepts": [
+    "kt:zero-copy-data-federation",
+    "kt:zero-copy-data-sharing",
+    "kt:data-lake-objects"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/zero-copy-data-federation.md"
+  },
+  {
+   "id": "sf-000319",
+   "area": "data-model",
+   "t": "A custom big object's index can contain at most five custom fields, and their text fields may total no more than 100 characters.",
+   "f": "A custom big object's index can contain at most ten custom fields, and their text fields may total no more than 255 characters.",
+   "x": "The big object index, which serves as its composite primary key, takes one to five required custom fields with text fields capped at 100 characters combined. Ten fields and 255 characters overstate both limits.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:platform-data-architect-certification"
+   ],
+   "concepts": [
+    "kt:big-objects"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/big-objects.md"
+  },
+  {
+   "id": "sf-000320",
+   "area": "data-model",
+   "t": "Inserting a big object record whose index values already exist overwrites the existing record instead of creating a duplicate.",
+   "f": "Inserting a big object record whose index values already exist fails with a duplicate error instead of overwriting the record.",
+   "x": "Big object writes are idempotent on the index: a matching index overwrites the stored record. That is why a failed load can simply be retried.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:platform-data-architect-certification"
+   ],
+   "concepts": [
+    "kt:big-objects"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/big-objects.md"
+  },
+  {
+   "id": "sf-000321",
+   "area": "data-model",
+   "t": "In a SOQL query on a big object, range operators are allowed only on the last index field being filtered.",
+   "f": "In a SOQL query on a big object, range operators are allowed only on the first index field being filtered.",
+   "x": "Big object queries must filter index fields in order from the first, with = or IN on each, and only the last filtered field may use a range operator.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:platform-data-architect-certification"
+   ],
+   "concepts": [
+    "kt:big-objects",
+    "kt:soql"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/big-objects.md"
+  },
+  {
+   "id": "sf-000322",
+   "area": "data-model",
+   "t": "By default an object can have up to 25 external ID fields; raising that requires a Salesforce Support case.",
+   "f": "By default an object can have up to 100 external ID fields; raising that requires a Salesforce Support case.",
+   "x": "The default allocation is 25 external IDs per object. Because each one is indexed, they also draw on the shared default of 25 custom indexes per object, so 100 is far too high.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:platform-data-architect-certification"
+   ],
+   "concepts": [
+    "kt:external-id-fields",
+    "kt:custom-index-limits"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/external-id-fields.md"
+  },
+  {
+   "id": "sf-000323",
+   "area": "data-model",
+   "t": "Upserting on a non-unique external ID field requires the View All Data permission, while a unique external ID needs no special permission.",
+   "f": "Upserting on a unique external ID field requires the View All Data permission, while a non-unique external ID needs no special permission.",
+   "x": "The extra permission applies to the non-unique case, where Salesforce must see all potential matches. Marking the external ID Unique avoids both this requirement and multiple-match errors.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:platform-data-architect-certification"
+   ],
+   "concepts": [
+    "kt:external-id-fields",
+    "kt:upsert"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/external-id-fields.md"
+  },
+  {
+   "id": "sf-000324",
+   "area": "data-model",
+   "t": "A REST upsert by external ID whose value matches more than one record returns HTTP 300 with the list of candidate records.",
+   "f": "A REST upsert by external ID whose value matches more than one record updates the most recently modified of those records.",
+   "x": "Upsert never guesses between several matches: the REST API answers 300 and lists the candidates. Zero matches insert (201) and exactly one match updates (200).",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:platform-data-architect-certification"
+   ],
+   "concepts": [
+    "kt:external-id-fields",
+    "kt:upsert",
+    "kt:rest-api"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/external-id-fields.md"
+  },
+  {
+   "id": "sf-000325",
+   "area": "data-model",
+   "t": "External object API names end in __x, marking records that live in an external system rather than in the org.",
+   "f": "External object API names end in __e, marking records that live in an external system rather than in the org.",
+   "x": "External objects use the __x suffix. They are defined against an external data source and fetched on demand rather than stored in Salesforce.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:platform-data-architect-certification"
+   ],
+   "concepts": [
+    "kt:external-objects",
+    "kt:salesforce-connect"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/external-objects.md"
+  },
+  {
+   "id": "sf-000326",
+   "area": "data-model",
+   "t": "An indirect lookup links a child external object to a parent standard or custom object by matching a unique external ID field on the parent.",
+   "f": "An indirect lookup links a child external object to a parent standard or custom object by matching the parent's 18-character Salesforce record ID.",
+   "x": "External records rarely hold Salesforce IDs, so an indirect lookup matches a remote column against a unique external ID field on the parent record instead.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:platform-data-architect-certification"
+   ],
+   "concepts": [
+    "kt:external-objects",
+    "kt:external-id-fields",
+    "kt:object-relationships"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/external-objects.md"
+  },
+  {
+   "id": "sf-000327",
+   "area": "data-model",
+   "t": "For Salesforce Connect OData adapters, the result set of a single OData query is limited to 16 MB.",
+   "f": "For Salesforce Connect OData adapters, the result set of a single OData query is limited to 1 MB.",
+   "x": "Salesforce documents a 16 MB result-set limit per OData query, alongside an 8 MB limit on individual HTTP requests and responses. 1 MB understates it.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:platform-data-architect-certification"
+   ],
+   "concepts": [
+    "kt:external-objects",
+    "kt:salesforce-connect"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/external-objects.md"
+  },
+  {
+   "id": "sf-000328",
+   "area": "development",
+   "t": "A single Apex transaction can make at most 100 callouts, counting both HTTP requests and API calls.",
+   "f": "A single Apex transaction can make at most 10 callouts, counting both HTTP requests and API calls.",
+   "x": "The per-transaction callout limit is 100. Ten is far below the documented cap, though the 120-second cumulative timeout can still constrain many slow calls.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:integration-architect-certification"
+   ],
+   "concepts": [
+    "kt:apex-callouts",
+    "kt:governor-limits"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/apex-callouts.md"
+  },
+  {
+   "id": "sf-000329",
+   "area": "development",
+   "t": "An Apex callout times out after 10 seconds by default unless the code sets a custom timeout.",
+   "f": "An Apex callout times out after 60 seconds by default unless the code sets a custom timeout.",
+   "x": "The default callout timeout is 10 seconds. Code can raise it as high as 120,000 milliseconds, but 60 seconds is not the default.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:integration-architect-certification"
+   ],
+   "concepts": [
+    "kt:apex-callouts",
+    "kt:governor-limits"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/apex-callouts.md"
+  },
+  {
+   "id": "sf-000330",
+   "area": "development",
+   "t": "Within one Apex transaction, a callout may run before DML, but it cannot run after uncommitted DML is pending.",
+   "f": "Within one Apex transaction, a callout may run after DML, but it cannot run before any DML has been performed.",
+   "x": "Pending work such as uncommitted DML blocks a later callout, so the usual design is callout first and DML afterwards, or moving the callout into asynchronous Apex.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:integration-architect-certification"
+   ],
+   "concepts": [
+    "kt:apex-callouts",
+    "kt:queueable-apex"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/apex-callouts.md"
+  },
+  {
+   "id": "sf-000331",
+   "area": "development",
+   "t": "Custom metadata type records deploy with packages and change sets, whereas custom settings deploy only their definitions.",
+   "f": "Custom settings records deploy with packages and change sets, whereas custom metadata types deploy only their definitions.",
+   "x": "Because custom metadata records are themselves metadata, they travel with the app. Custom settings and custom objects move only their structure, and their records must be loaded separately.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:custom-metadata-types",
+    "kt:custom-settings",
+    "kt:change-sets"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/custom-metadata-types.md"
+  },
+  {
+   "id": "sf-000332",
+   "area": "development",
+   "t": "Apex can create, read and update custom metadata records, but it cannot delete them.",
+   "f": "Apex can create, read and delete custom metadata records, but it cannot update them.",
+   "x": "Apex modifies custom metadata through the Metadata namespace, which supports create and update but not delete. That missing delete is one reason custom settings still suit full CRUD needs.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:custom-metadata-types",
+    "kt:apex"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/custom-metadata-types.md"
+  },
+  {
+   "id": "sf-000333",
+   "area": "development",
+   "t": "Custom metadata usage is counted by each field's maximum size, so a nearly empty text area still uses 255 characters per record.",
+   "f": "Custom metadata usage is counted by the characters actually stored, so a nearly empty text area uses only the characters it holds.",
+   "x": "The 10-million-character allotment is consumed by field size, not content. Picklists and checkboxes count as 10 characters regardless of value.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:custom-metadata-types"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/custom-metadata-types.md"
+  },
+  {
+   "id": "sf-000334",
+   "area": "development",
+   "t": "A Queueable duplicate signature blocks a new enqueue only while a matching job is still waiting, so a copy can be enqueued once the first starts running.",
+   "f": "A Queueable duplicate signature blocks a new enqueue until the matching job finishes, so no copy can be enqueued while the first is running.",
+   "x": "The signature is dropped when the job is dequeued, so the feature guarantees at least one run per signature rather than mutual exclusion. A second copy can be queued while the first executes.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:queueable-apex"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/queueable-apex.md"
+  },
+  {
+   "id": "sf-000335",
+   "area": "development",
+   "t": "A Transaction Finalizer can re-enqueue a failed Queueable job up to five consecutive times.",
+   "f": "A Transaction Finalizer can re-enqueue a failed Queueable job up to ten consecutive times.",
+   "x": "Finalizers run after the job ends, including after an unhandled exception, and may re-enqueue the job after failures, but only five consecutive times, not ten.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:queueable-apex",
+    "kt:transaction-finalizers"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/queueable-apex.md"
+  },
+  {
+   "id": "sf-000336",
+   "area": "development",
+   "t": "Queueable chains stop at a depth of five in Developer Edition and Trial orgs, while production orgs have no chain-depth cap.",
+   "f": "Queueable chains stop at a depth of five in production orgs, while Developer Edition and Trial orgs have no chain-depth cap.",
+   "x": "Chain depth is uncapped in production; the five-job limit, counting the parent, applies to Developer Edition and Trial orgs unless stack depth is configured.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:queueable-apex",
+    "kt:governor-limits"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/queueable-apex.md"
+  },
+  {
+   "id": "sf-000337",
+   "area": "integration",
+   "t": "In Salesforce's pattern mapping, asynchronous inbound data integration into Salesforce is handled by the Batch Data Synchronization pattern.",
+   "f": "In Salesforce's pattern mapping, asynchronous inbound data integration into Salesforce is handled by the Remote Call-In pattern.",
+   "x": "Inbound data integration splits by timing: the asynchronous case is Batch Data Synchronization, while Remote Call-In is the synchronous inbound case.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [
+    "kt:integration-architect-certification"
+   ],
+   "concepts": [
+    "kt:data-integration",
+    "kt:batch-data-synchronization",
+    "kt:remote-call-in"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/data-integration.md"
+  },
+  {
+   "id": "sf-000338",
+   "area": "integration",
+   "t": "Salesforce's data integration decision guide states that Salesforce-to-Salesforce has reached end of life for org-to-org integration.",
+   "f": "Salesforce's data integration decision guide recommends Salesforce-to-Salesforce as the default tool for org-to-org integration.",
+   "x": "Salesforce-to-Salesforce is end of life. For org-to-org work the guide points instead to options such as Heroku Connect, MuleSoft, the native APIs, Change Data Capture or the cross-org adapter.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [
+    "kt:integration-architect-certification"
+   ],
+   "concepts": [
+    "kt:data-integration"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/data-integration.md"
+  },
+  {
+   "id": "sf-000339",
+   "area": "integration",
+   "t": "Salesforce's data integration guide recommends an API Only integration user with External Client Applications rather than connected apps.",
+   "f": "Salesforce's data integration guide recommends a standard licensed user with connected apps rather than External Client Applications.",
+   "x": "For authentication the guide favours a dedicated API Only integration user and External Client Applications, steering away from connected apps and SOAP login.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [
+    "kt:integration-architect-certification"
+   ],
+   "concepts": [
+    "kt:data-integration"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/data-integration.md"
+  },
+  {
+   "id": "sf-000340",
+   "area": "integration",
+   "t": "In Salesforce's integration pattern catalogue, Remote Call-In can be either synchronous or asynchronous.",
+   "f": "In Salesforce's integration pattern catalogue, Remote Call-In is always asynchronous.",
+   "x": "Request and Reply and Data Virtualization are synchronous, and Fire and Forget, Batch Data Synchronization and UI updates are asynchronous; Remote Call-In is the one pattern that can be either.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:integration-architect-certification",
+    "kt:integration-patterns",
+    "kt:remote-call-in"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/integration-architect-certification.md"
+  },
+  {
+   "id": "sf-000341",
+   "area": "integration",
+   "t": "Salesforce's integration guidance notes that platform events are published without Salesforce-side retry and can't be rolled back with the transaction.",
+   "f": "Salesforce's integration guidance notes that platform events are retried by Salesforce on failure and are rolled back with the transaction.",
+   "x": "Publishing a platform event is not tied to the transaction's rollback and Salesforce doesn't retry it, which is why designs must handle delivery and idempotency themselves.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:integration-architect-certification",
+    "kt:platform-events"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/integration-architect-certification.md"
+  },
+  {
+   "id": "sf-000342",
+   "area": "integration",
+   "t": "For someone who mainly builds MuleSoft APIs, the MuleSoft Platform Integration Architect credential is a closer fit than Platform Integration Architect.",
+   "f": "For someone who mainly builds MuleSoft APIs, Platform Integration Architect is a closer fit than the MuleSoft Platform Integration Architect credential.",
+   "x": "Platform Integration Architect focuses on designing the Salesforce side of integrations. Work centred on building MuleSoft APIs maps better to the separate MuleSoft credential.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:integration-architect-certification",
+    "kt:mulesoft-anypoint-platform"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/integration-architect-certification.md"
+  },
+  {
+   "id": "sf-000343",
+   "area": "integration",
+   "t": "Salesforce's integration patterns guide states that a single Composite API call can bundle up to 25 subrequests.",
+   "f": "Salesforce's integration patterns guide states that a single Composite API call can bundle up to 100 subrequests.",
+   "x": "The guide cites 25 subrequests per Composite API call as one of its volume considerations. 100 overstates the limit.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [
+    "kt:integration-architect-certification"
+   ],
+   "concepts": [
+    "kt:integration-patterns",
+    "kt:composite-api"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/integration-patterns.md"
+  },
+  {
+   "id": "sf-000344",
+   "area": "integration",
+   "t": "For the Remote Call-In pattern, Salesforce rates SOAP API and custom Apex web services as suboptimal compared with REST, Composite and Bulk API 2.0.",
+   "f": "For the Remote Call-In pattern, Salesforce rates SOAP API and custom Apex web services as the best fit, ahead of REST, Composite and Bulk API 2.0.",
+   "x": "The guide's fit ratings for Remote Call-In put the Composite, REST, Bulk API 2.0, GraphQL and Pub/Sub APIs at best, and SOAP API and custom Apex web services at suboptimal.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [
+    "kt:integration-architect-certification"
+   ],
+   "concepts": [
+    "kt:integration-patterns",
+    "kt:remote-call-in"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/integration-patterns.md"
+  },
+  {
+   "id": "sf-000345",
+   "area": "integration",
+   "t": "For the Fire and Forget pattern, Salesforce rates outbound messaging as suboptimal, behind Flow-driven platform events and Change Data Capture.",
+   "f": "For the Fire and Forget pattern, Salesforce rates outbound messaging as the best fit, ahead of Flow-driven platform events and Change Data Capture.",
+   "x": "In the Fire and Forget ratings, platform events, Pub/Sub API and Change Data Capture are best, while outbound messaging and trigger-driven asynchronous callouts are suboptimal.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [
+    "kt:integration-architect-certification"
+   ],
+   "concepts": [
+    "kt:integration-patterns",
+    "kt:integration-patterns-request-reply-fire-and-forget"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/integration-patterns.md"
+  },
+  {
+   "id": "sf-000346",
+   "area": "integration",
+   "t": "CloudHub 2.0 is a managed, containerized iPaaS that MuleSoft operates across 12 global regions.",
+   "f": "CloudHub 2.0 is a managed, containerized iPaaS that MuleSoft operates across 4 global regions.",
+   "x": "MuleSoft runs CloudHub 2.0 in 12 regions worldwide. Four regions understates its footprint.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:integration-architect-certification"
+   ],
+   "concepts": [
+    "kt:mulesoft-anypoint-platform",
+    "kt:mule-runtime-engine"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/mulesoft-anypoint-platform.md"
+  },
+  {
+   "id": "sf-000347",
+   "area": "integration",
+   "t": "Anypoint Runtime Fabric is a container service that the customer runs in its own data center or in AWS or Azure.",
+   "f": "Anypoint Runtime Fabric is a container service that MuleSoft operates for the customer across its global cloud regions.",
+   "x": "Runtime Fabric is customer-operated infrastructure on premises or in AWS or Azure. The MuleSoft-operated managed option is CloudHub, not Runtime Fabric.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:integration-architect-certification"
+   ],
+   "concepts": [
+    "kt:mulesoft-anypoint-platform",
+    "kt:mule-runtime-engine"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/mulesoft-anypoint-platform.md"
+  },
+  {
+   "id": "sf-000348",
+   "area": "integration",
+   "t": "In API-led connectivity, Process APIs combine and transform data from System APIs to carry business logic.",
+   "f": "In API-led connectivity, Experience APIs combine and transform data from System APIs to carry business logic.",
+   "x": "Process APIs hold the business logic that combines System API data. Experience APIs shape that data for a particular consumer such as a mobile app.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:integration-architect-certification"
+   ],
+   "concepts": [
+    "kt:mulesoft-anypoint-platform",
+    "kt:api-led-connectivity"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/mulesoft-anypoint-platform.md"
+  },
+  {
+   "id": "sf-000349",
+   "area": "integration",
+   "t": "Calling the REST API Limits resource requires the View Setup and Configuration permission.",
+   "f": "Calling the REST API Limits resource requires the Modify All Data permission.",
+   "x": "The Limits resource, which returns each org allocation with its maximum and remaining value, needs View Setup and Configuration. Modify All Data is not the required permission.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:rest-api",
+    "kt:api-request-limits"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/rest-api.md"
+  },
+  {
+   "id": "sf-000350",
+   "area": "integration",
+   "t": "If a REST API request's Accept header is missing or malformed, Salesforce returns the response as JSON.",
+   "f": "If a REST API request's Accept header is missing or malformed, Salesforce returns the response as XML.",
+   "x": "The REST API supports JSON and XML, chosen with the Accept header, and falls back to JSON when that header is absent or malformed.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:rest-api"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/rest-api.md"
+  },
+  {
+   "id": "sf-000351",
+   "area": "integration",
+   "t": "In Salesforce REST API URIs, record IDs are case-sensitive, while object and field names are not.",
+   "f": "In Salesforce REST API URIs, object and field names are case-sensitive, while record IDs are not.",
+   "x": "Record IDs in a REST URI must match case exactly, but object and field names in the path are case-insensitive.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:rest-api"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/rest-api.md"
+  },
+  {
+   "id": "sf-000352",
+   "area": "integration",
+   "t": "External Change Data Capture in Salesforce Connect polls the source every 30 minutes by default, or as often as every 5 minutes.",
+   "f": "External Change Data Capture in Salesforce Connect polls the source every 5 minutes by default, or as often as every minute.",
+   "x": "External CDC, available only with the OData 4.0 and 4.01 adapters, defaults to a 30-minute polling interval that can be shortened to 5 minutes.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:integration-architect-certification"
+   ],
+   "concepts": [
+    "kt:salesforce-connect",
+    "kt:change-data-capture"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/salesforce-connect.md"
+  },
+  {
+   "id": "sf-000353",
+   "area": "integration",
+   "t": "Apex writes to external objects go through an asynchronous background queue, while writes from the UI and flows run synchronously.",
+   "f": "UI and flow writes to external objects go through an asynchronous background queue, while writes from Apex run synchronously.",
+   "x": "Salesforce Connect queues Apex writes in the background and runs UI and flow writes immediately. Either way the remote system executes the write and resolves conflicts.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:integration-architect-certification"
+   ],
+   "concepts": [
+    "kt:salesforce-connect",
+    "kt:external-objects"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/salesforce-connect.md"
+  },
+  {
+   "id": "sf-000354",
+   "area": "integration",
+   "t": "Saving changes to external objects and regular objects in the same transaction throws an error in Salesforce Connect.",
+   "f": "Changes to external objects and regular objects saved in the same transaction are committed or rolled back together in Salesforce Connect.",
+   "x": "External object writes are executed by the remote system, so Salesforce can't make them part of one transaction with regular records; mixing them raises an error.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:integration-architect-certification"
+   ],
+   "concepts": [
+    "kt:salesforce-connect",
+    "kt:external-objects"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/salesforce-connect.md"
+  },
+  {
+   "id": "sf-000355",
+   "area": "platform-architecture",
+   "t": "Metadata API deploy and retrieve move the full set of components named in a manifest, while push and pull use source tracking to move only changes.",
+   "f": "Push and pull move the full set of components named in a manifest, while Metadata API deploy and retrieve use source tracking to move only changes.",
+   "x": "Deploy and retrieve overwrite the target with every listed component. Push and pull rely on source tracking to move only what changed and to report conflicts.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:metadata-driven-architecture",
+    "kt:metadata-api",
+    "kt:source-tracking"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/metadata-driven-architecture.md"
+  },
+  {
+   "id": "sf-000356",
+   "area": "platform-architecture",
+   "t": "In Winter '27, the Salesforce Metadata API is at version 68.0.",
+   "f": "In Winter '27, the Salesforce Metadata API is at version 62.0.",
+   "x": "Winter '27 corresponds to Metadata API version 68.0. Version 62.0 belongs to an earlier release.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:metadata-driven-architecture",
+    "kt:metadata-api"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/metadata-driven-architecture.md"
+  },
+  {
+   "id": "sf-000357",
+   "area": "platform-architecture",
+   "t": "Salesforce reruns customers' unit tests on each platform release to catch changes that would break their customizations.",
+   "f": "Salesforce reruns customers' unit tests only when the customer deploys new Apex to production, not on platform releases.",
+   "x": "Because the kernel and tenant metadata evolve separately, Salesforce runs customers' tests on each release to detect breaking changes. That safeguard only works if the tests exist.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:metadata-driven-architecture",
+    "kt:apex"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/metadata-driven-architecture.md"
+  },
+  {
+   "id": "sf-000358",
+   "area": "platform-architecture",
+   "t": "A standard index qualifies when a filter matches under 30% of the first million records and under 15% of records beyond that.",
+   "f": "A standard index qualifies when a filter matches under 50% of the first million records and under 25% of records beyond that.",
+   "x": "The Large Data Volumes guide publishes 30% and 15% as the standard-index thresholds. Custom indexes use the tighter 10% and 5% thresholds; 50% and 25% are not used.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [
+    "kt:platform-data-architect-certification"
+   ],
+   "concepts": [
+    "kt:query-optimizer-selectivity",
+    "kt:large-data-volumes"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/query-optimizer-selectivity.md"
+  },
+  {
+   "id": "sf-000359",
+   "area": "platform-architecture",
+   "t": "For AND filters, the query optimizer still uses their indexes unless one condition returns more than 20% of the object's records.",
+   "f": "For AND filters, the query optimizer still uses their indexes unless one condition returns more than 50% of the object's records.",
+   "x": "Compound AND conditions keep their indexes up to a 20% threshold per condition. OR conditions are different: every field must be indexed, with a 10% threshold.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [
+    "kt:platform-data-architect-certification"
+   ],
+   "concepts": [
+    "kt:query-optimizer-selectivity",
+    "kt:soql"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/query-optimizer-selectivity.md"
+  },
+  {
+   "id": "sf-000360",
+   "area": "platform-architecture",
+   "t": "SystemModstamp is indexed by default but LastModifiedDate is not, so filtering on SystemModstamp is the selective choice.",
+   "f": "LastModifiedDate is indexed by default but SystemModstamp is not, so filtering on LastModifiedDate is the selective choice.",
+   "x": "SystemModstamp is among the default indexed fields, while LastModifiedDate is unindexed, which is why Trailhead recommends SystemModstamp for date-based filters.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [
+    "kt:platform-data-architect-certification"
+   ],
+   "concepts": [
+    "kt:query-optimizer-selectivity",
+    "kt:soql"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/query-optimizer-selectivity.md"
+  },
+  {
+   "id": "sf-000361",
+   "area": "public-sector-and-compliance",
+   "t": "NIST SP 800-53 Revision 5 organizes its security and privacy controls into 20 families.",
+   "f": "NIST SP 800-53 Revision 5 organizes its security and privacy controls into 12 families.",
+   "x": "Rev. 5 has 20 control families, from Access Control to Supply Chain Risk Management. Twelve understates the catalog.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:nist-sp-800-53"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/nist-sp-800-53.md"
+  },
+  {
+   "id": "sf-000362",
+   "area": "public-sector-and-compliance",
+   "t": "The Low, Moderate and High control baselines are defined in the companion publication SP 800-53B, not in SP 800-53 itself.",
+   "f": "The Low, Moderate and High control baselines are defined in the companion publication SP 800-53A, not in SP 800-53 itself.",
+   "x": "SP 800-53 is the control catalog and SP 800-53B selects baselines from it. SP 800-53A holds assessment procedures, not baselines.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:nist-sp-800-53",
+    "kt:nist-sp-800-53b"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/nist-sp-800-53.md"
+  },
+  {
+   "id": "sf-000363",
+   "area": "public-sector-and-compliance",
+   "t": "Under FedRAMP, NIST Program Management (PM) controls remain the agency's responsibility rather than the cloud provider's.",
+   "f": "Under FedRAMP, NIST Program Management (PM) controls are discharged by the cloud provider's authorization rather than by the agency.",
+   "x": "A provider's FedRAMP authorization covers the baseline controls it was assessed on. PM controls, and privacy controls outside the baselines, stay with the agency.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:nist-sp-800-53",
+    "kt:fedramp"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/nist-sp-800-53.md"
+  },
+  {
+   "id": "sf-000364",
+   "area": "architecture-practice",
+   "t": "Platform Developer is the one exam required for both the Application Architect and the System Architect roll-up credentials.",
+   "f": "Platform App Builder is the one exam required for both the Application Architect and the System Architect roll-up credentials.",
+   "x": "Platform Developer sits in both prerequisite sets. Platform App Builder counts only toward Application Architect.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:application-architect-certification",
+    "kt:system-architect-certification",
+    "kt:platform-developer-certification"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/application-architect-certification.md"
+  },
+  {
+   "id": "sf-000365",
+   "area": "architecture-practice",
+   "t": "Trailhead's Platform Developer study guide gives process automation and logic the largest weighting, at 28%.",
+   "f": "Trailhead's Platform Developer study guide gives user interface the largest weighting, at 28%.",
+   "x": "The guide weights process automation and logic at 28%, developer fundamentals at 27%, user interface at 25%, and testing, debugging and deployment at 20%.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:application-architect-certification",
+    "kt:platform-developer-certification"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/application-architect-certification.md"
+  },
+  {
+   "id": "sf-000366",
+   "area": "architecture-practice",
+   "t": "Application Architect has no maintenance requirement of its own; maintenance happens through its underlying certifications.",
+   "f": "Application Architect has its own annual maintenance module, separate from those of its underlying certifications.",
+   "x": "Because the credential is only a roll-up of four certifications, it is maintained at the level of those certifications, and its page states no separate requirement.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:application-architect-certification"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/application-architect-certification.md"
+  },
+  {
+   "id": "sf-000367",
+   "area": "architecture-practice",
+   "t": "The Salesforce Certified Technical Architect credential launched in 2011.",
+   "f": "The Salesforce Certified Technical Architect credential launched in 2017.",
+   "x": "The CTA dates from 2011, with the first ten certified that September. 2017 is when Dreamforce introduced the domain architect certifications as stepping stones.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:certified-technical-architect"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/certified-technical-architect.md"
+  },
+  {
+   "id": "sf-000368",
+   "area": "architecture-practice",
+   "t": "Salesforce introduced the domain architect certifications as stepping stones toward the CTA at Dreamforce '17.",
+   "f": "Salesforce introduced the domain architect certifications as stepping stones toward the CTA at Dreamforce '13.",
+   "x": "The domain architect certifications arrived at Dreamforce '17, creating the prerequisite ladder still used today. In 2013 the CTA had no such stepping stones.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:certified-technical-architect",
+    "kt:salesforce-architect"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/certified-technical-architect.md"
+  },
+  {
+   "id": "sf-000369",
+   "area": "architecture-practice",
+   "t": "CTA601 is an expert-led virtual workshop from Trailhead Academy for experienced architects preparing for the CTA.",
+   "f": "CTA601 is a self-paced Trailhead module for new admins starting out on the architect path.",
+   "x": "CTA601 is a Trailhead Academy workshop led by experts and aimed at experienced architects, not a self-paced beginner module.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:certified-technical-architect"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/certified-technical-architect.md"
+  },
+  {
+   "id": "sf-000370",
+   "area": "architecture-practice",
+   "t": "Among System Architect's prerequisites, Identity and Access Management Architect is the one focused on single sign-on requirements.",
+   "f": "Among System Architect's prerequisites, Development Lifecycle and Deployment Architect is the one focused on single sign-on requirements.",
+   "x": "The IAM Architect credential certifies design of solutions that meet single sign-on requirements. Development Lifecycle and Deployment Architect covers release management, environments and deployment governance instead.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:system-architect-certification",
+    "kt:identity-and-access-management-architect-certification"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/system-architect-certification.md"
+  },
+  {
+   "id": "sf-000371",
+   "area": "architecture-practice",
+   "t": "Development Lifecycle and Deployment Architect is the System Architect prerequisite that covers release management, environments and deployment governance.",
+   "f": "Integration Architect is the System Architect prerequisite that covers release management, environments and deployment governance.",
+   "x": "Release management and environment strategy belong to Development Lifecycle and Deployment Architect. Integration Architect certifies end-to-end integration design.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:system-architect-certification",
+    "kt:development-lifecycle-and-deployment-architect-certification"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/system-architect-certification.md"
+  },
+  {
+   "id": "sf-000372",
+   "area": "architecture-practice",
+   "t": "The System Architect credential page lists its four prerequisite certifications without prescribing the order in which to pass them.",
+   "f": "The System Architect credential page requires Integration Architect to be passed before the other three prerequisite certifications.",
+   "x": "No sequence is mandated; candidates choose their own order. Platform Developer is a natural first step for CTA-bound candidates since it also counts toward Application Architect.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:system-architect-certification"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/system-architect-certification.md"
+  },
+  {
+   "id": "sf-000373",
+   "area": "automation",
+   "t": "Record-triggered flows that share the same trigger order value run alphabetically by API name.",
+   "f": "Record-triggered flows that share the same trigger order value run in order of their activation date.",
+   "x": "Ties on a trigger order value are broken by API name. Activation date only orders flows that have no trigger order value at all.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:flow-trigger-explorer",
+    "kt:record-triggered-flow"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/flow-trigger-explorer.md"
+  },
+  {
+   "id": "sf-000374",
+   "area": "automation",
+   "t": "Trigger order values apply only to before-save and after-save flows and have no effect on asynchronous or scheduled paths.",
+   "f": "Trigger order values apply equally to before-save, after-save, asynchronous and scheduled paths of record-triggered flows.",
+   "x": "Ordering covers only before-save and after-save flows. Asynchronous and scheduled paths ignore it, and Trailhead notes asynchronous flows can't be guaranteed to run in the listed order.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:flow-trigger-explorer",
+    "kt:order-of-execution"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/flow-trigger-explorer.md"
+  },
+  {
+   "id": "sf-000375",
+   "area": "automation",
+   "t": "Pending scheduled-path runs don't appear in Flow Trigger Explorer; admins view and delete them on the Time-Based Automations setup page.",
+   "f": "Pending scheduled-path runs are viewed and deleted in Flow Trigger Explorer rather than on the Time-Based Automations setup page.",
+   "x": "The explorer lists flows and their order, not individual queued runs. Queued scheduled-path instances are managed from the Time-Based Automations page.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:flow-trigger-explorer",
+    "kt:record-triggered-flow"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/flow-trigger-explorer.md"
+  },
+  {
+   "id": "sf-000376",
+   "area": "automation",
+   "t": "A schedule-triggered flow runs on the org's default time zone from Company Information, not the time zone of the admin who built it.",
+   "f": "A schedule-triggered flow runs on the time zone of the admin who built it, not the org's default time zone from Company Information.",
+   "x": "Schedules follow the org's default time zone, so the builder's personal time zone setting has no effect and Company Information should be checked first.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:schedule-triggered-flow"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/schedule-triggered-flow.md"
+  },
+  {
+   "id": "sf-000377",
+   "area": "automation",
+   "t": "The 24-hour limit on schedule-triggered flow interviews is 250,000 or the org's user licenses times 200, whichever is greater.",
+   "f": "The 24-hour limit on schedule-triggered flow interviews is 250,000 or the org's user licenses times 200, whichever is smaller.",
+   "x": "The org-wide daily cap takes the greater of the two figures, so large orgs get more than 250,000 interviews. Exceeding it produces a flow error email.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:schedule-triggered-flow",
+    "kt:governor-limits"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/schedule-triggered-flow.md"
+  },
+  {
+   "id": "sf-000378",
+   "area": "automation",
+   "t": "A schedule-triggered flow runs as the Default Workflow User set in Process Automation Settings.",
+   "f": "A schedule-triggered flow runs as the user who last activated it, regardless of Process Automation Settings.",
+   "x": "The running user comes from the Default Workflow User in Process Automation Settings, which therefore must be filled in before the flow can run.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:schedule-triggered-flow",
+    "kt:process-automation-settings"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/schedule-triggered-flow.md"
+  },
+  {
+   "id": "sf-000379",
+   "area": "clouds-and-products",
+   "t": "In Collaborative Forecasts, changing the forecast period type or the standard fiscal year purges all quotas and adjustments.",
+   "f": "In Collaborative Forecasts, changing the forecast period type or the standard fiscal year purges adjustments but keeps all quotas.",
+   "x": "Both quotas and adjustments are deleted when the period type or standard fiscal year changes, so these settings should be fixed before data is entered.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:sales-cloud-consultant-certification"
+   ],
+   "concepts": [
+    "kt:collaborative-forecasts"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/collaborative-forecasts.md"
+  },
+  {
+   "id": "sf-000380",
+   "area": "clouds-and-products",
+   "t": "With cumulative forecast rollups, the Commit Forecast amount covers Commit plus Closed opportunities.",
+   "f": "With cumulative forecast rollups, the Commit Forecast amount covers Commit plus Best Case opportunities.",
+   "x": "Cumulative rollups add the later categories in, so Commit includes Closed. Best Case sits earlier in the funnel and isn't added to Commit.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:sales-cloud-consultant-certification"
+   ],
+   "concepts": [
+    "kt:collaborative-forecasts"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/collaborative-forecasts.md"
+  },
+  {
+   "id": "sf-000381",
+   "area": "clouds-and-products",
+   "t": "A user takes part in Collaborative Forecasts only when Allow Forecasting is enabled on their user record.",
+   "f": "A user takes part in Collaborative Forecasts only when they hold the Override Forecasts permission.",
+   "x": "Allow Forecasting on the user record puts someone in the forecast hierarchy. Override Forecasts is a separate permission that lets owners or managers adjust totals.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:sales-cloud-consultant-certification"
+   ],
+   "concepts": [
+    "kt:collaborative-forecasts",
+    "kt:role-hierarchy"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/collaborative-forecasts.md"
+  },
+  {
+   "id": "sf-000382",
+   "area": "clouds-and-products",
+   "t": "When calculating milestone target dates, business hours set on the milestone override those set on the entitlement process.",
+   "f": "When calculating milestone target dates, business hours set on the entitlement process override those set on the milestone.",
+   "x": "Target dates use the milestone's hours first, then the entitlement process's hours, and only if neither is set the case or work order's own hours.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:entitlement-management",
+    "kt:business-hours"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/entitlement-management.md"
+  },
+  {
+   "id": "sf-000383",
+   "area": "clouds-and-products",
+   "t": "A milestone with the No Recurrence type fires only once per record.",
+   "f": "A milestone with the Independent recurrence type fires only once per record.",
+   "x": "No Recurrence fires once per record. Independent milestones fire whenever their criteria are met, and Sequential ones repeat in order each time criteria are met.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:entitlement-management"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/entitlement-management.md"
+  },
+  {
+   "id": "sf-000384",
+   "area": "clouds-and-products",
+   "t": "A Case-type entitlement process won't run on work orders, so Field Service work orders need their own Work Order-type process.",
+   "f": "A Case-type entitlement process also runs on work orders, so Field Service work orders can share the same process as cases.",
+   "x": "Each entitlement process has a single type, Case or Work Order. Work orders need a Work Order-type process, which Trailhead advises leaving inactive until its milestones are added.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:entitlement-management",
+    "kt:field-service"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/entitlement-management.md"
+  },
+  {
+   "id": "sf-000385",
+   "area": "data-cloud-and-ai",
+   "t": "Non-deterministic agent actions are built on Prompt Builder templates, while deterministic ones use a flow or Apex.",
+   "f": "Deterministic agent actions are built on Prompt Builder templates, while non-deterministic ones use a flow or Apex.",
+   "x": "Flows and Apex apply business logic and return consistent results. Prompt templates generate language, such as summaries, so their output is non-deterministic.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:agent-actions",
+    "kt:prompt-builder",
+    "kt:autolaunched-flow"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/agent-actions.md"
+  },
+  {
+   "id": "sf-000386",
+   "area": "data-cloud-and-ai",
+   "t": "Agent actions don't bulkify by default, and each action runs in its own transaction.",
+   "f": "Agent actions bulkify by default, and all actions in one conversation turn share a single transaction.",
+   "x": "Because actions aren't bulkified and each gets its own transaction, Apex behind them must be bulk-safe and the agent should be told to pass all records in one call.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:agent-actions",
+    "kt:governor-limits"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/agent-actions.md"
+  },
+  {
+   "id": "sf-000387",
+   "area": "data-cloud-and-ai",
+   "t": "For an Apex-based agent action, whether an input is required comes from the Apex code, so changing it means editing the class.",
+   "f": "For an Apex-based agent action, whether an input is required is set only in Agentforce Builder, so changing it needs no code edit.",
+   "x": "The invocable method's variable definitions control which inputs are required. The builder pre-fills instructions from them, but the required setting is changed in code.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:agent-actions",
+    "kt:apex"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/agent-actions.md"
+  },
+  {
+   "id": "sf-000389",
+   "area": "data-cloud-and-ai",
+   "t": "Agent Script arithmetic supports only + and -, so multiplication or division belongs in a Flow or Apex action.",
+   "f": "Agent Script arithmetic supports +, -, * and /, so only modulo needs to move into a Flow or Apex action.",
+   "x": "Agent Script expressions are deliberately basic: addition and subtraction only. Any multiplication, division or modulo should be done in an action.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:agent-script",
+    "kt:agent-actions"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/agent-script.md"
+  },
+  {
+   "id": "sf-000390",
+   "area": "data-cloud-and-ai",
+   "t": "In Agent Script, every user message begins processing at the start_agent block.",
+   "f": "In Agent Script, each user message begins processing at the subagent that handled the previous message.",
+   "x": "Each turn starts at start_agent and runs instructions top to bottom, rebuilding the prompt as variables change, rather than resuming in the last subagent.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:agent-script"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/agent-script.md"
+  },
+  {
+   "id": "sf-000391",
+   "area": "data-cloud-and-ai",
+   "t": "Atlas replaced Salesforce's earlier chain-of-thought planning design with ReAct-style reason, act and observe prompting.",
+   "f": "Atlas replaced Salesforce's earlier ReAct-style reason, act and observe prompting with chain-of-thought planning.",
+   "x": "The earlier assistant planned all steps up front with chain-of-thought, which tested poorly. Atlas moved to a ReAct loop that reasons, acts and observes repeatedly.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:atlas-reasoning-engine",
+    "kt:agentforce"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/atlas-reasoning-engine.md"
+  },
+  {
+   "id": "sf-000392",
+   "area": "data-cloud-and-ai",
+   "t": "In the legacy Atlas engine, the prompt for a turn includes recent conversation history, typically the last six turns.",
+   "f": "In the legacy Atlas engine, the prompt for a turn includes recent conversation history, typically the last twenty turns.",
+   "x": "The legacy engine builds each prompt from the subagent's scope, instructions and actions plus the user message and about six recent turns of history.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:atlas-reasoning-engine"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/atlas-reasoning-engine.md"
+  },
+  {
+   "id": "sf-000393",
+   "area": "data-cloud-and-ai",
+   "t": "With hybrid reasoning, once a subagent is chosen, its scripted actions run before the model evaluates the instructions.",
+   "f": "With hybrid reasoning, once a subagent is chosen, its scripted actions run only after the model has evaluated the instructions.",
+   "x": "Agent Script's deterministic steps execute first, and scripted transitions run again after each action, before Atlas decides its next step.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:atlas-reasoning-engine",
+    "kt:agent-script"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/atlas-reasoning-engine.md"
+  },
+  {
+   "id": "sf-000394",
+   "area": "data-cloud-and-ai",
+   "t": "In Agent Script, lines that begin with -> are logic instructions that run deterministically on every turn.",
+   "f": "In Agent Script, lines that begin with -> are prompt instructions handed to the LLM to interpret as it sees fit.",
+   "x": "The arrow marks logic lines that always execute, such as setting variables, running actions or branching. Natural-language prompt lines are marked with a pipe instead.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:agent-script"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/agent-script.md"
+  },
+  {
+   "id": "sf-000395",
+   "area": "data-model",
+   "t": "On Account, the 20-field history tracking limit is shared between business accounts and person accounts.",
+   "f": "On Account, business accounts and person accounts each get their own separate 20-field history tracking limit.",
+   "x": "Field History Tracking allows 20 tracked fields per object, and on Account that one budget covers both business and person account fields.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:platform-data-architect-certification"
+   ],
+   "concepts": [
+    "kt:field-history-tracking",
+    "kt:person-accounts"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/field-history-tracking.md"
+  },
+  {
+   "id": "sf-000396",
+   "area": "data-model",
+   "t": "With no custom retention policy, Field Audit Trail archives field history after 18 months in production and after one month in sandboxes.",
+   "f": "With no custom retention policy, Field Audit Trail archives field history after 24 months in production and after six months in sandboxes.",
+   "x": "The default HistoryRetentionPolicy moves history into FieldHistoryArchive after 18 months in production and one month in sandboxes; a custom policy is deployed through Metadata API.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:platform-data-architect-certification"
+   ],
+   "concepts": [
+    "kt:field-history-tracking",
+    "kt:field-audit-trail",
+    "kt:big-objects"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/field-history-tracking.md"
+  },
+  {
+   "id": "sf-000398",
+   "area": "data-model",
+   "t": "To avoid parent-child data skew, Salesforce suggests no parent should hold 10,000 or more child records, using several placeholder parents if needed.",
+   "f": "To avoid parent-child data skew, Salesforce suggests no parent should hold 100,000 or more child records, using several placeholder parents if needed.",
+   "x": "The large-data-volume guidance sets the parent-child threshold at 10,000 children, spreading children across placeholder parents when no natural parent exists. 100,000 is ten times too high.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:platform-data-architect-certification",
+    "kt:data-skew",
+    "kt:large-data-volumes"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/platform-data-architect-certification.md"
+  },
+  {
+   "id": "sf-000399",
+   "area": "data-model",
+   "t": "In Bulk API 2.0, batch errors push processing into single-row mode, which sharply slows the job, so data should be cleaned first.",
+   "f": "In Bulk API 2.0, batch errors cause the whole job to be rejected at once, so data should be cleaned first.",
+   "x": "Errors don't abort the job; they drop processing to one row at a time, which is why cleaning data before a bulk load matters for speed.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:platform-data-architect-certification",
+    "kt:bulk-api-2"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/platform-data-architect-certification.md"
+  },
+  {
+   "id": "sf-000400",
+   "area": "data-model",
+   "t": "For an initial data load, Salesforce advises creating roles before sharing rules and placing users in roles before loading their records.",
+   "f": "For an initial data load, Salesforce advises creating sharing rules before roles and loading records before placing users in roles.",
+   "x": "Setting up roles and role membership first, then adding sharing rules one at a time, avoids repeated sharing recalculation as the data arrives.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:platform-data-architect-certification",
+    "kt:data-migration-strategy"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/platform-data-architect-certification.md"
+  },
+  {
+   "id": "sf-000401",
+   "area": "development",
+   "t": "Lightning Data Service calls don't count against the org's API request usage, though general limits such as records returned still apply.",
+   "f": "Lightning Data Service calls count against the org's API request usage in the same way as external REST API calls.",
+   "x": "LDS runs on User Interface API but its calls aren't counted as API usage, so it doesn't draw down API request limits. Other platform limits still apply.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:platform-developer-certification"
+   ],
+   "concepts": [
+    "kt:lightning-data-service",
+    "kt:api-request-limits"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/lightning-data-service.md"
+  },
+  {
+   "id": "sf-000402",
+   "area": "development",
+   "t": "Each Lightning Data Service adapter or function call is its own transaction, so multi-record operations through LDS aren't atomic.",
+   "f": "Lightning Data Service groups the adapter and function calls on a page into one transaction, so multi-record operations are atomic.",
+   "x": "Because each LDS call commits separately, an all-or-nothing multi-record change needs Apex, which can roll everything back on failure.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:platform-developer-certification"
+   ],
+   "concepts": [
+    "kt:lightning-data-service",
+    "kt:apex"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/lightning-data-service.md"
+  },
+  {
+   "id": "sf-000403",
+   "area": "development",
+   "t": "After imperative Apex changes records, calling notifyRecordUpdateAvailable(recordIds) makes Lightning Data Service refetch them.",
+   "f": "After imperative Apex changes records, calling refreshApex() makes Lightning Data Service refetch them.",
+   "x": "LDS doesn't manage Apex results, so it must be told which records changed. refreshApex() refreshes wired Apex, and using it for non-Apex adapters is deprecated.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:platform-developer-certification"
+   ],
+   "concepts": [
+    "kt:lightning-data-service",
+    "kt:lightning-web-components"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/lightning-data-service.md"
+  },
+  {
+   "id": "sf-000404",
+   "area": "development",
+   "t": "The Platform Developer exam has a time limit of 105 minutes.",
+   "f": "The Platform Developer exam has a time limit of 120 minutes.",
+   "x": "Per the exam guide, candidates get 105 minutes for 60 scored questions plus up to five unscored ones. 120 minutes is not the stated limit.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:platform-developer-certification"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/platform-developer-certification.md"
+  },
+  {
+   "id": "sf-000405",
+   "area": "development",
+   "t": "The passing score for the Platform Developer exam is 68%.",
+   "f": "The passing score for the Platform Developer exam is 72%.",
+   "x": "The exam guide sets the passing score at 68%. 72% is higher than required.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:platform-developer-certification"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/platform-developer-certification.md"
+  },
+  {
+   "id": "sf-000406",
+   "area": "development",
+   "t": "Platform Developer and Platform Developer II share a single annual maintenance badge on the Winter cycle.",
+   "f": "Platform Developer and Platform Developer II share a single annual maintenance badge on the Summer cycle.",
+   "x": "Both credentials are maintained by one Platform Developer badge on the Winter cycle; missing it can expire the credentials tied to it, including roll-up architect credentials.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:platform-developer-certification",
+    "kt:platform-developer-ii-certification"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/platform-developer-certification.md"
+  },
+  {
+   "id": "sf-000407",
+   "area": "data-model",
+   "t": "Values that Apex or Flow write into tracked fields while a record is being created are included in its field history creation entry.",
+   "f": "Values that Apex or Flow write into tracked fields while a record is being created appear in field history only after a user later edits those fields.",
+   "x": "Record creation logs a single created entry. Typed-in values aren't logged as changes, but values automation sets during the create transaction are captured in that entry.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:platform-data-architect-certification"
+   ],
+   "concepts": [
+    "kt:field-history-tracking",
+    "kt:record-triggered-flow"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/field-history-tracking.md"
+  },
+  {
+   "id": "sf-000408",
+   "area": "integration",
+   "t": "A Developer Edition org gets a flat daily API request allocation of 15,000 calls.",
+   "f": "A Developer Edition org gets a flat daily API request allocation of 100,000 calls.",
+   "x": "Developer Edition has a fixed 15,000-call allocation. The 100,000 figure is the base that paid editions start from before per-license amounts are added.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:integration-architect-certification"
+   ],
+   "concepts": [
+    "kt:api-request-limits"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/api-request-limits.md"
+  },
+  {
+   "id": "sf-000409",
+   "area": "integration",
+   "t": "A full Salesforce license adds 1,000 daily API calls in Enterprise Edition but 5,000 in Unlimited and Performance editions.",
+   "f": "A full Salesforce license adds 5,000 daily API calls in Enterprise Edition but 1,000 in Unlimited and Performance editions.",
+   "x": "Per-license API amounts grow with the edition: 1,000 per full license in Enterprise and Professional, 5,000 in Unlimited and Performance.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:integration-architect-certification"
+   ],
+   "concepts": [
+    "kt:api-request-limits"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/api-request-limits.md"
+  },
+  {
+   "id": "sf-000410",
+   "area": "integration",
+   "t": "Production orgs allow up to 25 concurrent long-running API requests, meaning inbound calls lasting 20 seconds or more.",
+   "f": "Production orgs allow up to 100 concurrent long-running API requests, meaning inbound calls lasting 20 seconds or more.",
+   "x": "The concurrency cap on calls of 20 seconds or longer is 25 in production and sandboxes, and 5 in Developer Edition and trial orgs. Shorter calls have no concurrency cap.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:integration-architect-certification"
+   ],
+   "concepts": [
+    "kt:api-request-limits"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/api-request-limits.md"
+  },
+  {
+   "id": "sf-000411",
+   "area": "integration",
+   "t": "Salesforce's batch synchronization guidance gives Composite Graph API limits of 75 graphs per payload and 500 nodes per graph.",
+   "f": "Salesforce's batch synchronization guidance gives Composite Graph API limits of 500 graphs per payload and 75 nodes per graph.",
+   "x": "A Composite Graph payload can hold up to 75 graphs, each with up to 500 nodes. The false statement swaps the two numbers.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [
+    "kt:integration-architect-certification"
+   ],
+   "concepts": [
+    "kt:batch-data-synchronization",
+    "kt:composite-api"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/batch-data-synchronization.md"
+  },
+  {
+   "id": "sf-000412",
+   "area": "integration",
+   "t": "Bulk API 2.0 processes batches in parallel with no serial mode, so record ordering across batches isn't guaranteed.",
+   "f": "Bulk API 2.0 offers a serial processing mode that guarantees record ordering across batches.",
+   "x": "Bulk API 2.0 always runs batches in parallel and commits each independently. Ordering isn't guaranteed and parallelism can raise lock contention.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [
+    "kt:integration-architect-certification"
+   ],
+   "concepts": [
+    "kt:batch-data-synchronization",
+    "kt:bulk-api-2",
+    "kt:record-locking"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/batch-data-synchronization.md"
+  },
+  {
+   "id": "sf-000413",
+   "area": "integration",
+   "t": "In batch synchronization, an ETL job's control tables should live where the ETL tool can still reach them when Salesforce is unavailable.",
+   "f": "In batch synchronization, an ETL job's control tables should live in Salesforce custom objects so every run reads them from the org.",
+   "x": "The guidance makes the ETL infrastructure the hub and Salesforce a spoke, so the job's last-run and restart data must survive a Salesforce outage.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [
+    "kt:integration-architect-certification"
+   ],
+   "concepts": [
+    "kt:batch-data-synchronization"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/batch-data-synchronization.md"
+  },
+  {
+   "id": "sf-000414",
+   "area": "integration",
+   "t": "In the Data Virtualization pattern, the integration is always started by an event on the Salesforce side, such as a user action or search.",
+   "f": "In the Data Virtualization pattern, the integration is always started by an event in the external system, such as a source record change.",
+   "x": "Virtual integration is synchronous and initiated from Salesforce: a user action, a search or a record update triggers the live query to the source.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [
+    "kt:integration-architect-certification"
+   ],
+   "concepts": [
+    "kt:data-virtualization",
+    "kt:integration-patterns"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/data-virtualization.md"
   }
  ]
 }

@@ -1,0 +1,18 @@
+id: sf-000386
+product_area: data-cloud-and-ai
+true_statement: Agent actions don't bulkify by default, and each action runs in its own transaction.
+false_statement: Agent actions bulkify by default, and all actions in one conversation turn share a single transaction.
+explanation: Because actions aren't bulkified and each gets its own transaction, Apex behind them must be bulk-safe and the agent should be told to pass all records in one call.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/agent-actions.md
+  commit: 7581ad0b96602285af0f512d9ea7379718c7aea4
+  blob: 00ce543a01a577060273a52f595a0a8bc7c1d80c
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:agent-actions
+- kt:governor-limits
+difficulty: 2
+created: '2026-11-10'
+status: active

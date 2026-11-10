@@ -1,0 +1,19 @@
+id: sf-000408
+product_area: integration
+true_statement: A Developer Edition org gets a flat daily API request allocation of 15,000 calls.
+false_statement: A Developer Edition org gets a flat daily API request allocation of 100,000 calls.
+explanation: Developer Edition has a fixed 15,000-call allocation. The 100,000 figure is the base that paid editions start from before per-license amounts are added.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/api-request-limits.md
+  commit: 7581ad0b96602285af0f512d9ea7379718c7aea4
+  blob: 4849d188a3db62e42dbe85acfe19c0ccf936d09e
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:integration-architect-certification
+concepts:
+- kt:api-request-limits
+difficulty: 2
+created: '2026-11-10'
+status: active

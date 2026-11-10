@@ -1,0 +1,20 @@
+id: sf-000343
+product_area: integration
+true_statement: Salesforce's integration patterns guide states that a single Composite API call can bundle up to 25 subrequests.
+false_statement: Salesforce's integration patterns guide states that a single Composite API call can bundle up to 100 subrequests.
+explanation: The guide cites 25 subrequests per Composite API call as one of its volume considerations. 100 overstates the limit.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/integration-patterns.md
+  commit: 7581ad0b96602285af0f512d9ea7379718c7aea4
+  blob: f5d23498dc815cdeb03706bf4834f75447d31527
+verified_release: Winter '27
+feature_status: concept
+certs:
+- kt:integration-architect-certification
+concepts:
+- kt:integration-patterns
+- kt:composite-api
+difficulty: 2
+created: '2026-11-10'
+status: active

@@ -1,0 +1,21 @@
+id: sf-000318
+product_area: data-cloud-and-ai
+true_statement: A federated external data lake object, and any DMO mapped to one, cannot be included in a zero copy data share.
+false_statement: A federated external data lake object can be included in a zero copy data share, though a DMO mapped to one cannot.
+explanation: 'Federated data can''t be re-shared out of Data 360: both the external DLO and DMOs mapped to it are excluded from zero copy data shares.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/zero-copy-data-federation.md
+  commit: 7581ad0b96602285af0f512d9ea7379718c7aea4
+  blob: f8fa92b52b4ad3eb51ce0eb09ff35d289a7636b5
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:data-cloud-consultant-certification
+concepts:
+- kt:zero-copy-data-federation
+- kt:zero-copy-data-sharing
+- kt:data-lake-objects
+difficulty: 3
+created: '2026-11-10'
+status: active

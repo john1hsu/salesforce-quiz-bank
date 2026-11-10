@@ -1,0 +1,18 @@
+id: sf-000341
+product_area: integration
+true_statement: Salesforce's integration guidance notes that platform events are published without Salesforce-side retry and can't be rolled back with the transaction.
+false_statement: Salesforce's integration guidance notes that platform events are retried by Salesforce on failure and are rolled back with the transaction.
+explanation: Publishing a platform event is not tied to the transaction's rollback and Salesforce doesn't retry it, which is why designs must handle delivery and idempotency themselves.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/integration-architect-certification.md
+  commit: 7581ad0b96602285af0f512d9ea7379718c7aea4
+  blob: 0a954c8a8b975f53dcdff6e96c92de826bb32dd8
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:integration-architect-certification
+- kt:platform-events
+difficulty: 3
+created: '2026-11-10'
+status: active

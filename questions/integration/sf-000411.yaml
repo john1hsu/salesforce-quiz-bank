@@ -1,0 +1,20 @@
+id: sf-000411
+product_area: integration
+true_statement: Salesforce's batch synchronization guidance gives Composite Graph API limits of 75 graphs per payload and 500 nodes per graph.
+false_statement: Salesforce's batch synchronization guidance gives Composite Graph API limits of 500 graphs per payload and 75 nodes per graph.
+explanation: A Composite Graph payload can hold up to 75 graphs, each with up to 500 nodes. The false statement swaps the two numbers.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/batch-data-synchronization.md
+  commit: 7581ad0b96602285af0f512d9ea7379718c7aea4
+  blob: 9570dfa25a304849c30419830562aef32da28364
+verified_release: Winter '27
+feature_status: concept
+certs:
+- kt:integration-architect-certification
+concepts:
+- kt:batch-data-synchronization
+- kt:composite-api
+difficulty: 3
+created: '2026-11-10'
+status: active

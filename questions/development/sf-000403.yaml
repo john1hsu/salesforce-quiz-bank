@@ -1,0 +1,20 @@
+id: sf-000403
+product_area: development
+true_statement: After imperative Apex changes records, calling notifyRecordUpdateAvailable(recordIds) makes Lightning Data Service refetch them.
+false_statement: After imperative Apex changes records, calling refreshApex() makes Lightning Data Service refetch them.
+explanation: LDS doesn't manage Apex results, so it must be told which records changed. refreshApex() refreshes wired Apex, and using it for non-Apex adapters is deprecated.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/lightning-data-service.md
+  commit: 7581ad0b96602285af0f512d9ea7379718c7aea4
+  blob: 792f80d31b0b8f075b5fb06391d28d246e062349
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:platform-developer-certification
+concepts:
+- kt:lightning-data-service
+- kt:lightning-web-components
+difficulty: 3
+created: '2026-11-10'
+status: active

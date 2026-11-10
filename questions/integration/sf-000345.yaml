@@ -1,0 +1,20 @@
+id: sf-000345
+product_area: integration
+true_statement: For the Fire and Forget pattern, Salesforce rates outbound messaging as suboptimal, behind Flow-driven platform events and Change Data Capture.
+false_statement: For the Fire and Forget pattern, Salesforce rates outbound messaging as the best fit, ahead of Flow-driven platform events and Change Data Capture.
+explanation: In the Fire and Forget ratings, platform events, Pub/Sub API and Change Data Capture are best, while outbound messaging and trigger-driven asynchronous callouts are suboptimal.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/integration-patterns.md
+  commit: 7581ad0b96602285af0f512d9ea7379718c7aea4
+  blob: f5d23498dc815cdeb03706bf4834f75447d31527
+verified_release: Winter '27
+feature_status: concept
+certs:
+- kt:integration-architect-certification
+concepts:
+- kt:integration-patterns
+- kt:integration-patterns-request-reply-fire-and-forget
+difficulty: 3
+created: '2026-11-10'
+status: active

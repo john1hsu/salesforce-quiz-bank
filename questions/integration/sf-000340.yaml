@@ -1,0 +1,19 @@
+id: sf-000340
+product_area: integration
+true_statement: In Salesforce's integration pattern catalogue, Remote Call-In can be either synchronous or asynchronous.
+false_statement: In Salesforce's integration pattern catalogue, Remote Call-In is always asynchronous.
+explanation: Request and Reply and Data Virtualization are synchronous, and Fire and Forget, Batch Data Synchronization and UI updates are asynchronous; Remote Call-In is the one pattern that can be either.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/integration-architect-certification.md
+  commit: 7581ad0b96602285af0f512d9ea7379718c7aea4
+  blob: 0a954c8a8b975f53dcdff6e96c92de826bb32dd8
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:integration-architect-certification
+- kt:integration-patterns
+- kt:remote-call-in
+difficulty: 2
+created: '2026-11-10'
+status: active

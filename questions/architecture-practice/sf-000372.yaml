@@ -1,0 +1,17 @@
+id: sf-000372
+product_area: architecture-practice
+true_statement: The System Architect credential page lists its four prerequisite certifications without prescribing the order in which to pass them.
+false_statement: The System Architect credential page requires Integration Architect to be passed before the other three prerequisite certifications.
+explanation: No sequence is mandated; candidates choose their own order. Platform Developer is a natural first step for CTA-bound candidates since it also counts toward Application Architect.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/system-architect-certification.md
+  commit: 7581ad0b96602285af0f512d9ea7379718c7aea4
+  blob: ac16bc43f79f4fdb2bd226e7dd05093a6da5433d
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:system-architect-certification
+difficulty: 1
+created: '2026-11-10'
+status: active

@@ -1,0 +1,18 @@
+id: sf-000406
+product_area: development
+true_statement: Platform Developer and Platform Developer II share a single annual maintenance badge on the Winter cycle.
+false_statement: Platform Developer and Platform Developer II share a single annual maintenance badge on the Summer cycle.
+explanation: Both credentials are maintained by one Platform Developer badge on the Winter cycle; missing it can expire the credentials tied to it, including roll-up architect credentials.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/platform-developer-certification.md
+  commit: 7581ad0b96602285af0f512d9ea7379718c7aea4
+  blob: c0788f9ef68d062cc06a1fc9753965eb9119c5f2
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:platform-developer-certification
+- kt:platform-developer-ii-certification
+difficulty: 2
+created: '2026-11-10'
+status: active

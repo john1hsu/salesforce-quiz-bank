@@ -1,0 +1,17 @@
+id: sf-000376
+product_area: automation
+true_statement: A schedule-triggered flow runs on the org's default time zone from Company Information, not the time zone of the admin who built it.
+false_statement: A schedule-triggered flow runs on the time zone of the admin who built it, not the org's default time zone from Company Information.
+explanation: Schedules follow the org's default time zone, so the builder's personal time zone setting has no effect and Company Information should be checked first.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/schedule-triggered-flow.md
+  commit: 7581ad0b96602285af0f512d9ea7379718c7aea4
+  blob: 9798c65839e443d316e6a92de86fa6204e701c41
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:schedule-triggered-flow
+difficulty: 2
+created: '2026-11-10'
+status: active

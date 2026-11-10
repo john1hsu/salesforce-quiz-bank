@@ -1,0 +1,20 @@
+id: sf-000329
+product_area: development
+true_statement: An Apex callout times out after 10 seconds by default unless the code sets a custom timeout.
+false_statement: An Apex callout times out after 60 seconds by default unless the code sets a custom timeout.
+explanation: The default callout timeout is 10 seconds. Code can raise it as high as 120,000 milliseconds, but 60 seconds is not the default.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/apex-callouts.md
+  commit: 7581ad0b96602285af0f512d9ea7379718c7aea4
+  blob: 56a6f7f855d189ac6e2ca766cf12c08cb3466b89
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:integration-architect-certification
+concepts:
+- kt:apex-callouts
+- kt:governor-limits
+difficulty: 2
+created: '2026-11-10'
+status: active

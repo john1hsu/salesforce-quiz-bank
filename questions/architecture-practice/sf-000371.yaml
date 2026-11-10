@@ -1,0 +1,18 @@
+id: sf-000371
+product_area: architecture-practice
+true_statement: Development Lifecycle and Deployment Architect is the System Architect prerequisite that covers release management, environments and deployment governance.
+false_statement: Integration Architect is the System Architect prerequisite that covers release management, environments and deployment governance.
+explanation: Release management and environment strategy belong to Development Lifecycle and Deployment Architect. Integration Architect certifies end-to-end integration design.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/system-architect-certification.md
+  commit: 7581ad0b96602285af0f512d9ea7379718c7aea4
+  blob: ac16bc43f79f4fdb2bd226e7dd05093a6da5433d
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:system-architect-certification
+- kt:development-lifecycle-and-deployment-architect-certification
+difficulty: 2
+created: '2026-11-10'
+status: active

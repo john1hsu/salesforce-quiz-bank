@@ -1,0 +1,19 @@
+id: sf-000355
+product_area: platform-architecture
+true_statement: Metadata API deploy and retrieve move the full set of components named in a manifest, while push and pull use source tracking to move only changes.
+false_statement: Push and pull move the full set of components named in a manifest, while Metadata API deploy and retrieve use source tracking to move only changes.
+explanation: Deploy and retrieve overwrite the target with every listed component. Push and pull rely on source tracking to move only what changed and to report conflicts.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/metadata-driven-architecture.md
+  commit: 7581ad0b96602285af0f512d9ea7379718c7aea4
+  blob: fcde4a3f42a701ec566ee7f2112e1d1c8659c70c
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:metadata-driven-architecture
+- kt:metadata-api
+- kt:source-tracking
+difficulty: 2
+created: '2026-11-10'
+status: active

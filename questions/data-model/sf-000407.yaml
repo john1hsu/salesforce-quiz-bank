@@ -1,0 +1,20 @@
+id: sf-000407
+product_area: data-model
+true_statement: Values that Apex or Flow write into tracked fields while a record is being created are included in its field history creation entry.
+false_statement: Values that Apex or Flow write into tracked fields while a record is being created appear in field history only after a user later edits those fields.
+explanation: Record creation logs a single created entry. Typed-in values aren't logged as changes, but values automation sets during the create transaction are captured in that entry.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/field-history-tracking.md
+  commit: 7581ad0b96602285af0f512d9ea7379718c7aea4
+  blob: e74ac516aaf0baa6c0889964781ef86291859c5a
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:platform-data-architect-certification
+concepts:
+- kt:field-history-tracking
+- kt:record-triggered-flow
+difficulty: 3
+created: '2026-11-10'
+status: active

@@ -1,0 +1,20 @@
+id: sf-000323
+product_area: data-model
+true_statement: Upserting on a non-unique external ID field requires the View All Data permission, while a unique external ID needs no special permission.
+false_statement: Upserting on a unique external ID field requires the View All Data permission, while a non-unique external ID needs no special permission.
+explanation: The extra permission applies to the non-unique case, where Salesforce must see all potential matches. Marking the external ID Unique avoids both this requirement and multiple-match errors.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/external-id-fields.md
+  commit: 7581ad0b96602285af0f512d9ea7379718c7aea4
+  blob: 8737089105fd447834f5a78f5a4a740452072ba7
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:platform-data-architect-certification
+concepts:
+- kt:external-id-fields
+- kt:upsert
+difficulty: 3
+created: '2026-11-10'
+status: active

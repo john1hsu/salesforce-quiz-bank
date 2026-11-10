@@ -1,0 +1,21 @@
+id: sf-000324
+product_area: data-model
+true_statement: A REST upsert by external ID whose value matches more than one record returns HTTP 300 with the list of candidate records.
+false_statement: A REST upsert by external ID whose value matches more than one record updates the most recently modified of those records.
+explanation: 'Upsert never guesses between several matches: the REST API answers 300 and lists the candidates. Zero matches insert (201) and exactly one match updates (200).'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/external-id-fields.md
+  commit: 7581ad0b96602285af0f512d9ea7379718c7aea4
+  blob: 8737089105fd447834f5a78f5a4a740452072ba7
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:platform-data-architect-certification
+concepts:
+- kt:external-id-fields
+- kt:upsert
+- kt:rest-api
+difficulty: 2
+created: '2026-11-10'
+status: active

@@ -1,0 +1,19 @@
+id: sf-000364
+product_area: architecture-practice
+true_statement: Platform Developer is the one exam required for both the Application Architect and the System Architect roll-up credentials.
+false_statement: Platform App Builder is the one exam required for both the Application Architect and the System Architect roll-up credentials.
+explanation: Platform Developer sits in both prerequisite sets. Platform App Builder counts only toward Application Architect.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/application-architect-certification.md
+  commit: 7581ad0b96602285af0f512d9ea7379718c7aea4
+  blob: 2aa475122fab3135bd759a0b6102c8f58687715e
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:application-architect-certification
+- kt:system-architect-certification
+- kt:platform-developer-certification
+difficulty: 2
+created: '2026-11-10'
+status: active

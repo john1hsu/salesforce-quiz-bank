@@ -1,0 +1,20 @@
+id: sf-000359
+product_area: platform-architecture
+true_statement: For AND filters, the query optimizer still uses their indexes unless one condition returns more than 20% of the object's records.
+false_statement: For AND filters, the query optimizer still uses their indexes unless one condition returns more than 50% of the object's records.
+explanation: 'Compound AND conditions keep their indexes up to a 20% threshold per condition. OR conditions are different: every field must be indexed, with a 10% threshold.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/query-optimizer-selectivity.md
+  commit: 7581ad0b96602285af0f512d9ea7379718c7aea4
+  blob: bba9a2828b23bdc1881ba0170403adb3957bc830
+verified_release: Winter '27
+feature_status: concept
+certs:
+- kt:platform-data-architect-certification
+concepts:
+- kt:query-optimizer-selectivity
+- kt:soql
+difficulty: 3
+created: '2026-11-10'
+status: active

@@ -1,0 +1,19 @@
+id: sf-000398
+product_area: data-model
+true_statement: To avoid parent-child data skew, Salesforce suggests no parent should hold 10,000 or more child records, using several placeholder parents if needed.
+false_statement: To avoid parent-child data skew, Salesforce suggests no parent should hold 100,000 or more child records, using several placeholder parents if needed.
+explanation: The large-data-volume guidance sets the parent-child threshold at 10,000 children, spreading children across placeholder parents when no natural parent exists. 100,000 is ten times too high.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/platform-data-architect-certification.md
+  commit: 7581ad0b96602285af0f512d9ea7379718c7aea4
+  blob: a9419e906d1befb9379a0f60850cfa60c90955d6
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:platform-data-architect-certification
+- kt:data-skew
+- kt:large-data-volumes
+difficulty: 2
+created: '2026-11-10'
+status: active

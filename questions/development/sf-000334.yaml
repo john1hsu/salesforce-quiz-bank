@@ -1,0 +1,17 @@
+id: sf-000334
+product_area: development
+true_statement: A Queueable duplicate signature blocks a new enqueue only while a matching job is still waiting, so a copy can be enqueued once the first starts running.
+false_statement: A Queueable duplicate signature blocks a new enqueue until the matching job finishes, so no copy can be enqueued while the first is running.
+explanation: The signature is dropped when the job is dequeued, so the feature guarantees at least one run per signature rather than mutual exclusion. A second copy can be queued while the first executes.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/queueable-apex.md
+  commit: 7581ad0b96602285af0f512d9ea7379718c7aea4
+  blob: 46f5b0df50a6e9235f7c7da9235fcd3d370bcf2b
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:queueable-apex
+difficulty: 3
+created: '2026-11-10'
+status: active

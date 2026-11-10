@@ -1,0 +1,19 @@
+id: sf-000385
+product_area: data-cloud-and-ai
+true_statement: Non-deterministic agent actions are built on Prompt Builder templates, while deterministic ones use a flow or Apex.
+false_statement: Deterministic agent actions are built on Prompt Builder templates, while non-deterministic ones use a flow or Apex.
+explanation: Flows and Apex apply business logic and return consistent results. Prompt templates generate language, such as summaries, so their output is non-deterministic.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/agent-actions.md
+  commit: 7581ad0b96602285af0f512d9ea7379718c7aea4
+  blob: 00ce543a01a577060273a52f595a0a8bc7c1d80c
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:agent-actions
+- kt:prompt-builder
+- kt:autolaunched-flow
+difficulty: 1
+created: '2026-11-10'
+status: active

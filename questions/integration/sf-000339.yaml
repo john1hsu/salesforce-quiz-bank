@@ -1,0 +1,19 @@
+id: sf-000339
+product_area: integration
+true_statement: Salesforce's data integration guide recommends an API Only integration user with External Client Applications rather than connected apps.
+false_statement: Salesforce's data integration guide recommends a standard licensed user with connected apps rather than External Client Applications.
+explanation: For authentication the guide favours a dedicated API Only integration user and External Client Applications, steering away from connected apps and SOAP login.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/data-integration.md
+  commit: 7581ad0b96602285af0f512d9ea7379718c7aea4
+  blob: 85e31b36f0dc7f3c61577033866345fc6473e63e
+verified_release: Winter '27
+feature_status: concept
+certs:
+- kt:integration-architect-certification
+concepts:
+- kt:data-integration
+difficulty: 2
+created: '2026-11-10'
+status: active

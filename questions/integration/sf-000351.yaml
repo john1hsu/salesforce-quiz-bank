@@ -1,0 +1,17 @@
+id: sf-000351
+product_area: integration
+true_statement: In Salesforce REST API URIs, record IDs are case-sensitive, while object and field names are not.
+false_statement: In Salesforce REST API URIs, object and field names are case-sensitive, while record IDs are not.
+explanation: Record IDs in a REST URI must match case exactly, but object and field names in the path are case-insensitive.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/rest-api.md
+  commit: 7581ad0b96602285af0f512d9ea7379718c7aea4
+  blob: 0754fb2c536af607663316c0c1f4143de2358654
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:rest-api
+difficulty: 2
+created: '2026-11-10'
+status: active

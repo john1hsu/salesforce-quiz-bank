@@ -1,0 +1,20 @@
+id: sf-000322
+product_area: data-model
+true_statement: By default an object can have up to 25 external ID fields; raising that requires a Salesforce Support case.
+false_statement: By default an object can have up to 100 external ID fields; raising that requires a Salesforce Support case.
+explanation: The default allocation is 25 external IDs per object. Because each one is indexed, they also draw on the shared default of 25 custom indexes per object, so 100 is far too high.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/external-id-fields.md
+  commit: 7581ad0b96602285af0f512d9ea7379718c7aea4
+  blob: 8737089105fd447834f5a78f5a4a740452072ba7
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:platform-data-architect-certification
+concepts:
+- kt:external-id-fields
+- kt:custom-index-limits
+difficulty: 2
+created: '2026-11-10'
+status: active

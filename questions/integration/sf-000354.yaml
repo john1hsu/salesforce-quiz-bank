@@ -1,0 +1,20 @@
+id: sf-000354
+product_area: integration
+true_statement: Saving changes to external objects and regular objects in the same transaction throws an error in Salesforce Connect.
+false_statement: Changes to external objects and regular objects saved in the same transaction are committed or rolled back together in Salesforce Connect.
+explanation: External object writes are executed by the remote system, so Salesforce can't make them part of one transaction with regular records; mixing them raises an error.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/salesforce-connect.md
+  commit: 7581ad0b96602285af0f512d9ea7379718c7aea4
+  blob: 0430e970825b09141b90ba7b68c6b75386653278
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:integration-architect-certification
+concepts:
+- kt:salesforce-connect
+- kt:external-objects
+difficulty: 3
+created: '2026-11-10'
+status: active

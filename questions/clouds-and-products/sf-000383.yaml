@@ -1,0 +1,17 @@
+id: sf-000383
+product_area: clouds-and-products
+true_statement: A milestone with the No Recurrence type fires only once per record.
+false_statement: A milestone with the Independent recurrence type fires only once per record.
+explanation: No Recurrence fires once per record. Independent milestones fire whenever their criteria are met, and Sequential ones repeat in order each time criteria are met.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/entitlement-management.md
+  commit: 7581ad0b96602285af0f512d9ea7379718c7aea4
+  blob: 4f81b81d21495c8d329d8eb2c95765d5d91687d5
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:entitlement-management
+difficulty: 2
+created: '2026-11-10'
+status: active

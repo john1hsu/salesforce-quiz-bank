@@ -1,0 +1,18 @@
+id: sf-000362
+product_area: public-sector-and-compliance
+true_statement: The Low, Moderate and High control baselines are defined in the companion publication SP 800-53B, not in SP 800-53 itself.
+false_statement: The Low, Moderate and High control baselines are defined in the companion publication SP 800-53A, not in SP 800-53 itself.
+explanation: SP 800-53 is the control catalog and SP 800-53B selects baselines from it. SP 800-53A holds assessment procedures, not baselines.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/nist-sp-800-53.md
+  commit: 7581ad0b96602285af0f512d9ea7379718c7aea4
+  blob: 3ec8e35a5c58709fa65a72b0c466366f2097eaf8
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:nist-sp-800-53
+- kt:nist-sp-800-53b
+difficulty: 2
+created: '2026-11-10'
+status: active

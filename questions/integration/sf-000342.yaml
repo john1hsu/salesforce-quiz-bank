@@ -1,0 +1,18 @@
+id: sf-000342
+product_area: integration
+true_statement: For someone who mainly builds MuleSoft APIs, the MuleSoft Platform Integration Architect credential is a closer fit than Platform Integration Architect.
+false_statement: For someone who mainly builds MuleSoft APIs, Platform Integration Architect is a closer fit than the MuleSoft Platform Integration Architect credential.
+explanation: Platform Integration Architect focuses on designing the Salesforce side of integrations. Work centred on building MuleSoft APIs maps better to the separate MuleSoft credential.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/integration-architect-certification.md
+  commit: 7581ad0b96602285af0f512d9ea7379718c7aea4
+  blob: 0a954c8a8b975f53dcdff6e96c92de826bb32dd8
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:integration-architect-certification
+- kt:mulesoft-anypoint-platform
+difficulty: 1
+created: '2026-11-10'
+status: active

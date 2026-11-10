@@ -1,0 +1,18 @@
+id: sf-000370
+product_area: architecture-practice
+true_statement: Among System Architect's prerequisites, Identity and Access Management Architect is the one focused on single sign-on requirements.
+false_statement: Among System Architect's prerequisites, Development Lifecycle and Deployment Architect is the one focused on single sign-on requirements.
+explanation: The IAM Architect credential certifies design of solutions that meet single sign-on requirements. Development Lifecycle and Deployment Architect covers release management, environments and deployment governance instead.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/system-architect-certification.md
+  commit: 7581ad0b96602285af0f512d9ea7379718c7aea4
+  blob: ac16bc43f79f4fdb2bd226e7dd05093a6da5433d
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:system-architect-certification
+- kt:identity-and-access-management-architect-certification
+difficulty: 2
+created: '2026-11-10'
+status: active

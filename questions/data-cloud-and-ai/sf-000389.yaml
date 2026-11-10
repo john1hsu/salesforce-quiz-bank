@@ -1,0 +1,18 @@
+id: sf-000389
+product_area: data-cloud-and-ai
+true_statement: Agent Script arithmetic supports only + and -, so multiplication or division belongs in a Flow or Apex action.
+false_statement: Agent Script arithmetic supports +, -, * and /, so only modulo needs to move into a Flow or Apex action.
+explanation: 'Agent Script expressions are deliberately basic: addition and subtraction only. Any multiplication, division or modulo should be done in an action.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/agent-script.md
+  commit: 7581ad0b96602285af0f512d9ea7379718c7aea4
+  blob: 80b22b895947aeab977b2f2407b4154a798d3c1b
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:agent-script
+- kt:agent-actions
+difficulty: 2
+created: '2026-11-10'
+status: active

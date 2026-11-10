@@ -1,0 +1,17 @@
+id: sf-000394
+product_area: data-cloud-and-ai
+true_statement: In Agent Script, lines that begin with -> are logic instructions that run deterministically on every turn.
+false_statement: In Agent Script, lines that begin with -> are prompt instructions handed to the LLM to interpret as it sees fit.
+explanation: The arrow marks logic lines that always execute, such as setting variables, running actions or branching. Natural-language prompt lines are marked with a pipe instead.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/agent-script.md
+  commit: 7581ad0b96602285af0f512d9ea7379718c7aea4
+  blob: 80b22b895947aeab977b2f2407b4154a798d3c1b
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:agent-script
+difficulty: 2
+created: '2026-11-10'
+status: active

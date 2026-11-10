@@ -1,0 +1,18 @@
+id: sf-000374
+product_area: automation
+true_statement: Trigger order values apply only to before-save and after-save flows and have no effect on asynchronous or scheduled paths.
+false_statement: Trigger order values apply equally to before-save, after-save, asynchronous and scheduled paths of record-triggered flows.
+explanation: Ordering covers only before-save and after-save flows. Asynchronous and scheduled paths ignore it, and Trailhead notes asynchronous flows can't be guaranteed to run in the listed order.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/flow-trigger-explorer.md
+  commit: 7581ad0b96602285af0f512d9ea7379718c7aea4
+  blob: ac938f1d749b73c34ce479ca3696fedc507e9551
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:flow-trigger-explorer
+- kt:order-of-execution
+difficulty: 2
+created: '2026-11-10'
+status: active

@@ -1,0 +1,20 @@
+id: sf-000402
+product_area: development
+true_statement: Each Lightning Data Service adapter or function call is its own transaction, so multi-record operations through LDS aren't atomic.
+false_statement: Lightning Data Service groups the adapter and function calls on a page into one transaction, so multi-record operations are atomic.
+explanation: Because each LDS call commits separately, an all-or-nothing multi-record change needs Apex, which can roll everything back on failure.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/lightning-data-service.md
+  commit: 7581ad0b96602285af0f512d9ea7379718c7aea4
+  blob: 792f80d31b0b8f075b5fb06391d28d246e062349
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:platform-developer-certification
+concepts:
+- kt:lightning-data-service
+- kt:apex
+difficulty: 2
+created: '2026-11-10'
+status: active

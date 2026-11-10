@@ -1,0 +1,19 @@
+id: sf-000315
+product_area: clouds-and-products
+true_statement: The Tableau+ bundle, which adds Data 360 credits and Tableau Next to user licenses, is offered only for Tableau Cloud.
+false_statement: The Tableau+ bundle, which adds Data 360 credits and Tableau Next to user licenses, is offered for both Tableau Cloud and Tableau Server.
+explanation: Tableau+ is a Cloud-only bundle. Self-managed Tableau Server customers can't buy it, so the bundle presumes the hosted deployment.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/tableau.md
+  commit: 7581ad0b96602285af0f512d9ea7379718c7aea4
+  blob: e90ef1e3a0616d4c6be725df0d920fcdca64f8e5
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:tableau
+- kt:tableau-next
+- kt:data-cloud
+difficulty: 2
+created: '2026-11-10'
+status: active

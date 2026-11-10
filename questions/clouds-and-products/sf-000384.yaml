@@ -1,0 +1,18 @@
+id: sf-000384
+product_area: clouds-and-products
+true_statement: A Case-type entitlement process won't run on work orders, so Field Service work orders need their own Work Order-type process.
+false_statement: A Case-type entitlement process also runs on work orders, so Field Service work orders can share the same process as cases.
+explanation: Each entitlement process has a single type, Case or Work Order. Work orders need a Work Order-type process, which Trailhead advises leaving inactive until its milestones are added.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/entitlement-management.md
+  commit: 7581ad0b96602285af0f512d9ea7379718c7aea4
+  blob: 4f81b81d21495c8d329d8eb2c95765d5d91687d5
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:entitlement-management
+- kt:field-service
+difficulty: 2
+created: '2026-11-10'
+status: active

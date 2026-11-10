@@ -1,0 +1,20 @@
+id: sf-000325
+product_area: data-model
+true_statement: External object API names end in __x, marking records that live in an external system rather than in the org.
+false_statement: External object API names end in __e, marking records that live in an external system rather than in the org.
+explanation: External objects use the __x suffix. They are defined against an external data source and fetched on demand rather than stored in Salesforce.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/external-objects.md
+  commit: 7581ad0b96602285af0f512d9ea7379718c7aea4
+  blob: 55c9386289748d9798a65d659da401570a6959ad
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:platform-data-architect-certification
+concepts:
+- kt:external-objects
+- kt:salesforce-connect
+difficulty: 1
+created: '2026-11-10'
+status: active

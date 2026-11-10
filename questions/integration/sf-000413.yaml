@@ -1,0 +1,19 @@
+id: sf-000413
+product_area: integration
+true_statement: In batch synchronization, an ETL job's control tables should live where the ETL tool can still reach them when Salesforce is unavailable.
+false_statement: In batch synchronization, an ETL job's control tables should live in Salesforce custom objects so every run reads them from the org.
+explanation: The guidance makes the ETL infrastructure the hub and Salesforce a spoke, so the job's last-run and restart data must survive a Salesforce outage.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/batch-data-synchronization.md
+  commit: 7581ad0b96602285af0f512d9ea7379718c7aea4
+  blob: 9570dfa25a304849c30419830562aef32da28364
+verified_release: Winter '27
+feature_status: concept
+certs:
+- kt:integration-architect-certification
+concepts:
+- kt:batch-data-synchronization
+difficulty: 2
+created: '2026-11-10'
+status: active

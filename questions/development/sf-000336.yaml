@@ -1,0 +1,18 @@
+id: sf-000336
+product_area: development
+true_statement: Queueable chains stop at a depth of five in Developer Edition and Trial orgs, while production orgs have no chain-depth cap.
+false_statement: Queueable chains stop at a depth of five in production orgs, while Developer Edition and Trial orgs have no chain-depth cap.
+explanation: Chain depth is uncapped in production; the five-job limit, counting the parent, applies to Developer Edition and Trial orgs unless stack depth is configured.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/queueable-apex.md
+  commit: 7581ad0b96602285af0f512d9ea7379718c7aea4
+  blob: 46f5b0df50a6e9235f7c7da9235fcd3d370bcf2b
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:queueable-apex
+- kt:governor-limits
+difficulty: 2
+created: '2026-11-10'
+status: active

@@ -1,0 +1,20 @@
+id: sf-000327
+product_area: data-model
+true_statement: For Salesforce Connect OData adapters, the result set of a single OData query is limited to 16 MB.
+false_statement: For Salesforce Connect OData adapters, the result set of a single OData query is limited to 1 MB.
+explanation: Salesforce documents a 16 MB result-set limit per OData query, alongside an 8 MB limit on individual HTTP requests and responses. 1 MB understates it.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/external-objects.md
+  commit: 7581ad0b96602285af0f512d9ea7379718c7aea4
+  blob: 55c9386289748d9798a65d659da401570a6959ad
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:platform-data-architect-certification
+concepts:
+- kt:external-objects
+- kt:salesforce-connect
+difficulty: 3
+created: '2026-11-10'
+status: active

@@ -1,0 +1,20 @@
+id: sf-000353
+product_area: integration
+true_statement: Apex writes to external objects go through an asynchronous background queue, while writes from the UI and flows run synchronously.
+false_statement: UI and flow writes to external objects go through an asynchronous background queue, while writes from Apex run synchronously.
+explanation: Salesforce Connect queues Apex writes in the background and runs UI and flow writes immediately. Either way the remote system executes the write and resolves conflicts.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/salesforce-connect.md
+  commit: 7581ad0b96602285af0f512d9ea7379718c7aea4
+  blob: 0430e970825b09141b90ba7b68c6b75386653278
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:integration-architect-certification
+concepts:
+- kt:salesforce-connect
+- kt:external-objects
+difficulty: 3
+created: '2026-11-10'
+status: active

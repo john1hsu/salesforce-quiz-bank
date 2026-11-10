@@ -1,0 +1,21 @@
+id: sf-000337
+product_area: integration
+true_statement: In Salesforce's pattern mapping, asynchronous inbound data integration into Salesforce is handled by the Batch Data Synchronization pattern.
+false_statement: In Salesforce's pattern mapping, asynchronous inbound data integration into Salesforce is handled by the Remote Call-In pattern.
+explanation: 'Inbound data integration splits by timing: the asynchronous case is Batch Data Synchronization, while Remote Call-In is the synchronous inbound case.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/data-integration.md
+  commit: 7581ad0b96602285af0f512d9ea7379718c7aea4
+  blob: 85e31b36f0dc7f3c61577033866345fc6473e63e
+verified_release: Winter '27
+feature_status: concept
+certs:
+- kt:integration-architect-certification
+concepts:
+- kt:data-integration
+- kt:batch-data-synchronization
+- kt:remote-call-in
+difficulty: 2
+created: '2026-11-10'
+status: active

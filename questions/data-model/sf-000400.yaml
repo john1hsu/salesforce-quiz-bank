@@ -1,0 +1,18 @@
+id: sf-000400
+product_area: data-model
+true_statement: For an initial data load, Salesforce advises creating roles before sharing rules and placing users in roles before loading their records.
+false_statement: For an initial data load, Salesforce advises creating sharing rules before roles and loading records before placing users in roles.
+explanation: Setting up roles and role membership first, then adding sharing rules one at a time, avoids repeated sharing recalculation as the data arrives.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/platform-data-architect-certification.md
+  commit: 7581ad0b96602285af0f512d9ea7379718c7aea4
+  blob: a9419e906d1befb9379a0f60850cfa60c90955d6
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:platform-data-architect-certification
+- kt:data-migration-strategy
+difficulty: 2
+created: '2026-11-10'
+status: active

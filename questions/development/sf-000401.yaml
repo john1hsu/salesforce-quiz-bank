@@ -1,0 +1,20 @@
+id: sf-000401
+product_area: development
+true_statement: Lightning Data Service calls don't count against the org's API request usage, though general limits such as records returned still apply.
+false_statement: Lightning Data Service calls count against the org's API request usage in the same way as external REST API calls.
+explanation: LDS runs on User Interface API but its calls aren't counted as API usage, so it doesn't draw down API request limits. Other platform limits still apply.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/lightning-data-service.md
+  commit: 7581ad0b96602285af0f512d9ea7379718c7aea4
+  blob: 792f80d31b0b8f075b5fb06391d28d246e062349
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:platform-developer-certification
+concepts:
+- kt:lightning-data-service
+- kt:api-request-limits
+difficulty: 2
+created: '2026-11-10'
+status: active

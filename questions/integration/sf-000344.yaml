@@ -1,0 +1,20 @@
+id: sf-000344
+product_area: integration
+true_statement: For the Remote Call-In pattern, Salesforce rates SOAP API and custom Apex web services as suboptimal compared with REST, Composite and Bulk API 2.0.
+false_statement: For the Remote Call-In pattern, Salesforce rates SOAP API and custom Apex web services as the best fit, ahead of REST, Composite and Bulk API 2.0.
+explanation: The guide's fit ratings for Remote Call-In put the Composite, REST, Bulk API 2.0, GraphQL and Pub/Sub APIs at best, and SOAP API and custom Apex web services at suboptimal.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/integration-patterns.md
+  commit: 7581ad0b96602285af0f512d9ea7379718c7aea4
+  blob: f5d23498dc815cdeb03706bf4834f75447d31527
+verified_release: Winter '27
+feature_status: concept
+certs:
+- kt:integration-architect-certification
+concepts:
+- kt:integration-patterns
+- kt:remote-call-in
+difficulty: 3
+created: '2026-11-10'
+status: active

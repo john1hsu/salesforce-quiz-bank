@@ -1,0 +1,20 @@
+id: sf-000330
+product_area: development
+true_statement: Within one Apex transaction, a callout may run before DML, but it cannot run after uncommitted DML is pending.
+false_statement: Within one Apex transaction, a callout may run after DML, but it cannot run before any DML has been performed.
+explanation: Pending work such as uncommitted DML blocks a later callout, so the usual design is callout first and DML afterwards, or moving the callout into asynchronous Apex.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/apex-callouts.md
+  commit: 7581ad0b96602285af0f512d9ea7379718c7aea4
+  blob: 56a6f7f855d189ac6e2ca766cf12c08cb3466b89
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:integration-architect-certification
+concepts:
+- kt:apex-callouts
+- kt:queueable-apex
+difficulty: 2
+created: '2026-11-10'
+status: active

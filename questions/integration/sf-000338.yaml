@@ -1,0 +1,19 @@
+id: sf-000338
+product_area: integration
+true_statement: Salesforce's data integration decision guide states that Salesforce-to-Salesforce has reached end of life for org-to-org integration.
+false_statement: Salesforce's data integration decision guide recommends Salesforce-to-Salesforce as the default tool for org-to-org integration.
+explanation: Salesforce-to-Salesforce is end of life. For org-to-org work the guide points instead to options such as Heroku Connect, MuleSoft, the native APIs, Change Data Capture or the cross-org adapter.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/data-integration.md
+  commit: 7581ad0b96602285af0f512d9ea7379718c7aea4
+  blob: 85e31b36f0dc7f3c61577033866345fc6473e63e
+verified_release: Winter '27
+feature_status: concept
+certs:
+- kt:integration-architect-certification
+concepts:
+- kt:data-integration
+difficulty: 2
+created: '2026-11-10'
+status: active

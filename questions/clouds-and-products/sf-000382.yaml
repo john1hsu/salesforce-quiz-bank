@@ -1,0 +1,18 @@
+id: sf-000382
+product_area: clouds-and-products
+true_statement: When calculating milestone target dates, business hours set on the milestone override those set on the entitlement process.
+false_statement: When calculating milestone target dates, business hours set on the entitlement process override those set on the milestone.
+explanation: Target dates use the milestone's hours first, then the entitlement process's hours, and only if neither is set the case or work order's own hours.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/entitlement-management.md
+  commit: 7581ad0b96602285af0f512d9ea7379718c7aea4
+  blob: 4f81b81d21495c8d329d8eb2c95765d5d91687d5
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:entitlement-management
+- kt:business-hours
+difficulty: 2
+created: '2026-11-10'
+status: active

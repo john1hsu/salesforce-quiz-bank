@@ -1,0 +1,17 @@
+id: sf-000369
+product_area: architecture-practice
+true_statement: CTA601 is an expert-led virtual workshop from Trailhead Academy for experienced architects preparing for the CTA.
+false_statement: CTA601 is a self-paced Trailhead module for new admins starting out on the architect path.
+explanation: CTA601 is a Trailhead Academy workshop led by experts and aimed at experienced architects, not a self-paced beginner module.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/certified-technical-architect.md
+  commit: 7581ad0b96602285af0f512d9ea7379718c7aea4
+  blob: 47f7537f3146304cfc0b8444925e9d1d0f6f3d88
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:certified-technical-architect
+difficulty: 1
+created: '2026-11-10'
+status: active

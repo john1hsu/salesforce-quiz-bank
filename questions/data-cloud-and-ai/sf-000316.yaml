@@ -1,0 +1,20 @@
+id: sf-000316
+product_area: data-cloud-and-ai
+true_statement: Zero copy file federation reads external files with Data 360's own compute, so it avoids the warehouse's compute fees.
+false_statement: Zero copy query federation reads external files with Data 360's own compute, so it avoids the warehouse's compute fees.
+explanation: File federation bypasses the external warehouse's compute layer and reads storage directly. Query federation sends queries to the external engine over JDBC, so it can incur that platform's compute charges.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/zero-copy-data-federation.md
+  commit: 7581ad0b96602285af0f512d9ea7379718c7aea4
+  blob: f8fa92b52b4ad3eb51ce0eb09ff35d289a7636b5
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:data-cloud-consultant-certification
+concepts:
+- kt:zero-copy-data-federation
+- kt:data-virtualization
+difficulty: 2
+created: '2026-11-10'
+status: active

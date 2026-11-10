@@ -1,26 +1,26 @@
 {
  "totals": {
-  "active": 309,
+  "active": 409,
   "retired": 2
  },
  "areas": {
   "architecture-practice": {
-   "active": 33
+   "active": 42
   },
   "automation": {
-   "active": 24
+   "active": 30
   },
   "clouds-and-products": {
-   "active": 27
+   "active": 36
   },
   "data-cloud-and-ai": {
-   "active": 27
+   "active": 39
   },
   "data-model": {
-   "active": 21
+   "active": 36
   },
   "development": {
-   "active": 20,
+   "active": 35,
    "retired": 1
   },
   "devops-and-alm": {
@@ -30,13 +30,13 @@
    "active": 31
   },
   "integration": {
-   "active": 22
+   "active": 47
   },
   "platform-architecture": {
-   "active": 24
+   "active": 30
   },
   "public-sector-and-compliance": {
-   "active": 24
+   "active": 27
   },
   "security-and-sharing": {
    "active": 24,
@@ -44,7 +44,13 @@
   }
  },
  "articles": {
+  "articles/architecture-practice/application-architect-certification.md": {
+   "active": 3
+  },
   "articles/architecture-practice/archiving-strategy.md": {
+   "active": 3
+  },
+  "articles/architecture-practice/certified-technical-architect.md": {
    "active": 3
   },
   "articles/architecture-practice/cta-review-board.md": {
@@ -66,6 +72,9 @@
    "active": 3
   },
   "articles/architecture-practice/solution-design-tradeoffs.md": {
+   "active": 3
+  },
+  "articles/architecture-practice/system-architect-certification.md": {
    "active": 3
   },
   "articles/architecture-practice/technical-debt-in-salesforce.md": {
@@ -92,6 +101,9 @@
   "articles/automation/flow-orchestrator.md": {
    "active": 3
   },
+  "articles/automation/flow-trigger-explorer.md": {
+   "active": 3
+  },
   "articles/automation/process-automation.md": {
    "active": 3
   },
@@ -101,10 +113,19 @@
   "articles/automation/record-triggered-flow.md": {
    "active": 1
   },
+  "articles/automation/schedule-triggered-flow.md": {
+   "active": 3
+  },
   "articles/automation/screen-flow.md": {
    "active": 3
   },
   "articles/automation/workflow-rules.md": {
+   "active": 3
+  },
+  "articles/clouds-and-products/collaborative-forecasts.md": {
+   "active": 3
+  },
+  "articles/clouds-and-products/entitlement-management.md": {
    "active": 3
   },
   "articles/clouds-and-products/experience-cloud.md": {
@@ -134,10 +155,22 @@
   "articles/clouds-and-products/slack-platform.md": {
    "active": 3
   },
+  "articles/clouds-and-products/tableau.md": {
+   "active": 3
+  },
+  "articles/data-cloud-and-ai/agent-actions.md": {
+   "active": 3
+  },
   "articles/data-cloud-and-ai/agent-development-lifecycle.md": {
    "active": 3
   },
+  "articles/data-cloud-and-ai/agent-script.md": {
+   "active": 3
+  },
   "articles/data-cloud-and-ai/agentforce.md": {
+   "active": 3
+  },
+  "articles/data-cloud-and-ai/atlas-reasoning-engine.md": {
    "active": 3
   },
   "articles/data-cloud-and-ai/calculated-insights.md": {
@@ -161,7 +194,22 @@
   "articles/data-cloud-and-ai/prompt-builder.md": {
    "active": 3
   },
+  "articles/data-cloud-and-ai/zero-copy-data-federation.md": {
+   "active": 3
+  },
+  "articles/data-model/big-objects.md": {
+   "active": 3
+  },
   "articles/data-model/data-skew.md": {
+   "active": 3
+  },
+  "articles/data-model/external-id-fields.md": {
+   "active": 3
+  },
+  "articles/data-model/external-objects.md": {
+   "active": 3
+  },
+  "articles/data-model/field-history-tracking.md": {
    "active": 3
   },
   "articles/data-model/junction-object.md": {
@@ -176,10 +224,16 @@
   "articles/data-model/person-accounts.md": {
    "active": 3
   },
+  "articles/data-model/platform-data-architect-certification.md": {
+   "active": 3
+  },
   "articles/data-model/record-types.md": {
    "active": 3
   },
   "articles/data-model/roll-up-summary-field.md": {
+   "active": 3
+  },
+  "articles/development/apex-callouts.md": {
    "active": 3
   },
   "articles/development/apex-testing.md": {
@@ -197,7 +251,19 @@
   "articles/development/batch-apex.md": {
    "active": 3
   },
+  "articles/development/custom-metadata-types.md": {
+   "active": 3
+  },
+  "articles/development/lightning-data-service.md": {
+   "active": 3
+  },
   "articles/development/lightning-web-components.md": {
+   "active": 3
+  },
+  "articles/development/platform-developer-certification.md": {
+   "active": 3
+  },
+  "articles/development/queueable-apex.md": {
    "active": 3
   },
   "articles/development/soql.md": {
@@ -273,6 +339,12 @@
   "articles/identity/single-sign-on-saml.md": {
    "active": 3
   },
+  "articles/integration/api-request-limits.md": {
+   "active": 3
+  },
+  "articles/integration/batch-data-synchronization.md": {
+   "active": 3
+  },
   "articles/integration/bulk-api-2.md": {
    "active": 3
   },
@@ -282,7 +354,22 @@
   "articles/integration/composite-api.md": {
    "active": 3
   },
+  "articles/integration/data-integration.md": {
+   "active": 3
+  },
+  "articles/integration/data-virtualization.md": {
+   "active": 1
+  },
   "articles/integration/event-driven-architecture.md": {
+   "active": 3
+  },
+  "articles/integration/integration-architect-certification.md": {
+   "active": 3
+  },
+  "articles/integration/integration-patterns.md": {
+   "active": 3
+  },
+  "articles/integration/mulesoft-anypoint-platform.md": {
    "active": 3
   },
   "articles/integration/named-credentials.md": {
@@ -297,6 +384,12 @@
   "articles/integration/pub-sub-api.md": {
    "active": 3
   },
+  "articles/integration/rest-api.md": {
+   "active": 3
+  },
+  "articles/integration/salesforce-connect.md": {
+   "active": 3
+  },
   "articles/platform-architecture/governor-limits.md": {
    "active": 3
   },
@@ -306,10 +399,16 @@
   "articles/platform-architecture/large-data-volumes.md": {
    "active": 3
   },
+  "articles/platform-architecture/metadata-driven-architecture.md": {
+   "active": 3
+  },
   "articles/platform-architecture/multitenancy.md": {
    "active": 3
   },
   "articles/platform-architecture/order-of-execution.md": {
+   "active": 3
+  },
+  "articles/platform-architecture/query-optimizer-selectivity.md": {
    "active": 3
   },
   "articles/platform-architecture/record-locking.md": {
@@ -337,6 +436,9 @@
    "active": 3
   },
   "articles/public-sector-and-compliance/il4-and-il5.md": {
+   "active": 3
+  },
+  "articles/public-sector-and-compliance/nist-sp-800-53.md": {
    "active": 3
   },
   "articles/public-sector-and-compliance/public-sector-solutions.md": {

@@ -1,0 +1,20 @@
+id: sf-000352
+product_area: integration
+true_statement: External Change Data Capture in Salesforce Connect polls the source every 30 minutes by default, or as often as every 5 minutes.
+false_statement: External Change Data Capture in Salesforce Connect polls the source every 5 minutes by default, or as often as every minute.
+explanation: External CDC, available only with the OData 4.0 and 4.01 adapters, defaults to a 30-minute polling interval that can be shortened to 5 minutes.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/salesforce-connect.md
+  commit: 7581ad0b96602285af0f512d9ea7379718c7aea4
+  blob: 0430e970825b09141b90ba7b68c6b75386653278
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:integration-architect-certification
+concepts:
+- kt:salesforce-connect
+- kt:change-data-capture
+difficulty: 2
+created: '2026-11-10'
+status: active

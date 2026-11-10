@@ -1,0 +1,18 @@
+id: sf-000363
+product_area: public-sector-and-compliance
+true_statement: Under FedRAMP, NIST Program Management (PM) controls remain the agency's responsibility rather than the cloud provider's.
+false_statement: Under FedRAMP, NIST Program Management (PM) controls are discharged by the cloud provider's authorization rather than by the agency.
+explanation: A provider's FedRAMP authorization covers the baseline controls it was assessed on. PM controls, and privacy controls outside the baselines, stay with the agency.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/nist-sp-800-53.md
+  commit: 7581ad0b96602285af0f512d9ea7379718c7aea4
+  blob: 3ec8e35a5c58709fa65a72b0c466366f2097eaf8
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:nist-sp-800-53
+- kt:fedramp
+difficulty: 3
+created: '2026-11-10'
+status: active

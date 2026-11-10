@@ -1,0 +1,18 @@
+id: sf-000373
+product_area: automation
+true_statement: Record-triggered flows that share the same trigger order value run alphabetically by API name.
+false_statement: Record-triggered flows that share the same trigger order value run in order of their activation date.
+explanation: Ties on a trigger order value are broken by API name. Activation date only orders flows that have no trigger order value at all.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/flow-trigger-explorer.md
+  commit: 7581ad0b96602285af0f512d9ea7379718c7aea4
+  blob: ac938f1d749b73c34ce479ca3696fedc507e9551
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:flow-trigger-explorer
+- kt:record-triggered-flow
+difficulty: 2
+created: '2026-11-10'
+status: active

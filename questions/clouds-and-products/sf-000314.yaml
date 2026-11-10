@@ -1,0 +1,18 @@
+id: sf-000314
+product_area: clouds-and-products
+true_statement: Tableau Next is licensed separately, as Creator or Consumer, rather than through the Viewer, Explorer and Creator licenses of Tableau by Tableau.
+false_statement: Tableau Next is licensed through the same Viewer, Explorer and Creator licenses used by Tableau Cloud and Tableau Server.
+explanation: Tableau Next and the original Tableau portfolio are separate products with separate licenses. Tableau Next uses Creator and Consumer licenses; Viewer, Explorer and Creator belong to Tableau by Tableau.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/tableau.md
+  commit: 7581ad0b96602285af0f512d9ea7379718c7aea4
+  blob: e90ef1e3a0616d4c6be725df0d920fcdca64f8e5
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:tableau
+- kt:tableau-next
+difficulty: 2
+created: '2026-11-10'
+status: active

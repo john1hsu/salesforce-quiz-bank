@@ -1,0 +1,17 @@
+id: sf-000361
+product_area: public-sector-and-compliance
+true_statement: NIST SP 800-53 Revision 5 organizes its security and privacy controls into 20 families.
+false_statement: NIST SP 800-53 Revision 5 organizes its security and privacy controls into 12 families.
+explanation: Rev. 5 has 20 control families, from Access Control to Supply Chain Risk Management. Twelve understates the catalog.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/nist-sp-800-53.md
+  commit: 7581ad0b96602285af0f512d9ea7379718c7aea4
+  blob: 3ec8e35a5c58709fa65a72b0c466366f2097eaf8
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:nist-sp-800-53
+difficulty: 1
+created: '2026-11-10'
+status: active

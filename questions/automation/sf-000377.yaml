@@ -1,0 +1,18 @@
+id: sf-000377
+product_area: automation
+true_statement: The 24-hour limit on schedule-triggered flow interviews is 250,000 or the org's user licenses times 200, whichever is greater.
+false_statement: The 24-hour limit on schedule-triggered flow interviews is 250,000 or the org's user licenses times 200, whichever is smaller.
+explanation: The org-wide daily cap takes the greater of the two figures, so large orgs get more than 250,000 interviews. Exceeding it produces a flow error email.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/schedule-triggered-flow.md
+  commit: 7581ad0b96602285af0f512d9ea7379718c7aea4
+  blob: 9798c65839e443d316e6a92de86fa6204e701c41
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:schedule-triggered-flow
+- kt:governor-limits
+difficulty: 3
+created: '2026-11-10'
+status: active

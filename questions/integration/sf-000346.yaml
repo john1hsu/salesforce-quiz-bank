@@ -1,0 +1,20 @@
+id: sf-000346
+product_area: integration
+true_statement: CloudHub 2.0 is a managed, containerized iPaaS that MuleSoft operates across 12 global regions.
+false_statement: CloudHub 2.0 is a managed, containerized iPaaS that MuleSoft operates across 4 global regions.
+explanation: MuleSoft runs CloudHub 2.0 in 12 regions worldwide. Four regions understates its footprint.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/mulesoft-anypoint-platform.md
+  commit: 7581ad0b96602285af0f512d9ea7379718c7aea4
+  blob: 8424f067dd8479a58a64ae61d36db63fbeb5520a
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:integration-architect-certification
+concepts:
+- kt:mulesoft-anypoint-platform
+- kt:mule-runtime-engine
+difficulty: 2
+created: '2026-11-10'
+status: active

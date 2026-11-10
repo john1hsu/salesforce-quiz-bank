@@ -1,0 +1,19 @@
+id: sf-000317
+product_area: data-cloud-and-ai
+true_statement: Under zero copy query federation, change-triggered features such as data actions work only when caching is enabled.
+false_statement: Under zero copy file federation, change-triggered features such as data actions work only when caching is enabled.
+explanation: Query federation can't see changes in the external system unless caching is on. File federation can detect external changes without caching, so it doesn't carry that restriction.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/zero-copy-data-federation.md
+  commit: 7581ad0b96602285af0f512d9ea7379718c7aea4
+  blob: f8fa92b52b4ad3eb51ce0eb09ff35d289a7636b5
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:data-cloud-consultant-certification
+concepts:
+- kt:zero-copy-data-federation
+difficulty: 3
+created: '2026-11-10'
+status: active

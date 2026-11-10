@@ -1,0 +1,18 @@
+id: sf-000365
+product_area: architecture-practice
+true_statement: Trailhead's Platform Developer study guide gives process automation and logic the largest weighting, at 28%.
+false_statement: Trailhead's Platform Developer study guide gives user interface the largest weighting, at 28%.
+explanation: The guide weights process automation and logic at 28%, developer fundamentals at 27%, user interface at 25%, and testing, debugging and deployment at 20%.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/application-architect-certification.md
+  commit: 7581ad0b96602285af0f512d9ea7379718c7aea4
+  blob: 2aa475122fab3135bd759a0b6102c8f58687715e
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:application-architect-certification
+- kt:platform-developer-certification
+difficulty: 2
+created: '2026-11-10'
+status: active

@@ -1,0 +1,17 @@
+id: sf-000350
+product_area: integration
+true_statement: If a REST API request's Accept header is missing or malformed, Salesforce returns the response as JSON.
+false_statement: If a REST API request's Accept header is missing or malformed, Salesforce returns the response as XML.
+explanation: The REST API supports JSON and XML, chosen with the Accept header, and falls back to JSON when that header is absent or malformed.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/rest-api.md
+  commit: 7581ad0b96602285af0f512d9ea7379718c7aea4
+  blob: 0754fb2c536af607663316c0c1f4143de2358654
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:rest-api
+difficulty: 1
+created: '2026-11-10'
+status: active

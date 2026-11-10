@@ -1,0 +1,20 @@
+id: sf-000381
+product_area: clouds-and-products
+true_statement: A user takes part in Collaborative Forecasts only when Allow Forecasting is enabled on their user record.
+false_statement: A user takes part in Collaborative Forecasts only when they hold the Override Forecasts permission.
+explanation: Allow Forecasting on the user record puts someone in the forecast hierarchy. Override Forecasts is a separate permission that lets owners or managers adjust totals.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/collaborative-forecasts.md
+  commit: 7581ad0b96602285af0f512d9ea7379718c7aea4
+  blob: dde9496c495f5b4c22db5a318c133815dc8df389
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:sales-cloud-consultant-certification
+concepts:
+- kt:collaborative-forecasts
+- kt:role-hierarchy
+difficulty: 2
+created: '2026-11-10'
+status: active

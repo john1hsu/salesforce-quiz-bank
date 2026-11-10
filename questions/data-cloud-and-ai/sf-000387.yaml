@@ -1,0 +1,18 @@
+id: sf-000387
+product_area: data-cloud-and-ai
+true_statement: For an Apex-based agent action, whether an input is required comes from the Apex code, so changing it means editing the class.
+false_statement: For an Apex-based agent action, whether an input is required is set only in Agentforce Builder, so changing it needs no code edit.
+explanation: The invocable method's variable definitions control which inputs are required. The builder pre-fills instructions from them, but the required setting is changed in code.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/agent-actions.md
+  commit: 7581ad0b96602285af0f512d9ea7379718c7aea4
+  blob: 00ce543a01a577060273a52f595a0a8bc7c1d80c
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:agent-actions
+- kt:apex
+difficulty: 3
+created: '2026-11-10'
+status: active

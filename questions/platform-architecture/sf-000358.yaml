@@ -1,0 +1,20 @@
+id: sf-000358
+product_area: platform-architecture
+true_statement: A standard index qualifies when a filter matches under 30% of the first million records and under 15% of records beyond that.
+false_statement: A standard index qualifies when a filter matches under 50% of the first million records and under 25% of records beyond that.
+explanation: The Large Data Volumes guide publishes 30% and 15% as the standard-index thresholds. Custom indexes use the tighter 10% and 5% thresholds; 50% and 25% are not used.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/query-optimizer-selectivity.md
+  commit: 7581ad0b96602285af0f512d9ea7379718c7aea4
+  blob: bba9a2828b23bdc1881ba0170403adb3957bc830
+verified_release: Winter '27
+feature_status: concept
+certs:
+- kt:platform-data-architect-certification
+concepts:
+- kt:query-optimizer-selectivity
+- kt:large-data-volumes
+difficulty: 2
+created: '2026-11-10'
+status: active

@@ -1,0 +1,18 @@
+id: sf-000368
+product_area: architecture-practice
+true_statement: Salesforce introduced the domain architect certifications as stepping stones toward the CTA at Dreamforce '17.
+false_statement: Salesforce introduced the domain architect certifications as stepping stones toward the CTA at Dreamforce '13.
+explanation: The domain architect certifications arrived at Dreamforce '17, creating the prerequisite ladder still used today. In 2013 the CTA had no such stepping stones.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/certified-technical-architect.md
+  commit: 7581ad0b96602285af0f512d9ea7379718c7aea4
+  blob: 47f7537f3146304cfc0b8444925e9d1d0f6f3d88
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:certified-technical-architect
+- kt:salesforce-architect
+difficulty: 2
+created: '2026-11-10'
+status: active

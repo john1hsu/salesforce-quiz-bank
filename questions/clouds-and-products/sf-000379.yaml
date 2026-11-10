@@ -1,0 +1,19 @@
+id: sf-000379
+product_area: clouds-and-products
+true_statement: In Collaborative Forecasts, changing the forecast period type or the standard fiscal year purges all quotas and adjustments.
+false_statement: In Collaborative Forecasts, changing the forecast period type or the standard fiscal year purges adjustments but keeps all quotas.
+explanation: Both quotas and adjustments are deleted when the period type or standard fiscal year changes, so these settings should be fixed before data is entered.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/collaborative-forecasts.md
+  commit: 7581ad0b96602285af0f512d9ea7379718c7aea4
+  blob: dde9496c495f5b4c22db5a318c133815dc8df389
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:sales-cloud-consultant-certification
+concepts:
+- kt:collaborative-forecasts
+difficulty: 3
+created: '2026-11-10'
+status: active

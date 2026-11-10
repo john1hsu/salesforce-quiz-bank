@@ -1,0 +1,18 @@
+id: sf-000332
+product_area: development
+true_statement: Apex can create, read and update custom metadata records, but it cannot delete them.
+false_statement: Apex can create, read and delete custom metadata records, but it cannot update them.
+explanation: Apex modifies custom metadata through the Metadata namespace, which supports create and update but not delete. That missing delete is one reason custom settings still suit full CRUD needs.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/custom-metadata-types.md
+  commit: 7581ad0b96602285af0f512d9ea7379718c7aea4
+  blob: 43e9dd729532ceb6dd4c12dd073b6aa499f84e3b
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:custom-metadata-types
+- kt:apex
+difficulty: 2
+created: '2026-11-10'
+status: active
