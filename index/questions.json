@@ -1,7 +1,7 @@
 {
  "version": 1,
- "count": 229,
- "active": 229,
+ "count": 311,
+ "active": 311,
  "questions": [
   {
    "id": "sf-000001",
@@ -3945,6 +3945,1456 @@
    "difficulty": 2,
    "status": "active",
    "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/approval-processes.md"
+  },
+  {
+   "id": "sf-000230",
+   "area": "automation",
+   "t": "Salesforce stopped supporting workflow rules on December 31, 2025, but existing active rules keep executing without bug fixes.",
+   "f": "Salesforce stopped supporting workflow rules on December 31, 2025, and existing active rules were automatically deactivated on that date.",
+   "x": "Since end of support, active workflow rules still run; Salesforce just no longer provides support or fixes for them. They were not switched off automatically.",
+   "release": "Winter '27",
+   "featureStatus": "deprecated",
+   "certs": [],
+   "concepts": [
+    "kt:workflow-rules"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/workflow-rules.md"
+  },
+  {
+   "id": "sf-000231",
+   "area": "automation",
+   "t": "The Migrate to Flow tool converts workflow rules whose only actions are same-record field updates into fast field update (before-save) flows.",
+   "f": "The Migrate to Flow tool converts workflow rules whose only actions are same-record field updates into scheduled-path after-save flows.",
+   "x": "Rules limited to same-record field updates become before-save fast field update flows. Scheduled paths are where time-dependent actions map, not plain field updates.",
+   "release": "Winter '27",
+   "featureStatus": "deprecated",
+   "certs": [],
+   "concepts": [
+    "kt:workflow-rules",
+    "kt:record-triggered-flow"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/workflow-rules.md"
+  },
+  {
+   "id": "sf-000233",
+   "area": "clouds-and-products",
+   "t": "In a Field Service scheduling policy, work rules filter out ineligible candidates while service objectives rank the remaining candidates.",
+   "f": "In a Field Service scheduling policy, service objectives filter out ineligible candidates while work rules rank the remaining candidates.",
+   "x": "Work rules are pass/fail filters such as skills, availability and territory; service objectives such as minimizing travel grade the survivors. The false version swaps their roles.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:field-service",
+    "kt:field-service-scheduling-policies"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/field-service.md"
+  },
+  {
+   "id": "sf-000234",
+   "area": "clouds-and-products",
+   "t": "By default, Field Service appointment priority uses a 1-10 scale where 1 is the highest priority.",
+   "f": "By default, Field Service appointment priority uses a 1-10 scale where 10 is the highest priority.",
+   "x": "The optimizer's default priority scale runs 1 to 10 with 1 as most important (a 1-100 scale is optional), so treating 10 as highest inverts it.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:field-service"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/field-service.md"
+  },
+  {
+   "id": "sf-000235",
+   "area": "clouds-and-products",
+   "t": "Field Service technicians log in to the Field Service mobile app through their org's My Domain.",
+   "f": "Field Service technicians log in to the Field Service mobile app through their org's Experience Cloud site.",
+   "x": "The mobile app for iOS and Android signs workers in via the org's My Domain; an Experience Cloud site is not the login path the article describes.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:field-service",
+    "kt:field-service-mobile-app",
+    "kt:my-domain"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/field-service.md"
+  },
+  {
+   "id": "sf-000236",
+   "area": "clouds-and-products",
+   "t": "In Marketing Cloud Engagement, an Automation Studio SQL query activity is deactivated automatically after 24 consecutive failures.",
+   "f": "In Marketing Cloud Engagement, an Automation Studio SQL query activity is deactivated automatically after 10 consecutive failures.",
+   "x": "Query activities are switched off after 24 failures in a row, not 10, so monitoring failing automations matters before they silently stop.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:marketing-cloud-engagement",
+    "kt:automation-studio"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/marketing-cloud-engagement.md"
+  },
+  {
+   "id": "sf-000237",
+   "area": "clouds-and-products",
+   "t": "Once started, a Marketing Cloud Connect synchronized data source cannot be deleted, only paused.",
+   "f": "Once started, a Marketing Cloud Connect synchronized data source can be deleted, but not paused.",
+   "x": "Synchronized data sources can only be paused after they start; deletion is not available, which is the reverse of the false claim.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:marketing-cloud-engagement",
+    "kt:marketing-cloud-connect"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/marketing-cloud-engagement.md"
+  },
+  {
+   "id": "sf-000238",
+   "area": "clouds-and-products",
+   "t": "Every CRM contact or lead synchronized through Marketing Cloud Connect counts as a contact in Contact Builder, even if it is never messaged.",
+   "f": "Only CRM contacts or leads that are actually messaged after syncing through Marketing Cloud Connect count as contacts in Contact Builder.",
+   "x": "Synchronizing a record is enough for it to count as a Contact Builder contact, whether or not you ever send to it, which affects contact counts.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:marketing-cloud-engagement",
+    "kt:marketing-cloud-connect",
+    "kt:contact-builder"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/marketing-cloud-engagement.md"
+  },
+  {
+   "id": "sf-000239",
+   "area": "clouds-and-products",
+   "t": "In Agentforce Revenue Management, edits to pricing data take effect only after an admin runs Sync Pricing Data.",
+   "f": "In Agentforce Revenue Management, edits to pricing data take effect only after an admin reactivates the pricing procedure.",
+   "x": "Pricing changes are applied once Sync Pricing Data is run; reactivating a pricing procedure is not the step the article names.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:revenue-management-consultant-certification"
+   ],
+   "concepts": [
+    "kt:revenue-cloud",
+    "kt:salesforce-pricing"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/revenue-cloud.md"
+  },
+  {
+   "id": "sf-000240",
+   "area": "clouds-and-products",
+   "t": "Salesforce CPQ is end of sale but not end of life: existing customers keep support and critical fixes, with no forced migration date.",
+   "f": "Salesforce CPQ is end of life with a forced migration date: existing customers keep support and critical fixes only until then.",
+   "x": "Salesforce stopped selling CPQ to new customers but has announced no retirement date or forced migration; existing customers still get support and critical fixes, just no new features.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:revenue-management-consultant-certification"
+   ],
+   "concepts": [
+    "kt:revenue-cloud",
+    "kt:salesforce-cpq"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/revenue-cloud.md"
+  },
+  {
+   "id": "sf-000241",
+   "area": "clouds-and-products",
+   "t": "Product Configurator rules in Agentforce Revenue Management are written in Constraint Modeling Language (CML).",
+   "f": "Product Configurator rules in Agentforce Revenue Management are written in Salesforce Object Query Language (SOQL).",
+   "x": "The developer guide says configurator rules use Constraint Modeling Language; SOQL is a query language, not the rule language for the configurator.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:revenue-management-consultant-certification"
+   ],
+   "concepts": [
+    "kt:revenue-cloud",
+    "kt:product-configurator"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/revenue-cloud.md"
+  },
+  {
+   "id": "sf-000242",
+   "area": "data-cloud-and-ai",
+   "t": "Each Data 360 calculated insight can have up to 10 dimensions and 50 measures.",
+   "f": "Each Data 360 calculated insight can have up to 50 dimensions and 10 measures.",
+   "x": "The limits page allows 10 dimensions and 50 measures per calculated insight; the false version swaps the two numbers.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:data-cloud-consultant-certification"
+   ],
+   "concepts": [
+    "kt:calculated-insights",
+    "kt:data-cloud-limits"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/calculated-insights.md"
+  },
+  {
+   "id": "sf-000243",
+   "area": "data-cloud-and-ai",
+   "t": "Data 360 streaming insights can use only Count or Sum for their measures, with up to 5 measures each.",
+   "f": "Data 360 streaming insights can use only Count or Average for their measures, with up to 5 measures each.",
+   "x": "Streaming insight measures are restricted to Count and Sum, capped at 5 per insight; Average is not one of the allowed aggregations.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:data-cloud-consultant-certification"
+   ],
+   "concepts": [
+    "kt:calculated-insights",
+    "kt:streaming-insights",
+    "kt:data-cloud-limits"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/calculated-insights.md"
+  },
+  {
+   "id": "sf-000244",
+   "area": "data-cloud-and-ai",
+   "t": "A segment-ready calculated insight must include the primary key of the object you segment on, such as Unified Individual, as a dimension.",
+   "f": "A segment-ready calculated insight must include only a business key, such as an order number, as a dimension.",
+   "x": "To be usable in segmentation, an insight has to join the segment-on object and group by its primary key; grouping by just a business key is the common mistake.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:data-cloud-consultant-certification"
+   ],
+   "concepts": [
+    "kt:calculated-insights",
+    "kt:data-cloud-segmentation"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/calculated-insights.md"
+  },
+  {
+   "id": "sf-000245",
+   "area": "data-cloud-and-ai",
+   "t": "The Data 360 Consultant prep module describes the exam as 60 questions with a 62% passing score.",
+   "f": "The Data 360 Consultant prep module describes the exam as 65 questions with a 68% passing score.",
+   "x": "Trailhead's prep module lists 60 questions and a 62% pass mark; 65 questions and 68% do not match the module.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:data-cloud-consultant-certification"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/data-cloud-consultant-certification.md"
+  },
+  {
+   "id": "sf-000246",
+   "area": "data-cloud-and-ai",
+   "t": "In the Data Cloud Consultant exam outline, data ingestion and modeling is the most heavily weighted section at 20%.",
+   "f": "In the Data Cloud Consultant exam outline, identity resolution is the most heavily weighted section at 20%.",
+   "x": "Data ingestion and modeling carries 20%, the largest weight; identity resolution is weighted at 14%.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:data-cloud-consultant-certification",
+    "kt:identity-resolution",
+    "kt:data-model-objects"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/data-cloud-consultant-certification.md"
+  },
+  {
+   "id": "sf-000247",
+   "area": "data-cloud-and-ai",
+   "t": "The Data 360 Consultant certification has no required prerequisite, though the prep module suggests earning the Salesforce Administrator credential first.",
+   "f": "The Data 360 Consultant certification requires the Salesforce Administrator credential as a prerequisite before candidates can register.",
+   "x": "No prerequisite is mandatory; holding the Administrator credential is only recommended by the prep module.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:data-cloud-consultant-certification"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/data-cloud-consultant-certification.md"
+  },
+  {
+   "id": "sf-000248",
+   "area": "data-cloud-and-ai",
+   "t": "Data 360 data model object API names end in __dlm, while data lake object API names end in __dlo.",
+   "f": "Data 360 data model object API names end in __dlo, while data lake object API names end in __dlm.",
+   "x": "DMOs use the __dlm suffix and DLOs use __dlo; the false version swaps them. DMO fields themselves end in __c.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:data-cloud-consultant-certification"
+   ],
+   "concepts": [
+    "kt:data-model-objects",
+    "kt:data-lake-objects"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/data-model-objects.md"
+  },
+  {
+   "id": "sf-000249",
+   "area": "data-cloud-and-ai",
+   "t": "A custom data model object created from a data lake object is not linked to the rest of the data model automatically, so you define its relationships.",
+   "f": "A custom data model object created from a data lake object inherits the relationships of the standard model automatically, so none need defining.",
+   "x": "Custom DMOs take the DLO's label and API name but no relationships; you must add them yourself between DMOs.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:data-cloud-consultant-certification"
+   ],
+   "concepts": [
+    "kt:data-model-objects",
+    "kt:data-lake-objects"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/data-model-objects.md"
+  },
+  {
+   "id": "sf-000250",
+   "area": "data-cloud-and-ai",
+   "t": "In Data 360, contact details such as email addresses belong on Contact Point data model objects rather than on the Individual object.",
+   "f": "In Data 360, contact details such as email addresses belong on the Individual data model object rather than on Contact Point objects.",
+   "x": "Trailhead's modeling guidance puts emails, phones and addresses on Contact Point Email, Phone and Address DMOs, keeping Individual free of contact details.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:data-cloud-consultant-certification"
+   ],
+   "concepts": [
+    "kt:data-model-objects"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/data-model-objects.md"
+  },
+  {
+   "id": "sf-000251",
+   "area": "data-cloud-and-ai",
+   "t": "A source record joins a unified profile if it meets any one match rule in the ruleset, but it must satisfy every criterion within that rule.",
+   "f": "A source record joins a unified profile only if it meets every match rule in the ruleset, but it needs to satisfy just one criterion within each rule.",
+   "x": "Match rules are ORed while the criteria inside a rule are ANDed. That is why adding rules raises the consolidation rate and adding criteria to a rule lowers it; the false statement reverses both.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:data-cloud-consultant-certification"
+   ],
+   "concepts": [
+    "kt:identity-resolution",
+    "kt:data-cloud"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/identity-resolution.md"
+  },
+  {
+   "id": "sf-000252",
+   "area": "data-cloud-and-ai",
+   "t": "An identity resolution ruleset ID can be at most four characters long and cannot be changed after it is set.",
+   "f": "An identity resolution ruleset ID can be up to forty characters long and can be renamed at any time after it is set.",
+   "x": "The Trailhead module describes the optional ruleset ID as limited to four characters and fixed once saved. Both the forty-character length and the ability to rename it are wrong.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:data-cloud-consultant-certification"
+   ],
+   "concepts": [
+    "kt:identity-resolution",
+    "kt:data-cloud"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/identity-resolution.md"
+  },
+  {
+   "id": "sf-000253",
+   "area": "data-cloud-and-ai",
+   "t": "Real-time identity resolution for Web and Mobile SDK data runs in milliseconds but treats fuzzy match criteria as exact.",
+   "f": "Real-time identity resolution for Web and Mobile SDK data runs in milliseconds and applies fuzzy match criteria exactly as batch resolution does.",
+   "x": "Real-time matching trades fuzziness for speed: fuzzy criteria are evaluated as exact, with phone and email using Exact Normalized. Batch resolution is where fuzzy methods behave as configured.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:data-cloud-consultant-certification"
+   ],
+   "concepts": [
+    "kt:identity-resolution",
+    "kt:data-cloud",
+    "kt:agentforce"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/identity-resolution.md"
+  },
+  {
+   "id": "sf-000254",
+   "area": "data-model",
+   "t": "To give record types different Opportunity Stage values, you assign each record type a different sales process.",
+   "f": "To give record types different Opportunity Stage values, you trim the Stage picklist directly on each record type.",
+   "x": "Opportunity Stage, Case and Solution Status and Lead Status are reserved: their values come from a business process, not record type picklist trimming. So you vary them by assigning a different process to each record type.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:record-types",
+    "kt:business-processes"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/record-types.md"
+  },
+  {
+   "id": "sf-000255",
+   "area": "data-model",
+   "t": "Salesforce recommends keeping an org at no more than 200 record types, because beyond that they become hard to manage.",
+   "f": "Salesforce recommends keeping an org at no more than 20 record types, because beyond that they become hard to manage.",
+   "x": "The record type limitations guidance puts the recommended ceiling at 200. Twenty understates it by a factor of ten.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:record-types"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/record-types.md"
+  },
+  {
+   "id": "sf-000256",
+   "area": "data-model",
+   "t": "Apex describe methods such as getRecordTypeInfosByDeveloperName() return record types even when the running user has no access to them.",
+   "f": "Apex describe methods such as getRecordTypeInfosByDeveloperName() return only the record types the running user has access to.",
+   "x": "DescribeSObjectResult lists every record type regardless of the user's access. To honour access in a custom UI, check isAvailable() on each RecordTypeInfo instead of relying on the describe result being filtered.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:record-types",
+    "kt:apex"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/record-types.md"
+  },
+  {
+   "id": "sf-000257",
+   "area": "development",
+   "t": "An org can have 5 batch jobs queued or active at once, and up to 100 more can wait in Holding status in the Apex flex queue.",
+   "f": "An org can have 25 batch jobs queued or active at once, and up to 1,000 more can wait in Holding status in the Apex flex queue.",
+   "x": "Batch Apex allows five queued or active jobs per org plus 100 held in the flex queue; once that queue is full, executeBatch throws a LimitException. The 25 and 1,000 figures are invented.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:batch-apex",
+    "kt:apex-flex-queue",
+    "kt:governor-limits"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/batch-apex.md"
+  },
+  {
+   "id": "sf-000258",
+   "area": "development",
+   "t": "In a batch class that implements Database.Stateful, instance variables keep their values across chunks, while static variables still reset.",
+   "f": "In a batch class that implements Database.Stateful, static variables keep their values across chunks, while instance variables still reset.",
+   "x": "Database.Stateful preserves instance member variables between execute calls, which is how running totals are kept. Static variables are reset for each chunk either way, so the false statement swaps the two.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:batch-apex",
+    "kt:asynchronous-apex"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/batch-apex.md"
+  },
+  {
+   "id": "sf-000259",
+   "area": "development",
+   "t": "A batch class that implements Database.RaisesPlatformEvents publishes a BatchApexErrorEvent when start, execute or finish hits an unhandled exception.",
+   "f": "A batch class that implements Database.AllowsCallouts publishes a BatchApexErrorEvent when start, execute or finish hits an unhandled exception.",
+   "x": "Database.RaisesPlatformEvents is the opt-in for BatchApexErrorEvent, which carries the job ID, failed scope record IDs and exception details. Database.AllowsCallouts only permits HTTP callouts from the batch.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:batch-apex",
+    "kt:platform-events"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/batch-apex.md"
+  },
+  {
+   "id": "sf-000260",
+   "area": "development",
+   "t": "Lightning Web Security is the default for orgs created in Winter '23 or later; older orgs default to Lightning Locker unless LWS is enabled.",
+   "f": "Lightning Web Security is the default for orgs created in Winter '20 or later; older orgs default to Lightning Locker unless LWS is enabled.",
+   "x": "LWS became the default for orgs created from Winter '23 and has been GA for LWC and Aura in all orgs since Summer '23. Winter '20 predates that change, so the false statement gets the release wrong.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:lightning-web-components",
+    "kt:lightning-web-security"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/lightning-web-components.md"
+  },
+  {
+   "id": "sf-000261",
+   "area": "development",
+   "t": "In Lightning Web Components, records are read with @wire adapters such as getRecord, while createRecord and updateRecord are called as promise-based functions.",
+   "f": "In Lightning Web Components, records are read with @wire adapters such as getRecord, and createRecord and updateRecord are also wired with @wire.",
+   "x": "LDS reads use wire adapters from the lightning/ui*Api modules, but writes use imperative, promise-returning functions. Wiring is only for reads, so createRecord and updateRecord cannot be wired.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:lightning-web-components",
+    "kt:lightning-data-service"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/lightning-web-components.md"
+  },
+  {
+   "id": "sf-000262",
+   "area": "development",
+   "t": "An Apex method that queries Task or Event must be called imperatively from a Lightning web component, because UI API doesn't support those objects.",
+   "f": "An Apex method that queries Task or Event must be wired with @wire in a Lightning web component, because UI API doesn't support those objects.",
+   "x": "Only non-mutating @AuraEnabled(cacheable=true) methods can be wired; methods touching objects UI API lacks, such as Task and Event, must be called imperatively and return a promise.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:lightning-web-components",
+    "kt:apex",
+    "kt:lightning-data-service"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/lightning-web-components.md"
+  },
+  {
+   "id": "sf-000263",
+   "area": "devops-and-alm",
+   "t": "In Salesforce Code Analyzer, the --rule-selector flag defaults to Recommended when you run sf code-analyzer run without it.",
+   "f": "In Salesforce Code Analyzer, the --rule-selector flag defaults to all rules when you run sf code-analyzer run without it.",
+   "x": "The run command uses the Recommended selector unless you choose engines, severities, names or tags yourself. It does not run every one of the 500-plus built-in rules by default.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:code-analyzer",
+    "kt:salesforce-cli"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/code-analyzer.md"
+  },
+  {
+   "id": "sf-000264",
+   "area": "devops-and-alm",
+   "t": "Code Analyzer's --severity-threshold flag sets the lowest severity that makes the command exit non-zero, which lets a CI pipeline fail the build.",
+   "f": "Code Analyzer's --severity-threshold flag sets the lowest severity that is written to the output file, which filters what reviewers see.",
+   "x": "The threshold controls the exit code: any finding at or above it produces a non-zero exit so the pipeline fails. It is not an output filter; output files are controlled by --output-file.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:code-analyzer",
+    "kt:application-lifecycle-management"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/code-analyzer.md"
+  },
+  {
+   "id": "sf-000265",
+   "area": "devops-and-alm",
+   "t": "Code Analyzer v5 added the Flow Scanner engine, which audits Flows for security issues.",
+   "f": "Code Analyzer v5 added the RetireJS engine, which audits Flows for security issues.",
+   "x": "Flow Scanner, along with Regex, was new in v5 and is the engine that checks Flows. RetireJS instead checks third-party JavaScript libraries for known vulnerabilities.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:code-analyzer",
+    "kt:flow-builder"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/code-analyzer.md"
+  },
+  {
+   "id": "sf-000266",
+   "area": "integration",
+   "t": "Composite Batch is not transactional: each successful subrequest commits at once and isn't rolled back if a later subrequest fails.",
+   "f": "Composite Batch is fully transactional: all subrequests commit together and are rolled back if a later subrequest fails.",
+   "x": "Composite Batch runs up to 25 independent subrequests serially with no shared transaction, so earlier successes stay committed. Use sObject Tree or Composite with allOrNone when you need rollback.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:integration-architect-certification"
+   ],
+   "concepts": [
+    "kt:composite-api",
+    "kt:rest-api"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/composite-api.md"
+  },
+  {
+   "id": "sf-000267",
+   "area": "integration",
+   "t": "An sObject Tree request can create up to 200 records in total, across no more than five object types and trees at most five levels deep.",
+   "f": "An sObject Tree request can create up to 2,000 records in total, across no more than ten object types and trees at most ten levels deep.",
+   "x": "sObject Tree is capped at 200 records, five object types and five levels per request, and it is all-or-nothing. The 2,000 and ten figures are inflated.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:integration-architect-certification"
+   ],
+   "concepts": [
+    "kt:composite-api",
+    "kt:rest-api"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/composite-api.md"
+  },
+  {
+   "id": "sf-000268",
+   "area": "integration",
+   "t": "In sObject Collections, allOrNone defaults to false, so each record succeeds or fails independently unless rollback is requested.",
+   "f": "In sObject Collections, allOrNone defaults to true, so a single failed record rolls back the whole request unless partial success is requested.",
+   "x": "sObject Collections processes records independently by default and still returns HTTP 200 when some fail, so clients must check each result's success flag. Rollback only happens if allOrNone is set to true.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:integration-architect-certification"
+   ],
+   "concepts": [
+    "kt:composite-api",
+    "kt:rest-api"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/composite-api.md"
+  },
+  {
+   "id": "sf-000269",
+   "area": "integration",
+   "t": "Salesforce's decision guide notes that platform events and Change Data Capture both have a 3-day replay period and a 1 MB message limit.",
+   "f": "Salesforce's decision guide notes that platform events and Change Data Capture both have a 7-day replay period and a 10 MB message limit.",
+   "x": "The event-driven decision guide gives both mechanisms a three-day replay window and a 1 MB cap per message. Seven days and 10 MB overstate both limits.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [
+    "kt:integration-architect-certification"
+   ],
+   "concepts": [
+    "kt:event-driven-architecture",
+    "kt:platform-events",
+    "kt:change-data-capture"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/event-driven-architecture.md"
+  },
+  {
+   "id": "sf-000270",
+   "area": "integration",
+   "t": "An event relay that sends event bus messages to Amazon EventBridge is created in a stopped state and is started after the partner event source is activated.",
+   "f": "An event relay that sends event bus messages to Amazon EventBridge is created in a running state and starts before the partner event source is activated.",
+   "x": "A new event relay begins stopped; you activate the partner event source in EventBridge first and then start the relay. It does not begin running on creation.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [
+    "kt:integration-architect-certification"
+   ],
+   "concepts": [
+    "kt:event-driven-architecture",
+    "kt:platform-events"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/event-driven-architecture.md"
+  },
+  {
+   "id": "sf-000271",
+   "area": "integration",
+   "t": "In the fanout event pattern, all subscribers read the same message from a single queue, which makes it harder to confirm a given subscriber received it.",
+   "f": "In the fanout event pattern, each subscriber receives its own unique copy of the message, which makes it easy to confirm a given subscriber received it.",
+   "x": "Fanout shares one queued message among all subscribers, which is efficient for mass notifications but weak on per-subscriber confirmation. A unique copy per subscriber describes the publish/subscribe pattern instead.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [
+    "kt:integration-architect-certification"
+   ],
+   "concepts": [
+    "kt:event-driven-architecture",
+    "kt:integration-patterns"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/event-driven-architecture.md"
+  },
+  {
+   "id": "sf-000272",
+   "area": "integration",
+   "t": "If an outbound message's endpoint is unreachable, Salesforce retries with gaps capped at two hours and drops messages older than 24 hours.",
+   "f": "If an outbound message's endpoint is unreachable, Salesforce retries with gaps capped at two hours and drops messages older than 72 hours.",
+   "x": "Outbound messaging retries with exponential backoff (at most two hours apart) but gives up once a message is 24 hours old. The 72-hour figure is the replay window of platform events and CDC, not outbound messaging.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:outbound-messaging",
+    "kt:platform-events"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/outbound-messaging.md"
+  },
+  {
+   "id": "sf-000273",
+   "area": "integration",
+   "t": "One outbound messaging SOAP call can carry up to 100 notifications, and the listener replies with a single Ack that covers all of them.",
+   "f": "One outbound messaging SOAP call can carry up to 100 notifications, and the listener must reply with a separate Ack for each notification.",
+   "x": "The WSDL's notifications() call batches up to 100 notifications, and the listener returns one boolean Ack for the whole message. There is no per-notification acknowledgement.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:outbound-messaging"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/outbound-messaging.md"
+  },
+  {
+   "id": "sf-000274",
+   "area": "integration",
+   "t": "With Send Session ID enabled, an outbound message carries a session for the definition's User to send as, not for the user who changed the record.",
+   "f": "With Send Session ID enabled, an outbound message carries a session for the user who changed the record, not for the definition's User to send as.",
+   "x": "The session included for callbacks belongs to the User to send as configured on the outbound message, whose permissions also govern what data is sent. The user whose edit fired the message is not the session owner.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:outbound-messaging"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/outbound-messaging.md"
+  },
+  {
+   "id": "sf-000275",
+   "area": "public-sector-and-compliance",
+   "t": "Under the DoD Cloud Computing SRG, a FedRAMP Moderate or High authorization is treated as essentially sufficient for Impact Level 2.",
+   "f": "Under the DoD Cloud Computing SRG, a FedRAMP Moderate or High authorization is treated as essentially sufficient for Impact Level 4.",
+   "x": "At IL2 DoD reuses the FedRAMP Moderate or High authorization with no extra NIST control assessments. Higher levels such as IL4 add FedRAMP+ controls and parameter values on top.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:dod-cloud-computing-srg",
+    "kt:fedramp"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/dod-cloud-computing-srg.md"
+  },
+  {
+   "id": "sf-000276",
+   "area": "public-sector-and-compliance",
+   "t": "A DoD Provisional Authorization under the Cloud Computing SRG attaches to a specific cloud service offering rather than to the provider as a whole.",
+   "f": "A DoD Provisional Authorization under the Cloud Computing SRG attaches to the cloud provider as a whole rather than to a specific service offering.",
+   "x": "The DISA authorizing official grants each PA for one cloud service offering, so a provider's other offerings are not covered. That is why Salesforce's PAs apply only to the Government Cloud Plus environments.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:dod-cloud-computing-srg",
+    "kt:government-cloud-plus"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/dod-cloud-computing-srg.md"
+  },
+  {
+   "id": "sf-000277",
+   "area": "public-sector-and-compliance",
+   "t": "The first DoD Cloud Computing SRG collapsed the Cloud Security Model's six levels into four, keeping the numbers 2, 4, 5 and 6.",
+   "f": "The first DoD Cloud Computing SRG collapsed the Cloud Security Model's six levels into four, keeping the numbers 1, 3, 5 and 6.",
+   "x": "Old levels 1 and 3 were folded into the next level up, so the surviving impact levels are numbered 2, 4, 5 and 6. Levels 1 and 3 no longer exist.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:dod-cloud-computing-srg",
+    "kt:il4-and-il5"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/dod-cloud-computing-srg.md"
+  },
+  {
+   "id": "sf-000278",
+   "area": "public-sector-and-compliance",
+   "t": "If any single FIPS 199 security objective, such as integrity, is rated High, FedRAMP requires the entire cloud offering to meet the High baseline.",
+   "f": "If any single FIPS 199 security objective, such as integrity, is rated High, FedRAMP requires only that objective's controls to meet the High baseline.",
+   "x": "FedRAMP does not allow tailoring by security objective, so one High objective lifts the whole offering to High. Applying High controls to just that objective is exactly the tailoring FedRAMP disallows.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:fedramp-high",
+    "kt:fips-199"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/fedramp-high.md"
+  },
+  {
+   "id": "sf-000279",
+   "area": "public-sector-and-compliance",
+   "t": "In its draft Rev. 5 baselines, FedRAMP added 22 controls above the NIST high baseline for High, versus 17 above the moderate baseline for Moderate.",
+   "f": "In its draft Rev. 5 baselines, FedRAMP added 17 controls above the NIST high baseline for High, versus 22 above the moderate baseline for Moderate.",
+   "x": "The December 2021 draft added 22 FedRAMP-specific controls to High, 17 to Moderate and 1 to Low. The false version swaps the High and Moderate counts.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:fedramp-high",
+    "kt:nist-sp-800-53"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/fedramp-high.md"
+  },
+  {
+   "id": "sf-000280",
+   "area": "public-sector-and-compliance",
+   "t": "Federal agencies request Salesforce's FedRAMP High package through the FedRAMP PMO, while state and local bodies go through their Salesforce account executive.",
+   "f": "Federal agencies request Salesforce's FedRAMP High package through their Salesforce account executive, while state and local bodies go through the FedRAMP PMO.",
+   "x": "The FedRAMP PMO handles requests from .gov or .mil addresses, so federal agencies use that route. State, local and partner organizations instead ask their Salesforce account executive.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:fedramp-high",
+    "kt:government-cloud-plus"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/fedramp-high.md"
+  },
+  {
+   "id": "sf-000281",
+   "area": "public-sector-and-compliance",
+   "t": "The Revised 508 Standards incorporate WCAG 2.0 by reference, requiring its Level A and Level AA success criteria.",
+   "f": "The Revised 508 Standards incorporate WCAG 2.0 by reference, requiring its Level A, Level AA and Level AAA success criteria.",
+   "x": "Section 508's technical rules point to WCAG 2.0 and require conformance at Levels A and AA. Level AAA is not part of the requirement.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:section-508-accessibility",
+    "kt:wcag"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/section-508-accessibility.md"
+  },
+  {
+   "id": "sf-000282",
+   "area": "public-sector-and-compliance",
+   "t": "Salesforce's posted Accessibility Conformance Reports are contractual only when the contract explicitly includes them or an equivalent.",
+   "f": "Salesforce's posted Accessibility Conformance Reports are contractual for every customer once they are published for a product release.",
+   "x": "Publishing an ACR does not make it a commitment; an agency that wants one must negotiate it into the contract. Treating posted reports as automatically binding is a common procurement mistake.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:section-508-accessibility"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/section-508-accessibility.md"
+  },
+  {
+   "id": "sf-000283",
+   "area": "public-sector-and-compliance",
+   "t": "On a Lightning page, a right-sidebar template gives keyboard users a shorter path to the main content than a left-sidebar template.",
+   "f": "On a Lightning page, a left-sidebar template gives keyboard users a shorter path to the main content than a right-sidebar template.",
+   "x": "With a left sidebar, tab order runs through the sidebar before reaching the main content, which lengthens keyboard navigation. A right sidebar puts the main content earlier in the tab order.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:section-508-accessibility"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/section-508-accessibility.md"
+  },
+  {
+   "id": "sf-000284",
+   "area": "security-and-sharing",
+   "t": "Each custom object can have up to 10 Apex sharing reasons, and deleting a reason deletes all sharing on the object that uses it.",
+   "f": "Each custom object can have up to 25 Apex sharing reasons, and deleting a reason deletes all sharing on the object that uses it.",
+   "x": "The limit is 10 Apex sharing reasons per custom object, not 25. Because deleting a reason also deletes every share row using it, reasons should be removed with care.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:sharing-and-visibility-architect-certification"
+   ],
+   "concepts": [
+    "kt:apex-managed-sharing"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/apex-managed-sharing.md"
+  },
+  {
+   "id": "sf-000285",
+   "area": "security-and-sharing",
+   "t": "A share row inserted from Apex without a custom sharing reason gets the Manual row cause and is removed when the record owner changes.",
+   "f": "A share row inserted from Apex without a custom sharing reason gets an Apex row cause and is kept when the record owner changes.",
+   "x": "Without an Apex sharing reason, code-inserted shares default to the Manual cause and behave like user-managed sharing, which ownership changes wipe out. Only rows with a custom reason survive owner changes.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:sharing-and-visibility-architect-certification"
+   ],
+   "concepts": [
+    "kt:apex-managed-sharing"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/apex-managed-sharing.md"
+  },
+  {
+   "id": "sf-000286",
+   "area": "security-and-sharing",
+   "t": "Creating an Apex sharing reason requires the Author Apex permission, while adding or changing shares that use a reason requires Modify All Data.",
+   "f": "Creating an Apex sharing reason requires the Modify All Data permission, while adding or changing shares that use a reason requires Author Apex.",
+   "x": "Defining the reason is an Author Apex task, whereas managing the reason-based share rows themselves needs Modify All Data. The false statement swaps the two permissions.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:sharing-and-visibility-architect-certification"
+   ],
+   "concepts": [
+    "kt:apex-managed-sharing",
+    "kt:apex"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/apex-managed-sharing.md"
+  },
+  {
+   "id": "sf-000287",
+   "area": "security-and-sharing",
+   "t": "A new Sales Territories model starts in the Planning state, which grants no record access until the model is activated.",
+   "f": "A new Sales Territories model starts in the Active state, which grants record access to territory members as soon as it is saved.",
+   "x": "Planning is the default state for a new model and lets admins build and preview it without affecting access. Users get territory-based access only after the model is activated.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:sharing-and-visibility-architect-certification"
+   ],
+   "concepts": [
+    "kt:enterprise-territory-management"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/enterprise-territory-management.md"
+  },
+  {
+   "id": "sf-000288",
+   "area": "security-and-sharing",
+   "t": "An opportunity gets at most one territory, chosen by an Apex class that implements the OpportunityTerritory2AssignmentFilter interface.",
+   "f": "An opportunity gets up to three territories, chosen by an Apex class that implements the OpportunityTerritory2AssignmentFilter interface.",
+   "x": "Accounts can sit in several territories, but an opportunity is limited to one. The filter class picks it from the parent account's territories, using priority or custom logic when there are several.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:sharing-and-visibility-architect-certification"
+   ],
+   "concepts": [
+    "kt:enterprise-territory-management"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/enterprise-territory-management.md"
+  },
+  {
+   "id": "sf-000289",
+   "area": "security-and-sharing",
+   "t": "The Sales Territories implementation guide allows up to four territory models per org including clones, or two in Enterprise Edition.",
+   "f": "The Sales Territories implementation guide allows up to ten territory models per org including clones, or four in Enterprise Edition.",
+   "x": "The guide gives four models per org (two in Enterprise Edition), clones counted, with only one active at a time. Ten and four overstate those figures.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:sharing-and-visibility-architect-certification"
+   ],
+   "concepts": [
+    "kt:enterprise-territory-management"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/enterprise-territory-management.md"
+  },
+  {
+   "id": "sf-000290",
+   "area": "security-and-sharing",
+   "t": "Implicit sharing covers standard objects only; custom objects fall outside it and need other mechanisms to open record access.",
+   "f": "Implicit sharing covers standard and custom objects alike, so custom objects need no other mechanism to open record access.",
+   "x": "Salesforce's sharing guidance flags that implicit sharing does not reach custom objects, an edge case scenario questions hinge on. Assuming custom objects inherit implicit parent or child access is the mistake in the false version.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:sharing-and-visibility-architect-certification",
+    "kt:salesforce-sharing-model"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/sharing-and-visibility-architect-certification.md"
+  },
+  {
+   "id": "sf-000291",
+   "area": "security-and-sharing",
+   "t": "Salesforce sharing guidance advises nesting public groups no more than five levels deep and keeping role-hierarchy branches to 10 levels or fewer.",
+   "f": "Salesforce sharing guidance advises nesting public groups no more than 10 levels deep and keeping role-hierarchy branches to five levels or fewer.",
+   "x": "The design numbers are five levels for nested public groups and 10 levels for role-hierarchy branches. The false statement swaps them.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:sharing-and-visibility-architect-certification",
+    "kt:role-hierarchy"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/sharing-and-visibility-architect-certification.md"
+  },
+  {
+   "id": "sf-000292",
+   "area": "security-and-sharing",
+   "t": "Because of sharing recalculation cost, Salesforce guidance suggests keeping structural hierarchy changes to roughly once a quarter.",
+   "f": "Because of sharing recalculation cost, Salesforce guidance suggests keeping structural hierarchy changes to roughly once a week.",
+   "x": "Each structural hierarchy change triggers sharing recalculation, so the guidance treats it as a design constraint and suggests about quarterly changes. Weekly restructuring would cause far more recalculation than recommended.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:sharing-and-visibility-architect-certification",
+    "kt:sharing-recalculation",
+    "kt:role-hierarchy"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/sharing-and-visibility-architect-certification.md"
+  },
+  {
+   "id": "sf-000293",
+   "area": "security-and-sharing",
+   "t": "On the Defer Sharing Calculations page, suspending group membership calculation also suspends sharing rule calculation.",
+   "f": "On the Defer Sharing Calculations page, suspending group membership calculation leaves sharing rule calculation running.",
+   "x": "Pausing group membership calculation pauses sharing rule calculation along with it, and resuming group membership then calls for a full sharing rule recalculation. The two engines cannot be split that way, so sharing rules do not keep calculating on their own.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:sharing-and-visibility-architect-certification"
+   ],
+   "concepts": [
+    "kt:sharing-recalculation",
+    "kt:sharing-rules"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/sharing-recalculation.md"
+  },
+  {
+   "id": "sf-000294",
+   "area": "security-and-sharing",
+   "t": "The Defer Sharing Calculations permission is off by default, and an org gets it by contacting Salesforce.",
+   "f": "The Defer Sharing Calculations permission is off by default, and an admin turns it on under Sharing Settings in Setup.",
+   "x": "Deferring sharing calculations is not self-service: the permission starts disabled and Salesforce enables it on request. An admin cannot switch it on from Sharing Settings.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:sharing-and-visibility-architect-certification"
+   ],
+   "concepts": [
+    "kt:sharing-recalculation",
+    "kt:large-data-volumes"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/sharing-recalculation.md"
+  },
+  {
+   "id": "sf-000295",
+   "area": "security-and-sharing",
+   "t": "Apex sharing recalculation classes can be associated only with custom objects, whose org-wide default must not already be Public Read/Write.",
+   "f": "Apex sharing recalculation classes can be associated with standard or custom objects, whose org-wide default must not already be Public Read/Write.",
+   "x": "The Apex Sharing Recalculations setting exists only for custom objects that use Apex managed sharing. Standard objects cannot have a recalculation class attached.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:sharing-and-visibility-architect-certification"
+   ],
+   "concepts": [
+    "kt:sharing-recalculation",
+    "kt:apex-managed-sharing",
+    "kt:batch-apex",
+    "kt:organization-wide-defaults"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/sharing-recalculation.md"
+  },
+  {
+   "id": "sf-000296",
+   "area": "architecture-practice",
+   "t": "To qualify for the CTA review board, a candidate must already hold both the System Architect and the Application Architect credentials.",
+   "f": "To qualify for the CTA review board, a candidate must already hold either the System Architect or the Application Architect credential.",
+   "x": "Eligibility for the CTA board requires both architect credentials, each earned by stacking domain architect certifications. Holding only one of them is not enough to register.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:cta-review-board",
+    "kt:system-architect-certification",
+    "kt:application-architect-certification"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/cta-review-board.md"
+  },
+  {
+   "id": "sf-000297",
+   "area": "architecture-practice",
+   "t": "The Architect Review Board Evaluation is delivered online only, while the Technical Architect Review Board Exam can be taken online or in person.",
+   "f": "The Architect Review Board Evaluation can be taken online or in person, while the Technical Architect Review Board Exam is delivered online only.",
+   "x": "Trailhead lists the evaluation step as online only and the full exam as available online or in person. The false version swaps the delivery options of the two steps.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:cta-review-board",
+    "kt:certified-technical-architect"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/cta-review-board.md"
+  },
+  {
+   "id": "sf-000298",
+   "area": "architecture-practice",
+   "t": "Since 2023, CTA review board diagrams must be produced digitally with designated tools, and hand-drawn diagrams are no longer accepted.",
+   "f": "Since 2023, CTA review board diagrams may be produced digitally with designated tools or drawn by hand on flip charts.",
+   "x": "In 2023 Salesforce moved the board to digital artifacts built in designated tools and stopped accepting hand-drawn diagrams. Hand-drawn work is therefore no longer an option.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:cta-review-board"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/cta-review-board.md"
+  },
+  {
+   "id": "sf-000299",
+   "area": "architecture-practice",
+   "t": "The Salesforce Diagrams framework on the Architecture Center defines six diagram types, including capability map, system landscape and data model.",
+   "f": "The Salesforce Diagrams framework on the Architecture Center defines four diagram types, including capability map, system landscape and data model.",
+   "x": "The framework has six types: capability map, system landscape, solution architecture, roadmap, interaction/process/flow, and data model. Four undercounts it.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:salesforce-architecture-center",
+    "kt:salesforce-diagrams"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/salesforce-architecture-center.md"
+  },
+  {
+   "id": "sf-000300",
+   "area": "architecture-practice",
+   "t": "The Architecture Center's diagram templates are built for Lucidchart, and footer icons in template-based diagrams can become detached from their cards.",
+   "f": "The Architecture Center's diagram templates are built for Microsoft Visio, and footer icons in template-based diagrams can become detached from their cards.",
+   "x": "Salesforce provides its diagram templates for Lucidchart and warns that footer icons may come loose from their cards. Visio is not the target tool for these templates.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:salesforce-architecture-center",
+    "kt:salesforce-diagrams"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/salesforce-architecture-center.md"
+  },
+  {
+   "id": "sf-000301",
+   "area": "architecture-practice",
+   "t": "When the Architecture Center launched in beta in December 2020, it organized resources by four modes of architect work: design, deliver, govern and roadmap.",
+   "f": "When the Architecture Center launched in beta in December 2020, it organized resources by the five Well-Architected pillars, from Trust to Fairness.",
+   "x": "The original beta site grouped content by the design, deliver, govern and roadmap modes of architect work. The five-pillar Well-Architected structure is much later, shown on the site as of Winter '27.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:salesforce-architecture-center",
+    "kt:well-architected-framework"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/salesforce-architecture-center.md"
+  },
+  {
+   "id": "sf-000302",
+   "area": "architecture-practice",
+   "t": "In ATAM, a tradeoff point is a design element that several quality attributes are sensitive to at once, so tuning it helps one quality and hurts another.",
+   "f": "In ATAM, a tradeoff point is a design element where a change noticeably moves a single quality attribute without affecting the others.",
+   "x": "ATAM calls an element that moves one attribute a sensitivity point; a tradeoff point is one several attributes depend on simultaneously. The false statement describes a sensitivity point, not a tradeoff point.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [
+    "kt:certified-technical-architect"
+   ],
+   "concepts": [
+    "kt:solution-design-tradeoffs"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/solution-design-tradeoffs.md"
+  },
+  {
+   "id": "sf-000303",
+   "area": "architecture-practice",
+   "t": "The record-triggered automation decision guide points to an Apex trigger framework when an object has more than 30 automations or 5+ downstream DML.",
+   "f": "The record-triggered automation decision guide points to a hybrid of Flow plus invocable Apex when an object has more than 30 automations or 5+ downstream DML.",
+   "x": "The hybrid Flow plus invocable Apex approach is the guide's middle band of 15 to 30 automations with 2 to 4 downstream DML. Beyond 30 automations or at 5+ downstream DML, the guide recommends an Apex trigger framework.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [
+    "kt:certified-technical-architect"
+   ],
+   "concepts": [
+    "kt:solution-design-tradeoffs",
+    "kt:apex-triggers",
+    "kt:record-triggered-flow"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/solution-design-tradeoffs.md"
+  },
+  {
+   "id": "sf-000304",
+   "area": "architecture-practice",
+   "t": "The record-triggered automation decision guide advises one automation entry point per object, since mixing flows and triggers on it makes ordering unpredictable.",
+   "f": "The record-triggered automation decision guide advises mixing flows and triggers on each object, since splitting the logic makes ordering more predictable.",
+   "x": "Combining flows and triggers on the same object fragments ownership and makes execution order hard to predict, so the guide recommends a single entry point. The false statement reverses that advice.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [
+    "kt:certified-technical-architect"
+   ],
+   "concepts": [
+    "kt:solution-design-tradeoffs",
+    "kt:record-triggered-flow",
+    "kt:apex-triggers"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/solution-design-tradeoffs.md"
+  },
+  {
+   "id": "sf-000305",
+   "area": "automation",
+   "t": "In a record-triggered flow, adding a fault path to a failing element lets the triggering record change still complete even though the flow failed.",
+   "f": "In a record-triggered flow, adding a fault path to a failing element still blocks the triggering record change and shows the error to the user.",
+   "x": "A fault path marks the error as handled, so the triggering save goes through and earlier work is not undone automatically. Blocking the save with a message is what happens with no fault path, or when the path ends in a Custom Error element.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:flow-fault-handling",
+    "kt:record-triggered-flow",
+    "kt:transaction-control"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/flow-fault-handling.md"
+  },
+  {
+   "id": "sf-000306",
+   "area": "automation",
+   "t": "Each Update Records action in a Process Builder process costs one SOQL query plus one DML statement against the transaction's governor limits.",
+   "f": "Each Update Records action in a Process Builder process costs one DML statement only, with no SOQL query counted against the transaction's governor limits.",
+   "x": "Process limits count an Update Records action as both a query and a DML statement, while Create a Record or a quick action costs one DML statement. The false version drops the query and so understates the cost.",
+   "release": "Winter '27",
+   "featureStatus": "deprecated",
+   "certs": [],
+   "concepts": [
+    "kt:process-builder",
+    "kt:governor-limits"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/process-builder.md"
+  },
+  {
+   "id": "sf-000307",
+   "area": "automation",
+   "t": "Event processes in Process Builder evaluate platform event messages in replay-ID order, in batches of up to 2,000 messages, in their own transaction.",
+   "f": "Event processes in Process Builder evaluate platform event messages in replay-ID order, in batches of up to 200 messages, in their own transaction.",
+   "x": "Event-triggered processes take platform event messages asynchronously in batches as large as 2,000. The 200 figure understates the batch size.",
+   "release": "Winter '27",
+   "featureStatus": "deprecated",
+   "certs": [],
+   "concepts": [
+    "kt:process-builder",
+    "kt:platform-events"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/process-builder.md"
+  },
+  {
+   "id": "sf-000308",
+   "area": "automation",
+   "t": "The Migrate to Flow tool converts record change processes, but it does not convert event or invocable processes or processes that have scheduled actions.",
+   "f": "The Migrate to Flow tool converts record change, event and invocable processes, including processes that have scheduled actions.",
+   "x": "Only record change processes with supported actions are converted; event processes, invocable processes and anything with scheduled actions or field traversals must be rebuilt by hand. The false version claims the tool covers every process type.",
+   "release": "Winter '27",
+   "featureStatus": "deprecated",
+   "certs": [],
+   "concepts": [
+    "kt:process-builder",
+    "kt:record-triggered-flow"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/process-builder.md"
+  },
+  {
+   "id": "sf-000309",
+   "area": "clouds-and-products",
+   "t": "In the Slack Platform, messages, modals and canvases are available to every kind of app, while the App Home tab is limited to apps built with Bolt.",
+   "f": "In the Slack Platform, messages, App Home and canvases are available to every kind of app, while modals are limited to apps built with Bolt.",
+   "x": "Slack opens messages, modals and canvases to all apps but reserves the App Home surface for Bolt apps. The false version swaps App Home and modals.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:slack-platform"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/slack-platform.md"
+  },
+  {
+   "id": "sf-000310",
+   "area": "clouds-and-products",
+   "t": "The Slack Events API delivers at most 30,000 events per workspace per app per 60 minutes, then sends an app_rate_limited event.",
+   "f": "The Slack Events API delivers at most 3,000 events per workspace per app per 60 minutes, then sends an app_rate_limited event.",
+   "x": "The Events API ceiling is 30,000 events per workspace per app each hour; past that Slack signals app_rate_limited. The false figure is ten times too low.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:slack-platform",
+    "kt:slack-api-rate-limits"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/slack-platform.md"
+  },
+  {
+   "id": "sf-000311",
+   "area": "clouds-and-products",
+   "t": "The Apex SDK for Slack, which lets Apex define Slack apps and handle their events, is still labelled Beta in Salesforce documentation.",
+   "f": "The Apex SDK for Slack, which lets Apex define Slack apps and handle their events, is labelled generally available in Salesforce documentation.",
+   "x": "Salesforce marks the Apex SDK for Slack as Beta, so it can be discontinued without notice and production designs carry that risk. Describing it as GA is wrong.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:slack-platform",
+    "kt:apex"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/slack-platform.md"
+  },
+  {
+   "id": "sf-000312",
+   "area": "automation",
+   "t": "A time trigger can be added to a workflow rule only while the rule is inactive and has no pending actions in the time-based queue.",
+   "f": "A time trigger can be added to a workflow rule only while the rule is active and has no pending actions in the time-based queue.",
+   "x": "Salesforce requires the rule to be deactivated, with nothing queued and without the create-and-every-edit evaluation setting, before a time trigger can be added. The false version wrongly says the rule must be active.",
+   "release": "Winter '27",
+   "featureStatus": "deprecated",
+   "certs": [],
+   "concepts": [
+    "kt:workflow-rules"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/workflow-rules.md"
   }
  ]
 }

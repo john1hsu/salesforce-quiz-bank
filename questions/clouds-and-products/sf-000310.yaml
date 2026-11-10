@@ -1,0 +1,18 @@
+id: sf-000310
+product_area: clouds-and-products
+true_statement: The Slack Events API delivers at most 30,000 events per workspace per app per 60 minutes, then sends an app_rate_limited event.
+false_statement: The Slack Events API delivers at most 3,000 events per workspace per app per 60 minutes, then sends an app_rate_limited event.
+explanation: The Events API ceiling is 30,000 events per workspace per app each hour; past that Slack signals app_rate_limited. The false figure is ten times too low.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/slack-platform.md
+  commit: 3bed651e82b5943dc7a6f52de732338747658b9b
+  blob: e3683f9985e139e4fcc23a9d20f050f07b91a162
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:slack-platform
+- kt:slack-api-rate-limits
+difficulty: 2
+created: '2026-11-10'
+status: active

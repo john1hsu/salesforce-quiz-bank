@@ -1,0 +1,18 @@
+id: sf-000277
+product_area: public-sector-and-compliance
+true_statement: The first DoD Cloud Computing SRG collapsed the Cloud Security Model's six levels into four, keeping the numbers 2, 4, 5 and 6.
+false_statement: The first DoD Cloud Computing SRG collapsed the Cloud Security Model's six levels into four, keeping the numbers 1, 3, 5 and 6.
+explanation: Old levels 1 and 3 were folded into the next level up, so the surviving impact levels are numbered 2, 4, 5 and 6. Levels 1 and 3 no longer exist.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/dod-cloud-computing-srg.md
+  commit: 3bed651e82b5943dc7a6f52de732338747658b9b
+  blob: 2c2acefbede6db30e257a462648b23d3ca787910
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:dod-cloud-computing-srg
+- kt:il4-and-il5
+difficulty: 2
+created: '2026-11-10'
+status: active

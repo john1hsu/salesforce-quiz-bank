@@ -6,8 +6,8 @@ explanation: Asynchronous Apex gets the larger allowance of 200 queries, synchro
 source:
   repo: john1hsu/salesforce-knowledge-graph
   path: articles/development/soql.md
-  commit: 1a9626507b2858110c996adbfa985703bee41fd5
-  blob: 28b07950068e9c890c39c232ae547c6263312f64
+  commit: 3bed651e82b5943dc7a6f52de732338747658b9b
+  blob: 8a189e22ef61ec3b5f476f853eac3fd6e2d95d6b
 verified_release: Winter '27
 feature_status: current
 concepts:

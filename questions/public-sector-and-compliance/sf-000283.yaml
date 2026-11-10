@@ -1,0 +1,17 @@
+id: sf-000283
+product_area: public-sector-and-compliance
+true_statement: On a Lightning page, a right-sidebar template gives keyboard users a shorter path to the main content than a left-sidebar template.
+false_statement: On a Lightning page, a left-sidebar template gives keyboard users a shorter path to the main content than a right-sidebar template.
+explanation: With a left sidebar, tab order runs through the sidebar before reaching the main content, which lengthens keyboard navigation. A right sidebar puts the main content earlier in the tab order.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/section-508-accessibility.md
+  commit: 3bed651e82b5943dc7a6f52de732338747658b9b
+  blob: 85fb03d2123ed296d984ed8a90c2f61ffd870f67
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:section-508-accessibility
+difficulty: 2
+created: '2026-11-10'
+status: active

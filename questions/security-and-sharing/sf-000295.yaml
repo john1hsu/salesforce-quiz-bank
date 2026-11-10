@@ -1,0 +1,22 @@
+id: sf-000295
+product_area: security-and-sharing
+true_statement: Apex sharing recalculation classes can be associated only with custom objects, whose org-wide default must not already be Public Read/Write.
+false_statement: Apex sharing recalculation classes can be associated with standard or custom objects, whose org-wide default must not already be Public Read/Write.
+explanation: The Apex Sharing Recalculations setting exists only for custom objects that use Apex managed sharing. Standard objects cannot have a recalculation class attached.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/sharing-recalculation.md
+  commit: 3bed651e82b5943dc7a6f52de732338747658b9b
+  blob: 9ea181b281431b842d189909c984f084f7dcfa50
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:sharing-and-visibility-architect-certification
+concepts:
+- kt:sharing-recalculation
+- kt:apex-managed-sharing
+- kt:batch-apex
+- kt:organization-wide-defaults
+difficulty: 2
+created: '2026-11-10'
+status: active

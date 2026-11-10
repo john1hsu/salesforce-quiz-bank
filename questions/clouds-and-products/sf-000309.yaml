@@ -1,0 +1,17 @@
+id: sf-000309
+product_area: clouds-and-products
+true_statement: In the Slack Platform, messages, modals and canvases are available to every kind of app, while the App Home tab is limited to apps built with Bolt.
+false_statement: In the Slack Platform, messages, App Home and canvases are available to every kind of app, while modals are limited to apps built with Bolt.
+explanation: Slack opens messages, modals and canvases to all apps but reserves the App Home surface for Bolt apps. The false version swaps App Home and modals.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/slack-platform.md
+  commit: 3bed651e82b5943dc7a6f52de732338747658b9b
+  blob: e3683f9985e139e4fcc23a9d20f050f07b91a162
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:slack-platform
+difficulty: 2
+created: '2026-11-10'
+status: active

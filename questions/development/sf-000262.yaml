@@ -1,0 +1,19 @@
+id: sf-000262
+product_area: development
+true_statement: An Apex method that queries Task or Event must be called imperatively from a Lightning web component, because UI API doesn't support those objects.
+false_statement: An Apex method that queries Task or Event must be wired with @wire in a Lightning web component, because UI API doesn't support those objects.
+explanation: Only non-mutating @AuraEnabled(cacheable=true) methods can be wired; methods touching objects UI API lacks, such as Task and Event, must be called imperatively and return a promise.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/lightning-web-components.md
+  commit: 3bed651e82b5943dc7a6f52de732338747658b9b
+  blob: 2547a9d75872e071d26d90358cdb4e7962e3c77d
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:lightning-web-components
+- kt:apex
+- kt:lightning-data-service
+difficulty: 3
+created: '2026-11-10'
+status: active

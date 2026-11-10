@@ -1,0 +1,19 @@
+id: sf-000246
+product_area: data-cloud-and-ai
+true_statement: In the Data Cloud Consultant exam outline, data ingestion and modeling is the most heavily weighted section at 20%.
+false_statement: In the Data Cloud Consultant exam outline, identity resolution is the most heavily weighted section at 20%.
+explanation: Data ingestion and modeling carries 20%, the largest weight; identity resolution is weighted at 14%.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/data-cloud-consultant-certification.md
+  commit: 3bed651e82b5943dc7a6f52de732338747658b9b
+  blob: 79780154942fbb37db2e3842ac2db8cba7659998
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:data-cloud-consultant-certification
+- kt:identity-resolution
+- kt:data-model-objects
+difficulty: 2
+created: '2026-11-10'
+status: active

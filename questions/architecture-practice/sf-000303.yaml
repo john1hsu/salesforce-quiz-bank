@@ -1,0 +1,21 @@
+id: sf-000303
+product_area: architecture-practice
+true_statement: The record-triggered automation decision guide points to an Apex trigger framework when an object has more than 30 automations or 5+ downstream DML.
+false_statement: The record-triggered automation decision guide points to a hybrid of Flow plus invocable Apex when an object has more than 30 automations or 5+ downstream DML.
+explanation: The hybrid Flow plus invocable Apex approach is the guide's middle band of 15 to 30 automations with 2 to 4 downstream DML. Beyond 30 automations or at 5+ downstream DML, the guide recommends an Apex trigger framework.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/solution-design-tradeoffs.md
+  commit: 3bed651e82b5943dc7a6f52de732338747658b9b
+  blob: 1e5d33fe6dc6fcf3efd064ff1fba765be8ad99f1
+verified_release: Winter '27
+feature_status: concept
+certs:
+- kt:certified-technical-architect
+concepts:
+- kt:solution-design-tradeoffs
+- kt:apex-triggers
+- kt:record-triggered-flow
+difficulty: 3
+created: '2026-11-10'
+status: active

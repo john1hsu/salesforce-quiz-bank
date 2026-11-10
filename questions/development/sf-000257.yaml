@@ -1,0 +1,19 @@
+id: sf-000257
+product_area: development
+true_statement: An org can have 5 batch jobs queued or active at once, and up to 100 more can wait in Holding status in the Apex flex queue.
+false_statement: An org can have 25 batch jobs queued or active at once, and up to 1,000 more can wait in Holding status in the Apex flex queue.
+explanation: Batch Apex allows five queued or active jobs per org plus 100 held in the flex queue; once that queue is full, executeBatch throws a LimitException. The 25 and 1,000 figures are invented.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/batch-apex.md
+  commit: 3bed651e82b5943dc7a6f52de732338747658b9b
+  blob: 460a3c4378b5c86feacf3402c1d36695f94ef3ec
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:batch-apex
+- kt:apex-flex-queue
+- kt:governor-limits
+difficulty: 2
+created: '2026-11-10'
+status: active

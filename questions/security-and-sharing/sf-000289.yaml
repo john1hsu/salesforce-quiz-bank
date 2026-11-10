@@ -1,0 +1,19 @@
+id: sf-000289
+product_area: security-and-sharing
+true_statement: The Sales Territories implementation guide allows up to four territory models per org including clones, or two in Enterprise Edition.
+false_statement: The Sales Territories implementation guide allows up to ten territory models per org including clones, or four in Enterprise Edition.
+explanation: The guide gives four models per org (two in Enterprise Edition), clones counted, with only one active at a time. Ten and four overstate those figures.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/enterprise-territory-management.md
+  commit: 3bed651e82b5943dc7a6f52de732338747658b9b
+  blob: d0297cd325960870105f35dfbef9663467c45ad2
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:sharing-and-visibility-architect-certification
+concepts:
+- kt:enterprise-territory-management
+difficulty: 2
+created: '2026-11-10'
+status: active

@@ -1,0 +1,20 @@
+id: sf-000266
+product_area: integration
+true_statement: 'Composite Batch is not transactional: each successful subrequest commits at once and isn''t rolled back if a later subrequest fails.'
+false_statement: 'Composite Batch is fully transactional: all subrequests commit together and are rolled back if a later subrequest fails.'
+explanation: Composite Batch runs up to 25 independent subrequests serially with no shared transaction, so earlier successes stay committed. Use sObject Tree or Composite with allOrNone when you need rollback.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/composite-api.md
+  commit: 3bed651e82b5943dc7a6f52de732338747658b9b
+  blob: 8e67578a881b2a48f8e1b948305fc3cefbec0b25
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:integration-architect-certification
+concepts:
+- kt:composite-api
+- kt:rest-api
+difficulty: 2
+created: '2026-11-10'
+status: active

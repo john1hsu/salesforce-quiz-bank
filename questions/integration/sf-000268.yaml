@@ -1,0 +1,20 @@
+id: sf-000268
+product_area: integration
+true_statement: In sObject Collections, allOrNone defaults to false, so each record succeeds or fails independently unless rollback is requested.
+false_statement: In sObject Collections, allOrNone defaults to true, so a single failed record rolls back the whole request unless partial success is requested.
+explanation: sObject Collections processes records independently by default and still returns HTTP 200 when some fail, so clients must check each result's success flag. Rollback only happens if allOrNone is set to true.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/composite-api.md
+  commit: 3bed651e82b5943dc7a6f52de732338747658b9b
+  blob: 8e67578a881b2a48f8e1b948305fc3cefbec0b25
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:integration-architect-certification
+concepts:
+- kt:composite-api
+- kt:rest-api
+difficulty: 3
+created: '2026-11-10'
+status: active

@@ -1,0 +1,18 @@
+id: sf-000308
+product_area: automation
+true_statement: The Migrate to Flow tool converts record change processes, but it does not convert event or invocable processes or processes that have scheduled actions.
+false_statement: The Migrate to Flow tool converts record change, event and invocable processes, including processes that have scheduled actions.
+explanation: Only record change processes with supported actions are converted; event processes, invocable processes and anything with scheduled actions or field traversals must be rebuilt by hand. The false version claims the tool covers every process type.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/process-builder.md
+  commit: 3bed651e82b5943dc7a6f52de732338747658b9b
+  blob: 3b29382010eddf7a0897f16e85d599081e4b6c07
+verified_release: Winter '27
+feature_status: deprecated
+concepts:
+- kt:process-builder
+- kt:record-triggered-flow
+difficulty: 2
+created: '2026-11-10'
+status: active

@@ -1,0 +1,18 @@
+id: sf-000259
+product_area: development
+true_statement: A batch class that implements Database.RaisesPlatformEvents publishes a BatchApexErrorEvent when start, execute or finish hits an unhandled exception.
+false_statement: A batch class that implements Database.AllowsCallouts publishes a BatchApexErrorEvent when start, execute or finish hits an unhandled exception.
+explanation: Database.RaisesPlatformEvents is the opt-in for BatchApexErrorEvent, which carries the job ID, failed scope record IDs and exception details. Database.AllowsCallouts only permits HTTP callouts from the batch.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/batch-apex.md
+  commit: 3bed651e82b5943dc7a6f52de732338747658b9b
+  blob: 460a3c4378b5c86feacf3402c1d36695f94ef3ec
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:batch-apex
+- kt:platform-events
+difficulty: 2
+created: '2026-11-10'
+status: active

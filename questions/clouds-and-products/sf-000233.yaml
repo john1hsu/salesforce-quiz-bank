@@ -1,0 +1,18 @@
+id: sf-000233
+product_area: clouds-and-products
+true_statement: In a Field Service scheduling policy, work rules filter out ineligible candidates while service objectives rank the remaining candidates.
+false_statement: In a Field Service scheduling policy, service objectives filter out ineligible candidates while work rules rank the remaining candidates.
+explanation: Work rules are pass/fail filters such as skills, availability and territory; service objectives such as minimizing travel grade the survivors. The false version swaps their roles.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/field-service.md
+  commit: 3bed651e82b5943dc7a6f52de732338747658b9b
+  blob: 9c504b73a034a7406de77d5f1817634a84547349
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:field-service
+- kt:field-service-scheduling-policies
+difficulty: 2
+created: '2026-11-10'
+status: active

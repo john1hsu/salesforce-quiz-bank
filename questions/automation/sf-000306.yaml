@@ -1,0 +1,18 @@
+id: sf-000306
+product_area: automation
+true_statement: Each Update Records action in a Process Builder process costs one SOQL query plus one DML statement against the transaction's governor limits.
+false_statement: Each Update Records action in a Process Builder process costs one DML statement only, with no SOQL query counted against the transaction's governor limits.
+explanation: Process limits count an Update Records action as both a query and a DML statement, while Create a Record or a quick action costs one DML statement. The false version drops the query and so understates the cost.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/process-builder.md
+  commit: 3bed651e82b5943dc7a6f52de732338747658b9b
+  blob: 3b29382010eddf7a0897f16e85d599081e4b6c07
+verified_release: Winter '27
+feature_status: deprecated
+concepts:
+- kt:process-builder
+- kt:governor-limits
+difficulty: 2
+created: '2026-11-10'
+status: active

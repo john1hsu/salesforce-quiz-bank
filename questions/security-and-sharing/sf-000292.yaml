@@ -1,0 +1,19 @@
+id: sf-000292
+product_area: security-and-sharing
+true_statement: Because of sharing recalculation cost, Salesforce guidance suggests keeping structural hierarchy changes to roughly once a quarter.
+false_statement: Because of sharing recalculation cost, Salesforce guidance suggests keeping structural hierarchy changes to roughly once a week.
+explanation: Each structural hierarchy change triggers sharing recalculation, so the guidance treats it as a design constraint and suggests about quarterly changes. Weekly restructuring would cause far more recalculation than recommended.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/sharing-and-visibility-architect-certification.md
+  commit: 3bed651e82b5943dc7a6f52de732338747658b9b
+  blob: ec89e615b647d91922ea66f97302611c93e99d4a
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:sharing-and-visibility-architect-certification
+- kt:sharing-recalculation
+- kt:role-hierarchy
+difficulty: 3
+created: '2026-11-10'
+status: active

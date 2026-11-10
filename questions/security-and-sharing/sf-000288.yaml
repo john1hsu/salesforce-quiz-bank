@@ -1,0 +1,19 @@
+id: sf-000288
+product_area: security-and-sharing
+true_statement: An opportunity gets at most one territory, chosen by an Apex class that implements the OpportunityTerritory2AssignmentFilter interface.
+false_statement: An opportunity gets up to three territories, chosen by an Apex class that implements the OpportunityTerritory2AssignmentFilter interface.
+explanation: Accounts can sit in several territories, but an opportunity is limited to one. The filter class picks it from the parent account's territories, using priority or custom logic when there are several.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/enterprise-territory-management.md
+  commit: 3bed651e82b5943dc7a6f52de732338747658b9b
+  blob: d0297cd325960870105f35dfbef9663467c45ad2
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:sharing-and-visibility-architect-certification
+concepts:
+- kt:enterprise-territory-management
+difficulty: 2
+created: '2026-11-10'
+status: active

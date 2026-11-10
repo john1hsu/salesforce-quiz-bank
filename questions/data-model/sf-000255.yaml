@@ -1,0 +1,17 @@
+id: sf-000255
+product_area: data-model
+true_statement: Salesforce recommends keeping an org at no more than 200 record types, because beyond that they become hard to manage.
+false_statement: Salesforce recommends keeping an org at no more than 20 record types, because beyond that they become hard to manage.
+explanation: The record type limitations guidance puts the recommended ceiling at 200. Twenty understates it by a factor of ten.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/record-types.md
+  commit: 3bed651e82b5943dc7a6f52de732338747658b9b
+  blob: 8b36958f2aa165fd8afa542265be198d9942fa3e
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:record-types
+difficulty: 2
+created: '2026-11-10'
+status: active

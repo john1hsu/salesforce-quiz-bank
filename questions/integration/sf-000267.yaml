@@ -1,0 +1,20 @@
+id: sf-000267
+product_area: integration
+true_statement: An sObject Tree request can create up to 200 records in total, across no more than five object types and trees at most five levels deep.
+false_statement: An sObject Tree request can create up to 2,000 records in total, across no more than ten object types and trees at most ten levels deep.
+explanation: sObject Tree is capped at 200 records, five object types and five levels per request, and it is all-or-nothing. The 2,000 and ten figures are inflated.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/composite-api.md
+  commit: 3bed651e82b5943dc7a6f52de732338747658b9b
+  blob: 8e67578a881b2a48f8e1b948305fc3cefbec0b25
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:integration-architect-certification
+concepts:
+- kt:composite-api
+- kt:rest-api
+difficulty: 2
+created: '2026-11-10'
+status: active

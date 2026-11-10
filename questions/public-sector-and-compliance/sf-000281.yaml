@@ -1,0 +1,18 @@
+id: sf-000281
+product_area: public-sector-and-compliance
+true_statement: The Revised 508 Standards incorporate WCAG 2.0 by reference, requiring its Level A and Level AA success criteria.
+false_statement: The Revised 508 Standards incorporate WCAG 2.0 by reference, requiring its Level A, Level AA and Level AAA success criteria.
+explanation: Section 508's technical rules point to WCAG 2.0 and require conformance at Levels A and AA. Level AAA is not part of the requirement.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/section-508-accessibility.md
+  commit: 3bed651e82b5943dc7a6f52de732338747658b9b
+  blob: 85fb03d2123ed296d984ed8a90c2f61ffd870f67
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:section-508-accessibility
+- kt:wcag
+difficulty: 1
+created: '2026-11-10'
+status: active

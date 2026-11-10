@@ -1,0 +1,20 @@
+id: sf-000293
+product_area: security-and-sharing
+true_statement: On the Defer Sharing Calculations page, suspending group membership calculation also suspends sharing rule calculation.
+false_statement: On the Defer Sharing Calculations page, suspending group membership calculation leaves sharing rule calculation running.
+explanation: Pausing group membership calculation pauses sharing rule calculation along with it, and resuming group membership then calls for a full sharing rule recalculation. The two engines cannot be split that way, so sharing rules do not keep calculating on their own.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/sharing-recalculation.md
+  commit: 3bed651e82b5943dc7a6f52de732338747658b9b
+  blob: 9ea181b281431b842d189909c984f084f7dcfa50
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:sharing-and-visibility-architect-certification
+concepts:
+- kt:sharing-recalculation
+- kt:sharing-rules
+difficulty: 2
+created: '2026-11-10'
+status: active

@@ -1,0 +1,20 @@
+id: sf-000244
+product_area: data-cloud-and-ai
+true_statement: A segment-ready calculated insight must include the primary key of the object you segment on, such as Unified Individual, as a dimension.
+false_statement: A segment-ready calculated insight must include only a business key, such as an order number, as a dimension.
+explanation: To be usable in segmentation, an insight has to join the segment-on object and group by its primary key; grouping by just a business key is the common mistake.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/calculated-insights.md
+  commit: 3bed651e82b5943dc7a6f52de732338747658b9b
+  blob: 42d5fa8208d01bbde49a79f94d32c95260758e42
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:data-cloud-consultant-certification
+concepts:
+- kt:calculated-insights
+- kt:data-cloud-segmentation
+difficulty: 3
+created: '2026-11-10'
+status: active

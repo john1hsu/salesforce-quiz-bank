@@ -6,8 +6,8 @@ explanation: Screen flows default to user context, applying the launching user's
 source:
   repo: john1hsu/salesforce-knowledge-graph
   path: articles/automation/screen-flow.md
-  commit: ee7571c675638f9605db9044cd8e6d5432c21c41
-  blob: 5e72cd19b9d0250576908d5f269372e71261eb29
+  commit: 3bed651e82b5943dc7a6f52de732338747658b9b
+  blob: b296ccd3129ec25d648092c1936cef46152648ea
 verified_release: Winter '27
 feature_status: current
 concepts:

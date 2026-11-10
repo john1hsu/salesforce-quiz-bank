@@ -1,0 +1,19 @@
+id: sf-000287
+product_area: security-and-sharing
+true_statement: A new Sales Territories model starts in the Planning state, which grants no record access until the model is activated.
+false_statement: A new Sales Territories model starts in the Active state, which grants record access to territory members as soon as it is saved.
+explanation: Planning is the default state for a new model and lets admins build and preview it without affecting access. Users get territory-based access only after the model is activated.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/enterprise-territory-management.md
+  commit: 3bed651e82b5943dc7a6f52de732338747658b9b
+  blob: d0297cd325960870105f35dfbef9663467c45ad2
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:sharing-and-visibility-architect-certification
+concepts:
+- kt:enterprise-territory-management
+difficulty: 1
+created: '2026-11-10'
+status: active

@@ -1,0 +1,20 @@
+id: sf-000239
+product_area: clouds-and-products
+true_statement: In Agentforce Revenue Management, edits to pricing data take effect only after an admin runs Sync Pricing Data.
+false_statement: In Agentforce Revenue Management, edits to pricing data take effect only after an admin reactivates the pricing procedure.
+explanation: Pricing changes are applied once Sync Pricing Data is run; reactivating a pricing procedure is not the step the article names.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/revenue-cloud.md
+  commit: 3bed651e82b5943dc7a6f52de732338747658b9b
+  blob: e43952332f0b52686dc500b976210f231bc03833
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:revenue-management-consultant-certification
+concepts:
+- kt:revenue-cloud
+- kt:salesforce-pricing
+difficulty: 2
+created: '2026-11-10'
+status: active

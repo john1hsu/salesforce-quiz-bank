@@ -1,0 +1,17 @@
+id: sf-000273
+product_area: integration
+true_statement: One outbound messaging SOAP call can carry up to 100 notifications, and the listener replies with a single Ack that covers all of them.
+false_statement: One outbound messaging SOAP call can carry up to 100 notifications, and the listener must reply with a separate Ack for each notification.
+explanation: The WSDL's notifications() call batches up to 100 notifications, and the listener returns one boolean Ack for the whole message. There is no per-notification acknowledgement.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/outbound-messaging.md
+  commit: 3bed651e82b5943dc7a6f52de732338747658b9b
+  blob: 9ab4e3f0408a7084b217405706cfcd8d093e8ea7
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:outbound-messaging
+difficulty: 2
+created: '2026-11-10'
+status: active

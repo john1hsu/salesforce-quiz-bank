@@ -1,0 +1,20 @@
+id: sf-000294
+product_area: security-and-sharing
+true_statement: The Defer Sharing Calculations permission is off by default, and an org gets it by contacting Salesforce.
+false_statement: The Defer Sharing Calculations permission is off by default, and an admin turns it on under Sharing Settings in Setup.
+explanation: 'Deferring sharing calculations is not self-service: the permission starts disabled and Salesforce enables it on request. An admin cannot switch it on from Sharing Settings.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/sharing-recalculation.md
+  commit: 3bed651e82b5943dc7a6f52de732338747658b9b
+  blob: 9ea181b281431b842d189909c984f084f7dcfa50
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:sharing-and-visibility-architect-certification
+concepts:
+- kt:sharing-recalculation
+- kt:large-data-volumes
+difficulty: 2
+created: '2026-11-10'
+status: active

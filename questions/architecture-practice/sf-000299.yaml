@@ -1,0 +1,18 @@
+id: sf-000299
+product_area: architecture-practice
+true_statement: The Salesforce Diagrams framework on the Architecture Center defines six diagram types, including capability map, system landscape and data model.
+false_statement: The Salesforce Diagrams framework on the Architecture Center defines four diagram types, including capability map, system landscape and data model.
+explanation: 'The framework has six types: capability map, system landscape, solution architecture, roadmap, interaction/process/flow, and data model. Four undercounts it.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/salesforce-architecture-center.md
+  commit: 3bed651e82b5943dc7a6f52de732338747658b9b
+  blob: 82d86b712a23ec1dda5cbb05962234e1d985545c
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:salesforce-architecture-center
+- kt:salesforce-diagrams
+difficulty: 2
+created: '2026-11-10'
+status: active

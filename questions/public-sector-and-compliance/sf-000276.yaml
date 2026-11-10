@@ -1,0 +1,18 @@
+id: sf-000276
+product_area: public-sector-and-compliance
+true_statement: A DoD Provisional Authorization under the Cloud Computing SRG attaches to a specific cloud service offering rather than to the provider as a whole.
+false_statement: A DoD Provisional Authorization under the Cloud Computing SRG attaches to the cloud provider as a whole rather than to a specific service offering.
+explanation: The DISA authorizing official grants each PA for one cloud service offering, so a provider's other offerings are not covered. That is why Salesforce's PAs apply only to the Government Cloud Plus environments.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/dod-cloud-computing-srg.md
+  commit: 3bed651e82b5943dc7a6f52de732338747658b9b
+  blob: 2c2acefbede6db30e257a462648b23d3ca787910
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:dod-cloud-computing-srg
+- kt:government-cloud-plus
+difficulty: 2
+created: '2026-11-10'
+status: active

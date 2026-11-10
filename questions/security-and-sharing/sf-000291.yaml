@@ -1,0 +1,18 @@
+id: sf-000291
+product_area: security-and-sharing
+true_statement: Salesforce sharing guidance advises nesting public groups no more than five levels deep and keeping role-hierarchy branches to 10 levels or fewer.
+false_statement: Salesforce sharing guidance advises nesting public groups no more than 10 levels deep and keeping role-hierarchy branches to five levels or fewer.
+explanation: The design numbers are five levels for nested public groups and 10 levels for role-hierarchy branches. The false statement swaps them.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/sharing-and-visibility-architect-certification.md
+  commit: 3bed651e82b5943dc7a6f52de732338747658b9b
+  blob: ec89e615b647d91922ea66f97302611c93e99d4a
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:sharing-and-visibility-architect-certification
+- kt:role-hierarchy
+difficulty: 2
+created: '2026-11-10'
+status: active

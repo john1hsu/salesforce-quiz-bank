@@ -1,0 +1,20 @@
+id: sf-000251
+product_area: data-cloud-and-ai
+true_statement: A source record joins a unified profile if it meets any one match rule in the ruleset, but it must satisfy every criterion within that rule.
+false_statement: A source record joins a unified profile only if it meets every match rule in the ruleset, but it needs to satisfy just one criterion within each rule.
+explanation: Match rules are ORed while the criteria inside a rule are ANDed. That is why adding rules raises the consolidation rate and adding criteria to a rule lowers it; the false statement reverses both.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/identity-resolution.md
+  commit: 3bed651e82b5943dc7a6f52de732338747658b9b
+  blob: 2d2c0933586fe5ff9d7005eb68c7639f6eb248b7
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:data-cloud-consultant-certification
+concepts:
+- kt:identity-resolution
+- kt:data-cloud
+difficulty: 2
+created: '2026-11-10'
+status: active

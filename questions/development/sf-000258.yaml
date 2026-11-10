@@ -1,0 +1,18 @@
+id: sf-000258
+product_area: development
+true_statement: In a batch class that implements Database.Stateful, instance variables keep their values across chunks, while static variables still reset.
+false_statement: In a batch class that implements Database.Stateful, static variables keep their values across chunks, while instance variables still reset.
+explanation: Database.Stateful preserves instance member variables between execute calls, which is how running totals are kept. Static variables are reset for each chunk either way, so the false statement swaps the two.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/batch-apex.md
+  commit: 3bed651e82b5943dc7a6f52de732338747658b9b
+  blob: 460a3c4378b5c86feacf3402c1d36695f94ef3ec
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:batch-apex
+- kt:asynchronous-apex
+difficulty: 2
+created: '2026-11-10'
+status: active

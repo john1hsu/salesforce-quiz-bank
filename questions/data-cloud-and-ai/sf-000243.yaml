@@ -1,0 +1,21 @@
+id: sf-000243
+product_area: data-cloud-and-ai
+true_statement: Data 360 streaming insights can use only Count or Sum for their measures, with up to 5 measures each.
+false_statement: Data 360 streaming insights can use only Count or Average for their measures, with up to 5 measures each.
+explanation: Streaming insight measures are restricted to Count and Sum, capped at 5 per insight; Average is not one of the allowed aggregations.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/calculated-insights.md
+  commit: 3bed651e82b5943dc7a6f52de732338747658b9b
+  blob: 42d5fa8208d01bbde49a79f94d32c95260758e42
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:data-cloud-consultant-certification
+concepts:
+- kt:calculated-insights
+- kt:streaming-insights
+- kt:data-cloud-limits
+difficulty: 2
+created: '2026-11-10'
+status: active

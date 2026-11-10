@@ -1,0 +1,18 @@
+id: sf-000301
+product_area: architecture-practice
+true_statement: 'When the Architecture Center launched in beta in December 2020, it organized resources by four modes of architect work: design, deliver, govern and roadmap.'
+false_statement: When the Architecture Center launched in beta in December 2020, it organized resources by the five Well-Architected pillars, from Trust to Fairness.
+explanation: The original beta site grouped content by the design, deliver, govern and roadmap modes of architect work. The five-pillar Well-Architected structure is much later, shown on the site as of Winter '27.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/salesforce-architecture-center.md
+  commit: 3bed651e82b5943dc7a6f52de732338747658b9b
+  blob: 82d86b712a23ec1dda5cbb05962234e1d985545c
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:salesforce-architecture-center
+- kt:well-architected-framework
+difficulty: 3
+created: '2026-11-10'
+status: active

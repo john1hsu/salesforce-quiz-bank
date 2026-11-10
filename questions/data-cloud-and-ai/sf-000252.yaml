@@ -1,0 +1,20 @@
+id: sf-000252
+product_area: data-cloud-and-ai
+true_statement: An identity resolution ruleset ID can be at most four characters long and cannot be changed after it is set.
+false_statement: An identity resolution ruleset ID can be up to forty characters long and can be renamed at any time after it is set.
+explanation: The Trailhead module describes the optional ruleset ID as limited to four characters and fixed once saved. Both the forty-character length and the ability to rename it are wrong.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/identity-resolution.md
+  commit: 3bed651e82b5943dc7a6f52de732338747658b9b
+  blob: 2d2c0933586fe5ff9d7005eb68c7639f6eb248b7
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:data-cloud-consultant-certification
+concepts:
+- kt:identity-resolution
+- kt:data-cloud
+difficulty: 2
+created: '2026-11-10'
+status: active

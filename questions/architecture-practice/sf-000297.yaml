@@ -1,0 +1,18 @@
+id: sf-000297
+product_area: architecture-practice
+true_statement: The Architect Review Board Evaluation is delivered online only, while the Technical Architect Review Board Exam can be taken online or in person.
+false_statement: The Architect Review Board Evaluation can be taken online or in person, while the Technical Architect Review Board Exam is delivered online only.
+explanation: Trailhead lists the evaluation step as online only and the full exam as available online or in person. The false version swaps the delivery options of the two steps.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/cta-review-board.md
+  commit: 3bed651e82b5943dc7a6f52de732338747658b9b
+  blob: 90f2570680612d0e4b028f77f3dd9c7bdf9bd0b9
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:cta-review-board
+- kt:certified-technical-architect
+difficulty: 2
+created: '2026-11-10'
+status: active

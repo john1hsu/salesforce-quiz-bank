@@ -1,0 +1,21 @@
+id: sf-000304
+product_area: architecture-practice
+true_statement: The record-triggered automation decision guide advises one automation entry point per object, since mixing flows and triggers on it makes ordering unpredictable.
+false_statement: The record-triggered automation decision guide advises mixing flows and triggers on each object, since splitting the logic makes ordering more predictable.
+explanation: Combining flows and triggers on the same object fragments ownership and makes execution order hard to predict, so the guide recommends a single entry point. The false statement reverses that advice.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/solution-design-tradeoffs.md
+  commit: 3bed651e82b5943dc7a6f52de732338747658b9b
+  blob: 1e5d33fe6dc6fcf3efd064ff1fba765be8ad99f1
+verified_release: Winter '27
+feature_status: concept
+certs:
+- kt:certified-technical-architect
+concepts:
+- kt:solution-design-tradeoffs
+- kt:record-triggered-flow
+- kt:apex-triggers
+difficulty: 2
+created: '2026-11-10'
+status: active

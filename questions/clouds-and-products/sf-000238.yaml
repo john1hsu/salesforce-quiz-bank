@@ -1,0 +1,19 @@
+id: sf-000238
+product_area: clouds-and-products
+true_statement: Every CRM contact or lead synchronized through Marketing Cloud Connect counts as a contact in Contact Builder, even if it is never messaged.
+false_statement: Only CRM contacts or leads that are actually messaged after syncing through Marketing Cloud Connect count as contacts in Contact Builder.
+explanation: Synchronizing a record is enough for it to count as a Contact Builder contact, whether or not you ever send to it, which affects contact counts.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/marketing-cloud-engagement.md
+  commit: 3bed651e82b5943dc7a6f52de732338747658b9b
+  blob: 8fba4fcb31b4a4b789d222b1271c409a690a79c2
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:marketing-cloud-engagement
+- kt:marketing-cloud-connect
+- kt:contact-builder
+difficulty: 2
+created: '2026-11-10'
+status: active

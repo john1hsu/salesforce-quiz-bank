@@ -1,0 +1,18 @@
+id: sf-000265
+product_area: devops-and-alm
+true_statement: Code Analyzer v5 added the Flow Scanner engine, which audits Flows for security issues.
+false_statement: Code Analyzer v5 added the RetireJS engine, which audits Flows for security issues.
+explanation: Flow Scanner, along with Regex, was new in v5 and is the engine that checks Flows. RetireJS instead checks third-party JavaScript libraries for known vulnerabilities.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/code-analyzer.md
+  commit: 3bed651e82b5943dc7a6f52de732338747658b9b
+  blob: 477e152de68a69d93a3dbf3fcfe0bb146695b8c5
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:code-analyzer
+- kt:flow-builder
+difficulty: 1
+created: '2026-11-10'
+status: active

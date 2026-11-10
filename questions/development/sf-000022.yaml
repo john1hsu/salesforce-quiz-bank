@@ -6,8 +6,8 @@ explanation: The 50-job allowance applies to an ordinary synchronous transaction
 source:
   repo: john1hsu/salesforce-knowledge-graph
   path: articles/development/asynchronous-apex.md
-  commit: 10c815686f3ae95b6dc7f6a39c6d9dcad8708f34
-  blob: 887a94defb6ebeb06737bee7b5a7c8023546dddf
+  commit: 3bed651e82b5943dc7a6f52de732338747658b9b
+  blob: b1f2a5fd9a92ca425e18fbb4a889e54973141936
 verified_release: Winter '27
 feature_status: current
 concepts:

@@ -1,0 +1,19 @@
+id: sf-000305
+product_area: automation
+true_statement: In a record-triggered flow, adding a fault path to a failing element lets the triggering record change still complete even though the flow failed.
+false_statement: In a record-triggered flow, adding a fault path to a failing element still blocks the triggering record change and shows the error to the user.
+explanation: A fault path marks the error as handled, so the triggering save goes through and earlier work is not undone automatically. Blocking the save with a message is what happens with no fault path, or when the path ends in a Custom Error element.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/flow-fault-handling.md
+  commit: 3bed651e82b5943dc7a6f52de732338747658b9b
+  blob: cff4d0aa31d7bafb8d37295e31e39c441d8b9843
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:flow-fault-handling
+- kt:record-triggered-flow
+- kt:transaction-control
+difficulty: 2
+created: '2026-11-10'
+status: active

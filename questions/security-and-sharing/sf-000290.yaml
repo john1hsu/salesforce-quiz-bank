@@ -1,0 +1,18 @@
+id: sf-000290
+product_area: security-and-sharing
+true_statement: Implicit sharing covers standard objects only; custom objects fall outside it and need other mechanisms to open record access.
+false_statement: Implicit sharing covers standard and custom objects alike, so custom objects need no other mechanism to open record access.
+explanation: Salesforce's sharing guidance flags that implicit sharing does not reach custom objects, an edge case scenario questions hinge on. Assuming custom objects inherit implicit parent or child access is the mistake in the false version.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/sharing-and-visibility-architect-certification.md
+  commit: 3bed651e82b5943dc7a6f52de732338747658b9b
+  blob: ec89e615b647d91922ea66f97302611c93e99d4a
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:sharing-and-visibility-architect-certification
+- kt:salesforce-sharing-model
+difficulty: 2
+created: '2026-11-10'
+status: active

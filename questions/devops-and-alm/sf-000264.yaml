@@ -1,0 +1,18 @@
+id: sf-000264
+product_area: devops-and-alm
+true_statement: Code Analyzer's --severity-threshold flag sets the lowest severity that makes the command exit non-zero, which lets a CI pipeline fail the build.
+false_statement: Code Analyzer's --severity-threshold flag sets the lowest severity that is written to the output file, which filters what reviewers see.
+explanation: 'The threshold controls the exit code: any finding at or above it produces a non-zero exit so the pipeline fails. It is not an output filter; output files are controlled by --output-file.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/code-analyzer.md
+  commit: 3bed651e82b5943dc7a6f52de732338747658b9b
+  blob: 477e152de68a69d93a3dbf3fcfe0bb146695b8c5
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:code-analyzer
+- kt:application-lifecycle-management
+difficulty: 2
+created: '2026-11-10'
+status: active

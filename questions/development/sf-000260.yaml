@@ -1,0 +1,18 @@
+id: sf-000260
+product_area: development
+true_statement: Lightning Web Security is the default for orgs created in Winter '23 or later; older orgs default to Lightning Locker unless LWS is enabled.
+false_statement: Lightning Web Security is the default for orgs created in Winter '20 or later; older orgs default to Lightning Locker unless LWS is enabled.
+explanation: LWS became the default for orgs created from Winter '23 and has been GA for LWC and Aura in all orgs since Summer '23. Winter '20 predates that change, so the false statement gets the release wrong.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/lightning-web-components.md
+  commit: 3bed651e82b5943dc7a6f52de732338747658b9b
+  blob: 2547a9d75872e071d26d90358cdb4e7962e3c77d
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:lightning-web-components
+- kt:lightning-web-security
+difficulty: 2
+created: '2026-11-10'
+status: active

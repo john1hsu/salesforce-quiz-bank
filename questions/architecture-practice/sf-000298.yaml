@@ -1,0 +1,17 @@
+id: sf-000298
+product_area: architecture-practice
+true_statement: Since 2023, CTA review board diagrams must be produced digitally with designated tools, and hand-drawn diagrams are no longer accepted.
+false_statement: Since 2023, CTA review board diagrams may be produced digitally with designated tools or drawn by hand on flip charts.
+explanation: In 2023 Salesforce moved the board to digital artifacts built in designated tools and stopped accepting hand-drawn diagrams. Hand-drawn work is therefore no longer an option.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/cta-review-board.md
+  commit: 3bed651e82b5943dc7a6f52de732338747658b9b
+  blob: 90f2570680612d0e4b028f77f3dd9c7bdf9bd0b9
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:cta-review-board
+difficulty: 2
+created: '2026-11-10'
+status: active

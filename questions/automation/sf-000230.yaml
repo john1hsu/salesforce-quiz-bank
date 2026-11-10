@@ -1,0 +1,17 @@
+id: sf-000230
+product_area: automation
+true_statement: Salesforce stopped supporting workflow rules on December 31, 2025, but existing active rules keep executing without bug fixes.
+false_statement: Salesforce stopped supporting workflow rules on December 31, 2025, and existing active rules were automatically deactivated on that date.
+explanation: Since end of support, active workflow rules still run; Salesforce just no longer provides support or fixes for them. They were not switched off automatically.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/workflow-rules.md
+  commit: 3bed651e82b5943dc7a6f52de732338747658b9b
+  blob: 90cdcb5a9f83cb00ff6ca6169af9f5583f9e916d
+verified_release: Winter '27
+feature_status: deprecated
+concepts:
+- kt:workflow-rules
+difficulty: 2
+created: '2026-11-10'
+status: active

@@ -1,0 +1,17 @@
+id: sf-000312
+product_area: automation
+true_statement: A time trigger can be added to a workflow rule only while the rule is inactive and has no pending actions in the time-based queue.
+false_statement: A time trigger can be added to a workflow rule only while the rule is active and has no pending actions in the time-based queue.
+explanation: Salesforce requires the rule to be deactivated, with nothing queued and without the create-and-every-edit evaluation setting, before a time trigger can be added. The false version wrongly says the rule must be active.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/workflow-rules.md
+  commit: 3bed651e82b5943dc7a6f52de732338747658b9b
+  blob: 90cdcb5a9f83cb00ff6ca6169af9f5583f9e916d
+verified_release: Winter '27
+feature_status: deprecated
+concepts:
+- kt:workflow-rules
+difficulty: 2
+created: '2026-11-10'
+status: active

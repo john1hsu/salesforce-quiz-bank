@@ -1,0 +1,18 @@
+id: sf-000279
+product_area: public-sector-and-compliance
+true_statement: In its draft Rev. 5 baselines, FedRAMP added 22 controls above the NIST high baseline for High, versus 17 above the moderate baseline for Moderate.
+false_statement: In its draft Rev. 5 baselines, FedRAMP added 17 controls above the NIST high baseline for High, versus 22 above the moderate baseline for Moderate.
+explanation: The December 2021 draft added 22 FedRAMP-specific controls to High, 17 to Moderate and 1 to Low. The false version swaps the High and Moderate counts.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/fedramp-high.md
+  commit: 3bed651e82b5943dc7a6f52de732338747658b9b
+  blob: fe4d7231a5f5373e61e765bdd2bcedf1d0448f5a
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:fedramp-high
+- kt:nist-sp-800-53
+difficulty: 3
+created: '2026-11-10'
+status: active

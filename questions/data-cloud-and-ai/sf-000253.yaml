@@ -1,0 +1,21 @@
+id: sf-000253
+product_area: data-cloud-and-ai
+true_statement: Real-time identity resolution for Web and Mobile SDK data runs in milliseconds but treats fuzzy match criteria as exact.
+false_statement: Real-time identity resolution for Web and Mobile SDK data runs in milliseconds and applies fuzzy match criteria exactly as batch resolution does.
+explanation: 'Real-time matching trades fuzziness for speed: fuzzy criteria are evaluated as exact, with phone and email using Exact Normalized. Batch resolution is where fuzzy methods behave as configured.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/identity-resolution.md
+  commit: 3bed651e82b5943dc7a6f52de732338747658b9b
+  blob: 2d2c0933586fe5ff9d7005eb68c7639f6eb248b7
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:data-cloud-consultant-certification
+concepts:
+- kt:identity-resolution
+- kt:data-cloud
+- kt:agentforce
+difficulty: 3
+created: '2026-11-10'
+status: active

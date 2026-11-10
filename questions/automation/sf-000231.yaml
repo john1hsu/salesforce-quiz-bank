@@ -1,0 +1,18 @@
+id: sf-000231
+product_area: automation
+true_statement: The Migrate to Flow tool converts workflow rules whose only actions are same-record field updates into fast field update (before-save) flows.
+false_statement: The Migrate to Flow tool converts workflow rules whose only actions are same-record field updates into scheduled-path after-save flows.
+explanation: Rules limited to same-record field updates become before-save fast field update flows. Scheduled paths are where time-dependent actions map, not plain field updates.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/workflow-rules.md
+  commit: 3bed651e82b5943dc7a6f52de732338747658b9b
+  blob: 90cdcb5a9f83cb00ff6ca6169af9f5583f9e916d
+verified_release: Winter '27
+feature_status: deprecated
+concepts:
+- kt:workflow-rules
+- kt:record-triggered-flow
+difficulty: 3
+created: '2026-11-10'
+status: active

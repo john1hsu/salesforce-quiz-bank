@@ -1,0 +1,18 @@
+id: sf-000261
+product_area: development
+true_statement: In Lightning Web Components, records are read with @wire adapters such as getRecord, while createRecord and updateRecord are called as promise-based functions.
+false_statement: In Lightning Web Components, records are read with @wire adapters such as getRecord, and createRecord and updateRecord are also wired with @wire.
+explanation: LDS reads use wire adapters from the lightning/ui*Api modules, but writes use imperative, promise-returning functions. Wiring is only for reads, so createRecord and updateRecord cannot be wired.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/lightning-web-components.md
+  commit: 3bed651e82b5943dc7a6f52de732338747658b9b
+  blob: 2547a9d75872e071d26d90358cdb4e7962e3c77d
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:lightning-web-components
+- kt:lightning-data-service
+difficulty: 2
+created: '2026-11-10'
+status: active

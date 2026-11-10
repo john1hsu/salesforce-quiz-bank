@@ -6,8 +6,8 @@ explanation: Inbound means users arrive at Salesforce already authenticated by a
 source:
   repo: john1hsu/salesforce-knowledge-graph
   path: articles/identity/salesforce-identity.md
-  commit: 1a9626507b2858110c996adbfa985703bee41fd5
-  blob: 408ae63d487cdb21798c8b71af5b0e324614619b
+  commit: 3bed651e82b5943dc7a6f52de732338747658b9b
+  blob: 7359e7852032616001408bf37d6ad0ad726533fa
 verified_release: Winter '27
 feature_status: current
 certs:

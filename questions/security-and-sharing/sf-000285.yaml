@@ -1,0 +1,19 @@
+id: sf-000285
+product_area: security-and-sharing
+true_statement: A share row inserted from Apex without a custom sharing reason gets the Manual row cause and is removed when the record owner changes.
+false_statement: A share row inserted from Apex without a custom sharing reason gets an Apex row cause and is kept when the record owner changes.
+explanation: Without an Apex sharing reason, code-inserted shares default to the Manual cause and behave like user-managed sharing, which ownership changes wipe out. Only rows with a custom reason survive owner changes.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/apex-managed-sharing.md
+  commit: 3bed651e82b5943dc7a6f52de732338747658b9b
+  blob: 1a850cbec809d56e16f150c24980e630495397dc
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:sharing-and-visibility-architect-certification
+concepts:
+- kt:apex-managed-sharing
+difficulty: 3
+created: '2026-11-10'
+status: active

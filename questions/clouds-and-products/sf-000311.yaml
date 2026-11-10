@@ -1,0 +1,18 @@
+id: sf-000311
+product_area: clouds-and-products
+true_statement: The Apex SDK for Slack, which lets Apex define Slack apps and handle their events, is still labelled Beta in Salesforce documentation.
+false_statement: The Apex SDK for Slack, which lets Apex define Slack apps and handle their events, is labelled generally available in Salesforce documentation.
+explanation: Salesforce marks the Apex SDK for Slack as Beta, so it can be discontinued without notice and production designs carry that risk. Describing it as GA is wrong.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/slack-platform.md
+  commit: 3bed651e82b5943dc7a6f52de732338747658b9b
+  blob: e3683f9985e139e4fcc23a9d20f050f07b91a162
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:slack-platform
+- kt:apex
+difficulty: 2
+created: '2026-11-10'
+status: active

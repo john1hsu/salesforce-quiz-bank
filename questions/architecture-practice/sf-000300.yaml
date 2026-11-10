@@ -1,0 +1,18 @@
+id: sf-000300
+product_area: architecture-practice
+true_statement: The Architecture Center's diagram templates are built for Lucidchart, and footer icons in template-based diagrams can become detached from their cards.
+false_statement: The Architecture Center's diagram templates are built for Microsoft Visio, and footer icons in template-based diagrams can become detached from their cards.
+explanation: Salesforce provides its diagram templates for Lucidchart and warns that footer icons may come loose from their cards. Visio is not the target tool for these templates.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/salesforce-architecture-center.md
+  commit: 3bed651e82b5943dc7a6f52de732338747658b9b
+  blob: 82d86b712a23ec1dda5cbb05962234e1d985545c
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:salesforce-architecture-center
+- kt:salesforce-diagrams
+difficulty: 2
+created: '2026-11-10'
+status: active

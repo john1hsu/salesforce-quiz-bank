@@ -1,0 +1,17 @@
+id: sf-000245
+product_area: data-cloud-and-ai
+true_statement: The Data 360 Consultant prep module describes the exam as 60 questions with a 62% passing score.
+false_statement: The Data 360 Consultant prep module describes the exam as 65 questions with a 68% passing score.
+explanation: Trailhead's prep module lists 60 questions and a 62% pass mark; 65 questions and 68% do not match the module.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/data-cloud-consultant-certification.md
+  commit: 3bed651e82b5943dc7a6f52de732338747658b9b
+  blob: 79780154942fbb37db2e3842ac2db8cba7659998
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:data-cloud-consultant-certification
+difficulty: 2
+created: '2026-11-10'
+status: active

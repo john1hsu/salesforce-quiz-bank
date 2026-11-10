@@ -1,0 +1,17 @@
+id: sf-000234
+product_area: clouds-and-products
+true_statement: By default, Field Service appointment priority uses a 1-10 scale where 1 is the highest priority.
+false_statement: By default, Field Service appointment priority uses a 1-10 scale where 10 is the highest priority.
+explanation: The optimizer's default priority scale runs 1 to 10 with 1 as most important (a 1-100 scale is optional), so treating 10 as highest inverts it.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/field-service.md
+  commit: 3bed651e82b5943dc7a6f52de732338747658b9b
+  blob: 9c504b73a034a7406de77d5f1817634a84547349
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:field-service
+difficulty: 2
+created: '2026-11-10'
+status: active

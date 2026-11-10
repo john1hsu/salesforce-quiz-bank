@@ -1,0 +1,20 @@
+id: sf-000248
+product_area: data-cloud-and-ai
+true_statement: Data 360 data model object API names end in __dlm, while data lake object API names end in __dlo.
+false_statement: Data 360 data model object API names end in __dlo, while data lake object API names end in __dlm.
+explanation: DMOs use the __dlm suffix and DLOs use __dlo; the false version swaps them. DMO fields themselves end in __c.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/data-model-objects.md
+  commit: 3bed651e82b5943dc7a6f52de732338747658b9b
+  blob: 6bc7d903be09121229933e502f21b825f15b4386
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:data-cloud-consultant-certification
+concepts:
+- kt:data-model-objects
+- kt:data-lake-objects
+difficulty: 1
+created: '2026-11-10'
+status: active

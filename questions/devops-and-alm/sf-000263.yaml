@@ -1,0 +1,18 @@
+id: sf-000263
+product_area: devops-and-alm
+true_statement: In Salesforce Code Analyzer, the --rule-selector flag defaults to Recommended when you run sf code-analyzer run without it.
+false_statement: In Salesforce Code Analyzer, the --rule-selector flag defaults to all rules when you run sf code-analyzer run without it.
+explanation: The run command uses the Recommended selector unless you choose engines, severities, names or tags yourself. It does not run every one of the 500-plus built-in rules by default.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/code-analyzer.md
+  commit: 3bed651e82b5943dc7a6f52de732338747658b9b
+  blob: 477e152de68a69d93a3dbf3fcfe0bb146695b8c5
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:code-analyzer
+- kt:salesforce-cli
+difficulty: 2
+created: '2026-11-10'
+status: active

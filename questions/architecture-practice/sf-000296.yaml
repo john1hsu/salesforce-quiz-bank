@@ -1,0 +1,19 @@
+id: sf-000296
+product_area: architecture-practice
+true_statement: To qualify for the CTA review board, a candidate must already hold both the System Architect and the Application Architect credentials.
+false_statement: To qualify for the CTA review board, a candidate must already hold either the System Architect or the Application Architect credential.
+explanation: Eligibility for the CTA board requires both architect credentials, each earned by stacking domain architect certifications. Holding only one of them is not enough to register.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/cta-review-board.md
+  commit: 3bed651e82b5943dc7a6f52de732338747658b9b
+  blob: 90f2570680612d0e4b028f77f3dd9c7bdf9bd0b9
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:cta-review-board
+- kt:system-architect-certification
+- kt:application-architect-certification
+difficulty: 1
+created: '2026-11-10'
+status: active

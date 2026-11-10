@@ -1,0 +1,18 @@
+id: sf-000307
+product_area: automation
+true_statement: Event processes in Process Builder evaluate platform event messages in replay-ID order, in batches of up to 2,000 messages, in their own transaction.
+false_statement: Event processes in Process Builder evaluate platform event messages in replay-ID order, in batches of up to 200 messages, in their own transaction.
+explanation: Event-triggered processes take platform event messages asynchronously in batches as large as 2,000. The 200 figure understates the batch size.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/process-builder.md
+  commit: 3bed651e82b5943dc7a6f52de732338747658b9b
+  blob: 3b29382010eddf7a0897f16e85d599081e4b6c07
+verified_release: Winter '27
+feature_status: deprecated
+concepts:
+- kt:process-builder
+- kt:platform-events
+difficulty: 2
+created: '2026-11-10'
+status: active

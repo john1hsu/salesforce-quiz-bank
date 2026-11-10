@@ -1,0 +1,17 @@
+id: sf-000247
+product_area: data-cloud-and-ai
+true_statement: The Data 360 Consultant certification has no required prerequisite, though the prep module suggests earning the Salesforce Administrator credential first.
+false_statement: The Data 360 Consultant certification requires the Salesforce Administrator credential as a prerequisite before candidates can register.
+explanation: No prerequisite is mandatory; holding the Administrator credential is only recommended by the prep module.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/data-cloud-consultant-certification.md
+  commit: 3bed651e82b5943dc7a6f52de732338747658b9b
+  blob: 79780154942fbb37db2e3842ac2db8cba7659998
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:data-cloud-consultant-certification
+difficulty: 1
+created: '2026-11-10'
+status: active

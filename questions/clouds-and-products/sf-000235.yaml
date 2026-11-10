@@ -1,0 +1,19 @@
+id: sf-000235
+product_area: clouds-and-products
+true_statement: Field Service technicians log in to the Field Service mobile app through their org's My Domain.
+false_statement: Field Service technicians log in to the Field Service mobile app through their org's Experience Cloud site.
+explanation: The mobile app for iOS and Android signs workers in via the org's My Domain; an Experience Cloud site is not the login path the article describes.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/field-service.md
+  commit: 3bed651e82b5943dc7a6f52de732338747658b9b
+  blob: 9c504b73a034a7406de77d5f1817634a84547349
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:field-service
+- kt:field-service-mobile-app
+- kt:my-domain
+difficulty: 1
+created: '2026-11-10'
+status: active

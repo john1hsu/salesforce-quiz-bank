@@ -1,0 +1,17 @@
+id: sf-000282
+product_area: public-sector-and-compliance
+true_statement: Salesforce's posted Accessibility Conformance Reports are contractual only when the contract explicitly includes them or an equivalent.
+false_statement: Salesforce's posted Accessibility Conformance Reports are contractual for every customer once they are published for a product release.
+explanation: Publishing an ACR does not make it a commitment; an agency that wants one must negotiate it into the contract. Treating posted reports as automatically binding is a common procurement mistake.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/section-508-accessibility.md
+  commit: 3bed651e82b5943dc7a6f52de732338747658b9b
+  blob: 85fb03d2123ed296d984ed8a90c2f61ffd870f67
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:section-508-accessibility
+difficulty: 2
+created: '2026-11-10'
+status: active

@@ -1,0 +1,18 @@
+id: sf-000275
+product_area: public-sector-and-compliance
+true_statement: Under the DoD Cloud Computing SRG, a FedRAMP Moderate or High authorization is treated as essentially sufficient for Impact Level 2.
+false_statement: Under the DoD Cloud Computing SRG, a FedRAMP Moderate or High authorization is treated as essentially sufficient for Impact Level 4.
+explanation: At IL2 DoD reuses the FedRAMP Moderate or High authorization with no extra NIST control assessments. Higher levels such as IL4 add FedRAMP+ controls and parameter values on top.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/dod-cloud-computing-srg.md
+  commit: 3bed651e82b5943dc7a6f52de732338747658b9b
+  blob: 2c2acefbede6db30e257a462648b23d3ca787910
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:dod-cloud-computing-srg
+- kt:fedramp
+difficulty: 2
+created: '2026-11-10'
+status: active

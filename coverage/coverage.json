@@ -1,47 +1,50 @@
 {
  "totals": {
-  "active": 229
+  "active": 311
  },
  "areas": {
   "architecture-practice": {
-   "active": 24
+   "active": 33
   },
   "automation": {
-   "active": 17
+   "active": 24
   },
   "clouds-and-products": {
-   "active": 15
+   "active": 27
   },
   "data-cloud-and-ai": {
-   "active": 15
+   "active": 27
   },
   "data-model": {
-   "active": 18
+   "active": 21
   },
   "development": {
-   "active": 15
+   "active": 21
   },
   "devops-and-alm": {
-   "active": 29
+   "active": 32
   },
   "identity": {
    "active": 31
   },
   "integration": {
-   "active": 13
+   "active": 22
   },
   "platform-architecture": {
    "active": 24
   },
   "public-sector-and-compliance": {
-   "active": 15
+   "active": 24
   },
   "security-and-sharing": {
-   "active": 13
+   "active": 25
   }
  },
  "articles": {
   "articles/architecture-practice/archiving-strategy.md": {
+   "active": 3
+  },
+  "articles/architecture-practice/cta-review-board.md": {
    "active": 3
   },
   "articles/architecture-practice/data-architecture.md": {
@@ -54,6 +57,12 @@
    "active": 3
   },
   "articles/architecture-practice/salesforce-architect.md": {
+   "active": 3
+  },
+  "articles/architecture-practice/salesforce-architecture-center.md": {
+   "active": 3
+  },
+  "articles/architecture-practice/solution-design-tradeoffs.md": {
    "active": 3
   },
   "articles/architecture-practice/technical-debt-in-salesforce.md": {
@@ -74,10 +83,16 @@
   "articles/automation/flow-builder.md": {
    "active": 3
   },
+  "articles/automation/flow-fault-handling.md": {
+   "active": 1
+  },
   "articles/automation/flow-orchestrator.md": {
    "active": 3
   },
   "articles/automation/process-automation.md": {
+   "active": 3
+  },
+  "articles/automation/process-builder.md": {
    "active": 3
   },
   "articles/automation/record-triggered-flow.md": {
@@ -86,13 +101,25 @@
   "articles/automation/screen-flow.md": {
    "active": 3
   },
+  "articles/automation/workflow-rules.md": {
+   "active": 3
+  },
   "articles/clouds-and-products/experience-cloud.md": {
+   "active": 3
+  },
+  "articles/clouds-and-products/field-service.md": {
    "active": 3
   },
   "articles/clouds-and-products/knowledge-base.md": {
    "active": 3
   },
+  "articles/clouds-and-products/marketing-cloud-engagement.md": {
+   "active": 3
+  },
   "articles/clouds-and-products/omni-channel.md": {
+   "active": 3
+  },
+  "articles/clouds-and-products/revenue-cloud.md": {
    "active": 3
   },
   "articles/clouds-and-products/sales-cloud.md": {
@@ -101,16 +128,31 @@
   "articles/clouds-and-products/service-cloud.md": {
    "active": 3
   },
+  "articles/clouds-and-products/slack-platform.md": {
+   "active": 3
+  },
   "articles/data-cloud-and-ai/agent-development-lifecycle.md": {
    "active": 3
   },
   "articles/data-cloud-and-ai/agentforce.md": {
    "active": 3
   },
+  "articles/data-cloud-and-ai/calculated-insights.md": {
+   "active": 3
+  },
+  "articles/data-cloud-and-ai/data-cloud-consultant-certification.md": {
+   "active": 3
+  },
   "articles/data-cloud-and-ai/data-cloud.md": {
    "active": 3
   },
+  "articles/data-cloud-and-ai/data-model-objects.md": {
+   "active": 3
+  },
   "articles/data-cloud-and-ai/einstein-trust-layer.md": {
+   "active": 3
+  },
+  "articles/data-cloud-and-ai/identity-resolution.md": {
    "active": 3
   },
   "articles/data-cloud-and-ai/prompt-builder.md": {
@@ -131,6 +173,9 @@
   "articles/data-model/person-accounts.md": {
    "active": 3
   },
+  "articles/data-model/record-types.md": {
+   "active": 3
+  },
   "articles/data-model/roll-up-summary-field.md": {
    "active": 3
   },
@@ -146,6 +191,12 @@
   "articles/development/asynchronous-apex.md": {
    "active": 3
   },
+  "articles/development/batch-apex.md": {
+   "active": 3
+  },
+  "articles/development/lightning-web-components.md": {
+   "active": 3
+  },
   "articles/development/soql.md": {
    "active": 3
   },
@@ -153,6 +204,9 @@
    "active": 3
   },
   "articles/devops-and-alm/change-sets.md": {
+   "active": 3
+  },
+  "articles/devops-and-alm/code-analyzer.md": {
    "active": 3
   },
   "articles/devops-and-alm/dev-hub.md": {
@@ -221,7 +275,16 @@
   "articles/integration/change-data-capture.md": {
    "active": 3
   },
+  "articles/integration/composite-api.md": {
+   "active": 3
+  },
+  "articles/integration/event-driven-architecture.md": {
+   "active": 3
+  },
   "articles/integration/named-credentials.md": {
+   "active": 3
+  },
+  "articles/integration/outbound-messaging.md": {
    "active": 3
   },
   "articles/integration/platform-events.md": {
@@ -257,6 +320,12 @@
   "articles/public-sector-and-compliance/data-residency.md": {
    "active": 3
   },
+  "articles/public-sector-and-compliance/dod-cloud-computing-srg.md": {
+   "active": 3
+  },
+  "articles/public-sector-and-compliance/fedramp-high.md": {
+   "active": 3
+  },
   "articles/public-sector-and-compliance/fedramp.md": {
    "active": 3
   },
@@ -269,6 +338,15 @@
   "articles/public-sector-and-compliance/public-sector-solutions.md": {
    "active": 3
   },
+  "articles/public-sector-and-compliance/section-508-accessibility.md": {
+   "active": 3
+  },
+  "articles/security-and-sharing/apex-managed-sharing.md": {
+   "active": 3
+  },
+  "articles/security-and-sharing/enterprise-territory-management.md": {
+   "active": 3
+  },
   "articles/security-and-sharing/organization-wide-defaults.md": {
    "active": 1
   },
@@ -279,6 +357,12 @@
    "active": 3
   },
   "articles/security-and-sharing/salesforce-sharing-model.md": {
+   "active": 3
+  },
+  "articles/security-and-sharing/sharing-and-visibility-architect-certification.md": {
+   "active": 3
+  },
+  "articles/security-and-sharing/sharing-recalculation.md": {
    "active": 3
   },
   "articles/security-and-sharing/sharing-rules.md": {

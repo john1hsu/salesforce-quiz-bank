@@ -1,0 +1,20 @@
+id: sf-000270
+product_area: integration
+true_statement: An event relay that sends event bus messages to Amazon EventBridge is created in a stopped state and is started after the partner event source is activated.
+false_statement: An event relay that sends event bus messages to Amazon EventBridge is created in a running state and starts before the partner event source is activated.
+explanation: A new event relay begins stopped; you activate the partner event source in EventBridge first and then start the relay. It does not begin running on creation.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/event-driven-architecture.md
+  commit: 3bed651e82b5943dc7a6f52de732338747658b9b
+  blob: 64835179d4c021d6d70aa4e08fc8614700121402
+verified_release: Winter '27
+feature_status: concept
+certs:
+- kt:integration-architect-certification
+concepts:
+- kt:event-driven-architecture
+- kt:platform-events
+difficulty: 3
+created: '2026-11-10'
+status: active

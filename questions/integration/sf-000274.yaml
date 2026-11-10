@@ -1,0 +1,17 @@
+id: sf-000274
+product_area: integration
+true_statement: With Send Session ID enabled, an outbound message carries a session for the definition's User to send as, not for the user who changed the record.
+false_statement: With Send Session ID enabled, an outbound message carries a session for the user who changed the record, not for the definition's User to send as.
+explanation: The session included for callbacks belongs to the User to send as configured on the outbound message, whose permissions also govern what data is sent. The user whose edit fired the message is not the session owner.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/outbound-messaging.md
+  commit: 3bed651e82b5943dc7a6f52de732338747658b9b
+  blob: 9ab4e3f0408a7084b217405706cfcd8d093e8ea7
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:outbound-messaging
+difficulty: 3
+created: '2026-11-10'
+status: active

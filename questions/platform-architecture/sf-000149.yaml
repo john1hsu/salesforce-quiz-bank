@@ -6,8 +6,8 @@ explanation: A callout drops FOR UPDATE locks and logs a FOR_UPDATE_LOCKS_RELEAS
 source:
   repo: john1hsu/salesforce-knowledge-graph
   path: articles/platform-architecture/record-locking.md
-  commit: 1a9626507b2858110c996adbfa985703bee41fd5
-  blob: a1bfd58571dd2e3e4bcf995bb3573c55d38772b8
+  commit: 3bed651e82b5943dc7a6f52de732338747658b9b
+  blob: 9d2cbb847859b6e750e4764a25416d4e7c389219
 verified_release: Winter '27
 feature_status: current
 concepts:

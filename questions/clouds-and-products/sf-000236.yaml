@@ -1,0 +1,18 @@
+id: sf-000236
+product_area: clouds-and-products
+true_statement: In Marketing Cloud Engagement, an Automation Studio SQL query activity is deactivated automatically after 24 consecutive failures.
+false_statement: In Marketing Cloud Engagement, an Automation Studio SQL query activity is deactivated automatically after 10 consecutive failures.
+explanation: Query activities are switched off after 24 failures in a row, not 10, so monitoring failing automations matters before they silently stop.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/marketing-cloud-engagement.md
+  commit: 3bed651e82b5943dc7a6f52de732338747658b9b
+  blob: 8fba4fcb31b4a4b789d222b1271c409a690a79c2
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:marketing-cloud-engagement
+- kt:automation-studio
+difficulty: 2
+created: '2026-11-10'
+status: active

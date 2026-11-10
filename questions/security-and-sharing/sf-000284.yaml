@@ -1,0 +1,19 @@
+id: sf-000284
+product_area: security-and-sharing
+true_statement: Each custom object can have up to 10 Apex sharing reasons, and deleting a reason deletes all sharing on the object that uses it.
+false_statement: Each custom object can have up to 25 Apex sharing reasons, and deleting a reason deletes all sharing on the object that uses it.
+explanation: The limit is 10 Apex sharing reasons per custom object, not 25. Because deleting a reason also deletes every share row using it, reasons should be removed with care.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/apex-managed-sharing.md
+  commit: 3bed651e82b5943dc7a6f52de732338747658b9b
+  blob: 1a850cbec809d56e16f150c24980e630495397dc
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:sharing-and-visibility-architect-certification
+concepts:
+- kt:apex-managed-sharing
+difficulty: 2
+created: '2026-11-10'
+status: active

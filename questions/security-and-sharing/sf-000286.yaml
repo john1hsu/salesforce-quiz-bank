@@ -1,0 +1,20 @@
+id: sf-000286
+product_area: security-and-sharing
+true_statement: Creating an Apex sharing reason requires the Author Apex permission, while adding or changing shares that use a reason requires Modify All Data.
+false_statement: Creating an Apex sharing reason requires the Modify All Data permission, while adding or changing shares that use a reason requires Author Apex.
+explanation: Defining the reason is an Author Apex task, whereas managing the reason-based share rows themselves needs Modify All Data. The false statement swaps the two permissions.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/apex-managed-sharing.md
+  commit: 3bed651e82b5943dc7a6f52de732338747658b9b
+  blob: 1a850cbec809d56e16f150c24980e630495397dc
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:sharing-and-visibility-architect-certification
+concepts:
+- kt:apex-managed-sharing
+- kt:apex
+difficulty: 2
+created: '2026-11-10'
+status: active
