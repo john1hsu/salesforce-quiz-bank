@@ -34,7 +34,7 @@ retired_reason: ...               # optional, on retired pairs
 | --- | --- | --- |
 | active | Verified against the current release and the article's latest version | Yes |
 | stale | A newer release shipped, or the source article changed, since the pair was verified | Only with `--include-stale` |
-| retired | The fact changed (a newer pair `supersedes` it) or the feature/article is gone | No |
+| retired | The fact changed (a newer pair `supersedes` it), the feature/article is gone, or the pair repeated a fact another pair already tests | No |
 
 The **current release** is the newest `release` stamped on any salesforce-knowledge-graph article. That repo re-verifies each article against the new release notes, so a pair is refreshed only after its article has been.
 
@@ -45,10 +45,11 @@ The **current release** is the newest `release` stamped on any salesforce-knowle
 | Schema | A required field is missing, malformed or unknown |
 | Unique ID | An ID repeats, or the file name or folder doesn't match |
 | Duplicate | A statement closely matches one in another non-retired pair |
+| Same fact | Two non-retired pairs, from any articles, have true statements that state one fact in different words: most of their words match, or they share their numbers and most of the shorter statement's words |
 | Pair quality | The two statements are identical or differ only by negation |
 | Explanation | Shorter than 60 characters |
 | Statement form | A statement is a question, under 20 or over 280 characters |
-| Source | Repo, path, commit or blob is malformed; with `--source`, the article is missing, its domain differs, or an active pair's article changed |
+| Source | Repo, path, commit or blob is malformed; with `--source`, the article's domain differs, or an active pair's article is missing or changed (run `refresh.py mark-stale` first; stale pairs are exempt because they are waiting to be refreshed or retired) |
 | Release tag | `verified_release` or `feature_status` is missing or invalid |
 | Supersedes | Points to an ID that is missing or not retired |
 | Exam-like wording | "Which of the following", "Choose two", exam case companies such as Universal Containers or Cloud Kicks |

@@ -1,6 +1,7 @@
 {
  "totals": {
-  "active": 311
+  "active": 309,
+  "retired": 2
  },
  "areas": {
   "architecture-practice": {
@@ -19,7 +20,8 @@
    "active": 21
   },
   "development": {
-   "active": 21
+   "active": 20,
+   "retired": 1
   },
   "devops-and-alm": {
    "active": 32
@@ -37,7 +39,8 @@
    "active": 24
   },
   "security-and-sharing": {
-   "active": 25
+   "active": 24,
+   "retired": 1
   }
  },
  "articles": {
@@ -198,7 +201,8 @@
    "active": 3
   },
   "articles/development/soql.md": {
-   "active": 3
+   "active": 2,
+   "retired": 1
   },
   "articles/devops-and-alm/application-lifecycle-management.md": {
    "active": 3
@@ -360,7 +364,8 @@
    "active": 3
   },
   "articles/security-and-sharing/sharing-and-visibility-architect-certification.md": {
-   "active": 3
+   "active": 2,
+   "retired": 1
   },
   "articles/security-and-sharing/sharing-recalculation.md": {
    "active": 3

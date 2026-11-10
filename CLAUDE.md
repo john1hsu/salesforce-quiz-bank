@@ -7,16 +7,19 @@ This repo is a bank of paired true/false questions generated from [john1hsu/sale
 ```bash
 git pull --rebase origin main
 rm -rf .source && git clone --depth 1 https://github.com/john1hsu/salesforce-knowledge-graph .source/salesforce-knowledge-graph
-python3 scripts/validate.py --source .source/salesforce-knowledge-graph   # must print OK; fix the repo first if not
+python3 scripts/validate.py   # the repo's own checks, without the source; must print OK; fix the repo first if not
 ```
+
+Don't pass `--source` here: source articles change between runs, and step 2 is what handles that.
 
 ## 2. Mark stale pairs
 
 ```bash
 python3 scripts/refresh.py mark-stale
+python3 scripts/validate.py --source .source/salesforce-knowledge-graph   # must print OK now; fix the repo first if not
 ```
 
-This marks active pairs stale when they were verified for an older release than the current one, or when their source article changed since they were verified (drift). The current release is the newest `release` on any source article.
+`mark-stale` marks active pairs stale when they were verified for an older release than the current one, when their source article changed since they were verified (drift), or when the article was removed or renamed. The current release is the newest `release` on any source article. Always run it before validating against the source: a changed or missing article is an error on an active pair, but expected on a stale one that is waiting for step 4a.
 
 ## 3. Pick this run's work
 
@@ -48,7 +51,7 @@ If the article now says something that makes the explanation wrong but both stat
 
 ## 4b. Write new pairs
 
-Read the whole article (`.source/salesforce-knowledge-graph/<path>`). Check `existing_pairs_for_article` so you don't repeat a fact. Write `n` pairs to a JSON file outside the repo (the scratchpad):
+Read the whole article (`.source/salesforce-knowledge-graph/<path>`). Check `existing_pairs_for_article` and `related_pairs_in_other_articles` so you don't repeat a fact: the second list holds the true statements already written from neighbouring articles, and a fact any of them tests is taken, even if this article words it differently. Write `n` pairs to a JSON file outside the repo (the scratchpad):
 
 ```json
 {"article": "articles/<domain>/<slug>.md",
@@ -58,7 +61,7 @@ Read the whole article (`.source/salesforce-knowledge-graph/<path>`). Check `exi
 
 Rules for each pair:
 - **Grounding:** every pair must be answerable from this article alone. Don't add facts from memory, even true ones.
-- **One fact per pair**, and a different fact for each pair in the run. Prefer facts a practitioner needs: limits, defaults, which feature does what, editions, permissions, lifecycle, trade-offs.
+- **One fact per pair**, and a different fact for each pair in the run and from every pair already in the bank, whichever article it came from. Prefer facts a practitioner needs: limits, defaults, which feature does what, editions, permissions, lifecycle, trade-offs.
 - **Plausible false twin:** change a limit, a default, an edition, a permission, a scope, or which feature does the job (for example sharing rules vs. role hierarchy). Never make the false statement by just adding "not". Keep the wording otherwise parallel so the reader must know the fact.
 - **Statements:** declarative, 20–280 characters, readable on a phone card. No exam phrasing ("Which of the following", "Choose two") and no exam case companies (Universal Containers, Cloud Kicks).
 - **Explanation:** 1–3 sentences saying why the true statement is true and what's wrong with the false one, in your own words.
@@ -84,6 +87,7 @@ git pull --rebase origin main && git push origin main
 
 - Make **one** commit for the whole run, containing every refresh and new pair, and push it once.
 - If validation fails on a new or replacement pair, delete that pair's file, rewrite it once, and validate again. If it still fails, drop just that pair (remove its new file, or undo that refresh) and carry on, so the final commit always validates. Report dropped pairs in the run output.
+- If validation says a new pair states the same fact as an existing one, the rewrite must test a different fact from the article, not the same fact reworded. If it flags two pairs that were both already in the bank, keep the older one and run `python3 scripts/refresh.py retire <newer id> --reason "duplicate of <older id>"`.
 - Commit message subject: `quiz: refresh <r> pairs, +<n> pairs from <k> articles` (drop the part that is zero). In the body, list one line per pair (`sf-000123: verified` / `superseded by sf-000130` / `retired: <why>` / `added`).
 - If the push is rejected, pull --rebase, re-run `build_index.py`, amend that same commit (don't add a second one) and push again (once).
 

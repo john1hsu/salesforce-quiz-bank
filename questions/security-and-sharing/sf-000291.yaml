@@ -15,4 +15,5 @@ concepts:
 - kt:role-hierarchy
 difficulty: 2
 created: '2026-11-10'
-status: active
+status: retired
+retired_reason: duplicate of sf-000092 (same role-hierarchy depth guidance), and it combined two facts in one pair

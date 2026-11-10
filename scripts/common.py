@@ -129,8 +129,10 @@ def load_articles(src_dir: Path) -> dict[str, dict]:
     for path in sorted((src_dir / "articles").glob("*/*.md")):
         fm = read_frontmatter(path)
         rel = path.relative_to(src_dir).as_posix()
-        certs = [r.get("object") for r in fm.get("relations") or []
-                 if isinstance(r, dict) and r.get("predicate") == "coveredBy"]
+        relations = [r for r in fm.get("relations") or [] if isinstance(r, dict)]
+        certs = [r.get("object") for r in relations if r.get("predicate") == "coveredBy"]
+        neighbors = [*(fm.get("broader") or []), *(fm.get("related") or []),
+                     *(r.get("object") for r in relations)]
         out[rel] = {
             "path": rel,
             "id": fm.get("id"),
@@ -140,6 +142,8 @@ def load_articles(src_dir: Path) -> dict[str, dict]:
             "status": fm.get("status"),
             "created": str(fm.get("created", "")),
             "certs": [c for c in certs if c],
+            # every node this article has an edge to, in order, without repeats
+            "neighbors": list(dict.fromkeys(n for n in neighbors if isinstance(n, str) and n != fm.get("id"))),
         }
     return out
 

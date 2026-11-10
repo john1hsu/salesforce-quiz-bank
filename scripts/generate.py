@@ -2,7 +2,8 @@
 """Helpers for the daily generation run.
 
   pick  Decide this run's work: refresh stale pairs first, otherwise the source article
-        with the fewest pairs. Prints JSON.
+        with the fewest pairs, along with the pairs already written from it and from its
+        neighbours in the graph. Prints JSON.
   add   Turn drafted pairs (JSON) into question files, filling id, source, release,
         feature status and certifications from the source article.
 
@@ -27,7 +28,31 @@ from common import (DEFAULT_SOURCE_REPO, current_release, load_all, load_article
 from refresh import stale_queue
 
 MAX_PAIRS_PER_ARTICLE = 6
+RELATED_PAIRS_LIMIT = 60  # keeps pick's output readable for hub articles
 SKIP_ARTICLE_STATUSES = {"retired"}
+
+
+def related_pairs(art: dict, records: list[dict], articles: dict) -> tuple[list[dict], int]:
+    """Pairs written from other articles that sit next to this one in the graph: their concepts
+    name this article, or their article has an edge to or from it. The same fact often appears
+    in neighbouring articles (a limit in both its feature's and its limits' article), so the
+    writer needs to see what is already covered. Returns the closest RELATED_PAIRS_LIMIT pairs
+    and how many more were left out."""
+    ids = {a["path"]: a.get("id") for a in articles.values()}
+    scored = []
+    for rec in records:
+        path = rec["source"]["path"]
+        if rec.get("status") == "retired" or path == art["path"]:
+            continue
+        other = articles.get(path) or {}
+        score = (2 * (art["id"] in (rec.get("concepts") or []))  # the pair is about this article's node
+                 + (ids.get(path) in art["neighbors"])
+                 + (art["id"] in other.get("neighbors", [])))
+        if score:
+            scored.append((-score, rec["id"], {"id": rec["id"], "article": path,
+                                               "true_statement": rec["true_statement"]}))
+    scored.sort(key=lambda t: t[:2])
+    return [item for _, _, item in scored[:RELATED_PAIRS_LIMIT]], max(0, len(scored) - RELATED_PAIRS_LIMIT)
 
 
 def pick(src_dir, n: int) -> dict:
@@ -63,12 +88,15 @@ def pick(src_dir, n: int) -> dict:
     art = candidates[0]
     existing = [{"id": r["id"], "true_statement": r["true_statement"], "false_statement": r["false_statement"]}
                 for r in records if r["source"]["path"] == art["path"] and r.get("status") != "retired"]
+    related, omitted = related_pairs(art, records, articles)
     return {
         "mode": "generate",
         "current_release": current,
         "n": min(n, MAX_PAIRS_PER_ARTICLE - counts.get(art["path"], 0)),
         "article": art,
         "existing_pairs_for_article": existing,
+        "related_pairs_in_other_articles": related,
+        "related_pairs_omitted": omitted,
         "stale_blocked_on_source": len(blocked),
     }
 

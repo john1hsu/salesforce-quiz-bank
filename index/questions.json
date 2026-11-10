@@ -1,7 +1,7 @@
 {
  "version": 1,
- "count": 311,
- "active": 311,
+ "count": 309,
+ "active": 309,
  "questions": [
   {
    "id": "sf-000001",
@@ -3033,24 +3033,6 @@
    "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/soql.md"
   },
   {
-   "id": "sf-000179",
-   "area": "development",
-   "t": "Apex allows 100 SOQL queries per synchronous transaction and 200 per asynchronous transaction.",
-   "f": "Apex allows 200 SOQL queries per synchronous transaction and 100 per asynchronous transaction.",
-   "x": "Asynchronous Apex gets the larger allowance of 200 queries, synchronous code gets 100. Queries inside loops are the usual way to exceed it.",
-   "release": "Winter '27",
-   "featureStatus": "current",
-   "certs": [],
-   "concepts": [
-    "kt:soql",
-    "kt:governor-limits",
-    "kt:apex"
-   ],
-   "difficulty": 1,
-   "status": "active",
-   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/soql.md"
-  },
-  {
    "id": "sf-000180",
    "area": "development",
    "t": "Per the Winter '27 Apex guide, Apex at API version 67.0 or later runs in user context by default, enforcing the user's sharing and permissions.",
@@ -5002,23 +4984,6 @@
    "concepts": [
     "kt:sharing-and-visibility-architect-certification",
     "kt:salesforce-sharing-model"
-   ],
-   "difficulty": 2,
-   "status": "active",
-   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/sharing-and-visibility-architect-certification.md"
-  },
-  {
-   "id": "sf-000291",
-   "area": "security-and-sharing",
-   "t": "Salesforce sharing guidance advises nesting public groups no more than five levels deep and keeping role-hierarchy branches to 10 levels or fewer.",
-   "f": "Salesforce sharing guidance advises nesting public groups no more than 10 levels deep and keeping role-hierarchy branches to five levels or fewer.",
-   "x": "The design numbers are five levels for nested public groups and 10 levels for role-hierarchy branches. The false statement swaps them.",
-   "release": "Winter '27",
-   "featureStatus": "current",
-   "certs": [],
-   "concepts": [
-    "kt:sharing-and-visibility-architect-certification",
-    "kt:role-hierarchy"
    ],
    "difficulty": 2,
    "status": "active",

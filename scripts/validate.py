@@ -19,6 +19,12 @@ from common import (FEATURE_STATUSES, ID_RE, KT_RE, OPTIONAL, QUESTIONS_DIR, REL
 MIN_STATEMENT, MAX_STATEMENT = 20, 280
 MIN_EXPLANATION = 60
 DUPLICATE_THRESHOLD = 0.85
+# Two true statements in different pairs state the same fact when most of their words match...
+SAME_FACT_THRESHOLD = 0.6
+# ...or when they share their numbers and most of the shorter statement's words
+# (the same limit quoted from two articles, or one fact folded into a longer statement).
+SAME_FACT_OVERLAP = 0.7
+NUMBER_RE = re.compile(r"^\$?\d[\d.]*%?$")
 
 NEGATIONS = {"not", "no", "never", "none", "nothing", "neither", "nor", "without", "cannot"}
 STOPWORDS = {
@@ -43,12 +49,33 @@ def content_tokens(text: str) -> set[str]:
     return {w for w in words(text) if w not in STOPWORDS}
 
 
+def number_tokens(tokens: set[str]) -> set[str]:
+    return {t for t in tokens if NUMBER_RE.match(t)}
+
+
+def singular(token: str) -> str:
+    return token[:-1] if len(token) > 3 and token.endswith("s") and not token.endswith("ss") else token
+
+
+def same_fact(a: set[str], b: set[str]) -> float | None:
+    """Similarity of two true statements' content tokens if they state one fact, else None."""
+    a, b = {singular(t) for t in a}, {singular(t) for t in b}  # "transactions" = "transaction"
+    shared = len(a & b)
+    jaccard = shared / len(a | b)
+    if jaccard >= SAME_FACT_THRESHOLD:
+        return jaccard
+    na, nb = number_tokens(a), number_tokens(b)
+    overlap = shared / min(len(a), len(b))
+    if na and nb and (na <= nb or nb <= na) and overlap >= SAME_FACT_OVERLAP:
+        return overlap
+    return None
+
+
 def negation_only(a: str, b: str) -> bool:
     """True when the two statements differ only by negation words."""
     wa, wb = words(a), words(b)
     ignore = NEGATIONS | {"do", "does", "did"}  # "runs" vs "does not run"
-    stem = lambda w: w[:-1] if len(w) > 3 and w.endswith("s") and not w.endswith("ss") else w
-    strip = lambda ws: [stem(w) for w in ws if w not in ignore]
+    strip = lambda ws: [singular(w) for w in ws if w not in ignore]
     return wa != wb and strip(wa) == strip(wb)
 
 
@@ -130,7 +157,8 @@ def check_record(path, rec, errors) -> None:
 
 
 def check_duplicates(records, errors) -> None:
-    """Flag statements that closely match a statement in another pair (token Jaccard)."""
+    """Flag statements that closely match a statement in another pair (token Jaccard), and
+    pairs whose true statements state the same fact in different words, whatever their articles."""
     items = []  # (qid, label, tokens)
     for _, rec in records:
         if rec.get("status") == "retired":
@@ -154,10 +182,18 @@ def check_duplicates(records, errors) -> None:
             oqid, olabel, otoks = items[j]
             if oqid == qid:
                 continue
+            if (qid, oqid) in seen:
+                continue
             jac = shared / len(toks | otoks)
-            if jac >= DUPLICATE_THRESHOLD and (qid, oqid) not in seen:
+            if jac >= DUPLICATE_THRESHOLD:
                 seen.add((qid, oqid))
                 errors.append(f"{qid}.{label} duplicates {oqid}.{olabel} (similarity {jac:.2f})")
+            elif label == olabel == "true_statement":
+                sim = same_fact(toks, otoks)
+                if sim is not None:
+                    seen.add((qid, oqid))
+                    errors.append(f"{qid} and {oqid} test the same fact (true statements match {sim:.2f}); "
+                                  f"keep one fact per pair across the whole bank")
 
 
 def check_cross(records, errors) -> None:
@@ -192,7 +228,10 @@ def check_against_source(records, src_dir, errors) -> None:
         if rec.get("status") == "retired":
             continue
         if not art:
-            errors.append(f"{rec.get('id')}: source article {path} not found in source repo")
+            # A stale pair with no article is waiting to be retired (refresh.py puts it in the queue).
+            if rec.get("status") == "active":
+                errors.append(f"{rec.get('id')}: active but source article {path} not found in source repo "
+                              f"(run refresh.py mark-stale)")
             continue
         if art.get("domain") != rec.get("product_area"):
             errors.append(f"{rec.get('id')}: product_area {rec.get('product_area')} != article domain {art.get('domain')}")
