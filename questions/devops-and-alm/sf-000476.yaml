@@ -1,0 +1,18 @@
+id: sf-000476
+product_area: devops-and-alm
+true_statement: A synchronous Tooling API test run through /runTestsSynchronous/ must keep all of its test methods in a single class.
+false_statement: A synchronous Tooling API test run through /runTestsSynchronous/ can include test methods from up to five classes.
+explanation: Synchronous runs are restricted to one test class; running several classes needs the asynchronous resource. The five-class allowance is invented.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/tooling-api.md
+  commit: 2504d4caedf4d80d25089628d89b34723f141e66
+  blob: b3521275c978befd00d971d17fbf6996f793969e
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:tooling-api
+- kt:apex-testing
+difficulty: 2
+created: '2026-11-11'
+status: active

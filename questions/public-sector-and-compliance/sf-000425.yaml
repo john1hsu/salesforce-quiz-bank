@@ -1,0 +1,18 @@
+id: sf-000425
+product_area: public-sector-and-compliance
+true_statement: An organization claiming ISO/IEC 27001:2022 conformity may not exclude any of the requirements in Clauses 4 to 10.
+false_statement: An organization claiming ISO/IEC 27001:2022 conformity may exclude requirements in Clauses 4 to 10 that it judges irrelevant to its scope.
+explanation: The management-system requirements in Clauses 4 to 10 are mandatory in full for a conformity claim. Picking and choosing among them is not allowed.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/security-compliance-frameworks.md
+  commit: 2504d4caedf4d80d25089628d89b34723f141e66
+  blob: d638a59904c453680bf5297ade7ba5d4f7611367
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:security-compliance-frameworks
+- kt:iso-iec-27001
+difficulty: 2
+created: '2026-11-11'
+status: active

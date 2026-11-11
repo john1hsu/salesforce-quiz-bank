@@ -1,0 +1,20 @@
+id: sf-000481
+product_area: identity
+true_statement: Salesforce login flows run after the user has authenticated, including after SAML SSO, and add logic on top rather than replacing authentication.
+false_statement: Salesforce login flows run before the user authenticates and replace the password or SAML SSO step with custom logic.
+explanation: A login flow is inserted after authentication succeeds and before the user reaches the org. It extends password, delegated or SSO login; it never substitutes for it.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/login-flows.md
+  commit: 2504d4caedf4d80d25089628d89b34723f141e66
+  blob: bd7a123c8503d8d6003585296caf938d0ba7a42f
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:identity-and-access-management-architect-certification
+concepts:
+- kt:login-flows
+- kt:single-sign-on-saml
+difficulty: 1
+created: '2026-11-11'
+status: active

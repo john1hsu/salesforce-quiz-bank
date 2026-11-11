@@ -1,0 +1,20 @@
+id: sf-000480
+product_area: identity
+true_statement: Headless Identity's code-and-credentials flow works only against an Experience Cloud site domain, not employee logins through a My Domain login URL.
+false_statement: Headless Identity's code-and-credentials flow works against a My Domain login URL for employees as well as against Experience Cloud site domains.
+explanation: The flow is limited to site domains such as *.my.site.com and doesn't support employee login through login.salesforce.com or My Domain.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/headless-identity.md
+  commit: 2504d4caedf4d80d25089628d89b34723f141e66
+  blob: b77b652ada0524114f1f3b308bd3290366763d77
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:identity-and-access-management-architect-certification
+concepts:
+- kt:headless-identity
+- kt:experience-cloud-identity
+difficulty: 3
+created: '2026-11-11'
+status: active

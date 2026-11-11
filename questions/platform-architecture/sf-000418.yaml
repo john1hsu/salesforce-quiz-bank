@@ -1,0 +1,20 @@
+id: sf-000418
+product_area: platform-architecture
+true_statement: Rolling back to an Apex savepoint undoes later DML, but static variables keep the values they had before the rollback.
+false_statement: Rolling back to an Apex savepoint undoes later DML and also restores static variables to the values they had at the savepoint.
+explanation: Database.rollback only discards database changes and releases locks; in-memory static state such as recursion guards is untouched. The false statement wrongly claims statics are reset too.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/transaction-control.md
+  commit: 2504d4caedf4d80d25089628d89b34723f141e66
+  blob: 9f5d3edf13d53faff365af442468518583147693
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:platform-developer-certification
+concepts:
+- kt:transaction-control
+- kt:apex
+difficulty: 3
+created: '2026-11-11'
+status: active

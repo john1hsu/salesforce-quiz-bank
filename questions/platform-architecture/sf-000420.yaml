@@ -1,0 +1,20 @@
+id: sf-000420
+product_area: platform-architecture
+true_statement: In current API versions, each Database.setSavepoint call counts against the DML statement limit but not the DML row limit.
+false_statement: In current API versions, each Database.setSavepoint call counts against the DML row limit but not the DML statement limit.
+explanation: Savepoints and rollbacks each use one DML statement from the 150-statement allowance; since API 60.0 they no longer consume DML rows. The false statement swaps the two limits.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/transaction-control.md
+  commit: 2504d4caedf4d80d25089628d89b34723f141e66
+  blob: 9f5d3edf13d53faff365af442468518583147693
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:platform-developer-certification
+concepts:
+- kt:transaction-control
+- kt:governor-limits
+difficulty: 3
+created: '2026-11-11'
+status: active

@@ -1,0 +1,20 @@
+id: sf-000499
+product_area: security-and-sharing
+true_statement: In a Field Audit Trail retention policy, archiveRetentionYears is only a reminder; archived history is never deleted automatically.
+false_statement: In a Field Audit Trail retention policy, archived history is deleted automatically once archiveRetentionYears has elapsed.
+explanation: The setting records an intended retention period but triggers no purge. Orgs that must destroy data after a period need their own scheduled deletion job.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/field-audit-trail.md
+  commit: 2504d4caedf4d80d25089628d89b34723f141e66
+  blob: 39f3595277335cc100e2f64b9cb272554933f387
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:platform-data-architect-certification
+concepts:
+- kt:field-audit-trail
+- kt:archiving-strategy
+difficulty: 2
+created: '2026-11-11'
+status: active

@@ -1,0 +1,17 @@
+id: sf-000458
+product_area: data-cloud-and-ai
+true_statement: Agentforce Testing Center can run up to 10 test jobs at once within a 10-hour window.
+false_statement: Agentforce Testing Center can run up to 3 test jobs at once within a 24-hour window.
+explanation: The documented capacity is 10 concurrent test jobs in a 10-hour window. The 3-job, 24-hour figures are invented.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/agentforce-testing-center.md
+  commit: 2504d4caedf4d80d25089628d89b34723f141e66
+  blob: 66ace15978af5be4acbc1e5692e19471af078432
+verified_release: Winter '27
+feature_status: beta
+concepts:
+- kt:agentforce-testing-center
+difficulty: 2
+created: '2026-11-11'
+status: active

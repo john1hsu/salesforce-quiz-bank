@@ -1,0 +1,18 @@
+id: sf-000475
+product_area: devops-and-alm
+true_statement: Tooling API queries on EntityDefinition or FieldDefinition silently ignore LIMIT and OFFSET, so a tool can get wrong results without any error.
+false_statement: Tooling API queries on EntityDefinition or FieldDefinition reject LIMIT and OFFSET with an error, so a tool learns at once that they aren't supported.
+explanation: Metadata Catalog entities don't support several SOQL clauses; most raise errors, but LIMIT and OFFSET are dropped quietly. That silent behaviour is the trap.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/tooling-api.md
+  commit: 2504d4caedf4d80d25089628d89b34723f141e66
+  blob: b3521275c978befd00d971d17fbf6996f793969e
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:tooling-api
+- kt:soql
+difficulty: 3
+created: '2026-11-11'
+status: active

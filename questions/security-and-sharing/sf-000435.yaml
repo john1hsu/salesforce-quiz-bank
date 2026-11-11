@@ -1,0 +1,19 @@
+id: sf-000435
+product_area: security-and-sharing
+true_statement: Creating or editing queues requires the Customize Application and Manage Public List Views permissions.
+false_statement: Creating or editing queues requires the Manage Users and Manage Public Groups permissions.
+explanation: Customize Application plus Manage Public List Views lets an admin create and edit queues. Manage Users is needed only to edit queues created by someone else.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/queues.md
+  commit: 2504d4caedf4d80d25089628d89b34723f141e66
+  blob: 95c12b6b686f338be4fcd328451717feb03e44ec
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:sharing-and-visibility-architect-certification
+concepts:
+- kt:queues
+difficulty: 2
+created: '2026-11-11'
+status: active

@@ -1,0 +1,18 @@
+id: sf-000471
+product_area: development
+true_statement: A metadata-driven trigger framework stores action execution order in custom metadata, so admins can reorder actions without a deployment.
+false_statement: A metadata-driven trigger framework stores action execution order in custom settings data, so admins can reorder actions only through a code deployment.
+explanation: The metadata-driven flavour keeps the sequence of small action classes in custom metadata records that a central handler reads. Changing the order needs no code change.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/trigger-framework-pattern.md
+  commit: 2504d4caedf4d80d25089628d89b34723f141e66
+  blob: c10ae0532a77431983a1b4096328de4882dbc8e3
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:trigger-framework-pattern
+- kt:custom-metadata-types
+difficulty: 2
+created: '2026-11-11'
+status: active

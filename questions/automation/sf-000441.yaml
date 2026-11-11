@@ -1,0 +1,18 @@
+id: sf-000441
+product_area: automation
+true_statement: If an org has no assignment rules, leads or cases saved via API version 30.0 or later stay unassigned rather than getting a default owner.
+false_statement: If an org has no assignment rules, leads or cases saved via API version 30.0 or later are given a predefined default owner.
+explanation: From API 30.0 the record is left unassigned when no rules exist. Assigning a predefined default owner was the behaviour for API 29.0 and earlier.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/assignment-rules.md
+  commit: 2504d4caedf4d80d25089628d89b34723f141e66
+  blob: d5ec5dbb14dec7a218b9588f0af47bdd52ab5fd7
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:assignment-rules
+- kt:apex
+difficulty: 3
+created: '2026-11-11'
+status: active

@@ -1,0 +1,17 @@
+id: sf-000438
+product_area: architecture-practice
+true_statement: Salesforce Foundations certifications need no maintenance badges and never expire.
+false_statement: Salesforce Foundations certifications need one maintenance badge a year and expire if it is missed.
+explanation: Foundations credentials are an exception to the yearly maintenance rule and do not expire. Other certifications expire when their yearly badge is missed.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/salesforce-certification-program.md
+  commit: 2504d4caedf4d80d25089628d89b34723f141e66
+  blob: 37b81e9d802df45effeaff8a80229f424fbe5487
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:salesforce-certification-program
+difficulty: 1
+created: '2026-11-11'
+status: active

@@ -1,0 +1,19 @@
+id: sf-000446
+product_area: clouds-and-products
+true_statement: Besides the two default split types, admins can create up to 6 custom opportunity split types.
+false_statement: Besides the two default split types, admins can create up to 20 custom opportunity split types.
+explanation: Salesforce allows six custom split types in addition to the default revenue and overlay types. Twenty overstates the limit.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/opportunity-splits.md
+  commit: 2504d4caedf4d80d25089628d89b34723f141e66
+  blob: cc47aeb25fa76de3e47e9479c073aa2f3b67da32
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:sales-cloud-consultant-certification
+concepts:
+- kt:opportunity-splits
+difficulty: 2
+created: '2026-11-11'
+status: active

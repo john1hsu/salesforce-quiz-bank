@@ -1,0 +1,18 @@
+id: sf-000485
+product_area: platform-architecture
+true_statement: For a multi-org enterprise, Salesforce recommends a single Data Cloud Home Org with the other orgs attached as companion orgs.
+false_statement: For a multi-org enterprise, Salesforce recommends a separate Data Cloud instance in every production org, each kept independent.
+explanation: The provisioning guide favours one Home Org hosting Data Cloud, with companion orgs connected. Separate instances are reserved for strict autonomy, residency or compliance needs.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/org-strategy.md
+  commit: 2504d4caedf4d80d25089628d89b34723f141e66
+  blob: 6605401c8c6e6579ded6a2782ae5c9836ab65f82
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:org-strategy
+- kt:data-cloud
+difficulty: 2
+created: '2026-11-11'
+status: active

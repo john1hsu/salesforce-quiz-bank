@@ -1,0 +1,20 @@
+id: sf-000492
+product_area: platform-architecture
+true_statement: Skinny tables leave out soft-deleted records in the Recycle Bin, which can shrink the volume a query scans.
+false_statement: Skinny tables keep soft-deleted records from the Recycle Bin alongside live rows, so a query scans the same volume as the base table.
+explanation: Excluding soft-deleted rows is one of the reasons skinny tables speed up reads, alongside narrower rows and avoiding the standard/custom field join.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/skinny-tables.md
+  commit: 2504d4caedf4d80d25089628d89b34723f141e66
+  blob: feb2ebd99b08e0df361acd90582081bd2f6ca6e2
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:platform-data-architect-certification
+concepts:
+- kt:skinny-tables
+- kt:large-data-volumes
+difficulty: 2
+created: '2026-11-11'
+status: active

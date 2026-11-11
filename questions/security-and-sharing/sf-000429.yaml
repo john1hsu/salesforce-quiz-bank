@@ -1,0 +1,20 @@
+id: sf-000429
+product_area: security-and-sharing
+true_statement: Access to a parent account in an account hierarchy does not flow down to its child accounts; only role and territory hierarchies propagate access.
+false_statement: Access to a parent account in an account hierarchy flows down to its child accounts, just as the role and territory hierarchies propagate access.
+explanation: The account hierarchy is not a sharing hierarchy, so seeing a parent account gives nothing on its child accounts. Only the role and territory hierarchies pass access along.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/implicit-sharing.md
+  commit: 2504d4caedf4d80d25089628d89b34723f141e66
+  blob: 7f567f4534f0753c6c5d957f035d3c5c62cfd9bd
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:sharing-and-visibility-architect-certification
+concepts:
+- kt:implicit-sharing
+- kt:salesforce-sharing-model
+difficulty: 2
+created: '2026-11-11'
+status: active

@@ -6,8 +6,8 @@ explanation: Process APIs hold the business logic that combines System API data.
 source:
   repo: john1hsu/salesforce-knowledge-graph
   path: articles/integration/mulesoft-anypoint-platform.md
-  commit: 7581ad0b96602285af0f512d9ea7379718c7aea4
-  blob: 8424f067dd8479a58a64ae61d36db63fbeb5520a
+  commit: 2504d4caedf4d80d25089628d89b34723f141e66
+  blob: 0236894cb3738b9d4017971463dbe7848dfeb08e
 verified_release: Winter '27
 feature_status: current
 certs:

@@ -1,0 +1,18 @@
+id: sf-000430
+product_area: security-and-sharing
+true_statement: A permission set group can contain at most one muting permission set.
+false_statement: A permission set group can contain up to five muting permission sets.
+explanation: Each group allows a single muting permission set, which disables chosen permissions for that group only. There is no allowance for several muting sets.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/permission-set-groups.md
+  commit: 2504d4caedf4d80d25089628d89b34723f141e66
+  blob: c7522aa60c36c3607569c43ebcf35331fc74fb99
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:permission-set-groups
+- kt:permission-sets
+difficulty: 2
+created: '2026-11-11'
+status: active

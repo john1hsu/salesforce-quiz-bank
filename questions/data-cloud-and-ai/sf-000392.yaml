@@ -6,8 +6,8 @@ explanation: The legacy engine builds each prompt from the subagent's scope, ins
 source:
   repo: john1hsu/salesforce-knowledge-graph
   path: articles/data-cloud-and-ai/atlas-reasoning-engine.md
-  commit: 7581ad0b96602285af0f512d9ea7379718c7aea4
-  blob: 86db863aee43b6e1799ee21c1b4ee1b89f07cdb2
+  commit: 2504d4caedf4d80d25089628d89b34723f141e66
+  blob: 905c7bd0e2a2d6b7b4671bbe1da6ca7e731515b2
 verified_release: Winter '27
 feature_status: current
 concepts:

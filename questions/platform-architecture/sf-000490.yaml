@@ -1,0 +1,20 @@
+id: sf-000490
+product_area: platform-architecture
+true_statement: A skinny table is created only by Salesforce Customer Support on request; customers cannot create, access or modify one themselves.
+false_statement: A skinny table is created by an admin from a Skinny Tables page in Setup, where its field list can later be edited.
+explanation: 'There is no setup page: Support builds the table and the platform uses it automatically. Changing its fields also needs a Support request.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/skinny-tables.md
+  commit: 2504d4caedf4d80d25089628d89b34723f141e66
+  blob: feb2ebd99b08e0df361acd90582081bd2f6ca6e2
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:platform-data-architect-certification
+concepts:
+- kt:skinny-tables
+- kt:large-data-volumes
+difficulty: 1
+created: '2026-11-11'
+status: active

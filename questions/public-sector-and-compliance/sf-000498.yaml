@@ -1,0 +1,18 @@
+id: sf-000498
+product_area: public-sector-and-compliance
+true_statement: ISO/IEC 27001 is delivered as a certificate against a management-system standard, whereas SOC 2 is delivered as an audit report.
+false_statement: ISO/IEC 27001 is delivered as an audit report on controls, whereas SOC 2 is delivered as a certificate against a management-system standard.
+explanation: An accredited body certifies an ISMS to ISO/IEC 27001, while SOC 1 and SOC 2 take the form of attestation reports. The false statement swaps the two forms.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/iso-iec-27001.md
+  commit: 2504d4caedf4d80d25089628d89b34723f141e66
+  blob: 09882c17de05da9ffc3a85405dc84abd0dc28cce
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:iso-iec-27001
+- kt:soc-2
+difficulty: 2
+created: '2026-11-11'
+status: active

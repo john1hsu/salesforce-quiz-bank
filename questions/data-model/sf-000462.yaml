@@ -1,0 +1,20 @@
+id: sf-000462
+product_area: data-model
+true_statement: Users can still read records whose business process their profile can't create or edit, so business processes shouldn't be used for access control.
+false_statement: Users can't read records whose business process their profile can't create or edit, so business processes can serve as access control.
+explanation: Profile assignment of a process governs creating and editing, not reading. Salesforce warns against relying on business processes as a security control.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/business-processes.md
+  commit: 2504d4caedf4d80d25089628d89b34723f141e66
+  blob: e5fec6fd9ed26e469672aaae3c9dabf619dbffac
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:platform-administrator-certification
+concepts:
+- kt:business-processes
+- kt:metadata-api
+difficulty: 3
+created: '2026-11-11'
+status: active

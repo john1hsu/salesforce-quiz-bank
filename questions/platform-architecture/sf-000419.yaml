@@ -1,0 +1,20 @@
+id: sf-000419
+product_area: platform-architecture
+true_statement: The allOrNone parameter on Database.insert defaults to true, so one failing record makes the whole call throw an exception.
+false_statement: The allOrNone parameter on Database.insert defaults to false, so valid records save and failures come back as SaveResult errors.
+explanation: By default Database methods behave like plain DML and abort on the first failing record. Partial success with SaveResult errors happens only when allOrNone is explicitly set to false.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/transaction-control.md
+  commit: 2504d4caedf4d80d25089628d89b34723f141e66
+  blob: 9f5d3edf13d53faff365af442468518583147693
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:platform-developer-certification
+concepts:
+- kt:transaction-control
+- kt:apex
+difficulty: 2
+created: '2026-11-11'
+status: active

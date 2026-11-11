@@ -1,0 +1,18 @@
+id: sf-000442
+product_area: automation
+true_statement: A platform event-triggered flow interview runs in the context of the user who published the event, so created records show that publisher in CreatedById.
+false_statement: A platform event-triggered flow interview runs as the Automated Process user, so created records show Automated Process in CreatedById.
+explanation: Only the debug logs go under Automated Process; the interview itself runs as the publishing user. Running as Automated Process is the default for platform event Apex triggers, not flows.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/platform-event-triggered-flow.md
+  commit: 2504d4caedf4d80d25089628d89b34723f141e66
+  blob: 546bb47be32c9af3a99e4a492a82a3a26abe27af
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:platform-event-triggered-flow
+- kt:apex-triggers
+difficulty: 3
+created: '2026-11-11'
+status: active

@@ -1,0 +1,18 @@
+id: sf-000466
+product_area: development
+true_statement: An Aura component can contain Lightning web components, but a Lightning web component cannot contain Aura components.
+false_statement: A Lightning web component can contain Aura components, but an Aura component cannot contain Lightning web components.
+explanation: 'Nesting only works one way: Aura can host LWC, which is why thin Aura wrappers are used. An LWC cannot embed an Aura component.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/aura-components.md
+  commit: 2504d4caedf4d80d25089628d89b34723f141e66
+  blob: 7bc15c0686e7ab91c5cfed70cc0e0e4688f4414d
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:aura-components
+- kt:lightning-web-components
+difficulty: 1
+created: '2026-11-11'
+status: active

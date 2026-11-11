@@ -1,0 +1,18 @@
+id: sf-000455
+product_area: data-cloud-and-ai
+true_statement: In Agentforce Builder only one version of an agent can be live, so activating a committed version deactivates the previous one.
+false_statement: In Agentforce Builder several committed versions of an agent can be live at once, so activating one leaves the previous one active.
+explanation: Committed versions are locked snapshots, and only one of them is active at a time. Activating a new version automatically turns off the earlier one.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/agentforce-studio.md
+  commit: 2504d4caedf4d80d25089628d89b34723f141e66
+  blob: 0b543628fba0d418a39792116515833e3eca9014
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:agentforce-studio
+- kt:agentforce
+difficulty: 2
+created: '2026-11-11'
+status: active

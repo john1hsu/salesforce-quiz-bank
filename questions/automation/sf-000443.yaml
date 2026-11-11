@@ -1,0 +1,18 @@
+id: sf-000443
+product_area: automation
+true_statement: A platform event-triggered flow can receive up to 200 event messages in one batch, keeping their order within the batch.
+false_statement: A platform event-triggered flow can receive up to 2,000 event messages in one batch, keeping their order within the batch.
+explanation: Flow subscribers get batches of at most 200 messages, processed in replay ID order. The 2,000 figure is far above the flow batch size.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/platform-event-triggered-flow.md
+  commit: 2504d4caedf4d80d25089628d89b34723f141e66
+  blob: 546bb47be32c9af3a99e4a492a82a3a26abe27af
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:platform-event-triggered-flow
+- kt:platform-events
+difficulty: 2
+created: '2026-11-11'
+status: active

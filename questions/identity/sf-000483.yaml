@@ -1,0 +1,20 @@
+id: sf-000483
+product_area: identity
+true_statement: Login flows don't run for API logins, so controls that must cover integrations need to live elsewhere.
+false_statement: Login flows run for API logins as well as UI logins, so they can enforce controls on integrations too.
+explanation: API logins, and UI sessions created via frontdoor.jsp from a non-UI login, bypass login flows. Integration controls belong in places such as connected-app policies.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/login-flows.md
+  commit: 2504d4caedf4d80d25089628d89b34723f141e66
+  blob: bd7a123c8503d8d6003585296caf938d0ba7a42f
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:identity-and-access-management-architect-certification
+concepts:
+- kt:login-flows
+- kt:salesforce-identity
+difficulty: 2
+created: '2026-11-11'
+status: active

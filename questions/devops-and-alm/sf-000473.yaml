@@ -1,0 +1,18 @@
+id: sf-000473
+product_area: devops-and-alm
+true_statement: In Agentforce DX, sf agent generate test-spec writes an agent's test cases to a YAML file, chosen because it reads and diffs well in source control.
+false_statement: In Agentforce DX, sf agent generate test-spec writes an agent's test cases to a CSV file, chosen because it opens directly in spreadsheet tools.
+explanation: The spec-first test flow uses YAML, which Salesforce picked for readability and clean diffs. sf agent test create then turns that spec into a test in the org.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/agentforce-dx.md
+  commit: 2504d4caedf4d80d25089628d89b34723f141e66
+  blob: b52f0d583b3a29d707c322bc077bb2ec2f84b4c4
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:agentforce-dx
+- kt:agentforce-testing-center
+difficulty: 2
+created: '2026-11-11'
+status: active

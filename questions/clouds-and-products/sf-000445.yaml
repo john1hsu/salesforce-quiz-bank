@@ -1,0 +1,20 @@
+id: sf-000445
+product_area: clouds-and-products
+true_statement: Revenue splits on an opportunity are capped at 100%, while overlay splits can total more than 100%.
+false_statement: Overlay splits on an opportunity are capped at 100%, while revenue splits can total more than 100%.
+explanation: Revenue splits divide credit among the people directly responsible, so they can't exceed 100%. Overlay splits credit supporting effort on top of that and may go over 100%.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/opportunity-splits.md
+  commit: 2504d4caedf4d80d25089628d89b34723f141e66
+  blob: cc47aeb25fa76de3e47e9479c073aa2f3b67da32
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:sales-cloud-consultant-certification
+concepts:
+- kt:opportunity-splits
+- kt:sales-cloud
+difficulty: 1
+created: '2026-11-11'
+status: active

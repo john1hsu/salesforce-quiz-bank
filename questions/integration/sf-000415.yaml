@@ -1,0 +1,20 @@
+id: sf-000415
+product_area: integration
+true_statement: Enterprise Edition's default platform event publishing allocation is 250,000 events per rolling hour.
+false_statement: Enterprise Edition's default platform event publishing allocation is 50,000 events per rolling hour.
+explanation: Performance, Unlimited, Enterprise and Professional (with API add-on) all default to 250,000 published events per hour. The 50,000 figure is the Developer Edition default.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/platform-event-allocations.md
+  commit: 2504d4caedf4d80d25089628d89b34723f141e66
+  blob: e3a76354b32466cbaff24aa3ff26b12ff046386b
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:integration-architect-certification
+concepts:
+- kt:platform-event-allocations
+- kt:platform-events
+difficulty: 2
+created: '2026-11-11'
+status: active

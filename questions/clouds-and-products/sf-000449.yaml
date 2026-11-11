@@ -1,0 +1,18 @@
+id: sf-000449
+product_area: clouds-and-products
+true_statement: The Agentforce Sales Consultant credential is kept current by completing the Platform Administrator maintenance badge each year.
+false_statement: The Agentforce Sales Consultant credential is kept current by completing a Sales-specific consultant maintenance badge each year.
+explanation: Rather than its own Sales badge, this credential's yearly requirement is the Platform Administrator maintenance module, which the Agentforce Service Consultant also uses.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/sales-cloud-consultant-certification.md
+  commit: 2504d4caedf4d80d25089628d89b34723f141e66
+  blob: f891bc5529cff2f76ab371ccda0044a1e483b2f6
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:sales-cloud-consultant-certification
+- kt:salesforce-certification-program
+difficulty: 2
+created: '2026-11-11'
+status: active

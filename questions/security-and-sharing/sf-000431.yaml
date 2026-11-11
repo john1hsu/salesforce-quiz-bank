@@ -1,0 +1,18 @@
+id: sf-000431
+product_area: security-and-sharing
+true_statement: A permission muted in a permission set group is still granted to users who get it from their profile or a directly assigned permission set.
+false_statement: A permission muted in a permission set group is removed from the user even if they also get it from their profile or a directly assigned permission set.
+explanation: Muting only affects what flows through that group; it is not a deny rule. Any other source of the same permission still grants it.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/permission-set-groups.md
+  commit: 2504d4caedf4d80d25089628d89b34723f141e66
+  blob: c7522aa60c36c3607569c43ebcf35331fc74fb99
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:permission-set-groups
+- kt:profiles
+difficulty: 2
+created: '2026-11-11'
+status: active

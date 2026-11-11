@@ -1,0 +1,17 @@
+id: sf-000467
+product_area: development
+true_statement: In Aura, a component event is handled by the firing component or one above it in the containment hierarchy, while an application event reaches every registered handler.
+false_statement: In Aura, an application event is handled by the firing component or one above it in the containment hierarchy, while a component event reaches every registered handler.
+explanation: Component events travel up the containment hierarchy; application events use publish-subscribe and notify all registered handlers. The false statement swaps the two.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/aura-components.md
+  commit: 2504d4caedf4d80d25089628d89b34723f141e66
+  blob: 7bc15c0686e7ab91c5cfed70cc0e0e4688f4414d
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:aura-components
+difficulty: 2
+created: '2026-11-11'
+status: active

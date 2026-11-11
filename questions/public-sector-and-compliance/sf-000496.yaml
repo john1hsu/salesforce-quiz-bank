@@ -1,0 +1,18 @@
+id: sf-000496
+product_area: public-sector-and-compliance
+true_statement: ISO/IEC 27002:2022 consolidated the 114 controls of the 2013 edition into 93 controls.
+false_statement: ISO/IEC 27002:2022 expanded the 93 controls of the 2013 edition into 114 controls.
+explanation: The 2022 revision reduced and regrouped the catalog, going from 114 controls to 93 in new Clauses 5 to 8. The false statement reverses the direction.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/iso-iec-27001.md
+  commit: 2504d4caedf4d80d25089628d89b34723f141e66
+  blob: 09882c17de05da9ffc3a85405dc84abd0dc28cce
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:iso-iec-27001
+- kt:iso-iec-27002
+difficulty: 2
+created: '2026-11-11'
+status: active

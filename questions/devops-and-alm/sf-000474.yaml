@@ -1,0 +1,18 @@
+id: sf-000474
+product_area: devops-and-alm
+true_statement: Running sf agent deactivate ends the agent's open conversations and makes it unreachable on every channel.
+false_statement: Running sf agent deactivate lets the agent's open conversations finish while blocking new ones on every channel.
+explanation: 'Deactivation is immediate: active conversations are ended and the agent goes offline everywhere, so it should be handled as a production change.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/agentforce-dx.md
+  commit: 2504d4caedf4d80d25089628d89b34723f141e66
+  blob: b52f0d583b3a29d707c322bc077bb2ec2f84b4c4
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:agentforce-dx
+- kt:salesforce-cli
+difficulty: 2
+created: '2026-11-11'
+status: active

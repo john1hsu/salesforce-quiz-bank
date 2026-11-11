@@ -1,0 +1,18 @@
+id: sf-000456
+product_area: data-cloud-and-ai
+true_statement: Agentforce Session Tracing, which groups reasoning runs, action calls and errors by session ID, requires Data 360.
+false_statement: Agentforce Session Tracing, which groups reasoning runs, action calls and errors by session ID, requires Shield Event Monitoring.
+explanation: Session Tracing and some other Studio observability tools depend on Data 360. Shield Event Monitoring is not the stated dependency.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/agentforce-studio.md
+  commit: 2504d4caedf4d80d25089628d89b34723f141e66
+  blob: 0b543628fba0d418a39792116515833e3eca9014
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:agentforce-studio
+- kt:data-cloud
+difficulty: 2
+created: '2026-11-11'
+status: active

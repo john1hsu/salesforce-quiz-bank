@@ -1,0 +1,20 @@
+id: sf-000428
+product_area: security-and-sharing
+true_statement: The access an account owner gets to the account's child contacts, opportunities and cases is set on the owner's role in the role hierarchy.
+false_statement: The access an account owner gets to the account's child contacts, opportunities and cases is set on the account's organization-wide default.
+explanation: Child implicit sharing levels (View, Edit or No access) are defined per child object when the role is set up. The organization-wide default does not configure this owner access.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/implicit-sharing.md
+  commit: 2504d4caedf4d80d25089628d89b34723f141e66
+  blob: 7f567f4534f0753c6c5d957f035d3c5c62cfd9bd
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:sharing-and-visibility-architect-certification
+concepts:
+- kt:implicit-sharing
+- kt:role-hierarchy
+difficulty: 2
+created: '2026-11-11'
+status: active

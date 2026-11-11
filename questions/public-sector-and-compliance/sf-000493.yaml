@@ -1,0 +1,18 @@
+id: sf-000493
+product_area: public-sector-and-compliance
+true_statement: CJIS compliance is audited at the agency level by the state's CJIS Systems Agency, unlike FedRAMP, which authorizes a cloud offering centrally.
+false_statement: CJIS compliance is granted centrally to a cloud offering by the FBI, just as FedRAMP authorizes a cloud offering centrally.
+explanation: There is no central CJIS authorization for a product. Each state CSA audits its agencies, and vendors supply independent assessments that customers build on.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/cjis-security-policy.md
+  commit: 2504d4caedf4d80d25089628d89b34723f141e66
+  blob: 6e4e89974b2f50a22e262af8dfb310ce7938c1e2
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:cjis-security-policy
+- kt:fedramp
+difficulty: 2
+created: '2026-11-11'
+status: active

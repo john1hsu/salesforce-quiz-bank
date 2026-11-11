@@ -1,0 +1,19 @@
+id: sf-000447
+product_area: clouds-and-products
+true_statement: A custom opportunity split type can split a roll-up summary or custom currency field, but not a formula currency field.
+false_statement: A custom opportunity split type can split a formula currency or custom currency field, but not a roll-up summary field.
+explanation: Standard currency, roll-up summary and custom currency fields are allowed as the basis of a custom split type; formula currency fields are the excluded kind.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/opportunity-splits.md
+  commit: 2504d4caedf4d80d25089628d89b34723f141e66
+  blob: cc47aeb25fa76de3e47e9479c073aa2f3b67da32
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:sales-cloud-consultant-certification
+concepts:
+- kt:opportunity-splits
+difficulty: 3
+created: '2026-11-11'
+status: active

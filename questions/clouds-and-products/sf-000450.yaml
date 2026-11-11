@@ -1,0 +1,18 @@
+id: sf-000450
+product_area: clouds-and-products
+true_statement: In the Sales Cloud Consultant exam outline used since June 2024, practical application of Sales Cloud expertise is the largest section at 33%.
+false_statement: In the Sales Cloud Consultant exam outline used since June 2024, the sales lifecycle is the largest section at 33%.
+explanation: Practical application of Sales Cloud expertise carries 33% of the exam; the sales lifecycle section is next at 23%.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/sales-cloud-consultant-certification.md
+  commit: 2504d4caedf4d80d25089628d89b34723f141e66
+  blob: f891bc5529cff2f76ab371ccda0044a1e483b2f6
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:sales-cloud-consultant-certification
+- kt:sales-cloud
+difficulty: 2
+created: '2026-11-11'
+status: active

@@ -1,0 +1,20 @@
+id: sf-000461
+product_area: data-model
+true_statement: A value added to an object's master picklist is not added to existing business processes; it must be added to each one by hand.
+false_statement: A value added to an object's master picklist is added automatically to every existing business process on that object.
+explanation: Existing processes and record types keep their own selected values, so new master values need to be added to each manually.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/business-processes.md
+  commit: 2504d4caedf4d80d25089628d89b34723f141e66
+  blob: e5fec6fd9ed26e469672aaae3c9dabf619dbffac
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:platform-administrator-certification
+concepts:
+- kt:business-processes
+- kt:record-types
+difficulty: 2
+created: '2026-11-11'
+status: active

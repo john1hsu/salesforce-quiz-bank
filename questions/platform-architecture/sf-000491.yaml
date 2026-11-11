@@ -1,0 +1,20 @@
+id: sf-000491
+product_area: platform-architecture
+true_statement: A skinny table can't include fields from other objects, so a query that needs a parent object's fields can't be served from it alone.
+false_statement: A skinny table can include fields from parent objects reached through lookups, so it can serve queries that span related objects.
+explanation: Each skinny table holds fields from one object only; cross-object fields are not allowed. That is why it removes the standard/custom field join but not joins across objects.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/skinny-tables.md
+  commit: 2504d4caedf4d80d25089628d89b34723f141e66
+  blob: feb2ebd99b08e0df361acd90582081bd2f6ca6e2
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:platform-data-architect-certification
+concepts:
+- kt:skinny-tables
+- kt:soql
+difficulty: 2
+created: '2026-11-11'
+status: active

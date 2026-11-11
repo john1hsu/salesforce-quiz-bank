@@ -1,0 +1,18 @@
+id: sf-000424
+product_area: public-sector-and-compliance
+true_statement: NIST Cybersecurity Framework 2.0 organizes its outcomes under six Functions, adding Govern to Identify, Protect, Detect, Respond and Recover.
+false_statement: 'NIST Cybersecurity Framework 2.0 organizes its outcomes under five Functions: Identify, Protect, Detect, Respond and Recover.'
+explanation: CSF 2.0, published in February 2024, has six Functions, with Govern alongside the original five. Listing only five misses the governance function.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/security-compliance-frameworks.md
+  commit: 2504d4caedf4d80d25089628d89b34723f141e66
+  blob: d638a59904c453680bf5297ade7ba5d4f7611367
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:security-compliance-frameworks
+- kt:nist-cybersecurity-framework
+difficulty: 1
+created: '2026-11-11'
+status: active

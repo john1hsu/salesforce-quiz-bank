@@ -1,0 +1,17 @@
+id: sf-000422
+product_area: public-sector-and-compliance
+true_statement: In FIPS 199, a Moderate impact level means a security loss would have a serious adverse effect, and High means a severe or catastrophic one.
+false_statement: In FIPS 199, a Moderate impact level means a security loss would have a limited adverse effect, and High means a serious one.
+explanation: FIPS 199 maps Low to limited, Moderate to serious and High to severe or catastrophic effects. The false statement shifts each level down by one.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/fips-199.md
+  commit: 2504d4caedf4d80d25089628d89b34723f141e66
+  blob: 9f6966e781a0e1b50ac2c764cc9b1dc875dce2e7
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:fips-199
+difficulty: 1
+created: '2026-11-11'
+status: active

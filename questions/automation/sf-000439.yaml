@@ -1,0 +1,18 @@
+id: sf-000439
+product_area: automation
+true_statement: An org can keep several case assignment rules, but only one case assignment rule can be active at a time.
+false_statement: An org can keep several case assignment rules, and up to five case assignment rules can be active at a time.
+explanation: Each of leads and cases allows exactly one active rule; alternates such as a holiday rule are kept inactive and swapped in. Multiple active rules are not possible.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/assignment-rules.md
+  commit: 2504d4caedf4d80d25089628d89b34723f141e66
+  blob: d5ec5dbb14dec7a218b9588f0af47bdd52ab5fd7
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:assignment-rules
+- kt:service-cloud
+difficulty: 1
+created: '2026-11-11'
+status: active

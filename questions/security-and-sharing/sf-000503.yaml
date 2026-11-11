@@ -1,0 +1,18 @@
+id: sf-000503
+product_area: security-and-sharing
+true_statement: Shield Platform Encryption becomes available in sandboxes only after it has been provisioned for the production org.
+false_statement: Shield Platform Encryption can be provisioned in a sandbox for testing before it has been provisioned for the production org.
+explanation: Sandbox availability follows the production licence, so rehearsals happen once production is provisioned. A sandbox-first trial isn't how it is enabled.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/salesforce-shield.md
+  commit: 2504d4caedf4d80d25089628d89b34723f141e66
+  blob: 0eddc0f553672a49f4e598c9b5b481df1b2023e6
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:salesforce-shield
+- kt:shield-platform-encryption
+difficulty: 2
+created: '2026-11-11'
+status: active

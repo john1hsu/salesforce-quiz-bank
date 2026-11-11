@@ -1,0 +1,18 @@
+id: sf-000437
+product_area: architecture-practice
+true_statement: A holder of a retired Salesforce certification keeps a valid credential, shown as retired on their profile, but loses the downloadable certificate.
+false_statement: A holder of a retired Salesforce certification loses the credential at retirement unless they pass the named successor exam.
+explanation: Retirement removes maintenance and ends downloadable certificates, yet the credential stays valid and is marked retired. No successor exam is needed to keep it.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/salesforce-certification-program.md
+  commit: 2504d4caedf4d80d25089628d89b34723f141e66
+  blob: 37b81e9d802df45effeaff8a80229f424fbe5487
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:salesforce-certification-program
+- kt:trailhead
+difficulty: 2
+created: '2026-11-11'
+status: active

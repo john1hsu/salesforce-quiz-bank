@@ -1,0 +1,18 @@
+id: sf-000502
+product_area: platform-architecture
+true_statement: Salesforce's org strategy guidance says apparent platform limit problems should be raised with the account team before they drive an org split.
+false_statement: Salesforce's org strategy guidance says apparent platform limit problems are the clearest signal that a single org should be split into several.
+explanation: The guidance cautions against splitting orgs reactively over limits; such issues go to the account team first. Org splits should follow the business, technology, governance and operations factors.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/org-strategy.md
+  commit: 2504d4caedf4d80d25089628d89b34723f141e66
+  blob: 6605401c8c6e6579ded6a2782ae5c9836ab65f82
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:org-strategy
+- kt:solution-design-tradeoffs
+difficulty: 2
+created: '2026-11-11'
+status: active

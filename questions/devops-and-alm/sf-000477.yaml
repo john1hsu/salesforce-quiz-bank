@@ -1,0 +1,18 @@
+id: sf-000477
+product_area: devops-and-alm
+true_statement: The Tooling API composite resource can bundle several Tooling API requests into one call that counts once against API limits.
+false_statement: Tooling API requests don't count against the org's API limits, so bundling them with the composite resource saves nothing.
+explanation: Tooling API calls consume the org's API request allocation. The composite resource, available from API 40.0, reduces consumption by counting several requests as one.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/tooling-api.md
+  commit: 2504d4caedf4d80d25089628d89b34723f141e66
+  blob: b3521275c978befd00d971d17fbf6996f793969e
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:tooling-api
+- kt:api-request-limits
+difficulty: 2
+created: '2026-11-11'
+status: active

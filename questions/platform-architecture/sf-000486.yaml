@@ -1,0 +1,17 @@
+id: sf-000486
+product_area: platform-architecture
+true_statement: Under the operating-model framework, highly standardized and integrated businesses favour as few Salesforce orgs as possible.
+false_statement: Under the operating-model framework, highly diversified businesses with little shared process favour as few Salesforce orgs as possible.
+explanation: Standardized, integrated operating models gain most from consolidation. Diversified businesses with little common process are the ones likely to keep several orgs.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/org-strategy.md
+  commit: 2504d4caedf4d80d25089628d89b34723f141e66
+  blob: 6605401c8c6e6579ded6a2782ae5c9836ab65f82
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:org-strategy
+difficulty: 3
+created: '2026-11-11'
+status: active

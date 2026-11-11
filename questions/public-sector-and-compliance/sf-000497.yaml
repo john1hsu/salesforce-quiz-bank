@@ -1,0 +1,17 @@
+id: sf-000497
+product_area: public-sector-and-compliance
+true_statement: The deadline for moving an ISO/IEC 27001:2013 certification to the 2022 edition was 31 October 2025.
+false_statement: The deadline for moving an ISO/IEC 27001:2013 certification to the 2022 edition is 31 October 2027.
+explanation: Organizations had a 36-month transition ending 31 October 2025, after which 2013-based certificates expire or are withdrawn.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/iso-iec-27001.md
+  commit: 2504d4caedf4d80d25089628d89b34723f141e66
+  blob: 09882c17de05da9ffc3a85405dc84abd0dc28cce
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:iso-iec-27001
+difficulty: 2
+created: '2026-11-11'
+status: active

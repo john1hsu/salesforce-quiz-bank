@@ -1,0 +1,18 @@
+id: sf-000426
+product_area: public-sector-and-compliance
+true_statement: Salesforce's FedRAMP authorization covers Government Cloud Plus and MuleSoft Government Cloud, not the commercial multi-tenant platform.
+false_statement: Salesforce's FedRAMP authorization covers the commercial multi-tenant platform as well as Government Cloud Plus and MuleSoft Government Cloud.
+explanation: The Trust guide limits FedRAMP scope to the government environments. Commercial orgs are outside it, so architects must check scope per service before promising FedRAMP.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/security-compliance-frameworks.md
+  commit: 2504d4caedf4d80d25089628d89b34723f141e66
+  blob: d638a59904c453680bf5297ade7ba5d4f7611367
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:security-compliance-frameworks
+- kt:fedramp
+difficulty: 2
+created: '2026-11-11'
+status: active

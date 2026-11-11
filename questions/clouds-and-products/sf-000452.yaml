@@ -1,0 +1,18 @@
+id: sf-000452
+product_area: clouds-and-products
+true_statement: A Salesforce Winter release ships in October of the preceding calendar year, which is why it carries the next year's number.
+false_statement: A Salesforce Winter release ships in January of the calendar year whose number it carries.
+explanation: 'Release names are seasonal rather than calendar-aligned: Winter arrives around October and is labelled with the following year. January is not when Winter ships.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/salesforce-inc.md
+  commit: 2504d4caedf4d80d25089628d89b34723f141e66
+  blob: bff2d0e86264dc3f25c2d1bceaf1eaff9fb9c15c
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:salesforce-inc
+- kt:salesforce-platform
+difficulty: 1
+created: '2026-11-11'
+status: active

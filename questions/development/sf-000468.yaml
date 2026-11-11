@@ -1,0 +1,18 @@
+id: sf-000468
+product_area: development
+true_statement: An Aura server action marked abortable is dropped from the queue if its component has been unrendered before it is sent.
+false_statement: An Aura server action marked storable is dropped from the queue if its component has been unrendered before it is sent.
+explanation: 'Abortable actions are discarded when their component is gone. Storable actions are about caching: cached data renders first while fresh data is fetched.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/aura-components.md
+  commit: 2504d4caedf4d80d25089628d89b34723f141e66
+  blob: 7bc15c0686e7ab91c5cfed70cc0e0e4688f4414d
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:aura-components
+- kt:apex
+difficulty: 3
+created: '2026-11-11'
+status: active

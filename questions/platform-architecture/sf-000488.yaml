@@ -1,0 +1,18 @@
+id: sf-000488
+product_area: platform-architecture
+true_statement: The December 2025 Platform Administrator exam refresh added an Agentforce section weighted at 8%, without expecting expert-level Agentforce knowledge.
+false_statement: The December 2025 Platform Administrator exam refresh added an Agentforce section weighted at 20%, expecting expert-level Agentforce knowledge.
+explanation: Agentforce is the smallest section at 8%, and the Admins blog says expert depth isn't expected. The 20% weight and expert framing are wrong.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/platform-administrator-certification.md
+  commit: 2504d4caedf4d80d25089628d89b34723f141e66
+  blob: 3f63003b09f2eac538f6e45d23e2e4a7a3adc73b
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:platform-administrator-certification
+- kt:agentforce
+difficulty: 2
+created: '2026-11-11'
+status: active

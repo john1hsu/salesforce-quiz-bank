@@ -1,0 +1,20 @@
+id: sf-000416
+product_area: integration
+true_statement: An Apex trigger subscribed to a platform event does not use the daily event delivery allocation, but a Pub/Sub API client does.
+false_statement: A Pub/Sub API client subscribed to a platform event does not use the daily event delivery allocation, but an Apex trigger does.
+explanation: The delivery allocation counts only API-based subscribers such as Pub/Sub API, CometD, empApi and event relays. Triggers, flows and processes consume no delivery allocation, so the false statement reverses the two.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/platform-event-allocations.md
+  commit: 2504d4caedf4d80d25089628d89b34723f141e66
+  blob: e3a76354b32466cbaff24aa3ff26b12ff046386b
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:integration-architect-certification
+concepts:
+- kt:platform-event-allocations
+- kt:pub-sub-api
+difficulty: 2
+created: '2026-11-11'
+status: active

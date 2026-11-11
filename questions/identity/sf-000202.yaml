@@ -6,8 +6,8 @@ explanation: 'The SAML Identity Type setting offers exactly three keys: username
 source:
   repo: john1hsu/salesforce-knowledge-graph
   path: articles/identity/single-sign-on-saml.md
-  commit: 1a9626507b2858110c996adbfa985703bee41fd5
-  blob: 8a793970d66ce3c3639747f8b74900f12444d70a
+  commit: 2504d4caedf4d80d25089628d89b34723f141e66
+  blob: aa134cf2aa6cd4a33f6099fb611bd155618320c2
 verified_release: Winter '27
 feature_status: current
 certs:

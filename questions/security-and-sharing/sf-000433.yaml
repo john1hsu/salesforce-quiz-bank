@@ -1,0 +1,19 @@
+id: sf-000433
+product_area: security-and-sharing
+true_statement: Salesforce places no cap on the number of queues an org can create, and each queue gets its own list view named after its label.
+false_statement: Salesforce caps an org at 50 queues, and each queue gets its own list view named after its label.
+explanation: There is no queue limit per org; every queue simply gets a list view where members see the records it owns. The 50-queue cap is invented.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/queues.md
+  commit: 2504d4caedf4d80d25089628d89b34723f141e66
+  blob: 95c12b6b686f338be4fcd328451717feb03e44ec
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:sharing-and-visibility-architect-certification
+concepts:
+- kt:queues
+difficulty: 2
+created: '2026-11-11'
+status: active

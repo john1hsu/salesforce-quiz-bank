@@ -1,0 +1,18 @@
+id: sf-000489
+product_area: platform-architecture
+true_statement: Platform Administrator II lists the Platform Administrator certification as its prerequisite, so a lapse in the base credential undermines it.
+false_statement: Platform Administrator II lists Platform App Builder as its prerequisite, so a lapse in the Platform Administrator credential doesn't affect it.
+explanation: The advanced admin credential builds on Platform Administrator, not App Builder, so keeping the base credential maintained matters for both.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/platform-administrator-certification.md
+  commit: 2504d4caedf4d80d25089628d89b34723f141e66
+  blob: 3f63003b09f2eac538f6e45d23e2e4a7a3adc73b
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:platform-administrator-certification
+- kt:platform-administrator-ii-certification
+difficulty: 1
+created: '2026-11-11'
+status: active

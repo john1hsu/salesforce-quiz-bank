@@ -1,0 +1,20 @@
+id: sf-000427
+product_area: security-and-sharing
+true_statement: A user who can see a child opportunity, case or contact gets read-only access to its parent account through parent implicit sharing.
+false_statement: A user who can see a child opportunity, case or contact gets read/write access to its parent account through parent implicit sharing.
+explanation: 'Parent implicit sharing is view-only: the user can open the account but not edit it. Edit access to the account needs some other grant.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/implicit-sharing.md
+  commit: 2504d4caedf4d80d25089628d89b34723f141e66
+  blob: 7f567f4534f0753c6c5d957f035d3c5c62cfd9bd
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:sharing-and-visibility-architect-certification
+concepts:
+- kt:implicit-sharing
+- kt:salesforce-sharing-model
+difficulty: 1
+created: '2026-11-11'
+status: active

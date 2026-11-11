@@ -1,0 +1,20 @@
+id: sf-000465
+product_area: data-model
+true_statement: Every Salesforce record gets an automatically generated 18-character, case-insensitive record ID as its identity field.
+false_statement: Every Salesforce record gets an automatically generated 12-character, case-sensitive record ID as its identity field.
+explanation: The identity field the API generates on create is an 18-character ID that is case-insensitive. A 12-character case-sensitive ID is not what the platform uses.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/standard-objects.md
+  commit: 2504d4caedf4d80d25089628d89b34723f141e66
+  blob: 430d3f4ae4b78b1962a23167de44c4109a2a499e
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:platform-data-architect-certification
+concepts:
+- kt:standard-objects
+- kt:metadata-driven-architecture
+difficulty: 1
+created: '2026-11-11'
+status: active

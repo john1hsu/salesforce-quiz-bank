@@ -1,0 +1,17 @@
+id: sf-000451
+product_area: clouds-and-products
+true_statement: Salesforce, Inc.'s fiscal year ends on January 31, so its fiscal 2026 closed on January 31, 2026.
+false_statement: Salesforce, Inc.'s fiscal year ends on December 31, so its fiscal 2026 closes on December 31, 2026.
+explanation: Salesforce runs a fiscal year that ends January 31, so fiscal 2026 ended early in calendar 2026. A calendar-year fiscal year is incorrect.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/salesforce-inc.md
+  commit: 2504d4caedf4d80d25089628d89b34723f141e66
+  blob: bff2d0e86264dc3f25c2d1bceaf1eaff9fb9c15c
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:salesforce-inc
+difficulty: 1
+created: '2026-11-11'
+status: active

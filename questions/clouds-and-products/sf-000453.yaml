@@ -1,0 +1,18 @@
+id: sf-000453
+product_area: clouds-and-products
+true_statement: Salesforce ships three seasonal major releases a year, Spring, Summer and Winter, typically in February, June and October.
+false_statement: Salesforce ships four seasonal major releases a year, Spring, Summer, Fall and Winter, typically in February, May, August and November.
+explanation: There are three major releases a year with no Fall release, landing around February, June and October. Some products also ship monthly updates in between.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/salesforce-inc.md
+  commit: 2504d4caedf4d80d25089628d89b34723f141e66
+  blob: bff2d0e86264dc3f25c2d1bceaf1eaff9fb9c15c
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:salesforce-inc
+- kt:salesforce-platform
+difficulty: 1
+created: '2026-11-11'
+status: active

@@ -1,0 +1,17 @@
+id: sf-000440
+product_area: automation
+true_statement: A case assignment rule can contain up to 3,000 rule entries, of which up to 300 can be formula entries.
+false_statement: A case assignment rule can contain up to 300 rule entries, of which up to 30 can be formula entries.
+explanation: The cap is 3,000 entries per case assignment rule, with 300 of them allowed to use formulas. The false statement divides both numbers by ten.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/assignment-rules.md
+  commit: 2504d4caedf4d80d25089628d89b34723f141e66
+  blob: d5ec5dbb14dec7a218b9588f0af47bdd52ab5fd7
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:assignment-rules
+difficulty: 2
+created: '2026-11-11'
+status: active

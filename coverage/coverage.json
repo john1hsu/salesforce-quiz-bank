@@ -1,45 +1,45 @@
 {
  "totals": {
-  "active": 409,
+  "active": 497,
   "retired": 2
  },
  "areas": {
   "architecture-practice": {
-   "active": 42
+   "active": 45
   },
   "automation": {
-   "active": 30
+   "active": 36
   },
   "clouds-and-products": {
-   "active": 36
+   "active": 45
   },
   "data-cloud-and-ai": {
-   "active": 39
+   "active": 45
   },
   "data-model": {
-   "active": 36
+   "active": 42
   },
   "development": {
-   "active": 35,
+   "active": 41,
    "retired": 1
   },
   "devops-and-alm": {
-   "active": 32
+   "active": 38
   },
   "identity": {
-   "active": 31
+   "active": 37
   },
   "integration": {
-   "active": 47
+   "active": 50
   },
   "platform-architecture": {
-   "active": 30
+   "active": 42
   },
   "public-sector-and-compliance": {
-   "active": 27
+   "active": 39
   },
   "security-and-sharing": {
-   "active": 24,
+   "active": 37,
    "retired": 1
   }
  },
@@ -71,6 +71,9 @@
   "articles/architecture-practice/salesforce-architecture-center.md": {
    "active": 3
   },
+  "articles/architecture-practice/salesforce-certification-program.md": {
+   "active": 3
+  },
   "articles/architecture-practice/solution-design-tradeoffs.md": {
    "active": 3
   },
@@ -89,6 +92,9 @@
   "articles/automation/approval-processes.md": {
    "active": 1
   },
+  "articles/automation/assignment-rules.md": {
+   "active": 3
+  },
   "articles/automation/autolaunched-flow.md": {
    "active": 3
   },
@@ -102,6 +108,9 @@
    "active": 3
   },
   "articles/automation/flow-trigger-explorer.md": {
+   "active": 3
+  },
+  "articles/automation/platform-event-triggered-flow.md": {
    "active": 3
   },
   "articles/automation/process-automation.md": {
@@ -143,10 +152,19 @@
   "articles/clouds-and-products/omni-channel.md": {
    "active": 3
   },
+  "articles/clouds-and-products/opportunity-splits.md": {
+   "active": 3
+  },
   "articles/clouds-and-products/revenue-cloud.md": {
    "active": 3
   },
+  "articles/clouds-and-products/sales-cloud-consultant-certification.md": {
+   "active": 3
+  },
   "articles/clouds-and-products/sales-cloud.md": {
+   "active": 3
+  },
+  "articles/clouds-and-products/salesforce-inc.md": {
    "active": 3
   },
   "articles/clouds-and-products/service-cloud.md": {
@@ -165,6 +183,12 @@
    "active": 3
   },
   "articles/data-cloud-and-ai/agent-script.md": {
+   "active": 3
+  },
+  "articles/data-cloud-and-ai/agentforce-studio.md": {
+   "active": 3
+  },
+  "articles/data-cloud-and-ai/agentforce-testing-center.md": {
    "active": 3
   },
   "articles/data-cloud-and-ai/agentforce.md": {
@@ -200,6 +224,9 @@
   "articles/data-model/big-objects.md": {
    "active": 3
   },
+  "articles/data-model/business-processes.md": {
+   "active": 3
+  },
   "articles/data-model/data-skew.md": {
    "active": 3
   },
@@ -233,6 +260,9 @@
   "articles/data-model/roll-up-summary-field.md": {
    "active": 3
   },
+  "articles/data-model/standard-objects.md": {
+   "active": 3
+  },
   "articles/development/apex-callouts.md": {
    "active": 3
   },
@@ -246,6 +276,9 @@
    "active": 3
   },
   "articles/development/asynchronous-apex.md": {
+   "active": 3
+  },
+  "articles/development/aura-components.md": {
    "active": 3
   },
   "articles/development/batch-apex.md": {
@@ -269,6 +302,12 @@
   "articles/development/soql.md": {
    "active": 2,
    "retired": 1
+  },
+  "articles/development/trigger-framework-pattern.md": {
+   "active": 3
+  },
+  "articles/devops-and-alm/agentforce-dx.md": {
+   "active": 3
   },
   "articles/devops-and-alm/application-lifecycle-management.md": {
    "active": 3
@@ -303,6 +342,9 @@
   "articles/devops-and-alm/source-tracking.md": {
    "active": 3
   },
+  "articles/devops-and-alm/tooling-api.md": {
+   "active": 3
+  },
   "articles/devops-and-alm/unlocked-packages.md": {
    "active": 1
   },
@@ -315,7 +357,13 @@
   "articles/identity/external-client-apps.md": {
    "active": 3
   },
+  "articles/identity/headless-identity.md": {
+   "active": 3
+  },
   "articles/identity/identity-and-access-management-architect-certification.md": {
+   "active": 3
+  },
+  "articles/identity/login-flows.md": {
    "active": 3
   },
   "articles/identity/multi-factor-authentication.md": {
@@ -378,6 +426,9 @@
   "articles/integration/outbound-messaging.md": {
    "active": 3
   },
+  "articles/integration/platform-event-allocations.md": {
+   "active": 3
+  },
   "articles/integration/platform-events.md": {
    "active": 1
   },
@@ -408,6 +459,12 @@
   "articles/platform-architecture/order-of-execution.md": {
    "active": 3
   },
+  "articles/platform-architecture/org-strategy.md": {
+   "active": 3
+  },
+  "articles/platform-architecture/platform-administrator-certification.md": {
+   "active": 3
+  },
   "articles/platform-architecture/query-optimizer-selectivity.md": {
    "active": 3
   },
@@ -418,6 +475,15 @@
    "active": 3
   },
   "articles/platform-architecture/sandbox-types.md": {
+   "active": 3
+  },
+  "articles/platform-architecture/skinny-tables.md": {
+   "active": 3
+  },
+  "articles/platform-architecture/transaction-control.md": {
+   "active": 3
+  },
+  "articles/public-sector-and-compliance/cjis-security-policy.md": {
    "active": 3
   },
   "articles/public-sector-and-compliance/data-residency.md": {
@@ -432,10 +498,16 @@
   "articles/public-sector-and-compliance/fedramp.md": {
    "active": 3
   },
+  "articles/public-sector-and-compliance/fips-199.md": {
+   "active": 3
+  },
   "articles/public-sector-and-compliance/government-cloud-plus.md": {
    "active": 3
   },
   "articles/public-sector-and-compliance/il4-and-il5.md": {
+   "active": 3
+  },
+  "articles/public-sector-and-compliance/iso-iec-27001.md": {
    "active": 3
   },
   "articles/public-sector-and-compliance/nist-sp-800-53.md": {
@@ -447,14 +519,29 @@
   "articles/public-sector-and-compliance/section-508-accessibility.md": {
    "active": 3
   },
+  "articles/public-sector-and-compliance/security-compliance-frameworks.md": {
+   "active": 3
+  },
   "articles/security-and-sharing/apex-managed-sharing.md": {
    "active": 3
   },
   "articles/security-and-sharing/enterprise-territory-management.md": {
    "active": 3
   },
+  "articles/security-and-sharing/field-audit-trail.md": {
+   "active": 3
+  },
+  "articles/security-and-sharing/implicit-sharing.md": {
+   "active": 3
+  },
   "articles/security-and-sharing/organization-wide-defaults.md": {
    "active": 1
+  },
+  "articles/security-and-sharing/permission-set-groups.md": {
+   "active": 3
+  },
+  "articles/security-and-sharing/queues.md": {
+   "active": 3
   },
   "articles/security-and-sharing/restriction-rules.md": {
    "active": 3
@@ -464,6 +551,9 @@
   },
   "articles/security-and-sharing/salesforce-sharing-model.md": {
    "active": 3
+  },
+  "articles/security-and-sharing/salesforce-shield.md": {
+   "active": 1
   },
   "articles/security-and-sharing/sharing-and-visibility-architect-certification.md": {
    "active": 2,

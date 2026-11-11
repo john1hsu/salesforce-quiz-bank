@@ -1,0 +1,18 @@
+id: sf-000457
+product_area: data-cloud-and-ai
+true_statement: In an Agentforce Testing Center CSV, the Expected Subagent column takes the subagent's API name, not its label.
+false_statement: In an Agentforce Testing Center CSV, the Expected Subagent column takes the subagent's label, not its API name.
+explanation: Test cases match subagents by API name, so entering the display label gives a mismatch. The same API-name convention applies to expected actions.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/agentforce-testing-center.md
+  commit: 2504d4caedf4d80d25089628d89b34723f141e66
+  blob: 66ace15978af5be4acbc1e5692e19471af078432
+verified_release: Winter '27
+feature_status: beta
+concepts:
+- kt:agentforce-testing-center
+- kt:agentforce-studio
+difficulty: 2
+created: '2026-11-11'
+status: active

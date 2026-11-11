@@ -1,0 +1,18 @@
+id: sf-000472
+product_area: devops-and-alm
+true_statement: Retrieving the Agent:<name> pseudo type also pulls the agent's action Apex and flows, but deleting it leaves that Apex and those flows in place.
+false_statement: Retrieving the Agent:<name> pseudo type also pulls the agent's action Apex and flows, and deleting it removes that Apex and those flows too.
+explanation: 'Agent: is a convenience pseudo type, not real metadata. Its retrieve expands to the supporting Apex and flows, but deploy and delete operations don''t touch them.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/agentforce-dx.md
+  commit: 2504d4caedf4d80d25089628d89b34723f141e66
+  blob: b52f0d583b3a29d707c322bc077bb2ec2f84b4c4
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:agentforce-dx
+- kt:metadata-api
+difficulty: 3
+created: '2026-11-11'
+status: active

@@ -1,0 +1,17 @@
+id: sf-000494
+product_area: public-sector-and-compliance
+true_statement: CJIS Security Policy v6.0 requires a device session lock after at most 30 minutes of inactivity.
+false_statement: CJIS Security Policy v6.0 requires a device session lock after at most 120 minutes of inactivity.
+explanation: Control AC-11 caps inactivity before session lock at 30 minutes. Two hours is far longer than the policy allows.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/cjis-security-policy.md
+  commit: 2504d4caedf4d80d25089628d89b34723f141e66
+  blob: 6e4e89974b2f50a22e262af8dfb310ce7938c1e2
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:cjis-security-policy
+difficulty: 2
+created: '2026-11-11'
+status: active

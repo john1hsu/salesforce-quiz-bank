@@ -1,0 +1,20 @@
+id: sf-000501
+product_area: security-and-sharing
+true_statement: To delete FieldHistoryArchive rows, the template record must supply every field in the big object's index; partial indexes and wildcards are rejected.
+false_statement: To delete FieldHistoryArchive rows, the template record may supply a partial index or wildcards to match many rows at once.
+explanation: Archive deletion via deleteByExample() or Database.deleteImmediate() follows big-object index rules, so the full index must be given. Partial or wildcard templates fail.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/field-audit-trail.md
+  commit: 2504d4caedf4d80d25089628d89b34723f141e66
+  blob: 39f3595277335cc100e2f64b9cb272554933f387
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:platform-data-architect-certification
+concepts:
+- kt:field-audit-trail
+- kt:big-objects
+difficulty: 3
+created: '2026-11-11'
+status: active

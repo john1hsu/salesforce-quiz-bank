@@ -1,0 +1,18 @@
+id: sf-000444
+product_area: automation
+true_statement: When a platform event fails, the subscribed platform event-triggered flow doesn't start and no flow error email is sent.
+false_statement: When a platform event fails, the subscribed platform event-triggered flow doesn't start, and a flow error email is sent to the admin.
+explanation: 'These failures are silent from Flow''s point of view: no interview and no error email. Troubleshooting has to rely on the errors the platform event itself produces.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/platform-event-triggered-flow.md
+  commit: 2504d4caedf4d80d25089628d89b34723f141e66
+  blob: 546bb47be32c9af3a99e4a492a82a3a26abe27af
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:platform-event-triggered-flow
+- kt:flow-fault-handling
+difficulty: 2
+created: '2026-11-11'
+status: active

@@ -1,0 +1,18 @@
+id: sf-000469
+product_area: development
+true_statement: Salesforce doesn't guarantee the execution order of several Apex triggers on the same object for the same event, which is why one trigger per object is advised.
+false_statement: Salesforce runs several Apex triggers on the same object for the same event in alphabetical order by name, which is why one trigger per object is optional.
+explanation: Multiple triggers on one object and event run in no guaranteed order, causing nondeterministic bugs. A single trigger delegating to a handler makes the order explicit in code.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/trigger-framework-pattern.md
+  commit: 2504d4caedf4d80d25089628d89b34723f141e66
+  blob: c10ae0532a77431983a1b4096328de4882dbc8e3
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:trigger-framework-pattern
+- kt:apex-triggers
+difficulty: 2
+created: '2026-11-11'
+status: active

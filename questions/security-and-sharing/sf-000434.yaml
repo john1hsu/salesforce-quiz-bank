@@ -1,0 +1,20 @@
+id: sf-000434
+product_area: security-and-sharing
+true_statement: Records owned by a queue are routed only to the queue's members, never to their managers, even when those managers can see the records.
+false_statement: Records owned by a queue are routed to the queue's members and also to their role-hierarchy managers when Grant Access Using Hierarchies is on.
+explanation: Grant Access Using Hierarchies only gives managers visibility. Work assignment and routing go to members alone.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/queues.md
+  commit: 2504d4caedf4d80d25089628d89b34723f141e66
+  blob: 95c12b6b686f338be4fcd328451717feb03e44ec
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:sharing-and-visibility-architect-certification
+concepts:
+- kt:queues
+- kt:role-hierarchy
+difficulty: 2
+created: '2026-11-11'
+status: active

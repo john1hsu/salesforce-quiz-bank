@@ -1,0 +1,18 @@
+id: sf-000470
+product_area: development
+true_statement: Static variables are not reset between trigger invocations within one Bulk API request, even though governor limits are reset.
+false_statement: Static variables are reset between trigger invocations within one Bulk API request, just as governor limits are reset.
+explanation: Within a single Bulk API request, statics persist across trigger chunks while limits reset. Recursion guards built on static flags can therefore misbehave, which is why field-change checks are recommended.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/trigger-framework-pattern.md
+  commit: 2504d4caedf4d80d25089628d89b34723f141e66
+  blob: c10ae0532a77431983a1b4096328de4882dbc8e3
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:trigger-framework-pattern
+- kt:governor-limits
+difficulty: 3
+created: '2026-11-11'
+status: active

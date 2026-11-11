@@ -1,0 +1,18 @@
+id: sf-000454
+product_area: data-cloud-and-ai
+true_statement: In Agentforce Builder's Preview panel, Simulate mode uses mock data without running actions, while Live Test runs real actions and changes org data.
+false_statement: In Agentforce Builder's Preview panel, Live Test uses mock data without running actions, while Simulate mode runs real actions and changes org data.
+explanation: Simulate checks configuration safely with mock data and no permission enforcement. Live Test is the mode that executes actions against real records; the false statement swaps them.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/agentforce-studio.md
+  commit: 2504d4caedf4d80d25089628d89b34723f141e66
+  blob: 0b543628fba0d418a39792116515833e3eca9014
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:agentforce-studio
+- kt:agent-development-lifecycle
+difficulty: 2
+created: '2026-11-11'
+status: active

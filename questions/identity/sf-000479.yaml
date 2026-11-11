@@ -1,0 +1,20 @@
+id: sf-000479
+product_area: identity
+true_statement: Headless login, registration and passwordless flows use the Authorization Code and Credentials flow, requested with response_type=code_credentials.
+false_statement: Headless login, registration and passwordless flows use the OAuth username-password flow, requested with grant_type=password.
+explanation: These flows post credentials to the authorize endpoint with response_type=code_credentials and then exchange the returned code for a token. The username-password grant isn't used.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/headless-identity.md
+  commit: 2504d4caedf4d80d25089628d89b34723f141e66
+  blob: b77b652ada0524114f1f3b308bd3290366763d77
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:identity-and-access-management-architect-certification
+concepts:
+- kt:headless-identity
+- kt:oauth-2-flows-in-salesforce
+difficulty: 2
+created: '2026-11-11'
+status: active

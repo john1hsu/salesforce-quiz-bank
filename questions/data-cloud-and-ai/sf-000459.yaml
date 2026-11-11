@@ -1,0 +1,18 @@
+id: sf-000459
+product_area: data-cloud-and-ai
+true_statement: Agentforce agent tests are stored as the AiEvaluationDefinition Metadata API type, which needs API version 63.0 or later.
+false_statement: Agentforce agent tests are stored as the BotTestDefinition Metadata API type, which needs API version 60.0 or later.
+explanation: AiEvaluationDefinition, available from API 63.0, holds agent tests so they can be deployed between orgs and run in CI. BotTestDefinition is not the type used.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/agentforce-testing-center.md
+  commit: 2504d4caedf4d80d25089628d89b34723f141e66
+  blob: 66ace15978af5be4acbc1e5692e19471af078432
+verified_release: Winter '27
+feature_status: beta
+concepts:
+- kt:agentforce-testing-center
+- kt:metadata-api
+difficulty: 3
+created: '2026-11-11'
+status: active

@@ -1,0 +1,18 @@
+id: sf-000432
+product_area: security-and-sharing
+true_statement: In an Apex test, Test.calculatePermissionSetGroup() forces a group's recalculation so the test can assign it, and the call counts against CPU limits.
+false_statement: In an Apex test, Test.calculatePermissionSetGroup() forces a group's recalculation so the test can assign it, and the call is exempt from CPU limits.
+explanation: Recalculation in tests consumes Apex CPU time, so large groups can push a test over the limit. Salesforce suggests calculating once in @testSetup and reusing it.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/permission-set-groups.md
+  commit: 2504d4caedf4d80d25089628d89b34723f141e66
+  blob: c7522aa60c36c3607569c43ebcf35331fc74fb99
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:permission-set-groups
+- kt:apex-testing
+difficulty: 3
+created: '2026-11-11'
+status: active

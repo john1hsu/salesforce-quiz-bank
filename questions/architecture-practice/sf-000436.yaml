@@ -1,0 +1,18 @@
+id: sf-000436
+product_area: architecture-practice
+true_statement: One yearly Architect maintenance badge maintains all five Salesforce domain architect credentials.
+false_statement: Each of the five Salesforce domain architect credentials needs its own yearly maintenance badge.
+explanation: Data, Development Lifecycle and Deployment, Identity and Access Management, Integration, and Sharing and Visibility architects share a single Architect badge, so a holder of several completes it once.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/salesforce-certification-program.md
+  commit: 2504d4caedf4d80d25089628d89b34723f141e66
+  blob: 37b81e9d802df45effeaff8a80229f424fbe5487
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:salesforce-certification-program
+- kt:salesforce-architect
+difficulty: 2
+created: '2026-11-11'
+status: active

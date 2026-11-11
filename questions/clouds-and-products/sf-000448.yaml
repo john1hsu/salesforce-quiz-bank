@@ -1,0 +1,18 @@
+id: sf-000448
+product_area: clouds-and-products
+true_statement: The Agentforce Sales Consultant credential lists the Salesforce Certified Platform Administrator as its prerequisite.
+false_statement: The Agentforce Sales Consultant credential lists the Salesforce Certified Platform App Builder as its prerequisite.
+explanation: The credential page names Platform Administrator as the required prior certification. Platform App Builder is not the listed prerequisite.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/sales-cloud-consultant-certification.md
+  commit: 2504d4caedf4d80d25089628d89b34723f141e66
+  blob: f891bc5529cff2f76ab371ccda0044a1e483b2f6
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:sales-cloud-consultant-certification
+- kt:platform-administrator-certification
+difficulty: 1
+created: '2026-11-11'
+status: active

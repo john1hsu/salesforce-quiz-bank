@@ -1,0 +1,19 @@
+id: sf-000417
+product_area: integration
+true_statement: When the hourly publishing allocation is exceeded, the publish call fails with LIMIT_EXCEEDED and the event is neither published nor queued.
+false_statement: When the hourly publishing allocation is exceeded, the publish call returns LIMIT_EXCEEDED and the event is queued for publishing once usage drops.
+explanation: Over the publishing allocation the event is simply rejected; nothing holds it for later, so the publisher must retry. No automatic queueing happens.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/platform-event-allocations.md
+  commit: 2504d4caedf4d80d25089628d89b34723f141e66
+  blob: e3a76354b32466cbaff24aa3ff26b12ff046386b
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:integration-architect-certification
+concepts:
+- kt:platform-event-allocations
+difficulty: 2
+created: '2026-11-11'
+status: active

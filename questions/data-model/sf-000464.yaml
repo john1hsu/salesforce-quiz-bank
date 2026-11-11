@@ -1,0 +1,20 @@
+id: sf-000464
+product_area: data-model
+true_statement: Lead is a standard object that cannot act as the master in a master-detail relationship.
+false_statement: Lead is a standard object that cannot act as the detail in a lookup relationship.
+explanation: Some standard objects, Lead among them, are barred from being a master-detail parent. Nothing stops Lead from holding lookup fields.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/standard-objects.md
+  commit: 2504d4caedf4d80d25089628d89b34723f141e66
+  blob: 430d3f4ae4b78b1962a23167de44c4109a2a499e
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:platform-data-architect-certification
+concepts:
+- kt:standard-objects
+- kt:object-relationships
+difficulty: 2
+created: '2026-11-11'
+status: active

@@ -1,0 +1,18 @@
+id: sf-000423
+product_area: public-sector-and-compliance
+true_statement: 'A cloud provider''s FIPS 199 categorization does not replace the agency''s own: each agency must categorize the data it puts in that environment.'
+false_statement: A cloud provider's FIPS 199 categorization replaces the agency's own, so agencies need not categorize the data they put in that environment.
+explanation: The provider categorizes its offering, but every agency still performs its own analysis of its data, and that analysis decides which authorized environment it needs.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/fips-199.md
+  commit: 2504d4caedf4d80d25089628d89b34723f141e66
+  blob: 9f6966e781a0e1b50ac2c764cc9b1dc875dce2e7
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:fips-199
+- kt:fedramp
+difficulty: 2
+created: '2026-11-11'
+status: active

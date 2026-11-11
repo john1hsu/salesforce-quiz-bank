@@ -1,0 +1,18 @@
+id: sf-000487
+product_area: platform-architecture
+true_statement: Since the December 2025 refresh, Data and Analytics Management is the heaviest section of the Platform Administrator exam at 17%.
+false_statement: Since the December 2025 refresh, Automation is the heaviest section of the Platform Administrator exam at 17%.
+explanation: Data and Analytics Management carries 17%, the largest single weight. Automation sits at 15%, alongside Configuration and Setup and Object Manager.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/platform-administrator-certification.md
+  commit: 2504d4caedf4d80d25089628d89b34723f141e66
+  blob: 3f63003b09f2eac538f6e45d23e2e4a7a3adc73b
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:platform-administrator-certification
+- kt:salesforce-certification-program
+difficulty: 2
+created: '2026-11-11'
+status: active

@@ -1,0 +1,18 @@
+id: sf-000495
+product_area: public-sector-and-compliance
+true_statement: CJIS Security Policy v6.0 requires audit records to be kept for at least one year.
+false_statement: CJIS Security Policy v6.0 requires audit records to be kept for at least ninety days.
+explanation: Control AU-11 sets audit record retention at a minimum of one year. Ninety days is the account-inactivity threshold, not the retention period.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/cjis-security-policy.md
+  commit: 2504d4caedf4d80d25089628d89b34723f141e66
+  blob: 6e4e89974b2f50a22e262af8dfb310ce7938c1e2
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:cjis-security-policy
+- kt:nist-sp-800-53
+difficulty: 2
+created: '2026-11-11'
+status: active
