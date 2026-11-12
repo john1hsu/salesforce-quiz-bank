@@ -1,0 +1,18 @@
+id: sf-000537
+product_area: devops-and-alm
+true_statement: A package dependency version such as 1.3.0.LATEST fixes the major, minor and patch numbers and picks up only the newest build.
+false_statement: A package dependency version such as 1.3.0.LATEST fixes only the major number and picks up the newest minor, patch and build.
+explanation: LATEST applies only to the build segment, so moving to a new base release means editing the specifier. It does not float the minor or patch numbers.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/package-dependencies.md
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: 05b05355a6e932b4ebf2d1522c71e4b9aad3a3da
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:package-dependencies
+- kt:salesforce-dx
+difficulty: 2
+created: '2026-11-12'
+status: active

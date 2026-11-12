@@ -6,8 +6,8 @@ explanation: Before-save flows support only Assignment, Decision, Get Records an
 source:
   repo: john1hsu/salesforce-knowledge-graph
   path: articles/automation/record-triggered-flow.md
-  commit: eaa09f2d3680083b0228ad1bdc4b1896c1c57934
-  blob: fd0dad1996c54e37d3b3814e983e6306f2e29535
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: 50a6838b867cb89deaabb956668fa42a7dee6f7e
 verified_release: Winter '27
 feature_status: current
 concepts:

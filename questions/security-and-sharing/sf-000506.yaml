@@ -1,0 +1,17 @@
+id: sf-000506
+product_area: security-and-sharing
+true_statement: Enabling Shield Platform Encryption encrypts only data created or updated afterward; existing values need a sync or background encryption process.
+false_statement: Enabling Shield Platform Encryption immediately encrypts all existing values of the selected fields, along with any data created afterward.
+explanation: Encryption applies going forward only. Values already stored are brought into line through the Encryption Statistics and Data Sync pages or a background process, not automatically at enablement.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/shield-platform-encryption.md
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: 4650655964528e7f343045bdfb87cd1c539f9990
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:shield-platform-encryption
+difficulty: 2
+created: '2026-11-12'
+status: active

@@ -1,0 +1,17 @@
+id: sf-000555
+product_area: public-sector-and-compliance
+true_statement: A SOC 2 Type 2 report tests whether controls operated effectively over a period, while a Type 1 assesses their design as of a single date.
+false_statement: A SOC 2 Type 1 report tests whether controls operated effectively over a period, while a Type 2 assesses their design as of a single date.
+explanation: Type 1 is a point-in-time look at control design; Type 2 covers a period, often six to twelve months, and adds operating-effectiveness testing. The false statement swaps the types.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/soc-2.md
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: 980dbb40c43e53de53354e4ab27e408695c190ca
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:soc-2
+difficulty: 1
+created: '2026-11-12'
+status: active

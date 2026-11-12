@@ -1,0 +1,18 @@
+id: sf-000519
+product_area: data-cloud-and-ai
+true_statement: In Data 360, an ensemble retriever combines several individual retrievers, merges their results and reranks them by relevance.
+false_statement: In Data 360, a custom SQL retriever combines several individual retrievers, merges their results and reranks them by relevance.
+explanation: Merging and reranking results from multiple individual retrievers is the job of an ensemble retriever. A custom SQL retriever instead runs a parameterized SQL query against Data 360 objects.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/retrieval-augmented-generation-in-salesforce.md
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: d433d56499da8ef2b301e17aa2012076a931e179
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:retrieval-augmented-generation-in-salesforce
+- kt:data-cloud
+difficulty: 2
+created: '2026-11-12'
+status: active

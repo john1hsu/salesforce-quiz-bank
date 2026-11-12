@@ -1,0 +1,18 @@
+id: sf-000560
+product_area: security-and-sharing
+true_statement: Salesforce calls MFA, permission sets and login IP restrictions customer 'configurables', and paid add-ons such as Shield 'enhanceables'.
+false_statement: Salesforce calls Shield and Security Center customer 'configurables', and MFA, permission sets and login IP restrictions paid 'enhanceables'.
+explanation: In Salesforce's shared responsibility framing, configurables are the built-in settings customers must set up, while enhanceables are paid products layered on top. The false version swaps the two groups.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/data-breach-risk.md
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: 3e24baf5a8744603eed47cc5d1ba908d80b8d483
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:data-breach-risk
+- kt:shared-responsibility-model
+difficulty: 2
+created: '2026-11-12'
+status: active

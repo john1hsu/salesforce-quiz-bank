@@ -1,0 +1,18 @@
+id: sf-000576
+product_area: security-and-sharing
+true_statement: In Lightning Experience, the MFA action on a List View or Report Event transaction security policy isn't supported and is upgraded to Block.
+false_statement: In Lightning Experience, the MFA action on a List View or Report Event transaction security policy isn't supported and is downgraded to Notify.
+explanation: Salesforce replaces the unsupported MFA action with the stricter Block action for these events in Lightning. It does not fall back to a notification, which would stop nothing.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/transaction-security-policies.md
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: f7c791572f76556be6312c63ebd7c5ca9fae0070
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:transaction-security-policies
+- kt:multi-factor-authentication
+difficulty: 3
+created: '2026-11-12'
+status: active

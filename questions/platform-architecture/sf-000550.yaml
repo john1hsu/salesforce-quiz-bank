@@ -1,0 +1,17 @@
+id: sf-000550
+product_area: platform-architecture
+true_statement: A training provider's summary lists the Platform App Builder exam as 60 scored questions with a 63% passing score.
+false_statement: A training provider's summary lists the Platform App Builder exam as 60 scored questions with a 75% passing score.
+explanation: Global Knowledge summarises the exam as 60 scored multiple-choice questions with a 63% pass mark, to be confirmed against the official exam guide. 75% is not the stated threshold.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/platform-app-builder-certification.md
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: 79c09863e25822c59ec57cc107d182a0dd9751a6
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:platform-app-builder-certification
+difficulty: 2
+created: '2026-11-12'
+status: active

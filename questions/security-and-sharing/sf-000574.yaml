@@ -1,0 +1,18 @@
+id: sf-000574
+product_area: security-and-sharing
+true_statement: The permissions on a standard profile can't be edited, though admins can still change its session settings and password policies.
+false_statement: The session settings and password policies on a standard profile can't be edited, though admins can still change its permissions.
+explanation: Standard profiles lock their permissions, but a few settings such as custom app and tab settings, session settings and password policies stay editable. The false statement swaps which part is locked.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/profiles.md
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: 5930b66262e5d69bb73067be97f5cab2ab05616f
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:profiles
+- kt:session-security-levels
+difficulty: 2
+created: '2026-11-12'
+status: active

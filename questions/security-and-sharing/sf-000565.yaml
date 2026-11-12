@@ -1,0 +1,18 @@
+id: sf-000565
+product_area: security-and-sharing
+true_statement: If a permission set grants View All Fields on an object, the FieldPermissions object reports PermissionsRead as true for every field on it.
+false_statement: If a permission set grants View All Fields on an object, the FieldPermissions object reports PermissionsEdit as true for every field on it.
+explanation: View All Fields overrides per-field settings for reading, so PermissionsRead shows true across the object. It is a read grant and does not make every field editable.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/field-level-security.md
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: 3210d62a2d22a4659f94ad378f4f294f38635fb3
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:field-level-security
+- kt:permission-sets
+difficulty: 3
+created: '2026-11-12'
+status: active

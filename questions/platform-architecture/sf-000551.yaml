@@ -1,0 +1,17 @@
+id: sf-000551
+product_area: platform-architecture
+true_statement: Trailhead's prep module expects Platform App Builder candidates to have about six months of experience building on the Salesforce Platform.
+false_statement: Trailhead's prep module expects Platform App Builder candidates to have about two years of experience building on the Salesforce Platform.
+explanation: The official prep module sets roughly six months of experience with platform capabilities, licensing, app design and deployment options. Two years overstates the expected background.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/platform-app-builder-certification.md
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: 79c09863e25822c59ec57cc107d182a0dd9751a6
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:platform-app-builder-certification
+difficulty: 1
+created: '2026-11-12'
+status: active

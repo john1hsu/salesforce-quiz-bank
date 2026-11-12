@@ -1,0 +1,19 @@
+id: sf-000531
+product_area: development
+true_statement: A single-object SOSL search returns up to 250 records unless a WHERE or ORDER BY clause is added, which raises the cap to 2,000.
+false_statement: A single-object SOSL search returns up to 2,000 records unless a WHERE or ORDER BY clause is added, which lowers the cap to 250.
+explanation: The default per-object cap for a single-object search is 250, and adding WHERE or ORDER BY lifts it to 2,000. The false statement inverts the default and the effect of the clauses.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/sosl.md
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: ace667177d778ee240ecc0c556e8c4c993b84c2f
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:platform-developer-certification
+concepts:
+- kt:sosl
+difficulty: 3
+created: '2026-11-12'
+status: active

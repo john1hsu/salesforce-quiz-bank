@@ -1,0 +1,18 @@
+id: sf-000562
+product_area: security-and-sharing
+true_statement: Only daily event log files integrate with the Event Monitoring Analytics app; hourly files must be imported into visualization tools by hand.
+false_statement: Only hourly event log files integrate with the Event Monitoring Analytics app; daily files must be imported into visualization tools by hand.
+explanation: The Event Monitoring Analytics app consumes the daily files, which are also the complete record for a date. Hourly files can be incomplete and need manual import.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/event-monitoring.md
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: a4e2b62b03db77d1d99d4b8f4e22a30316affc72
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:event-monitoring
+- kt:crm-analytics
+difficulty: 2
+created: '2026-11-12'
+status: active

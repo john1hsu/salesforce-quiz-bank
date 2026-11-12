@@ -1,0 +1,17 @@
+id: sf-000536
+product_area: devops-and-alm
+true_statement: A 1GP patch version can't add or delete components; that kind of change needs a new major or minor version.
+false_statement: A 1GP patch version can add new components but can't delete them; only deletions need a new major or minor version.
+explanation: 'Patches are deliberately narrow: they can''t add or delete components, add global modifiers, new web services or new dependencies. Adding a component therefore requires a major or minor release, not a patch.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/first-generation-managed-packages.md
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: 1098dcae37dfa404ac1fad8ba932490f1f120e75
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:first-generation-managed-packages
+difficulty: 2
+created: '2026-11-12'
+status: active

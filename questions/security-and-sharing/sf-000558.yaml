@@ -1,0 +1,18 @@
+id: sf-000558
+product_area: security-and-sharing
+true_statement: A Salesforce Health Check score reflects org security settings, so it would not reveal an over-scoped integration token.
+false_statement: A Salesforce Health Check score includes connected app token scopes, so it would reveal an over-scoped integration token.
+explanation: Health Check measures configuration settings against a baseline, not people or third-party apps. An integration token with excessive scope sits outside what it scores.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/data-breach-risk.md
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: 3e24baf5a8744603eed47cc5d1ba908d80b8d483
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:data-breach-risk
+- kt:connected-apps
+difficulty: 2
+created: '2026-11-12'
+status: active

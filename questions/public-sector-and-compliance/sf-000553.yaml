@@ -1,0 +1,17 @@
+id: sf-000553
+product_area: public-sector-and-compliance
+true_statement: A CSF Target Profile holds the outcomes an organization has selected and prioritized, while a Current Profile records outcomes it already achieves.
+false_statement: A CSF Current Profile holds the outcomes an organization has selected and prioritized, while a Target Profile records outcomes it already achieves.
+explanation: The Current Profile describes what is being achieved today and how well; the Target Profile describes the prioritized outcomes the organization is aiming for. The false statement swaps them.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/nist-cybersecurity-framework.md
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: 20fac46a721ce1466a909971cb5a9fd8394a27ac
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:nist-cybersecurity-framework
+difficulty: 1
+created: '2026-11-12'
+status: active

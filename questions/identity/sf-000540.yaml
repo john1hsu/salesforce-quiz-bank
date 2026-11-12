@@ -1,0 +1,20 @@
+id: sf-000540
+product_area: identity
+true_statement: A default transaction security policy requires step-up authentication for UI report exports of more than 10,000 records.
+false_statement: A default transaction security policy requires step-up authentication for UI report exports of more than 1,000 records.
+explanation: Salesforce's default guardrail against post-takeover exfiltration kicks in above 10,000 exported records. A 1,000-record threshold understates it by a factor of ten.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/account-takeover.md
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: 1223dedb3b2ceb1a9aaa8fa6e0efae9bd36a6102
+verified_release: Winter '27
+feature_status: concept
+certs:
+- kt:identity-and-access-management-architect-certification
+concepts:
+- kt:account-takeover
+- kt:transaction-security-policies
+difficulty: 2
+created: '2026-11-12'
+status: active

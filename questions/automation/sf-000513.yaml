@@ -1,0 +1,17 @@
+id: sf-000513
+product_area: automation
+true_statement: Each case escalation rule entry can have up to five escalation actions, each firing at a longer case age.
+false_statement: Each case escalation rule entry can have up to ten escalation actions, each firing at a longer case age.
+explanation: Salesforce allows a maximum of five timed escalation actions per rule entry, set over increasing Age Over periods. Ten exceeds that cap.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/escalation-rules.md
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: 0c5bd2ec39c035e0904a758e0eff44657e342800
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:escalation-rules
+difficulty: 2
+created: '2026-11-12'
+status: active

@@ -1,0 +1,19 @@
+id: sf-000587
+product_area: automation
+true_statement: Configuration changes to the Experience Builder Orchestration Work Guide component show only on the live site, not in the Builder preview.
+false_statement: Configuration changes to the Experience Builder Orchestration Work Guide component show only in the Builder preview, not on the live site.
+explanation: Salesforce notes that this component's settings don't render in Experience Builder's preview, so admins must check the live site. The false version inverts where the changes appear.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/orchestration-work-guide.md
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: f93d75d5ba7c554c877a40174cb4a0845f3e16b3
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:orchestration-work-guide
+- kt:experience-builder
+- kt:experience-cloud
+difficulty: 2
+created: '2026-11-12'
+status: active

@@ -1,0 +1,18 @@
+id: sf-000520
+product_area: data-cloud-and-ai
+true_statement: Data 360 retrievers follow data governance policies, so records the running user or agent can't access are left out of the results.
+false_statement: Data 360 retrievers return every indexed record, and record access is enforced afterwards only by the Einstein Trust Layer.
+explanation: Retrievers are permission-aware and drop records the user or agent can't see. The Einstein Trust Layer adds prompt-level safeguards but is not what filters retrieval results by record access.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/retrieval-augmented-generation-in-salesforce.md
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: d433d56499da8ef2b301e17aa2012076a931e179
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:retrieval-augmented-generation-in-salesforce
+- kt:einstein-trust-layer
+difficulty: 2
+created: '2026-11-12'
+status: active

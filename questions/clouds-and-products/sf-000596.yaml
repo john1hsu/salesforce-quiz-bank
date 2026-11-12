@@ -1,0 +1,20 @@
+id: sf-000596
+product_area: clouds-and-products
+true_statement: When a lead is converted into an existing contact, only the contact's empty fields are filled from the lead; existing values are kept.
+false_statement: When a lead is converted into an existing contact, all of the contact's fields are overwritten with the lead's values.
+explanation: Merging into existing records fills blanks and preserves current values, IDs included. The only overwrite offered is the option to replace the contact's Lead Source.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/lead-conversion.md
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: 124b8cd1036e7104899f54cb7cd644a0d556ae0c
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:sales-cloud-consultant-certification
+- kt:platform-administrator-certification
+concepts:
+- kt:lead-conversion
+difficulty: 2
+created: '2026-11-12'
+status: active

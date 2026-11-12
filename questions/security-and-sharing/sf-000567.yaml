@@ -1,0 +1,18 @@
+id: sf-000567
+product_area: security-and-sharing
+true_statement: A permission set with Session Activation Required grants its permissions only while a session is activated for it, and they lapse at logout or timeout.
+false_statement: A permission set with Session Activation Required grants its permissions from the user's next login, and they last until the assignment is removed.
+explanation: Session-based permission sets tie access to an activated session, so the permissions end when the session ends through logout, timeout or an admin. The false statement describes an ordinary standing assignment.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/permission-sets.md
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: 4853d8be46b4e3b19bddc7d0cd48b4460126d279
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:permission-sets
+- kt:session-security-levels
+difficulty: 2
+created: '2026-11-12'
+status: active

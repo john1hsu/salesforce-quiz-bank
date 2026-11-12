@@ -1,0 +1,17 @@
+id: sf-000580
+product_area: architecture-practice
+true_statement: 'Michael Nygard''s 2011 ADR template has five parts: a title, the context, the decision, a status and the consequences.'
+false_statement: 'Michael Nygard''s 2011 ADR template has five parts: a title, the context, the options considered, the decision and the consequences.'
+explanation: Nygard's original template lists title, context, decision, status and consequences. Recording the serious alternatives with their pros and cons was added by later guidance, not part of his five sections.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/architecture-decision-records.md
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: e6c3d67a86772524c3e275fdcc8901af59d956da
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:architecture-decision-records
+difficulty: 2
+created: '2026-11-12'
+status: active

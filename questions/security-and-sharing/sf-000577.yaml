@@ -1,0 +1,18 @@
+id: sf-000577
+product_area: security-and-sharing
+true_statement: In a transaction security Apex condition, evaluate() returning true fires the policy's action, while returning false lets the user proceed.
+false_statement: In a transaction security Apex condition, evaluate() returning false fires the policy's action, while returning true lets the user proceed.
+explanation: A class implementing TxnSecurity.EventCondition signals a match by returning true, which triggers the block, MFA or notification. The false version inverts the return values.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/transaction-security-policies.md
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: f7c791572f76556be6312c63ebd7c5ca9fae0070
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:transaction-security-policies
+- kt:apex
+difficulty: 2
+created: '2026-11-12'
+status: active

@@ -1,0 +1,20 @@
+id: sf-000539
+product_area: devops-and-alm
+true_statement: Salesforce's dependency support matrix lets an unlocked package depend on managed 1GP, managed 2GP and other unlocked packages.
+false_statement: Salesforce's dependency support matrix lets an unlocked package depend only on other unlocked packages, not on managed ones.
+explanation: The matrix allows unlocked packages to depend on first-generation managed, second-generation managed and unlocked packages. Restricting them to unlocked-only is wrong; it is managed 2GP depending on unlocked that is marked not recommended.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/package-dependencies.md
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: 05b05355a6e932b4ebf2d1522c71e4b9aad3a3da
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:package-dependencies
+- kt:unlocked-packages
+- kt:first-generation-managed-packages
+- kt:second-generation-managed-packages
+difficulty: 2
+created: '2026-11-12'
+status: active

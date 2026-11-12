@@ -1,0 +1,18 @@
+id: sf-000511
+product_area: automation
+true_statement: In Apex, BusinessHours.addGmt returns a GMT datetime, while BusinessHours.add returns a datetime in local time.
+false_statement: In Apex, BusinessHours.add returns a GMT datetime, while BusinessHours.addGmt returns a datetime in local time.
+explanation: The add and nextStartDate methods give local-time results and addGmt gives GMT. Swapping them, as the false statement does, is exactly the kind of mix-up that causes time-zone offset bugs in SLA code.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/business-hours.md
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: bd7a639f0fc1442f4dc284ef3de80d188f794944
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:business-hours
+- kt:apex
+difficulty: 3
+created: '2026-11-12'
+status: active

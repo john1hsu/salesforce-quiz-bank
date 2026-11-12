@@ -1,0 +1,18 @@
+id: sf-000535
+product_area: devops-and-alm
+true_statement: A 1GP packaging org can own only one managed package, so global Apex is the only way to share code across a partner's 1GP packages.
+false_statement: A 1GP packaging org can own several managed packages, so they can share one namespace and call each other's public Apex.
+explanation: In 1GP each packaging org owns one package and each namespace maps to one package, so cross-package code sharing has to go through global Apex. Sharing a namespace across packages is a 2GP capability.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/first-generation-managed-packages.md
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: 1098dcae37dfa404ac1fad8ba932490f1f120e75
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:first-generation-managed-packages
+- kt:second-generation-managed-packages
+difficulty: 3
+created: '2026-11-12'
+status: active

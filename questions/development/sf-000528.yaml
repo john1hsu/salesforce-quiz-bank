@@ -1,0 +1,18 @@
+id: sf-000528
+product_area: development
+true_statement: If the transaction that queued a future method rolls back, the future job is never processed.
+false_statement: If the transaction that queued a future method rolls back, the future job still runs because it was already queued.
+explanation: Future work queued by a transaction is discarded if that transaction rolls back, so the job never executes. It does not run independently of the transaction that queued it.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/future-methods.md
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: b1647b584ba5618a28d7ad86c7c8a4aa6dca5902
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:future-methods
+- kt:asynchronous-apex
+difficulty: 2
+created: '2026-11-12'
+status: active

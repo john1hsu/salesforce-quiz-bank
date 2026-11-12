@@ -1,0 +1,17 @@
+id: sf-000566
+product_area: security-and-sharing
+true_statement: Field-level security on formula and auto-number fields can grant only Read access, since those fields can't be edited.
+false_statement: Field-level security on formula and auto-number fields can grant only Edit access, since those fields can't be hidden.
+explanation: Formula and auto-number fields accept only the Read field permission, because their values aren't entered by users. The false statement invents an Edit-only rule that the platform doesn't have.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/field-level-security.md
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: 3210d62a2d22a4659f94ad378f4f294f38635fb3
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:field-level-security
+difficulty: 2
+created: '2026-11-12'
+status: active

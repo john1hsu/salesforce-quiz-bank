@@ -1,0 +1,17 @@
+id: sf-000582
+product_area: architecture-practice
+true_statement: In Salesforce Diagrams, the Marketing, Strategy & Sales style explains why a team is doing something, while Documentation & Implementation explains how.
+false_statement: In Salesforce Diagrams, the Documentation & Implementation style explains why a team is doing something, while Marketing, Strategy & Sales explains how.
+explanation: Marketing, Strategy & Sales diagrams show capabilities and products that deliver business value, the why. Documentation & Implementation diagrams give an implementation-ready view of the solution, the how.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/salesforce-diagrams.md
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: 3ed35727efe8a58dba86e381ddddf5cd0690041a
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:salesforce-diagrams
+difficulty: 1
+created: '2026-11-12'
+status: active

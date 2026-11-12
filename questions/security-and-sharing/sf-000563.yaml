@@ -1,0 +1,18 @@
+id: sf-000563
+product_area: security-and-sharing
+true_statement: Event log objects can be queried with SOQL roughly 25 to 45 minutes after an event, and they keep the data for 30 days.
+false_statement: Event log objects can be queried with SOQL roughly 25 to 45 minutes after an event, and they keep the data for one year.
+explanation: The event log object channel holds its data for 30 days and requires the View Event Log Object Data permission. The one-year default is for paid event log files, not these objects.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/event-monitoring.md
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: a4e2b62b03db77d1d99d4b8f4e22a30316affc72
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:event-monitoring
+- kt:soql
+difficulty: 2
+created: '2026-11-12'
+status: active

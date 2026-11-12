@@ -1,0 +1,19 @@
+id: sf-000581
+product_area: architecture-practice
+true_statement: Salesforce Architects' sample ADR on single-org versus multi-org scores the options against the Well-Architected pillars Trusted, Easy and Adaptable.
+false_statement: Salesforce Architects' sample ADR on single-org versus multi-org scores the options against a generic list of cost, time and risk.
+explanation: The Salesforce blog example deliberately grounds its evaluation in the Well-Architected pillars rather than generic pros and cons, weighing factors like sharing, limits, licensing and deployment pipelines under each.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/architecture-decision-records.md
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: e6c3d67a86772524c3e275fdcc8901af59d956da
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:architecture-decision-records
+- kt:well-architected-framework
+- kt:org-strategy
+difficulty: 2
+created: '2026-11-12'
+status: active

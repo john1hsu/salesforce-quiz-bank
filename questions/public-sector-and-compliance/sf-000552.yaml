@@ -1,0 +1,17 @@
+id: sf-000552
+product_area: public-sector-and-compliance
+true_statement: In NIST CSF 2.0, cybersecurity supply chain risk management sits under the Govern Function as GV.SC.
+false_statement: In NIST CSF 2.0, cybersecurity supply chain risk management sits under the Identify Function as ID.SC.
+explanation: CSF 2.0 places supply chain risk management in Govern, as GV.SC with ten Subcategories. It is not filed under Identify.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/nist-cybersecurity-framework.md
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: 20fac46a721ce1466a909971cb5a9fd8394a27ac
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:nist-cybersecurity-framework
+difficulty: 2
+created: '2026-11-12'
+status: active

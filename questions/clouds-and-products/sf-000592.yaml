@@ -1,0 +1,18 @@
+id: sf-000592
+product_area: clouds-and-products
+true_statement: Once a Lightning web component is placed on an Experience Cloud site, you can't add a new required property to it.
+false_statement: Once a Lightning web component is placed on an Experience Cloud site, you can add new required properties but can't add optional ones.
+explanation: After a component is in use on a site or in a managed package, adding a required property, removing one or tightening min and max is blocked. The false version flips which change is restricted.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/experience-builder.md
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: 41da957a97cfbfc2837ce877483a98c042a7c7cc
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:experience-builder
+- kt:lightning-web-components
+difficulty: 3
+created: '2026-11-12'
+status: active

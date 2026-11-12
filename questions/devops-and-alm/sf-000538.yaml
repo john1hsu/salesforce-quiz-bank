@@ -1,0 +1,18 @@
+id: sf-000538
+product_area: devops-and-alm
+true_statement: The sf package version displaydependencies command outputs a package version's dependency graph as GraphViz DOT code.
+false_statement: The sf package version displaydependencies command outputs a package version's dependency graph as a Mermaid diagram.
+explanation: With calculateTransitiveDependencies enabled, displaydependencies emits GraphViz DOT, optionally ordered root-last and labelled with 04t IDs. It does not produce Mermaid syntax.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/package-dependencies.md
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: 05b05355a6e932b4ebf2d1522c71e4b9aad3a3da
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:package-dependencies
+- kt:salesforce-cli
+difficulty: 2
+created: '2026-11-12'
+status: active

@@ -1,0 +1,18 @@
+id: sf-000591
+product_area: clouds-and-products
+true_statement: A Lightning web component appears in Experience Builder's drag-and-drop Components panel when its js-meta.xml declares the lightningCommunity__Page target.
+false_statement: A Lightning web component appears in Experience Builder's drag-and-drop Components panel when its js-meta.xml declares the lightningCommunity__Theme_Layout target.
+explanation: The lightningCommunity__Page target puts an exposed component in the Components panel. Theme_Layout instead makes it a theme layout for LWR sites, not a draggable component.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/experience-builder.md
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: 41da957a97cfbfc2837ce877483a98c042a7c7cc
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:experience-builder
+- kt:lightning-web-components
+difficulty: 2
+created: '2026-11-12'
+status: active

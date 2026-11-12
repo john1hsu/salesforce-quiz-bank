@@ -1,0 +1,20 @@
+id: sf-000548
+product_area: integration
+true_statement: Salesforce Well-Architected calls for a separate API-only user per integration, and lists one shared integration user for several systems as an anti-pattern.
+false_statement: Salesforce Well-Architected calls for one shared API-only user across integrations, and lists a separate integration user per system as an anti-pattern.
+explanation: A dedicated user per integration keeps each one's permissions narrow and its activity traceable. A single shared API user, especially with Modify All Data, is the named anti-pattern.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/integration-security.md
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: 2fabd04b46923ced7b84a0d0baa53c7bb92741c0
+verified_release: Winter '27
+feature_status: concept
+certs:
+- kt:integration-architect-certification
+concepts:
+- kt:integration-security
+- kt:principle-of-least-privilege
+difficulty: 2
+created: '2026-11-12'
+status: active

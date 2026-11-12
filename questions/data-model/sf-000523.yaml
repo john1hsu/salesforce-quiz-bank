@@ -1,0 +1,18 @@
+id: sf-000523
+product_area: data-model
+true_statement: In Lightning Experience, the highlights panel on a record page takes its fields from the object's compact layout.
+false_statement: In Lightning Experience, the highlights panel on a record page takes its fields from the object's page layout.
+explanation: The compact layout supplies the highlights panel fields. The page layout still provides the related lists, buttons, links and quick actions rendered on the Lightning page.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/page-layouts.md
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: 8cfe3653d97687de5f5b9891a1fd6ac763db4b74
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:page-layouts
+- kt:compact-layouts
+difficulty: 1
+created: '2026-11-12'
+status: active

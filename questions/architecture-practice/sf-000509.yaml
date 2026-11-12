@@ -1,0 +1,18 @@
+id: sf-000509
+product_area: architecture-practice
+true_statement: The event-driven architecture decision guide says Salesforce will keep supporting PushTopic and generic events without further investment and recommends moving to Pub/Sub API.
+false_statement: The event-driven architecture decision guide says Salesforce will keep supporting PushTopic and generic events without further investment and recommends moving to Outbound Messages.
+explanation: The guide signals that PushTopic and generic events are supported but no longer invested in, and points teams to Pub/Sub API where feasible. Outbound Messages are just another option compared in the guide, not the recommended successor.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/architect-decision-guides.md
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: 05e94a794ba6fb36fc1d65e71311bb3f1153ab1d
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:architect-decision-guides
+- kt:event-driven-architecture
+difficulty: 2
+created: '2026-11-12'
+status: active

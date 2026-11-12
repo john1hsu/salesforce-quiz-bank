@@ -1,0 +1,17 @@
+id: sf-000524
+product_area: data-model
+true_statement: When a new custom field is added to a page layout, it lands by default as the last field in the layout's first section.
+false_statement: When a new custom field is added to a page layout, it lands by default as the first field in the layout's last section.
+explanation: Salesforce places a newly added custom field at the end of the first section, where admins can then drag it elsewhere. It is not dropped at the top of the last section.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/page-layouts.md
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: 8cfe3653d97687de5f5b9891a1fd6ac763db4b74
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:page-layouts
+difficulty: 2
+created: '2026-11-12'
+status: active

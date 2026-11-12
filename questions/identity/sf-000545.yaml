@@ -1,0 +1,20 @@
+id: sf-000545
+product_area: identity
+true_statement: A connected app that requires a High Assurance session blocks JWT bearer flow logins, because only OAuth flows with a user approval step can meet it.
+false_statement: A connected app that requires a High Assurance session blocks web server flow logins, because only OAuth flows without a user approval step can meet it.
+explanation: Raising a session to High Assurance needs an interactive approval step, which the web server, user-agent and refresh token flows have. Server-to-server flows such as JWT bearer lack it and are blocked.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/session-security-levels.md
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: f13210aeb12cbd0eb0f6135f3b999485670ff72d
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:identity-and-access-management-architect-certification
+concepts:
+- kt:session-security-levels
+- kt:connected-apps
+difficulty: 3
+created: '2026-11-12'
+status: active

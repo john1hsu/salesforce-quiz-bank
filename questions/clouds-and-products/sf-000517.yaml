@@ -1,0 +1,18 @@
+id: sf-000517
+product_area: clouds-and-products
+true_statement: Einstein Discovery requires a CRM Analytics Plus license or an Einstein Predictions license.
+false_statement: Einstein Discovery is included with a CRM Analytics Growth license with no further licensing needed.
+explanation: Of the two CRM Analytics licenses, only Plus covers Einstein Discovery; otherwise an Einstein Predictions license is needed. Growth alone doesn't include it.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/crm-analytics.md
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: 774110a50514fe326b8a9eb004d9ef011b3b2934
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:crm-analytics
+- kt:einstein-discovery
+difficulty: 2
+created: '2026-11-12'
+status: active

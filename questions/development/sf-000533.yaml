@@ -1,0 +1,19 @@
+id: sf-000533
+product_area: development
+true_statement: A SOSL search string longer than 4,000 characters silently drops its logical operators, so AND can behave like OR.
+false_statement: A SOSL search string longer than 4,000 characters silently drops its wildcards, so * and ? are matched as literal characters.
+explanation: Past 4,000 characters SOSL ignores logical operators, which can broaden a search unexpectedly. The documented loss is of AND/OR logic, not of wildcard handling.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/sosl.md
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: ace667177d778ee240ecc0c556e8c4c993b84c2f
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:platform-developer-certification
+concepts:
+- kt:sosl
+difficulty: 3
+created: '2026-11-12'
+status: active

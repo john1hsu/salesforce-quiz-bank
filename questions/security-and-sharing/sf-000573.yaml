@@ -1,0 +1,17 @@
+id: sf-000573
+product_area: security-and-sharing
+true_statement: Contact Manager and Group Editions can only assign standard profiles, while Professional Edition and above can create custom profiles.
+false_statement: Professional Edition can only assign standard profiles, while Contact Manager and Group Editions and above can create custom profiles.
+explanation: Custom profiles are available in Professional, Enterprise, Unlimited, Performance and Developer Editions. Contact Manager and Group Editions are the ones limited to the standard profiles, so the false statement reverses the editions.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/profiles.md
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: 5930b66262e5d69bb73067be97f5cab2ab05616f
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:profiles
+difficulty: 2
+created: '2026-11-12'
+status: active

@@ -1,0 +1,18 @@
+id: sf-000593
+product_area: clouds-and-products
+true_statement: New Experience Cloud sites default to strict Content Security Policy, so components calling third-party hosts need those hosts allowlisted.
+false_statement: New Experience Cloud sites default to relaxed Content Security Policy, so components can call any third-party host without allowlisting.
+explanation: Strict CSP is the default for new sites. To reach outside hosts, admins adjust the security level and add the hosts to the allowlist; nothing is open by default.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/experience-builder.md
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: 41da957a97cfbfc2837ce877483a98c042a7c7cc
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:experience-builder
+- kt:experience-cloud
+difficulty: 2
+created: '2026-11-12'
+status: active

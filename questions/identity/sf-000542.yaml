@@ -1,0 +1,20 @@
+id: sf-000542
+product_area: identity
+true_statement: Where phishing-resistant MFA isn't feasible yet, CISA recommends number matching to counter MFA push-bombing.
+false_statement: Where phishing-resistant MFA isn't feasible yet, CISA recommends SMS one-time codes to counter MFA push-bombing.
+explanation: CISA's interim fix for push-bombing is number matching, which makes the user confirm a code shown at login. FIDO/WebAuthn remains the phishing-resistant goal; SMS codes are not the recommended answer.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/account-takeover.md
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: 1223dedb3b2ceb1a9aaa8fa6e0efae9bd36a6102
+verified_release: Winter '27
+feature_status: concept
+certs:
+- kt:identity-and-access-management-architect-certification
+concepts:
+- kt:account-takeover
+- kt:multi-factor-authentication
+difficulty: 2
+created: '2026-11-12'
+status: active

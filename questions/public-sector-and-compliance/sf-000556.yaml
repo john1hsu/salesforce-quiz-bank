@@ -1,0 +1,17 @@
+id: sf-000556
+product_area: public-sector-and-compliance
+true_statement: A SOC 3 report is a general-use summary without detailed control tests and can be shared freely, unlike a SOC 2 report.
+false_statement: A SOC 2 report is a general-use summary without detailed control tests and can be shared freely, unlike a SOC 3 report.
+explanation: SOC 2 reports are meant for knowledgeable readers and include control descriptions, tests and results. SOC 3 leaves those out so it can be distributed freely.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/soc-2.md
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: 980dbb40c43e53de53354e4ab27e408695c190ca
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:soc-2
+difficulty: 2
+created: '2026-11-12'
+status: active

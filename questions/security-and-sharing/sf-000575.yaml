@@ -1,0 +1,17 @@
+id: sf-000575
+product_area: security-and-sharing
+true_statement: Moving a user to a profile on a different license type frees a seat in the old license pool and uses one in the new pool.
+false_statement: Moving a user to a profile on a different license type keeps the seat in the old license pool and adds one in the new pool.
+explanation: A profile is bound to a user license, so switching to a profile on another license type moves the user's seat from one pool to the other. The old seat is released rather than held alongside the new one.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/profiles.md
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: 5930b66262e5d69bb73067be97f5cab2ab05616f
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:profiles
+difficulty: 2
+created: '2026-11-12'
+status: active

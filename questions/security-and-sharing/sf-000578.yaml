@@ -1,0 +1,17 @@
+id: sf-000578
+product_area: security-and-sharing
+true_statement: New transaction security policies are created disabled and are switched on with the Status toggle on the Actions tab.
+false_statement: New transaction security policies are created enabled and are switched off with the Status toggle on the Actions tab.
+explanation: A freshly created policy starts inactive, so it does nothing until an author with Modify Transaction Security Policies turns it on. It is not live on save.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/transaction-security-policies.md
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: f7c791572f76556be6312c63ebd7c5ca9fae0070
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:transaction-security-policies
+difficulty: 2
+created: '2026-11-12'
+status: active

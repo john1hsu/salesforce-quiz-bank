@@ -1,0 +1,19 @@
+id: sf-000564
+product_area: security-and-sharing
+true_statement: Declaring an Apex class with sharing enforces record sharing for its queries, but it does not enforce field-level security.
+false_statement: Declaring an Apex class with sharing enforces field-level security for its queries, but it does not enforce record sharing.
+explanation: The with sharing keyword controls which records the code can see; field access still needs user mode, stripInaccessible or describe checks. The false statement swaps the two layers.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/field-level-security.md
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: 3210d62a2d22a4659f94ad378f4f294f38635fb3
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:field-level-security
+- kt:apex
+- kt:salesforce-sharing-model
+difficulty: 2
+created: '2026-11-12'
+status: active

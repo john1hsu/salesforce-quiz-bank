@@ -1,0 +1,19 @@
+id: sf-000585
+product_area: automation
+true_statement: When an orchestration work item is assigned to a queue, the first member to finish its screen flow completes it and it disappears for the others.
+false_statement: When an orchestration work item is assigned to a queue, every member must finish its screen flow before it is marked complete.
+explanation: 'Group and queue work items are first-come, first-served: one completion closes the item and a simultaneous second submission errors. No requirement exists for all members to complete it.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/orchestration-work-guide.md
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: f93d75d5ba7c554c877a40174cb4a0845f3e16b3
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:orchestration-work-guide
+- kt:queues
+- kt:screen-flow
+difficulty: 2
+created: '2026-11-12'
+status: active

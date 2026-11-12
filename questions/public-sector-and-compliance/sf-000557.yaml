@@ -1,0 +1,18 @@
+id: sf-000557
+product_area: public-sector-and-compliance
+true_statement: Salesforce describes its SOC 2 reports as covering security, availability and confidentiality, without naming processing integrity or privacy.
+false_statement: Salesforce describes its SOC 2 reports as covering security, availability and privacy, without naming processing integrity or confidentiality.
+explanation: Salesforce's compliance site lists security, availability and confidentiality for its SOC 2 reports. Privacy and processing integrity are the two trust services categories it does not name.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/soc-2.md
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: 980dbb40c43e53de53354e4ab27e408695c190ca
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:soc-2
+- kt:trust-services-criteria
+difficulty: 2
+created: '2026-11-12'
+status: active

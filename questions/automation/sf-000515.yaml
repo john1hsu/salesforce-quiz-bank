@@ -1,0 +1,19 @@
+id: sf-000515
+product_area: automation
+true_statement: In the save order of execution, escalation rules are evaluated right after workflow rules and before Salesforce Flow automations.
+false_statement: In the save order of execution, escalation rules are evaluated right after Salesforce Flow automations and before workflow rules.
+explanation: Escalation rules sit at step 12, following workflow rules and preceding the flow automations at step 13. The false version reverses their position relative to workflow rules and flows.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/escalation-rules.md
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: 0c5bd2ec39c035e0904a758e0eff44657e342800
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:escalation-rules
+- kt:order-of-execution
+- kt:workflow-rules
+difficulty: 3
+created: '2026-11-12'
+status: active

@@ -1,0 +1,20 @@
+id: sf-000546
+product_area: integration
+true_statement: Users on the Salesforce Integration user license are API-only, and that API-only setting cannot be turned off.
+false_statement: Users on the Salesforce Integration user license are API-only by default, but an admin can turn that setting off to allow UI access.
+explanation: The license provisions the Minimum Access - API Only Integrations profile, and its API-only restriction is fixed. Object and field access is then granted with permission sets.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/integration-security.md
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: 2fabd04b46923ced7b84a0d0baa53c7bb92741c0
+verified_release: Winter '27
+feature_status: concept
+certs:
+- kt:integration-architect-certification
+concepts:
+- kt:integration-security
+- kt:permission-sets
+difficulty: 2
+created: '2026-11-12'
+status: active

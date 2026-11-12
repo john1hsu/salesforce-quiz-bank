@@ -1,0 +1,18 @@
+id: sf-000521
+product_area: data-cloud-and-ai
+true_statement: A hybrid search index in Data 360 combines semantic vector similarity with keyword matching.
+false_statement: A hybrid search index in Data 360 combines semantic vector similarity with SQL filters on structured fields.
+explanation: Data 360 offers vector search and hybrid search, and hybrid adds keyword matching to semantic similarity. Querying structured data with SQL is what a custom SQL retriever does, not a hybrid index.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/retrieval-augmented-generation-in-salesforce.md
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: d433d56499da8ef2b301e17aa2012076a931e179
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:retrieval-augmented-generation-in-salesforce
+- kt:vector-search-in-data-cloud
+difficulty: 1
+created: '2026-11-12'
+status: active

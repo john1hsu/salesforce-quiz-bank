@@ -1,0 +1,18 @@
+id: sf-000586
+product_area: automation
+true_statement: Orchestration work items assigned to a public group are owned by the automated process user rather than by any group member.
+false_statement: Orchestration work items assigned to a public group are owned by the group member who was added to the group first.
+explanation: Only items assigned directly to a user are owned by that user; group items, and queue items whose queue isn't tied to the work item object, belong to the automated process user.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/orchestration-work-guide.md
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: f93d75d5ba7c554c877a40174cb4a0845f3e16b3
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:orchestration-work-guide
+- kt:flow-orchestrator
+difficulty: 3
+created: '2026-11-12'
+status: active

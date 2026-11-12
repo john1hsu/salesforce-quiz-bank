@@ -1,0 +1,18 @@
+id: sf-000572
+product_area: security-and-sharing
+true_statement: Trailhead's least-privilege guidance for agents and integrations says to start read-only and add write access only after testing and approval.
+false_statement: Trailhead's least-privilege guidance for agents and integrations says to start with edit access and remove what goes unused after testing.
+explanation: The guidance favours starting read-only, returning only required data, and adding write access once the read-only design is tested and approved. Starting broad and trimming later is the opposite approach.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/principle-of-least-privilege.md
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: 49a2e46ee2f23adfda8cd382133e5e002fdddc1d
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:principle-of-least-privilege
+- kt:integration-security
+difficulty: 2
+created: '2026-11-12'
+status: active

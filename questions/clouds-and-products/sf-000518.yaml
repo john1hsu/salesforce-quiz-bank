@@ -1,0 +1,18 @@
+id: sf-000518
+product_area: clouds-and-products
+true_statement: CRM Analytics sharing inheritance supports Accounts, Cases, Contacts, Leads and Opportunities as source objects.
+false_statement: CRM Analytics sharing inheritance supports any standard or custom object as a source object.
+explanation: 'Sharing inheritance is limited to five objects: Accounts, Cases, Contacts, Leads and Opportunities. It is not offered for every standard or custom object.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/crm-analytics.md
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: 774110a50514fe326b8a9eb004d9ef011b3b2934
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:crm-analytics
+- kt:salesforce-sharing-model
+difficulty: 3
+created: '2026-11-12'
+status: active

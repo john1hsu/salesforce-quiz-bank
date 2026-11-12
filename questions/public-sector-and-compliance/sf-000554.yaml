@@ -1,0 +1,17 @@
+id: sf-000554
+product_area: public-sector-and-compliance
+true_statement: NIST says organizations should move to a higher CSF Tier only when risk, mandates or cost-benefit justify it, not treat Tiers as maturity levels to chase.
+false_statement: NIST says organizations should move to the Adaptive CSF Tier in every case, treating Tiers as maturity levels to chase.
+explanation: The Tiers (Partial, Risk Informed, Repeatable, Adaptive) describe rigor, and NIST advises progressing only when justified. Reaching Adaptive is not a universal goal.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/nist-cybersecurity-framework.md
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: 20fac46a721ce1466a909971cb5a9fd8394a27ac
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:nist-cybersecurity-framework
+difficulty: 3
+created: '2026-11-12'
+status: active

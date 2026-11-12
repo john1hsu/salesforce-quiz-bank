@@ -1,0 +1,18 @@
+id: sf-000583
+product_area: architecture-practice
+true_statement: In the Documentation & Implementation style, Level 2 diagrams show integration points and data-flow direction, but time-based sequencing is kept for Level 3.
+false_statement: In the Documentation & Implementation style, Level 2 diagrams show integration points and data-flow direction, and time-based sequencing is kept for Level 4.
+explanation: Level 3 is the process or interaction view that adds sequenced steps and data flows. Level 4 is the narrower double-click into one part of a process for fine-grained technical detail.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/salesforce-diagrams.md
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: 3ed35727efe8a58dba86e381ddddf5cd0690041a
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:salesforce-diagrams
+- kt:integration-patterns
+difficulty: 2
+created: '2026-11-12'
+status: active

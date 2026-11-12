@@ -1,0 +1,19 @@
+id: sf-000570
+product_area: security-and-sharing
+true_statement: In Salesforce's permission-set-led model, the Minimum Access - Salesforce profile is the baseline, with access added through permission sets.
+false_statement: In Salesforce's permission-set-led model, the Standard User profile is the baseline, with access added through permission sets.
+explanation: Trailhead recommends Minimum Access - Salesforce, or a clone, because it grants very few permissions. Standard profiles can grant more than users need and their object permissions can't be edited.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/principle-of-least-privilege.md
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: 49a2e46ee2f23adfda8cd382133e5e002fdddc1d
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:principle-of-least-privilege
+- kt:profiles
+- kt:permission-sets
+difficulty: 1
+created: '2026-11-12'
+status: active

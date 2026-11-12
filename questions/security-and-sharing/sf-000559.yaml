@@ -1,0 +1,18 @@
+id: sf-000559
+product_area: security-and-sharing
+true_statement: The August 2025 Salesloft Drift data theft used stolen OAuth tokens from that integration, not a flaw in core Salesforce.
+false_statement: The August 2025 Salesloft Drift data theft exploited a flaw in the core Salesforce API, not stolen tokens from that integration.
+explanation: Google's threat intelligence team found the attacker queried orgs with stolen Drift OAuth tokens and said core Salesforce was not at fault. Blaming a platform flaw gets the attack vector wrong.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/data-breach-risk.md
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: 3e24baf5a8744603eed47cc5d1ba908d80b8d483
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:data-breach-risk
+- kt:connected-apps
+difficulty: 2
+created: '2026-11-12'
+status: active

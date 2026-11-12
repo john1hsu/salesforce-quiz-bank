@@ -1,0 +1,18 @@
+id: sf-000534
+product_area: devops-and-alm
+true_statement: A managed package namespace prefix can be up to 15 alphanumeric characters, must start with a letter and can't contain two consecutive underscores.
+false_statement: A managed package namespace prefix can be up to 40 alphanumeric characters, must start with a letter and can't contain two consecutive underscores.
+explanation: Namespace prefixes are globally unique and capped at 15 alphanumeric characters with the letter and underscore rules. 40 characters is far above the allowed length.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/first-generation-managed-packages.md
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: 1098dcae37dfa404ac1fad8ba932490f1f120e75
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:first-generation-managed-packages
+- kt:namespace-registry
+difficulty: 2
+created: '2026-11-12'
+status: active

@@ -1,0 +1,17 @@
+id: sf-000514
+product_area: automation
+true_statement: With the escalation clock set to start at case creation but disable once the case is first modified, any edit permanently stops escalation for that case.
+false_statement: With the escalation clock set to start at case creation but disable once the case is first modified, any edit restarts the escalation clock from zero.
+explanation: The disable-after-first-modified option switches escalation off for the case after any change, even a trivial one. Restarting the clock on every edit is the separate last-modified option.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/escalation-rules.md
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: 0c5bd2ec39c035e0904a758e0eff44657e342800
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:escalation-rules
+difficulty: 3
+created: '2026-11-12'
+status: active

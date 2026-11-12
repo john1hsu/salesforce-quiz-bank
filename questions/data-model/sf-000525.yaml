@@ -1,0 +1,20 @@
+id: sf-000525
+product_area: data-model
+true_statement: On tasks and events, the WhoId field is labelled Name in the UI and points to a person such as a Lead or a Contact.
+false_statement: On tasks and events, the WhatId field is labelled Name in the UI and points to a person such as a Lead or a Contact.
+explanation: Who (WhoId, shown as Name) is the person an activity concerns. What (WhatId, shown as Related To) points to non-person records such as Accounts or Opportunities.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/polymorphic-relationships.md
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: e33c365926c1bd2f7e83ca466f461b721267cca7
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:platform-developer-certification
+concepts:
+- kt:polymorphic-relationships
+- kt:standard-objects
+difficulty: 1
+created: '2026-11-12'
+status: active

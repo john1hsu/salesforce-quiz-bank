@@ -1,0 +1,19 @@
+id: sf-000512
+product_area: automation
+true_statement: Change sets don't support business hours on entitlement processes, so the process must be recreated, deployed another way, or stripped of its hours first.
+false_statement: Change sets fully support business hours on entitlement processes, so the process deploys with its hours intact like any other component.
+explanation: Salesforce lists business hours on entitlement processes as unsupported in change sets. Its workarounds are recreating the process in the target org, using another deployment method, or removing the hours before packaging.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/business-hours.md
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: bd7a639f0fc1442f4dc284ef3de80d188f794944
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:business-hours
+- kt:change-sets
+- kt:entitlement-management
+difficulty: 2
+created: '2026-11-12'
+status: active

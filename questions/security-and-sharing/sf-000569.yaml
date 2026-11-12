@@ -1,0 +1,17 @@
+id: sf-000569
+product_area: security-and-sharing
+true_statement: A permission set assignment with an expiration date ends at 11:59 PM on that date in the time zone chosen for it.
+false_statement: A permission set assignment with an expiration date ends at 12:00 AM at the start of that date in the time zone chosen for it.
+explanation: With assignment expiration enabled, access runs through the whole end date and expires at 11:59 PM in the selected time zone. It does not end at the very start of that day.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/permission-sets.md
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: 4853d8be46b4e3b19bddc7d0cd48b4460126d279
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:permission-sets
+difficulty: 2
+created: '2026-11-12'
+status: active

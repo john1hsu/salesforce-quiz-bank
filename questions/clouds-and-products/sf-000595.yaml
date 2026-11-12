@@ -1,0 +1,20 @@
+id: sf-000595
+product_area: clouds-and-products
+true_statement: During lead conversion, standard lead fields map to account, contact and opportunity fields automatically, but custom lead fields need an admin-defined mapping.
+false_statement: During lead conversion, both standard and custom lead fields map to account, contact and opportunity fields automatically, with no admin mapping needed.
+explanation: Only standard fields carry over by default. Without a mapping set up by an administrator, custom lead field values stay behind on the converted lead.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/lead-conversion.md
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: 124b8cd1036e7104899f54cb7cd644a0d556ae0c
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:sales-cloud-consultant-certification
+- kt:platform-administrator-certification
+concepts:
+- kt:lead-conversion
+difficulty: 1
+created: '2026-11-12'
+status: active

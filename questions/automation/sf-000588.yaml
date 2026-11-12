@@ -1,0 +1,17 @@
+id: sf-000588
+product_area: automation
+true_statement: A flow that contains a Wait element can't be referenced by a Subflow element in another flow.
+false_statement: A flow that contains a Loop element can't be referenced by a Subflow element in another flow.
+explanation: Salesforce Help excludes flows with a Wait element from being called as subflows. Loop elements carry no such restriction.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/subflows.md
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: fb80959123f81798cc92302ee3ad9f2802f0af98
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:subflows
+difficulty: 2
+created: '2026-11-12'
+status: active

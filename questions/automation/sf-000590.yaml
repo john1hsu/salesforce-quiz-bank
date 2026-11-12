@@ -1,0 +1,18 @@
+id: sf-000590
+product_area: automation
+true_statement: If a referenced subflow has no active version, the call succeeds only for flow admins and fails at runtime for other users.
+false_statement: If a referenced subflow has no active version, the call succeeds for all users by running its latest saved version.
+explanation: Falling back to an inactive latest version only works when a flow admin runs the parent. For ordinary users the subflow call fails at runtime, so the child must be activated.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/subflows.md
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: fb80959123f81798cc92302ee3ad9f2802f0af98
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:subflows
+- kt:flow-versioning
+difficulty: 3
+created: '2026-11-12'
+status: active

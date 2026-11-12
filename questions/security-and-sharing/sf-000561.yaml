@@ -1,0 +1,18 @@
+id: sf-000561
+product_area: security-and-sharing
+true_statement: Without Shield, Enterprise, Unlimited and Performance Editions get seven Event Monitoring log types free, each kept for one day.
+false_statement: Without Shield, Enterprise, Unlimited and Performance Editions get seven Event Monitoring log types free, each kept for 30 days.
+explanation: The free tier covers seven log types, such as Login and Logout, with only one-day retention. Longer retention and the other log types need Shield or the Event Monitoring add-on.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/event-monitoring.md
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: a4e2b62b03db77d1d99d4b8f4e22a30316affc72
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:event-monitoring
+- kt:salesforce-shield
+difficulty: 2
+created: '2026-11-12'
+status: active

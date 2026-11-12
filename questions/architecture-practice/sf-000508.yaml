@@ -1,0 +1,17 @@
+id: sf-000508
+product_area: architecture-practice
+true_statement: The Orchestration Density framework, which scores execution path, goal complexity and modality mix, comes from the Agentic and Traditional Workflow Automation guide.
+false_statement: The Orchestration Density framework, which scores execution path, goal complexity and modality mix, comes from the Asynchronous Processing decision guide.
+explanation: Orchestration Density is how the agentic versus traditional automation guide maps low, medium and high density to tools from Flow and Apex up to Agentforce and MuleSoft. The Asynchronous Processing guide instead compares Queueable, Scheduled Apex, platform event triggers, CDC and async flow paths.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/architect-decision-guides.md
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: 05e94a794ba6fb36fc1d65e71311bb3f1153ab1d
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:architect-decision-guides
+difficulty: 2
+created: '2026-11-12'
+status: active

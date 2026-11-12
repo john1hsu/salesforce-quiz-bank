@@ -1,0 +1,20 @@
+id: sf-000543
+product_area: identity
+true_statement: The Step-Up Authentication Period setting makes users re-verify after a set number of minutes, up to a maximum of two hours.
+false_statement: The Step-Up Authentication Period setting makes users re-verify after a set number of minutes, up to a maximum of 24 hours.
+explanation: Step-up policies can force periodic re-verification, but the period tops out at two hours. A 24-hour ceiling overstates the limit.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/session-security-levels.md
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: f13210aeb12cbd0eb0f6135f3b999485670ff72d
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:identity-and-access-management-architect-certification
+concepts:
+- kt:session-security-levels
+- kt:multi-factor-authentication
+difficulty: 2
+created: '2026-11-12'
+status: active

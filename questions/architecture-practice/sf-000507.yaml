@@ -1,0 +1,18 @@
+id: sf-000507
+product_area: architecture-practice
+true_statement: 'Salesforce Architects launched the decision guides in June 2020 with two titles: one on building forms and one on record-triggered automation.'
+false_statement: 'Salesforce Architects launched the decision guides in June 2020 with two titles: one on event-driven architecture and one on data integration.'
+explanation: The first two guides covered building forms and record-triggered automation. Event-driven architecture and data integration guides came later and were updated in subsequent change announcements.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/architect-decision-guides.md
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: 05e94a794ba6fb36fc1d65e71311bb3f1153ab1d
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:architect-decision-guides
+- kt:salesforce-architecture-center
+difficulty: 1
+created: '2026-11-12'
+status: active

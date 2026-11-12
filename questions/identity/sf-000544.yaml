@@ -1,0 +1,19 @@
+id: sf-000544
+product_area: identity
+true_statement: Session security level policies can require High Assurance for Manage Users, but they cannot block access to it.
+false_statement: Session security level policies can block access to Manage Users, but they cannot require High Assurance for it.
+explanation: Manage Users and Manage Permission Sets and Profiles accept a step-up requirement but have no Block option, unlike other protected setup areas. The false version reverses which option exists.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/session-security-levels.md
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: f13210aeb12cbd0eb0f6135f3b999485670ff72d
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:identity-and-access-management-architect-certification
+concepts:
+- kt:session-security-levels
+difficulty: 3
+created: '2026-11-12'
+status: active

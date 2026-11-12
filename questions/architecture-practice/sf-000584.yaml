@@ -1,0 +1,18 @@
+id: sf-000584
+product_area: architecture-practice
+true_statement: The Reference Architecture Gallery has examples of every Salesforce Diagrams type except data models, which sit in a separate Data Model Gallery on developer.salesforce.com.
+false_statement: The Reference Architecture Gallery has examples of every Salesforce Diagrams type except roadmaps, which sit in a separate Roadmap Gallery on developer.salesforce.com.
+explanation: Data models are the one diagram type kept out of the Reference Architecture Gallery; they live in the Data Model Gallery on developer.salesforce.com. Roadmaps are included in the main gallery.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/salesforce-diagrams.md
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: 3ed35727efe8a58dba86e381ddddf5cd0690041a
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:salesforce-diagrams
+- kt:data-architecture
+difficulty: 2
+created: '2026-11-12'
+status: active

@@ -1,0 +1,18 @@
+id: sf-000530
+product_area: development
+true_statement: A future method can't call another future method, so code checks System.isFuture() and skips the call when already in a future context.
+false_statement: A future method can call one more future method, so code checks System.isFuture() and skips the call once a second level is reached.
+explanation: Future and batch contexts can make no future calls at all, so any chaining attempt fails. System.isFuture() detects the future context so code can avoid the call entirely.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/future-methods.md
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: b1647b584ba5618a28d7ad86c7c8a4aa6dca5902
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:future-methods
+- kt:asynchronous-apex
+difficulty: 2
+created: '2026-11-12'
+status: active

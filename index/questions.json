@@ -1,7 +1,7 @@
 {
  "version": 1,
- "count": 497,
- "active": 497,
+ "count": 590,
+ "active": 590,
  "questions": [
   {
    "id": "sf-000001",
@@ -8685,6 +8685,1609 @@
    "difficulty": 2,
    "status": "active",
    "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/salesforce-shield.md"
+  },
+  {
+   "id": "sf-000504",
+   "area": "security-and-sharing",
+   "t": "Shield Platform Encryption requires deterministic encryption for custom fields marked Unique or External ID.",
+   "f": "Shield Platform Encryption requires probabilistic encryption for custom fields marked Unique or External ID.",
+   "x": "Unique and External ID custom fields must be matched on exact values, so they need the deterministic scheme. Probabilistic is the default for ordinary fields but can't serve these.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:shield-platform-encryption"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/shield-platform-encryption.md"
+  },
+  {
+   "id": "sf-000505",
+   "area": "security-and-sharing",
+   "t": "In a production org, a new Probabilistic tenant secret for Shield Platform Encryption can be generated only once every 24 hours.",
+   "f": "In a production org, a new Probabilistic tenant secret for Shield Platform Encryption can be generated only once every 7 days.",
+   "x": "Production orgs may generate a fresh Probabilistic tenant secret once per 24 hours, not once per week. Each secret type is also capped at 50 active and archived secrets.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:shield-platform-encryption"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/shield-platform-encryption.md"
+  },
+  {
+   "id": "sf-000506",
+   "area": "security-and-sharing",
+   "t": "Enabling Shield Platform Encryption encrypts only data created or updated afterward; existing values need a sync or background encryption process.",
+   "f": "Enabling Shield Platform Encryption immediately encrypts all existing values of the selected fields, along with any data created afterward.",
+   "x": "Encryption applies going forward only. Values already stored are brought into line through the Encryption Statistics and Data Sync pages or a background process, not automatically at enablement.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:shield-platform-encryption"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/shield-platform-encryption.md"
+  },
+  {
+   "id": "sf-000507",
+   "area": "architecture-practice",
+   "t": "Salesforce Architects launched the decision guides in June 2020 with two titles: one on building forms and one on record-triggered automation.",
+   "f": "Salesforce Architects launched the decision guides in June 2020 with two titles: one on event-driven architecture and one on data integration.",
+   "x": "The first two guides covered building forms and record-triggered automation. Event-driven architecture and data integration guides came later and were updated in subsequent change announcements.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:architect-decision-guides",
+    "kt:salesforce-architecture-center"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/architect-decision-guides.md"
+  },
+  {
+   "id": "sf-000508",
+   "area": "architecture-practice",
+   "t": "The Orchestration Density framework, which scores execution path, goal complexity and modality mix, comes from the Agentic and Traditional Workflow Automation guide.",
+   "f": "The Orchestration Density framework, which scores execution path, goal complexity and modality mix, comes from the Asynchronous Processing decision guide.",
+   "x": "Orchestration Density is how the agentic versus traditional automation guide maps low, medium and high density to tools from Flow and Apex up to Agentforce and MuleSoft. The Asynchronous Processing guide instead compares Queueable, Scheduled Apex, platform event triggers, CDC and async flow paths.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:architect-decision-guides"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/architect-decision-guides.md"
+  },
+  {
+   "id": "sf-000509",
+   "area": "architecture-practice",
+   "t": "The event-driven architecture decision guide says Salesforce will keep supporting PushTopic and generic events without further investment and recommends moving to Pub/Sub API.",
+   "f": "The event-driven architecture decision guide says Salesforce will keep supporting PushTopic and generic events without further investment and recommends moving to Outbound Messages.",
+   "x": "The guide signals that PushTopic and generic events are supported but no longer invested in, and points teams to Pub/Sub API where feasible. Outbound Messages are just another option compared in the guide, not the recommended successor.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:architect-decision-guides",
+    "kt:event-driven-architecture"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/architect-decision-guides.md"
+  },
+  {
+   "id": "sf-000510",
+   "area": "automation",
+   "t": "Whether a Salesforce Holiday record recurs can be set only when the holiday is created, not changed afterwards.",
+   "f": "Whether a Salesforce Holiday record recurs can be switched on or off at any time after the holiday is created.",
+   "x": "The Holiday object fixes the recurring setting at creation; only then can you choose it. Toggling recurrence later on an existing holiday isn't possible, so a new record is needed instead.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:business-hours",
+    "kt:holidays"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/business-hours.md"
+  },
+  {
+   "id": "sf-000511",
+   "area": "automation",
+   "t": "In Apex, BusinessHours.addGmt returns a GMT datetime, while BusinessHours.add returns a datetime in local time.",
+   "f": "In Apex, BusinessHours.add returns a GMT datetime, while BusinessHours.addGmt returns a datetime in local time.",
+   "x": "The add and nextStartDate methods give local-time results and addGmt gives GMT. Swapping them, as the false statement does, is exactly the kind of mix-up that causes time-zone offset bugs in SLA code.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:business-hours",
+    "kt:apex"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/business-hours.md"
+  },
+  {
+   "id": "sf-000512",
+   "area": "automation",
+   "t": "Change sets don't support business hours on entitlement processes, so the process must be recreated, deployed another way, or stripped of its hours first.",
+   "f": "Change sets fully support business hours on entitlement processes, so the process deploys with its hours intact like any other component.",
+   "x": "Salesforce lists business hours on entitlement processes as unsupported in change sets. Its workarounds are recreating the process in the target org, using another deployment method, or removing the hours before packaging.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:business-hours",
+    "kt:change-sets",
+    "kt:entitlement-management"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/business-hours.md"
+  },
+  {
+   "id": "sf-000513",
+   "area": "automation",
+   "t": "Each case escalation rule entry can have up to five escalation actions, each firing at a longer case age.",
+   "f": "Each case escalation rule entry can have up to ten escalation actions, each firing at a longer case age.",
+   "x": "Salesforce allows a maximum of five timed escalation actions per rule entry, set over increasing Age Over periods. Ten exceeds that cap.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:escalation-rules"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/escalation-rules.md"
+  },
+  {
+   "id": "sf-000514",
+   "area": "automation",
+   "t": "With the escalation clock set to start at case creation but disable once the case is first modified, any edit permanently stops escalation for that case.",
+   "f": "With the escalation clock set to start at case creation but disable once the case is first modified, any edit restarts the escalation clock from zero.",
+   "x": "The disable-after-first-modified option switches escalation off for the case after any change, even a trivial one. Restarting the clock on every edit is the separate last-modified option.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:escalation-rules"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/escalation-rules.md"
+  },
+  {
+   "id": "sf-000515",
+   "area": "automation",
+   "t": "In the save order of execution, escalation rules are evaluated right after workflow rules and before Salesforce Flow automations.",
+   "f": "In the save order of execution, escalation rules are evaluated right after Salesforce Flow automations and before workflow rules.",
+   "x": "Escalation rules sit at step 12, following workflow rules and preceding the flow automations at step 13. The false version reverses their position relative to workflow rules and flows.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:escalation-rules",
+    "kt:order-of-execution",
+    "kt:workflow-rules"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/escalation-rules.md"
+  },
+  {
+   "id": "sf-000516",
+   "area": "clouds-and-products",
+   "t": "By default, anyone who can open a CRM Analytics dataset sees all of its rows, so row-level security must be added per dataset.",
+   "f": "By default, CRM Analytics datasets enforce each user's Salesforce record access, so row-level security needs no per-dataset setup.",
+   "x": "Datasets are copies that don't inherit org record access on their own. Admins must add security predicates or sharing inheritance to each dataset to restrict rows.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:crm-analytics",
+    "kt:salesforce-sharing-model"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/crm-analytics.md"
+  },
+  {
+   "id": "sf-000517",
+   "area": "clouds-and-products",
+   "t": "Einstein Discovery requires a CRM Analytics Plus license or an Einstein Predictions license.",
+   "f": "Einstein Discovery is included with a CRM Analytics Growth license with no further licensing needed.",
+   "x": "Of the two CRM Analytics licenses, only Plus covers Einstein Discovery; otherwise an Einstein Predictions license is needed. Growth alone doesn't include it.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:crm-analytics",
+    "kt:einstein-discovery"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/crm-analytics.md"
+  },
+  {
+   "id": "sf-000518",
+   "area": "clouds-and-products",
+   "t": "CRM Analytics sharing inheritance supports Accounts, Cases, Contacts, Leads and Opportunities as source objects.",
+   "f": "CRM Analytics sharing inheritance supports any standard or custom object as a source object.",
+   "x": "Sharing inheritance is limited to five objects: Accounts, Cases, Contacts, Leads and Opportunities. It is not offered for every standard or custom object.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:crm-analytics",
+    "kt:salesforce-sharing-model"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/crm-analytics.md"
+  },
+  {
+   "id": "sf-000519",
+   "area": "data-cloud-and-ai",
+   "t": "In Data 360, an ensemble retriever combines several individual retrievers, merges their results and reranks them by relevance.",
+   "f": "In Data 360, a custom SQL retriever combines several individual retrievers, merges their results and reranks them by relevance.",
+   "x": "Merging and reranking results from multiple individual retrievers is the job of an ensemble retriever. A custom SQL retriever instead runs a parameterized SQL query against Data 360 objects.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:retrieval-augmented-generation-in-salesforce",
+    "kt:data-cloud"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/retrieval-augmented-generation-in-salesforce.md"
+  },
+  {
+   "id": "sf-000520",
+   "area": "data-cloud-and-ai",
+   "t": "Data 360 retrievers follow data governance policies, so records the running user or agent can't access are left out of the results.",
+   "f": "Data 360 retrievers return every indexed record, and record access is enforced afterwards only by the Einstein Trust Layer.",
+   "x": "Retrievers are permission-aware and drop records the user or agent can't see. The Einstein Trust Layer adds prompt-level safeguards but is not what filters retrieval results by record access.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:retrieval-augmented-generation-in-salesforce",
+    "kt:einstein-trust-layer"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/retrieval-augmented-generation-in-salesforce.md"
+  },
+  {
+   "id": "sf-000521",
+   "area": "data-cloud-and-ai",
+   "t": "A hybrid search index in Data 360 combines semantic vector similarity with keyword matching.",
+   "f": "A hybrid search index in Data 360 combines semantic vector similarity with SQL filters on structured fields.",
+   "x": "Data 360 offers vector search and hybrid search, and hybrid adds keyword matching to semantic similarity. Querying structured data with SQL is what a custom SQL retriever does, not a hybrid index.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:retrieval-augmented-generation-in-salesforce",
+    "kt:vector-search-in-data-cloud"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/retrieval-augmented-generation-in-salesforce.md"
+  },
+  {
+   "id": "sf-000522",
+   "area": "data-model",
+   "t": "A field marked required on a page layout but read-only in field-level security is read-only for the user.",
+   "f": "A field marked required on a page layout but read-only in field-level security is required and editable for the user.",
+   "x": "Field-level security overrides any less restrictive layout setting, so the stricter read-only access wins. The layout's required flag can't open up editing that FLS denies.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:page-layouts",
+    "kt:field-level-security"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/page-layouts.md"
+  },
+  {
+   "id": "sf-000523",
+   "area": "data-model",
+   "t": "In Lightning Experience, the highlights panel on a record page takes its fields from the object's compact layout.",
+   "f": "In Lightning Experience, the highlights panel on a record page takes its fields from the object's page layout.",
+   "x": "The compact layout supplies the highlights panel fields. The page layout still provides the related lists, buttons, links and quick actions rendered on the Lightning page.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:page-layouts",
+    "kt:compact-layouts"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/page-layouts.md"
+  },
+  {
+   "id": "sf-000524",
+   "area": "data-model",
+   "t": "When a new custom field is added to a page layout, it lands by default as the last field in the layout's first section.",
+   "f": "When a new custom field is added to a page layout, it lands by default as the first field in the layout's last section.",
+   "x": "Salesforce places a newly added custom field at the end of the first section, where admins can then drag it elsewhere. It is not dropped at the top of the last section.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:page-layouts"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/page-layouts.md"
+  },
+  {
+   "id": "sf-000525",
+   "area": "data-model",
+   "t": "On tasks and events, the WhoId field is labelled Name in the UI and points to a person such as a Lead or a Contact.",
+   "f": "On tasks and events, the WhatId field is labelled Name in the UI and points to a person such as a Lead or a Contact.",
+   "x": "Who (WhoId, shown as Name) is the person an activity concerns. What (WhatId, shown as Related To) points to non-person records such as Accounts or Opportunities.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:platform-developer-certification"
+   ],
+   "concepts": [
+    "kt:polymorphic-relationships",
+    "kt:standard-objects"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/polymorphic-relationships.md"
+  },
+  {
+   "id": "sf-000526",
+   "area": "data-model",
+   "t": "With Shared Activities enabled, a single task or event can be related to up to 50 contacts, one of which is the primary contact.",
+   "f": "With Shared Activities enabled, a single task or event can be related to up to 10 contacts, one of which is the primary contact.",
+   "x": "Shared Activities lets one activity relate to as many as 50 contacts with one marked primary. The limit is 50, not 10, and turning the setting off requires Salesforce Support.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:platform-developer-certification"
+   ],
+   "concepts": [
+    "kt:polymorphic-relationships",
+    "kt:standard-objects"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/polymorphic-relationships.md"
+  },
+  {
+   "id": "sf-000527",
+   "area": "data-model",
+   "t": "TYPEOF can't be used in Bulk API queries, so large extracts of polymorphic fields filter on the Type qualifier instead.",
+   "f": "The Type qualifier can't be used in Bulk API queries, so large extracts of polymorphic fields use TYPEOF instead.",
+   "x": "TYPEOF is unsupported in Bulk API and PushTopic queries, so bulk extracts rely on filters like What.Type. The false statement reverses which construct is blocked.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:platform-developer-certification"
+   ],
+   "concepts": [
+    "kt:polymorphic-relationships",
+    "kt:bulk-api-2",
+    "kt:soql"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/polymorphic-relationships.md"
+  },
+  {
+   "id": "sf-000528",
+   "area": "development",
+   "t": "If the transaction that queued a future method rolls back, the future job is never processed.",
+   "f": "If the transaction that queued a future method rolls back, the future job still runs because it was already queued.",
+   "x": "Future work queued by a transaction is discarded if that transaction rolls back, so the job never executes. It does not run independently of the transaction that queued it.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:future-methods",
+    "kt:asynchronous-apex"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/future-methods.md"
+  },
+  {
+   "id": "sf-000529",
+   "area": "development",
+   "t": "Future method executions draw on the same 24-hour async Apex allowance that Batch, Queueable and scheduled Apex also consume.",
+   "f": "Future method executions draw on their own 24-hour allowance, separate from the one Batch, Queueable and scheduled Apex consume.",
+   "x": "The org has one shared daily allowance for asynchronous Apex executions, and future methods count against it with the other async types. There is no separate future-only pool.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:future-methods",
+    "kt:governor-limits",
+    "kt:queueable-apex",
+    "kt:batch-apex"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/future-methods.md"
+  },
+  {
+   "id": "sf-000530",
+   "area": "development",
+   "t": "A future method can't call another future method, so code checks System.isFuture() and skips the call when already in a future context.",
+   "f": "A future method can call one more future method, so code checks System.isFuture() and skips the call once a second level is reached.",
+   "x": "Future and batch contexts can make no future calls at all, so any chaining attempt fails. System.isFuture() detects the future context so code can avoid the call entirely.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:future-methods",
+    "kt:asynchronous-apex"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/future-methods.md"
+  },
+  {
+   "id": "sf-000531",
+   "area": "development",
+   "t": "A single-object SOSL search returns up to 250 records unless a WHERE or ORDER BY clause is added, which raises the cap to 2,000.",
+   "f": "A single-object SOSL search returns up to 2,000 records unless a WHERE or ORDER BY clause is added, which lowers the cap to 250.",
+   "x": "The default per-object cap for a single-object search is 250, and adding WHERE or ORDER BY lifts it to 2,000. The false statement inverts the default and the effect of the clauses.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:platform-developer-certification"
+   ],
+   "concepts": [
+    "kt:sosl"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/sosl.md"
+  },
+  {
+   "id": "sf-000532",
+   "area": "development",
+   "t": "An Apex transaction can run at most 20 SOSL queries, whether it is synchronous or asynchronous.",
+   "f": "An Apex transaction can run at most 100 SOSL queries, whether it is synchronous or asynchronous.",
+   "x": "Apex governor limits allow 20 SOSL queries per transaction in both contexts. 100 is the SOQL figure for synchronous code, not the SOSL limit.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:platform-developer-certification"
+   ],
+   "concepts": [
+    "kt:sosl",
+    "kt:governor-limits",
+    "kt:apex"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/sosl.md"
+  },
+  {
+   "id": "sf-000533",
+   "area": "development",
+   "t": "A SOSL search string longer than 4,000 characters silently drops its logical operators, so AND can behave like OR.",
+   "f": "A SOSL search string longer than 4,000 characters silently drops its wildcards, so * and ? are matched as literal characters.",
+   "x": "Past 4,000 characters SOSL ignores logical operators, which can broaden a search unexpectedly. The documented loss is of AND/OR logic, not of wildcard handling.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:platform-developer-certification"
+   ],
+   "concepts": [
+    "kt:sosl"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/sosl.md"
+  },
+  {
+   "id": "sf-000534",
+   "area": "devops-and-alm",
+   "t": "A managed package namespace prefix can be up to 15 alphanumeric characters, must start with a letter and can't contain two consecutive underscores.",
+   "f": "A managed package namespace prefix can be up to 40 alphanumeric characters, must start with a letter and can't contain two consecutive underscores.",
+   "x": "Namespace prefixes are globally unique and capped at 15 alphanumeric characters with the letter and underscore rules. 40 characters is far above the allowed length.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:first-generation-managed-packages",
+    "kt:namespace-registry"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/first-generation-managed-packages.md"
+  },
+  {
+   "id": "sf-000535",
+   "area": "devops-and-alm",
+   "t": "A 1GP packaging org can own only one managed package, so global Apex is the only way to share code across a partner's 1GP packages.",
+   "f": "A 1GP packaging org can own several managed packages, so they can share one namespace and call each other's public Apex.",
+   "x": "In 1GP each packaging org owns one package and each namespace maps to one package, so cross-package code sharing has to go through global Apex. Sharing a namespace across packages is a 2GP capability.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:first-generation-managed-packages",
+    "kt:second-generation-managed-packages"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/first-generation-managed-packages.md"
+  },
+  {
+   "id": "sf-000536",
+   "area": "devops-and-alm",
+   "t": "A 1GP patch version can't add or delete components; that kind of change needs a new major or minor version.",
+   "f": "A 1GP patch version can add new components but can't delete them; only deletions need a new major or minor version.",
+   "x": "Patches are deliberately narrow: they can't add or delete components, add global modifiers, new web services or new dependencies. Adding a component therefore requires a major or minor release, not a patch.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:first-generation-managed-packages"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/first-generation-managed-packages.md"
+  },
+  {
+   "id": "sf-000537",
+   "area": "devops-and-alm",
+   "t": "A package dependency version such as 1.3.0.LATEST fixes the major, minor and patch numbers and picks up only the newest build.",
+   "f": "A package dependency version such as 1.3.0.LATEST fixes only the major number and picks up the newest minor, patch and build.",
+   "x": "LATEST applies only to the build segment, so moving to a new base release means editing the specifier. It does not float the minor or patch numbers.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:package-dependencies",
+    "kt:salesforce-dx"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/package-dependencies.md"
+  },
+  {
+   "id": "sf-000538",
+   "area": "devops-and-alm",
+   "t": "The sf package version displaydependencies command outputs a package version's dependency graph as GraphViz DOT code.",
+   "f": "The sf package version displaydependencies command outputs a package version's dependency graph as a Mermaid diagram.",
+   "x": "With calculateTransitiveDependencies enabled, displaydependencies emits GraphViz DOT, optionally ordered root-last and labelled with 04t IDs. It does not produce Mermaid syntax.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:package-dependencies",
+    "kt:salesforce-cli"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/package-dependencies.md"
+  },
+  {
+   "id": "sf-000539",
+   "area": "devops-and-alm",
+   "t": "Salesforce's dependency support matrix lets an unlocked package depend on managed 1GP, managed 2GP and other unlocked packages.",
+   "f": "Salesforce's dependency support matrix lets an unlocked package depend only on other unlocked packages, not on managed ones.",
+   "x": "The matrix allows unlocked packages to depend on first-generation managed, second-generation managed and unlocked packages. Restricting them to unlocked-only is wrong; it is managed 2GP depending on unlocked that is marked not recommended.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:package-dependencies",
+    "kt:unlocked-packages",
+    "kt:first-generation-managed-packages",
+    "kt:second-generation-managed-packages"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/package-dependencies.md"
+  },
+  {
+   "id": "sf-000540",
+   "area": "identity",
+   "t": "A default transaction security policy requires step-up authentication for UI report exports of more than 10,000 records.",
+   "f": "A default transaction security policy requires step-up authentication for UI report exports of more than 1,000 records.",
+   "x": "Salesforce's default guardrail against post-takeover exfiltration kicks in above 10,000 exported records. A 1,000-record threshold understates it by a factor of ten.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [
+    "kt:identity-and-access-management-architect-certification"
+   ],
+   "concepts": [
+    "kt:account-takeover",
+    "kt:transaction-security-policies"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/account-takeover.md"
+  },
+  {
+   "id": "sf-000541",
+   "area": "identity",
+   "t": "When Salesforce knows an account is compromised, the user must pass an identity challenge and reset the password before getting back in.",
+   "f": "When Salesforce knows an account is compromised, the user must wait for an administrator to unfreeze the account before getting back in.",
+   "x": "Salesforce's remediation is self-service: an identity challenge followed by a password reset. It does not depend on an admin manually unfreezing the account.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [
+    "kt:identity-and-access-management-architect-certification"
+   ],
+   "concepts": [
+    "kt:account-takeover"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/account-takeover.md"
+  },
+  {
+   "id": "sf-000542",
+   "area": "identity",
+   "t": "Where phishing-resistant MFA isn't feasible yet, CISA recommends number matching to counter MFA push-bombing.",
+   "f": "Where phishing-resistant MFA isn't feasible yet, CISA recommends SMS one-time codes to counter MFA push-bombing.",
+   "x": "CISA's interim fix for push-bombing is number matching, which makes the user confirm a code shown at login. FIDO/WebAuthn remains the phishing-resistant goal; SMS codes are not the recommended answer.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [
+    "kt:identity-and-access-management-architect-certification"
+   ],
+   "concepts": [
+    "kt:account-takeover",
+    "kt:multi-factor-authentication"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/account-takeover.md"
+  },
+  {
+   "id": "sf-000543",
+   "area": "identity",
+   "t": "The Step-Up Authentication Period setting makes users re-verify after a set number of minutes, up to a maximum of two hours.",
+   "f": "The Step-Up Authentication Period setting makes users re-verify after a set number of minutes, up to a maximum of 24 hours.",
+   "x": "Step-up policies can force periodic re-verification, but the period tops out at two hours. A 24-hour ceiling overstates the limit.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:identity-and-access-management-architect-certification"
+   ],
+   "concepts": [
+    "kt:session-security-levels",
+    "kt:multi-factor-authentication"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/session-security-levels.md"
+  },
+  {
+   "id": "sf-000544",
+   "area": "identity",
+   "t": "Session security level policies can require High Assurance for Manage Users, but they cannot block access to it.",
+   "f": "Session security level policies can block access to Manage Users, but they cannot require High Assurance for it.",
+   "x": "Manage Users and Manage Permission Sets and Profiles accept a step-up requirement but have no Block option, unlike other protected setup areas. The false version reverses which option exists.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:identity-and-access-management-architect-certification"
+   ],
+   "concepts": [
+    "kt:session-security-levels"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/session-security-levels.md"
+  },
+  {
+   "id": "sf-000545",
+   "area": "identity",
+   "t": "A connected app that requires a High Assurance session blocks JWT bearer flow logins, because only OAuth flows with a user approval step can meet it.",
+   "f": "A connected app that requires a High Assurance session blocks web server flow logins, because only OAuth flows without a user approval step can meet it.",
+   "x": "Raising a session to High Assurance needs an interactive approval step, which the web server, user-agent and refresh token flows have. Server-to-server flows such as JWT bearer lack it and are blocked.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:identity-and-access-management-architect-certification"
+   ],
+   "concepts": [
+    "kt:session-security-levels",
+    "kt:connected-apps"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/session-security-levels.md"
+  },
+  {
+   "id": "sf-000546",
+   "area": "integration",
+   "t": "Users on the Salesforce Integration user license are API-only, and that API-only setting cannot be turned off.",
+   "f": "Users on the Salesforce Integration user license are API-only by default, but an admin can turn that setting off to allow UI access.",
+   "x": "The license provisions the Minimum Access - API Only Integrations profile, and its API-only restriction is fixed. Object and field access is then granted with permission sets.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [
+    "kt:integration-architect-certification"
+   ],
+   "concepts": [
+    "kt:integration-security",
+    "kt:permission-sets"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/integration-security.md"
+  },
+  {
+   "id": "sf-000547",
+   "area": "integration",
+   "t": "API Access Control, which blocks API access except through admin-approved connected apps, is turned on by request to Salesforce Customer Support.",
+   "f": "API Access Control, which blocks API access except through admin-approved connected apps, is turned on by an admin from Setup.",
+   "x": "API Access Control is not self-service; an org has to ask Customer Support to enable it. Because it can cut off unlisted integrations, clients should be inventoried first.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [
+    "kt:integration-architect-certification"
+   ],
+   "concepts": [
+    "kt:integration-security",
+    "kt:connected-apps"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/integration-security.md"
+  },
+  {
+   "id": "sf-000548",
+   "area": "integration",
+   "t": "Salesforce Well-Architected calls for a separate API-only user per integration, and lists one shared integration user for several systems as an anti-pattern.",
+   "f": "Salesforce Well-Architected calls for one shared API-only user across integrations, and lists a separate integration user per system as an anti-pattern.",
+   "x": "A dedicated user per integration keeps each one's permissions narrow and its activity traceable. A single shared API user, especially with Modify All Data, is the named anti-pattern.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [
+    "kt:integration-architect-certification"
+   ],
+   "concepts": [
+    "kt:integration-security",
+    "kt:principle-of-least-privilege"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/integration-security.md"
+  },
+  {
+   "id": "sf-000549",
+   "area": "platform-architecture",
+   "t": "App Deployment is the lightest section of the Platform App Builder exam outline, at 10% of the exam.",
+   "f": "User Interface is the lightest section of the Platform App Builder exam outline, at 10% of the exam.",
+   "x": "The published outline weights App Deployment at 10%, the smallest share. User Interface carries 17%, so it is not the lightest section.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:platform-app-builder-certification",
+    "kt:sandbox-types"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/platform-app-builder-certification.md"
+  },
+  {
+   "id": "sf-000550",
+   "area": "platform-architecture",
+   "t": "A training provider's summary lists the Platform App Builder exam as 60 scored questions with a 63% passing score.",
+   "f": "A training provider's summary lists the Platform App Builder exam as 60 scored questions with a 75% passing score.",
+   "x": "Global Knowledge summarises the exam as 60 scored multiple-choice questions with a 63% pass mark, to be confirmed against the official exam guide. 75% is not the stated threshold.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:platform-app-builder-certification"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/platform-app-builder-certification.md"
+  },
+  {
+   "id": "sf-000551",
+   "area": "platform-architecture",
+   "t": "Trailhead's prep module expects Platform App Builder candidates to have about six months of experience building on the Salesforce Platform.",
+   "f": "Trailhead's prep module expects Platform App Builder candidates to have about two years of experience building on the Salesforce Platform.",
+   "x": "The official prep module sets roughly six months of experience with platform capabilities, licensing, app design and deployment options. Two years overstates the expected background.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:platform-app-builder-certification"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/platform-app-builder-certification.md"
+  },
+  {
+   "id": "sf-000552",
+   "area": "public-sector-and-compliance",
+   "t": "In NIST CSF 2.0, cybersecurity supply chain risk management sits under the Govern Function as GV.SC.",
+   "f": "In NIST CSF 2.0, cybersecurity supply chain risk management sits under the Identify Function as ID.SC.",
+   "x": "CSF 2.0 places supply chain risk management in Govern, as GV.SC with ten Subcategories. It is not filed under Identify.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:nist-cybersecurity-framework"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/nist-cybersecurity-framework.md"
+  },
+  {
+   "id": "sf-000553",
+   "area": "public-sector-and-compliance",
+   "t": "A CSF Target Profile holds the outcomes an organization has selected and prioritized, while a Current Profile records outcomes it already achieves.",
+   "f": "A CSF Current Profile holds the outcomes an organization has selected and prioritized, while a Target Profile records outcomes it already achieves.",
+   "x": "The Current Profile describes what is being achieved today and how well; the Target Profile describes the prioritized outcomes the organization is aiming for. The false statement swaps them.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:nist-cybersecurity-framework"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/nist-cybersecurity-framework.md"
+  },
+  {
+   "id": "sf-000554",
+   "area": "public-sector-and-compliance",
+   "t": "NIST says organizations should move to a higher CSF Tier only when risk, mandates or cost-benefit justify it, not treat Tiers as maturity levels to chase.",
+   "f": "NIST says organizations should move to the Adaptive CSF Tier in every case, treating Tiers as maturity levels to chase.",
+   "x": "The Tiers (Partial, Risk Informed, Repeatable, Adaptive) describe rigor, and NIST advises progressing only when justified. Reaching Adaptive is not a universal goal.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:nist-cybersecurity-framework"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/nist-cybersecurity-framework.md"
+  },
+  {
+   "id": "sf-000555",
+   "area": "public-sector-and-compliance",
+   "t": "A SOC 2 Type 2 report tests whether controls operated effectively over a period, while a Type 1 assesses their design as of a single date.",
+   "f": "A SOC 2 Type 1 report tests whether controls operated effectively over a period, while a Type 2 assesses their design as of a single date.",
+   "x": "Type 1 is a point-in-time look at control design; Type 2 covers a period, often six to twelve months, and adds operating-effectiveness testing. The false statement swaps the types.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:soc-2"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/soc-2.md"
+  },
+  {
+   "id": "sf-000556",
+   "area": "public-sector-and-compliance",
+   "t": "A SOC 3 report is a general-use summary without detailed control tests and can be shared freely, unlike a SOC 2 report.",
+   "f": "A SOC 2 report is a general-use summary without detailed control tests and can be shared freely, unlike a SOC 3 report.",
+   "x": "SOC 2 reports are meant for knowledgeable readers and include control descriptions, tests and results. SOC 3 leaves those out so it can be distributed freely.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:soc-2"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/soc-2.md"
+  },
+  {
+   "id": "sf-000557",
+   "area": "public-sector-and-compliance",
+   "t": "Salesforce describes its SOC 2 reports as covering security, availability and confidentiality, without naming processing integrity or privacy.",
+   "f": "Salesforce describes its SOC 2 reports as covering security, availability and privacy, without naming processing integrity or confidentiality.",
+   "x": "Salesforce's compliance site lists security, availability and confidentiality for its SOC 2 reports. Privacy and processing integrity are the two trust services categories it does not name.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:soc-2",
+    "kt:trust-services-criteria"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/soc-2.md"
+  },
+  {
+   "id": "sf-000558",
+   "area": "security-and-sharing",
+   "t": "A Salesforce Health Check score reflects org security settings, so it would not reveal an over-scoped integration token.",
+   "f": "A Salesforce Health Check score includes connected app token scopes, so it would reveal an over-scoped integration token.",
+   "x": "Health Check measures configuration settings against a baseline, not people or third-party apps. An integration token with excessive scope sits outside what it scores.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:data-breach-risk",
+    "kt:connected-apps"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/data-breach-risk.md"
+  },
+  {
+   "id": "sf-000559",
+   "area": "security-and-sharing",
+   "t": "The August 2025 Salesloft Drift data theft used stolen OAuth tokens from that integration, not a flaw in core Salesforce.",
+   "f": "The August 2025 Salesloft Drift data theft exploited a flaw in the core Salesforce API, not stolen tokens from that integration.",
+   "x": "Google's threat intelligence team found the attacker queried orgs with stolen Drift OAuth tokens and said core Salesforce was not at fault. Blaming a platform flaw gets the attack vector wrong.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:data-breach-risk",
+    "kt:connected-apps"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/data-breach-risk.md"
+  },
+  {
+   "id": "sf-000560",
+   "area": "security-and-sharing",
+   "t": "Salesforce calls MFA, permission sets and login IP restrictions customer 'configurables', and paid add-ons such as Shield 'enhanceables'.",
+   "f": "Salesforce calls Shield and Security Center customer 'configurables', and MFA, permission sets and login IP restrictions paid 'enhanceables'.",
+   "x": "In Salesforce's shared responsibility framing, configurables are the built-in settings customers must set up, while enhanceables are paid products layered on top. The false version swaps the two groups.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:data-breach-risk",
+    "kt:shared-responsibility-model"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/data-breach-risk.md"
+  },
+  {
+   "id": "sf-000561",
+   "area": "security-and-sharing",
+   "t": "Without Shield, Enterprise, Unlimited and Performance Editions get seven Event Monitoring log types free, each kept for one day.",
+   "f": "Without Shield, Enterprise, Unlimited and Performance Editions get seven Event Monitoring log types free, each kept for 30 days.",
+   "x": "The free tier covers seven log types, such as Login and Logout, with only one-day retention. Longer retention and the other log types need Shield or the Event Monitoring add-on.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:event-monitoring",
+    "kt:salesforce-shield"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/event-monitoring.md"
+  },
+  {
+   "id": "sf-000562",
+   "area": "security-and-sharing",
+   "t": "Only daily event log files integrate with the Event Monitoring Analytics app; hourly files must be imported into visualization tools by hand.",
+   "f": "Only hourly event log files integrate with the Event Monitoring Analytics app; daily files must be imported into visualization tools by hand.",
+   "x": "The Event Monitoring Analytics app consumes the daily files, which are also the complete record for a date. Hourly files can be incomplete and need manual import.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:event-monitoring",
+    "kt:crm-analytics"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/event-monitoring.md"
+  },
+  {
+   "id": "sf-000563",
+   "area": "security-and-sharing",
+   "t": "Event log objects can be queried with SOQL roughly 25 to 45 minutes after an event, and they keep the data for 30 days.",
+   "f": "Event log objects can be queried with SOQL roughly 25 to 45 minutes after an event, and they keep the data for one year.",
+   "x": "The event log object channel holds its data for 30 days and requires the View Event Log Object Data permission. The one-year default is for paid event log files, not these objects.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:event-monitoring",
+    "kt:soql"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/event-monitoring.md"
+  },
+  {
+   "id": "sf-000564",
+   "area": "security-and-sharing",
+   "t": "Declaring an Apex class with sharing enforces record sharing for its queries, but it does not enforce field-level security.",
+   "f": "Declaring an Apex class with sharing enforces field-level security for its queries, but it does not enforce record sharing.",
+   "x": "The with sharing keyword controls which records the code can see; field access still needs user mode, stripInaccessible or describe checks. The false statement swaps the two layers.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:field-level-security",
+    "kt:apex",
+    "kt:salesforce-sharing-model"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/field-level-security.md"
+  },
+  {
+   "id": "sf-000565",
+   "area": "security-and-sharing",
+   "t": "If a permission set grants View All Fields on an object, the FieldPermissions object reports PermissionsRead as true for every field on it.",
+   "f": "If a permission set grants View All Fields on an object, the FieldPermissions object reports PermissionsEdit as true for every field on it.",
+   "x": "View All Fields overrides per-field settings for reading, so PermissionsRead shows true across the object. It is a read grant and does not make every field editable.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:field-level-security",
+    "kt:permission-sets"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/field-level-security.md"
+  },
+  {
+   "id": "sf-000566",
+   "area": "security-and-sharing",
+   "t": "Field-level security on formula and auto-number fields can grant only Read access, since those fields can't be edited.",
+   "f": "Field-level security on formula and auto-number fields can grant only Edit access, since those fields can't be hidden.",
+   "x": "Formula and auto-number fields accept only the Read field permission, because their values aren't entered by users. The false statement invents an Edit-only rule that the platform doesn't have.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:field-level-security"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/field-level-security.md"
+  },
+  {
+   "id": "sf-000567",
+   "area": "security-and-sharing",
+   "t": "A permission set with Session Activation Required grants its permissions only while a session is activated for it, and they lapse at logout or timeout.",
+   "f": "A permission set with Session Activation Required grants its permissions from the user's next login, and they last until the assignment is removed.",
+   "x": "Session-based permission sets tie access to an activated session, so the permissions end when the session ends through logout, timeout or an admin. The false statement describes an ordinary standing assignment.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:permission-sets",
+    "kt:session-security-levels"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/permission-sets.md"
+  },
+  {
+   "id": "sf-000568",
+   "area": "security-and-sharing",
+   "t": "Leave a permission set's LicenseId empty when the set will be assigned to users on different license types.",
+   "f": "Set a permission set's LicenseId to one user license when the set will be assigned to users on different license types.",
+   "x": "A permission set tied to a license is meant for users on that license, so a set shared across license types should leave LicenseId blank. Setting a specific license fits only sets used by one license type or drawing on a permission set license.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:permission-sets",
+    "kt:permission-set-licenses"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/permission-sets.md"
+  },
+  {
+   "id": "sf-000569",
+   "area": "security-and-sharing",
+   "t": "A permission set assignment with an expiration date ends at 11:59 PM on that date in the time zone chosen for it.",
+   "f": "A permission set assignment with an expiration date ends at 12:00 AM at the start of that date in the time zone chosen for it.",
+   "x": "With assignment expiration enabled, access runs through the whole end date and expires at 11:59 PM in the selected time zone. It does not end at the very start of that day.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:permission-sets"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/permission-sets.md"
+  },
+  {
+   "id": "sf-000570",
+   "area": "security-and-sharing",
+   "t": "In Salesforce's permission-set-led model, the Minimum Access - Salesforce profile is the baseline, with access added through permission sets.",
+   "f": "In Salesforce's permission-set-led model, the Standard User profile is the baseline, with access added through permission sets.",
+   "x": "Trailhead recommends Minimum Access - Salesforce, or a clone, because it grants very few permissions. Standard profiles can grant more than users need and their object permissions can't be edited.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:principle-of-least-privilege",
+    "kt:profiles",
+    "kt:permission-sets"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/principle-of-least-privilege.md"
+  },
+  {
+   "id": "sf-000571",
+   "area": "security-and-sharing",
+   "t": "A permission granted by both a user's profile and a permission set stays in effect until it is removed from both.",
+   "f": "A permission granted by both a user's profile and a permission set is revoked once it is removed from the profile.",
+   "x": "Access is the union of every source, so taking a permission off the profile leaves the permission set's grant in place. It has to be removed in both places.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:principle-of-least-privilege",
+    "kt:profiles",
+    "kt:permission-sets"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/principle-of-least-privilege.md"
+  },
+  {
+   "id": "sf-000572",
+   "area": "security-and-sharing",
+   "t": "Trailhead's least-privilege guidance for agents and integrations says to start read-only and add write access only after testing and approval.",
+   "f": "Trailhead's least-privilege guidance for agents and integrations says to start with edit access and remove what goes unused after testing.",
+   "x": "The guidance favours starting read-only, returning only required data, and adding write access once the read-only design is tested and approved. Starting broad and trimming later is the opposite approach.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:principle-of-least-privilege",
+    "kt:integration-security"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/principle-of-least-privilege.md"
+  },
+  {
+   "id": "sf-000573",
+   "area": "security-and-sharing",
+   "t": "Contact Manager and Group Editions can only assign standard profiles, while Professional Edition and above can create custom profiles.",
+   "f": "Professional Edition can only assign standard profiles, while Contact Manager and Group Editions and above can create custom profiles.",
+   "x": "Custom profiles are available in Professional, Enterprise, Unlimited, Performance and Developer Editions. Contact Manager and Group Editions are the ones limited to the standard profiles, so the false statement reverses the editions.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:profiles"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/profiles.md"
+  },
+  {
+   "id": "sf-000574",
+   "area": "security-and-sharing",
+   "t": "The permissions on a standard profile can't be edited, though admins can still change its session settings and password policies.",
+   "f": "The session settings and password policies on a standard profile can't be edited, though admins can still change its permissions.",
+   "x": "Standard profiles lock their permissions, but a few settings such as custom app and tab settings, session settings and password policies stay editable. The false statement swaps which part is locked.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:profiles",
+    "kt:session-security-levels"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/profiles.md"
+  },
+  {
+   "id": "sf-000575",
+   "area": "security-and-sharing",
+   "t": "Moving a user to a profile on a different license type frees a seat in the old license pool and uses one in the new pool.",
+   "f": "Moving a user to a profile on a different license type keeps the seat in the old license pool and adds one in the new pool.",
+   "x": "A profile is bound to a user license, so switching to a profile on another license type moves the user's seat from one pool to the other. The old seat is released rather than held alongside the new one.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:profiles"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/profiles.md"
+  },
+  {
+   "id": "sf-000576",
+   "area": "security-and-sharing",
+   "t": "In Lightning Experience, the MFA action on a List View or Report Event transaction security policy isn't supported and is upgraded to Block.",
+   "f": "In Lightning Experience, the MFA action on a List View or Report Event transaction security policy isn't supported and is downgraded to Notify.",
+   "x": "Salesforce replaces the unsupported MFA action with the stricter Block action for these events in Lightning. It does not fall back to a notification, which would stop nothing.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:transaction-security-policies",
+    "kt:multi-factor-authentication"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/transaction-security-policies.md"
+  },
+  {
+   "id": "sf-000577",
+   "area": "security-and-sharing",
+   "t": "In a transaction security Apex condition, evaluate() returning true fires the policy's action, while returning false lets the user proceed.",
+   "f": "In a transaction security Apex condition, evaluate() returning false fires the policy's action, while returning true lets the user proceed.",
+   "x": "A class implementing TxnSecurity.EventCondition signals a match by returning true, which triggers the block, MFA or notification. The false version inverts the return values.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:transaction-security-policies",
+    "kt:apex"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/transaction-security-policies.md"
+  },
+  {
+   "id": "sf-000578",
+   "area": "security-and-sharing",
+   "t": "New transaction security policies are created disabled and are switched on with the Status toggle on the Actions tab.",
+   "f": "New transaction security policies are created enabled and are switched off with the Status toggle on the Actions tab.",
+   "x": "A freshly created policy starts inactive, so it does nothing until an author with Modify Transaction Security Policies turns it on. It is not live on save.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:transaction-security-policies"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/transaction-security-policies.md"
+  },
+  {
+   "id": "sf-000579",
+   "area": "architecture-practice",
+   "t": "Once an architecture decision record is accepted it is not edited; a changed decision gets a new ADR that supersedes and links to the old one.",
+   "f": "Once an architecture decision record is accepted it is edited in place when the decision changes, and its status is updated to show the revision.",
+   "x": "ADRs form an append-only log: accepted records stay as written and a new record supersedes them, so the log shows how long each decision governed the work. Editing in place would erase that history.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:architecture-decision-records"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/architecture-decision-records.md"
+  },
+  {
+   "id": "sf-000580",
+   "area": "architecture-practice",
+   "t": "Michael Nygard's 2011 ADR template has five parts: a title, the context, the decision, a status and the consequences.",
+   "f": "Michael Nygard's 2011 ADR template has five parts: a title, the context, the options considered, the decision and the consequences.",
+   "x": "Nygard's original template lists title, context, decision, status and consequences. Recording the serious alternatives with their pros and cons was added by later guidance, not part of his five sections.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:architecture-decision-records"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/architecture-decision-records.md"
+  },
+  {
+   "id": "sf-000581",
+   "area": "architecture-practice",
+   "t": "Salesforce Architects' sample ADR on single-org versus multi-org scores the options against the Well-Architected pillars Trusted, Easy and Adaptable.",
+   "f": "Salesforce Architects' sample ADR on single-org versus multi-org scores the options against a generic list of cost, time and risk.",
+   "x": "The Salesforce blog example deliberately grounds its evaluation in the Well-Architected pillars rather than generic pros and cons, weighing factors like sharing, limits, licensing and deployment pipelines under each.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:architecture-decision-records",
+    "kt:well-architected-framework",
+    "kt:org-strategy"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/architecture-decision-records.md"
+  },
+  {
+   "id": "sf-000582",
+   "area": "architecture-practice",
+   "t": "In Salesforce Diagrams, the Marketing, Strategy & Sales style explains why a team is doing something, while Documentation & Implementation explains how.",
+   "f": "In Salesforce Diagrams, the Documentation & Implementation style explains why a team is doing something, while Marketing, Strategy & Sales explains how.",
+   "x": "Marketing, Strategy & Sales diagrams show capabilities and products that deliver business value, the why. Documentation & Implementation diagrams give an implementation-ready view of the solution, the how.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:salesforce-diagrams"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/salesforce-diagrams.md"
+  },
+  {
+   "id": "sf-000583",
+   "area": "architecture-practice",
+   "t": "In the Documentation & Implementation style, Level 2 diagrams show integration points and data-flow direction, but time-based sequencing is kept for Level 3.",
+   "f": "In the Documentation & Implementation style, Level 2 diagrams show integration points and data-flow direction, and time-based sequencing is kept for Level 4.",
+   "x": "Level 3 is the process or interaction view that adds sequenced steps and data flows. Level 4 is the narrower double-click into one part of a process for fine-grained technical detail.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:salesforce-diagrams",
+    "kt:integration-patterns"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/salesforce-diagrams.md"
+  },
+  {
+   "id": "sf-000584",
+   "area": "architecture-practice",
+   "t": "The Reference Architecture Gallery has examples of every Salesforce Diagrams type except data models, which sit in a separate Data Model Gallery on developer.salesforce.com.",
+   "f": "The Reference Architecture Gallery has examples of every Salesforce Diagrams type except roadmaps, which sit in a separate Roadmap Gallery on developer.salesforce.com.",
+   "x": "Data models are the one diagram type kept out of the Reference Architecture Gallery; they live in the Data Model Gallery on developer.salesforce.com. Roadmaps are included in the main gallery.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:salesforce-diagrams",
+    "kt:data-architecture"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/salesforce-diagrams.md"
+  },
+  {
+   "id": "sf-000585",
+   "area": "automation",
+   "t": "When an orchestration work item is assigned to a queue, the first member to finish its screen flow completes it and it disappears for the others.",
+   "f": "When an orchestration work item is assigned to a queue, every member must finish its screen flow before it is marked complete.",
+   "x": "Group and queue work items are first-come, first-served: one completion closes the item and a simultaneous second submission errors. No requirement exists for all members to complete it.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:orchestration-work-guide",
+    "kt:queues",
+    "kt:screen-flow"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/orchestration-work-guide.md"
+  },
+  {
+   "id": "sf-000586",
+   "area": "automation",
+   "t": "Orchestration work items assigned to a public group are owned by the automated process user rather than by any group member.",
+   "f": "Orchestration work items assigned to a public group are owned by the group member who was added to the group first.",
+   "x": "Only items assigned directly to a user are owned by that user; group items, and queue items whose queue isn't tied to the work item object, belong to the automated process user.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:orchestration-work-guide",
+    "kt:flow-orchestrator"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/orchestration-work-guide.md"
+  },
+  {
+   "id": "sf-000587",
+   "area": "automation",
+   "t": "Configuration changes to the Experience Builder Orchestration Work Guide component show only on the live site, not in the Builder preview.",
+   "f": "Configuration changes to the Experience Builder Orchestration Work Guide component show only in the Builder preview, not on the live site.",
+   "x": "Salesforce notes that this component's settings don't render in Experience Builder's preview, so admins must check the live site. The false version inverts where the changes appear.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:orchestration-work-guide",
+    "kt:experience-builder",
+    "kt:experience-cloud"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/orchestration-work-guide.md"
+  },
+  {
+   "id": "sf-000588",
+   "area": "automation",
+   "t": "A flow that contains a Wait element can't be referenced by a Subflow element in another flow.",
+   "f": "A flow that contains a Loop element can't be referenced by a Subflow element in another flow.",
+   "x": "Salesforce Help excludes flows with a Wait element from being called as subflows. Loop elements carry no such restriction.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:subflows"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/subflows.md"
+  },
+  {
+   "id": "sf-000589",
+   "area": "automation",
+   "t": "Subflow input and output variables with API names longer than 40 characters cause a save error in the calling flow.",
+   "f": "Subflow input and output variables with API names longer than 80 characters cause a save error in the calling flow.",
+   "x": "The cutoff that breaks saving the parent flow is 40 characters for the child's input and output variable API names, so names between 41 and 80 characters would already fail.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:subflows",
+    "kt:flow-builder"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/subflows.md"
+  },
+  {
+   "id": "sf-000590",
+   "area": "automation",
+   "t": "If a referenced subflow has no active version, the call succeeds only for flow admins and fails at runtime for other users.",
+   "f": "If a referenced subflow has no active version, the call succeeds for all users by running its latest saved version.",
+   "x": "Falling back to an inactive latest version only works when a flow admin runs the parent. For ordinary users the subflow call fails at runtime, so the child must be activated.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:subflows",
+    "kt:flow-versioning"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/subflows.md"
+  },
+  {
+   "id": "sf-000591",
+   "area": "clouds-and-products",
+   "t": "A Lightning web component appears in Experience Builder's drag-and-drop Components panel when its js-meta.xml declares the lightningCommunity__Page target.",
+   "f": "A Lightning web component appears in Experience Builder's drag-and-drop Components panel when its js-meta.xml declares the lightningCommunity__Theme_Layout target.",
+   "x": "The lightningCommunity__Page target puts an exposed component in the Components panel. Theme_Layout instead makes it a theme layout for LWR sites, not a draggable component.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:experience-builder",
+    "kt:lightning-web-components"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/experience-builder.md"
+  },
+  {
+   "id": "sf-000592",
+   "area": "clouds-and-products",
+   "t": "Once a Lightning web component is placed on an Experience Cloud site, you can't add a new required property to it.",
+   "f": "Once a Lightning web component is placed on an Experience Cloud site, you can add new required properties but can't add optional ones.",
+   "x": "After a component is in use on a site or in a managed package, adding a required property, removing one or tightening min and max is blocked. The false version flips which change is restricted.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:experience-builder",
+    "kt:lightning-web-components"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/experience-builder.md"
+  },
+  {
+   "id": "sf-000593",
+   "area": "clouds-and-products",
+   "t": "New Experience Cloud sites default to strict Content Security Policy, so components calling third-party hosts need those hosts allowlisted.",
+   "f": "New Experience Cloud sites default to relaxed Content Security Policy, so components can call any third-party host without allowlisting.",
+   "x": "Strict CSP is the default for new sites. To reach outside hosts, admins adjust the security level and add the hosts to the allowlist; nothing is open by default.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:experience-builder",
+    "kt:experience-cloud"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/experience-builder.md"
+  },
+  {
+   "id": "sf-000594",
+   "area": "clouds-and-products",
+   "t": "A single SOAP API convertLead() call accepts at most 100 LeadConvert objects.",
+   "f": "A single SOAP API convertLead() call accepts at most 200 LeadConvert objects.",
+   "x": "The SOAP API caps each convertLead() call at 100 LeadConvert objects, so larger volumes must be split into more calls. 200 is double the documented limit.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:sales-cloud-consultant-certification",
+    "kt:platform-administrator-certification"
+   ],
+   "concepts": [
+    "kt:lead-conversion"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/lead-conversion.md"
+  },
+  {
+   "id": "sf-000595",
+   "area": "clouds-and-products",
+   "t": "During lead conversion, standard lead fields map to account, contact and opportunity fields automatically, but custom lead fields need an admin-defined mapping.",
+   "f": "During lead conversion, both standard and custom lead fields map to account, contact and opportunity fields automatically, with no admin mapping needed.",
+   "x": "Only standard fields carry over by default. Without a mapping set up by an administrator, custom lead field values stay behind on the converted lead.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:sales-cloud-consultant-certification",
+    "kt:platform-administrator-certification"
+   ],
+   "concepts": [
+    "kt:lead-conversion"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/lead-conversion.md"
+  },
+  {
+   "id": "sf-000596",
+   "area": "clouds-and-products",
+   "t": "When a lead is converted into an existing contact, only the contact's empty fields are filled from the lead; existing values are kept.",
+   "f": "When a lead is converted into an existing contact, all of the contact's fields are overwritten with the lead's values.",
+   "x": "Merging into existing records fills blanks and preserves current values, IDs included. The only overwrite offered is the option to replace the contact's Lead Source.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:sales-cloud-consultant-certification",
+    "kt:platform-administrator-certification"
+   ],
+   "concepts": [
+    "kt:lead-conversion"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/lead-conversion.md"
   }
  ]
 }

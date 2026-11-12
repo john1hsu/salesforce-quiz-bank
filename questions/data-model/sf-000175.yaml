@@ -6,8 +6,8 @@ explanation: Contacts must inherit access from their account before person accou
 source:
   repo: john1hsu/salesforce-knowledge-graph
   path: articles/data-model/person-accounts.md
-  commit: 1a9626507b2858110c996adbfa985703bee41fd5
-  blob: 1443fb89fa7612a70c632bfdd59a4aff0613ae84
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: 17dcffa9e11487705d7b07c406bc061bc3a3da3c
 verified_release: Winter '27
 feature_status: current
 concepts:

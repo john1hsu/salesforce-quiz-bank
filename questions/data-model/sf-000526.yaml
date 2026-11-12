@@ -1,0 +1,20 @@
+id: sf-000526
+product_area: data-model
+true_statement: With Shared Activities enabled, a single task or event can be related to up to 50 contacts, one of which is the primary contact.
+false_statement: With Shared Activities enabled, a single task or event can be related to up to 10 contacts, one of which is the primary contact.
+explanation: Shared Activities lets one activity relate to as many as 50 contacts with one marked primary. The limit is 50, not 10, and turning the setting off requires Salesforce Support.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/polymorphic-relationships.md
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: e33c365926c1bd2f7e83ca466f461b721267cca7
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:platform-developer-certification
+concepts:
+- kt:polymorphic-relationships
+- kt:standard-objects
+difficulty: 2
+created: '2026-11-12'
+status: active

@@ -1,0 +1,17 @@
+id: sf-000579
+product_area: architecture-practice
+true_statement: Once an architecture decision record is accepted it is not edited; a changed decision gets a new ADR that supersedes and links to the old one.
+false_statement: Once an architecture decision record is accepted it is edited in place when the decision changes, and its status is updated to show the revision.
+explanation: 'ADRs form an append-only log: accepted records stay as written and a new record supersedes them, so the log shows how long each decision governed the work. Editing in place would erase that history.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/architecture-decision-records.md
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: e6c3d67a86772524c3e275fdcc8901af59d956da
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:architecture-decision-records
+difficulty: 2
+created: '2026-11-12'
+status: active

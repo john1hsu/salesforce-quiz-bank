@@ -1,0 +1,19 @@
+id: sf-000571
+product_area: security-and-sharing
+true_statement: A permission granted by both a user's profile and a permission set stays in effect until it is removed from both.
+false_statement: A permission granted by both a user's profile and a permission set is revoked once it is removed from the profile.
+explanation: Access is the union of every source, so taking a permission off the profile leaves the permission set's grant in place. It has to be removed in both places.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/principle-of-least-privilege.md
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: 49a2e46ee2f23adfda8cd382133e5e002fdddc1d
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:principle-of-least-privilege
+- kt:profiles
+- kt:permission-sets
+difficulty: 2
+created: '2026-11-12'
+status: active

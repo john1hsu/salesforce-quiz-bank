@@ -1,0 +1,18 @@
+id: sf-000510
+product_area: automation
+true_statement: Whether a Salesforce Holiday record recurs can be set only when the holiday is created, not changed afterwards.
+false_statement: Whether a Salesforce Holiday record recurs can be switched on or off at any time after the holiday is created.
+explanation: The Holiday object fixes the recurring setting at creation; only then can you choose it. Toggling recurrence later on an existing holiday isn't possible, so a new record is needed instead.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/business-hours.md
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: bd7a639f0fc1442f4dc284ef3de80d188f794944
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:business-hours
+- kt:holidays
+difficulty: 2
+created: '2026-11-12'
+status: active

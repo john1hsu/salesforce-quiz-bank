@@ -1,0 +1,19 @@
+id: sf-000541
+product_area: identity
+true_statement: When Salesforce knows an account is compromised, the user must pass an identity challenge and reset the password before getting back in.
+false_statement: When Salesforce knows an account is compromised, the user must wait for an administrator to unfreeze the account before getting back in.
+explanation: 'Salesforce''s remediation is self-service: an identity challenge followed by a password reset. It does not depend on an admin manually unfreezing the account.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/account-takeover.md
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: 1223dedb3b2ceb1a9aaa8fa6e0efae9bd36a6102
+verified_release: Winter '27
+feature_status: concept
+certs:
+- kt:identity-and-access-management-architect-certification
+concepts:
+- kt:account-takeover
+difficulty: 2
+created: '2026-11-12'
+status: active

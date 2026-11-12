@@ -1,0 +1,20 @@
+id: sf-000529
+product_area: development
+true_statement: Future method executions draw on the same 24-hour async Apex allowance that Batch, Queueable and scheduled Apex also consume.
+false_statement: Future method executions draw on their own 24-hour allowance, separate from the one Batch, Queueable and scheduled Apex consume.
+explanation: The org has one shared daily allowance for asynchronous Apex executions, and future methods count against it with the other async types. There is no separate future-only pool.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/future-methods.md
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: b1647b584ba5618a28d7ad86c7c8a4aa6dca5902
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:future-methods
+- kt:governor-limits
+- kt:queueable-apex
+- kt:batch-apex
+difficulty: 2
+created: '2026-11-12'
+status: active

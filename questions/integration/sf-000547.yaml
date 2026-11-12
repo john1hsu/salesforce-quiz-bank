@@ -1,0 +1,20 @@
+id: sf-000547
+product_area: integration
+true_statement: API Access Control, which blocks API access except through admin-approved connected apps, is turned on by request to Salesforce Customer Support.
+false_statement: API Access Control, which blocks API access except through admin-approved connected apps, is turned on by an admin from Setup.
+explanation: API Access Control is not self-service; an org has to ask Customer Support to enable it. Because it can cut off unlisted integrations, clients should be inventoried first.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/integration-security.md
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: 2fabd04b46923ced7b84a0d0baa53c7bb92741c0
+verified_release: Winter '27
+feature_status: concept
+certs:
+- kt:integration-architect-certification
+concepts:
+- kt:integration-security
+- kt:connected-apps
+difficulty: 2
+created: '2026-11-12'
+status: active

@@ -1,0 +1,21 @@
+id: sf-000532
+product_area: development
+true_statement: An Apex transaction can run at most 20 SOSL queries, whether it is synchronous or asynchronous.
+false_statement: An Apex transaction can run at most 100 SOSL queries, whether it is synchronous or asynchronous.
+explanation: Apex governor limits allow 20 SOSL queries per transaction in both contexts. 100 is the SOQL figure for synchronous code, not the SOSL limit.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/sosl.md
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: ace667177d778ee240ecc0c556e8c4c993b84c2f
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:platform-developer-certification
+concepts:
+- kt:sosl
+- kt:governor-limits
+- kt:apex
+difficulty: 2
+created: '2026-11-12'
+status: active

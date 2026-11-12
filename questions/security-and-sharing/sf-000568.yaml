@@ -1,0 +1,18 @@
+id: sf-000568
+product_area: security-and-sharing
+true_statement: Leave a permission set's LicenseId empty when the set will be assigned to users on different license types.
+false_statement: Set a permission set's LicenseId to one user license when the set will be assigned to users on different license types.
+explanation: A permission set tied to a license is meant for users on that license, so a set shared across license types should leave LicenseId blank. Setting a specific license fits only sets used by one license type or drawing on a permission set license.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/permission-sets.md
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: 4853d8be46b4e3b19bddc7d0cd48b4460126d279
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:permission-sets
+- kt:permission-set-licenses
+difficulty: 3
+created: '2026-11-12'
+status: active

@@ -1,0 +1,17 @@
+id: sf-000505
+product_area: security-and-sharing
+true_statement: In a production org, a new Probabilistic tenant secret for Shield Platform Encryption can be generated only once every 24 hours.
+false_statement: In a production org, a new Probabilistic tenant secret for Shield Platform Encryption can be generated only once every 7 days.
+explanation: Production orgs may generate a fresh Probabilistic tenant secret once per 24 hours, not once per week. Each secret type is also capped at 50 active and archived secrets.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/shield-platform-encryption.md
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: 4650655964528e7f343045bdfb87cd1c539f9990
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:shield-platform-encryption
+difficulty: 2
+created: '2026-11-12'
+status: active

@@ -1,0 +1,18 @@
+id: sf-000589
+product_area: automation
+true_statement: Subflow input and output variables with API names longer than 40 characters cause a save error in the calling flow.
+false_statement: Subflow input and output variables with API names longer than 80 characters cause a save error in the calling flow.
+explanation: The cutoff that breaks saving the parent flow is 40 characters for the child's input and output variable API names, so names between 41 and 80 characters would already fail.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/subflows.md
+  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
+  blob: fb80959123f81798cc92302ee3ad9f2802f0af98
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:subflows
+- kt:flow-builder
+difficulty: 2
+created: '2026-11-12'
+status: active
