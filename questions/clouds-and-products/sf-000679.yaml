@@ -1,0 +1,18 @@
+id: sf-000679
+product_area: clouds-and-products
+true_statement: Salesforce Pricing elements read and write values through context tags rather than reading records directly.
+false_statement: Salesforce Pricing elements read and write values by querying records directly rather than through context tags.
+explanation: Each element's input and output variables map to context tags from the procedure's context definition, which carry values between steps and back to the transaction.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/salesforce-pricing.md
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: 27d8370f8fd6e37fd5073c3949a007687b3e46f0
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:salesforce-pricing
+- kt:context-service
+difficulty: 2
+created: '2026-11-13'
+status: active

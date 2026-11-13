@@ -1,0 +1,19 @@
+id: sf-000609
+product_area: data-model
+true_statement: In Salesforce Duplicate Management, an object can have up to 5 active matching rules.
+false_statement: In Salesforce Duplicate Management, an object can have up to 3 active matching rules.
+explanation: Each object allows five active matching rules. Three is the number of matching rules a single duplicate rule can reference, which is a different limit.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/duplicate-management.md
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: a100dfaac943f9b3253378bb7075b2165199cac3
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:platform-administrator-certification
+concepts:
+- kt:duplicate-management
+difficulty: 2
+created: '2026-11-13'
+status: active

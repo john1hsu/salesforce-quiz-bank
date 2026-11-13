@@ -1,0 +1,20 @@
+id: sf-000632
+product_area: integration
+true_statement: Mutations in the Salesforce GraphQL API are generally available from API version 66.0.
+false_statement: Mutations in the Salesforce GraphQL API are generally available from API version 59.0.
+explanation: GraphQL mutations were beta from v59.0 through v65.0 and became GA in v66.0. v59.0 is where the beta began, not GA.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/graphql-api.md
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: 352e50b719f4ce1a4ce4f5a40dbb7b94e0daf52b
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:integration-architect-certification
+concepts:
+- kt:graphql-api
+- kt:lightning-web-components
+difficulty: 2
+created: '2026-11-13'
+status: active

@@ -1,0 +1,19 @@
+id: sf-000626
+product_area: identity
+true_statement: Custom SAML just-in-time provisioning uses an Apex class that implements the Auth.SamlJitHandler interface.
+false_statement: Custom SAML just-in-time provisioning uses an Apex class that implements the Auth.RegistrationHandler interface.
+explanation: The generated SAML JIT handler implements Auth.SamlJitHandler with createUser and updateUser methods. A registration handler is the OpenID Connect counterpart used by authentication providers.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/just-in-time-provisioning.md
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: 7b317120c3fc70e7e15e81a699f01212cb968599
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:just-in-time-provisioning
+- kt:apex
+- kt:openid-connect-authentication-providers
+difficulty: 2
+created: '2026-11-13'
+status: active

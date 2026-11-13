@@ -1,7 +1,7 @@
 {
  "version": 1,
- "count": 590,
- "active": 590,
+ "count": 681,
+ "active": 681,
  "questions": [
   {
    "id": "sf-000001",
@@ -10288,6 +10288,1597 @@
    "difficulty": 2,
    "status": "active",
    "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/lead-conversion.md"
+  },
+  {
+   "id": "sf-000597",
+   "area": "data-cloud-and-ai",
+   "t": "Under the Customer Data Platform license, one Data 360 unified profile can merge up to 50,000 source profiles.",
+   "f": "Under the Customer Data Platform license, one Data 360 unified profile can merge up to 5,000 source profiles.",
+   "x": "The identity resolution limits table caps a single unified profile at 50,000 merged source profiles. The 5,000 figure is ten times too low; 5,000 is the ceiling for data streams, not merged profiles.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:data-cloud-consultant-certification"
+   ],
+   "concepts": [
+    "kt:data-cloud-limits",
+    "kt:identity-resolution"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/data-cloud-limits.md"
+  },
+  {
+   "id": "sf-000598",
+   "area": "data-cloud-and-ai",
+   "t": "In streaming mode, the Data 360 Ingestion API accepts request bodies of up to 200 KB.",
+   "f": "In streaming mode, the Data 360 Ingestion API accepts request bodies of up to 2 MB.",
+   "x": "Streaming ingestion is meant for small, frequent payloads, so each request body is limited to 200 KB. Larger loads belong in bulk mode, which takes CSV files of up to 150 MB.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:data-cloud-consultant-certification"
+   ],
+   "concepts": [
+    "kt:data-cloud-limits"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/data-cloud-limits.md"
+  },
+  {
+   "id": "sf-000599",
+   "area": "data-cloud-and-ai",
+   "t": "Rows returned by a Data 360 Query API query can be re-read for 24 hours without incurring further consumption charges.",
+   "f": "Rows returned by a Data 360 Query API query can be re-read for 1 hour without incurring further consumption charges.",
+   "x": "The Query API guide keeps results available for 24 hours, so paging through stored rows is cheaper than running the query again. One hour understates that window.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:data-cloud-consultant-certification"
+   ],
+   "concepts": [
+    "kt:data-cloud-limits"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/data-cloud-limits.md"
+  },
+  {
+   "id": "sf-000600",
+   "area": "data-cloud-and-ai",
+   "t": "In a Data 360 segment, criteria in one container must match on the same related record, while separate containers are evaluated independently.",
+   "f": "In a Data 360 segment, criteria in one container are evaluated independently, while criteria in separate containers must match on the same related record.",
+   "x": "A single container ties its criteria to one related record, so 'scarf AND yellow' there finds yellow-scarf buyers. Splitting them across containers lets each criterion match a different purchase; the false statement reverses this.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:data-cloud-consultant-certification"
+   ],
+   "concepts": [
+    "kt:data-cloud-segmentation",
+    "kt:data-model-objects"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/data-cloud-segmentation.md"
+  },
+  {
+   "id": "sf-000601",
+   "area": "data-cloud-and-ai",
+   "t": "A Data 360 waterfall segment places each person in the first of its ordered segments that they match, making the buckets mutually exclusive.",
+   "f": "A Data 360 waterfall segment places each person in the last of its ordered segments that they match, making the buckets mutually exclusive.",
+   "x": "Waterfalls evaluate their segments in order and stop at the first match, which is how each customer gets only the best offer they qualify for. It is the first match that wins, not the last.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:data-cloud-consultant-certification"
+   ],
+   "concepts": [
+    "kt:data-cloud-segmentation"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/data-cloud-segmentation.md"
+  },
+  {
+   "id": "sf-000602",
+   "area": "data-cloud-and-ai",
+   "t": "Data 360 rapid publish segments refresh every 1 or 4 hours and look only at the past 7 days of engagement data.",
+   "f": "Data 360 rapid publish segments refresh every 12 or 24 hours and look only at the past 7 days of engagement data.",
+   "x": "Rapid publish trades a short 7-day lookback for frequent refreshes every 1 or 4 hours. Schedules such as every 12 or 24 hours belong to standard segments.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:data-cloud-consultant-certification"
+   ],
+   "concepts": [
+    "kt:data-cloud-segmentation",
+    "kt:marketing-cloud-engagement"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/data-cloud-segmentation.md"
+  },
+  {
+   "id": "sf-000603",
+   "area": "data-cloud-and-ai",
+   "t": "A Data 360 data lake object in the Engagement category requires an event time field recording when the engagement happened, which must not change.",
+   "f": "A Data 360 data lake object in the Profile category requires an event time field recording when the engagement happened, which must not change.",
+   "x": "The event time field is mandatory for Engagement data, which is time-stamped behaviour such as web visits. Profile DLOs hold demographic and contact data keyed by a unique ID and use a record modified field instead.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:data-cloud-consultant-certification"
+   ],
+   "concepts": [
+    "kt:data-lake-objects",
+    "kt:data-streams"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/data-lake-objects.md"
+  },
+  {
+   "id": "sf-000604",
+   "area": "data-cloud-and-ai",
+   "t": "On Profile and Other data lake objects, the record modified field tells Data 360 which version of a record is newest when data arrives out of order.",
+   "f": "On Profile and Other data lake objects, the primary key field tells Data 360 which version of a record is newest when data arrives out of order.",
+   "x": "The record modified field carries the timestamp used to keep the latest version when records arrive out of sequence. The primary key only identifies which record it is, not which version is newer.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:data-cloud-consultant-certification"
+   ],
+   "concepts": [
+    "kt:data-lake-objects"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/data-lake-objects.md"
+  },
+  {
+   "id": "sf-000605",
+   "area": "data-cloud-and-ai",
+   "t": "A Data 360 data lake object API name can be up to 40 characters long and can't contain two consecutive underscores.",
+   "f": "A Data 360 data lake object API name can be up to 80 characters long and can't contain two consecutive underscores.",
+   "x": "DLO API names are limited to 40 characters of letters, digits and underscores, must start with a letter and can't use double underscores. The 80-character figure doubles the real limit.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:data-cloud-consultant-certification"
+   ],
+   "concepts": [
+    "kt:data-lake-objects"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/data-lake-objects.md"
+  },
+  {
+   "id": "sf-000606",
+   "area": "data-model",
+   "t": "A deleted custom field and its data are kept for up to 15 days, counting against the object's field allocation until hard-deleted.",
+   "f": "A deleted custom field and its data are kept for up to 30 days, counting against the object's field allocation until hard-deleted.",
+   "x": "Deleted fields linger for up to 15 days so they can be restored, and they still consume allocation in the meantime. Thirty days is the wrong retention window; Erase or Purge starts the hard delete sooner.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:platform-app-builder-certification"
+   ],
+   "concepts": [
+    "kt:custom-fields"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/custom-fields.md"
+  },
+  {
+   "id": "sf-000607",
+   "area": "data-model",
+   "t": "A custom address field uses nine custom fields from an object's allocation, while a geolocation field uses three.",
+   "f": "A custom address field uses three custom fields from an object's allocation, while a geolocation field uses nine.",
+   "x": "Compound fields count more than once against the per-object limit: geolocation counts as three and a custom address as nine. The false statement swaps the two figures.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:platform-app-builder-certification"
+   ],
+   "concepts": [
+    "kt:custom-fields"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/custom-fields.md"
+  },
+  {
+   "id": "sf-000608",
+   "area": "data-model",
+   "t": "All long and rich text area fields on one object share a combined budget of 1,638,400 characters.",
+   "f": "All long and rich text area fields on one object share a combined budget of 131,072 characters.",
+   "x": "There's no count limit on long and rich text fields, but together they can't exceed 1,638,400 characters per object. 131,072 is the maximum length of a single such field, not the shared budget.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:platform-app-builder-certification"
+   ],
+   "concepts": [
+    "kt:custom-fields"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/custom-fields.md"
+  },
+  {
+   "id": "sf-000609",
+   "area": "data-model",
+   "t": "In Salesforce Duplicate Management, an object can have up to 5 active matching rules.",
+   "f": "In Salesforce Duplicate Management, an object can have up to 3 active matching rules.",
+   "x": "Each object allows five active matching rules. Three is the number of matching rules a single duplicate rule can reference, which is a different limit.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:platform-administrator-certification"
+   ],
+   "concepts": [
+    "kt:duplicate-management"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/duplicate-management.md"
+  },
+  {
+   "id": "sf-000610",
+   "area": "data-model",
+   "t": "A duplicate rule set to BypassSharingRules still catches duplicates the saving user can't see.",
+   "f": "A duplicate rule set to EnforceSharingRules still catches duplicates the saving user can't see.",
+   "x": "BypassSharingRules ignores sharing when matching, so hidden duplicates are still detected. EnforceSharingRules respects sharing, so a duplicate invisible to the user won't block or flag their save.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:platform-administrator-certification"
+   ],
+   "concepts": [
+    "kt:duplicate-management",
+    "kt:salesforce-sharing-model"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/duplicate-management.md"
+  },
+  {
+   "id": "sf-000611",
+   "area": "data-model",
+   "t": "Datacloud.FindDuplicates.findDuplicates() accepts at most 50 unsaved records per call, all of the same object type.",
+   "f": "Datacloud.FindDuplicates.findDuplicates() accepts at most 200 unsaved records per call, all of the same object type.",
+   "x": "The Apex method checks records against active duplicate rules in batches of up to 50 records of one object. 200 overstates the batch size.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:platform-administrator-certification"
+   ],
+   "concepts": [
+    "kt:duplicate-management",
+    "kt:apex"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/duplicate-management.md"
+  },
+  {
+   "id": "sf-000612",
+   "area": "development",
+   "t": "In Apex Enterprise Patterns, triggers are not listed as service layer callers because trigger logic belongs in the Domain layer.",
+   "f": "In Apex Enterprise Patterns, triggers are not listed as service layer callers because trigger logic belongs in the Selector layer.",
+   "x": "Object-specific behaviour such as validation and defaulting on insert or update lives in Domain classes, which is where trigger logic goes. Selectors only centralise SOQL queries.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:apex-enterprise-patterns",
+    "kt:trigger-framework-pattern"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/apex-enterprise-patterns.md"
+  },
+  {
+   "id": "sf-000613",
+   "area": "development",
+   "t": "In Apex Enterprise Patterns, a service runs with sharing by default and elevates access only inside a private without sharing inner class.",
+   "f": "In Apex Enterprise Patterns, a service runs without sharing by default and enforces access only inside a private with sharing inner class.",
+   "x": "Service classes default to enforcing sharing and confine any elevated access to a private without sharing inner class. The false statement inverts that default.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:apex-enterprise-patterns",
+    "kt:apex"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/apex-enterprise-patterns.md"
+  },
+  {
+   "id": "sf-000614",
+   "area": "development",
+   "t": "When one service calls another in Apex Enterprise Patterns, the outer Unit of Work is passed in rather than the inner service creating its own.",
+   "f": "When one service calls another in Apex Enterprise Patterns, the inner service creates and commits its own Unit of Work rather than receiving the outer one.",
+   "x": "commitWork should run once per scope, so a nested service reuses the caller's Unit of Work. A second Unit of Work would split the DML into separate commits.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:apex-enterprise-patterns",
+    "kt:transaction-control"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/apex-enterprise-patterns.md"
+  },
+  {
+   "id": "sf-000615",
+   "area": "development",
+   "t": "For hierarchy custom settings, getInstance merges fields across the hierarchy, while getValues returns only what is stored at that exact level.",
+   "f": "For hierarchy custom settings, getValues merges fields across the hierarchy, while getInstance returns only what is stored at that exact level.",
+   "x": "getInstance takes each field from the lowest level where it is defined, giving the effective values. getValues leaves fields not defined at that level null; the false statement swaps the methods.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:custom-settings",
+    "kt:apex"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/custom-settings.md"
+  },
+  {
+   "id": "sf-000616",
+   "area": "development",
+   "t": "In a hierarchy custom setting, user-level values override profile-level values, which override the organization default.",
+   "f": "In a hierarchy custom setting, profile-level values override user-level values, which override the organization default.",
+   "x": "The most specific defined value wins: user beats profile, and profile beats the org default. Ranking profile above user reverses the hierarchy.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:custom-settings",
+    "kt:profiles"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/custom-settings.md"
+  },
+  {
+   "id": "sf-000617",
+   "area": "development",
+   "t": "Reading a custom setting with its Apex methods uses the application cache, while querying it with SOQL bypasses the cache.",
+   "f": "Querying a custom setting with SOQL uses the application cache, while reading it with its Apex methods bypasses the cache.",
+   "x": "The caching benefit comes from the custom settings methods such as getInstance. A SOQL query on a setting skips the cache and counts like any other query.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:custom-settings",
+    "kt:soql",
+    "kt:governor-limits"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/custom-settings.md"
+  },
+  {
+   "id": "sf-000618",
+   "area": "devops-and-alm",
+   "t": "Trailhead lists a security review fee of $999 per paid solution, charged on the first submission and again on each resubmission after a failure.",
+   "f": "Trailhead lists a security review fee of $999 per paid solution, charged only once on the first submission, with resubmissions free.",
+   "x": "Paid solutions pay $999 for the initial review and pay it again every time they resubmit after failing. Free solutions don't pay; resubmissions of paid ones are not free.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:appexchange-security-review"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/appexchange-security-review.md"
+  },
+  {
+   "id": "sf-000619",
+   "area": "devops-and-alm",
+   "t": "A package submitted for AgentExchange security review must be Managed-Released, so beta and unmanaged packages are rejected.",
+   "f": "A package submitted for AgentExchange security review must be at least Managed-Beta, so only unmanaged packages are rejected.",
+   "x": "Only Managed-Released packages are accepted for review. Beta versions are turned away just like unmanaged packages.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:appexchange-security-review",
+    "kt:second-generation-managed-packages"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/appexchange-security-review.md"
+  },
+  {
+   "id": "sf-000620",
+   "area": "devops-and-alm",
+   "t": "Solutions that passed the AgentExchange security review are typically re-reviewed about once a year.",
+   "f": "Solutions that passed the AgentExchange security review are typically re-reviewed about once every three years.",
+   "x": "Approval isn't permanent: Salesforce re-reviews listed solutions roughly annually and can ask for a review at any time. Three years overstates the interval.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:appexchange-security-review",
+    "kt:agentexchange"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/appexchange-security-review.md"
+  },
+  {
+   "id": "sf-000621",
+   "area": "devops-and-alm",
+   "t": "A namespace for 2GP packaging is created in a separate Developer Edition org and then linked to the Dev Hub through the Namespace Registries app.",
+   "f": "A namespace for 2GP packaging is created directly in the Dev Hub org and then registered there through the Namespace Registries app.",
+   "x": "Namespaces aren't created in the Dev Hub: you register one in its own Developer Edition org, then use Link Namespace in the Dev Hub's Namespace Registries app to connect it.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:namespace-registry",
+    "kt:dev-hub",
+    "kt:second-generation-managed-packages"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/namespace-registry.md"
+  },
+  {
+   "id": "sf-000622",
+   "area": "devops-and-alm",
+   "t": "Packages in one namespace expose public Apex to each other with the @namespaceAccessible annotation, while global Apex is visible across namespaces.",
+   "f": "Packages in one namespace expose public Apex to each other with the @TestVisible annotation, while global Apex is visible across namespaces.",
+   "x": "@namespaceAccessible makes public Apex usable by sibling packages sharing a namespace. @TestVisible is about exposing members to test classes, not to other packages.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:namespace-registry",
+    "kt:package-dependencies"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/namespace-registry.md"
+  },
+  {
+   "id": "sf-000623",
+   "area": "devops-and-alm",
+   "t": "Salesforce prefers namespaced scratch orgs for package development, using the --no-namespace flag mainly to test an installed package.",
+   "f": "Salesforce prefers scratch orgs created with --no-namespace for package development, using namespaced ones mainly to test an installed package.",
+   "x": "Scratch orgs inherit the project namespace so new metadata gets the package prefix, which is the preferred development setup. The --no-namespace flag is for testing an installed package; the false statement swaps the roles.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:namespace-registry",
+    "kt:scratch-orgs"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/namespace-registry.md"
+  },
+  {
+   "id": "sf-000624",
+   "area": "identity",
+   "t": "Standard SAML just-in-time provisioning requires the Email, LastName, ProfileId and Username attributes to create a user.",
+   "f": "Standard SAML just-in-time provisioning requires the Email, FirstName, ProfileId and Username attributes to create a user.",
+   "x": "The required User attributes for standard JIT are Email, LastName, ProfileId and Username. FirstName is optional, like Role or Department.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:just-in-time-provisioning",
+    "kt:single-sign-on-saml"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/just-in-time-provisioning.md"
+  },
+  {
+   "id": "sf-000625",
+   "area": "identity",
+   "t": "For external users, SAML just-in-time provisioning matches accounts on Account.AccountNumber and contacts on Contact.Email.",
+   "f": "For external users, SAML just-in-time provisioning matches accounts on Account.Name and contacts on Contact.Email.",
+   "x": "Account lookup uses the account number and contact lookup uses email, with multiple matches treated as an error. Account name isn't the matching key.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:just-in-time-provisioning",
+    "kt:experience-cloud-identity"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/just-in-time-provisioning.md"
+  },
+  {
+   "id": "sf-000626",
+   "area": "identity",
+   "t": "Custom SAML just-in-time provisioning uses an Apex class that implements the Auth.SamlJitHandler interface.",
+   "f": "Custom SAML just-in-time provisioning uses an Apex class that implements the Auth.RegistrationHandler interface.",
+   "x": "The generated SAML JIT handler implements Auth.SamlJitHandler with createUser and updateUser methods. A registration handler is the OpenID Connect counterpart used by authentication providers.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:just-in-time-provisioning",
+    "kt:apex",
+    "kt:openid-connect-authentication-providers"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/just-in-time-provisioning.md"
+  },
+  {
+   "id": "sf-000627",
+   "area": "identity",
+   "t": "A login from outside an org's trusted IP ranges can succeed after an identity challenge, but a login outside a profile's login IP ranges is denied.",
+   "f": "A login from outside a profile's login IP ranges can succeed after an identity challenge, but a login outside an org's trusted IP ranges is denied.",
+   "x": "Trusted IP ranges only skip the verification challenge, while profile login IP ranges are a hard allowlist with no fallback. The false statement swaps the two controls.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:identity-and-access-management-architect-certification"
+   ],
+   "concepts": [
+    "kt:login-ip-ranges-and-trusted-ip-ranges",
+    "kt:profiles"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/login-ip-ranges-and-trusted-ip-ranges.md"
+  },
+  {
+   "id": "sf-000628",
+   "area": "identity",
+   "t": "SAML bearer assertion and JWT bearer flows always enforce profile IP restrictions, whatever a connected app's IP relaxation policy says.",
+   "f": "SAML bearer assertion and JWT bearer flows always skip profile IP restrictions, whatever a connected app's IP relaxation policy says.",
+   "x": "These server-to-server flows ignore IP relaxation and always apply the profile's ranges, which matters when an integration's egress IPs change.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:identity-and-access-management-architect-certification"
+   ],
+   "concepts": [
+    "kt:login-ip-ranges-and-trusted-ip-ranges",
+    "kt:connected-apps",
+    "kt:integration-security"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/login-ip-ranges-and-trusted-ip-ranges.md"
+  },
+  {
+   "id": "sf-000629",
+   "area": "identity",
+   "t": "Since Winter '26, a single trusted IP range can cover at most 16,777,216 IPv4 addresses.",
+   "f": "Since Winter '26, a single trusted IP range can cover at most 65,536 IPv4 addresses.",
+   "x": "The range size cap is 16,777,216 IPv4 addresses, and the same cap applies to profile ranges. 65,536 is far smaller than the real limit.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:identity-and-access-management-architect-certification"
+   ],
+   "concepts": [
+    "kt:login-ip-ranges-and-trusted-ip-ranges"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/login-ip-ranges-and-trusted-ip-ranges.md"
+  },
+  {
+   "id": "sf-000630",
+   "area": "integration",
+   "t": "Each subquery in a Salesforce GraphQL API query counts as a separate request against API rate limits.",
+   "f": "A Salesforce GraphQL API query counts as a single request against API rate limits, however many subqueries it contains.",
+   "x": "The GraphQL limits count every subquery as one request, so one call with several subqueries consumes several API calls. Treating the whole query as one call undercounts usage.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:integration-architect-certification"
+   ],
+   "concepts": [
+    "kt:graphql-api",
+    "kt:api-request-limits"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/graphql-api.md"
+  },
+  {
+   "id": "sf-000631",
+   "area": "integration",
+   "t": "A Salesforce GraphQL API subquery returns 10 records by default, so pagination is needed to read more.",
+   "f": "A Salesforce GraphQL API subquery returns 200 records by default, so pagination is needed to read more.",
+   "x": "Without a page size, only 10 records come back per subquery; the ceiling is 2,000. A 200-record default is wrong.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:integration-architect-certification"
+   ],
+   "concepts": [
+    "kt:graphql-api"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/graphql-api.md"
+  },
+  {
+   "id": "sf-000632",
+   "area": "integration",
+   "t": "Mutations in the Salesforce GraphQL API are generally available from API version 66.0.",
+   "f": "Mutations in the Salesforce GraphQL API are generally available from API version 59.0.",
+   "x": "GraphQL mutations were beta from v59.0 through v65.0 and became GA in v66.0. v59.0 is where the beta began, not GA.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:integration-architect-certification"
+   ],
+   "concepts": [
+    "kt:graphql-api",
+    "kt:lightning-web-components"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/graphql-api.md"
+  },
+  {
+   "id": "sf-000633",
+   "area": "platform-architecture",
+   "t": "Salesforce counts most records as about 2 KB of data storage, but each person account as 4 KB.",
+   "f": "Salesforce counts most records as about 2 KB of data storage, but each person account as 8 KB.",
+   "x": "A person account is an Account plus a Contact, so it is counted at 4 KB. 8 KB is the figure for a campaign record.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:platform-data-architect-certification"
+   ],
+   "concepts": [
+    "kt:data-and-file-storage-allocations",
+    "kt:person-accounts"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/data-and-file-storage-allocations.md"
+  },
+  {
+   "id": "sf-000634",
+   "area": "platform-architecture",
+   "t": "Performance and Unlimited Editions add 120 MB of data storage per user license, while Enterprise Edition adds 20 MB.",
+   "f": "Enterprise Edition adds 120 MB of data storage per user license, while Performance and Unlimited Editions add 20 MB.",
+   "x": "On top of the 10 GB minimum, Performance and Unlimited get 120 MB per license and Enterprise gets 20 MB. The false statement swaps the editions.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:platform-data-architect-certification"
+   ],
+   "concepts": [
+    "kt:data-and-file-storage-allocations"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/data-and-file-storage-allocations.md"
+  },
+  {
+   "id": "sf-000635",
+   "area": "platform-architecture",
+   "t": "A Developer sandbox gets 200 MB of data storage, which can be upgraded to 400 MB.",
+   "f": "A Developer sandbox gets 1 GB of data storage, which can be upgraded to 2 GB.",
+   "x": "Developer sandboxes start at 200 MB of data storage (upgradable to 400 MB). The 1 GB / 2 GB figures belong to Developer Pro sandboxes.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:platform-data-architect-certification"
+   ],
+   "concepts": [
+    "kt:data-and-file-storage-allocations",
+    "kt:sandbox-types"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/data-and-file-storage-allocations.md"
+  },
+  {
+   "id": "sf-000636",
+   "area": "platform-architecture",
+   "t": "A single region on a Lightning page can hold up to 100 components.",
+   "f": "A single region on a Lightning page can hold up to 25 components.",
+   "x": "The FlexiPage limit is 100 components per region. 25 is far below the real cap.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:platform-app-builder-certification"
+   ],
+   "concepts": [
+    "kt:lightning-app-builder"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/lightning-app-builder.md"
+  },
+  {
+   "id": "sf-000637",
+   "area": "platform-architecture",
+   "t": "In Dynamic Interactions, only Lightning web components can fire source events, while Aura or LWC components can be targets.",
+   "f": "In Dynamic Interactions, Aura or LWC components can fire source events, while only Lightning web components can be targets.",
+   "x": "Sources must be Lightning web components; targets may be either LWC or Aura. The false statement reverses which side allows Aura.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:platform-app-builder-certification"
+   ],
+   "concepts": [
+    "kt:lightning-app-builder",
+    "kt:lightning-web-components",
+    "kt:aura-components"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/lightning-app-builder.md"
+  },
+  {
+   "id": "sf-000638",
+   "area": "platform-architecture",
+   "t": "If a property's type differs between a Lightning web component's JavaScript and its js-meta.xml, the configuration file's type wins in Lightning App Builder.",
+   "f": "If a property's type differs between a Lightning web component's JavaScript and its js-meta.xml, the JavaScript type wins in Lightning App Builder.",
+   "x": "The builder uses the type declared in the component's configuration file when the two disagree, not the type implied by the JavaScript.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:platform-app-builder-certification"
+   ],
+   "concepts": [
+    "kt:lightning-app-builder",
+    "kt:lightning-web-components"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/lightning-app-builder.md"
+  },
+  {
+   "id": "sf-000639",
+   "area": "platform-architecture",
+   "t": "Platform Cache includes 10 MB of capacity in Enterprise Edition and 30 MB in Unlimited and Performance Editions.",
+   "f": "Platform Cache includes 30 MB of capacity in Enterprise Edition and 10 MB in Unlimited and Performance Editions.",
+   "x": "Enterprise orgs get 10 MB and Unlimited and Performance get 30 MB, with other editions at 0 MB unless more is bought. The false statement swaps the editions.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:platform-cache"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/platform-cache.md"
+  },
+  {
+   "id": "sf-000640",
+   "area": "platform-architecture",
+   "t": "A single item stored in Platform Cache can be at most 100 KB, for both org and session cache.",
+   "f": "A single item stored in Platform Cache can be at most 1 MB, for both org and session cache.",
+   "x": "Items over 100 KB throw Cache.ItemSizeLimitExceededException. 1 MB is the minimum partition size, not the item limit.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:platform-cache",
+    "kt:apex"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/platform-cache.md"
+  },
+  {
+   "id": "sf-000641",
+   "area": "platform-architecture",
+   "t": "The maximum time-to-live for a Platform Cache org cache entry is 172,800 seconds, or 48 hours.",
+   "f": "The maximum time-to-live for a Platform Cache org cache entry is 86,400 seconds, or 24 hours.",
+   "x": "Org cache entries can live up to 48 hours. 24 hours is the org cache default TTL, not its maximum.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:platform-cache"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/platform-cache.md"
+  },
+  {
+   "id": "sf-000642",
+   "area": "public-sector-and-compliance",
+   "t": "FIPS 200 states its minimum security requirements as 17 security-related areas, such as access control and incident response.",
+   "f": "FIPS 200 states its minimum security requirements as 20 security-related areas, such as access control and incident response.",
+   "x": "FIPS 200 lists 17 areas spanning management, operational and technical concerns. They map to SP 800-53 control families, but the standard itself names 17, not 20.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:fips-200",
+    "kt:nist-sp-800-53"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/fips-200.md"
+  },
+  {
+   "id": "sf-000643",
+   "area": "public-sector-and-compliance",
+   "t": "Under FIPS 200, a system gets the low impact level only when its confidentiality, integrity and availability ratings are all low.",
+   "f": "Under FIPS 200, a system gets the low impact level when at least two of its confidentiality, integrity and availability ratings are low.",
+   "x": "FIPS 200 uses the high-water mark: the overall level is the highest of the three FIPS 199 ratings, so low applies only if all three are low. A majority of low ratings isn't enough.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:fips-200",
+    "kt:fips-199"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/fips-200.md"
+  },
+  {
+   "id": "sf-000644",
+   "area": "public-sector-and-compliance",
+   "t": "FIPS 200 took effect when approved in March 2006, and federal agencies were expected to comply within one year.",
+   "f": "FIPS 200 took effect when approved in March 2006, and federal agencies were expected to comply within three years.",
+   "x": "The standard was effective on approval on 9 March 2006 with a one-year compliance window. Three years overstates the deadline.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:fips-200"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/fips-200.md"
+  },
+  {
+   "id": "sf-000645",
+   "area": "public-sector-and-compliance",
+   "t": "HHS treats a cloud provider that stores ePHI for a customer as a business associate even if it holds only encrypted data and no decryption key.",
+   "f": "HHS treats a cloud provider that stores ePHI for a customer as a mere conduit if it holds only encrypted data and no decryption key.",
+   "x": "Lacking the key doesn't change the provider's status: maintaining ePHI makes it a business associate. The conduit exception covers only transmission services with transient storage.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:hipaa"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/hipaa.md"
+  },
+  {
+   "id": "sf-000646",
+   "area": "public-sector-and-compliance",
+   "t": "Under Salesforce's HIPAA BAA, the customer rather than Salesforce must encrypt PHI it transmits through covered services.",
+   "f": "Under Salesforce's HIPAA BAA, Salesforce rather than the customer must encrypt PHI the customer transmits through covered services.",
+   "x": "The BAA places encryption of transmitted PHI, and stored PHI where the customer controls it, on the customer. That duty is why Shield Platform Encryption features in HIPAA designs.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:hipaa",
+    "kt:shield-platform-encryption"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/hipaa.md"
+  },
+  {
+   "id": "sf-000647",
+   "area": "public-sector-and-compliance",
+   "t": "Salesforce's BAA restrictions bar adding patients to Slack, whether as users or as guests.",
+   "f": "Salesforce's BAA restrictions allow adding patients to Slack as guests, but not as full users.",
+   "x": "Slack's HIPAA conditions forbid patients as either users or guests, and keep PHI out of profiles, statuses and workspace names. Guest access is not an exception.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:hipaa",
+    "kt:slack-platform"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/hipaa.md"
+  },
+  {
+   "id": "sf-000648",
+   "area": "security-and-sharing",
+   "t": "A Classic Encryption Text (Encrypted) custom field can hold at most 175 characters.",
+   "f": "A Classic Encryption Text (Encrypted) custom field can hold at most 255 characters.",
+   "x": "The encrypted text type caps values at 175 characters, which is why Classic Encryption suits short values like ID numbers. 255 is the limit for a plain Text field.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:classic-encryption"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/classic-encryption.md"
+  },
+  {
+   "id": "sf-000649",
+   "area": "security-and-sharing",
+   "t": "Classic Encryption protects Text (Encrypted) fields with AES using 128-bit master keys.",
+   "f": "Classic Encryption protects Text (Encrypted) fields with AES using 256-bit master keys.",
+   "x": "Classic Encryption uses 128-bit AES. The 256-bit AES options belong to Shield Platform Encryption.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:classic-encryption",
+    "kt:shield-platform-encryption"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/classic-encryption.md"
+  },
+  {
+   "id": "sf-000650",
+   "area": "security-and-sharing",
+   "t": "Seeing the unmasked value of a Classic Encryption field requires the View Encrypted Data permission.",
+   "f": "Seeing the unmasked value of a Classic Encryption field requires the Manage Encryption Keys permission.",
+   "x": "Users without View Encrypted Data see a masked value. Manage Encryption Keys is a Platform Encryption permission and has no role in Classic Encryption.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:classic-encryption",
+    "kt:permission-sets"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/classic-encryption.md"
+  },
+  {
+   "id": "sf-000651",
+   "area": "architecture-practice",
+   "t": "A Centralized Salesforce Center of Excellence model suits single-org environments, while a Federated model suits multi-org or multi-region estates.",
+   "f": "A Federated Salesforce Center of Excellence model suits single-org environments, while a Centralized model suits multi-org or multi-region estates.",
+   "x": "A Centralized CoE controls all Salesforce work, which fits one org. In a Federated model business units keep control and the CoE advises, which fits multi-org estates; the false statement swaps them.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:salesforce-center-of-excellence",
+    "kt:org-strategy"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/salesforce-center-of-excellence.md"
+  },
+  {
+   "id": "sf-000652",
+   "area": "architecture-practice",
+   "t": "In a Salesforce Center of Excellence, the Design Authority is usually the first subteam formed and reviews designs for security, compliance and architectural fit.",
+   "f": "In a Salesforce Center of Excellence, Demand Intake is usually the first subteam formed and reviews designs for security, compliance and architectural fit.",
+   "x": "The Design Authority comes first and is the most complex subteam, reviewing designs. Demand Intake handles incoming requests rather than design review.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:salesforce-center-of-excellence",
+    "kt:salesforce-architect"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/salesforce-center-of-excellence.md"
+  },
+  {
+   "id": "sf-000653",
+   "area": "architecture-practice",
+   "t": "Trailhead suggests a Salesforce Center of Excellence hold weekly operational meetings and monthly strategy and roadmap meetings.",
+   "f": "Trailhead suggests a Salesforce Center of Excellence hold monthly operational meetings and quarterly strategy and roadmap meetings.",
+   "x": "The suggested rhythm is weekly for operations and monthly for strategy and roadmap. Monthly and quarterly is slower than Trailhead's guidance.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:salesforce-center-of-excellence",
+    "kt:salesforce-governance"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/salesforce-center-of-excellence.md"
+  },
+  {
+   "id": "sf-000654",
+   "area": "architecture-practice",
+   "t": "Scale Test needs a Full Copy sandbox hosted on Hyperforce, although the production org itself doesn't have to be on Hyperforce.",
+   "f": "Scale Test needs the production org to be hosted on Hyperforce, although the Full Copy sandbox itself doesn't have to be on Hyperforce.",
+   "x": "Load tests run in the Full Copy sandbox, so that sandbox must be on Hyperforce; production can stay where it is. The false statement puts the requirement on the wrong org.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:scale-test",
+    "kt:hyperforce",
+    "kt:sandbox-types"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/scale-test.md"
+  },
+  {
+   "id": "sf-000655",
+   "area": "architecture-practice",
+   "t": "Scale Test slots must be booked at least two weeks in advance, and cancellations need at least one week's notice.",
+   "f": "Scale Test slots must be booked at least one week in advance, and cancellations need at least two weeks' notice.",
+   "x": "Booking needs two weeks' notice and cancelling needs one. The false statement swaps the two lead times.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:scale-test"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/scale-test.md"
+  },
+  {
+   "id": "sf-000656",
+   "area": "architecture-practice",
+   "t": "Of the two Scale Test permission sets, only ScaleTestingServiceAdvancedUserPS includes the Test Scheduler.",
+   "f": "Of the two Scale Test permission sets, only ScaleTestingServiceStandardUserPS includes the Test Scheduler.",
+   "x": "Access comes through a standard or an advanced permission set, and only the advanced one grants the scheduler used to book test windows.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:scale-test"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/scale-test.md"
+  },
+  {
+   "id": "sf-000657",
+   "area": "automation",
+   "t": "A Business Rules Engine decision matrix returns one row even if several match, while a decision table can return multiple matching outcomes.",
+   "f": "A Business Rules Engine decision table returns one row even if several match, while a decision matrix can return multiple matching outcomes.",
+   "x": "Matrices are simple lookups that return a single matching row. Decision tables support comparison operators and can return several outcome sets; the false statement swaps them.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:business-rules-engine"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/business-rules-engine.md"
+  },
+  {
+   "id": "sf-000658",
+   "area": "automation",
+   "t": "A Branch element in a Business Rules Engine expression set supports up to six prioritized paths, including the default path.",
+   "f": "A Branch element in a Business Rules Engine expression set supports up to ten prioritized paths, including the default path.",
+   "x": "Branch elements are capped at six paths counting the default. Ten overstates the limit.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:business-rules-engine"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/business-rules-engine.md"
+  },
+  {
+   "id": "sf-000659",
+   "area": "automation",
+   "t": "Business Rules Engine decision tables read their rows from Salesforce records, while decision matrices hold rows typed in or imported from CSV.",
+   "f": "Business Rules Engine decision matrices read their rows from Salesforce records, while decision tables hold rows typed in or imported from CSV.",
+   "x": "Because decision tables are sourced from records, they refresh when the data changes. Decision matrices are populated by hand or by CSV import.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:business-rules-engine"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/business-rules-engine.md"
+  },
+  {
+   "id": "sf-000660",
+   "area": "automation",
+   "t": "A Salesforce flow can have up to 50 versions in every edition, and inactive old versions count toward that cap.",
+   "f": "A Salesforce flow can have up to 100 versions in every edition, and inactive old versions count toward that cap.",
+   "x": "The cap is 50 versions per flow, and unused versions still count, so they should be deleted before the limit is hit. 100 doubles the real figure.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:flow-versioning",
+    "kt:flow-limits"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/flow-versioning.md"
+  },
+  {
+   "id": "sf-000661",
+   "area": "automation",
+   "t": "Flow interviews already running when a new version is activated finish on the version they started with.",
+   "f": "Flow interviews already running when a new version is activated switch to the new version at their next element.",
+   "x": "Activation affects only new interviews; in-flight ones are not migrated and complete on their original version.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:flow-versioning",
+    "kt:flow-builder"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/flow-versioning.md"
+  },
+  {
+   "id": "sf-000662",
+   "area": "automation",
+   "t": "A flow version's API version for running the flow doesn't move forward with new releases; it changes only when a Manage Flow user edits it.",
+   "f": "A flow version's API version for running the flow moves forward automatically with each new release, unless a Manage Flow user pins it.",
+   "x": "Each version keeps the runtime API version it was saved with until someone with Manage Flow changes it, ideally after reading the release notes in between. It is not upgraded automatically.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:flow-versioning"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/flow-versioning.md"
+  },
+  {
+   "id": "sf-000663",
+   "area": "automation",
+   "t": "When flows are deployed as active, flows with screens are exempt from the flow test coverage requirement, while autolaunched flows are not.",
+   "f": "When flows are deployed as active, autolaunched flows are exempt from the flow test coverage requirement, while flows with screens are not.",
+   "x": "The Apex coverage requirement applies to active processes and autolaunched flows; screen flows are excluded. The false statement reverses the exemption.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:process-automation-settings",
+    "kt:apex-testing",
+    "kt:flow-versioning"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/process-automation-settings.md"
+  },
+  {
+   "id": "sf-000664",
+   "area": "automation",
+   "t": "The Automated Process User Email Address used as the sender for scheduled flow emails must be an organization-wide email address.",
+   "f": "The Automated Process User Email Address used as the sender for scheduled flow emails must be the Default Workflow User's own email address.",
+   "x": "Process Automation Settings requires an organization-wide email address as the sender for scheduled flow email. The Default Workflow User sets the running user, not the sender address.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:process-automation-settings",
+    "kt:schedule-triggered-flow"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/process-automation-settings.md"
+  },
+  {
+   "id": "sf-000665",
+   "area": "automation",
+   "t": "Process Automation Settings can send flow error emails to the Apex Exception Email recipients instead of the last person who modified the flow.",
+   "f": "Process Automation Settings can send flow error emails to the Default Workflow User instead of the last person who modified the flow.",
+   "x": "The error-email option reroutes unhandled flow fault emails to the Apex Exception Email recipients. The Default Workflow User is the running user for time-based automation, not an error recipient.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:process-automation-settings",
+    "kt:flow-fault-handling"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/process-automation-settings.md"
+  },
+  {
+   "id": "sf-000666",
+   "area": "clouds-and-products",
+   "t": "In a Context Service definition, context tags are short aliases that consuming applications use to query nodes and attributes directly.",
+   "f": "In a Context Service definition, context mappings are short aliases that consuming applications use to query nodes and attributes directly.",
+   "x": "Tags are the aliases applications query by. Mappings do a different job: they link nodes to objects or DMOs and attributes to fields.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:context-service"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/context-service.md"
+  },
+  {
+   "id": "sf-000667",
+   "area": "clouds-and-products",
+   "t": "Extending a standard context definition keeps its inherited parts read-only and picks up Industry Cloud updates, while cloning gives a fully editable copy.",
+   "f": "Cloning a standard context definition keeps its inherited parts read-only and picks up Industry Cloud updates, while extending gives a fully editable copy.",
+   "x": "An extension inherits standard nodes, attributes and mappings as read-only and receives automatic updates. A clone is independent and fully editable; the false statement swaps the two options.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:context-service",
+    "kt:salesforce-industries"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/context-service.md"
+  },
+  {
+   "id": "sf-000668",
+   "area": "clouds-and-products",
+   "t": "Transposable child nodes, which store data as key-value pairs, are available only in custom context definitions or on custom nodes.",
+   "f": "Transposable child nodes, which store data as key-value pairs, are available only in standard context definitions shipped by industry clouds.",
+   "x": "Key-value transposable nodes, such as Color = Blue, can be used only in custom definitions or on custom nodes. Standard definitions can't be modified, so they aren't where you add them.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:context-service"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/context-service.md"
+  },
+  {
+   "id": "sf-000669",
+   "area": "clouds-and-products",
+   "t": "In Product Configurator configuration rules, only an Error message blocks submission; Information and Warning messages don't.",
+   "f": "In Product Configurator configuration rules, both Warning and Error messages block submission; only Information messages don't.",
+   "x": "Rule messages come in three severities, and only Error stops the rep from submitting. Warnings are advisory.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:product-configurator",
+    "kt:business-rules-engine"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/product-configurator.md"
+  },
+  {
+   "id": "sf-000670",
+   "area": "clouds-and-products",
+   "t": "An admin can assign a Product Configurator flow to a product classification so that many products share the same configuration UI.",
+   "f": "An admin can assign a Product Configurator flow to a price book so that many products share the same configuration UI.",
+   "x": "Configurator flows are assigned to a product or to a product classification. Price books play no part in choosing the configuration UI.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:product-configurator",
+    "kt:flow-builder",
+    "kt:product-catalog-management"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/product-configurator.md"
+  },
+  {
+   "id": "sf-000671",
+   "area": "clouds-and-products",
+   "t": "In Product Configurator, the Instant Pricing toggle controls whether each selection is priced as it is made.",
+   "f": "In Product Configurator, the Product Validation toggle controls whether each selection is priced as it is made.",
+   "x": "There are two toggles: Product Validation checks each selection, and Instant Pricing prices it immediately. Pricing is controlled by Instant Pricing, not Product Validation.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:product-configurator",
+    "kt:salesforce-pricing"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/product-configurator.md"
+  },
+  {
+   "id": "sf-000672",
+   "area": "clouds-and-products",
+   "t": "In the Salesforce CPQ price waterfall, Regular Price reflects automatic volume discounts and Customer Price reflects the rep's manual discounts.",
+   "f": "In the Salesforce CPQ price waterfall, Customer Price reflects automatic volume discounts and Regular Price reflects the rep's manual discounts.",
+   "x": "The waterfall applies volume discounts to reach Regular Price, then the rep's manual discounts to reach Customer Price. The false statement swaps the two fields.",
+   "release": "Winter '27",
+   "featureStatus": "deprecated",
+   "certs": [],
+   "concepts": [
+    "kt:salesforce-cpq",
+    "kt:price-books"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/salesforce-cpq.md"
+  },
+  {
+   "id": "sf-000673",
+   "area": "clouds-and-products",
+   "t": "Salesforce CPQ filter rules narrow which products can go into a bundle, while selection rules add, remove or hide bundle options.",
+   "f": "Salesforce CPQ selection rules narrow which products can go into a bundle, while filter rules add, remove or hide bundle options.",
+   "x": "Filter rules restrict the products available to a bundle; selection rules act on options by adding, removing, hiding, enabling or disabling them. The false statement reverses the two.",
+   "release": "Winter '27",
+   "featureStatus": "deprecated",
+   "certs": [],
+   "concepts": [
+    "kt:salesforce-cpq"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/salesforce-cpq.md"
+  },
+  {
+   "id": "sf-000674",
+   "area": "clouds-and-products",
+   "t": "The Salesforce CPQ JavaScript Quote Calculator Plugin must run in both the browser and Node, so browser globals such as window may not exist.",
+   "f": "The Salesforce CPQ JavaScript Quote Calculator Plugin runs only in the browser, so browser globals such as window are always available.",
+   "x": "The QCP is an ES6 module that has to work in both environments, so it can't rely on browser-only globals. Assuming window is always present breaks server-side calculation.",
+   "release": "Winter '27",
+   "featureStatus": "deprecated",
+   "certs": [],
+   "concepts": [
+    "kt:salesforce-cpq",
+    "kt:heroku"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/salesforce-cpq.md"
+  },
+  {
+   "id": "sf-000675",
+   "area": "clouds-and-products",
+   "t": "Salesforce closed its acquisition of Vlocity on June 1, 2020, and renamed the business Salesforce Industries.",
+   "f": "Salesforce closed its acquisition of Vlocity on June 1, 2019, and renamed the business Salesforce Industries.",
+   "x": "The Vlocity deal closed in June 2020, after which the business became Salesforce Industries. 2019 is a year too early.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:salesforce-industries",
+    "kt:salesforce-inc"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/salesforce-industries.md"
+  },
+  {
+   "id": "sf-000676",
+   "area": "clouds-and-products",
+   "t": "The Omnistudio standard runtime works only with the standard data model, while the managed package runtime supports package objects and standard objects.",
+   "f": "The Omnistudio managed package runtime works only with the standard data model, while the standard runtime supports package objects and standard objects.",
+   "x": "The legacy managed package runtime handles both the packages' custom objects and the standard data model. The standard runtime is limited to the standard data model.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:salesforce-industries",
+    "kt:omnistudio"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/salesforce-industries.md"
+  },
+  {
+   "id": "sf-000677",
+   "area": "clouds-and-products",
+   "t": "Salesforce Architects suggest Flow for employee-facing processes and OmniScript as the default for external users and industry-specific processes.",
+   "f": "Salesforce Architects suggest OmniScript for employee-facing processes and Flow as the default for external users and industry-specific processes.",
+   "x": "The Industries guidance points internal processes to Flow and external or industry-specific journeys to OmniScript. The false statement swaps the two tools.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:salesforce-industries",
+    "kt:omnistudio"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/salesforce-industries.md"
+  },
+  {
+   "id": "sf-000678",
+   "area": "clouds-and-products",
+   "t": "In a Salesforce Pricing procedure, a Stop Pricing element ends processing early, while a List Group runs its elements only when a condition holds.",
+   "f": "In a Salesforce Pricing procedure, a List Group ends processing early, while a Stop Pricing element runs its elements only when a condition holds.",
+   "x": "List Group wraps conditional elements and Stop Pricing halts the procedure; contract pricing combines them so contracted lines skip standard discounts. The false statement swaps their roles.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:salesforce-pricing"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/salesforce-pricing.md"
+  },
+  {
+   "id": "sf-000679",
+   "area": "clouds-and-products",
+   "t": "Salesforce Pricing elements read and write values through context tags rather than reading records directly.",
+   "f": "Salesforce Pricing elements read and write values by querying records directly rather than through context tags.",
+   "x": "Each element's input and output variables map to context tags from the procedure's context definition, which carry values between steps and back to the transaction.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:salesforce-pricing",
+    "kt:context-service"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/salesforce-pricing.md"
+  },
+  {
+   "id": "sf-000680",
+   "area": "clouds-and-products",
+   "t": "The Salesforce Pricing List Price element finds the price book entry using the product, price book and product selling model.",
+   "f": "The Salesforce Pricing List Price element finds the price book entry using the product, price book and account.",
+   "x": "List Price looks up the entry by product, price book and product selling model, then returns list price and subtotal. The account is not part of that lookup.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:salesforce-pricing",
+    "kt:price-books"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/salesforce-pricing.md"
+  },
+  {
+   "id": "sf-000681",
+   "area": "data-cloud-and-ai",
+   "t": "In a Data 360 data stream, Incremental refresh blanks out fields that didn't change, while Partial writes only the changed fields and keeps the rest.",
+   "f": "In a Data 360 data stream, Partial refresh blanks out fields that didn't change, while Incremental writes only the changed fields and keeps the rest.",
+   "x": "Incremental mode writes new values and blanks unchanged fields, so a delta-only source can lose data. Partial is the mode that preserves untouched fields; the false statement swaps them.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:data-cloud-consultant-certification"
+   ],
+   "concepts": [
+    "kt:data-streams",
+    "kt:data-lake-objects"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/data-streams.md"
+  },
+  {
+   "id": "sf-000682",
+   "area": "data-cloud-and-ai",
+   "t": "Data 360 web and mobile data streams ingest engagement data every 15 minutes and profile data every hour.",
+   "f": "Data 360 web and mobile data streams ingest profile data every 15 minutes and engagement data every hour.",
+   "x": "Engagement events arrive on the faster 15-minute cycle and profile data hourly. The false statement reverses the two schedules.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:data-cloud-consultant-certification"
+   ],
+   "concepts": [
+    "kt:data-streams"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/data-streams.md"
+  },
+  {
+   "id": "sf-000683",
+   "area": "data-cloud-and-ai",
+   "t": "For a website or mobile app source, all Data 360 Engagement events share one data stream, while each Profile or Other event gets its own.",
+   "f": "For a website or mobile app source, all Data 360 Profile events share one data stream, while each Engagement or Other event gets its own.",
+   "x": "After the app's event schema is uploaded, Engagement events are combined into a single stream and Profile or Other events get separate streams.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:data-cloud-consultant-certification"
+   ],
+   "concepts": [
+    "kt:data-streams"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/data-streams.md"
+  },
+  {
+   "id": "sf-000684",
+   "area": "data-model",
+   "t": "Dynamic Forms became generally available across LWC-enabled standard objects and on mobile in Winter '24.",
+   "f": "Dynamic Forms became generally available across LWC-enabled standard objects and on mobile in Winter '23.",
+   "x": "Winter '23 added standard-object support only for account, contact and opportunity. Broad GA on LWC-enabled standard objects and mobile came in Winter '24.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:platform-app-builder-certification"
+   ],
+   "concepts": [
+    "kt:dynamic-forms",
+    "kt:lightning-app-builder"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/dynamic-forms.md"
+  },
+  {
+   "id": "sf-000685",
+   "area": "data-model",
+   "t": "A two-column Dynamic Forms Field Section counts as three components on the page, because each column counts as a component.",
+   "f": "A two-column Dynamic Forms Field Section counts as one component on the page, because columns don't count as components.",
+   "x": "The section itself plus each of its columns counts toward component limits, so two columns make three. Treating the section as a single component undercounts it.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:platform-app-builder-certification"
+   ],
+   "concepts": [
+    "kt:dynamic-forms"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/dynamic-forms.md"
+  },
+  {
+   "id": "sf-000686",
+   "area": "data-model",
+   "t": "Dynamic Forms field visibility rules re-evaluate while the user edits, but section visibility rules apply only after the record is saved.",
+   "f": "Dynamic Forms section visibility rules re-evaluate while the user edits, but field visibility rules apply only after the record is saved.",
+   "x": "Field-level rules respond during editing, whereas section rules are evaluated after save. The false statement swaps which rule type is live.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:platform-app-builder-certification"
+   ],
+   "concepts": [
+    "kt:dynamic-forms"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/dynamic-forms.md"
+  },
+  {
+   "id": "sf-000687",
+   "area": "data-model",
+   "t": "In Apex, Formula.recalculateFormulas() refreshes every formula on a list of in-memory SObjects without saving the records.",
+   "f": "In Apex, Formula.recalculateFormulas() refreshes every formula on a list of SObjects and then saves the records to the database.",
+   "x": "The method recalculates formula values on records held in memory and performs no DML; it only uses SOQL when fields the formulas need are missing.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:platform-app-builder-certification",
+    "kt:platform-administrator-certification"
+   ],
+   "concepts": [
+    "kt:formula-fields",
+    "kt:custom-fields"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/formula-fields.md"
   }
  ]
 }

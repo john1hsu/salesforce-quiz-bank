@@ -1,0 +1,18 @@
+id: sf-000676
+product_area: clouds-and-products
+true_statement: The Omnistudio standard runtime works only with the standard data model, while the managed package runtime supports package objects and standard objects.
+false_statement: The Omnistudio managed package runtime works only with the standard data model, while the standard runtime supports package objects and standard objects.
+explanation: The legacy managed package runtime handles both the packages' custom objects and the standard data model. The standard runtime is limited to the standard data model.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/salesforce-industries.md
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: b0fdac8244a2371d04ba422930d700004f81d34e
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:salesforce-industries
+- kt:omnistudio
+difficulty: 3
+created: '2026-11-13'
+status: active

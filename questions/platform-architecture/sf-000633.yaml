@@ -1,0 +1,20 @@
+id: sf-000633
+product_area: platform-architecture
+true_statement: Salesforce counts most records as about 2 KB of data storage, but each person account as 4 KB.
+false_statement: Salesforce counts most records as about 2 KB of data storage, but each person account as 8 KB.
+explanation: A person account is an Account plus a Contact, so it is counted at 4 KB. 8 KB is the figure for a campaign record.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/data-and-file-storage-allocations.md
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: f793351882b1f7af607f63aafd68f8678c6aeb77
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:platform-data-architect-certification
+concepts:
+- kt:data-and-file-storage-allocations
+- kt:person-accounts
+difficulty: 2
+created: '2026-11-13'
+status: active

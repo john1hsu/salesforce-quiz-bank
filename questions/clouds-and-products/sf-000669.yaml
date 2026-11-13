@@ -1,0 +1,18 @@
+id: sf-000669
+product_area: clouds-and-products
+true_statement: In Product Configurator configuration rules, only an Error message blocks submission; Information and Warning messages don't.
+false_statement: In Product Configurator configuration rules, both Warning and Error messages block submission; only Information messages don't.
+explanation: Rule messages come in three severities, and only Error stops the rep from submitting. Warnings are advisory.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/product-configurator.md
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: 43e2c906c3a0aa22b20894eb8a1fc3faa457c8d7
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:product-configurator
+- kt:business-rules-engine
+difficulty: 2
+created: '2026-11-13'
+status: active

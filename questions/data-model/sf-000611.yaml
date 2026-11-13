@@ -1,0 +1,20 @@
+id: sf-000611
+product_area: data-model
+true_statement: Datacloud.FindDuplicates.findDuplicates() accepts at most 50 unsaved records per call, all of the same object type.
+false_statement: Datacloud.FindDuplicates.findDuplicates() accepts at most 200 unsaved records per call, all of the same object type.
+explanation: The Apex method checks records against active duplicate rules in batches of up to 50 records of one object. 200 overstates the batch size.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/duplicate-management.md
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: a100dfaac943f9b3253378bb7075b2165199cac3
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:platform-administrator-certification
+concepts:
+- kt:duplicate-management
+- kt:apex
+difficulty: 2
+created: '2026-11-13'
+status: active

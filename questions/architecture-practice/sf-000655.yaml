@@ -1,0 +1,17 @@
+id: sf-000655
+product_area: architecture-practice
+true_statement: Scale Test slots must be booked at least two weeks in advance, and cancellations need at least one week's notice.
+false_statement: Scale Test slots must be booked at least one week in advance, and cancellations need at least two weeks' notice.
+explanation: Booking needs two weeks' notice and cancelling needs one. The false statement swaps the two lead times.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/scale-test.md
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: 249f7e59126c6a02103977c7699556f4c652ed61
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:scale-test
+difficulty: 2
+created: '2026-11-13'
+status: active

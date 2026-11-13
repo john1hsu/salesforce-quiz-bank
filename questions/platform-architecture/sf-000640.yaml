@@ -1,0 +1,18 @@
+id: sf-000640
+product_area: platform-architecture
+true_statement: A single item stored in Platform Cache can be at most 100 KB, for both org and session cache.
+false_statement: A single item stored in Platform Cache can be at most 1 MB, for both org and session cache.
+explanation: Items over 100 KB throw Cache.ItemSizeLimitExceededException. 1 MB is the minimum partition size, not the item limit.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/platform-cache.md
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: 6fffec01bd2570f0e6a283d448dd12380f805378
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:platform-cache
+- kt:apex
+difficulty: 2
+created: '2026-11-13'
+status: active

@@ -1,0 +1,19 @@
+id: sf-000598
+product_area: data-cloud-and-ai
+true_statement: In streaming mode, the Data 360 Ingestion API accepts request bodies of up to 200 KB.
+false_statement: In streaming mode, the Data 360 Ingestion API accepts request bodies of up to 2 MB.
+explanation: Streaming ingestion is meant for small, frequent payloads, so each request body is limited to 200 KB. Larger loads belong in bulk mode, which takes CSV files of up to 150 MB.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/data-cloud-limits.md
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: a7fe6f52d94457272bc65ed404ab07a66f2d65d7
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:data-cloud-consultant-certification
+concepts:
+- kt:data-cloud-limits
+difficulty: 2
+created: '2026-11-13'
+status: active

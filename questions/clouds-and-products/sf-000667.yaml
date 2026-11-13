@@ -1,0 +1,18 @@
+id: sf-000667
+product_area: clouds-and-products
+true_statement: Extending a standard context definition keeps its inherited parts read-only and picks up Industry Cloud updates, while cloning gives a fully editable copy.
+false_statement: Cloning a standard context definition keeps its inherited parts read-only and picks up Industry Cloud updates, while extending gives a fully editable copy.
+explanation: An extension inherits standard nodes, attributes and mappings as read-only and receives automatic updates. A clone is independent and fully editable; the false statement swaps the two options.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/context-service.md
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: 6ef7ea14e5b51b02d14fa576a5f0849a9dd3af52
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:context-service
+- kt:salesforce-industries
+difficulty: 3
+created: '2026-11-13'
+status: active

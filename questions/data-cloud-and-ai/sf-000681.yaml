@@ -1,0 +1,20 @@
+id: sf-000681
+product_area: data-cloud-and-ai
+true_statement: In a Data 360 data stream, Incremental refresh blanks out fields that didn't change, while Partial writes only the changed fields and keeps the rest.
+false_statement: In a Data 360 data stream, Partial refresh blanks out fields that didn't change, while Incremental writes only the changed fields and keeps the rest.
+explanation: Incremental mode writes new values and blanks unchanged fields, so a delta-only source can lose data. Partial is the mode that preserves untouched fields; the false statement swaps them.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/data-streams.md
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: d733ce17f7c23150c0183ee7369167c47ecf515d
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:data-cloud-consultant-certification
+concepts:
+- kt:data-streams
+- kt:data-lake-objects
+difficulty: 3
+created: '2026-11-13'
+status: active

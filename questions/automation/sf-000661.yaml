@@ -1,0 +1,18 @@
+id: sf-000661
+product_area: automation
+true_statement: Flow interviews already running when a new version is activated finish on the version they started with.
+false_statement: Flow interviews already running when a new version is activated switch to the new version at their next element.
+explanation: Activation affects only new interviews; in-flight ones are not migrated and complete on their original version.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/flow-versioning.md
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: 18ea6724911e64781ad94b452ceaabaaf8d88000
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:flow-versioning
+- kt:flow-builder
+difficulty: 2
+created: '2026-11-13'
+status: active

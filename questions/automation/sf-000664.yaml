@@ -1,0 +1,18 @@
+id: sf-000664
+product_area: automation
+true_statement: The Automated Process User Email Address used as the sender for scheduled flow emails must be an organization-wide email address.
+false_statement: The Automated Process User Email Address used as the sender for scheduled flow emails must be the Default Workflow User's own email address.
+explanation: Process Automation Settings requires an organization-wide email address as the sender for scheduled flow email. The Default Workflow User sets the running user, not the sender address.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/process-automation-settings.md
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: d233a0d28340d7b428c465e9e4a2329ea0acd663
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:process-automation-settings
+- kt:schedule-triggered-flow
+difficulty: 2
+created: '2026-11-13'
+status: active

@@ -6,8 +6,8 @@ explanation: LDS reads use wire adapters from the lightning/ui*Api modules, but 
 source:
   repo: john1hsu/salesforce-knowledge-graph
   path: articles/development/lightning-web-components.md
-  commit: bd16e0e19e9514fe021c1fecc94d87d3038523bf
-  blob: cd1fa4184e6c3426e7f7101ef4e970fba84f3fbf
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: 06ccff8aaa83b2e41c38dfd5ebde39523045f92f
 verified_release: Winter '27
 feature_status: current
 concepts:

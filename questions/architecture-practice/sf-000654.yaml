@@ -1,0 +1,19 @@
+id: sf-000654
+product_area: architecture-practice
+true_statement: Scale Test needs a Full Copy sandbox hosted on Hyperforce, although the production org itself doesn't have to be on Hyperforce.
+false_statement: Scale Test needs the production org to be hosted on Hyperforce, although the Full Copy sandbox itself doesn't have to be on Hyperforce.
+explanation: Load tests run in the Full Copy sandbox, so that sandbox must be on Hyperforce; production can stay where it is. The false statement puts the requirement on the wrong org.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/scale-test.md
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: 249f7e59126c6a02103977c7699556f4c652ed61
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:scale-test
+- kt:hyperforce
+- kt:sandbox-types
+difficulty: 2
+created: '2026-11-13'
+status: active

@@ -1,0 +1,19 @@
+id: sf-000608
+product_area: data-model
+true_statement: All long and rich text area fields on one object share a combined budget of 1,638,400 characters.
+false_statement: All long and rich text area fields on one object share a combined budget of 131,072 characters.
+explanation: There's no count limit on long and rich text fields, but together they can't exceed 1,638,400 characters per object. 131,072 is the maximum length of a single such field, not the shared budget.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/custom-fields.md
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: f889590462e16f0db694df97025508800f8b7a96
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:platform-app-builder-certification
+concepts:
+- kt:custom-fields
+difficulty: 3
+created: '2026-11-13'
+status: active

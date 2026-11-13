@@ -1,0 +1,18 @@
+id: sf-000642
+product_area: public-sector-and-compliance
+true_statement: FIPS 200 states its minimum security requirements as 17 security-related areas, such as access control and incident response.
+false_statement: FIPS 200 states its minimum security requirements as 20 security-related areas, such as access control and incident response.
+explanation: FIPS 200 lists 17 areas spanning management, operational and technical concerns. They map to SP 800-53 control families, but the standard itself names 17, not 20.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/fips-200.md
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: b7f8209d9c79be31a56fcb82a8651c40ba7319cf
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:fips-200
+- kt:nist-sp-800-53
+difficulty: 2
+created: '2026-11-13'
+status: active

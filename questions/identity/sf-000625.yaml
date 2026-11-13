@@ -1,0 +1,18 @@
+id: sf-000625
+product_area: identity
+true_statement: For external users, SAML just-in-time provisioning matches accounts on Account.AccountNumber and contacts on Contact.Email.
+false_statement: For external users, SAML just-in-time provisioning matches accounts on Account.Name and contacts on Contact.Email.
+explanation: Account lookup uses the account number and contact lookup uses email, with multiple matches treated as an error. Account name isn't the matching key.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/just-in-time-provisioning.md
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: 7b317120c3fc70e7e15e81a699f01212cb968599
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:just-in-time-provisioning
+- kt:experience-cloud-identity
+difficulty: 3
+created: '2026-11-13'
+status: active

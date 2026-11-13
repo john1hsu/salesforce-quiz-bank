@@ -1,0 +1,17 @@
+id: sf-000668
+product_area: clouds-and-products
+true_statement: Transposable child nodes, which store data as key-value pairs, are available only in custom context definitions or on custom nodes.
+false_statement: Transposable child nodes, which store data as key-value pairs, are available only in standard context definitions shipped by industry clouds.
+explanation: Key-value transposable nodes, such as Color = Blue, can be used only in custom definitions or on custom nodes. Standard definitions can't be modified, so they aren't where you add them.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/context-service.md
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: 6ef7ea14e5b51b02d14fa576a5f0849a9dd3af52
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:context-service
+difficulty: 3
+created: '2026-11-13'
+status: active

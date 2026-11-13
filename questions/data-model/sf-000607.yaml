@@ -1,0 +1,19 @@
+id: sf-000607
+product_area: data-model
+true_statement: A custom address field uses nine custom fields from an object's allocation, while a geolocation field uses three.
+false_statement: A custom address field uses three custom fields from an object's allocation, while a geolocation field uses nine.
+explanation: 'Compound fields count more than once against the per-object limit: geolocation counts as three and a custom address as nine. The false statement swaps the two figures.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/custom-fields.md
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: f889590462e16f0db694df97025508800f8b7a96
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:platform-app-builder-certification
+concepts:
+- kt:custom-fields
+difficulty: 2
+created: '2026-11-13'
+status: active

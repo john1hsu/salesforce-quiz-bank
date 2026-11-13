@@ -1,0 +1,18 @@
+id: sf-000650
+product_area: security-and-sharing
+true_statement: Seeing the unmasked value of a Classic Encryption field requires the View Encrypted Data permission.
+false_statement: Seeing the unmasked value of a Classic Encryption field requires the Manage Encryption Keys permission.
+explanation: Users without View Encrypted Data see a masked value. Manage Encryption Keys is a Platform Encryption permission and has no role in Classic Encryption.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/classic-encryption.md
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: a4202a6d7d410332586aba6d5b61414d8bd353f6
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:classic-encryption
+- kt:permission-sets
+difficulty: 2
+created: '2026-11-13'
+status: active

@@ -1,0 +1,19 @@
+id: sf-000617
+product_area: development
+true_statement: Reading a custom setting with its Apex methods uses the application cache, while querying it with SOQL bypasses the cache.
+false_statement: Querying a custom setting with SOQL uses the application cache, while reading it with its Apex methods bypasses the cache.
+explanation: The caching benefit comes from the custom settings methods such as getInstance. A SOQL query on a setting skips the cache and counts like any other query.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/custom-settings.md
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: c184bfd88efaa16cff0f0b729a190183c433c6bd
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:custom-settings
+- kt:soql
+- kt:governor-limits
+difficulty: 2
+created: '2026-11-13'
+status: active

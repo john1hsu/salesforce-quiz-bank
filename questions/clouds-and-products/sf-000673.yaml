@@ -1,0 +1,17 @@
+id: sf-000673
+product_area: clouds-and-products
+true_statement: Salesforce CPQ filter rules narrow which products can go into a bundle, while selection rules add, remove or hide bundle options.
+false_statement: Salesforce CPQ selection rules narrow which products can go into a bundle, while filter rules add, remove or hide bundle options.
+explanation: Filter rules restrict the products available to a bundle; selection rules act on options by adding, removing, hiding, enabling or disabling them. The false statement reverses the two.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/salesforce-cpq.md
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: 68f057e354a20abaa064c118484ca5d16d415b07
+verified_release: Winter '27
+feature_status: deprecated
+concepts:
+- kt:salesforce-cpq
+difficulty: 2
+created: '2026-11-13'
+status: active

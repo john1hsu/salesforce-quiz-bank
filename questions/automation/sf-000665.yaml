@@ -1,0 +1,18 @@
+id: sf-000665
+product_area: automation
+true_statement: Process Automation Settings can send flow error emails to the Apex Exception Email recipients instead of the last person who modified the flow.
+false_statement: Process Automation Settings can send flow error emails to the Default Workflow User instead of the last person who modified the flow.
+explanation: The error-email option reroutes unhandled flow fault emails to the Apex Exception Email recipients. The Default Workflow User is the running user for time-based automation, not an error recipient.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/process-automation-settings.md
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: d233a0d28340d7b428c465e9e4a2329ea0acd663
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:process-automation-settings
+- kt:flow-fault-handling
+difficulty: 2
+created: '2026-11-13'
+status: active

@@ -1,0 +1,18 @@
+id: sf-000651
+product_area: architecture-practice
+true_statement: A Centralized Salesforce Center of Excellence model suits single-org environments, while a Federated model suits multi-org or multi-region estates.
+false_statement: A Federated Salesforce Center of Excellence model suits single-org environments, while a Centralized model suits multi-org or multi-region estates.
+explanation: A Centralized CoE controls all Salesforce work, which fits one org. In a Federated model business units keep control and the CoE advises, which fits multi-org estates; the false statement swaps them.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/salesforce-center-of-excellence.md
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: f2c0c78165b6ccc62afed711c687cf5bcdf5246c
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:salesforce-center-of-excellence
+- kt:org-strategy
+difficulty: 2
+created: '2026-11-13'
+status: active

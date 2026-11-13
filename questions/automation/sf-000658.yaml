@@ -1,0 +1,17 @@
+id: sf-000658
+product_area: automation
+true_statement: A Branch element in a Business Rules Engine expression set supports up to six prioritized paths, including the default path.
+false_statement: A Branch element in a Business Rules Engine expression set supports up to ten prioritized paths, including the default path.
+explanation: Branch elements are capped at six paths counting the default. Ten overstates the limit.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/business-rules-engine.md
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: dd8ab3418803277f5083ebde436b3863330a1946
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:business-rules-engine
+difficulty: 3
+created: '2026-11-13'
+status: active

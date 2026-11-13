@@ -1,0 +1,19 @@
+id: sf-000670
+product_area: clouds-and-products
+true_statement: An admin can assign a Product Configurator flow to a product classification so that many products share the same configuration UI.
+false_statement: An admin can assign a Product Configurator flow to a price book so that many products share the same configuration UI.
+explanation: Configurator flows are assigned to a product or to a product classification. Price books play no part in choosing the configuration UI.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/product-configurator.md
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: 43e2c906c3a0aa22b20894eb8a1fc3faa457c8d7
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:product-configurator
+- kt:flow-builder
+- kt:product-catalog-management
+difficulty: 2
+created: '2026-11-13'
+status: active

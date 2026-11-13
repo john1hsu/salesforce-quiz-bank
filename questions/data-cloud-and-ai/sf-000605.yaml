@@ -1,0 +1,19 @@
+id: sf-000605
+product_area: data-cloud-and-ai
+true_statement: A Data 360 data lake object API name can be up to 40 characters long and can't contain two consecutive underscores.
+false_statement: A Data 360 data lake object API name can be up to 80 characters long and can't contain two consecutive underscores.
+explanation: DLO API names are limited to 40 characters of letters, digits and underscores, must start with a letter and can't use double underscores. The 80-character figure doubles the real limit.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/data-lake-objects.md
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: b6f45b629f4210681840b14bc3afe47764fe318b
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:data-cloud-consultant-certification
+concepts:
+- kt:data-lake-objects
+difficulty: 2
+created: '2026-11-13'
+status: active

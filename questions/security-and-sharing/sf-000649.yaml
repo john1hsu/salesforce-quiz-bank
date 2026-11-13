@@ -1,0 +1,18 @@
+id: sf-000649
+product_area: security-and-sharing
+true_statement: Classic Encryption protects Text (Encrypted) fields with AES using 128-bit master keys.
+false_statement: Classic Encryption protects Text (Encrypted) fields with AES using 256-bit master keys.
+explanation: Classic Encryption uses 128-bit AES. The 256-bit AES options belong to Shield Platform Encryption.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/classic-encryption.md
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: a4202a6d7d410332586aba6d5b61414d8bd353f6
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:classic-encryption
+- kt:shield-platform-encryption
+difficulty: 2
+created: '2026-11-13'
+status: active

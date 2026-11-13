@@ -1,0 +1,18 @@
+id: sf-000613
+product_area: development
+true_statement: In Apex Enterprise Patterns, a service runs with sharing by default and elevates access only inside a private without sharing inner class.
+false_statement: In Apex Enterprise Patterns, a service runs without sharing by default and enforces access only inside a private with sharing inner class.
+explanation: Service classes default to enforcing sharing and confine any elevated access to a private without sharing inner class. The false statement inverts that default.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/apex-enterprise-patterns.md
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: fc054e1ea2c1d487bd0892974bf0d5a413eacf51
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:apex-enterprise-patterns
+- kt:apex
+difficulty: 3
+created: '2026-11-13'
+status: active

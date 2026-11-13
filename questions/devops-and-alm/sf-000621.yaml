@@ -1,0 +1,19 @@
+id: sf-000621
+product_area: devops-and-alm
+true_statement: A namespace for 2GP packaging is created in a separate Developer Edition org and then linked to the Dev Hub through the Namespace Registries app.
+false_statement: A namespace for 2GP packaging is created directly in the Dev Hub org and then registered there through the Namespace Registries app.
+explanation: 'Namespaces aren''t created in the Dev Hub: you register one in its own Developer Edition org, then use Link Namespace in the Dev Hub''s Namespace Registries app to connect it.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/namespace-registry.md
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: 0623085fe38dff563dbb9e2cdabb667ee2b3bf3e
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:namespace-registry
+- kt:dev-hub
+- kt:second-generation-managed-packages
+difficulty: 2
+created: '2026-11-13'
+status: active

@@ -1,0 +1,19 @@
+id: sf-000686
+product_area: data-model
+true_statement: Dynamic Forms field visibility rules re-evaluate while the user edits, but section visibility rules apply only after the record is saved.
+false_statement: Dynamic Forms section visibility rules re-evaluate while the user edits, but field visibility rules apply only after the record is saved.
+explanation: Field-level rules respond during editing, whereas section rules are evaluated after save. The false statement swaps which rule type is live.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/dynamic-forms.md
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: aa280b1367501929cb75246c1a0c3a1879e5cedd
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:platform-app-builder-certification
+concepts:
+- kt:dynamic-forms
+difficulty: 2
+created: '2026-11-13'
+status: active

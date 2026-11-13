@@ -1,0 +1,19 @@
+id: sf-000606
+product_area: data-model
+true_statement: A deleted custom field and its data are kept for up to 15 days, counting against the object's field allocation until hard-deleted.
+false_statement: A deleted custom field and its data are kept for up to 30 days, counting against the object's field allocation until hard-deleted.
+explanation: Deleted fields linger for up to 15 days so they can be restored, and they still consume allocation in the meantime. Thirty days is the wrong retention window; Erase or Purge starts the hard delete sooner.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/custom-fields.md
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: f889590462e16f0db694df97025508800f8b7a96
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:platform-app-builder-certification
+concepts:
+- kt:custom-fields
+difficulty: 2
+created: '2026-11-13'
+status: active

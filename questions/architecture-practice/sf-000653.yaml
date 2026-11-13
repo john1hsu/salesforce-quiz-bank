@@ -1,0 +1,18 @@
+id: sf-000653
+product_area: architecture-practice
+true_statement: Trailhead suggests a Salesforce Center of Excellence hold weekly operational meetings and monthly strategy and roadmap meetings.
+false_statement: Trailhead suggests a Salesforce Center of Excellence hold monthly operational meetings and quarterly strategy and roadmap meetings.
+explanation: The suggested rhythm is weekly for operations and monthly for strategy and roadmap. Monthly and quarterly is slower than Trailhead's guidance.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/salesforce-center-of-excellence.md
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: f2c0c78165b6ccc62afed711c687cf5bcdf5246c
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:salesforce-center-of-excellence
+- kt:salesforce-governance
+difficulty: 1
+created: '2026-11-13'
+status: active

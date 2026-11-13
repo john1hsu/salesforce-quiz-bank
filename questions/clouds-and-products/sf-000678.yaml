@@ -1,0 +1,17 @@
+id: sf-000678
+product_area: clouds-and-products
+true_statement: In a Salesforce Pricing procedure, a Stop Pricing element ends processing early, while a List Group runs its elements only when a condition holds.
+false_statement: In a Salesforce Pricing procedure, a List Group ends processing early, while a Stop Pricing element runs its elements only when a condition holds.
+explanation: List Group wraps conditional elements and Stop Pricing halts the procedure; contract pricing combines them so contracted lines skip standard discounts. The false statement swaps their roles.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/salesforce-pricing.md
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: 27d8370f8fd6e37fd5073c3949a007687b3e46f0
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:salesforce-pricing
+difficulty: 2
+created: '2026-11-13'
+status: active

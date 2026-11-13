@@ -1,0 +1,19 @@
+id: sf-000634
+product_area: platform-architecture
+true_statement: Performance and Unlimited Editions add 120 MB of data storage per user license, while Enterprise Edition adds 20 MB.
+false_statement: Enterprise Edition adds 120 MB of data storage per user license, while Performance and Unlimited Editions add 20 MB.
+explanation: On top of the 10 GB minimum, Performance and Unlimited get 120 MB per license and Enterprise gets 20 MB. The false statement swaps the editions.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/data-and-file-storage-allocations.md
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: f793351882b1f7af607f63aafd68f8678c6aeb77
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:platform-data-architect-certification
+concepts:
+- kt:data-and-file-storage-allocations
+difficulty: 2
+created: '2026-11-13'
+status: active

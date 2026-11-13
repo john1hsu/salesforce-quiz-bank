@@ -1,0 +1,18 @@
+id: sf-000614
+product_area: development
+true_statement: When one service calls another in Apex Enterprise Patterns, the outer Unit of Work is passed in rather than the inner service creating its own.
+false_statement: When one service calls another in Apex Enterprise Patterns, the inner service creates and commits its own Unit of Work rather than receiving the outer one.
+explanation: commitWork should run once per scope, so a nested service reuses the caller's Unit of Work. A second Unit of Work would split the DML into separate commits.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/apex-enterprise-patterns.md
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: fc054e1ea2c1d487bd0892974bf0d5a413eacf51
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:apex-enterprise-patterns
+- kt:transaction-control
+difficulty: 3
+created: '2026-11-13'
+status: active

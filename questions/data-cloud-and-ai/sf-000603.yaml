@@ -1,0 +1,20 @@
+id: sf-000603
+product_area: data-cloud-and-ai
+true_statement: A Data 360 data lake object in the Engagement category requires an event time field recording when the engagement happened, which must not change.
+false_statement: A Data 360 data lake object in the Profile category requires an event time field recording when the engagement happened, which must not change.
+explanation: The event time field is mandatory for Engagement data, which is time-stamped behaviour such as web visits. Profile DLOs hold demographic and contact data keyed by a unique ID and use a record modified field instead.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/data-lake-objects.md
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: b6f45b629f4210681840b14bc3afe47764fe318b
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:data-cloud-consultant-certification
+concepts:
+- kt:data-lake-objects
+- kt:data-streams
+difficulty: 2
+created: '2026-11-13'
+status: active

@@ -1,0 +1,20 @@
+id: sf-000600
+product_area: data-cloud-and-ai
+true_statement: In a Data 360 segment, criteria in one container must match on the same related record, while separate containers are evaluated independently.
+false_statement: In a Data 360 segment, criteria in one container are evaluated independently, while criteria in separate containers must match on the same related record.
+explanation: A single container ties its criteria to one related record, so 'scarf AND yellow' there finds yellow-scarf buyers. Splitting them across containers lets each criterion match a different purchase; the false statement reverses this.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/data-cloud-segmentation.md
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: 8c712885d99155ceaedb2cfe23c099cd24dcf11c
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:data-cloud-consultant-certification
+concepts:
+- kt:data-cloud-segmentation
+- kt:data-model-objects
+difficulty: 2
+created: '2026-11-13'
+status: active

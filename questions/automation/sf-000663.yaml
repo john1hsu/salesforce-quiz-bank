@@ -1,0 +1,19 @@
+id: sf-000663
+product_area: automation
+true_statement: When flows are deployed as active, flows with screens are exempt from the flow test coverage requirement, while autolaunched flows are not.
+false_statement: When flows are deployed as active, autolaunched flows are exempt from the flow test coverage requirement, while flows with screens are not.
+explanation: The Apex coverage requirement applies to active processes and autolaunched flows; screen flows are excluded. The false statement reverses the exemption.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/process-automation-settings.md
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: d233a0d28340d7b428c465e9e4a2329ea0acd663
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:process-automation-settings
+- kt:apex-testing
+- kt:flow-versioning
+difficulty: 3
+created: '2026-11-13'
+status: active

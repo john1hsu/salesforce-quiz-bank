@@ -1,0 +1,19 @@
+id: sf-000636
+product_area: platform-architecture
+true_statement: A single region on a Lightning page can hold up to 100 components.
+false_statement: A single region on a Lightning page can hold up to 25 components.
+explanation: The FlexiPage limit is 100 components per region. 25 is far below the real cap.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/lightning-app-builder.md
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: 630b71744b36acb2f80c56242eeabec4cec340fd
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:platform-app-builder-certification
+concepts:
+- kt:lightning-app-builder
+difficulty: 2
+created: '2026-11-13'
+status: active

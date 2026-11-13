@@ -1,0 +1,21 @@
+id: sf-000637
+product_area: platform-architecture
+true_statement: In Dynamic Interactions, only Lightning web components can fire source events, while Aura or LWC components can be targets.
+false_statement: In Dynamic Interactions, Aura or LWC components can fire source events, while only Lightning web components can be targets.
+explanation: Sources must be Lightning web components; targets may be either LWC or Aura. The false statement reverses which side allows Aura.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/lightning-app-builder.md
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: 630b71744b36acb2f80c56242eeabec4cec340fd
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:platform-app-builder-certification
+concepts:
+- kt:lightning-app-builder
+- kt:lightning-web-components
+- kt:aura-components
+difficulty: 3
+created: '2026-11-13'
+status: active

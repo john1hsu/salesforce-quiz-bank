@@ -1,0 +1,18 @@
+id: sf-000675
+product_area: clouds-and-products
+true_statement: Salesforce closed its acquisition of Vlocity on June 1, 2020, and renamed the business Salesforce Industries.
+false_statement: Salesforce closed its acquisition of Vlocity on June 1, 2019, and renamed the business Salesforce Industries.
+explanation: The Vlocity deal closed in June 2020, after which the business became Salesforce Industries. 2019 is a year too early.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/salesforce-industries.md
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: b0fdac8244a2371d04ba422930d700004f81d34e
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:salesforce-industries
+- kt:salesforce-inc
+difficulty: 1
+created: '2026-11-13'
+status: active

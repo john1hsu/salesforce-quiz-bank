@@ -1,0 +1,20 @@
+id: sf-000638
+product_area: platform-architecture
+true_statement: If a property's type differs between a Lightning web component's JavaScript and its js-meta.xml, the configuration file's type wins in Lightning App Builder.
+false_statement: If a property's type differs between a Lightning web component's JavaScript and its js-meta.xml, the JavaScript type wins in Lightning App Builder.
+explanation: The builder uses the type declared in the component's configuration file when the two disagree, not the type implied by the JavaScript.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/lightning-app-builder.md
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: 630b71744b36acb2f80c56242eeabec4cec340fd
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:platform-app-builder-certification
+concepts:
+- kt:lightning-app-builder
+- kt:lightning-web-components
+difficulty: 3
+created: '2026-11-13'
+status: active

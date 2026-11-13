@@ -1,0 +1,19 @@
+id: sf-000629
+product_area: identity
+true_statement: Since Winter '26, a single trusted IP range can cover at most 16,777,216 IPv4 addresses.
+false_statement: Since Winter '26, a single trusted IP range can cover at most 65,536 IPv4 addresses.
+explanation: The range size cap is 16,777,216 IPv4 addresses, and the same cap applies to profile ranges. 65,536 is far smaller than the real limit.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/login-ip-ranges-and-trusted-ip-ranges.md
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: cda843cfeda2bc623f82fb09062ac24fcbc82b29
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:identity-and-access-management-architect-certification
+concepts:
+- kt:login-ip-ranges-and-trusted-ip-ranges
+difficulty: 3
+created: '2026-11-13'
+status: active

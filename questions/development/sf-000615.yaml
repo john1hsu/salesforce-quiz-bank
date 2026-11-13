@@ -1,0 +1,18 @@
+id: sf-000615
+product_area: development
+true_statement: For hierarchy custom settings, getInstance merges fields across the hierarchy, while getValues returns only what is stored at that exact level.
+false_statement: For hierarchy custom settings, getValues merges fields across the hierarchy, while getInstance returns only what is stored at that exact level.
+explanation: getInstance takes each field from the lowest level where it is defined, giving the effective values. getValues leaves fields not defined at that level null; the false statement swaps the methods.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/custom-settings.md
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: c184bfd88efaa16cff0f0b729a190183c433c6bd
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:custom-settings
+- kt:apex
+difficulty: 3
+created: '2026-11-13'
+status: active

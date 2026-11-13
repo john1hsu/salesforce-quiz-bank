@@ -1,0 +1,20 @@
+id: sf-000684
+product_area: data-model
+true_statement: Dynamic Forms became generally available across LWC-enabled standard objects and on mobile in Winter '24.
+false_statement: Dynamic Forms became generally available across LWC-enabled standard objects and on mobile in Winter '23.
+explanation: Winter '23 added standard-object support only for account, contact and opportunity. Broad GA on LWC-enabled standard objects and mobile came in Winter '24.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/dynamic-forms.md
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: aa280b1367501929cb75246c1a0c3a1879e5cedd
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:platform-app-builder-certification
+concepts:
+- kt:dynamic-forms
+- kt:lightning-app-builder
+difficulty: 2
+created: '2026-11-13'
+status: active

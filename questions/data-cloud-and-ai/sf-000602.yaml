@@ -1,0 +1,20 @@
+id: sf-000602
+product_area: data-cloud-and-ai
+true_statement: Data 360 rapid publish segments refresh every 1 or 4 hours and look only at the past 7 days of engagement data.
+false_statement: Data 360 rapid publish segments refresh every 12 or 24 hours and look only at the past 7 days of engagement data.
+explanation: Rapid publish trades a short 7-day lookback for frequent refreshes every 1 or 4 hours. Schedules such as every 12 or 24 hours belong to standard segments.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/data-cloud-segmentation.md
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: 8c712885d99155ceaedb2cfe23c099cd24dcf11c
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:data-cloud-consultant-certification
+concepts:
+- kt:data-cloud-segmentation
+- kt:marketing-cloud-engagement
+difficulty: 2
+created: '2026-11-13'
+status: active

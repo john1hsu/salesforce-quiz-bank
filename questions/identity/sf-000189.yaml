@@ -6,8 +6,8 @@ explanation: Enhanced domains put the My Domain name in every URL. Experience Cl
 source:
   repo: john1hsu/salesforce-knowledge-graph
   path: articles/identity/my-domain.md
-  commit: 1a9626507b2858110c996adbfa985703bee41fd5
-  blob: f144a42e609b62eda3d1527659367430917ce493
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: 530a5108d836d46bcce486eb21c9a4a90ea6f7d7
 verified_release: Winter '27
 feature_status: current
 certs:

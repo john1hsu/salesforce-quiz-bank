@@ -1,0 +1,20 @@
+id: sf-000597
+product_area: data-cloud-and-ai
+true_statement: Under the Customer Data Platform license, one Data 360 unified profile can merge up to 50,000 source profiles.
+false_statement: Under the Customer Data Platform license, one Data 360 unified profile can merge up to 5,000 source profiles.
+explanation: The identity resolution limits table caps a single unified profile at 50,000 merged source profiles. The 5,000 figure is ten times too low; 5,000 is the ceiling for data streams, not merged profiles.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/data-cloud-limits.md
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: a7fe6f52d94457272bc65ed404ab07a66f2d65d7
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:data-cloud-consultant-certification
+concepts:
+- kt:data-cloud-limits
+- kt:identity-resolution
+difficulty: 2
+created: '2026-11-13'
+status: active

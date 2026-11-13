@@ -6,8 +6,8 @@ explanation: 'Nesting only works one way: Aura can host LWC, which is why thin A
 source:
   repo: john1hsu/salesforce-knowledge-graph
   path: articles/development/aura-components.md
-  commit: 2504d4caedf4d80d25089628d89b34723f141e66
-  blob: 7bc15c0686e7ab91c5cfed70cc0e0e4688f4414d
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: 20caef8cc05aa70eaa5e35af9d13814353bd2c76
 verified_release: Winter '27
 feature_status: current
 concepts:

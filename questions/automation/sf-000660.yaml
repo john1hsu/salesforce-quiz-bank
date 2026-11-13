@@ -1,0 +1,18 @@
+id: sf-000660
+product_area: automation
+true_statement: A Salesforce flow can have up to 50 versions in every edition, and inactive old versions count toward that cap.
+false_statement: A Salesforce flow can have up to 100 versions in every edition, and inactive old versions count toward that cap.
+explanation: The cap is 50 versions per flow, and unused versions still count, so they should be deleted before the limit is hit. 100 doubles the real figure.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/flow-versioning.md
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: 18ea6724911e64781ad94b452ceaabaaf8d88000
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:flow-versioning
+- kt:flow-limits
+difficulty: 2
+created: '2026-11-13'
+status: active

@@ -1,0 +1,18 @@
+id: sf-000672
+product_area: clouds-and-products
+true_statement: In the Salesforce CPQ price waterfall, Regular Price reflects automatic volume discounts and Customer Price reflects the rep's manual discounts.
+false_statement: In the Salesforce CPQ price waterfall, Customer Price reflects automatic volume discounts and Regular Price reflects the rep's manual discounts.
+explanation: The waterfall applies volume discounts to reach Regular Price, then the rep's manual discounts to reach Customer Price. The false statement swaps the two fields.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/salesforce-cpq.md
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: 68f057e354a20abaa064c118484ca5d16d415b07
+verified_release: Winter '27
+feature_status: deprecated
+concepts:
+- kt:salesforce-cpq
+- kt:price-books
+difficulty: 3
+created: '2026-11-13'
+status: active

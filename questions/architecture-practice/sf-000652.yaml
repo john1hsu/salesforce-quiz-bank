@@ -1,0 +1,18 @@
+id: sf-000652
+product_area: architecture-practice
+true_statement: In a Salesforce Center of Excellence, the Design Authority is usually the first subteam formed and reviews designs for security, compliance and architectural fit.
+false_statement: In a Salesforce Center of Excellence, Demand Intake is usually the first subteam formed and reviews designs for security, compliance and architectural fit.
+explanation: The Design Authority comes first and is the most complex subteam, reviewing designs. Demand Intake handles incoming requests rather than design review.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/salesforce-center-of-excellence.md
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: f2c0c78165b6ccc62afed711c687cf5bcdf5246c
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:salesforce-center-of-excellence
+- kt:salesforce-architect
+difficulty: 2
+created: '2026-11-13'
+status: active

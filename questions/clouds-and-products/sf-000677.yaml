@@ -1,0 +1,18 @@
+id: sf-000677
+product_area: clouds-and-products
+true_statement: Salesforce Architects suggest Flow for employee-facing processes and OmniScript as the default for external users and industry-specific processes.
+false_statement: Salesforce Architects suggest OmniScript for employee-facing processes and Flow as the default for external users and industry-specific processes.
+explanation: The Industries guidance points internal processes to Flow and external or industry-specific journeys to OmniScript. The false statement swaps the two tools.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/salesforce-industries.md
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: b0fdac8244a2371d04ba422930d700004f81d34e
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:salesforce-industries
+- kt:omnistudio
+difficulty: 2
+created: '2026-11-13'
+status: active

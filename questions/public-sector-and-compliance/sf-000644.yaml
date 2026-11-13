@@ -1,0 +1,17 @@
+id: sf-000644
+product_area: public-sector-and-compliance
+true_statement: FIPS 200 took effect when approved in March 2006, and federal agencies were expected to comply within one year.
+false_statement: FIPS 200 took effect when approved in March 2006, and federal agencies were expected to comply within three years.
+explanation: The standard was effective on approval on 9 March 2006 with a one-year compliance window. Three years overstates the deadline.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/fips-200.md
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: b7f8209d9c79be31a56fcb82a8651c40ba7319cf
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:fips-200
+difficulty: 2
+created: '2026-11-13'
+status: active

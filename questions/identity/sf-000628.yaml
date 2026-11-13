@@ -1,0 +1,21 @@
+id: sf-000628
+product_area: identity
+true_statement: SAML bearer assertion and JWT bearer flows always enforce profile IP restrictions, whatever a connected app's IP relaxation policy says.
+false_statement: SAML bearer assertion and JWT bearer flows always skip profile IP restrictions, whatever a connected app's IP relaxation policy says.
+explanation: These server-to-server flows ignore IP relaxation and always apply the profile's ranges, which matters when an integration's egress IPs change.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/login-ip-ranges-and-trusted-ip-ranges.md
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: cda843cfeda2bc623f82fb09062ac24fcbc82b29
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:identity-and-access-management-architect-certification
+concepts:
+- kt:login-ip-ranges-and-trusted-ip-ranges
+- kt:connected-apps
+- kt:integration-security
+difficulty: 3
+created: '2026-11-13'
+status: active

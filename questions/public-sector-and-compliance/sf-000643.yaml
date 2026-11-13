@@ -1,0 +1,18 @@
+id: sf-000643
+product_area: public-sector-and-compliance
+true_statement: Under FIPS 200, a system gets the low impact level only when its confidentiality, integrity and availability ratings are all low.
+false_statement: Under FIPS 200, a system gets the low impact level when at least two of its confidentiality, integrity and availability ratings are low.
+explanation: 'FIPS 200 uses the high-water mark: the overall level is the highest of the three FIPS 199 ratings, so low applies only if all three are low. A majority of low ratings isn''t enough.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/fips-200.md
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: b7f8209d9c79be31a56fcb82a8651c40ba7319cf
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:fips-200
+- kt:fips-199
+difficulty: 2
+created: '2026-11-13'
+status: active

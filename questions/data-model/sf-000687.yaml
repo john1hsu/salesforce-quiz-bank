@@ -1,0 +1,21 @@
+id: sf-000687
+product_area: data-model
+true_statement: In Apex, Formula.recalculateFormulas() refreshes every formula on a list of in-memory SObjects without saving the records.
+false_statement: In Apex, Formula.recalculateFormulas() refreshes every formula on a list of SObjects and then saves the records to the database.
+explanation: The method recalculates formula values on records held in memory and performs no DML; it only uses SOQL when fields the formulas need are missing.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/formula-fields.md
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: 0d390af8c033f4eb4400ed180191fe3046f98ce9
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:platform-app-builder-certification
+- kt:platform-administrator-certification
+concepts:
+- kt:formula-fields
+- kt:custom-fields
+difficulty: 3
+created: '2026-11-13'
+status: active

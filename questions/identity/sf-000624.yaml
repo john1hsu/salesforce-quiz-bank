@@ -1,0 +1,18 @@
+id: sf-000624
+product_area: identity
+true_statement: Standard SAML just-in-time provisioning requires the Email, LastName, ProfileId and Username attributes to create a user.
+false_statement: Standard SAML just-in-time provisioning requires the Email, FirstName, ProfileId and Username attributes to create a user.
+explanation: The required User attributes for standard JIT are Email, LastName, ProfileId and Username. FirstName is optional, like Role or Department.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/just-in-time-provisioning.md
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: 7b317120c3fc70e7e15e81a699f01212cb968599
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:just-in-time-provisioning
+- kt:single-sign-on-saml
+difficulty: 2
+created: '2026-11-13'
+status: active

@@ -1,0 +1,18 @@
+id: sf-000671
+product_area: clouds-and-products
+true_statement: In Product Configurator, the Instant Pricing toggle controls whether each selection is priced as it is made.
+false_statement: In Product Configurator, the Product Validation toggle controls whether each selection is priced as it is made.
+explanation: 'There are two toggles: Product Validation checks each selection, and Instant Pricing prices it immediately. Pricing is controlled by Instant Pricing, not Product Validation.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/product-configurator.md
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: 43e2c906c3a0aa22b20894eb8a1fc3faa457c8d7
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:product-configurator
+- kt:salesforce-pricing
+difficulty: 2
+created: '2026-11-13'
+status: active

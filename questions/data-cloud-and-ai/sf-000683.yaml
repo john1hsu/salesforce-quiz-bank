@@ -1,0 +1,19 @@
+id: sf-000683
+product_area: data-cloud-and-ai
+true_statement: For a website or mobile app source, all Data 360 Engagement events share one data stream, while each Profile or Other event gets its own.
+false_statement: For a website or mobile app source, all Data 360 Profile events share one data stream, while each Engagement or Other event gets its own.
+explanation: After the app's event schema is uploaded, Engagement events are combined into a single stream and Profile or Other events get separate streams.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/data-streams.md
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: d733ce17f7c23150c0183ee7369167c47ecf515d
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:data-cloud-consultant-certification
+concepts:
+- kt:data-streams
+difficulty: 3
+created: '2026-11-13'
+status: active

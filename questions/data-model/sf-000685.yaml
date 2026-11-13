@@ -1,0 +1,19 @@
+id: sf-000685
+product_area: data-model
+true_statement: A two-column Dynamic Forms Field Section counts as three components on the page, because each column counts as a component.
+false_statement: A two-column Dynamic Forms Field Section counts as one component on the page, because columns don't count as components.
+explanation: The section itself plus each of its columns counts toward component limits, so two columns make three. Treating the section as a single component undercounts it.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/dynamic-forms.md
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: aa280b1367501929cb75246c1a0c3a1879e5cedd
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:platform-app-builder-certification
+concepts:
+- kt:dynamic-forms
+difficulty: 3
+created: '2026-11-13'
+status: active

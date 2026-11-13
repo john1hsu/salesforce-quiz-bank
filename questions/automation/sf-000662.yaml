@@ -1,0 +1,17 @@
+id: sf-000662
+product_area: automation
+true_statement: A flow version's API version for running the flow doesn't move forward with new releases; it changes only when a Manage Flow user edits it.
+false_statement: A flow version's API version for running the flow moves forward automatically with each new release, unless a Manage Flow user pins it.
+explanation: Each version keeps the runtime API version it was saved with until someone with Manage Flow changes it, ideally after reading the release notes in between. It is not upgraded automatically.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/flow-versioning.md
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: 18ea6724911e64781ad94b452ceaabaaf8d88000
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:flow-versioning
+difficulty: 3
+created: '2026-11-13'
+status: active

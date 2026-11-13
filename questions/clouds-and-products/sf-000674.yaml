@@ -1,0 +1,18 @@
+id: sf-000674
+product_area: clouds-and-products
+true_statement: The Salesforce CPQ JavaScript Quote Calculator Plugin must run in both the browser and Node, so browser globals such as window may not exist.
+false_statement: The Salesforce CPQ JavaScript Quote Calculator Plugin runs only in the browser, so browser globals such as window are always available.
+explanation: The QCP is an ES6 module that has to work in both environments, so it can't rely on browser-only globals. Assuming window is always present breaks server-side calculation.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/salesforce-cpq.md
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: 68f057e354a20abaa064c118484ca5d16d415b07
+verified_release: Winter '27
+feature_status: deprecated
+concepts:
+- kt:salesforce-cpq
+- kt:heroku
+difficulty: 3
+created: '2026-11-13'
+status: active

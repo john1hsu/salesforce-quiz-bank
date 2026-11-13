@@ -1,0 +1,17 @@
+id: sf-000648
+product_area: security-and-sharing
+true_statement: A Classic Encryption Text (Encrypted) custom field can hold at most 175 characters.
+false_statement: A Classic Encryption Text (Encrypted) custom field can hold at most 255 characters.
+explanation: The encrypted text type caps values at 175 characters, which is why Classic Encryption suits short values like ID numbers. 255 is the limit for a plain Text field.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/classic-encryption.md
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: a4202a6d7d410332586aba6d5b61414d8bd353f6
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:classic-encryption
+difficulty: 2
+created: '2026-11-13'
+status: active

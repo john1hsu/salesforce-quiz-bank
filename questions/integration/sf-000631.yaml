@@ -1,0 +1,19 @@
+id: sf-000631
+product_area: integration
+true_statement: A Salesforce GraphQL API subquery returns 10 records by default, so pagination is needed to read more.
+false_statement: A Salesforce GraphQL API subquery returns 200 records by default, so pagination is needed to read more.
+explanation: Without a page size, only 10 records come back per subquery; the ceiling is 2,000. A 200-record default is wrong.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/graphql-api.md
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: 352e50b719f4ce1a4ce4f5a40dbb7b94e0daf52b
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:integration-architect-certification
+concepts:
+- kt:graphql-api
+difficulty: 2
+created: '2026-11-13'
+status: active

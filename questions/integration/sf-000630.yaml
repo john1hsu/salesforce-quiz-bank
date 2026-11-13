@@ -1,0 +1,20 @@
+id: sf-000630
+product_area: integration
+true_statement: Each subquery in a Salesforce GraphQL API query counts as a separate request against API rate limits.
+false_statement: A Salesforce GraphQL API query counts as a single request against API rate limits, however many subqueries it contains.
+explanation: The GraphQL limits count every subquery as one request, so one call with several subqueries consumes several API calls. Treating the whole query as one call undercounts usage.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/graphql-api.md
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: 352e50b719f4ce1a4ce4f5a40dbb7b94e0daf52b
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:integration-architect-certification
+concepts:
+- kt:graphql-api
+- kt:api-request-limits
+difficulty: 2
+created: '2026-11-13'
+status: active

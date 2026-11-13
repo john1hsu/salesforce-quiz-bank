@@ -1,0 +1,17 @@
+id: sf-000659
+product_area: automation
+true_statement: Business Rules Engine decision tables read their rows from Salesforce records, while decision matrices hold rows typed in or imported from CSV.
+false_statement: Business Rules Engine decision matrices read their rows from Salesforce records, while decision tables hold rows typed in or imported from CSV.
+explanation: Because decision tables are sourced from records, they refresh when the data changes. Decision matrices are populated by hand or by CSV import.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/business-rules-engine.md
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: dd8ab3418803277f5083ebde436b3863330a1946
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:business-rules-engine
+difficulty: 2
+created: '2026-11-13'
+status: active

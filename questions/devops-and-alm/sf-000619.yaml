@@ -1,0 +1,18 @@
+id: sf-000619
+product_area: devops-and-alm
+true_statement: A package submitted for AgentExchange security review must be Managed-Released, so beta and unmanaged packages are rejected.
+false_statement: A package submitted for AgentExchange security review must be at least Managed-Beta, so only unmanaged packages are rejected.
+explanation: Only Managed-Released packages are accepted for review. Beta versions are turned away just like unmanaged packages.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/appexchange-security-review.md
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: 5b74c5a5a77eb68ee8b488bdf1382deebe45c5db
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:appexchange-security-review
+- kt:second-generation-managed-packages
+difficulty: 2
+created: '2026-11-13'
+status: active

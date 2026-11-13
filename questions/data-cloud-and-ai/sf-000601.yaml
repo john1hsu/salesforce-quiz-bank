@@ -1,0 +1,19 @@
+id: sf-000601
+product_area: data-cloud-and-ai
+true_statement: A Data 360 waterfall segment places each person in the first of its ordered segments that they match, making the buckets mutually exclusive.
+false_statement: A Data 360 waterfall segment places each person in the last of its ordered segments that they match, making the buckets mutually exclusive.
+explanation: Waterfalls evaluate their segments in order and stop at the first match, which is how each customer gets only the best offer they qualify for. It is the first match that wins, not the last.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/data-cloud-segmentation.md
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: 8c712885d99155ceaedb2cfe23c099cd24dcf11c
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:data-cloud-consultant-certification
+concepts:
+- kt:data-cloud-segmentation
+difficulty: 2
+created: '2026-11-13'
+status: active

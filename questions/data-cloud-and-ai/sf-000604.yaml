@@ -1,0 +1,19 @@
+id: sf-000604
+product_area: data-cloud-and-ai
+true_statement: On Profile and Other data lake objects, the record modified field tells Data 360 which version of a record is newest when data arrives out of order.
+false_statement: On Profile and Other data lake objects, the primary key field tells Data 360 which version of a record is newest when data arrives out of order.
+explanation: The record modified field carries the timestamp used to keep the latest version when records arrive out of sequence. The primary key only identifies which record it is, not which version is newer.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/data-lake-objects.md
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: b6f45b629f4210681840b14bc3afe47764fe318b
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:data-cloud-consultant-certification
+concepts:
+- kt:data-lake-objects
+difficulty: 2
+created: '2026-11-13'
+status: active

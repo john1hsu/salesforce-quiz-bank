@@ -1,0 +1,18 @@
+id: sf-000647
+product_area: public-sector-and-compliance
+true_statement: Salesforce's BAA restrictions bar adding patients to Slack, whether as users or as guests.
+false_statement: Salesforce's BAA restrictions allow adding patients to Slack as guests, but not as full users.
+explanation: Slack's HIPAA conditions forbid patients as either users or guests, and keep PHI out of profiles, statuses and workspace names. Guest access is not an exception.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/hipaa.md
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: 31d3b95bdfbd431ff484ffd485e794cea228cdaf
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:hipaa
+- kt:slack-platform
+difficulty: 3
+created: '2026-11-13'
+status: active

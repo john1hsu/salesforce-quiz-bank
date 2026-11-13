@@ -1,0 +1,18 @@
+id: sf-000620
+product_area: devops-and-alm
+true_statement: Solutions that passed the AgentExchange security review are typically re-reviewed about once a year.
+false_statement: Solutions that passed the AgentExchange security review are typically re-reviewed about once every three years.
+explanation: 'Approval isn''t permanent: Salesforce re-reviews listed solutions roughly annually and can ask for a review at any time. Three years overstates the interval.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/appexchange-security-review.md
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: 5b74c5a5a77eb68ee8b488bdf1382deebe45c5db
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:appexchange-security-review
+- kt:agentexchange
+difficulty: 2
+created: '2026-11-13'
+status: active

@@ -1,0 +1,17 @@
+id: sf-000639
+product_area: platform-architecture
+true_statement: Platform Cache includes 10 MB of capacity in Enterprise Edition and 30 MB in Unlimited and Performance Editions.
+false_statement: Platform Cache includes 30 MB of capacity in Enterprise Edition and 10 MB in Unlimited and Performance Editions.
+explanation: Enterprise orgs get 10 MB and Unlimited and Performance get 30 MB, with other editions at 0 MB unless more is bought. The false statement swaps the editions.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/platform-cache.md
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: 6fffec01bd2570f0e6a283d448dd12380f805378
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:platform-cache
+difficulty: 2
+created: '2026-11-13'
+status: active

@@ -1,0 +1,18 @@
+id: sf-000616
+product_area: development
+true_statement: In a hierarchy custom setting, user-level values override profile-level values, which override the organization default.
+false_statement: In a hierarchy custom setting, profile-level values override user-level values, which override the organization default.
+explanation: 'The most specific defined value wins: user beats profile, and profile beats the org default. Ranking profile above user reverses the hierarchy.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/custom-settings.md
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: c184bfd88efaa16cff0f0b729a190183c433c6bd
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:custom-settings
+- kt:profiles
+difficulty: 1
+created: '2026-11-13'
+status: active

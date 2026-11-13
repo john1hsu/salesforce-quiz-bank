@@ -1,0 +1,17 @@
+id: sf-000641
+product_area: platform-architecture
+true_statement: The maximum time-to-live for a Platform Cache org cache entry is 172,800 seconds, or 48 hours.
+false_statement: The maximum time-to-live for a Platform Cache org cache entry is 86,400 seconds, or 24 hours.
+explanation: Org cache entries can live up to 48 hours. 24 hours is the org cache default TTL, not its maximum.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/platform-cache.md
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: 6fffec01bd2570f0e6a283d448dd12380f805378
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:platform-cache
+difficulty: 3
+created: '2026-11-13'
+status: active

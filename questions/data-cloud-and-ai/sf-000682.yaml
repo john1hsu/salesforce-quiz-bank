@@ -1,0 +1,19 @@
+id: sf-000682
+product_area: data-cloud-and-ai
+true_statement: Data 360 web and mobile data streams ingest engagement data every 15 minutes and profile data every hour.
+false_statement: Data 360 web and mobile data streams ingest profile data every 15 minutes and engagement data every hour.
+explanation: Engagement events arrive on the faster 15-minute cycle and profile data hourly. The false statement reverses the two schedules.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/data-streams.md
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: d733ce17f7c23150c0183ee7369167c47ecf515d
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:data-cloud-consultant-certification
+concepts:
+- kt:data-streams
+difficulty: 2
+created: '2026-11-13'
+status: active

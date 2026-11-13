@@ -1,0 +1,17 @@
+id: sf-000656
+product_area: architecture-practice
+true_statement: Of the two Scale Test permission sets, only ScaleTestingServiceAdvancedUserPS includes the Test Scheduler.
+false_statement: Of the two Scale Test permission sets, only ScaleTestingServiceStandardUserPS includes the Test Scheduler.
+explanation: Access comes through a standard or an advanced permission set, and only the advanced one grants the scheduler used to book test windows.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/scale-test.md
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: 249f7e59126c6a02103977c7699556f4c652ed61
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:scale-test
+difficulty: 3
+created: '2026-11-13'
+status: active

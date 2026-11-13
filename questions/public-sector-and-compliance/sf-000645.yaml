@@ -1,0 +1,17 @@
+id: sf-000645
+product_area: public-sector-and-compliance
+true_statement: HHS treats a cloud provider that stores ePHI for a customer as a business associate even if it holds only encrypted data and no decryption key.
+false_statement: HHS treats a cloud provider that stores ePHI for a customer as a mere conduit if it holds only encrypted data and no decryption key.
+explanation: 'Lacking the key doesn''t change the provider''s status: maintaining ePHI makes it a business associate. The conduit exception covers only transmission services with transient storage.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/hipaa.md
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: 31d3b95bdfbd431ff484ffd485e794cea228cdaf
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:hipaa
+difficulty: 2
+created: '2026-11-13'
+status: active

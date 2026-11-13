@@ -1,0 +1,17 @@
+id: sf-000666
+product_area: clouds-and-products
+true_statement: In a Context Service definition, context tags are short aliases that consuming applications use to query nodes and attributes directly.
+false_statement: In a Context Service definition, context mappings are short aliases that consuming applications use to query nodes and attributes directly.
+explanation: 'Tags are the aliases applications query by. Mappings do a different job: they link nodes to objects or DMOs and attributes to fields.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/context-service.md
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: 6ef7ea14e5b51b02d14fa576a5f0849a9dd3af52
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:context-service
+difficulty: 2
+created: '2026-11-13'
+status: active

@@ -1,45 +1,45 @@
 {
  "totals": {
-  "active": 590,
+  "active": 681,
   "retired": 2
  },
  "areas": {
   "architecture-practice": {
-   "active": 54
+   "active": 60
   },
   "automation": {
-   "active": 48
+   "active": 57
   },
   "clouds-and-products": {
-   "active": 54
+   "active": 69
   },
   "data-cloud-and-ai": {
-   "active": 48
+   "active": 60
   },
   "data-model": {
-   "active": 48
+   "active": 58
   },
   "development": {
-   "active": 47,
+   "active": 53,
    "retired": 1
   },
   "devops-and-alm": {
-   "active": 44
+   "active": 50
   },
   "identity": {
-   "active": 43
+   "active": 49
   },
   "integration": {
-   "active": 53
+   "active": 56
   },
   "platform-architecture": {
-   "active": 45
+   "active": 54
   },
   "public-sector-and-compliance": {
-   "active": 45
+   "active": 51
   },
   "security-and-sharing": {
-   "active": 61,
+   "active": 64,
    "retired": 1
   }
  },
@@ -77,10 +77,16 @@
   "articles/architecture-practice/salesforce-architecture-center.md": {
    "active": 3
   },
+  "articles/architecture-practice/salesforce-center-of-excellence.md": {
+   "active": 3
+  },
   "articles/architecture-practice/salesforce-certification-program.md": {
    "active": 3
   },
   "articles/architecture-practice/salesforce-diagrams.md": {
+   "active": 3
+  },
+  "articles/architecture-practice/scale-test.md": {
    "active": 3
   },
   "articles/architecture-practice/solution-design-tradeoffs.md": {
@@ -110,6 +116,9 @@
   "articles/automation/business-hours.md": {
    "active": 3
   },
+  "articles/automation/business-rules-engine.md": {
+   "active": 3
+  },
   "articles/automation/escalation-rules.md": {
    "active": 3
   },
@@ -125,10 +134,16 @@
   "articles/automation/flow-trigger-explorer.md": {
    "active": 3
   },
+  "articles/automation/flow-versioning.md": {
+   "active": 3
+  },
   "articles/automation/orchestration-work-guide.md": {
    "active": 3
   },
   "articles/automation/platform-event-triggered-flow.md": {
+   "active": 3
+  },
+  "articles/automation/process-automation-settings.md": {
    "active": 3
   },
   "articles/automation/process-automation.md": {
@@ -153,6 +168,9 @@
    "active": 3
   },
   "articles/clouds-and-products/collaborative-forecasts.md": {
+   "active": 3
+  },
+  "articles/clouds-and-products/context-service.md": {
    "active": 3
   },
   "articles/clouds-and-products/crm-analytics.md": {
@@ -185,6 +203,9 @@
   "articles/clouds-and-products/opportunity-splits.md": {
    "active": 3
   },
+  "articles/clouds-and-products/product-configurator.md": {
+   "active": 3
+  },
   "articles/clouds-and-products/revenue-cloud.md": {
    "active": 3
   },
@@ -194,7 +215,16 @@
   "articles/clouds-and-products/sales-cloud.md": {
    "active": 3
   },
+  "articles/clouds-and-products/salesforce-cpq.md": {
+   "active": 3
+  },
   "articles/clouds-and-products/salesforce-inc.md": {
+   "active": 3
+  },
+  "articles/clouds-and-products/salesforce-industries.md": {
+   "active": 3
+  },
+  "articles/clouds-and-products/salesforce-pricing.md": {
    "active": 3
   },
   "articles/clouds-and-products/service-cloud.md": {
@@ -233,10 +263,22 @@
   "articles/data-cloud-and-ai/data-cloud-consultant-certification.md": {
    "active": 3
   },
+  "articles/data-cloud-and-ai/data-cloud-limits.md": {
+   "active": 3
+  },
+  "articles/data-cloud-and-ai/data-cloud-segmentation.md": {
+   "active": 3
+  },
   "articles/data-cloud-and-ai/data-cloud.md": {
    "active": 3
   },
+  "articles/data-cloud-and-ai/data-lake-objects.md": {
+   "active": 3
+  },
   "articles/data-cloud-and-ai/data-model-objects.md": {
+   "active": 3
+  },
+  "articles/data-cloud-and-ai/data-streams.md": {
    "active": 3
   },
   "articles/data-cloud-and-ai/einstein-trust-layer.md": {
@@ -260,7 +302,16 @@
   "articles/data-model/business-processes.md": {
    "active": 3
   },
+  "articles/data-model/custom-fields.md": {
+   "active": 3
+  },
   "articles/data-model/data-skew.md": {
+   "active": 3
+  },
+  "articles/data-model/duplicate-management.md": {
+   "active": 3
+  },
+  "articles/data-model/dynamic-forms.md": {
    "active": 3
   },
   "articles/data-model/external-id-fields.md": {
@@ -271,6 +322,9 @@
   },
   "articles/data-model/field-history-tracking.md": {
    "active": 3
+  },
+  "articles/data-model/formula-fields.md": {
+   "active": 1
   },
   "articles/data-model/junction-object.md": {
    "active": 3
@@ -305,6 +359,9 @@
   "articles/development/apex-callouts.md": {
    "active": 3
   },
+  "articles/development/apex-enterprise-patterns.md": {
+   "active": 3
+  },
   "articles/development/apex-testing.md": {
    "active": 3
   },
@@ -324,6 +381,9 @@
    "active": 3
   },
   "articles/development/custom-metadata-types.md": {
+   "active": 3
+  },
+  "articles/development/custom-settings.md": {
    "active": 3
   },
   "articles/development/future-methods.md": {
@@ -354,6 +414,9 @@
   "articles/devops-and-alm/agentforce-dx.md": {
    "active": 3
   },
+  "articles/devops-and-alm/appexchange-security-review.md": {
+   "active": 3
+  },
   "articles/devops-and-alm/application-lifecycle-management.md": {
    "active": 3
   },
@@ -373,6 +436,9 @@
    "active": 3
   },
   "articles/devops-and-alm/metadata-api.md": {
+   "active": 3
+  },
+  "articles/devops-and-alm/namespace-registry.md": {
    "active": 3
   },
   "articles/devops-and-alm/package-dependencies.md": {
@@ -417,7 +483,13 @@
   "articles/identity/identity-and-access-management-architect-certification.md": {
    "active": 3
   },
+  "articles/identity/just-in-time-provisioning.md": {
+   "active": 3
+  },
   "articles/identity/login-flows.md": {
+   "active": 3
+  },
+  "articles/identity/login-ip-ranges-and-trusted-ip-ranges.md": {
    "active": 3
   },
   "articles/identity/multi-factor-authentication.md": {
@@ -468,6 +540,9 @@
   "articles/integration/event-driven-architecture.md": {
    "active": 3
   },
+  "articles/integration/graphql-api.md": {
+   "active": 3
+  },
   "articles/integration/integration-architect-certification.md": {
    "active": 3
   },
@@ -501,6 +576,9 @@
   "articles/integration/salesforce-connect.md": {
    "active": 3
   },
+  "articles/platform-architecture/data-and-file-storage-allocations.md": {
+   "active": 3
+  },
   "articles/platform-architecture/governor-limits.md": {
    "active": 3
   },
@@ -508,6 +586,9 @@
    "active": 3
   },
   "articles/platform-architecture/large-data-volumes.md": {
+   "active": 3
+  },
+  "articles/platform-architecture/lightning-app-builder.md": {
    "active": 3
   },
   "articles/platform-architecture/metadata-driven-architecture.md": {
@@ -526,6 +607,9 @@
    "active": 3
   },
   "articles/platform-architecture/platform-app-builder-certification.md": {
+   "active": 3
+  },
+  "articles/platform-architecture/platform-cache.md": {
    "active": 3
   },
   "articles/platform-architecture/query-optimizer-selectivity.md": {
@@ -564,7 +648,13 @@
   "articles/public-sector-and-compliance/fips-199.md": {
    "active": 3
   },
+  "articles/public-sector-and-compliance/fips-200.md": {
+   "active": 3
+  },
   "articles/public-sector-and-compliance/government-cloud-plus.md": {
+   "active": 3
+  },
+  "articles/public-sector-and-compliance/hipaa.md": {
    "active": 3
   },
   "articles/public-sector-and-compliance/il4-and-il5.md": {
@@ -592,6 +682,9 @@
    "active": 3
   },
   "articles/security-and-sharing/apex-managed-sharing.md": {
+   "active": 3
+  },
+  "articles/security-and-sharing/classic-encryption.md": {
    "active": 3
   },
   "articles/security-and-sharing/data-breach-risk.md": {

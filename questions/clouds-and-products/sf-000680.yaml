@@ -1,0 +1,18 @@
+id: sf-000680
+product_area: clouds-and-products
+true_statement: The Salesforce Pricing List Price element finds the price book entry using the product, price book and product selling model.
+false_statement: The Salesforce Pricing List Price element finds the price book entry using the product, price book and account.
+explanation: List Price looks up the entry by product, price book and product selling model, then returns list price and subtotal. The account is not part of that lookup.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/salesforce-pricing.md
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: 27d8370f8fd6e37fd5073c3949a007687b3e46f0
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:salesforce-pricing
+- kt:price-books
+difficulty: 2
+created: '2026-11-13'
+status: active

@@ -1,0 +1,18 @@
+id: sf-000646
+product_area: public-sector-and-compliance
+true_statement: Under Salesforce's HIPAA BAA, the customer rather than Salesforce must encrypt PHI it transmits through covered services.
+false_statement: Under Salesforce's HIPAA BAA, Salesforce rather than the customer must encrypt PHI the customer transmits through covered services.
+explanation: The BAA places encryption of transmitted PHI, and stored PHI where the customer controls it, on the customer. That duty is why Shield Platform Encryption features in HIPAA designs.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/hipaa.md
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: 31d3b95bdfbd431ff484ffd485e794cea228cdaf
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:hipaa
+- kt:shield-platform-encryption
+difficulty: 2
+created: '2026-11-13'
+status: active

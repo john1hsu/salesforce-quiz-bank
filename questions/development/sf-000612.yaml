@@ -1,0 +1,18 @@
+id: sf-000612
+product_area: development
+true_statement: In Apex Enterprise Patterns, triggers are not listed as service layer callers because trigger logic belongs in the Domain layer.
+false_statement: In Apex Enterprise Patterns, triggers are not listed as service layer callers because trigger logic belongs in the Selector layer.
+explanation: Object-specific behaviour such as validation and defaulting on insert or update lives in Domain classes, which is where trigger logic goes. Selectors only centralise SOQL queries.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/apex-enterprise-patterns.md
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: fc054e1ea2c1d487bd0892974bf0d5a413eacf51
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:apex-enterprise-patterns
+- kt:trigger-framework-pattern
+difficulty: 2
+created: '2026-11-13'
+status: active

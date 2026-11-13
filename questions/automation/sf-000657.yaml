@@ -1,0 +1,17 @@
+id: sf-000657
+product_area: automation
+true_statement: A Business Rules Engine decision matrix returns one row even if several match, while a decision table can return multiple matching outcomes.
+false_statement: A Business Rules Engine decision table returns one row even if several match, while a decision matrix can return multiple matching outcomes.
+explanation: Matrices are simple lookups that return a single matching row. Decision tables support comparison operators and can return several outcome sets; the false statement swaps them.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/business-rules-engine.md
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: dd8ab3418803277f5083ebde436b3863330a1946
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:business-rules-engine
+difficulty: 2
+created: '2026-11-13'
+status: active

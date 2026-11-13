@@ -1,0 +1,20 @@
+id: sf-000627
+product_area: identity
+true_statement: A login from outside an org's trusted IP ranges can succeed after an identity challenge, but a login outside a profile's login IP ranges is denied.
+false_statement: A login from outside a profile's login IP ranges can succeed after an identity challenge, but a login outside an org's trusted IP ranges is denied.
+explanation: Trusted IP ranges only skip the verification challenge, while profile login IP ranges are a hard allowlist with no fallback. The false statement swaps the two controls.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/login-ip-ranges-and-trusted-ip-ranges.md
+  commit: 8a98f88c1ccdb494d4aca92d582233adc7f63659
+  blob: cda843cfeda2bc623f82fb09062ac24fcbc82b29
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:identity-and-access-management-architect-certification
+concepts:
+- kt:login-ip-ranges-and-trusted-ip-ranges
+- kt:profiles
+difficulty: 1
+created: '2026-11-13'
+status: active
