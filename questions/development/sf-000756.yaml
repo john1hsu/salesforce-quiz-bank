@@ -1,0 +1,18 @@
+id: sf-000756
+product_area: development
+true_statement: WITH SECURITY_ENFORCED checks only the SELECT and FROM clauses, not WHERE, so it isn't a defense against SOQL injection.
+false_statement: WITH SECURITY_ENFORCED checks the SELECT, FROM and WHERE clauses, so it works as a defense against SOQL injection.
+explanation: Injected conditions live in the WHERE clause, which WITH SECURITY_ENFORCED doesn't cover. Binds, typecasting and allowlists remain the real defenses.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/soql-injection.md
+  commit: 0bf9c56119abcff312c6b7e1ff539dfc2c6d8ee0
+  blob: 922da1f6e0eb5b4d6380891d94fd5205647a8fe7
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:soql-injection
+- kt:field-level-security
+difficulty: 3
+created: '2026-11-14'
+status: active

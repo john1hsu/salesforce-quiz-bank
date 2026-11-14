@@ -1,0 +1,18 @@
+id: sf-000732
+product_area: data-cloud-and-ai
+true_statement: A BYOM model hosted on Amazon SageMaker, Google Vertex AI or Databricks stays on that platform and is called from Data 360 through an API.
+false_statement: A BYOM model hosted on Amazon SageMaker, Google Vertex AI or Databricks is imported into Data 360 and then runs there instead of on that platform.
+explanation: Bring-your-own-model keeps the model where it was trained; Data 360 sends predictor values to its endpoint and stores the results. Nothing is copied into Salesforce.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/ai-models.md
+  commit: 0bf9c56119abcff312c6b7e1ff539dfc2c6d8ee0
+  blob: 33028af48674c12a230d8f6e144abcb463675938
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:ai-models
+- kt:data-model-objects
+difficulty: 2
+created: '2026-11-14'
+status: active

@@ -1,0 +1,18 @@
+id: sf-000778
+product_area: platform-architecture
+true_statement: Under NIST's PaaS model, the consumer controls its deployed applications but not the underlying servers, operating systems or storage.
+false_statement: Under NIST's PaaS model, the consumer controls its deployed applications and the underlying operating systems, but not the servers or storage.
+explanation: NIST SP 800-145 leaves the network, servers, operating systems and storage to the provider in PaaS. Control over operating systems is what distinguishes IaaS.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/platform-as-a-service.md
+  commit: 0bf9c56119abcff312c6b7e1ff539dfc2c6d8ee0
+  blob: 63d1e098aec979af34930f1c91087e367ff7e329
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:platform-as-a-service
+- kt:infrastructure-as-a-service
+difficulty: 1
+created: '2026-11-14'
+status: active

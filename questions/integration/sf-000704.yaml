@@ -1,0 +1,20 @@
+id: sf-000704
+product_area: integration
+true_statement: Each Apex callout's timeout can be set up to 120 seconds, and the total time of all callouts in one transaction is also capped at 120 seconds.
+false_statement: Each Apex callout's timeout can be set up to 120 seconds, and the total time of all callouts in one transaction is capped at 600 seconds.
+explanation: The 120-second ceiling applies both per callout and to the sum across the transaction. There's no larger 600-second budget for the whole transaction.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/integration-patterns-request-reply-fire-and-forget.md
+  commit: 0bf9c56119abcff312c6b7e1ff539dfc2c6d8ee0
+  blob: 82a9b8c344317035dc4e42c41c4dbef5ffdf3e70
+verified_release: Winter '27
+feature_status: concept
+certs:
+- kt:integration-architect-certification
+concepts:
+- kt:integration-patterns-request-reply-fire-and-forget
+- kt:apex-callouts
+difficulty: 3
+created: '2026-11-14'
+status: active

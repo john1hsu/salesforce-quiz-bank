@@ -1,0 +1,20 @@
+id: sf-000775
+product_area: platform-architecture
+true_statement: Granular locking, which is on by default, lets group membership operations run at the same time when the roles or groups involved are unrelated.
+false_statement: Granular locking, which must be enabled by Salesforce Support, lets group membership operations run at the same time when the roles or groups involved are unrelated.
+explanation: Granular locking is already on in orgs by default and relaxes the single global lock for unrelated changes. No Support request is needed to get it.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/group-membership-locking.md
+  commit: 0bf9c56119abcff312c6b7e1ff539dfc2c6d8ee0
+  blob: e17bdf01a436ea9fc4643f6df432107ae96ae022
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:sharing-and-visibility-architect-certification
+concepts:
+- kt:group-membership-locking
+- kt:record-locking
+difficulty: 2
+created: '2026-11-14'
+status: active

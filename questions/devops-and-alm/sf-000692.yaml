@@ -1,0 +1,18 @@
+id: sf-000692
+product_area: devops-and-alm
+true_statement: In package.xml, custom fields are listed under the CustomField type, named in Object.Field__c form.
+false_statement: In package.xml, custom fields are listed under the CustomObject type, named in Object.Field__c form.
+explanation: Fields have their own metadata type, CustomField, using the object-qualified full name. CustomObject is the type for standard and custom objects themselves.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/package-xml-manifest.md
+  commit: 0bf9c56119abcff312c6b7e1ff539dfc2c6d8ee0
+  blob: fe0ea0b46ac85af0f30c3d91e8a0237b9019b0c2
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:package-xml-manifest
+- kt:metadata-api
+difficulty: 2
+created: '2026-11-14'
+status: active

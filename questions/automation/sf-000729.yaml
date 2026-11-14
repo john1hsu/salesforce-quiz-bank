@@ -1,0 +1,17 @@
+id: sf-000729
+product_area: automation
+true_statement: Email sent through the emailAlert invocable action counts against the org's daily workflow email limit.
+false_statement: Email sent through the emailAlert invocable action counts against the org's daily single email limit for Apex.
+explanation: The emailAlert action reuses workflow email alerts, so it draws on the daily workflow email allocation. It isn't charged to the Apex single email limit.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/invocable-actions-api.md
+  commit: 0bf9c56119abcff312c6b7e1ff539dfc2c6d8ee0
+  blob: daad374d6a4f8db042ff2e73a2556ab8073d4e8e
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:invocable-actions-api
+difficulty: 2
+created: '2026-11-14'
+status: active

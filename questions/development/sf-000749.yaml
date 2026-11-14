@@ -1,0 +1,18 @@
+id: sf-000749
+product_area: development
+true_statement: The Apex Limits class reports only per-transaction governors; org-wide allowances such as daily API requests come from System.OrgLimits.
+false_statement: The Apex Limits class reports both per-transaction governors and org-wide allowances such as daily API requests, so OrgLimits isn't needed.
+explanation: Limits covers the running transaction, while OrgLimits.getAll() or getMap() returns org allowances that update in near real time. The two classes answer different questions.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/limits-class.md
+  commit: 0bf9c56119abcff312c6b7e1ff539dfc2c6d8ee0
+  blob: dd91e278e4415d0e5197802b90a346161e3f3ad3
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:limits-class
+- kt:orglimits-class
+difficulty: 2
+created: '2026-11-14'
+status: active

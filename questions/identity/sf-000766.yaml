@@ -1,0 +1,18 @@
+id: sf-000766
+product_area: identity
+true_statement: A DELETE request on a Salesforce SCIM /Users/<id> resource deactivates the user rather than deleting the record.
+false_statement: A DELETE request on a Salesforce SCIM /Users/<id> resource permanently deletes the record, while a PATCH only deactivates the user.
+explanation: Both PATCH and DELETE set the user inactive; the record stays queryable and can be reactivated. Salesforce doesn't hard-delete users through SCIM.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/salesforce-scim.md
+  commit: 0bf9c56119abcff312c6b7e1ff539dfc2c6d8ee0
+  blob: 632b8fc33b3c3be87bd5f275a1b62277ca150d6e
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:salesforce-scim
+- kt:scim
+difficulty: 2
+created: '2026-11-14'
+status: active

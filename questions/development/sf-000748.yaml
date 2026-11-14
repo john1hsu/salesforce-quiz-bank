@@ -1,0 +1,17 @@
+id: sf-000748
+product_area: development
+true_statement: In the Apex Limits class, the deprecated savepoint and rollback methods now return the DML statement counters.
+false_statement: In the Apex Limits class, the deprecated savepoint and rollback methods now return the SOQL query counters.
+explanation: Savepoints and rollbacks are counted as DML statements, so their old methods mirror the DML values. They aren't tied to query counts.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/limits-class.md
+  commit: 0bf9c56119abcff312c6b7e1ff539dfc2c6d8ee0
+  blob: dd91e278e4415d0e5197802b90a346161e3f3ad3
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:limits-class
+difficulty: 3
+created: '2026-11-14'
+status: active

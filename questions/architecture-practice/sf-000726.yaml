@@ -1,0 +1,17 @@
+id: sf-000726
+product_area: architecture-practice
+true_statement: In the SEI Quality Attribute Workshop, stakeholders vote on brainstormed scenarios and only the top ones are refined into the full six-part form.
+false_statement: In the SEI Quality Attribute Workshop, every brainstormed scenario is refined into the full six-part form before stakeholders vote on them.
+explanation: The workshop merges and prioritizes scenarios first, then refines just the highest-priority ones with source, artifact and response measure. Refining everything before voting reverses the process.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/non-functional-requirements.md
+  commit: 0bf9c56119abcff312c6b7e1ff539dfc2c6d8ee0
+  blob: 82fe18d1fc464a0a280a3f014a4cca4c8ab8c118
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:non-functional-requirements
+difficulty: 3
+created: '2026-11-14'
+status: active

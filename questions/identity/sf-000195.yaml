@@ -6,8 +6,8 @@ explanation: The app is configured with a run-as user and tokens act with that u
 source:
   repo: john1hsu/salesforce-knowledge-graph
   path: articles/identity/oauth-2-flows-in-salesforce.md
-  commit: 1a9626507b2858110c996adbfa985703bee41fd5
-  blob: 6e5107a80e469eb2aba65213871d8b97bf3a2dc9
+  commit: 0bf9c56119abcff312c6b7e1ff539dfc2c6d8ee0
+  blob: 35dc0969ddc5092300ca43256eeafb639c89ecd0
 verified_release: Winter '27
 feature_status: current
 certs:

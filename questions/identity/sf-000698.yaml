@@ -1,0 +1,19 @@
+id: sf-000698
+product_area: identity
+true_statement: In Identity Connect, Scheduled Updates compare every user and group to correct drift, while Live Updates react to AD changes without a full comparison.
+false_statement: In Identity Connect, Live Updates compare every user and group to correct drift, while Scheduled Updates react to AD changes without a full comparison.
+explanation: Live Updates push changes as they happen but can miss changes made during an outage; Scheduled Updates do the full comparison that catches them. The false version swaps the two modes.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/identity-connect.md
+  commit: 0bf9c56119abcff312c6b7e1ff539dfc2c6d8ee0
+  blob: 2be077d1593291f313b5857f12b7dc33afc3c7cc
+verified_release: Winter '27
+feature_status: deprecated
+certs:
+- kt:identity-and-access-management-architect-certification
+concepts:
+- kt:identity-connect
+difficulty: 2
+created: '2026-11-14'
+status: active

@@ -1,0 +1,18 @@
+id: sf-000764
+product_area: identity
+true_statement: OpenID Connect says only the iss and sub claims together reliably identify a user, so email must not be used as a unique key.
+false_statement: OpenID Connect says the iss and email claims together reliably identify a user, so email can be used as a unique key.
+explanation: Claims such as email or preferred_username can change or be reused, so the spec ties identity to issuer plus subject. Keying users on email is a known pitfall.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/openid-connect.md
+  commit: 0bf9c56119abcff312c6b7e1ff539dfc2c6d8ee0
+  blob: e232e09f7cad2e2f2debfadab8a37ba31e6e47c3
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:openid-connect
+- kt:json-web-token
+difficulty: 2
+created: '2026-11-14'
+status: active

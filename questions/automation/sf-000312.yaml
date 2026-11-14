@@ -6,8 +6,8 @@ explanation: Salesforce requires the rule to be deactivated, with nothing queued
 source:
   repo: john1hsu/salesforce-knowledge-graph
   path: articles/automation/workflow-rules.md
-  commit: 3bed651e82b5943dc7a6f52de732338747658b9b
-  blob: 90cdcb5a9f83cb00ff6ca6169af9f5583f9e916d
+  commit: 0bf9c56119abcff312c6b7e1ff539dfc2c6d8ee0
+  blob: 0e325eda7993da3c9d87f63dba7ea0b9a2c8f0b2
 verified_release: Winter '27
 feature_status: deprecated
 concepts:

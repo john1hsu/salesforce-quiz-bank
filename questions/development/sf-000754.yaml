@@ -1,0 +1,18 @@
+id: sf-000754
+product_area: development
+true_statement: Database.queryWithBinds, available from API version 57.0, resolves the bind variables in a dynamic SOQL string from a Map<String, Object>.
+false_statement: Database.queryWithBinds, available from API version 57.0, resolves the bind variables in a dynamic SOQL string from a List<Object> matched by position.
+explanation: Binds are supplied as a map keyed by name, matched case-insensitively. There's no positional list form.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/soql-injection.md
+  commit: 0bf9c56119abcff312c6b7e1ff539dfc2c6d8ee0
+  blob: 922da1f6e0eb5b4d6380891d94fd5205647a8fe7
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:soql-injection
+- kt:dynamic-soql
+difficulty: 2
+created: '2026-11-14'
+status: active

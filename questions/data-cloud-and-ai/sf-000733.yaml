@@ -1,0 +1,20 @@
+id: sf-000733
+product_area: data-cloud-and-ai
+true_statement: A Data 360 data space's name and description can be edited later, but its prefix can't be changed after the data space is created.
+false_statement: A Data 360 data space's prefix and description can be edited later, but its name can't be changed after the data space is created.
+explanation: The prefix is fixed at creation, so it needs choosing carefully; the name and description stay editable. The false version swaps the name and the prefix.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/data-spaces.md
+  commit: 0bf9c56119abcff312c6b7e1ff539dfc2c6d8ee0
+  blob: 91b2da31f4bfa7934dced22c84f292f65365a72b
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:data-cloud-consultant-certification
+concepts:
+- kt:data-spaces
+- kt:data-cloud
+difficulty: 2
+created: '2026-11-14'
+status: active

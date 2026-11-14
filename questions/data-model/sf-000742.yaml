@@ -1,0 +1,18 @@
+id: sf-000742
+product_area: data-model
+true_statement: A validation rule's error message is limited to 255 characters.
+false_statement: A validation rule's error message is limited to 1,000 characters.
+explanation: The ValidationRule metadata caps the message at 255 characters, so long guidance has to be trimmed. One thousand overstates the limit.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/validation-rules.md
+  commit: 0bf9c56119abcff312c6b7e1ff539dfc2c6d8ee0
+  blob: 23280b42bb6e8cfa8d7a39be933fc6887ea3882d
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:validation-rules
+- kt:tooling-api
+difficulty: 2
+created: '2026-11-14'
+status: active

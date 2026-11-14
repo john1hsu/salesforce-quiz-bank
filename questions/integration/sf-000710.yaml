@@ -1,0 +1,20 @@
+id: sf-000710
+product_area: integration
+true_statement: Turning on disableProtocolSecurity for a remote site lets code pass data between HTTP and HTTPS sessions, whatever protocol the user is on.
+false_statement: Turning on disableProtocolSecurity for a remote site lets code skip TLS certificate checks on HTTPS callouts to that host.
+explanation: The flag allows mixing HTTP and HTTPS in either direction regardless of the user's connection, and Salesforce warns to use it only with care. It isn't a switch for certificate validation.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/remote-site-settings.md
+  commit: 0bf9c56119abcff312c6b7e1ff539dfc2c6d8ee0
+  blob: 75441c96155e900a95d2243c9d180ad593bccc4e
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:integration-architect-certification
+concepts:
+- kt:remote-site-settings
+- kt:integration-security
+difficulty: 2
+created: '2026-11-14'
+status: active

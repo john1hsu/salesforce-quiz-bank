@@ -1,0 +1,18 @@
+id: sf-000730
+product_area: data-cloud-and-ai
+true_statement: The no-code model builder in Data 360 AI Models offers regression and binary classification only; other problem types need an external model.
+false_statement: The no-code model builder in Data 360 AI Models offers binary and multiclass classification only; regression needs an external model.
+explanation: Models built from scratch can predict a number (regression) or one of two outcomes (binary classification). Multiclass isn't offered, and regression is supported natively.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/ai-models.md
+  commit: 0bf9c56119abcff312c6b7e1ff539dfc2c6d8ee0
+  blob: 33028af48674c12a230d8f6e144abcb463675938
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:ai-models
+- kt:data-cloud
+difficulty: 2
+created: '2026-11-14'
+status: active

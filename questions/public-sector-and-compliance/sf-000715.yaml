@@ -1,0 +1,18 @@
+id: sf-000715
+product_area: public-sector-and-compliance
+true_statement: Under NIST SP 800-63B-4, an AAL3 session must end within 12 hours and after no more than 15 minutes of inactivity.
+false_statement: Under NIST SP 800-63B-4, an AAL3 session must end within 24 hours and after no more than 1 hour of inactivity.
+explanation: AAL3 tightens reauthentication to 12 hours overall and 15 minutes idle. The 24-hour and one-hour figures are the looser AAL2 bounds.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/nist-digital-identity-guidelines.md
+  commit: 0bf9c56119abcff312c6b7e1ff539dfc2c6d8ee0
+  blob: 01dc59d9953c1f2b13264e9363719afa40f9d094
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:nist-digital-identity-guidelines
+- kt:session-security-levels
+difficulty: 3
+created: '2026-11-14'
+status: active

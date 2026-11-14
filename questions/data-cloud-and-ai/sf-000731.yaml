@@ -1,0 +1,18 @@
+id: sf-000731
+product_area: data-cloud-and-ai
+true_statement: Bring-your-own-LLM calls in AI Models consume 30% fewer Einstein Requests than calls to other models.
+false_statement: Bring-your-own-LLM calls in AI Models consume 50% fewer Einstein Requests than calls to other models.
+explanation: BYOLLM inference runs at the customer's provider, and Salesforce discounts it by 30% in Einstein Requests. Fifty percent overstates the saving.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/ai-models.md
+  commit: 0bf9c56119abcff312c6b7e1ff539dfc2c6d8ee0
+  blob: 33028af48674c12a230d8f6e144abcb463675938
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:ai-models
+- kt:models-api
+difficulty: 2
+created: '2026-11-14'
+status: active

@@ -1,0 +1,18 @@
+id: sf-000693
+product_area: devops-and-alm
+true_statement: When sf project generate manifest builds from an org, it leaves out managed and unlocked package metadata unless --include-packages is set.
+false_statement: When sf project generate manifest builds from an org, it includes managed and unlocked package metadata unless --excluded-metadata is set.
+explanation: Package-owned components are excluded by default and are added only with --include-packages. The --excluded-metadata flag drops whole metadata types; it doesn't control package metadata.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/package-xml-manifest.md
+  commit: 0bf9c56119abcff312c6b7e1ff539dfc2c6d8ee0
+  blob: fe0ea0b46ac85af0f30c3d91e8a0237b9019b0c2
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:package-xml-manifest
+- kt:salesforce-cli
+difficulty: 2
+created: '2026-11-14'
+status: active

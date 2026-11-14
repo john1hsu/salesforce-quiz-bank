@@ -1,0 +1,17 @@
+id: sf-000723
+product_area: architecture-practice
+true_statement: TOGAF suggests starting a capability map with a top-down pass of about 20 to 30 high-level capabilities, then adding bottom-up detail.
+false_statement: TOGAF suggests starting a capability map with a top-down pass of about 100 to 150 high-level capabilities, then adding bottom-up detail.
+explanation: A small top-down set of roughly 20 to 30 capabilities keeps the model manageable before detail is layered in. A first pass of 100 or more is far beyond that guidance.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/capability-maps.md
+  commit: 0bf9c56119abcff312c6b7e1ff539dfc2c6d8ee0
+  blob: ee56538640b18c73cc502070f030e422652b70f7
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:capability-maps
+difficulty: 2
+created: '2026-11-14'
+status: active

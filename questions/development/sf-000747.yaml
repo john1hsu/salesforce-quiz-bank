@@ -1,0 +1,18 @@
+id: sf-000747
+product_area: development
+true_statement: Across all namespaces in one transaction, a governor limit is capped at 11 times its per-namespace value, such as 1,100 SOQL queries.
+false_statement: Across all namespaces in one transaction, a governor limit is capped at 3 times its per-namespace value, such as 300 SOQL queries.
+explanation: Certified packages get their own allocations, but the cross-namespace total stops at eleven times the single-namespace limit. Three times is far too low.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/limit-exception.md
+  commit: 0bf9c56119abcff312c6b7e1ff539dfc2c6d8ee0
+  blob: c369ae43dcbc10f497a4d2d91496245b6a3a35c5
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:limit-exception
+- kt:second-generation-managed-packages
+difficulty: 3
+created: '2026-11-14'
+status: active

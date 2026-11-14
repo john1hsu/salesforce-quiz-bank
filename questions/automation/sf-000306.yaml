@@ -6,8 +6,8 @@ explanation: Process limits count an Update Records action as both a query and a
 source:
   repo: john1hsu/salesforce-knowledge-graph
   path: articles/automation/process-builder.md
-  commit: 3bed651e82b5943dc7a6f52de732338747658b9b
-  blob: 3b29382010eddf7a0897f16e85d599081e4b6c07
+  commit: 0bf9c56119abcff312c6b7e1ff539dfc2c6d8ee0
+  blob: d3b1d18ecbdb8b2e9251c3e103e9508de2fe8884
 verified_release: Winter '27
 feature_status: deprecated
 concepts:

@@ -1,0 +1,19 @@
+id: sf-000736
+product_area: data-model
+true_statement: Salesforce's Data Quality module checks the age dimension by reporting on Last Modified Date to see what share of records is recent.
+false_statement: Salesforce's Data Quality module checks the age dimension by reporting on Created Date to see what share of records is recent.
+explanation: Age is about how recently a record was updated, so the check uses Last Modified Date. Created Date says nothing about whether old records have been kept current.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/data-quality.md
+  commit: 0bf9c56119abcff312c6b7e1ff539dfc2c6d8ee0
+  blob: 403075235c22dd0147e33be2f61d6c743e0ee184
+verified_release: Winter '27
+feature_status: concept
+certs:
+- kt:platform-data-architect-certification
+concepts:
+- kt:data-quality
+difficulty: 1
+created: '2026-11-14'
+status: active

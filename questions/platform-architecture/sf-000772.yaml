@@ -1,0 +1,19 @@
+id: sf-000772
+product_area: platform-architecture
+true_statement: Every External ID field on an object also uses up one of that object's custom index slots.
+false_statement: External ID fields have their own index allocation, so they don't use up any of the object's custom index slots.
+explanation: Marking a field as an External ID indexes it, and that index counts against the same per-object custom index cap. Adding integration keys can quietly exhaust slots needed for tuning.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/custom-index-limits.md
+  commit: 0bf9c56119abcff312c6b7e1ff539dfc2c6d8ee0
+  blob: 575d2919d8b4ae44d30d3c5ae5e9b09ada42ffec
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:custom-index-limits
+- kt:external-id-fields
+- kt:custom-indexes
+difficulty: 2
+created: '2026-11-14'
+status: active

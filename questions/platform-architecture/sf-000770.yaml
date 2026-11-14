@@ -1,0 +1,21 @@
+id: sf-000770
+product_area: platform-architecture
+true_statement: Flow bulkifies records automatically, but it has no native Map or Set, so a Get Records element inside a Loop is a common performance problem.
+false_statement: Flow has native Map and Set structures, so a Get Records element inside a Loop is bulkified automatically and causes no performance problem.
+explanation: Flow merges redundant queries and DML across records, but without maps or sets a query placed inside a loop still runs per iteration. That pattern is a frequent cause of slow flows.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/bulkification.md
+  commit: 0bf9c56119abcff312c6b7e1ff539dfc2c6d8ee0
+  blob: 3edbdf6e198217f668ea3e51df90003562f424a9
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:platform-developer-certification
+concepts:
+- kt:bulkification
+- kt:flow-bulkification
+- kt:record-triggered-flow
+difficulty: 2
+created: '2026-11-14'
+status: active

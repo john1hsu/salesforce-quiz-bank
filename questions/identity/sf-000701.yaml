@@ -1,0 +1,20 @@
+id: sf-000701
+product_area: identity
+true_statement: Once a profile has its own password policy, later changes to the org-wide password policy no longer reach that profile's users.
+false_statement: Once a profile has its own password policy, later changes to the org-wide password policy still override it for that profile's users.
+explanation: A profile-level policy replaces the org-wide one for that profile, so org-wide edits stop applying there. This drift is why admins should check which profiles carry their own settings.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/password-policies.md
+  commit: 0bf9c56119abcff312c6b7e1ff539dfc2c6d8ee0
+  blob: 3fad8c019b545e52f00992c0bcc99e6bb0c31813
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:identity-and-access-management-architect-certification
+concepts:
+- kt:password-policies
+- kt:profiles
+difficulty: 2
+created: '2026-11-14'
+status: active

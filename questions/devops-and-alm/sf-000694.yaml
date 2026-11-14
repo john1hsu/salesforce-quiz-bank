@@ -1,0 +1,18 @@
+id: sf-000694
+product_area: devops-and-alm
+true_statement: For a Partial Copy sandbox, the copy engine takes a random sample of up to 10,000 records for each object selected in the template.
+false_statement: For a Partial Copy sandbox, the copy engine takes a random sample of up to 1,000 records for each object selected in the template.
+explanation: Partial Copy sampling allows as many as 10,000 rows per selected object, inside the 5 GB storage cap. One thousand is a tenth of the real figure.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/sandbox-templates.md
+  commit: 0bf9c56119abcff312c6b7e1ff539dfc2c6d8ee0
+  blob: 3ac049fa16cb6524a75e43ce3a4ad58804a82048
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:sandbox-templates
+- kt:sandbox-types
+difficulty: 2
+created: '2026-11-14'
+status: active

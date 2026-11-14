@@ -1,0 +1,18 @@
+id: sf-000716
+product_area: public-sector-and-compliance
+true_statement: NIST SP 800-63-4 accepts syncable passkeys at AAL2 with user verification, but not at AAL3, which forbids exportable private keys.
+false_statement: NIST SP 800-63-4 accepts syncable passkeys at both AAL2 and AAL3, as long as user verification is performed.
+explanation: Synced passkeys can leave the device, so they cap out at AAL2. AAL3 needs a cryptographic authenticator whose private key can't be exported, which user verification alone doesn't provide.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/nist-digital-identity-guidelines.md
+  commit: 0bf9c56119abcff312c6b7e1ff539dfc2c6d8ee0
+  blob: 01dc59d9953c1f2b13264e9363719afa40f9d094
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:nist-digital-identity-guidelines
+- kt:multi-factor-authentication
+difficulty: 3
+created: '2026-11-14'
+status: active

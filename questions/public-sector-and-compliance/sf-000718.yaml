@@ -1,0 +1,18 @@
+id: sf-000718
+product_area: public-sector-and-compliance
+true_statement: NIST's 5.2.0 release of SP 800-53B in August 2025 left the control baselines unchanged and only bumped the version number to match SP 800-53.
+false_statement: NIST's 5.2.0 release of SP 800-53B in August 2025 added new controls to the moderate and high baselines to match SP 800-53.
+explanation: Release 5.2.0 changed no baselines; the version was raised only for consistency with SP 800-53 and 800-53A. Baselines built on the 2020 text remain valid.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/nist-sp-800-53b.md
+  commit: 0bf9c56119abcff312c6b7e1ff539dfc2c6d8ee0
+  blob: fb7f65d8adbd75193afb35f2b4910a991c650336
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:nist-sp-800-53b
+- kt:nist-sp-800-53
+difficulty: 2
+created: '2026-11-14'
+status: active

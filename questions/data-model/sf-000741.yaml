@@ -1,0 +1,18 @@
+id: sf-000741
+product_area: data-model
+true_statement: Apex tests call Test.getStandardPricebookId() to get the standard price book's ID before inserting standard-price entries.
+false_statement: Apex tests must set SeeAllData=true to query the standard price book's ID before inserting standard-price entries.
+explanation: Tests don't see org data by default, and Test.getStandardPricebookId() returns the standard book's ID without opening that access. SeeAllData isn't needed for it.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/price-books.md
+  commit: 0bf9c56119abcff312c6b7e1ff539dfc2c6d8ee0
+  blob: 040fe75caea17ce3528513f780ae96bbccd78a70
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:price-books
+- kt:apex-testing
+difficulty: 2
+created: '2026-11-14'
+status: active

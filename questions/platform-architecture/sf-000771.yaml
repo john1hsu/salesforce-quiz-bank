@@ -1,0 +1,21 @@
+id: sf-000771
+product_area: platform-architecture
+true_statement: Salesforce's automation decision guide matches 1 to 200 records to record-triggered Flow and bulk loads of 2,000 to 10,000 or more to an Apex trigger framework.
+false_statement: Salesforce's automation decision guide matches 1 to 200 records to an Apex trigger framework and bulk loads of 2,000 to 10,000 or more to record-triggered Flow.
+explanation: Low-density automation suits Flow, while high-volume bulk API loads push toward a coded trigger framework. The false version swaps the two recommendations.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/bulkification.md
+  commit: 0bf9c56119abcff312c6b7e1ff539dfc2c6d8ee0
+  blob: 3edbdf6e198217f668ea3e51df90003562f424a9
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:platform-developer-certification
+concepts:
+- kt:bulkification
+- kt:trigger-framework-pattern
+- kt:record-triggered-flow
+difficulty: 3
+created: '2026-11-14'
+status: active

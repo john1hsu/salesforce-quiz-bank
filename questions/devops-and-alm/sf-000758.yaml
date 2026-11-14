@@ -1,0 +1,17 @@
+id: sf-000758
+product_area: devops-and-alm
+true_statement: Quick deploy doesn't support source tracking; it overwrites the matching metadata in the org instead of merging.
+false_statement: Quick deploy supports source tracking, merging the validated metadata with changes made in the org since validation.
+explanation: Quick deploy pushes the validated component set as-is and replaces what's in the org. It has no source tracking or merge step.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/deployment-validation-and-quick-deploy.md
+  commit: 0bf9c56119abcff312c6b7e1ff539dfc2c6d8ee0
+  blob: b4c5acb26eec938430197721a6e6d2178c1dd228
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:deployment-validation-and-quick-deploy
+difficulty: 2
+created: '2026-11-14'
+status: active

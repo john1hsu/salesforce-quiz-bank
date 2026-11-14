@@ -1,0 +1,20 @@
+id: sf-000712
+product_area: platform-architecture
+true_statement: Marking a field as an External ID indexes it automatically, but only Auto Number, Email, Number and Text fields can be External IDs.
+false_statement: Marking a field as an External ID indexes it automatically, but only Text, Picklist, Date and Currency fields can be External IDs.
+explanation: External ID is the self-service route to an index, and it is limited to Auto Number, Email, Number and Text fields. Picklist, Date and Currency fields can't be flagged this way.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/custom-indexes.md
+  commit: 0bf9c56119abcff312c6b7e1ff539dfc2c6d8ee0
+  blob: ac15df44223bc6dbf03ec731e1411f7c9b5437b9
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:platform-data-architect-certification
+concepts:
+- kt:custom-indexes
+- kt:external-id-fields
+difficulty: 2
+created: '2026-11-14'
+status: active

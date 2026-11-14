@@ -1,0 +1,19 @@
+id: sf-000740
+product_area: data-model
+true_statement: Once an opportunity has product line items, neither its price book nor its CurrencyIsoCode can be changed.
+false_statement: Once an opportunity has product line items, its price book can still be changed, but its CurrencyIsoCode can't.
+explanation: Line items lock both the opportunity's price book and its currency, because every line item must come from an entry in that book and currency. Swapping the book is blocked too.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/price-books.md
+  commit: 0bf9c56119abcff312c6b7e1ff539dfc2c6d8ee0
+  blob: 040fe75caea17ce3528513f780ae96bbccd78a70
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:price-books
+- kt:opportunity-products
+- kt:multiple-currencies
+difficulty: 2
+created: '2026-11-14'
+status: active

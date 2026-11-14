@@ -1,0 +1,18 @@
+id: sf-000691
+product_area: devops-and-alm
+true_statement: A destructiveChangesPost.xml manifest deletes components after the deployment's additions and updates are applied, but before Apex tests run.
+false_statement: A destructiveChangesPost.xml manifest deletes components after the deployment's additions and updates are applied, and only after Apex tests run.
+explanation: Post-destructive deletions happen once additions and updates are in, yet ahead of the test run. That ordering is why tests can catch references left behind; the false version puts the deletes after testing.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/package-xml-manifest.md
+  commit: 0bf9c56119abcff312c6b7e1ff539dfc2c6d8ee0
+  blob: fe0ea0b46ac85af0f30c3d91e8a0237b9019b0c2
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:package-xml-manifest
+- kt:apex-testing
+difficulty: 3
+created: '2026-11-14'
+status: active

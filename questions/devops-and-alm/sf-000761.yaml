@@ -1,0 +1,18 @@
+id: sf-000761
+product_area: devops-and-alm
+true_statement: A scratch org snapshot expires after 90 days, and its slot in the Dev Hub's snapshot quota is freed as soon as it expires or is deleted.
+false_statement: A scratch org snapshot expires after 30 days, and its slot in the Dev Hub's snapshot quota is freed as soon as it expires or is deleted.
+explanation: Snapshots live for 90 days, with a quota equal to the hub's active scratch org allocation. Thirty days understates the lifetime.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/scratch-org-allocations.md
+  commit: 0bf9c56119abcff312c6b7e1ff539dfc2c6d8ee0
+  blob: c5c64b48c370788ce8bfc14813d9712b7b0b848b
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:scratch-org-allocations
+- kt:scratch-orgs
+difficulty: 2
+created: '2026-11-14'
+status: active

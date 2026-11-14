@@ -1,0 +1,18 @@
+id: sf-000753
+product_area: development
+true_statement: Refreshing a sandbox doesn't copy its source org's scheduled Apex jobs, so they have to be scheduled again in the sandbox.
+false_statement: Refreshing a sandbox copies its source org's scheduled Apex jobs in a paused state, so they have to be resumed in the sandbox.
+explanation: Scheduled jobs simply don't come across in a refresh, so they must be recreated. The false version invents a paused copy that only needs resuming.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/scheduled-apex.md
+  commit: 0bf9c56119abcff312c6b7e1ff539dfc2c6d8ee0
+  blob: 6969ddac9378366287d33194800a1c61077a4bac
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:scheduled-apex
+- kt:sandbox-types
+difficulty: 2
+created: '2026-11-14'
+status: active

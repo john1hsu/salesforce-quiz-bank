@@ -1,0 +1,20 @@
+id: sf-000711
+product_area: integration
+true_statement: In RemoteSiteSetting metadata, url, isActive and disableProtocolSecurity are required fields, while description is optional.
+false_statement: In RemoteSiteSetting metadata, url and description are required fields, while isActive and disableProtocolSecurity are optional.
+explanation: The metadata type requires the URL, the active flag and the protocol-security flag; the description can be left out. The false version swaps which fields are required.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/remote-site-settings.md
+  commit: 0bf9c56119abcff312c6b7e1ff539dfc2c6d8ee0
+  blob: 75441c96155e900a95d2243c9d180ad593bccc4e
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:integration-architect-certification
+concepts:
+- kt:remote-site-settings
+- kt:metadata-api
+difficulty: 2
+created: '2026-11-14'
+status: active

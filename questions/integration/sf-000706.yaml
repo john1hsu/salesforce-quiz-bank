@@ -1,0 +1,20 @@
+id: sf-000706
+product_area: integration
+true_statement: In a single composite API request, no more than 5 of the subrequests can be query or sObject Collections operations.
+false_statement: In a single composite API request, no more than 15 of the subrequests can be query or sObject Collections operations.
+explanation: Composite allows up to 25 subrequests, but only five of them may be queries or sObject Collections calls. Fifteen overstates that sub-limit.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/remote-call-in.md
+  commit: 0bf9c56119abcff312c6b7e1ff539dfc2c6d8ee0
+  blob: 7e0b425ce430f7cdbd5cc949a9a868875db9e7d7
+verified_release: Winter '27
+feature_status: concept
+certs:
+- kt:integration-architect-certification
+concepts:
+- kt:remote-call-in
+- kt:composite-api
+difficulty: 3
+created: '2026-11-14'
+status: active

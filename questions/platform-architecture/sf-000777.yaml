@@ -1,0 +1,20 @@
+id: sf-000777
+product_area: platform-architecture
+true_statement: Even with granular locking, role reparenting, such as changing a partner account's owner, blocks almost every other group membership update.
+false_statement: With granular locking, role reparenting, such as changing a partner account's owner, runs alongside other group membership updates without blocking them.
+explanation: Granular locking helps unrelated changes, but reparenting a role still takes a lock that blocks nearly all other group updates. Such changes are best scheduled apart from other jobs.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/group-membership-locking.md
+  commit: 0bf9c56119abcff312c6b7e1ff539dfc2c6d8ee0
+  blob: e17bdf01a436ea9fc4643f6df432107ae96ae022
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:sharing-and-visibility-architect-certification
+concepts:
+- kt:group-membership-locking
+- kt:role-hierarchy
+difficulty: 3
+created: '2026-11-14'
+status: active

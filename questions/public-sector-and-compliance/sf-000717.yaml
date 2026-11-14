@@ -1,0 +1,18 @@
+id: sf-000717
+product_area: public-sector-and-compliance
+true_statement: Under NIST SP 800-63C-4, proof that the subscriber holds an authenticator, via a holder-of-key assertion or bound authenticator, is first required at FAL3.
+false_statement: Under NIST SP 800-63C-4, proof that the subscriber holds an authenticator, via a holder-of-key assertion or bound authenticator, is first required at FAL2.
+explanation: FAL2 adds injection protection, a single audience and a trust agreement, but holder-of-key proof is the extra step that defines FAL3.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/nist-digital-identity-guidelines.md
+  commit: 0bf9c56119abcff312c6b7e1ff539dfc2c6d8ee0
+  blob: 01dc59d9953c1f2b13264e9363719afa40f9d094
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:nist-digital-identity-guidelines
+- kt:single-sign-on-saml
+difficulty: 3
+created: '2026-11-14'
+status: active

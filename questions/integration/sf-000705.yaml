@@ -1,0 +1,20 @@
+id: sf-000705
+product_area: integration
+true_statement: Callouts started from Apex triggers must run asynchronously, so Salesforce's guidance treats them as Fire and Forget rather than Request and Reply.
+false_statement: Callouts started from Apex triggers can run synchronously, so Salesforce's guidance treats them as Request and Reply rather than Fire and Forget.
+explanation: A trigger can't wait on a synchronous callout, so trigger-based calls have to be asynchronous and belong to Fire and Forget. That's why the guidance rates triggers as suboptimal for Request and Reply.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/integration-patterns-request-reply-fire-and-forget.md
+  commit: 0bf9c56119abcff312c6b7e1ff539dfc2c6d8ee0
+  blob: 82a9b8c344317035dc4e42c41c4dbef5ffdf3e70
+verified_release: Winter '27
+feature_status: concept
+certs:
+- kt:integration-architect-certification
+concepts:
+- kt:integration-patterns-request-reply-fire-and-forget
+- kt:apex-callouts
+difficulty: 3
+created: '2026-11-14'
+status: active

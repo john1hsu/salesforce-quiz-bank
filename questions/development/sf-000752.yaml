@@ -1,0 +1,17 @@
+id: sf-000752
+product_area: development
+true_statement: Apex doesn't allow a single schedule's cron expression to fire the job more often than once an hour.
+false_statement: Apex doesn't allow a single schedule's cron expression to fire the job more often than once every five minutes.
+explanation: The finest granularity for one Apex schedule is hourly; more frequent runs need several schedules or another approach. A five-minute floor isn't the documented rule.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/scheduled-apex.md
+  commit: 0bf9c56119abcff312c6b7e1ff539dfc2c6d8ee0
+  blob: 6969ddac9378366287d33194800a1c61077a4bac
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:scheduled-apex
+difficulty: 2
+created: '2026-11-14'
+status: active

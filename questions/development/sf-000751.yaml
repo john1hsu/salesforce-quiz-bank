@@ -1,0 +1,18 @@
+id: sf-000751
+product_area: development
+true_statement: No more than 100 scheduled Apex jobs can exist in an org at the same time.
+false_statement: No more than 500 scheduled Apex jobs can exist in an org at the same time.
+explanation: The scheduler caps an org at 100 scheduled jobs, which is why scheduling from a bulk trigger is risky. Five hundred overstates the cap.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/scheduled-apex.md
+  commit: 0bf9c56119abcff312c6b7e1ff539dfc2c6d8ee0
+  blob: 6969ddac9378366287d33194800a1c61077a4bac
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:scheduled-apex
+- kt:governor-limits
+difficulty: 2
+created: '2026-11-14'
+status: active

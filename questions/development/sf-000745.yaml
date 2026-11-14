@@ -1,0 +1,19 @@
+id: sf-000745
+product_area: development
+true_statement: When a System.LimitException is thrown, neither the catch block nor any finally block runs.
+false_statement: When a System.LimitException is thrown, the catch block is skipped, but any finally block still runs.
+explanation: LimitException is uncatchable and ends the transaction outright, so finally blocks don't get a chance either. That's why prevention, not handling, is the only defence.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/limit-exception.md
+  commit: 0bf9c56119abcff312c6b7e1ff539dfc2c6d8ee0
+  blob: c369ae43dcbc10f497a4d2d91496245b6a3a35c5
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:limit-exception
+- kt:governor-limits
+- kt:transaction-control
+difficulty: 2
+created: '2026-11-14'
+status: active

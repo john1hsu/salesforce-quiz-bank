@@ -1,0 +1,18 @@
+id: sf-000755
+product_area: development
+true_statement: String.escapeSingleQuotes() doesn't protect a numeric value that is concatenated into a SOQL string without quotes around it.
+false_statement: String.escapeSingleQuotes() protects every value concatenated into a SOQL string, including numeric values without quotes around them.
+explanation: Escaping only helps when the input sits inside a quoted string literal. An unquoted number can still carry extra clauses, so typecasting or bind variables are needed.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/soql-injection.md
+  commit: 0bf9c56119abcff312c6b7e1ff539dfc2c6d8ee0
+  blob: 922da1f6e0eb5b4d6380891d94fd5205647a8fe7
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:soql-injection
+- kt:apex
+difficulty: 2
+created: '2026-11-14'
+status: active

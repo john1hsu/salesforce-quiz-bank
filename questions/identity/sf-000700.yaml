@@ -1,0 +1,20 @@
+id: sf-000700
+product_area: identity
+true_statement: Salesforce password policies can lock users out after 3, 5 or 10 invalid login attempts, for a lockout period of 15, 30 or 60 minutes.
+false_statement: Salesforce password policies can lock users out after 3, 5 or 10 invalid login attempts, for a lockout period of 1, 12 or 24 hours.
+explanation: The lockout settings offer 3, 5 or 10 attempts and a lockout of 15, 30 or 60 minutes (or 0). Lockout periods measured in many hours aren't among the options.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/password-policies.md
+  commit: 0bf9c56119abcff312c6b7e1ff539dfc2c6d8ee0
+  blob: 3fad8c019b545e52f00992c0bcc99e6bb0c31813
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:identity-and-access-management-architect-certification
+concepts:
+- kt:password-policies
+- kt:account-takeover
+difficulty: 2
+created: '2026-11-14'
+status: active

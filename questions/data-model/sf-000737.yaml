@@ -1,0 +1,19 @@
+id: sf-000737
+product_area: data-model
+true_statement: Trailhead notes that, on average, 120 business addresses and 75 phone numbers change every 30 minutes, so data quality needs continuous care.
+false_statement: Trailhead notes that, on average, 120 business addresses and 75 phone numbers change every 24 hours, so data quality needs continuous care.
+explanation: The decay figure is per 30 minutes, which is why quality is treated as ongoing rather than a one-time cleanup. Per day understates how fast contact data goes stale.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/data-quality.md
+  commit: 0bf9c56119abcff312c6b7e1ff539dfc2c6d8ee0
+  blob: 403075235c22dd0147e33be2f61d6c743e0ee184
+verified_release: Winter '27
+feature_status: concept
+certs:
+- kt:platform-data-architect-certification
+concepts:
+- kt:data-quality
+difficulty: 1
+created: '2026-11-14'
+status: active

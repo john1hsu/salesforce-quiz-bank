@@ -1,0 +1,20 @@
+id: sf-000703
+product_area: integration
+true_statement: For Request and Reply, Salesforce's integration guidance rates External Services as a best fit and the Flow HTTP Callout action as good.
+false_statement: For Request and Reply, Salesforce's integration guidance rates the Flow HTTP Callout action as a best fit and External Services as good.
+explanation: External Services, built from an OpenAPI definition and callable from Flow, gets the top rating; the lighter HTTP Callout action is rated one step lower. The false version swaps them.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/integration-patterns-request-reply-fire-and-forget.md
+  commit: 0bf9c56119abcff312c6b7e1ff539dfc2c6d8ee0
+  blob: 82a9b8c344317035dc4e42c41c4dbef5ffdf3e70
+verified_release: Winter '27
+feature_status: concept
+certs:
+- kt:integration-architect-certification
+concepts:
+- kt:integration-patterns-request-reply-fire-and-forget
+- kt:integration-patterns
+difficulty: 2
+created: '2026-11-14'
+status: active

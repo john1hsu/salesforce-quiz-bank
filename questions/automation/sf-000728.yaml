@@ -1,0 +1,18 @@
+id: sf-000728
+product_area: automation
+true_statement: When an autolaunched flow is run through the Invocable Actions API, a flow admin always runs the latest version, while other flow users run the active one.
+false_statement: When an autolaunched flow is run through the Invocable Actions API, a flow admin always runs the active version, while other flow users run the latest one.
+explanation: Ordinary flow users get the active version (or the latest if none is active), but a flow admin always gets the newest version. The false version swaps the two callers.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/invocable-actions-api.md
+  commit: 0bf9c56119abcff312c6b7e1ff539dfc2c6d8ee0
+  blob: daad374d6a4f8db042ff2e73a2556ab8073d4e8e
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:invocable-actions-api
+- kt:flow-versioning
+difficulty: 3
+created: '2026-11-14'
+status: active

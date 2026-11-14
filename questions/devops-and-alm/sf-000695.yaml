@@ -1,0 +1,18 @@
+id: sf-000695
+product_area: devops-and-alm
+true_statement: A sandbox template copies big object definitions but never their records, even when the big object is selected.
+false_statement: A sandbox template copies big object definitions, and copies their records too whenever the big object is selected.
+explanation: Big object records are never carried into a sandbox, whatever the template contains; only the definition comes across. Selecting the object doesn't change that.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/sandbox-templates.md
+  commit: 0bf9c56119abcff312c6b7e1ff539dfc2c6d8ee0
+  blob: 3ac049fa16cb6524a75e43ce3a4ad58804a82048
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:sandbox-templates
+- kt:big-objects
+difficulty: 2
+created: '2026-11-14'
+status: active

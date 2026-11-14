@@ -1,0 +1,18 @@
+id: sf-000720
+product_area: public-sector-and-compliance
+true_statement: Some SP 800-53 controls are assigned to no SP 800-53B baseline at all and enter a system only through tailoring.
+false_statement: Every SP 800-53 control is assigned to at least the high baseline in SP 800-53B, so tailoring can only remove controls.
+explanation: The allocation tables leave some controls out of every baseline; organizations add them by supplementing during tailoring. Tailoring can add as well as remove or specialize controls.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/nist-sp-800-53b.md
+  commit: 0bf9c56119abcff312c6b7e1ff539dfc2c6d8ee0
+  blob: fb7f65d8adbd75193afb35f2b4910a991c650336
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:nist-sp-800-53b
+- kt:fedramp
+difficulty: 3
+created: '2026-11-14'
+status: active

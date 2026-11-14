@@ -1,0 +1,18 @@
+id: sf-000760
+product_area: devops-and-alm
+true_statement: A Dev Hub in an active partner business org allows 150 active scratch orgs and 300 scratch org creations per day.
+false_statement: A Dev Hub in an active partner business org allows 100 active scratch orgs and 200 scratch org creations per day.
+explanation: Partner business orgs get 150 active and 300 daily. The 100 and 200 figures belong to Unlimited and Performance Edition Dev Hubs.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/scratch-org-allocations.md
+  commit: 0bf9c56119abcff312c6b7e1ff539dfc2c6d8ee0
+  blob: c5c64b48c370788ce8bfc14813d9712b7b0b848b
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:scratch-org-allocations
+- kt:dev-hub
+difficulty: 2
+created: '2026-11-14'
+status: active

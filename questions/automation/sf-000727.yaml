@@ -1,0 +1,18 @@
+id: sf-000727
+product_area: automation
+true_statement: An Apex class can contain only one @InvocableMethod, and that method takes at most one parameter, typically a list.
+false_statement: An Apex class can contain several @InvocableMethod methods, and each one takes at most one parameter, typically a list.
+explanation: Salesforce limits the annotation to a single static, public or global method per outer class. The parameter rule is the same in both versions; the count of methods is what's wrong.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/invocable-actions-api.md
+  commit: 0bf9c56119abcff312c6b7e1ff539dfc2c6d8ee0
+  blob: daad374d6a4f8db042ff2e73a2556ab8073d4e8e
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:invocable-actions-api
+- kt:invocable-apex-actions
+difficulty: 2
+created: '2026-11-14'
+status: active

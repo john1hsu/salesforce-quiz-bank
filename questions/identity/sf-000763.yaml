@@ -1,0 +1,18 @@
+id: sf-000763
+product_area: identity
+true_statement: An OAuth 2.0 request becomes an OpenID Connect request only when its scope includes the value openid.
+false_statement: An OAuth 2.0 request becomes an OpenID Connect request only when its scope includes the value profile.
+explanation: The openid scope is what turns a plain OAuth exchange into OIDC. The profile scope only asks for a group of profile claims.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/openid-connect.md
+  commit: 0bf9c56119abcff312c6b7e1ff539dfc2c6d8ee0
+  blob: e232e09f7cad2e2f2debfadab8a37ba31e6e47c3
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:openid-connect
+- kt:oauth-2-0
+difficulty: 1
+created: '2026-11-14'
+status: active

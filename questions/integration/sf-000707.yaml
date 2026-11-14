@@ -1,0 +1,20 @@
+id: sf-000707
+product_area: integration
+true_statement: A user can hold up to 10 open query cursors at once; opening another releases the oldest one.
+false_statement: A user can hold up to 50 open query cursors at once; opening another releases the oldest one.
+explanation: The cursor cap per user is ten, and exceeding it frees the oldest cursor. That's why a shared integration user should run queries serially or be split per application.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/remote-call-in.md
+  commit: 0bf9c56119abcff312c6b7e1ff539dfc2c6d8ee0
+  blob: 7e0b425ce430f7cdbd5cc949a9a868875db9e7d7
+verified_release: Winter '27
+feature_status: concept
+certs:
+- kt:integration-architect-certification
+concepts:
+- kt:remote-call-in
+- kt:rest-api
+difficulty: 3
+created: '2026-11-14'
+status: active

@@ -1,0 +1,20 @@
+id: sf-000699
+product_area: identity
+true_statement: A Developer Edition org includes 10 Identity Connect permission set licenses, while Enterprise, Performance and Unlimited Editions pay extra for it.
+false_statement: A Developer Edition org includes 100 Identity Connect permission set licenses, while Enterprise, Performance and Unlimited Editions pay extra for it.
+explanation: Identity Connect is a paid add-on in the main editions, and Developer Edition ships with ten of its permission set licenses. One hundred overstates that allowance.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/identity-connect.md
+  commit: 0bf9c56119abcff312c6b7e1ff539dfc2c6d8ee0
+  blob: 2be077d1593291f313b5857f12b7dc33afc3c7cc
+verified_release: Winter '27
+feature_status: deprecated
+certs:
+- kt:identity-and-access-management-architect-certification
+concepts:
+- kt:identity-connect
+- kt:permission-set-licenses
+difficulty: 2
+created: '2026-11-14'
+status: active

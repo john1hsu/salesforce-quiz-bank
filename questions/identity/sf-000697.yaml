@@ -1,0 +1,19 @@
+id: sf-000697
+product_area: identity
+true_statement: Identity Connect syncs one way from Active Directory, so an edit made in Salesforce to a mapped field is overwritten on the next sync.
+false_statement: Identity Connect syncs both ways with Active Directory, so an edit made in Salesforce to a mapped field is written back to AD on the next sync.
+explanation: AD is the source of truth and Identity Connect only needs read access to it; it never writes to AD. Salesforce-side edits to mapped fields are simply replaced unless the field is left out of the mapping.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/identity-connect.md
+  commit: 0bf9c56119abcff312c6b7e1ff539dfc2c6d8ee0
+  blob: 2be077d1593291f313b5857f12b7dc33afc3c7cc
+verified_release: Winter '27
+feature_status: deprecated
+certs:
+- kt:identity-and-access-management-architect-certification
+concepts:
+- kt:identity-connect
+difficulty: 2
+created: '2026-11-14'
+status: active

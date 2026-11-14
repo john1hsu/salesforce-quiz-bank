@@ -1,0 +1,19 @@
+id: sf-000743
+product_area: data-model
+true_statement: During a save, custom validation rules run after before-save Apex triggers and before duplicate rules are evaluated.
+false_statement: During a save, custom validation rules run before before-save Apex triggers and after duplicate rules are evaluated.
+explanation: Validation sees the values that before-save automation set, and duplicate rules come afterwards. The false version reverses both neighbours in the order of execution.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/validation-rules.md
+  commit: 0bf9c56119abcff312c6b7e1ff539dfc2c6d8ee0
+  blob: 23280b42bb6e8cfa8d7a39be933fc6887ea3882d
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:validation-rules
+- kt:order-of-execution
+- kt:apex-triggers
+difficulty: 2
+created: '2026-11-14'
+status: active

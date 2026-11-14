@@ -1,0 +1,17 @@
+id: sf-000689
+product_area: development
+true_statement: An Apex continuation can wait at most 120 seconds, and timeouts set on its individual HttpRequest objects are ignored.
+false_statement: An Apex continuation can wait at most 60 seconds, and timeouts set on its individual HttpRequest objects are ignored.
+explanation: The continuation's own timeout governs and tops out at 120 seconds; per-request timeouts don't apply. Sixty seconds understates the ceiling.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/apex-continuations.md
+  commit: 0bf9c56119abcff312c6b7e1ff539dfc2c6d8ee0
+  blob: 0327e159ebc3f937d4986ac56df820334a31c7a7
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:apex-continuations
+difficulty: 2
+created: '2026-11-14'
+status: active

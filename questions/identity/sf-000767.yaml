@@ -1,0 +1,18 @@
+id: sf-000767
+product_area: identity
+true_statement: Salesforce's SCIM API supports PATCH and filtering, but not bulk operations or sorting.
+false_statement: Salesforce's SCIM API supports PATCH, filtering and bulk operations through /Bulk, but not sorting.
+explanation: The service provider configuration advertises PATCH, filters and password changes, while bulk, sorting and ETags are unsupported. The RFC's /Bulk endpoint isn't available.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/salesforce-scim.md
+  commit: 0bf9c56119abcff312c6b7e1ff539dfc2c6d8ee0
+  blob: 632b8fc33b3c3be87bd5f275a1b62277ca150d6e
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:salesforce-scim
+- kt:scim
+difficulty: 2
+created: '2026-11-14'
+status: active

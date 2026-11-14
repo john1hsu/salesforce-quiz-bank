@@ -1,0 +1,18 @@
+id: sf-000690
+product_area: development
+true_statement: A Lightning web component imports a continuation-enabled Apex method from the @salesforce/apexContinuation module rather than @salesforce/apex.
+false_statement: A Lightning web component imports a continuation-enabled Apex method from the @salesforce/apex module rather than @salesforce/apexContinuation.
+explanation: Continuation methods have their own import module, @salesforce/apexContinuation; the regular @salesforce/apex module is for ordinary Apex calls. The false version swaps the two.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/apex-continuations.md
+  commit: 0bf9c56119abcff312c6b7e1ff539dfc2c6d8ee0
+  blob: 0327e159ebc3f937d4986ac56df820334a31c7a7
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:apex-continuations
+- kt:lightning-web-components
+difficulty: 2
+created: '2026-11-14'
+status: active

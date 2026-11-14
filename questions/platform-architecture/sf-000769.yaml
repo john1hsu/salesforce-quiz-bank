@@ -1,0 +1,21 @@
+id: sf-000769
+product_area: platform-architecture
+true_statement: Inside an Apex trigger, a SOQL for loop adds no batching benefit, because triggers already receive their records in batches.
+false_statement: Inside an Apex trigger, a SOQL for loop is needed to split Trigger.new into batches, because triggers receive all records at once.
+explanation: Trailhead points out that triggers are already batched by the platform, so the SOQL for loop's memory batching gains nothing there. It still helps for large result sets elsewhere.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/bulkification.md
+  commit: 0bf9c56119abcff312c6b7e1ff539dfc2c6d8ee0
+  blob: 3edbdf6e198217f668ea3e51df90003562f424a9
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:platform-developer-certification
+concepts:
+- kt:bulkification
+- kt:apex-triggers
+- kt:soql
+difficulty: 2
+created: '2026-11-14'
+status: active

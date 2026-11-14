@@ -1,0 +1,18 @@
+id: sf-000762
+product_area: devops-and-alm
+true_statement: Each scratch org gets 500 MB of data storage and 50 MB of file storage, however many orgs its Dev Hub may create.
+false_statement: Each scratch org gets 1 GB of data storage and 1 GB of file storage, however many orgs its Dev Hub may create.
+explanation: 'Scratch orgs are small: 500 MB for data and 50 MB for files, separate from the hub''s org-count quotas. The false version inflates both.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/scratch-org-allocations.md
+  commit: 0bf9c56119abcff312c6b7e1ff539dfc2c6d8ee0
+  blob: c5c64b48c370788ce8bfc14813d9712b7b0b848b
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:scratch-org-allocations
+- kt:data-and-file-storage-allocations
+difficulty: 2
+created: '2026-11-14'
+status: active

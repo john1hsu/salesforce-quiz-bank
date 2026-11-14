@@ -1,0 +1,17 @@
+id: sf-000768
+product_area: identity
+true_statement: Filtered and list responses from the Salesforce SCIM API return at most 200 results.
+false_statement: Filtered and list responses from the Salesforce SCIM API return at most 1,000 results.
+explanation: Salesforce caps SCIM list and filter results at 200, including a query for all entitlements, so specific queries are needed for the rest.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/salesforce-scim.md
+  commit: 0bf9c56119abcff312c6b7e1ff539dfc2c6d8ee0
+  blob: 632b8fc33b3c3be87bd5f275a1b62277ca150d6e
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:salesforce-scim
+difficulty: 2
+created: '2026-11-14'
+status: active

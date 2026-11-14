@@ -1,0 +1,20 @@
+id: sf-000738
+product_area: data-model
+true_statement: Trailhead describes data governance as setting quality policies and accountability, and data stewardship as monitoring and coordinating fixes against them.
+false_statement: Trailhead describes data stewardship as setting quality policies and accountability, and data governance as monitoring and coordinating fixes against them.
+explanation: Governance defines the standards and who is accountable; stewardship carries them out by monitoring, investigating and fixing. The false version swaps the two roles.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/data-quality.md
+  commit: 0bf9c56119abcff312c6b7e1ff539dfc2c6d8ee0
+  blob: 403075235c22dd0147e33be2f61d6c743e0ee184
+verified_release: Winter '27
+feature_status: concept
+certs:
+- kt:platform-data-architect-certification
+concepts:
+- kt:data-quality
+- kt:data-governance
+difficulty: 2
+created: '2026-11-14'
+status: active

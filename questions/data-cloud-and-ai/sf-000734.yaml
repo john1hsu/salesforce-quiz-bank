@@ -1,0 +1,21 @@
+id: sf-000734
+product_area: data-cloud-and-ai
+true_statement: A data space filter on a data lake object only limits what that data space can see; the stream still ingests and counts every record.
+false_statement: A data space filter on a data lake object stops non-matching records from being ingested, so the stream counts only matching records.
+explanation: Filters are applied after ingestion, so the DLO and the stream's Total Records include everything brought in. Salesforce CRM records can't currently be pre-filtered before ingestion either.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/data-spaces.md
+  commit: 0bf9c56119abcff312c6b7e1ff539dfc2c6d8ee0
+  blob: 91b2da31f4bfa7934dced22c84f292f65365a72b
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:data-cloud-consultant-certification
+concepts:
+- kt:data-spaces
+- kt:data-lake-objects
+- kt:data-streams
+difficulty: 3
+created: '2026-11-14'
+status: active

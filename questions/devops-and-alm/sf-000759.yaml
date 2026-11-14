@@ -1,0 +1,18 @@
+id: sf-000759
+product_area: devops-and-alm
+true_statement: Salesforce processes only one deployment per org at a time, so a long deployment blocks other releases to that org.
+false_statement: Salesforce processes up to five deployments per org in parallel, so a long deployment doesn't block other releases to that org.
+explanation: Deployments to an org are handled one at a time, which is part of why pre-validating shortens the blocking window. Parallel deployments to one org aren't supported.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/deployment-validation-and-quick-deploy.md
+  commit: 0bf9c56119abcff312c6b7e1ff539dfc2c6d8ee0
+  blob: b4c5acb26eec938430197721a6e6d2178c1dd228
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:deployment-validation-and-quick-deploy
+- kt:metadata-api
+difficulty: 2
+created: '2026-11-14'
+status: active

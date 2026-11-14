@@ -1,0 +1,20 @@
+id: sf-000735
+product_area: data-cloud-and-ai
+true_statement: Only standard data bundles, such as the Salesforce CRM or Marketing Cloud Engagement bundles, can be deployed to a non-default data space.
+false_statement: Standard data bundles, such as the Salesforce CRM or Marketing Cloud Engagement bundles, can be deployed only to the default data space.
+explanation: Standard bundles are exactly what can go into a non-default data space. The false version restricts them to the default data space instead.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/data-spaces.md
+  commit: 0bf9c56119abcff312c6b7e1ff539dfc2c6d8ee0
+  blob: 91b2da31f4bfa7934dced22c84f292f65365a72b
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:data-cloud-consultant-certification
+concepts:
+- kt:data-spaces
+- kt:data-streams
+difficulty: 2
+created: '2026-11-14'
+status: active

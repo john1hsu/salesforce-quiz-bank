@@ -1,0 +1,18 @@
+id: sf-000725
+product_area: architecture-practice
+true_statement: The Well-Architected Reliability pillar's example pairs a 99.9% platform SLA with a 99.5% solution SLO, leaving an error budget.
+false_statement: The Well-Architected Reliability pillar's example pairs a 99.5% platform SLA with a 99.9% solution SLO, leaving an error budget.
+explanation: A solution's objective should sit below the platform's guarantee so there's room for its own failures. The false version sets the solution target above the platform SLA, which leaves no budget.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/non-functional-requirements.md
+  commit: 0bf9c56119abcff312c6b7e1ff539dfc2c6d8ee0
+  blob: 82fe18d1fc464a0a280a3f014a4cca4c8ab8c118
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:non-functional-requirements
+- kt:well-architected-framework
+difficulty: 2
+created: '2026-11-14'
+status: active

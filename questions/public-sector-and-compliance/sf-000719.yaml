@@ -1,0 +1,17 @@
+id: sf-000719
+product_area: public-sector-and-compliance
+true_statement: The SP 800-53B privacy baseline applies regardless of a system's impact level, instead of coming in low, moderate and high versions.
+false_statement: The SP 800-53B privacy baseline comes in low, moderate and high versions, chosen by the system's FIPS 199 impact level.
+explanation: Only the security baselines are split by impact level. The single privacy baseline is driven by the processing of personal information and tailored from a privacy risk assessment.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/nist-sp-800-53b.md
+  commit: 0bf9c56119abcff312c6b7e1ff539dfc2c6d8ee0
+  blob: fb7f65d8adbd75193afb35f2b4910a991c650336
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:nist-sp-800-53b
+difficulty: 2
+created: '2026-11-14'
+status: active

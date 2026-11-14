@@ -1,0 +1,20 @@
+id: sf-000714
+product_area: platform-architecture
+true_statement: By default a Salesforce index leaves out rows where the field is empty, so a filter like Field__c = null forces a full scan.
+false_statement: By default a Salesforce index keeps rows where the field is empty, so a filter like Field__c = null can be served from the index.
+explanation: Empty values are omitted from indexes unless Support enables null rows on a custom index, so null filters scan the table. The false version describes the opt-in behaviour as the default.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/custom-indexes.md
+  commit: 0bf9c56119abcff312c6b7e1ff539dfc2c6d8ee0
+  blob: ac15df44223bc6dbf03ec731e1411f7c9b5437b9
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:platform-data-architect-certification
+concepts:
+- kt:custom-indexes
+- kt:query-optimizer-selectivity
+difficulty: 3
+created: '2026-11-14'
+status: active

@@ -1,0 +1,18 @@
+id: sf-000724
+product_area: architecture-practice
+true_statement: The product quality model in ISO/IEC 25010:2023 has nine characteristics, each split into subcharacteristics.
+false_statement: The product quality model in ISO/IEC 25010:2023 has six characteristics, each split into subcharacteristics.
+explanation: The 2023 edition, which replaced the withdrawn 2011 version, defines nine product quality characteristics. Six understates the model.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/non-functional-requirements.md
+  commit: 0bf9c56119abcff312c6b7e1ff539dfc2c6d8ee0
+  blob: 82fe18d1fc464a0a280a3f014a4cca4c8ab8c118
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:non-functional-requirements
+- kt:iso-iec-25010
+difficulty: 2
+created: '2026-11-14'
+status: active

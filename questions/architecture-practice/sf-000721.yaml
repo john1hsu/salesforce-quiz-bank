@@ -1,0 +1,18 @@
+id: sf-000721
+product_area: architecture-practice
+true_statement: TOGAF stratification sorts top-level capabilities into strategic, core and supporting tiers, with the core tier being customer-facing.
+false_statement: TOGAF stratification sorts top-level capabilities into strategic, core and supporting tiers, with the supporting tier being customer-facing.
+explanation: Strategic capabilities set direction, core ones face the customer, and supporting ones work behind the scenes. The false version gives the customer-facing role to the wrong tier.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/capability-maps.md
+  commit: 0bf9c56119abcff312c6b7e1ff539dfc2c6d8ee0
+  blob: ee56538640b18c73cc502070f030e422652b70f7
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:capability-maps
+- kt:business-architecture
+difficulty: 2
+created: '2026-11-14'
+status: active

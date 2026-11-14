@@ -1,0 +1,18 @@
+id: sf-000774
+product_area: platform-architecture
+true_statement: Currency fields in multicurrency orgs can never receive a custom index, even through a Salesforce Support request.
+false_statement: Currency fields in multicurrency orgs can receive a custom index, but only through a Salesforce Support request.
+explanation: The large data volumes guide lists multicurrency currency fields among the types that can't be indexed at all. Support can add indexes on many fields, but not these.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/custom-index-limits.md
+  commit: 0bf9c56119abcff312c6b7e1ff539dfc2c6d8ee0
+  blob: 575d2919d8b4ae44d30d3c5ae5e9b09ada42ffec
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:custom-index-limits
+- kt:large-data-volumes
+difficulty: 3
+created: '2026-11-14'
+status: active

@@ -1,0 +1,17 @@
+id: sf-000722
+product_area: architecture-practice
+true_statement: In TOGAF's maturity heat-map example, purple marks a capability that is wanted but doesn't exist yet, and red one that is two or more levels short.
+false_statement: In TOGAF's maturity heat-map example, red marks a capability that is wanted but doesn't exist yet, and purple one that is two or more levels short.
+explanation: The example uses green for at target, yellow for one level short, red for two or more short and purple for a missing capability. The false version swaps red and purple.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/capability-maps.md
+  commit: 0bf9c56119abcff312c6b7e1ff539dfc2c6d8ee0
+  blob: ee56538640b18c73cc502070f030e422652b70f7
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:capability-maps
+difficulty: 2
+created: '2026-11-14'
+status: active

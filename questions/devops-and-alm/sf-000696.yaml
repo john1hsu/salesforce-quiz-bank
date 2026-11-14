@@ -1,0 +1,18 @@
+id: sf-000696
+product_area: devops-and-alm
+true_statement: Partial Copy sampling keeps children with their parents only on master-detail and required lookups; an object linked by an ordinary lookup is sampled on its own.
+false_statement: Partial Copy sampling keeps children with their parents on every lookup and master-detail relationship, so no copied row points at a missing parent.
+explanation: Only master-detail and required lookup links are enforced during sampling. Objects joined by plain lookups are sampled as top-level objects, so their rows can reference parents that weren't copied.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/sandbox-templates.md
+  commit: 0bf9c56119abcff312c6b7e1ff539dfc2c6d8ee0
+  blob: 3ac049fa16cb6524a75e43ce3a4ad58804a82048
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:sandbox-templates
+- kt:lookup-vs-master-detail
+difficulty: 3
+created: '2026-11-14'
+status: active

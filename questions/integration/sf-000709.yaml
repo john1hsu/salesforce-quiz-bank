@@ -1,0 +1,21 @@
+id: sf-000709
+product_area: integration
+true_statement: An Apex callout whose endpoint is defined by a named credential needs no separate entry in Remote Site Settings.
+false_statement: An Apex callout whose endpoint is defined by a named credential also needs a matching entry in Remote Site Settings.
+explanation: A named credential carries its own URL and authentication, so the platform doesn't require a remote site entry for it. Remote site entries are needed for endpoints Apex calls directly.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/remote-site-settings.md
+  commit: 0bf9c56119abcff312c6b7e1ff539dfc2c6d8ee0
+  blob: 75441c96155e900a95d2243c9d180ad593bccc4e
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:integration-architect-certification
+concepts:
+- kt:remote-site-settings
+- kt:named-credentials
+- kt:apex-callouts
+difficulty: 1
+created: '2026-11-14'
+status: active
