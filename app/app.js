@@ -1,7 +1,7 @@
 /* Salesforce true or false, Reels-style.
    One question per full-screen slide. Swipe right = true, left = false, up = next.
-   You can't skip: the next question only appears once you've answered this one,
-   though you can always swipe back up to review. Double-tap saves a question. The feed never ends: questions are drawn completely
+   One way only: the next question appears once you've answered this one, and
+   the question you leave is removed, so you can't skip ahead or go back. Double-tap saves a question. The feed never ends: questions are drawn completely
    at random (no weighting), each one once before any repeats. Everything stays on this device. */
 (() => {
   "use strict";
@@ -209,6 +209,24 @@
       scheduleNudge();
     }
   }, { root: el.feed, threshold: [0.6] });
+
+  // Once you've moved on, drop the questions above so you can't scroll back to them.
+  let settleTimer = 0;
+  function dropPassed() {
+    clearTimeout(settleTimer);
+    const h = el.feed.clientHeight || 1;
+    const idx = Math.round(el.feed.scrollTop / h);
+    if (idx <= 0 || !slides[idx] || Math.abs(el.feed.scrollTop - idx * h) > 2) return; // still moving
+    const gone = slides.splice(0, idx);
+    for (const s of gone) { observer.unobserve(s.el); s.el.remove(); }
+    current = 0;
+    el.feed.scrollTop = 0;
+  }
+  el.feed.addEventListener("scroll", () => {
+    clearTimeout(settleTimer);
+    settleTimer = setTimeout(dropPassed, 200);
+  }, { passive: true });
+  if ("onscrollend" in window) el.feed.addEventListener("scrollend", dropPassed);
 
   function goTo(i) {
     const item = slides[Math.max(0, Math.min(i, slides.length - 1))];

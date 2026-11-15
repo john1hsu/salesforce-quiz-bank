@@ -12,15 +12,14 @@ The app in `app/` is published with GitHub Pages. It works like Instagram Reels:
 | --- | --- |
 | Swipe right | Answer **true** |
 | Swipe left | Answer **false** |
-| Swipe up | Next question (only after you've answered; you can't skip) |
-| Swipe down | Back to questions you've already answered |
+| Swipe up | Next question (only after you've answered) |
 | Double-tap | Save the question (or tap the bookmark on the right) |
 
 There are no answer or next buttons. New users get quiet hints that fade away once they've learned the gestures: a gentle sway if they hesitate and a small up-chevron after answering. Screen readers still get hidden answer and next buttons.
 
 The screen is kept minimal: the question, a filter chip, your streak of correct answers in a row, and three icons on the right (save, share, and the source article once you've answered). After each answer the screen flashes green or red. If you were shown the false statement, it turns into the true one in place with the changed words highlighted. One sentence of explanation appears under it; tap it to read the rest. Tapping the source icon also shows which release the question was verified for. Tap the filter chip to switch to your saved questions, narrow by area or certification, and see today's score and your best streak.
 
-Questions are drawn completely at random with no weighting; each one shows once before any repeats. Scores and saved questions stay on your phone; "Copy scores" exports them. On a computer, use ← / → to answer, ↑ / ↓ to move, and S to save. Add it to your home screen to use it offline.
+There's no skipping and no going back: you answer each question before the next appears, and you can't scroll back to earlier ones. Questions are drawn completely at random with no weighting; each one shows once before any repeats. Scores and saved questions stay on your phone; "Copy scores" exports them. On a computer, use ← / → to answer, ↓ or Space for the next question, and S to save. Add it to your home screen to use it offline.
 
 ## Practice in the terminal
 
