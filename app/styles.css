@@ -59,7 +59,7 @@ a { color: var(--accent); }
   display: flex;
   flex-direction: column;
   gap: 14px;
-  padding: calc(76px + env(safe-area-inset-top)) calc(var(--rail-w) + 12px) calc(20px + env(safe-area-inset-bottom)) 18px;
+  padding: calc(76px + env(safe-area-inset-top)) calc(var(--rail-w) + 12px) calc(48px + env(safe-area-inset-bottom)) 30px;
   background:
     radial-gradient(120% 70% at 85% 0%, hsl(calc(var(--h) + 30) 70% 38% / 0.55), transparent 60%),
     radial-gradient(90% 60% at 0% 100%, hsl(var(--h) 75% 30% / 0.6), transparent 65%),
@@ -108,7 +108,6 @@ a { color: var(--accent); }
 .slide.answered .q { flex: 0 0 auto; cursor: default; }
 .slide.answered .q-text { font-size: 1.08rem; color: var(--muted); }
 .slide.answered .stamp { display: none; }
-.slide.answered .after-row { margin-top: auto; }
 
 .reveal {
   position: relative; z-index: 1;
@@ -131,24 +130,52 @@ a { color: var(--accent); }
 .explanation { margin: 0; }
 .meta { margin: 0; color: var(--muted); font-size: 0.88rem; }
 
-/* Bottom controls */
-.answer-row, .after-row { position: relative; z-index: 1; display: grid; gap: 10px; }
-.answer-row { grid-template-columns: 1fr 1fr; }
+/* Buttons (sheet and empty state) */
 .btn {
   min-height: 52px; border-radius: 14px; border: 1.5px solid transparent;
   font-weight: 700; font-size: 1.05rem; cursor: pointer; padding: 0 16px;
 }
-.btn-false, .btn-true, .btn-next { background: var(--glass); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); }
-.btn-false { color: var(--false); border-color: rgba(240, 113, 103, 0.7); }
-.btn-true { color: var(--true); border-color: rgba(76, 195, 138, 0.7); }
-.btn-next { border-color: var(--glass-line); }
 .btn-primary { background: var(--accent); color: var(--accent-ink); }
 .btn-primary:disabled { opacity: 0.45; cursor: not-allowed; }
 .btn-quiet { background: transparent; border-color: var(--line); }
 
+/* ---------- subtle gesture cues ----------
+   They show only while you're learning (the .learn-* classes on .stage) and fade out after. */
+.edge {
+  position: absolute; z-index: 1; top: 50%; pointer-events: none;
+  writing-mode: vertical-rl;
+  font-size: 0.72rem; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase;
+  transition: opacity 0.4s ease;
+}
+.edge-false { left: 8px; color: var(--false); transform: translateY(-50%) rotate(180deg); opacity: max(calc(var(--lean) * -1), 0); }
+.edge-true { right: 8px; color: var(--true); transform: translateY(-50%); opacity: max(var(--lean), 0); }
+.learn-answer .slide:not(.answered) .edge-false { opacity: max(0.4, calc(var(--lean) * -1)); }
+.learn-answer .slide:not(.answered) .edge-true { opacity: max(0.4, var(--lean)); }
+.slide.answered .edge { display: none; }
+
+.next-cue {
+  position: absolute; z-index: 1; left: 50%; bottom: calc(10px + env(safe-area-inset-bottom));
+  margin-left: -16px; width: 32px; height: 32px; pointer-events: none; opacity: 0;
+}
+.next-cue svg { width: 100%; height: 100%; fill: none; stroke: var(--ink); stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.5)); }
+.learn-next .slide.answered .next-cue { animation: bob 1.4s ease-in-out 0.6s 4 both; }
+@keyframes bob {
+  0% { opacity: 0; transform: translateY(6px); }
+  40% { opacity: 0.7; transform: translateY(-4px); }
+  100% { opacity: 0; transform: translateY(-10px); }
+}
+
+/* A gentle sway when a new user hesitates on a question */
+.q.nudge { animation: sway 1.8s ease-in-out; }
+@keyframes sway {
+  0%, 100% { transform: none; }
+  25% { transform: translateX(16px) rotate(1.5deg); }
+  60% { transform: translateX(-16px) rotate(-1.5deg); }
+}
+
 /* Right-hand action rail, like Reels */
 .rail {
-  position: absolute; z-index: 2; right: 8px; bottom: calc(20px + env(safe-area-inset-bottom));
+  position: absolute; z-index: 2; right: 8px; bottom: calc(40px + env(safe-area-inset-bottom));
   width: var(--rail-w); display: flex; flex-direction: column; align-items: center; gap: 16px;
 }
 .rail-btn {
@@ -179,7 +206,7 @@ a { color: var(--accent); }
 }
 
 /* Empty feed (e.g. nothing saved yet) */
-.slide.empty { justify-content: center; text-align: center; padding-right: 18px; }
+.slide.empty { justify-content: center; text-align: center; padding-right: 30px; }
 .slide.empty h2 { margin: 0; font-size: 1.4rem; }
 .slide.empty p { margin: 0; color: var(--muted); }
 .slide.empty .btn { align-self: center; margin-top: 8px; }
@@ -278,7 +305,7 @@ select {
 .sheet-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
 
 @media (prefers-reduced-motion: reduce) {
-  .reveal, .burst, .sheet[open], .g-right, .g-left, .g-up, .act-save.pop svg, .streak.bump { animation: none; }
+  .reveal, .burst, .sheet[open], .q.nudge, .learn-next .slide.answered .next-cue, .g-right, .g-left, .g-up, .act-save.pop svg, .streak.bump { animation: none; }
   .q.settle, .goal span, .q-text, .toast { transition: none; }
   .burst { opacity: 0; }
 }

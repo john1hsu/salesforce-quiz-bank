@@ -121,12 +121,18 @@
         <p class="meta"></p>
       </div>
 
-      <div class="answer-row">
-        <button type="button" class="btn btn-false" data-answer="false">← False</button>
-        <button type="button" class="btn btn-true" data-answer="true">True →</button>
+      <!-- Subtle gesture cues: edge labels that fade in while you're learning, and a chevron after answering -->
+      <span class="edge edge-false" aria-hidden="true">False</span>
+      <span class="edge edge-true" aria-hidden="true">True</span>
+      <div class="next-cue" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path d="M6 15l6-6 6 6"/></svg>
       </div>
-      <div class="after-row" hidden>
-        <button type="button" class="btn btn-next">Next question <span aria-hidden="true">↓</span></button>
+
+      <!-- Screen-reader-only controls, so the feed still works without swiping -->
+      <div class="sr-only sr-controls">
+        <button type="button" class="sr-answer" data-answer="false">Answer false</button>
+        <button type="button" class="sr-answer" data-answer="true">Answer true</button>
+        <button type="button" class="btn-next" hidden>Next question</button>
       </div>
 
       <nav class="rail" aria-label="Question actions">
