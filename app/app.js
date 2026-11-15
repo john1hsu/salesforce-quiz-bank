@@ -273,23 +273,10 @@
     const card = node.querySelector(".q");
     card.style.transform = "";
 
-    // Right or wrong is shown by the green or red flash; the words are for screen readers.
+    // The icon and flash show right or wrong; the words are for screen readers.
     node.querySelector(".verdict").textContent = `${right ? "Correct." : "Not quite."} The statement was ${showsTrue ? "true" : "false"}.`;
-    if (!showsTrue) {
-      // Turn the false statement into the true one in place, highlighting what changed.
-      const text = node.querySelector(".q-text");
-      renderDiff(text, q.f, q.t);
-      if (!reduceMotion()) { text.classList.remove("swap"); void text.offsetWidth; text.classList.add("swap"); }
-    }
-    const expl = node.querySelector(".explanation");
-    const sentences = splitSentences(q.x);
-    expl.textContent = sentences[0];
-    if (sentences.length > 1) {
-      expl.classList.add("more");
-      expl.setAttribute("role", "button");
-      expl.setAttribute("aria-expanded", "false");
-      expl.tabIndex = 0;
-    }
+    // The results screen is just a right/wrong icon (from the slide's class) and the explanation.
+    node.querySelector(".explanation").textContent = q.x;
     node.querySelector(".act-source").title = verifiedText(q);
     node.querySelector(".reveal").hidden = false;
     node.querySelector(".btn-next").hidden = false;
@@ -310,39 +297,7 @@
 
   const verifiedText = (q) => `Verified for ${q.release}${q.featureStatus && q.featureStatus !== "current" ? ` (${q.featureStatus})` : ""}`;
 
-  // "One. Two." -> ["One.", "Two."]
-  function splitSentences(text) {
-    return text.split(/(?<=[.!?])\s+(?=[A-Z0-9"'(])/).filter(Boolean);
-  }
 
-  // Word-level diff: render `to` into `target`, wrapping words not shared with `from` in <mark>.
-  function renderDiff(target, from, to) {
-    const a = from.split(/\s+/), b = to.split(/\s+/);
-    const norm = (w) => w.toLowerCase().replace(/[^\p{L}\p{N}%$'-]/gu, "");
-    // Longest common subsequence table
-    const L = Array.from({ length: a.length + 1 }, () => new Uint16Array(b.length + 1));
-    for (let i = a.length - 1; i >= 0; i--)
-      for (let j = b.length - 1; j >= 0; j--)
-        L[i][j] = norm(a[i]) === norm(b[j]) ? L[i + 1][j + 1] + 1 : Math.max(L[i + 1][j], L[i][j + 1]);
-    const changed = new Array(b.length).fill(true);
-    for (let i = 0, j = 0; i < a.length && j < b.length;) {
-      if (norm(a[i]) === norm(b[j])) { changed[j] = false; i++; j++; }
-      else if (L[i + 1][j] >= L[i][j + 1]) i++;
-      else j++;
-    }
-    target.replaceChildren();
-    let run = null;
-    b.forEach((word, j) => {
-      const gap = j ? " " : "";
-      if (changed[j]) {
-        if (!run) { if (gap) target.append(gap); run = document.createElement("mark"); target.append(run); run.append(word); }
-        else run.append(gap + word);
-      } else {
-        run = null;
-        target.append(gap + word);
-      }
-    });
-  }
 
   function record(right) {
     const day = todayKey();
@@ -493,8 +448,6 @@
     const slide = e.target.closest(".slide");
     const item = slide && slide._item;
     if (!item) return;
-    const more = e.target.closest(".explanation.more");
-    if (more) { toggleExplanation(item, more); return; }
     if (e.target.closest(".act-source")) toast(verifiedText(item.q));
     const ans = e.target.closest("[data-answer]");
     if (ans) { answer(item, ans.dataset.answer === "true"); return; }
@@ -503,22 +456,10 @@
     if (e.target.closest(".act-share")) { share(item); }
   });
 
-  function toggleExplanation(item, expl) {
-    const open = !expl.classList.contains("expanded");
-    expl.classList.toggle("expanded", open);
-    expl.setAttribute("aria-expanded", String(open));
-    expl.textContent = open ? item.q.x : splitSentences(item.q.x)[0];
-  }
-
   // Keyboard: ←/→ answer, ↑/↓ (or j/k, space) move, s saves
   document.addEventListener("keydown", (e) => {
     if (el.sheet.open || !el.coach.hidden || e.altKey || e.ctrlKey || e.metaKey) return;
     if (e.target.closest && e.target.closest("select, input")) return;
-    if (e.key === "Enter" && e.target.classList && e.target.classList.contains("more")) {
-      const slide = e.target.closest(".slide");
-      if (slide && slide._item) { e.preventDefault(); toggleExplanation(slide._item, e.target); }
-      return;
-    }
     const item = slides[current];
     if (!item) return;
     const k = e.key;

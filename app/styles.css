@@ -99,29 +99,31 @@ a { color: var(--accent); }
 .stamp-true { right: 0; color: var(--true); transform: rotate(10deg); opacity: clamp(0, calc(var(--lean) * 1.6 - 0.2), 1); }
 .stamp-false { left: 0; color: var(--false); transform: rotate(-10deg); opacity: clamp(0, calc(var(--lean) * -1.6 - 0.2), 1); }
 
-/* After answering: the statement becomes the true one in place (changed words
-   highlighted), with one sentence of explanation under it, straight on the background. */
+/* After answering: the statement goes away and only a right/wrong icon and the explanation remain. */
 .slide.answered { justify-content: center; }
-.slide.answered .q { flex: 0 0 auto; cursor: default; }
-.slide.answered .q-text { font-size: clamp(1.18rem, 5vw, 1.5rem); }
-.slide.answered .stamp { display: none; }
-.q-text mark {
-  color: inherit; border-radius: 3px; padding: 0 1px;
-  background: linear-gradient(transparent 58%, rgba(76, 195, 138, 0.55) 58%);
-}
-.q-text.swap { animation: swap 0.35s ease-out; }
-@keyframes swap { from { opacity: 0; filter: blur(3px); } }
+.slide.answered .q { display: none; }
 
 .reveal {
   position: relative; z-index: 1;
   flex: 0 1 auto; min-height: 0; overflow-y: auto;
-  animation: rise 0.3s cubic-bezier(.2, .9, .3, 1);
+  display: flex; flex-direction: column; align-items: flex-start; gap: 18px;
   user-select: text; -webkit-user-select: text;
 }
-@keyframes rise { from { transform: translateY(14px); opacity: 0; } }
-.explanation { margin: 0; color: var(--muted); text-shadow: 0 1px 8px rgba(0, 0, 0, 0.45); }
-.explanation.more { cursor: pointer; }
-.explanation.more:not(.expanded)::after { content: " …"; color: var(--ink); font-weight: 700; }
+.result-icon {
+  display: grid; place-items: center; width: 64px; height: 64px; border-radius: 50%;
+  border: 2.5px solid currentColor; animation: pop-in 0.38s cubic-bezier(.2, .9, .3, 1.4);
+}
+.result-icon svg { width: 34px; height: 34px; fill: none; stroke: currentColor; stroke-width: 2.8; stroke-linecap: round; stroke-linejoin: round; }
+.slide.right .result-icon { color: var(--true); background: rgba(76, 195, 138, 0.14); }
+.slide.wrong .result-icon { color: var(--false); background: rgba(240, 113, 103, 0.14); }
+.slide.right .icon-wrong, .slide.wrong .icon-right { display: none; }
+@keyframes pop-in { from { transform: scale(0.4); opacity: 0; } }
+.explanation {
+  margin: 0; font-size: clamp(1.12rem, 4.8vw, 1.32rem); line-height: 1.5;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.45);
+  animation: rise 0.32s cubic-bezier(.2, .9, .3, 1) 0.06s both;
+}
+@keyframes rise { from { transform: translateY(12px); opacity: 0; } }
 
 /* Buttons (sheet and empty state) */
 .btn {
@@ -283,7 +285,7 @@ select {
 
 @media (prefers-reduced-motion: reduce) {
   .slide.right .flash, .slide.wrong .flash { opacity: 0.12; } /* a still tint instead of the flash */
-  .q-text.swap, .reveal, .burst, .sheet[open], .q.nudge, .learn-next .slide.answered .next-cue, .g-right, .g-left, .g-up, .act-save.pop svg, .streak.bump { animation: none; }
+  .result-icon, .explanation, .burst, .sheet[open], .q.nudge, .learn-next .slide.answered .next-cue, .g-right, .g-left, .g-up, .act-save.pop svg, .streak.bump { animation: none; }
   .q.settle, .q-text, .toast { transition: none; }
   .burst { opacity: 0; }
 }
