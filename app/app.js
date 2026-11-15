@@ -19,7 +19,6 @@
   const AHEAD = 3;             // keep at least this many slides queued below the current one
   const DOUBLE_TAP_MS = 320;
   // Gesture cues fade away once you've shown you know the gestures.
-  const LEARN_ANSWERS = 8;     // edge labels show until you've answered this many
   const LEARN_NEXTS = 3;       // the chevron shows until you've moved on after answering this many times
   const NUDGE_ANSWERS = 3;     // a hesitant new user gets a gentle sway until this many answers
   const NUDGE_DELAY = 4500;
@@ -226,7 +225,6 @@
   }
   function applyLearn() {
     const stage = document.getElementById("app");
-    stage.classList.toggle("learn-answer", learn.answers < LEARN_ANSWERS);
     stage.classList.toggle("learn-next", learn.nexts < LEARN_NEXTS);
   }
 

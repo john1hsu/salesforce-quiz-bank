@@ -59,7 +59,7 @@ a { color: var(--accent); }
   display: flex;
   flex-direction: column;
   gap: 14px;
-  padding: calc(76px + env(safe-area-inset-top)) calc(var(--rail-w) + 12px) calc(48px + env(safe-area-inset-bottom)) 30px;
+  padding: calc(76px + env(safe-area-inset-top)) calc(var(--rail-w) + 12px) calc(48px + env(safe-area-inset-bottom)) 20px;
   background:
     radial-gradient(120% 70% at 85% 0%, hsl(calc(var(--h) + 30) 70% 38% / 0.55), transparent 60%),
     radial-gradient(90% 60% at 0% 100%, hsl(var(--h) 75% 30% / 0.6), transparent 65%),
@@ -140,19 +140,7 @@ a { color: var(--accent); }
 .btn-quiet { background: transparent; border-color: var(--line); }
 
 /* ---------- subtle gesture cues ----------
-   They show only while you're learning (the .learn-* classes on .stage) and fade out after. */
-.edge {
-  position: absolute; z-index: 1; top: 50%; pointer-events: none;
-  writing-mode: vertical-rl;
-  font-size: 0.72rem; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase;
-  transition: opacity 0.4s ease;
-}
-.edge-false { left: 8px; color: var(--false); transform: translateY(-50%) rotate(180deg); opacity: max(calc(var(--lean) * -1), 0); }
-.edge-true { right: 8px; color: var(--true); transform: translateY(-50%); opacity: max(var(--lean), 0); }
-.learn-answer .slide:not(.answered) .edge-false { opacity: max(0.4, calc(var(--lean) * -1)); }
-.learn-answer .slide:not(.answered) .edge-true { opacity: max(0.4, var(--lean)); }
-.slide.answered .edge { display: none; }
-
+   They show only while you're learning (the .learn-next class on .stage) and fade out after. */
 .next-cue {
   position: absolute; z-index: 1; left: 50%; bottom: calc(10px + env(safe-area-inset-bottom));
   margin-left: -16px; width: 32px; height: 32px; pointer-events: none; opacity: 0;
@@ -206,7 +194,7 @@ a { color: var(--accent); }
 }
 
 /* Empty feed (e.g. nothing saved yet) */
-.slide.empty { justify-content: center; text-align: center; padding-right: 30px; }
+.slide.empty { justify-content: center; text-align: center; padding-right: 20px; }
 .slide.empty h2 { margin: 0; font-size: 1.4rem; }
 .slide.empty p { margin: 0; color: var(--muted); }
 .slide.empty .btn { align-self: center; margin-top: 8px; }
