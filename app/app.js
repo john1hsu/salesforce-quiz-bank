@@ -11,12 +11,18 @@
     saved: "sfqb.saved.v1",
     prefs: "sfqb.prefs.v1",
     coach: "sfqb.coach.v1",
+    learn: "sfqb.learn.v1",     // how many times you've answered and moved on, to fade the gesture cues
   };
   const SWIPE_DISTANCE = 90;   // px past which a release counts as an answer
   const SWIPE_VELOCITY = 0.55; // px/ms flick speed that also counts
   const BATCH = 5;             // slides added at a time
   const AHEAD = 3;             // keep at least this many slides queued below the current one
   const DOUBLE_TAP_MS = 320;
+  // Gesture cues fade away once you've shown you know the gestures.
+  const LEARN_ANSWERS = 8;     // edge labels show until you've answered this many
+  const LEARN_NEXTS = 3;       // the chevron shows until you've moved on after answering this many times
+  const NUDGE_ANSWERS = 3;     // a hesitant new user gets a gentle sway until this many answers
+  const NUDGE_DELAY = 4500;
 
   const AREA_NAMES = {
     "architecture-practice": "Architecture practice",
@@ -60,6 +66,7 @@
 
   const prefs = Object.assign({ feed: "all", area: "", cert: "", goal: 25 }, load(KEYS.prefs, {}));
   const saved = new Set(load(KEYS.saved, []));
+  const learn = Object.assign({ answers: 0, nexts: 0 }, load(KEYS.learn, {}));
   const stats = Object.assign({ streak: 0, best: 0, total: 0, correct: 0, days: {} }, load(KEYS.stats, {}));
 
   // ---------- state ----------
@@ -184,20 +191,25 @@
     slides = [];
     deck = [];
     current = 0;
+    clearNudge();
     pool = computePool();
     feedKey = JSON.stringify([prefs.feed, prefs.area, prefs.cert]);
     if (pool.length) append(BATCH + 1);
     else renderEmpty();
     el.feed.scrollTop = 0;
     updateScope();
+    scheduleNudge();
   }
 
   const observer = new IntersectionObserver((entries) => {
     for (const entry of entries) {
       if (!entry.isIntersecting || entry.intersectionRatio < 0.6) continue;
       const i = slides.indexOf(entry.target._item);
-      if (i < 0) continue;
+      if (i < 0 || i === current) continue;
+      const prev = slides[current];
+      if (i === current + 1 && prev && prev.answered) { learn.nexts += 1; saveLearn(); }
       current = i;
+      scheduleNudge();
       if (slides.length - 1 - current < AHEAD) append(BATCH);
     }
   }, { root: el.feed, threshold: [0.6] });
@@ -205,6 +217,35 @@
   function goTo(i) {
     const item = slides[Math.max(0, Math.min(i, slides.length - 1))];
     if (item) item.el.scrollIntoView({ behavior: reduceMotion() ? "auto" : "smooth", block: "start" });
+  }
+
+  // ---------- learning cues ----------
+  function saveLearn() {
+    store(KEYS.learn, learn);
+    applyLearn();
+  }
+  function applyLearn() {
+    const stage = document.getElementById("app");
+    stage.classList.toggle("learn-answer", learn.answers < LEARN_ANSWERS);
+    stage.classList.toggle("learn-next", learn.nexts < LEARN_NEXTS);
+  }
+
+  let nudgeTimer = 0;
+  function clearNudge() {
+    clearTimeout(nudgeTimer);
+    for (const q of el.feed.querySelectorAll(".q.nudge")) q.classList.remove("nudge");
+  }
+  function scheduleNudge() {
+    clearNudge();
+    if (learn.answers >= NUDGE_ANSWERS || reduceMotion()) return;
+    const item = slides[current];
+    if (!item || item.answered) return;
+    nudgeTimer = setTimeout(() => {
+      if (!el.coach.hidden || el.sheet.open || item !== slides[current] || item.answered) return;
+      const q = item.el.querySelector(".q");
+      q.classList.add("nudge");
+      q.addEventListener("animationend", () => q.classList.remove("nudge"), { once: true });
+    }, NUDGE_DELAY);
   }
 
   // ---------- answering ----------
@@ -226,9 +267,12 @@
     node.querySelector(".explanation").textContent = q.x;
     node.querySelector(".meta").textContent = `Verified for ${q.release}${q.featureStatus && q.featureStatus !== "current" ? ` · ${q.featureStatus}` : ""}`;
     node.querySelector(".reveal").hidden = false;
-    node.querySelector(".answer-row").hidden = true;
-    node.querySelector(".after-row").hidden = false;
+    node.querySelector(".btn-next").hidden = false;
+    for (const b of node.querySelectorAll(".sr-answer")) b.hidden = true;
     node.querySelector(".act-source").hidden = false;
+    clearNudge();
+    learn.answers += 1;
+    saveLearn();
 
     if (!reduceMotion()) {
       node.querySelector(".flash").animate([{ opacity: 0.38 }, { opacity: 0 }], { duration: 650, easing: "ease-out" });
@@ -331,6 +375,7 @@
   el.feed.addEventListener("pointerdown", (e) => {
     if (e.pointerType === "mouse" && e.button !== 0) return;
     tap = { x: e.clientX, y: e.clientY, t: performance.now() };
+    clearNudge();
     const card = e.target.closest(".q");
     const slide = e.target.closest(".slide");
     const item = slide && slide._item;
@@ -496,6 +541,7 @@
   el.coachGo.addEventListener("click", () => {
     el.coach.hidden = true;
     store(KEYS.coach, true);
+    scheduleNudge();
     const first = slides[0];
     if (first) first.el.querySelector(".q").focus({ preventScroll: true });
   });
@@ -512,6 +558,7 @@
   }
 
   async function init() {
+    applyLearn();
     updateTop(false);
     updateScope();
     if (!load(KEYS.coach, false)) el.coach.hidden = false;
