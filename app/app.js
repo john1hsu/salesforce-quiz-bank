@@ -1,6 +1,7 @@
 /* Salesforce true or false, Reels-style.
    One question per full-screen slide. Swipe right = true, left = false, up = next.
-   Double-tap saves a question. The feed never ends: questions are drawn completely
+   You can't skip: the next question only appears once you've answered this one,
+   though you can always swipe back up to review. Double-tap saves a question. The feed never ends: questions are drawn completely
    at random (no weighting), each one once before any repeats. Everything stays on this device. */
 (() => {
   "use strict";
@@ -15,8 +16,6 @@
   };
   const SWIPE_DISTANCE = 90;   // px past which a release counts as an answer
   const SWIPE_VELOCITY = 0.55; // px/ms flick speed that also counts
-  const BATCH = 5;             // slides added at a time
-  const AHEAD = 3;             // keep at least this many slides queued below the current one
   const DOUBLE_TAP_MS = 320;
   // Gesture cues fade away once you've shown you know the gestures.
   const LEARN_NEXTS = 3;       // the chevron shows until you've moved on after answering this many times
@@ -192,7 +191,7 @@
     clearNudge();
     pool = computePool();
     feedKey = JSON.stringify([prefs.feed, prefs.area, prefs.cert]);
-    if (pool.length) append(BATCH + 1);
+    if (pool.length) append(1); // the next slide is added only after this one is answered
     else renderEmpty();
     el.feed.scrollTop = 0;
     updateScope();
@@ -208,7 +207,6 @@
       if (i === current + 1 && prev && prev.answered) { learn.nexts += 1; saveLearn(); }
       current = i;
       scheduleNudge();
-      if (slides.length - 1 - current < AHEAD) append(BATCH);
     }
   }, { root: el.feed, threshold: [0.6] });
 
@@ -288,6 +286,8 @@
     }
     buzz(right ? 12 : [24, 50, 24]);
     record(right);
+    // Unlock the next question now that this one is answered.
+    if (slides[slides.length - 1] === item) append(1);
   }
 
   const verifiedText = (q) => `Verified for ${q.release}${q.featureStatus && q.featureStatus !== "current" ? ` (${q.featureStatus})` : ""}`;

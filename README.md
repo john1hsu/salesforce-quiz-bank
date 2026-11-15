@@ -12,7 +12,8 @@ The app in `app/` is published with GitHub Pages. It works like Instagram Reels:
 | --- | --- |
 | Swipe right | Answer **true** |
 | Swipe left | Answer **false** |
-| Swipe up | Next question |
+| Swipe up | Next question (only after you've answered; you can't skip) |
+| Swipe down | Back to questions you've already answered |
 | Double-tap | Save the question (or tap the bookmark on the right) |
 
 There are no answer or next buttons. New users get quiet hints that fade away once they've learned the gestures: a gentle sway if they hesitate and a small up-chevron after answering. Screen readers still get hidden answer and next buttons.
