@@ -1,0 +1,18 @@
+id: sf-000813
+product_area: data-cloud-and-ai
+true_statement: In Agentforce filters, context variables are fixed at session start, while custom variables are set from action outputs.
+false_statement: In Agentforce filters, context variables are set from action outputs, while custom variables are fixed at session start.
+explanation: Context variables capture session context when the conversation starts; custom variables are populated later by actions. Filters on either decide which subagents or actions are available.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/agentforce-subagents.md
+  commit: 77b1ca9d4bf1d4f33ec8f2d0a8934780e067b150
+  blob: f54fb4ae9e0df5c904d4ab8f117268ddbe6781b9
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:agentforce-subagents
+- kt:agent-actions
+difficulty: 2
+created: '2026-11-15'
+status: active

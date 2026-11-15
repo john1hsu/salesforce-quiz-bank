@@ -1,0 +1,17 @@
+id: sf-000798
+product_area: automation
+true_statement: In Winter '24, Flow's HTTP Callout editor added POST, PUT, PATCH and DELETE, which earlier required hand-editing the generated API spec.
+false_statement: In Winter '24, Flow's HTTP Callout editor added GET, which earlier required hand-editing the generated API spec.
+explanation: GET was already generally available from Summer '23. Winter '24 brought the other four methods into the declarative editor.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/flow-http-callout.md
+  commit: 77b1ca9d4bf1d4f33ec8f2d0a8934780e067b150
+  blob: ff3df393b495a52e7c331a57c350e04c0378dd6e
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:flow-http-callout
+difficulty: 3
+created: '2026-11-15'
+status: active

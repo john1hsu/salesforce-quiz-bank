@@ -1,0 +1,17 @@
+id: sf-000859
+product_area: architecture-practice
+true_statement: Functional Capabilities and Business Value is the lightest B2C Solution Architect exam section, weighted at 7%.
+false_statement: Integration is the lightest B2C Solution Architect exam section, weighted at 7%.
+explanation: Functional Capabilities and Business Value carries only 7%, whereas Integration is one of the heavier sections at 23%.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/b2c-solution-architect-certification.md
+  commit: 77b1ca9d4bf1d4f33ec8f2d0a8934780e067b150
+  blob: bc3cce9e8e7c51a18aba43c0a4795f66bbf8e41c
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:b2c-solution-architect-certification
+difficulty: 2
+created: '2026-11-15'
+status: active

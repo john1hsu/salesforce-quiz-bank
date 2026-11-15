@@ -1,0 +1,17 @@
+id: sf-000783
+product_area: public-sector-and-compliance
+true_statement: The 2014 FISMA amendments codified the Department of Homeland Security's authority to administer security policy for non-national-security federal systems.
+false_statement: The 2014 FISMA amendments codified the Department of Defense's authority to administer security policy for non-national-security federal systems.
+explanation: The modernization act gave DHS that role, including binding operational directives and the federal incident center. DoD is not the administrator for civilian systems under the act.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/fisma.md
+  commit: 77b1ca9d4bf1d4f33ec8f2d0a8934780e067b150
+  blob: 6e4a0c4cc83f1ff34fea8ce28ffa866e1e792160
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:fisma
+difficulty: 2
+created: '2026-11-15'
+status: active

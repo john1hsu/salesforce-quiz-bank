@@ -1,0 +1,18 @@
+id: sf-000841
+product_area: integration
+true_statement: ConnectApi methods run as the context user and don't support System.runAs, and most need @IsTest(SeeAllData=true) in tests.
+false_statement: ConnectApi methods support System.runAs in tests, and most work with test-created data without SeeAllData=true.
+explanation: ConnectApi ignores runAs and usually needs org data, so tests typically set SeeAllData=true. Some methods instead need canned output registered with a setTest method.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/connect-api.md
+  commit: 77b1ca9d4bf1d4f33ec8f2d0a8934780e067b150
+  blob: 366cfae652c549fa1c194d3a11d8e52ea0a6141c
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:connect-api
+- kt:apex-testing
+difficulty: 3
+created: '2026-11-15'
+status: active

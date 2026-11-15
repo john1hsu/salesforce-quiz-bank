@@ -1,0 +1,17 @@
+id: sf-000782
+product_area: public-sector-and-compliance
+true_statement: The original FISMA was passed in December 2002 as part of the E-Government Act, Public Law 107-347.
+false_statement: The original FISMA was passed in December 2014 as part of the E-Government Act, Public Law 107-347.
+explanation: FISMA dates from the 2002 E-Government Act. 2014 is the year of the Federal Information Security Modernization Act, which amended it and kept the acronym.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/fisma.md
+  commit: 77b1ca9d4bf1d4f33ec8f2d0a8934780e067b150
+  blob: 6e4a0c4cc83f1ff34fea8ce28ffa866e1e792160
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:fisma
+difficulty: 1
+created: '2026-11-15'
+status: active

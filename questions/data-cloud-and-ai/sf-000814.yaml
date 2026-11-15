@@ -1,0 +1,18 @@
+id: sf-000814
+product_area: data-cloud-and-ai
+true_statement: An Agentforce subagent removed from the Agent Router's references can still be reached through a transition from another subagent.
+false_statement: An Agentforce subagent removed from the Agent Router's references becomes unreachable, even through transitions from other subagents.
+explanation: Dropping a subagent from the router means it can't be classified directly, but another subagent can still transition to it. That makes it a deliberately gated step.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/agentforce-subagents.md
+  commit: 77b1ca9d4bf1d4f33ec8f2d0a8934780e067b150
+  blob: f54fb4ae9e0df5c904d4ab8f117268ddbe6781b9
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:agentforce-subagents
+- kt:agent-script
+difficulty: 3
+created: '2026-11-15'
+status: active

@@ -1,0 +1,17 @@
+id: sf-000852
+product_area: public-sector-and-compliance
+true_statement: 'The NIST RMF operates at three levels: the organization, the mission or business process, and the individual information system.'
+false_statement: 'The NIST RMF operates at two levels: the organization and the individual information system, with no process level.'
+explanation: The RMF explicitly includes a middle mission or business process level between the organization and the system. Omitting it misdescribes how risk decisions connect.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/nist-risk-management-framework.md
+  commit: 77b1ca9d4bf1d4f33ec8f2d0a8934780e067b150
+  blob: 34b596bc21c42432286930041042bc8943956b57
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:nist-risk-management-framework
+difficulty: 2
+created: '2026-11-15'
+status: active

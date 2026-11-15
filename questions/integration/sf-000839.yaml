@@ -1,0 +1,18 @@
+id: sf-000839
+product_area: integration
+true_statement: When a Connect REST API request exceeds the REST rate limit, Salesforce returns 503 Service Unavailable.
+false_statement: When a Connect REST API request exceeds the REST rate limit, Salesforce returns 429 Too Many Requests.
+explanation: Connect REST API signals an exceeded limit with HTTP 503. Clients that only watch for 429 will miss it.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/connect-api.md
+  commit: 77b1ca9d4bf1d4f33ec8f2d0a8934780e067b150
+  blob: 366cfae652c549fa1c194d3a11d8e52ea0a6141c
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:connect-api
+- kt:api-request-limits
+difficulty: 2
+created: '2026-11-15'
+status: active

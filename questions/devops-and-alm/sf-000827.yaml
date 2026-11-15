@@ -1,0 +1,18 @@
+id: sf-000827
+product_area: devops-and-alm
+true_statement: Org Check blocks its API calls once the org's daily API request usage reaches 90%, and warns between 70% and 90%.
+false_statement: Org Check blocks its API calls once the org's daily API request usage reaches 70%, and warns between 50% and 70%.
+explanation: Below 70% Org Check runs normally, from 70% to 90% it runs with a warning, and at 90% or more it stops until the rolling 24-hour count drops.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/org-check.md
+  commit: 77b1ca9d4bf1d4f33ec8f2d0a8934780e067b150
+  blob: 0ec2b3932953c07ad40c7f48c2a8cef31eb570cb
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:org-check
+- kt:api-request-limits
+difficulty: 2
+created: '2026-11-15'
+status: active

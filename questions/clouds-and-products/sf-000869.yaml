@@ -1,0 +1,18 @@
+id: sf-000869
+product_area: clouds-and-products
+true_statement: In Agentforce Nonprofit, a household is a business account that a Party Relationship Group record marks as a household.
+false_statement: In Agentforce Nonprofit, a household is a dedicated Household custom object that contacts are linked to by lookup.
+explanation: The built-in model uses a business account plus a Party Relationship Group, which also holds household-level details. A separate Household custom object is not how it is modeled.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/agentforce-nonprofit.md
+  commit: 77b1ca9d4bf1d4f33ec8f2d0a8934780e067b150
+  blob: eb2c9f41c4a11d1107d336689f4801e6be2a16bc
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:agentforce-nonprofit
+- kt:person-accounts
+difficulty: 2
+created: '2026-11-15'
+status: active

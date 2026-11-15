@@ -6,8 +6,8 @@ explanation: OFFSET is capped at 2,000 rows, so it isn't suited to paging throug
 source:
   repo: john1hsu/salesforce-knowledge-graph
   path: articles/development/soql.md
-  commit: 3bed651e82b5943dc7a6f52de732338747658b9b
-  blob: 8a189e22ef61ec3b5f476f853eac3fd6e2d95d6b
+  commit: 77b1ca9d4bf1d4f33ec8f2d0a8934780e067b150
+  blob: 59764358242a6fd5c67f04c7393bd4512cf8061c
 verified_release: Winter '27
 feature_status: current
 concepts:

@@ -1,0 +1,18 @@
+id: sf-000803
+product_area: automation
+true_statement: After a Wait element, resumed flow interviews of the same flow version and running user share one batch transaction and its governor limits.
+false_statement: After a Wait element, each resumed flow interview runs in its own transaction with its own set of governor limits.
+explanation: Resumed interviews are grouped into a batch transaction, so their combined SOQL and DML can exceed limits. They do not each get a fresh limit budget.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/flow-transaction-boundaries.md
+  commit: 77b1ca9d4bf1d4f33ec8f2d0a8934780e067b150
+  blob: 22b8a07bc713e6b123ad54d8f9e48d18815e53f0
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:flow-transaction-boundaries
+- kt:governor-limits
+difficulty: 3
+created: '2026-11-15'
+status: active

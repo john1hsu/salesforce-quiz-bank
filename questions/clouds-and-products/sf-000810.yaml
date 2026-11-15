@@ -1,0 +1,17 @@
+id: sf-000810
+product_area: clouds-and-products
+true_statement: In Omnistudio's standard data model, Data Mappers are stored in the OmniDataTransform object.
+false_statement: In Omnistudio's standard data model, Data Mappers are stored in the OmniUiCard object.
+explanation: The standard model stores Omniscripts in OmniProcess, Data Mappers in OmniDataTransform and FlexCards in OmniUiCard. OmniUiCard holds FlexCards, not Data Mappers.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/omnistudio.md
+  commit: 77b1ca9d4bf1d4f33ec8f2d0a8934780e067b150
+  blob: 421bb3d4c086b8af6ed52b93a90c8346fad1248c
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:omnistudio
+difficulty: 2
+created: '2026-11-15'
+status: active

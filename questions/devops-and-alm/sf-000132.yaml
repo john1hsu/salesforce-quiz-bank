@@ -6,8 +6,8 @@ explanation: The packageDirectories list is required and allows exactly one defa
 source:
   repo: john1hsu/salesforce-knowledge-graph
   path: articles/devops-and-alm/salesforce-dx.md
-  commit: 1a9626507b2858110c996adbfa985703bee41fd5
-  blob: aa35c7ef6a9ead90cd535a44cffcbc26ceea282c
+  commit: 77b1ca9d4bf1d4f33ec8f2d0a8934780e067b150
+  blob: 8d0d2a4f086cdd02a81453b885e59bb703bfaea0
 verified_release: Winter '27
 feature_status: current
 concepts:

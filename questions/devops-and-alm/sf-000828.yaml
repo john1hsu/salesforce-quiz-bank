@@ -1,0 +1,18 @@
+id: sf-000828
+product_area: devops-and-alm
+true_statement: 'In Org Check, a higher score is worse: each anti-pattern found on an item adds one point.'
+false_statement: 'In Org Check, a higher score is better: each best practice an item follows adds one point.'
+explanation: A blank or zero score is good, and every anti-pattern raises the score by one, so a 4 means four issues. It ranks cleanup work rather than rewarding compliance.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/org-check.md
+  commit: 77b1ca9d4bf1d4f33ec8f2d0a8934780e067b150
+  blob: 0ec2b3932953c07ad40c7f48c2a8cef31eb570cb
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:org-check
+- kt:technical-debt-in-salesforce
+difficulty: 1
+created: '2026-11-15'
+status: active

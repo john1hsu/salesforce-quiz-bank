@@ -1,0 +1,18 @@
+id: sf-000801
+product_area: automation
+true_statement: Running flow tests with the sf flow run test command requires the View All Data permission.
+false_statement: Running flow tests with the sf flow run test command requires only the Run Flows permission.
+explanation: The CLI reference lists View All Data as required for sf flow run test. Run Flows on its own is not enough to run tests from the command line.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/flow-tests.md
+  commit: 77b1ca9d4bf1d4f33ec8f2d0a8934780e067b150
+  blob: eeb1bf951d89c60baaba8d3243aa792e5456c000
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:flow-tests
+- kt:salesforce-cli
+difficulty: 2
+created: '2026-11-15'
+status: active

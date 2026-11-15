@@ -1,0 +1,17 @@
+id: sf-000804
+product_area: automation
+true_statement: A Salesforce org processes up to 1,000 time-based flow resume events per hour, and extra events slip to the next hour.
+false_statement: A Salesforce org processes up to 250 time-based flow resume events per hour, and extra events are discarded.
+explanation: The documented cap is 1,000 time-based resume events per hour; anything beyond it is deferred to the following hour rather than dropped.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/flow-transaction-boundaries.md
+  commit: 77b1ca9d4bf1d4f33ec8f2d0a8934780e067b150
+  blob: 22b8a07bc713e6b123ad54d8f9e48d18815e53f0
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:flow-transaction-boundaries
+difficulty: 2
+created: '2026-11-15'
+status: active

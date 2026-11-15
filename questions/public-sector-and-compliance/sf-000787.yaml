@@ -1,0 +1,17 @@
+id: sf-000787
+product_area: public-sector-and-compliance
+true_statement: Salesforce Health Check can compare an org's security settings against a custom baseline imported as an XML file.
+false_statement: Salesforce Health Check can compare an org's security settings only against Salesforce's recommended baseline, with no custom import.
+explanation: Besides Salesforce's own baseline, Health Check accepts a custom baseline imported as XML, which Trailhead suggests agreeing with IT or compliance. So it is not limited to the default baseline.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/shared-responsibility-model.md
+  commit: 77b1ca9d4bf1d4f33ec8f2d0a8934780e067b150
+  blob: 26199edb4710b4ea18a5127e17142970e34f5c64
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:shared-responsibility-model
+difficulty: 2
+created: '2026-11-15'
+status: active

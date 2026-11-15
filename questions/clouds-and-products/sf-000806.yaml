@@ -1,0 +1,17 @@
+id: sf-000806
+product_area: clouds-and-products
+true_statement: The Health Cloud Platform permission set license grants Health Cloud standard objects for features built into core Salesforce, outside the managed package.
+false_statement: The Health Cloud Platform permission set license grants the custom objects behind features in the Health Cloud managed package.
+explanation: 'Health Cloud needs two licenses: Health Cloud covers the managed-package objects, while Health Cloud Platform covers the core standard objects. The false statement describes the other license.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/health-cloud.md
+  commit: 77b1ca9d4bf1d4f33ec8f2d0a8934780e067b150
+  blob: db0193872498c12fbe2d61be9c58df4dd5be728e
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:health-cloud
+difficulty: 2
+created: '2026-11-15'
+status: active

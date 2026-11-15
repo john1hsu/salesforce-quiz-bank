@@ -1,0 +1,18 @@
+id: sf-000862
+product_area: architecture-practice
+true_statement: When a logged risk materializes, it moves to the issue log and is closed on the risk register.
+false_statement: When a logged risk materializes, it stays open on the risk register and its mitigation plan is reused as the resolution.
+explanation: A risk that happens becomes an issue, which needs a prioritized resolution plan rather than mitigation. The risk entry is closed, though it stays visible for history.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/risk-and-assumption-logs.md
+  commit: 77b1ca9d4bf1d4f33ec8f2d0a8934780e067b150
+  blob: b468aa5319f941b96ebab99e22b0b770361f6cc0
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:risk-and-assumption-logs
+- kt:salesforce-governance
+difficulty: 1
+created: '2026-11-15'
+status: active

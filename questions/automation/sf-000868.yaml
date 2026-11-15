@@ -1,0 +1,18 @@
+id: sf-000868
+product_area: automation
+true_statement: $Record__Prior isn't supported in scheduled-path elements or in entry-condition formulas.
+false_statement: $Record__Prior is supported in scheduled-path elements, though not in entry-condition formulas.
+explanation: Prior values aren't available when the path runs later. The Admins blog's workaround is a before-save flow that sets a switch field for the path to read.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/scheduled-paths.md
+  commit: 77b1ca9d4bf1d4f33ec8f2d0a8934780e067b150
+  blob: 4f9f4a6f0d092f2d27ee474f33ffbf74e8bdb7ec
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:scheduled-paths
+- kt:record-triggered-flow
+difficulty: 3
+created: '2026-11-15'
+status: active

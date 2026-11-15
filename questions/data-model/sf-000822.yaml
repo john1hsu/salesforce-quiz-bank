@@ -1,0 +1,18 @@
+id: sf-000822
+product_area: data-model
+true_statement: Schema Builder can't export a schema for reuse in another org; moving a data model between orgs needs metadata deployment.
+false_statement: Schema Builder can export a schema as a file that is imported into another org to recreate the data model.
+explanation: Salesforce's considerations state that schemas can't be exported from Schema Builder. Objects and fields move between orgs as metadata instead.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/schema-builder.md
+  commit: 77b1ca9d4bf1d4f33ec8f2d0a8934780e067b150
+  blob: 830c327369edae84fdfef951b9c0810f7f2092b5
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:schema-builder
+- kt:metadata-driven-architecture
+difficulty: 2
+created: '2026-11-15'
+status: active

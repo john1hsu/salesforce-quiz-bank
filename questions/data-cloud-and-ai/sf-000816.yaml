@@ -1,0 +1,18 @@
+id: sf-000816
+product_area: data-cloud-and-ai
+true_statement: Unlike a calculated insight, a Data 360 streaming insight can't use existing insights as building blocks.
+false_statement: Like a calculated insight, a Data 360 streaming insight can use existing insights as building blocks.
+explanation: The SQL for both is nearly identical, but streaming insights can't reference other insights. Any multi-step logic must live in a single query.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/streaming-insights.md
+  commit: 77b1ca9d4bf1d4f33ec8f2d0a8934780e067b150
+  blob: cd32ffe80144db3f1ed64c7e92483894125dd243
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:streaming-insights
+- kt:calculated-insights
+difficulty: 2
+created: '2026-11-15'
+status: active

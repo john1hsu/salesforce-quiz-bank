@@ -1,0 +1,18 @@
+id: sf-000838
+product_area: identity
+true_statement: The LogoutEventStream event fires for UI logouts, but simply closing the browser never publishes it.
+false_statement: The LogoutEventStream event fires for UI logouts and is also published whenever the user closes the browser.
+explanation: Only explicit UI logouts publish the event, plus timeouts when Force logout on session timeout is on. Closing the browser leaves no logout event to act on.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/single-logout.md
+  commit: 77b1ca9d4bf1d4f33ec8f2d0a8934780e067b150
+  blob: fa26e9924f6d26cf2f974d9c58e3f9d7dd4d9bef
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:single-logout
+- kt:event-monitoring
+difficulty: 2
+created: '2026-11-15'
+status: active

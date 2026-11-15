@@ -1,0 +1,17 @@
+id: sf-000832
+product_area: identity
+true_statement: A sandbox's custom domain is added in the production org that owns the sandbox, using the Associated Org field.
+false_statement: A sandbox's custom domain is added in the sandbox itself, using the Associated Org field.
+explanation: The Associated Org field can be edited only from production, so the domain is configured there and pointed at the sandbox. It is not set up inside the sandbox.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/custom-domains.md
+  commit: 77b1ca9d4bf1d4f33ec8f2d0a8934780e067b150
+  blob: f44fa4bcdc7d61de7784306194d00b032ca6cc05
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:custom-domains
+difficulty: 2
+created: '2026-11-15'
+status: active

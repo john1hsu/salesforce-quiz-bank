@@ -1,0 +1,18 @@
+id: sf-000835
+product_area: identity
+true_statement: A SAML response sent through the browser on the HTTP POST binding must be digitally signed with XML Signature.
+false_statement: A SAML response sent through the browser on the HTTP POST binding must be encrypted, while signing it is optional.
+explanation: Because the POST response passes through the user's browser, SAML requires an XML signature to protect its integrity. OASIS also notes encryption alone does not provide integrity.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/saml-2-0.md
+  commit: 77b1ca9d4bf1d4f33ec8f2d0a8934780e067b150
+  blob: 92a535694f50e780bf5f69200480c6c053a81b94
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:saml-2-0
+- kt:single-sign-on-saml
+difficulty: 2
+created: '2026-11-15'
+status: active

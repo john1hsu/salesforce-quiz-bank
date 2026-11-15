@@ -1,0 +1,18 @@
+id: sf-000846
+product_area: platform-architecture
+true_statement: 'NIST''s cloud reference architecture, SP 500-292, names five actors: cloud consumer, provider, auditor, broker and carrier.'
+false_statement: 'NIST''s cloud reference architecture, SP 500-292, names four actors: cloud consumer, provider, broker and carrier, with no auditor.'
+explanation: SP 500-292 includes the cloud auditor as a fifth actor, responsible for independent assessment of cloud services. Leaving it out drops the role that links to programmes like FedRAMP.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/cloud-computing.md
+  commit: 77b1ca9d4bf1d4f33ec8f2d0a8934780e067b150
+  blob: c757fdb28ca4f5efa57f2c5907ab1131fcd45927
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:cloud-computing
+- kt:fedramp
+difficulty: 2
+created: '2026-11-15'
+status: active

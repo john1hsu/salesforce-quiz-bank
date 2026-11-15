@@ -1,0 +1,17 @@
+id: sf-000790
+product_area: architecture-practice
+true_statement: The Development Lifecycle and Deployment Architect exam guide says its questions are aligned to the Spring '23 release.
+false_statement: The Development Lifecycle and Deployment Architect exam guide says its questions are aligned to the Winter '27 release.
+explanation: The guide pins the question bank to Spring '23, so newer DevOps tooling may not appear on the exam. It is not kept in step with the current release.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/development-lifecycle-and-deployment-architect-certification.md
+  commit: 77b1ca9d4bf1d4f33ec8f2d0a8934780e067b150
+  blob: 4e2cf09bfe177ee549aa68387348d06317635ebf
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:development-lifecycle-and-deployment-architect-certification
+difficulty: 2
+created: '2026-11-15'
+status: active

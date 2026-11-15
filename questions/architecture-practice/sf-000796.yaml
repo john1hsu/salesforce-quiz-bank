@@ -1,0 +1,19 @@
+id: sf-000796
+product_area: architecture-practice
+true_statement: Salesforce Architects' security governance steps say deviations and known vulnerabilities should be recorded in the technical debt register.
+false_statement: Salesforce Architects' security governance steps say deviations and known vulnerabilities should be recorded only in Shield Event Monitoring.
+explanation: Security exceptions are tracked as technical debt so they get prioritized and paid down. Shield Event Monitoring is the audit and monitoring tool, not a register of accepted deviations.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/salesforce-governance.md
+  commit: 77b1ca9d4bf1d4f33ec8f2d0a8934780e067b150
+  blob: 73d694b30d699076edacfbac2eee68dce7b2b82f
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:salesforce-governance
+- kt:security-governance
+- kt:technical-debt-in-salesforce
+difficulty: 2
+created: '2026-11-15'
+status: active

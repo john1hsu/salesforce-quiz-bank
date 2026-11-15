@@ -1,0 +1,18 @@
+id: sf-000853
+product_area: public-sector-and-compliance
+true_statement: Under the NIST RMF, a common control authorization approves controls that many systems inherit.
+false_statement: Under the NIST RMF, an authorization to use approves controls that many systems inherit.
+explanation: The RMF names the common control authorization as the decision for inheritable controls. An authorization to operate or to use applies to a single system.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/nist-risk-management-framework.md
+  commit: 77b1ca9d4bf1d4f33ec8f2d0a8934780e067b150
+  blob: 34b596bc21c42432286930041042bc8943956b57
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:nist-risk-management-framework
+- kt:authority-to-operate
+difficulty: 3
+created: '2026-11-15'
+status: active

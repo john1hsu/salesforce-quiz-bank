@@ -1,0 +1,17 @@
+id: sf-000834
+product_area: identity
+true_statement: A transient SAML NameID is a one-time value discarded at session end, while a persistent NameID stays linked to the SP account until removed.
+false_statement: A persistent SAML NameID is a one-time value discarded at session end, while a transient NameID stays linked to the SP account until removed.
+explanation: Transient identifiers give the user anonymity at the SP because they are thrown away after the session. Persistent identifiers keep a lasting link to the SP account.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/saml-2-0.md
+  commit: 77b1ca9d4bf1d4f33ec8f2d0a8934780e067b150
+  blob: 92a535694f50e780bf5f69200480c6c053a81b94
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:saml-2-0
+difficulty: 2
+created: '2026-11-15'
+status: active

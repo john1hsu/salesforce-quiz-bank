@@ -1,0 +1,18 @@
+id: sf-000824
+product_area: development
+true_statement: A Lightning message channel's isExposed field defaults to false and, once set to true on a packaged or referenced channel, can't be set back.
+false_statement: A Lightning message channel's isExposed field defaults to true and can be switched back to false at any time.
+explanation: isExposed starts as false; turning it on is irreversible once the channel is packaged or referenced. That matters because security review expects channels to stay unexposed.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/lightning-message-service.md
+  commit: 77b1ca9d4bf1d4f33ec8f2d0a8934780e067b150
+  blob: 87743023c622ab1bf95416936a11d5f5e44c03b7
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:lightning-message-service
+- kt:metadata-api
+difficulty: 3
+created: '2026-11-15'
+status: active

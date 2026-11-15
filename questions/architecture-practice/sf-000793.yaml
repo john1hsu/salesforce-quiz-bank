@@ -1,0 +1,18 @@
+id: sf-000793
+product_area: architecture-practice
+true_statement: The MuleSoft Platform Architect exam has no prerequisite credential, and Trailhead enforces no order among the MuleSoft certifications.
+false_statement: The MuleSoft Platform Architect exam requires passing a MuleSoft Developer credential first, as Trailhead enforces a set order.
+explanation: The exam guide lists no prerequisite and Trailhead imposes no sequence among MuleSoft credentials. Candidates can sit the architect exam without first holding a developer credential.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/mulesoft-platform-architect-certification.md
+  commit: 77b1ca9d4bf1d4f33ec8f2d0a8934780e067b150
+  blob: 69b59ecc8fba58f530e662127fd893c5ed2af306
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:mulesoft-platform-architect-certification
+- kt:salesforce-certification-program
+difficulty: 1
+created: '2026-11-15'
+status: active

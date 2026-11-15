@@ -1,0 +1,18 @@
+id: sf-000840
+product_area: integration
+true_statement: In Apex, every ConnectApi write operation counts as one DML statement against governor limits.
+false_statement: In Apex, ConnectApi write operations count only against API request limits, not against the DML statement limit.
+explanation: Each ConnectApi write costs a DML statement, and most ConnectApi calls also count toward the org's API allocation. They consume both budgets.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/connect-api.md
+  commit: 77b1ca9d4bf1d4f33ec8f2d0a8934780e067b150
+  blob: 366cfae652c549fa1c194d3a11d8e52ea0a6141c
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:connect-api
+- kt:apex
+difficulty: 2
+created: '2026-11-15'
+status: active

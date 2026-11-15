@@ -1,0 +1,18 @@
+id: sf-000850
+product_area: public-sector-and-compliance
+true_statement: Salesforce Security Center keeps up to 6 months of trend data on metrics aggregated from child tenants.
+false_statement: Salesforce Security Center keeps up to 24 months of trend data on metrics aggregated from child tenants.
+explanation: A Security Center parent tenant tracks posture metrics such as permission assignments and Health Check scores with up to 6 months of history. Two years overstates its retention.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/continuous-monitoring.md
+  commit: 77b1ca9d4bf1d4f33ec8f2d0a8934780e067b150
+  blob: 0a38a9c22f301ee4690e5ed67aabb6011deb0841
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:continuous-monitoring
+- kt:security-center
+difficulty: 2
+created: '2026-11-15'
+status: active

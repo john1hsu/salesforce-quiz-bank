@@ -1,0 +1,18 @@
+id: sf-000789
+product_area: architecture-practice
+true_statement: In the Development Lifecycle and Deployment Architect exam outline, System Design is the most heavily weighted section at 15%.
+false_statement: In the Development Lifecycle and Deployment Architect exam outline, Deploying is the most heavily weighted section at 18%.
+explanation: No section exceeds 15%, and System Design is the one at that ceiling. Deploying is weighted at 14%, so the outline rewards breadth over any single area.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/development-lifecycle-and-deployment-architect-certification.md
+  commit: 77b1ca9d4bf1d4f33ec8f2d0a8934780e067b150
+  blob: 4e2cf09bfe177ee549aa68387348d06317635ebf
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:development-lifecycle-and-deployment-architect-certification
+- kt:environment-strategy
+difficulty: 2
+created: '2026-11-15'
+status: active

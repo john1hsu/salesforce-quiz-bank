@@ -1,0 +1,17 @@
+id: sf-000818
+product_area: data-cloud-and-ai
+true_statement: 'In a Data 360 enriched search index, each source chunk becomes three chunks: plain, metadata and generated question.'
+false_statement: 'In a Data 360 enriched search index, each source chunk becomes two chunks: plain and LLM-generated summary.'
+explanation: Enrichment adds a metadata chunk and a generated-question chunk beside the plain one, tripling chunk count. Generating them also consumes Flex Credits.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/vector-search-in-data-cloud.md
+  commit: 77b1ca9d4bf1d4f33ec8f2d0a8934780e067b150
+  blob: 414dafc6ecc00faca2855f2c9efccd04186aa9c8
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:vector-search-in-data-cloud
+difficulty: 3
+created: '2026-11-15'
+status: active

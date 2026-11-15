@@ -1,0 +1,17 @@
+id: sf-000863
+product_area: automation
+true_statement: A Salesforce email alert can add up to 5 extra CC email addresses beyond its typed recipients.
+false_statement: A Salesforce email alert can add up to 25 extra CC email addresses beyond its typed recipients.
+explanation: The WorkflowAlert ccEmails list is capped at five addresses. Larger audiences belong in typed recipients such as public groups or roles.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/email-alerts.md
+  commit: 77b1ca9d4bf1d4f33ec8f2d0a8934780e067b150
+  blob: aad20a317ee8e4d0df3dd214406609ace19af8b5
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:email-alerts
+difficulty: 2
+created: '2026-11-15'
+status: active

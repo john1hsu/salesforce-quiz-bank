@@ -1,0 +1,17 @@
+id: sf-000873
+product_area: clouds-and-products
+true_statement: Financial Services Cloud managed package components are one API version behind core Salesforce, while its standard objects share the core version.
+false_statement: Financial Services Cloud standard objects are one API version behind core Salesforce, while its managed package components share the core version.
+explanation: The developer guide warns that FinServ-namespaced package components lag core by a version. Standard FSC objects ship with core and match its API version.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/financial-services-cloud.md
+  commit: 77b1ca9d4bf1d4f33ec8f2d0a8934780e067b150
+  blob: 8d34ab3d51b6a44a8d9351a66b679d4bd3630768
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:financial-services-cloud
+difficulty: 3
+created: '2026-11-15'
+status: active

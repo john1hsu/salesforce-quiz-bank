@@ -1,0 +1,18 @@
+id: sf-000856
+product_area: security-and-sharing
+true_statement: For a public group, the doesIncludeBosses field behind Grant Access Using Hierarchies is documented as defaulting to true.
+false_statement: For a public group, the doesIncludeBosses field behind Grant Access Using Hierarchies is documented as defaulting to false.
+explanation: Regular groups default to sharing upward to members' managers in the role hierarchy. Admins clear the setting when a team's records shouldn't flow to their managers.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/public-groups.md
+  commit: 77b1ca9d4bf1d4f33ec8f2d0a8934780e067b150
+  blob: d27fad2551a55d763ca136746fb7ac41f18d393b
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:public-groups
+- kt:role-hierarchy
+difficulty: 2
+created: '2026-11-15'
+status: active

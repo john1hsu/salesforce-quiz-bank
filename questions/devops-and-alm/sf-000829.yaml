@@ -1,0 +1,18 @@
+id: sf-000829
+product_area: devops-and-alm
+true_statement: Org Check reads only configuration metadata, not business records such as Accounts or Opportunities.
+false_statement: Org Check reads configuration metadata and business records such as Accounts and Opportunities to score data quality.
+explanation: The app analyzes setup and code metadata through Tooling, Metadata and related APIs. It does not read record data and never changes metadata or data.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/org-check.md
+  commit: 77b1ca9d4bf1d4f33ec8f2d0a8934780e067b150
+  blob: 0ec2b3932953c07ad40c7f48c2a8cef31eb570cb
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:org-check
+- kt:tooling-api
+difficulty: 2
+created: '2026-11-15'
+status: active

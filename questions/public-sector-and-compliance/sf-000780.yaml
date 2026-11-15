@@ -1,0 +1,18 @@
+id: sf-000780
+product_area: public-sector-and-compliance
+true_statement: After an agency emails its signed ATO letter to the FedRAMP PMO, the PMO grants that agency's users permanent access to the package.
+false_statement: After an agency emails its signed ATO letter to the FedRAMP PMO, the PMO grants that agency's users access to the package for one more year.
+explanation: Sending the signed ATO letter to the PMO converts the agency's temporary review access into permanent package access. There is no one-year renewal tied to the letter.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/authority-to-operate.md
+  commit: 77b1ca9d4bf1d4f33ec8f2d0a8934780e067b150
+  blob: 0611692270abb0c450ba117ef4cf171dd12a8a98
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:authority-to-operate
+- kt:fedramp
+difficulty: 2
+created: '2026-11-15'
+status: active

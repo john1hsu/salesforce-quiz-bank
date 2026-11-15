@@ -1,7 +1,7 @@
 {
  "version": 1,
- "count": 772,
- "active": 772,
+ "count": 867,
+ "active": 867,
  "questions": [
   {
    "id": "sf-000001",
@@ -13477,6 +13477,1591 @@
    "difficulty": 1,
    "status": "active",
    "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/platform-as-a-service.md"
+  },
+  {
+   "id": "sf-000779",
+   "area": "public-sector-and-compliance",
+   "t": "Access to a FedRAMP package granted through the Package Access Request Form lasts 60 days and can be extended in 30-day increments.",
+   "f": "Access to a FedRAMP package granted through the Package Access Request Form lasts 12 months and can be extended in 6-month increments.",
+   "x": "FedRAMP's quick guide gives agencies a 60-day window to review a package, extendable 30 days at a time. Long-lived access comes only after the signed ATO letter reaches the PMO.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:authority-to-operate",
+    "kt:fedramp"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/authority-to-operate.md"
+  },
+  {
+   "id": "sf-000780",
+   "area": "public-sector-and-compliance",
+   "t": "After an agency emails its signed ATO letter to the FedRAMP PMO, the PMO grants that agency's users permanent access to the package.",
+   "f": "After an agency emails its signed ATO letter to the FedRAMP PMO, the PMO grants that agency's users access to the package for one more year.",
+   "x": "Sending the signed ATO letter to the PMO converts the agency's temporary review access into permanent package access. There is no one-year renewal tied to the letter.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:authority-to-operate",
+    "kt:fedramp"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/authority-to-operate.md"
+  },
+  {
+   "id": "sf-000781",
+   "area": "public-sector-and-compliance",
+   "t": "In FedRAMP's agency playbook, the agency's authorizing official is the person who issues the ATO for a cloud service offering.",
+   "f": "In FedRAMP's agency playbook, the third-party assessment organization is the party that issues the ATO for a cloud service offering.",
+   "x": "The ATO is a risk-acceptance decision made by the agency's authorizing official after reviewing the package. Assessors produce evidence such as the Security Assessment Report but do not grant the ATO.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:authority-to-operate"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/authority-to-operate.md"
+  },
+  {
+   "id": "sf-000782",
+   "area": "public-sector-and-compliance",
+   "t": "The original FISMA was passed in December 2002 as part of the E-Government Act, Public Law 107-347.",
+   "f": "The original FISMA was passed in December 2014 as part of the E-Government Act, Public Law 107-347.",
+   "x": "FISMA dates from the 2002 E-Government Act. 2014 is the year of the Federal Information Security Modernization Act, which amended it and kept the acronym.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:fisma"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/fisma.md"
+  },
+  {
+   "id": "sf-000783",
+   "area": "public-sector-and-compliance",
+   "t": "The 2014 FISMA amendments codified the Department of Homeland Security's authority to administer security policy for non-national-security federal systems.",
+   "f": "The 2014 FISMA amendments codified the Department of Defense's authority to administer security policy for non-national-security federal systems.",
+   "x": "The modernization act gave DHS that role, including binding operational directives and the federal incident center. DoD is not the administrator for civilian systems under the act.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:fisma"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/fisma.md"
+  },
+  {
+   "id": "sf-000784",
+   "area": "public-sector-and-compliance",
+   "t": "For FISMA Inspector General evaluations, OMB treats a rating of Level 4 or higher on the five-level maturity scale as effective.",
+   "f": "For FISMA Inspector General evaluations, OMB treats a rating of Level 3 or higher on the five-level maturity scale as effective.",
+   "x": "OMB's threshold for an effective program is Level 4, Managed and Measurable, though IGs can judge differently given the agency's risk. Level 3 falls below that bar.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:fisma",
+    "kt:nist-cybersecurity-framework"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/fisma.md"
+  },
+  {
+   "id": "sf-000785",
+   "area": "public-sector-and-compliance",
+   "t": "FedRAMP requires the Control Implementation Summary / Customer Responsibility Matrix workbook as Appendix J to the provider's System Security Plan.",
+   "f": "FedRAMP requires the Control Implementation Summary / Customer Responsibility Matrix workbook as Appendix A to the provider's System Security Plan.",
+   "x": "The CIS/CRM workbook is Appendix J of the SSP and marks each control as provider, customer, shared or inherited. Appendix A is not where FedRAMP places it.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:shared-responsibility-model",
+    "kt:fedramp"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/shared-responsibility-model.md"
+  },
+  {
+   "id": "sf-000786",
+   "area": "public-sector-and-compliance",
+   "t": "Per NIST SP 800-210, in SaaS the provider covers access control at every layer except the consumer's application data.",
+   "f": "Per NIST SP 800-210, in SaaS the consumer controls access in the operating system, middleware, application and data layers.",
+   "x": "In SaaS almost the whole stack is the provider's job, leaving the consumer its application data. Consumer control from the OS up describes IaaS, not SaaS.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:shared-responsibility-model",
+    "kt:cloud-computing"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/shared-responsibility-model.md"
+  },
+  {
+   "id": "sf-000787",
+   "area": "public-sector-and-compliance",
+   "t": "Salesforce Health Check can compare an org's security settings against a custom baseline imported as an XML file.",
+   "f": "Salesforce Health Check can compare an org's security settings only against Salesforce's recommended baseline, with no custom import.",
+   "x": "Besides Salesforce's own baseline, Health Check accepts a custom baseline imported as XML, which Trailhead suggests agreeing with IT or compliance. So it is not limited to the default baseline.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:shared-responsibility-model"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/shared-responsibility-model.md"
+  },
+  {
+   "id": "sf-000788",
+   "area": "architecture-practice",
+   "t": "The Development Lifecycle and Deployment Architect exam requires a passing score of 65% across its 60 scored questions.",
+   "f": "The Development Lifecycle and Deployment Architect exam requires a passing score of 75% across its 60 scored questions.",
+   "x": "The exam guide sets the pass mark at 65% for the 60 scored multiple-choice questions. 75% is higher than the guide requires.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:development-lifecycle-and-deployment-architect-certification"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/development-lifecycle-and-deployment-architect-certification.md"
+  },
+  {
+   "id": "sf-000789",
+   "area": "architecture-practice",
+   "t": "In the Development Lifecycle and Deployment Architect exam outline, System Design is the most heavily weighted section at 15%.",
+   "f": "In the Development Lifecycle and Deployment Architect exam outline, Deploying is the most heavily weighted section at 18%.",
+   "x": "No section exceeds 15%, and System Design is the one at that ceiling. Deploying is weighted at 14%, so the outline rewards breadth over any single area.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:development-lifecycle-and-deployment-architect-certification",
+    "kt:environment-strategy"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/development-lifecycle-and-deployment-architect-certification.md"
+  },
+  {
+   "id": "sf-000790",
+   "area": "architecture-practice",
+   "t": "The Development Lifecycle and Deployment Architect exam guide says its questions are aligned to the Spring '23 release.",
+   "f": "The Development Lifecycle and Deployment Architect exam guide says its questions are aligned to the Winter '27 release.",
+   "x": "The guide pins the question bank to Spring '23, so newer DevOps tooling may not appear on the exam. It is not kept in step with the current release.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:development-lifecycle-and-deployment-architect-certification"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/development-lifecycle-and-deployment-architect-certification.md"
+  },
+  {
+   "id": "sf-000791",
+   "area": "architecture-practice",
+   "t": "In the MuleSoft Platform Architect exam outline, Governing web APIs is the heaviest section at 17%.",
+   "f": "In the MuleSoft Platform Architect exam outline, Deploying to CloudHub is the heaviest section at 17%.",
+   "x": "Governance of APIs, covering API Manager, policies and gateways, carries the largest weight. Deploying to CloudHub is weighted at 11%.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:mulesoft-platform-architect-certification",
+    "kt:mulesoft-anypoint-platform"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/mulesoft-platform-architect-certification.md"
+  },
+  {
+   "id": "sf-000792",
+   "area": "architecture-practice",
+   "t": "The MuleSoft Platform Architect exam gives candidates 120 minutes for its 60 scored questions.",
+   "f": "The MuleSoft Platform Architect exam gives candidates 90 minutes for its 60 scored questions.",
+   "x": "The exam guide allows 120 minutes for 60 scored questions plus up to five unscored ones. A 90-minute limit is shorter than the guide states.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:mulesoft-platform-architect-certification"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/mulesoft-platform-architect-certification.md"
+  },
+  {
+   "id": "sf-000793",
+   "area": "architecture-practice",
+   "t": "The MuleSoft Platform Architect exam has no prerequisite credential, and Trailhead enforces no order among the MuleSoft certifications.",
+   "f": "The MuleSoft Platform Architect exam requires passing a MuleSoft Developer credential first, as Trailhead enforces a set order.",
+   "x": "The exam guide lists no prerequisite and Trailhead imposes no sequence among MuleSoft credentials. Candidates can sit the architect exam without first holding a developer credential.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:mulesoft-platform-architect-certification",
+    "kt:salesforce-certification-program"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/mulesoft-platform-architect-certification.md"
+  },
+  {
+   "id": "sf-000794",
+   "area": "architecture-practice",
+   "t": "Trailhead's Nonprofit Cloud governance unit suggests roughly one Salesforce administrator per 50 users as a starting heuristic.",
+   "f": "Trailhead's Nonprofit Cloud governance unit suggests roughly one Salesforce administrator per 200 users as a starting heuristic.",
+   "x": "The unit's rule of thumb is about one admin for every 50 users, adjusted for other duties and request volume. One per 200 understates the staffing it suggests.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:salesforce-governance"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/salesforce-governance.md"
+  },
+  {
+   "id": "sf-000795",
+   "area": "architecture-practice",
+   "t": "Salesforce Architects advise that a finalized architectural guiding principle is superseded by a new principle rather than reworded.",
+   "f": "Salesforce Architects advise that a finalized architectural guiding principle is reworded in place with a new version number rather than superseded.",
+   "x": "Once a principle is Final, changing it means issuing a new principle that supersedes it, keeping the record clear. Editing the wording of the final principle is what the guidance avoids.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:salesforce-governance",
+    "kt:salesforce-architect"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/salesforce-governance.md"
+  },
+  {
+   "id": "sf-000796",
+   "area": "architecture-practice",
+   "t": "Salesforce Architects' security governance steps say deviations and known vulnerabilities should be recorded in the technical debt register.",
+   "f": "Salesforce Architects' security governance steps say deviations and known vulnerabilities should be recorded only in Shield Event Monitoring.",
+   "x": "Security exceptions are tracked as technical debt so they get prioritized and paid down. Shield Event Monitoring is the audit and monitoring tool, not a register of accepted deviations.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:salesforce-governance",
+    "kt:security-governance",
+    "kt:technical-debt-in-salesforce"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/salesforce-governance.md"
+  },
+  {
+   "id": "sf-000797",
+   "area": "automation",
+   "t": "Flow's HTTP Callout action needs no OpenAPI specification, because Flow infers the request and response schema from sample JSON.",
+   "f": "Flow's HTTP Callout action needs an uploaded OpenAPI specification, because Flow cannot infer the schema from sample JSON.",
+   "x": "HTTP Callout builds its data structures from sample JSON or a live Connect for Schema call. Uploading an OpenAPI spec is the route for registering an external service from Setup.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:flow-http-callout",
+    "kt:external-services"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/flow-http-callout.md"
+  },
+  {
+   "id": "sf-000798",
+   "area": "automation",
+   "t": "In Winter '24, Flow's HTTP Callout editor added POST, PUT, PATCH and DELETE, which earlier required hand-editing the generated API spec.",
+   "f": "In Winter '24, Flow's HTTP Callout editor added GET, which earlier required hand-editing the generated API spec.",
+   "x": "GET was already generally available from Summer '23. Winter '24 brought the other four methods into the declarative editor.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:flow-http-callout"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/flow-http-callout.md"
+  },
+  {
+   "id": "sf-000799",
+   "area": "automation",
+   "t": "Flow's HTTP Callout action supports only APIs that respond with JSON.",
+   "f": "Flow's HTTP Callout action supports APIs that respond with either JSON or XML.",
+   "x": "The feature is JSON only, with shapes taken from the samples supplied. Integrations that need non-JSON payloads should use Apex callouts instead.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:flow-http-callout",
+    "kt:apex-callouts"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/flow-http-callout.md"
+  },
+  {
+   "id": "sf-000800",
+   "area": "automation",
+   "t": "A single flow test simulates either a record create or a record update, so a flow that reacts to both needs separate tests.",
+   "f": "A single flow test can simulate both a record create and a record update, so one test covers a flow that reacts to both.",
+   "x": "Each flow test is tied to one trigger event, Created or Updated. Covering both events therefore takes two tests.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:flow-tests",
+    "kt:record-triggered-flow"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/flow-tests.md"
+  },
+  {
+   "id": "sf-000801",
+   "area": "automation",
+   "t": "Running flow tests with the sf flow run test command requires the View All Data permission.",
+   "f": "Running flow tests with the sf flow run test command requires only the Run Flows permission.",
+   "x": "The CLI reference lists View All Data as required for sf flow run test. Run Flows on its own is not enough to run tests from the command line.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:flow-tests",
+    "kt:salesforce-cli"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/flow-tests.md"
+  },
+  {
+   "id": "sf-000802",
+   "area": "automation",
+   "t": "The sf flow run test command runs flow tests asynchronously by default and returns a test run ID unless --synchronous is passed.",
+   "f": "The sf flow run test command runs flow tests synchronously by default and returns results unless --async is passed.",
+   "x": "The command is asynchronous by default, handing back a run ID; the --synchronous flag makes it wait. There is no --async flag because async is already the default.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:flow-tests",
+    "kt:salesforce-cli"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/flow-tests.md"
+  },
+  {
+   "id": "sf-000803",
+   "area": "automation",
+   "t": "After a Wait element, resumed flow interviews of the same flow version and running user share one batch transaction and its governor limits.",
+   "f": "After a Wait element, each resumed flow interview runs in its own transaction with its own set of governor limits.",
+   "x": "Resumed interviews are grouped into a batch transaction, so their combined SOQL and DML can exceed limits. They do not each get a fresh limit budget.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:flow-transaction-boundaries",
+    "kt:governor-limits"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/flow-transaction-boundaries.md"
+  },
+  {
+   "id": "sf-000804",
+   "area": "automation",
+   "t": "A Salesforce org processes up to 1,000 time-based flow resume events per hour, and extra events slip to the next hour.",
+   "f": "A Salesforce org processes up to 250 time-based flow resume events per hour, and extra events are discarded.",
+   "x": "The documented cap is 1,000 time-based resume events per hour; anything beyond it is deferred to the following hour rather than dropped.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:flow-transaction-boundaries"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/flow-transaction-boundaries.md"
+  },
+  {
+   "id": "sf-000805",
+   "area": "automation",
+   "t": "Record-triggered flows can use the action-level new-transaction setting only on asynchronous or scheduled paths.",
+   "f": "Record-triggered flows can use the action-level new-transaction setting only on the Run Immediately path.",
+   "x": "Since Winter '26 every flow type has the setting, but record-triggered flows are restricted to async or scheduled paths. The immediate path stays in the triggering save's transaction.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:flow-transaction-boundaries",
+    "kt:record-triggered-flow"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/flow-transaction-boundaries.md"
+  },
+  {
+   "id": "sf-000806",
+   "area": "clouds-and-products",
+   "t": "The Health Cloud Platform permission set license grants Health Cloud standard objects for features built into core Salesforce, outside the managed package.",
+   "f": "The Health Cloud Platform permission set license grants the custom objects behind features in the Health Cloud managed package.",
+   "x": "Health Cloud needs two licenses: Health Cloud covers the managed-package objects, while Health Cloud Platform covers the core standard objects. The false statement describes the other license.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:health-cloud"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/health-cloud.md"
+  },
+  {
+   "id": "sf-000807",
+   "area": "clouds-and-products",
+   "t": "The Health Cloud for Experience Cloud Site permission set license is not available to Partner Community users.",
+   "f": "The Health Cloud for Experience Cloud Site permission set license is available only to Partner Community users.",
+   "x": "The site license covers Experience Cloud site users but explicitly excludes Partner Community users. So it cannot be a partner-only license.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:health-cloud",
+    "kt:experience-cloud"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/health-cloud.md"
+  },
+  {
+   "id": "sf-000808",
+   "area": "clouds-and-products",
+   "t": "Health Cloud requires Enterprise or Unlimited Edition running in Lightning Experience.",
+   "f": "Health Cloud is available in Professional, Enterprise and Unlimited editions, in Lightning Experience or Salesforce Classic.",
+   "x": "Salesforce's setup docs require Enterprise or Unlimited Edition and Lightning Experience. Professional Edition and Classic are not supported.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:health-cloud"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/health-cloud.md"
+  },
+  {
+   "id": "sf-000809",
+   "area": "clouds-and-products",
+   "t": "The enableOmniStudioMetadata setting exposes Omnistudio components to the Metadata and Tooling APIs and can't be turned off once enabled.",
+   "f": "The enableOmniStudioMetadata setting exposes Omnistudio components to the Metadata and Tooling APIs and can be turned off at any time.",
+   "x": "This OmniStudioSettings switch is one-way: once components are exposed as metadata, the setting stays on. Plan for that before enabling it.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:omnistudio",
+    "kt:metadata-api"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/omnistudio.md"
+  },
+  {
+   "id": "sf-000810",
+   "area": "clouds-and-products",
+   "t": "In Omnistudio's standard data model, Data Mappers are stored in the OmniDataTransform object.",
+   "f": "In Omnistudio's standard data model, Data Mappers are stored in the OmniUiCard object.",
+   "x": "The standard model stores Omniscripts in OmniProcess, Data Mappers in OmniDataTransform and FlexCards in OmniUiCard. OmniUiCard holds FlexCards, not Data Mappers.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:omnistudio"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/omnistudio.md"
+  },
+  {
+   "id": "sf-000811",
+   "area": "clouds-and-products",
+   "t": "Standard-runtime Omnistudio component names can't contain special characters such as underscores, so stripping them can create duplicate Data Mapper names.",
+   "f": "Standard-runtime Omnistudio component names can contain underscores, so migrated Data Mapper names never need changing.",
+   "x": "The standard runtime disallows special characters like underscores, and removing them during migration can collide names, which the Migration Assistant's assess mode flags.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:omnistudio",
+    "kt:salesforce-cli"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/omnistudio.md"
+  },
+  {
+   "id": "sf-000812",
+   "area": "data-cloud-and-ai",
+   "t": "When Salesforce renamed Agentforce topics to subagents in April 2026, the Topic Selector was renamed the Agent Router.",
+   "f": "When Salesforce renamed Agentforce topics to subagents in April 2026, the Topic Selector was renamed the Atlas Planner.",
+   "x": "The rename was terminology only: topics became subagents, Topic Selector became Agent Router, and Connected Agent became Connected Subagent. There is no Atlas Planner rename.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:agentforce-subagents",
+    "kt:agentforce"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/agentforce-subagents.md"
+  },
+  {
+   "id": "sf-000813",
+   "area": "data-cloud-and-ai",
+   "t": "In Agentforce filters, context variables are fixed at session start, while custom variables are set from action outputs.",
+   "f": "In Agentforce filters, context variables are set from action outputs, while custom variables are fixed at session start.",
+   "x": "Context variables capture session context when the conversation starts; custom variables are populated later by actions. Filters on either decide which subagents or actions are available.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:agentforce-subagents",
+    "kt:agent-actions"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/agentforce-subagents.md"
+  },
+  {
+   "id": "sf-000814",
+   "area": "data-cloud-and-ai",
+   "t": "An Agentforce subagent removed from the Agent Router's references can still be reached through a transition from another subagent.",
+   "f": "An Agentforce subagent removed from the Agent Router's references becomes unreachable, even through transitions from other subagents.",
+   "x": "Dropping a subagent from the router means it can't be classified directly, but another subagent can still transition to it. That makes it a deliberately gated step.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:agentforce-subagents",
+    "kt:agent-script"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/agentforce-subagents.md"
+  },
+  {
+   "id": "sf-000815",
+   "area": "data-cloud-and-ai",
+   "t": "Data 360 streaming insights can be built only on engagement data, not on streaming profile data.",
+   "f": "Data 360 streaming insights can be built only on streaming profile data, not on engagement data.",
+   "x": "Streaming insights aggregate real-time engagement events such as web and mobile page views. Streaming profile data is not a supported source.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:streaming-insights",
+    "kt:data-streams"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/streaming-insights.md"
+  },
+  {
+   "id": "sf-000816",
+   "area": "data-cloud-and-ai",
+   "t": "Unlike a calculated insight, a Data 360 streaming insight can't use existing insights as building blocks.",
+   "f": "Like a calculated insight, a Data 360 streaming insight can use existing insights as building blocks.",
+   "x": "The SQL for both is nearly identical, but streaming insights can't reference other insights. Any multi-step logic must live in a single query.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:streaming-insights",
+    "kt:calculated-insights"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/streaming-insights.md"
+  },
+  {
+   "id": "sf-000817",
+   "area": "data-cloud-and-ai",
+   "t": "Data 360 data action events are kept for four days, so consuming systems should be built to be durable.",
+   "f": "Data 360 data action events are kept for thirty days, so consuming systems can safely replay a month of history.",
+   "x": "The developer blog notes a four-day retention window for action events. A thirty-day replay window is far longer than what is kept.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:streaming-insights",
+    "kt:data-actions"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/streaming-insights.md"
+  },
+  {
+   "id": "sf-000818",
+   "area": "data-cloud-and-ai",
+   "t": "In a Data 360 enriched search index, each source chunk becomes three chunks: plain, metadata and generated question.",
+   "f": "In a Data 360 enriched search index, each source chunk becomes two chunks: plain and LLM-generated summary.",
+   "x": "Enrichment adds a metadata chunk and a generated-question chunk beside the plain one, tripling chunk count. Generating them also consumes Flex Credits.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:vector-search-in-data-cloud"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/vector-search-in-data-cloud.md"
+  },
+  {
+   "id": "sf-000819",
+   "area": "data-cloud-and-ai",
+   "t": "Data 360 has no keyword-only search index type; keyword matching exists only as one half of hybrid search.",
+   "f": "Data 360 offers a keyword-only search index type alongside vector and hybrid search indexes.",
+   "x": "The index types are vector, hybrid and enriched. Keyword scoring appears only inside hybrid search, which fuses it with vector similarity.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:vector-search-in-data-cloud",
+    "kt:sosl"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/vector-search-in-data-cloud.md"
+  },
+  {
+   "id": "sf-000820",
+   "area": "data-cloud-and-ai",
+   "t": "Choosing Code Extension as a Data 360 search index chunking strategy requires the Data Cloud Architect permission set.",
+   "f": "Choosing Code Extension as a Data 360 search index chunking strategy requires only the Data Cloud User permission set.",
+   "x": "Custom Python chunking functions are selected per field after deployment, and that requires the Data Cloud Architect permission set. A basic user permission set is not enough.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:vector-search-in-data-cloud",
+    "kt:data-cloud-code-extension"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/vector-search-in-data-cloud.md"
+  },
+  {
+   "id": "sf-000821",
+   "area": "data-model",
+   "t": "In Schema Builder, each object move on the canvas is saved automatically, and an Auto-Layout can't be undone.",
+   "f": "In Schema Builder, object moves are saved only when you click Save, and an Auto-Layout can be undone.",
+   "x": "Schema Builder autosaves the layout as you move objects, and Auto-Layout is final. There is no manual save or undo step for the arrangement.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:schema-builder"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/schema-builder.md"
+  },
+  {
+   "id": "sf-000822",
+   "area": "data-model",
+   "t": "Schema Builder can't export a schema for reuse in another org; moving a data model between orgs needs metadata deployment.",
+   "f": "Schema Builder can export a schema as a file that is imported into another org to recreate the data model.",
+   "x": "Salesforce's considerations state that schemas can't be exported from Schema Builder. Objects and fields move between orgs as metadata instead.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:schema-builder",
+    "kt:metadata-driven-architecture"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/schema-builder.md"
+  },
+  {
+   "id": "sf-000823",
+   "area": "data-model",
+   "t": "A custom field created in Schema Builder is visible and editable for most internal profiles by default.",
+   "f": "A custom field created in Schema Builder is visible only to the System Administrator profile by default.",
+   "x": "New fields default to visible and editable for internal profiles, except ones cloned from Partner User or Customer Portal Manager. That permissive default is why field access should be reviewed afterwards.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:schema-builder",
+    "kt:field-level-security"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/schema-builder.md"
+  },
+  {
+   "id": "sf-000824",
+   "area": "development",
+   "t": "A Lightning message channel's isExposed field defaults to false and, once set to true on a packaged or referenced channel, can't be set back.",
+   "f": "A Lightning message channel's isExposed field defaults to true and can be switched back to false at any time.",
+   "x": "isExposed starts as false; turning it on is irreversible once the channel is packaged or referenced. That matters because security review expects channels to stay unexposed.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:lightning-message-service",
+    "kt:metadata-api"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/lightning-message-service.md"
+  },
+  {
+   "id": "sf-000825",
+   "area": "development",
+   "t": "By default an LMS subscriber hears messages only from the active area; subscribing with APPLICATION_SCOPE extends it to the whole app.",
+   "f": "By default an LMS subscriber hears messages from anywhere in the app; subscribing with APPLICATION_SCOPE limits it to the active area.",
+   "x": "The default scope is the active tab, subtab or utility item. APPLICATION_SCOPE widens delivery so background console tabs also receive messages.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:lightning-message-service",
+    "kt:lightning-web-components"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/lightning-message-service.md"
+  },
+  {
+   "id": "sf-000826",
+   "area": "development",
+   "t": "In the Salesforce mobile app, Lightning Message Service is supported for Aura and LWC components but not for Visualforce pages.",
+   "f": "In the Salesforce mobile app, Lightning Message Service is supported for Aura, LWC and Visualforce pages alike.",
+   "x": "Mobile support covers Aura and Lightning web components only. Visualforce can use LMS in Lightning Experience on desktop, not in the mobile app.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:lightning-message-service",
+    "kt:visualforce"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/lightning-message-service.md"
+  },
+  {
+   "id": "sf-000827",
+   "area": "devops-and-alm",
+   "t": "Org Check blocks its API calls once the org's daily API request usage reaches 90%, and warns between 70% and 90%.",
+   "f": "Org Check blocks its API calls once the org's daily API request usage reaches 70%, and warns between 50% and 70%.",
+   "x": "Below 70% Org Check runs normally, from 70% to 90% it runs with a warning, and at 90% or more it stops until the rolling 24-hour count drops.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:org-check",
+    "kt:api-request-limits"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/org-check.md"
+  },
+  {
+   "id": "sf-000828",
+   "area": "devops-and-alm",
+   "t": "In Org Check, a higher score is worse: each anti-pattern found on an item adds one point.",
+   "f": "In Org Check, a higher score is better: each best practice an item follows adds one point.",
+   "x": "A blank or zero score is good, and every anti-pattern raises the score by one, so a 4 means four issues. It ranks cleanup work rather than rewarding compliance.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:org-check",
+    "kt:technical-debt-in-salesforce"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/org-check.md"
+  },
+  {
+   "id": "sf-000829",
+   "area": "devops-and-alm",
+   "t": "Org Check reads only configuration metadata, not business records such as Accounts or Opportunities.",
+   "f": "Org Check reads configuration metadata and business records such as Accounts and Opportunities to score data quality.",
+   "x": "The app analyzes setup and code metadata through Tooling, Metadata and related APIs. It does not read record data and never changes metadata or data.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:org-check",
+    "kt:tooling-api"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/org-check.md"
+  },
+  {
+   "id": "sf-000830",
+   "area": "identity",
+   "t": "A custom domain that serves only Experience Cloud sites tops out at 100 sites, because each Experience Cloud site counts as two.",
+   "f": "A custom domain that serves only Experience Cloud sites tops out at 200 sites, because each Experience Cloud site counts as one.",
+   "x": "The ceiling is 200 sites per domain, but an Experience Cloud site counts double, so the practical cap is 100. Counting each as one would overstate the limit.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:custom-domains",
+    "kt:experience-cloud"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/custom-domains.md"
+  },
+  {
+   "id": "sf-000831",
+   "area": "identity",
+   "t": "Until it is activated, a new custom domain in Salesforce is served over HTTP rather than HTTPS.",
+   "f": "Until it is activated, a new custom domain in Salesforce is served over HTTPS using Salesforce's default certificate.",
+   "x": "HTTPS starts only after activation, so go-live should be planned around that step. Salesforce's default Edge certificate covers only .my.salesforce.com hostnames, not custom domains.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:custom-domains",
+    "kt:certificate-and-key-management"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/custom-domains.md"
+  },
+  {
+   "id": "sf-000832",
+   "area": "identity",
+   "t": "A sandbox's custom domain is added in the production org that owns the sandbox, using the Associated Org field.",
+   "f": "A sandbox's custom domain is added in the sandbox itself, using the Associated Org field.",
+   "x": "The Associated Org field can be edited only from production, so the domain is configured there and pointed at the sandbox. It is not set up inside the sandbox.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:custom-domains"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/custom-domains.md"
+  },
+  {
+   "id": "sf-000833",
+   "area": "identity",
+   "t": "SAML 2.0 was approved as an OASIS Standard in March 2005, merging SAML 1.x, Liberty ID-FF and Shibboleth.",
+   "f": "SAML 2.0 was approved as an OASIS Standard in March 2012, merging SAML 1.x, Liberty ID-FF and Shibboleth.",
+   "x": "OASIS members approved SAML 2.0 in March 2005, folding in Liberty's ID-FF and Internet2's Shibboleth. 2012 is several years too late.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:saml-2-0"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/saml-2-0.md"
+  },
+  {
+   "id": "sf-000834",
+   "area": "identity",
+   "t": "A transient SAML NameID is a one-time value discarded at session end, while a persistent NameID stays linked to the SP account until removed.",
+   "f": "A persistent SAML NameID is a one-time value discarded at session end, while a transient NameID stays linked to the SP account until removed.",
+   "x": "Transient identifiers give the user anonymity at the SP because they are thrown away after the session. Persistent identifiers keep a lasting link to the SP account.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:saml-2-0"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/saml-2-0.md"
+  },
+  {
+   "id": "sf-000835",
+   "area": "identity",
+   "t": "A SAML response sent through the browser on the HTTP POST binding must be digitally signed with XML Signature.",
+   "f": "A SAML response sent through the browser on the HTTP POST binding must be encrypted, while signing it is optional.",
+   "x": "Because the POST response passes through the user's browser, SAML requires an XML signature to protect its integrity. OASIS also notes encryption alone does not provide integrity.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:saml-2-0",
+    "kt:single-sign-on-saml"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/saml-2-0.md"
+  },
+  {
+   "id": "sf-000836",
+   "area": "identity",
+   "t": "When Salesforce is the SAML service provider and several session indexes arrive, it keeps only the first one.",
+   "f": "When Salesforce is the SAML service provider and several session indexes arrive, it keeps only the most recent one.",
+   "x": "Salesforce as SP stores just the first session index, which can't exceed 512 characters. Later indexes in the same exchange are not kept.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:single-logout",
+    "kt:single-sign-on-saml"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/single-logout.md"
+  },
+  {
+   "id": "sf-000837",
+   "area": "identity",
+   "t": "A Salesforce-initiated OpenID Connect single logout waits about 10 seconds before redirecting to the login page.",
+   "f": "A Salesforce-initiated OpenID Connect single logout waits about 60 seconds before redirecting to the login page.",
+   "x": "The short pause of roughly 10 seconds gives the relying party time to finish logging out. A full minute is far longer than Salesforce waits.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:single-logout",
+    "kt:openid-connect"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/single-logout.md"
+  },
+  {
+   "id": "sf-000838",
+   "area": "identity",
+   "t": "The LogoutEventStream event fires for UI logouts, but simply closing the browser never publishes it.",
+   "f": "The LogoutEventStream event fires for UI logouts and is also published whenever the user closes the browser.",
+   "x": "Only explicit UI logouts publish the event, plus timeouts when Force logout on session timeout is on. Closing the browser leaves no logout event to act on.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:single-logout",
+    "kt:event-monitoring"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/single-logout.md"
+  },
+  {
+   "id": "sf-000839",
+   "area": "integration",
+   "t": "When a Connect REST API request exceeds the REST rate limit, Salesforce returns 503 Service Unavailable.",
+   "f": "When a Connect REST API request exceeds the REST rate limit, Salesforce returns 429 Too Many Requests.",
+   "x": "Connect REST API signals an exceeded limit with HTTP 503. Clients that only watch for 429 will miss it.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:connect-api",
+    "kt:api-request-limits"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/connect-api.md"
+  },
+  {
+   "id": "sf-000840",
+   "area": "integration",
+   "t": "In Apex, every ConnectApi write operation counts as one DML statement against governor limits.",
+   "f": "In Apex, ConnectApi write operations count only against API request limits, not against the DML statement limit.",
+   "x": "Each ConnectApi write costs a DML statement, and most ConnectApi calls also count toward the org's API allocation. They consume both budgets.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:connect-api",
+    "kt:apex"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/connect-api.md"
+  },
+  {
+   "id": "sf-000841",
+   "area": "integration",
+   "t": "ConnectApi methods run as the context user and don't support System.runAs, and most need @IsTest(SeeAllData=true) in tests.",
+   "f": "ConnectApi methods support System.runAs in tests, and most work with test-created data without SeeAllData=true.",
+   "x": "ConnectApi ignores runAs and usually needs org data, so tests typically set SeeAllData=true. Some methods instead need canned output registered with a setTest method.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:connect-api",
+    "kt:apex-testing"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/connect-api.md"
+  },
+  {
+   "id": "sf-000842",
+   "area": "integration",
+   "t": "Salesforce product guidance points record integrations to Bulk API 2.0 once a job generally exceeds 2,000 records.",
+   "f": "Salesforce product guidance points record integrations to Bulk API 2.0 once a job generally exceeds 50,000 records.",
+   "x": "Below about 2,000 records, REST sObject and Composite resources fit better; above it, Bulk API 2.0's job model pays off. Waiting until 50,000 records sets the threshold far too high.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:salesforce-apis",
+    "kt:bulk-api-2"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/salesforce-apis.md"
+  },
+  {
+   "id": "sf-000843",
+   "area": "integration",
+   "t": "The Composite Graph resource can run up to 500 subrequests, processing each graph all-or-nothing.",
+   "f": "The Composite Graph resource can run up to 100 subrequests, processing each graph all-or-nothing.",
+   "x": "Composite Graph raises the subrequest ceiling to 500, compared with 25 for plain Composite, and each graph succeeds or fails as a unit.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:salesforce-apis",
+    "kt:rest-api"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/salesforce-apis.md"
+  },
+  {
+   "id": "sf-000844",
+   "area": "integration",
+   "t": "SOAP API and the original Bulk API remain supported but are no longer enhanced, so new work should favour REST and Bulk API 2.0.",
+   "f": "SOAP API and the original Bulk API are still actively enhanced, so new work can favour them equally with REST and Bulk API 2.0.",
+   "x": "Salesforce keeps the older APIs running but invests in REST and Bulk API 2.0. New integrations should therefore start on the actively developed APIs.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:salesforce-apis",
+    "kt:soap-api",
+    "kt:bulk-api-2"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/salesforce-apis.md"
+  },
+  {
+   "id": "sf-000845",
+   "area": "platform-architecture",
+   "t": "NIST SP 800-145 defines cloud computing through five essential characteristics, three service models and four deployment models.",
+   "f": "NIST SP 800-145 defines cloud computing through four essential characteristics, three service models and three deployment models.",
+   "x": "The NIST definition lists five characteristics, IaaS/PaaS/SaaS as service models, and private, community, public and hybrid as deployment models. The false counts drop a characteristic and a deployment model.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:cloud-computing"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/cloud-computing.md"
+  },
+  {
+   "id": "sf-000846",
+   "area": "platform-architecture",
+   "t": "NIST's cloud reference architecture, SP 500-292, names five actors: cloud consumer, provider, auditor, broker and carrier.",
+   "f": "NIST's cloud reference architecture, SP 500-292, names four actors: cloud consumer, provider, broker and carrier, with no auditor.",
+   "x": "SP 500-292 includes the cloud auditor as a fifth actor, responsible for independent assessment of cloud services. Leaving it out drops the role that links to programmes like FedRAMP.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:cloud-computing",
+    "kt:fedramp"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/cloud-computing.md"
+  },
+  {
+   "id": "sf-000847",
+   "area": "platform-architecture",
+   "t": "In NIST's deployment models, a community cloud serves a group of organizations with shared concerns such as mission or compliance.",
+   "f": "In NIST's deployment models, a hybrid cloud serves a group of organizations with shared concerns such as mission or compliance.",
+   "x": "A community cloud is the shared-concern model. A hybrid cloud binds two or more deployment models together so data and applications can move between them.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:cloud-computing"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/cloud-computing.md"
+  },
+  {
+   "id": "sf-000848",
+   "area": "public-sector-and-compliance",
+   "t": "In a FedRAMP Rev5 monthly POA&M, every unique vulnerability is tracked as its own item rather than grouped.",
+   "f": "In a FedRAMP Rev5 monthly POA&M, vulnerabilities are grouped into one item per affected security control.",
+   "x": "The legacy continuous monitoring playbook requires a separate POA&M entry for each unique vulnerability. Grouping them under a control would hide individual findings.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:continuous-monitoring",
+    "kt:fedramp"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/continuous-monitoring.md"
+  },
+  {
+   "id": "sf-000849",
+   "area": "public-sector-and-compliance",
+   "t": "Under FedRAMP's 2026 Collaborative Continuous Monitoring, the quarterly review is required for Classes C and D but optional for Class A.",
+   "f": "Under FedRAMP's 2026 Collaborative Continuous Monitoring, the quarterly review is required for every class, including Class A.",
+   "x": "The synchronous review after each Ongoing Certification Report is optional for Class A, recommended for Class B and required for Classes C and D.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:continuous-monitoring",
+    "kt:fedramp"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/continuous-monitoring.md"
+  },
+  {
+   "id": "sf-000850",
+   "area": "public-sector-and-compliance",
+   "t": "Salesforce Security Center keeps up to 6 months of trend data on metrics aggregated from child tenants.",
+   "f": "Salesforce Security Center keeps up to 24 months of trend data on metrics aggregated from child tenants.",
+   "x": "A Security Center parent tenant tracks posture metrics such as permission assignments and Health Check scores with up to 6 months of history. Two years overstates its retention.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:continuous-monitoring",
+    "kt:security-center"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/continuous-monitoring.md"
+  },
+  {
+   "id": "sf-000851",
+   "area": "public-sector-and-compliance",
+   "t": "NIST SP 800-37 Rev. 2 organizes the RMF into seven steps, and Prepare is the only step new in that revision.",
+   "f": "NIST SP 800-37 Rev. 2 organizes the RMF into seven steps, and Monitor is the only step new in that revision.",
+   "x": "Revision 2 added Prepare at the front; Categorize, Select, Implement, Assess, Authorize and Monitor carried over from Revision 1.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:nist-risk-management-framework"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/nist-risk-management-framework.md"
+  },
+  {
+   "id": "sf-000852",
+   "area": "public-sector-and-compliance",
+   "t": "The NIST RMF operates at three levels: the organization, the mission or business process, and the individual information system.",
+   "f": "The NIST RMF operates at two levels: the organization and the individual information system, with no process level.",
+   "x": "The RMF explicitly includes a middle mission or business process level between the organization and the system. Omitting it misdescribes how risk decisions connect.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:nist-risk-management-framework"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/nist-risk-management-framework.md"
+  },
+  {
+   "id": "sf-000853",
+   "area": "public-sector-and-compliance",
+   "t": "Under the NIST RMF, a common control authorization approves controls that many systems inherit.",
+   "f": "Under the NIST RMF, an authorization to use approves controls that many systems inherit.",
+   "x": "The RMF names the common control authorization as the decision for inheritable controls. An authorization to operate or to use applies to a single system.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:nist-risk-management-framework",
+    "kt:authority-to-operate"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/nist-risk-management-framework.md"
+  },
+  {
+   "id": "sf-000854",
+   "area": "security-and-sharing",
+   "t": "GroupMember rows exist only for a public group's direct members, so users who inherit membership through a role or subgroup aren't listed.",
+   "f": "GroupMember rows list every user a public group covers, including users who inherit membership through a role or subgroup.",
+   "x": "Only direct members get GroupMember rows; role, territory and nested-group members are represented by their group IDs. Querying GroupMember alone therefore misses inherited users.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:public-groups"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/public-groups.md"
+  },
+  {
+   "id": "sf-000855",
+   "area": "security-and-sharing",
+   "t": "The GroupMember object supports create, delete, query and retrieve, but not update.",
+   "f": "The GroupMember object supports create, update, delete and query, so a membership row can be repointed to another user.",
+   "x": "GroupMember has no update call; to change membership you delete one row and insert another. Inserting a duplicate just returns the existing row.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:public-groups"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/public-groups.md"
+  },
+  {
+   "id": "sf-000856",
+   "area": "security-and-sharing",
+   "t": "For a public group, the doesIncludeBosses field behind Grant Access Using Hierarchies is documented as defaulting to true.",
+   "f": "For a public group, the doesIncludeBosses field behind Grant Access Using Hierarchies is documented as defaulting to false.",
+   "x": "Regular groups default to sharing upward to members' managers in the role hierarchy. Admins clear the setting when a team's records shouldn't flow to their managers.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:public-groups",
+    "kt:role-hierarchy"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/public-groups.md"
+  },
+  {
+   "id": "sf-000857",
+   "area": "architecture-practice",
+   "t": "The current B2C Solution Architect credential page lists two prerequisites: Platform App Builder and Platform Integration Architect.",
+   "f": "The current B2C Solution Architect credential page lists three prerequisites: Marketing Cloud Email Specialist, Platform App Builder and Platform Integration Architect.",
+   "x": "Marketing Cloud Email Specialist was a prerequisite at launch but no longer appears on the live credential page. Only App Builder and Integration Architect remain.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:b2c-solution-architect-certification",
+    "kt:platform-app-builder-certification",
+    "kt:integration-architect-certification"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/b2c-solution-architect-certification.md"
+  },
+  {
+   "id": "sf-000858",
+   "area": "architecture-practice",
+   "t": "In the B2C Solution Architect exam, Discovery and Customer Success is the largest section, at 27%.",
+   "f": "In the B2C Solution Architect exam, Architecture Design is the largest section, at 27%.",
+   "x": "Discovery and Customer Success carries 27%, more than Architecture Design at 18%. The weighting shows that business skills are tested heavily.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:b2c-solution-architect-certification"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/b2c-solution-architect-certification.md"
+  },
+  {
+   "id": "sf-000859",
+   "area": "architecture-practice",
+   "t": "Functional Capabilities and Business Value is the lightest B2C Solution Architect exam section, weighted at 7%.",
+   "f": "Integration is the lightest B2C Solution Architect exam section, weighted at 7%.",
+   "x": "Functional Capabilities and Business Value carries only 7%, whereas Integration is one of the heavier sections at 23%.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:b2c-solution-architect-certification"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/b2c-solution-architect-certification.md"
+  },
+  {
+   "id": "sf-000860",
+   "area": "architecture-practice",
+   "t": "In Trailhead's risk register method, probability and impact are each rated 1 to 3 and multiplied, and scores of 7 to 9 mean high exposure.",
+   "f": "In Trailhead's risk register method, probability and impact are each rated 1 to 3 and added, and scores of 5 to 6 mean high exposure.",
+   "x": "The score is the product of the two ratings, giving 1 to 9, with 1-3 low, 4-6 moderate and 7-9 high. Adding the ratings is not the method Trailhead uses.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:risk-and-assumption-logs"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/risk-and-assumption-logs.md"
+  },
+  {
+   "id": "sf-000861",
+   "area": "architecture-practice",
+   "t": "UK government delivery guidance says significant assumptions should be logged as risks, stating the impact if they prove false.",
+   "f": "UK government delivery guidance says significant assumptions should be kept off the risk register and tracked only in a separate assumption log.",
+   "x": "The Teal Book folds assumptions into the risk register, recording what happens if each proves false. Keeping them apart is not what it recommends.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:risk-and-assumption-logs"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/risk-and-assumption-logs.md"
+  },
+  {
+   "id": "sf-000862",
+   "area": "architecture-practice",
+   "t": "When a logged risk materializes, it moves to the issue log and is closed on the risk register.",
+   "f": "When a logged risk materializes, it stays open on the risk register and its mitigation plan is reused as the resolution.",
+   "x": "A risk that happens becomes an issue, which needs a prioritized resolution plan rather than mitigation. The risk entry is closed, though it stays visible for history.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:risk-and-assumption-logs",
+    "kt:salesforce-governance"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/risk-and-assumption-logs.md"
+  },
+  {
+   "id": "sf-000863",
+   "area": "automation",
+   "t": "A Salesforce email alert can add up to 5 extra CC email addresses beyond its typed recipients.",
+   "f": "A Salesforce email alert can add up to 25 extra CC email addresses beyond its typed recipients.",
+   "x": "The WorkflowAlert ccEmails list is capped at five addresses. Larger audiences belong in typed recipients such as public groups or roles.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:email-alerts"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/email-alerts.md"
+  },
+  {
+   "id": "sf-000864",
+   "area": "automation",
+   "t": "The emailAlert invocable action takes a single input, SObjectRowId, and returns no outputs.",
+   "f": "The emailAlert invocable action takes recipient addresses and a template ID as inputs and returns the sent message ID.",
+   "x": "Template and recipients are fixed in the alert, so the caller only names the record. The action returns nothing.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:email-alerts",
+    "kt:invocable-actions-api"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/email-alerts.md"
+  },
+  {
+   "id": "sf-000865",
+   "area": "automation",
+   "t": "Email alerts are object-specific, so an alert built on Case can't be fired for an Account record.",
+   "f": "Email alerts are object-agnostic, so an alert built on Case can be fired for an Account record.",
+   "x": "Each alert is defined on one object and fills merge fields from that object's record. A different object needs its own alert.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:email-alerts"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/email-alerts.md"
+  },
+  {
+   "id": "sf-000866",
+   "area": "automation",
+   "t": "A scheduled path's batch size defaults to 200, which is also its maximum, and can be lowered to 1.",
+   "f": "A scheduled path's batch size defaults to 200 and can be raised to 2,000 for large volumes.",
+   "x": "Records due in the same minute are batched at up to 200; lowering the size helps the path's actions stay within governor limits. It cannot go above 200.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:scheduled-paths",
+    "kt:governor-limits"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/scheduled-paths.md"
+  },
+  {
+   "id": "sf-000867",
+   "area": "automation",
+   "t": "A failed scheduled-path interview is retried up to 5 times, at roughly 15, 30, 60, 120 and 240 minutes.",
+   "f": "A failed scheduled-path interview is retried up to 3 times, at roughly 15, 30 and 60 minutes.",
+   "x": "Salesforce retries a failed scheduled path five times with growing intervals up to about four hours, sending an error email. Three retries understates it.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:scheduled-paths",
+    "kt:flow-fault-handling"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/scheduled-paths.md"
+  },
+  {
+   "id": "sf-000868",
+   "area": "automation",
+   "t": "$Record__Prior isn't supported in scheduled-path elements or in entry-condition formulas.",
+   "f": "$Record__Prior is supported in scheduled-path elements, though not in entry-condition formulas.",
+   "x": "Prior values aren't available when the path runs later. The Admins blog's workaround is a before-save flow that sets a switch field for the path to read.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:scheduled-paths",
+    "kt:record-triggered-flow"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/scheduled-paths.md"
+  },
+  {
+   "id": "sf-000869",
+   "area": "clouds-and-products",
+   "t": "In Agentforce Nonprofit, a household is a business account that a Party Relationship Group record marks as a household.",
+   "f": "In Agentforce Nonprofit, a household is a dedicated Household custom object that contacts are linked to by lookup.",
+   "x": "The built-in model uses a business account plus a Party Relationship Group, which also holds household-level details. A separate Household custom object is not how it is modeled.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:agentforce-nonprofit",
+    "kt:person-accounts"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/agentforce-nonprofit.md"
+  },
+  {
+   "id": "sf-000870",
+   "area": "clouds-and-products",
+   "t": "In Agentforce Nonprofit, a reciprocal relationship such as spouse-to-spouse must be stored as two relationship records.",
+   "f": "In Agentforce Nonprofit, a reciprocal relationship such as spouse-to-spouse is stored as one record that reads correctly from both sides.",
+   "x": "Each direction of a reciprocal contact-contact link needs its own record. That matters for data loads and duplicate checks.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:agentforce-nonprofit",
+    "kt:contacts-to-multiple-accounts"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/agentforce-nonprofit.md"
+  },
+  {
+   "id": "sf-000871",
+   "area": "clouds-and-products",
+   "t": "In Agentforce Nonprofit fundraising, a GiftCommitment holds a pledge or recurring promise, while each completed payment is a GiftTransaction.",
+   "f": "In Agentforce Nonprofit fundraising, a GiftCommitment holds a pledge or recurring promise, while each completed payment is an Opportunity.",
+   "x": "Fundraising uses dedicated gift objects rather than repurposed Opportunities, with GiftTransaction recording each payment received.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:agentforce-nonprofit"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/agentforce-nonprofit.md"
+  },
+  {
+   "id": "sf-000872",
+   "area": "clouds-and-products",
+   "t": "Trailhead states that Financial Services Cloud has been renamed Agentforce Financial Services.",
+   "f": "Trailhead states that Financial Services Cloud has been renamed Agentforce Banking.",
+   "x": "The new name follows the Agentforce Sales and Agentforce Service branding and covers banking, wealth and insurance. Agentforce Banking is not the product's name.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:financial-services-cloud"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/financial-services-cloud.md"
+  },
+  {
+   "id": "sf-000873",
+   "area": "clouds-and-products",
+   "t": "Financial Services Cloud managed package components are one API version behind core Salesforce, while its standard objects share the core version.",
+   "f": "Financial Services Cloud standard objects are one API version behind core Salesforce, while its managed package components share the core version.",
+   "x": "The developer guide warns that FinServ-namespaced package components lag core by a version. Standard FSC objects ship with core and match its API version.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:financial-services-cloud"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/financial-services-cloud.md"
   }
  ]
 }

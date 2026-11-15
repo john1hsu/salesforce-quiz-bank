@@ -1,0 +1,18 @@
+id: sf-000779
+product_area: public-sector-and-compliance
+true_statement: Access to a FedRAMP package granted through the Package Access Request Form lasts 60 days and can be extended in 30-day increments.
+false_statement: Access to a FedRAMP package granted through the Package Access Request Form lasts 12 months and can be extended in 6-month increments.
+explanation: FedRAMP's quick guide gives agencies a 60-day window to review a package, extendable 30 days at a time. Long-lived access comes only after the signed ATO letter reaches the PMO.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/authority-to-operate.md
+  commit: 77b1ca9d4bf1d4f33ec8f2d0a8934780e067b150
+  blob: 0611692270abb0c450ba117ef4cf171dd12a8a98
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:authority-to-operate
+- kt:fedramp
+difficulty: 2
+created: '2026-11-15'
+status: active

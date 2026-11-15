@@ -1,0 +1,17 @@
+id: sf-000851
+product_area: public-sector-and-compliance
+true_statement: NIST SP 800-37 Rev. 2 organizes the RMF into seven steps, and Prepare is the only step new in that revision.
+false_statement: NIST SP 800-37 Rev. 2 organizes the RMF into seven steps, and Monitor is the only step new in that revision.
+explanation: Revision 2 added Prepare at the front; Categorize, Select, Implement, Assess, Authorize and Monitor carried over from Revision 1.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/nist-risk-management-framework.md
+  commit: 77b1ca9d4bf1d4f33ec8f2d0a8934780e067b150
+  blob: 34b596bc21c42432286930041042bc8943956b57
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:nist-risk-management-framework
+difficulty: 2
+created: '2026-11-15'
+status: active

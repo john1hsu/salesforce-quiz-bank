@@ -1,0 +1,17 @@
+id: sf-000861
+product_area: architecture-practice
+true_statement: UK government delivery guidance says significant assumptions should be logged as risks, stating the impact if they prove false.
+false_statement: UK government delivery guidance says significant assumptions should be kept off the risk register and tracked only in a separate assumption log.
+explanation: The Teal Book folds assumptions into the risk register, recording what happens if each proves false. Keeping them apart is not what it recommends.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/risk-and-assumption-logs.md
+  commit: 77b1ca9d4bf1d4f33ec8f2d0a8934780e067b150
+  blob: b468aa5319f941b96ebab99e22b0b770361f6cc0
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:risk-and-assumption-logs
+difficulty: 2
+created: '2026-11-15'
+status: active

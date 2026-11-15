@@ -1,0 +1,18 @@
+id: sf-000864
+product_area: automation
+true_statement: The emailAlert invocable action takes a single input, SObjectRowId, and returns no outputs.
+false_statement: The emailAlert invocable action takes recipient addresses and a template ID as inputs and returns the sent message ID.
+explanation: Template and recipients are fixed in the alert, so the caller only names the record. The action returns nothing.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/email-alerts.md
+  commit: 77b1ca9d4bf1d4f33ec8f2d0a8934780e067b150
+  blob: aad20a317ee8e4d0df3dd214406609ace19af8b5
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:email-alerts
+- kt:invocable-actions-api
+difficulty: 2
+created: '2026-11-15'
+status: active

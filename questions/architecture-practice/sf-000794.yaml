@@ -1,0 +1,17 @@
+id: sf-000794
+product_area: architecture-practice
+true_statement: Trailhead's Nonprofit Cloud governance unit suggests roughly one Salesforce administrator per 50 users as a starting heuristic.
+false_statement: Trailhead's Nonprofit Cloud governance unit suggests roughly one Salesforce administrator per 200 users as a starting heuristic.
+explanation: The unit's rule of thumb is about one admin for every 50 users, adjusted for other duties and request volume. One per 200 understates the staffing it suggests.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/salesforce-governance.md
+  commit: 77b1ca9d4bf1d4f33ec8f2d0a8934780e067b150
+  blob: 73d694b30d699076edacfbac2eee68dce7b2b82f
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:salesforce-governance
+difficulty: 2
+created: '2026-11-15'
+status: active

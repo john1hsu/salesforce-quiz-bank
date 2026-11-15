@@ -1,0 +1,18 @@
+id: sf-000795
+product_area: architecture-practice
+true_statement: Salesforce Architects advise that a finalized architectural guiding principle is superseded by a new principle rather than reworded.
+false_statement: Salesforce Architects advise that a finalized architectural guiding principle is reworded in place with a new version number rather than superseded.
+explanation: Once a principle is Final, changing it means issuing a new principle that supersedes it, keeping the record clear. Editing the wording of the final principle is what the guidance avoids.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/salesforce-governance.md
+  commit: 77b1ca9d4bf1d4f33ec8f2d0a8934780e067b150
+  blob: 73d694b30d699076edacfbac2eee68dce7b2b82f
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:salesforce-governance
+- kt:salesforce-architect
+difficulty: 3
+created: '2026-11-15'
+status: active

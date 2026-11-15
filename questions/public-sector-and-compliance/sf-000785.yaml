@@ -1,0 +1,18 @@
+id: sf-000785
+product_area: public-sector-and-compliance
+true_statement: FedRAMP requires the Control Implementation Summary / Customer Responsibility Matrix workbook as Appendix J to the provider's System Security Plan.
+false_statement: FedRAMP requires the Control Implementation Summary / Customer Responsibility Matrix workbook as Appendix A to the provider's System Security Plan.
+explanation: The CIS/CRM workbook is Appendix J of the SSP and marks each control as provider, customer, shared or inherited. Appendix A is not where FedRAMP places it.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/shared-responsibility-model.md
+  commit: 77b1ca9d4bf1d4f33ec8f2d0a8934780e067b150
+  blob: 26199edb4710b4ea18a5127e17142970e34f5c64
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:shared-responsibility-model
+- kt:fedramp
+difficulty: 3
+created: '2026-11-15'
+status: active

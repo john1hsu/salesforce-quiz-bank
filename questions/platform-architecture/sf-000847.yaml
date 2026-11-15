@@ -1,0 +1,17 @@
+id: sf-000847
+product_area: platform-architecture
+true_statement: In NIST's deployment models, a community cloud serves a group of organizations with shared concerns such as mission or compliance.
+false_statement: In NIST's deployment models, a hybrid cloud serves a group of organizations with shared concerns such as mission or compliance.
+explanation: A community cloud is the shared-concern model. A hybrid cloud binds two or more deployment models together so data and applications can move between them.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/cloud-computing.md
+  commit: 77b1ca9d4bf1d4f33ec8f2d0a8934780e067b150
+  blob: c757fdb28ca4f5efa57f2c5907ab1131fcd45927
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:cloud-computing
+difficulty: 1
+created: '2026-11-15'
+status: active

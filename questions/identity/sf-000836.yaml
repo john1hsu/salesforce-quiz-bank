@@ -1,0 +1,18 @@
+id: sf-000836
+product_area: identity
+true_statement: When Salesforce is the SAML service provider and several session indexes arrive, it keeps only the first one.
+false_statement: When Salesforce is the SAML service provider and several session indexes arrive, it keeps only the most recent one.
+explanation: Salesforce as SP stores just the first session index, which can't exceed 512 characters. Later indexes in the same exchange are not kept.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/single-logout.md
+  commit: 77b1ca9d4bf1d4f33ec8f2d0a8934780e067b150
+  blob: fa26e9924f6d26cf2f974d9c58e3f9d7dd4d9bef
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:single-logout
+- kt:single-sign-on-saml
+difficulty: 3
+created: '2026-11-15'
+status: active

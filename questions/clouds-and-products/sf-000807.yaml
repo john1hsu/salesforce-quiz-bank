@@ -1,0 +1,18 @@
+id: sf-000807
+product_area: clouds-and-products
+true_statement: The Health Cloud for Experience Cloud Site permission set license is not available to Partner Community users.
+false_statement: The Health Cloud for Experience Cloud Site permission set license is available only to Partner Community users.
+explanation: The site license covers Experience Cloud site users but explicitly excludes Partner Community users. So it cannot be a partner-only license.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/health-cloud.md
+  commit: 77b1ca9d4bf1d4f33ec8f2d0a8934780e067b150
+  blob: db0193872498c12fbe2d61be9c58df4dd5be728e
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:health-cloud
+- kt:experience-cloud
+difficulty: 3
+created: '2026-11-15'
+status: active

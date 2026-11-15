@@ -1,0 +1,18 @@
+id: sf-000867
+product_area: automation
+true_statement: A failed scheduled-path interview is retried up to 5 times, at roughly 15, 30, 60, 120 and 240 minutes.
+false_statement: A failed scheduled-path interview is retried up to 3 times, at roughly 15, 30 and 60 minutes.
+explanation: Salesforce retries a failed scheduled path five times with growing intervals up to about four hours, sending an error email. Three retries understates it.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/scheduled-paths.md
+  commit: 77b1ca9d4bf1d4f33ec8f2d0a8934780e067b150
+  blob: 4f9f4a6f0d092f2d27ee474f33ffbf74e8bdb7ec
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:scheduled-paths
+- kt:flow-fault-handling
+difficulty: 3
+created: '2026-11-15'
+status: active

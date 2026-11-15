@@ -1,0 +1,18 @@
+id: sf-000815
+product_area: data-cloud-and-ai
+true_statement: Data 360 streaming insights can be built only on engagement data, not on streaming profile data.
+false_statement: Data 360 streaming insights can be built only on streaming profile data, not on engagement data.
+explanation: Streaming insights aggregate real-time engagement events such as web and mobile page views. Streaming profile data is not a supported source.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/streaming-insights.md
+  commit: 77b1ca9d4bf1d4f33ec8f2d0a8934780e067b150
+  blob: cd32ffe80144db3f1ed64c7e92483894125dd243
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:streaming-insights
+- kt:data-streams
+difficulty: 2
+created: '2026-11-15'
+status: active

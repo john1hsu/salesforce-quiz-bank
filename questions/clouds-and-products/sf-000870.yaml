@@ -1,0 +1,18 @@
+id: sf-000870
+product_area: clouds-and-products
+true_statement: In Agentforce Nonprofit, a reciprocal relationship such as spouse-to-spouse must be stored as two relationship records.
+false_statement: In Agentforce Nonprofit, a reciprocal relationship such as spouse-to-spouse is stored as one record that reads correctly from both sides.
+explanation: Each direction of a reciprocal contact-contact link needs its own record. That matters for data loads and duplicate checks.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/agentforce-nonprofit.md
+  commit: 77b1ca9d4bf1d4f33ec8f2d0a8934780e067b150
+  blob: eb2c9f41c4a11d1107d336689f4801e6be2a16bc
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:agentforce-nonprofit
+- kt:contacts-to-multiple-accounts
+difficulty: 2
+created: '2026-11-15'
+status: active

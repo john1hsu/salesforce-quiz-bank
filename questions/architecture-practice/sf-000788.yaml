@@ -1,0 +1,17 @@
+id: sf-000788
+product_area: architecture-practice
+true_statement: The Development Lifecycle and Deployment Architect exam requires a passing score of 65% across its 60 scored questions.
+false_statement: The Development Lifecycle and Deployment Architect exam requires a passing score of 75% across its 60 scored questions.
+explanation: The exam guide sets the pass mark at 65% for the 60 scored multiple-choice questions. 75% is higher than the guide requires.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/development-lifecycle-and-deployment-architect-certification.md
+  commit: 77b1ca9d4bf1d4f33ec8f2d0a8934780e067b150
+  blob: 4e2cf09bfe177ee549aa68387348d06317635ebf
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:development-lifecycle-and-deployment-architect-certification
+difficulty: 2
+created: '2026-11-15'
+status: active

@@ -1,0 +1,17 @@
+id: sf-000808
+product_area: clouds-and-products
+true_statement: Health Cloud requires Enterprise or Unlimited Edition running in Lightning Experience.
+false_statement: Health Cloud is available in Professional, Enterprise and Unlimited editions, in Lightning Experience or Salesforce Classic.
+explanation: Salesforce's setup docs require Enterprise or Unlimited Edition and Lightning Experience. Professional Edition and Classic are not supported.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/health-cloud.md
+  commit: 77b1ca9d4bf1d4f33ec8f2d0a8934780e067b150
+  blob: db0193872498c12fbe2d61be9c58df4dd5be728e
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:health-cloud
+difficulty: 1
+created: '2026-11-15'
+status: active

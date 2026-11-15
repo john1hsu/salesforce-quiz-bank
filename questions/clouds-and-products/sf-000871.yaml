@@ -1,0 +1,17 @@
+id: sf-000871
+product_area: clouds-and-products
+true_statement: In Agentforce Nonprofit fundraising, a GiftCommitment holds a pledge or recurring promise, while each completed payment is a GiftTransaction.
+false_statement: In Agentforce Nonprofit fundraising, a GiftCommitment holds a pledge or recurring promise, while each completed payment is an Opportunity.
+explanation: Fundraising uses dedicated gift objects rather than repurposed Opportunities, with GiftTransaction recording each payment received.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/agentforce-nonprofit.md
+  commit: 77b1ca9d4bf1d4f33ec8f2d0a8934780e067b150
+  blob: eb2c9f41c4a11d1107d336689f4801e6be2a16bc
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:agentforce-nonprofit
+difficulty: 2
+created: '2026-11-15'
+status: active

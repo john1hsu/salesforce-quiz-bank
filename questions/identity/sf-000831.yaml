@@ -1,0 +1,18 @@
+id: sf-000831
+product_area: identity
+true_statement: Until it is activated, a new custom domain in Salesforce is served over HTTP rather than HTTPS.
+false_statement: Until it is activated, a new custom domain in Salesforce is served over HTTPS using Salesforce's default certificate.
+explanation: HTTPS starts only after activation, so go-live should be planned around that step. Salesforce's default Edge certificate covers only .my.salesforce.com hostnames, not custom domains.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/custom-domains.md
+  commit: 77b1ca9d4bf1d4f33ec8f2d0a8934780e067b150
+  blob: f44fa4bcdc7d61de7784306194d00b032ca6cc05
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:custom-domains
+- kt:certificate-and-key-management
+difficulty: 2
+created: '2026-11-15'
+status: active

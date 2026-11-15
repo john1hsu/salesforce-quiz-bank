@@ -1,0 +1,17 @@
+id: sf-000792
+product_area: architecture-practice
+true_statement: The MuleSoft Platform Architect exam gives candidates 120 minutes for its 60 scored questions.
+false_statement: The MuleSoft Platform Architect exam gives candidates 90 minutes for its 60 scored questions.
+explanation: The exam guide allows 120 minutes for 60 scored questions plus up to five unscored ones. A 90-minute limit is shorter than the guide states.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/mulesoft-platform-architect-certification.md
+  commit: 77b1ca9d4bf1d4f33ec8f2d0a8934780e067b150
+  blob: 69b59ecc8fba58f530e662127fd893c5ed2af306
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:mulesoft-platform-architect-certification
+difficulty: 2
+created: '2026-11-15'
+status: active

@@ -1,0 +1,18 @@
+id: sf-000825
+product_area: development
+true_statement: By default an LMS subscriber hears messages only from the active area; subscribing with APPLICATION_SCOPE extends it to the whole app.
+false_statement: By default an LMS subscriber hears messages from anywhere in the app; subscribing with APPLICATION_SCOPE limits it to the active area.
+explanation: The default scope is the active tab, subtab or utility item. APPLICATION_SCOPE widens delivery so background console tabs also receive messages.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/lightning-message-service.md
+  commit: 77b1ca9d4bf1d4f33ec8f2d0a8934780e067b150
+  blob: 87743023c622ab1bf95416936a11d5f5e44c03b7
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:lightning-message-service
+- kt:lightning-web-components
+difficulty: 2
+created: '2026-11-15'
+status: active

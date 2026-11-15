@@ -1,0 +1,17 @@
+id: sf-000872
+product_area: clouds-and-products
+true_statement: Trailhead states that Financial Services Cloud has been renamed Agentforce Financial Services.
+false_statement: Trailhead states that Financial Services Cloud has been renamed Agentforce Banking.
+explanation: The new name follows the Agentforce Sales and Agentforce Service branding and covers banking, wealth and insurance. Agentforce Banking is not the product's name.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/financial-services-cloud.md
+  commit: 77b1ca9d4bf1d4f33ec8f2d0a8934780e067b150
+  blob: 8d34ab3d51b6a44a8d9351a66b679d4bd3630768
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:financial-services-cloud
+difficulty: 1
+created: '2026-11-15'
+status: active

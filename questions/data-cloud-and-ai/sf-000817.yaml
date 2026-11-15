@@ -1,0 +1,18 @@
+id: sf-000817
+product_area: data-cloud-and-ai
+true_statement: Data 360 data action events are kept for four days, so consuming systems should be built to be durable.
+false_statement: Data 360 data action events are kept for thirty days, so consuming systems can safely replay a month of history.
+explanation: The developer blog notes a four-day retention window for action events. A thirty-day replay window is far longer than what is kept.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/streaming-insights.md
+  commit: 77b1ca9d4bf1d4f33ec8f2d0a8934780e067b150
+  blob: cd32ffe80144db3f1ed64c7e92483894125dd243
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:streaming-insights
+- kt:data-actions
+difficulty: 2
+created: '2026-11-15'
+status: active

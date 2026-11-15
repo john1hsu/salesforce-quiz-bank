@@ -1,0 +1,18 @@
+id: sf-000819
+product_area: data-cloud-and-ai
+true_statement: Data 360 has no keyword-only search index type; keyword matching exists only as one half of hybrid search.
+false_statement: Data 360 offers a keyword-only search index type alongside vector and hybrid search indexes.
+explanation: The index types are vector, hybrid and enriched. Keyword scoring appears only inside hybrid search, which fuses it with vector similarity.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/vector-search-in-data-cloud.md
+  commit: 77b1ca9d4bf1d4f33ec8f2d0a8934780e067b150
+  blob: 414dafc6ecc00faca2855f2c9efccd04186aa9c8
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:vector-search-in-data-cloud
+- kt:sosl
+difficulty: 2
+created: '2026-11-15'
+status: active

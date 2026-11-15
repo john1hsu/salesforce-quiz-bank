@@ -1,0 +1,18 @@
+id: sf-000842
+product_area: integration
+true_statement: Salesforce product guidance points record integrations to Bulk API 2.0 once a job generally exceeds 2,000 records.
+false_statement: Salesforce product guidance points record integrations to Bulk API 2.0 once a job generally exceeds 50,000 records.
+explanation: Below about 2,000 records, REST sObject and Composite resources fit better; above it, Bulk API 2.0's job model pays off. Waiting until 50,000 records sets the threshold far too high.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/salesforce-apis.md
+  commit: 77b1ca9d4bf1d4f33ec8f2d0a8934780e067b150
+  blob: 8916e92feff1d5269bd5032fc2877a7f98ac6bdd
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:salesforce-apis
+- kt:bulk-api-2
+difficulty: 2
+created: '2026-11-15'
+status: active

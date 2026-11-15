@@ -1,0 +1,18 @@
+id: sf-000802
+product_area: automation
+true_statement: The sf flow run test command runs flow tests asynchronously by default and returns a test run ID unless --synchronous is passed.
+false_statement: The sf flow run test command runs flow tests synchronously by default and returns results unless --async is passed.
+explanation: The command is asynchronous by default, handing back a run ID; the --synchronous flag makes it wait. There is no --async flag because async is already the default.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/flow-tests.md
+  commit: 77b1ca9d4bf1d4f33ec8f2d0a8934780e067b150
+  blob: eeb1bf951d89c60baaba8d3243aa792e5456c000
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:flow-tests
+- kt:salesforce-cli
+difficulty: 2
+created: '2026-11-15'
+status: active

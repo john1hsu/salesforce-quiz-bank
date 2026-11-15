@@ -1,0 +1,18 @@
+id: sf-000830
+product_area: identity
+true_statement: A custom domain that serves only Experience Cloud sites tops out at 100 sites, because each Experience Cloud site counts as two.
+false_statement: A custom domain that serves only Experience Cloud sites tops out at 200 sites, because each Experience Cloud site counts as one.
+explanation: The ceiling is 200 sites per domain, but an Experience Cloud site counts double, so the practical cap is 100. Counting each as one would overstate the limit.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/custom-domains.md
+  commit: 77b1ca9d4bf1d4f33ec8f2d0a8934780e067b150
+  blob: f44fa4bcdc7d61de7784306194d00b032ca6cc05
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:custom-domains
+- kt:experience-cloud
+difficulty: 3
+created: '2026-11-15'
+status: active

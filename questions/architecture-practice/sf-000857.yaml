@@ -1,0 +1,19 @@
+id: sf-000857
+product_area: architecture-practice
+true_statement: 'The current B2C Solution Architect credential page lists two prerequisites: Platform App Builder and Platform Integration Architect.'
+false_statement: 'The current B2C Solution Architect credential page lists three prerequisites: Marketing Cloud Email Specialist, Platform App Builder and Platform Integration Architect.'
+explanation: Marketing Cloud Email Specialist was a prerequisite at launch but no longer appears on the live credential page. Only App Builder and Integration Architect remain.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/b2c-solution-architect-certification.md
+  commit: 77b1ca9d4bf1d4f33ec8f2d0a8934780e067b150
+  blob: bc3cce9e8e7c51a18aba43c0a4795f66bbf8e41c
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:b2c-solution-architect-certification
+- kt:platform-app-builder-certification
+- kt:integration-architect-certification
+difficulty: 2
+created: '2026-11-15'
+status: active

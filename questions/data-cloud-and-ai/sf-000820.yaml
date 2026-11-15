@@ -1,0 +1,18 @@
+id: sf-000820
+product_area: data-cloud-and-ai
+true_statement: Choosing Code Extension as a Data 360 search index chunking strategy requires the Data Cloud Architect permission set.
+false_statement: Choosing Code Extension as a Data 360 search index chunking strategy requires only the Data Cloud User permission set.
+explanation: Custom Python chunking functions are selected per field after deployment, and that requires the Data Cloud Architect permission set. A basic user permission set is not enough.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/vector-search-in-data-cloud.md
+  commit: 77b1ca9d4bf1d4f33ec8f2d0a8934780e067b150
+  blob: 414dafc6ecc00faca2855f2c9efccd04186aa9c8
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:vector-search-in-data-cloud
+- kt:data-cloud-code-extension
+difficulty: 3
+created: '2026-11-15'
+status: active

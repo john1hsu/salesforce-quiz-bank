@@ -1,0 +1,17 @@
+id: sf-000855
+product_area: security-and-sharing
+true_statement: The GroupMember object supports create, delete, query and retrieve, but not update.
+false_statement: The GroupMember object supports create, update, delete and query, so a membership row can be repointed to another user.
+explanation: GroupMember has no update call; to change membership you delete one row and insert another. Inserting a duplicate just returns the existing row.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/public-groups.md
+  commit: 77b1ca9d4bf1d4f33ec8f2d0a8934780e067b150
+  blob: d27fad2551a55d763ca136746fb7ac41f18d393b
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:public-groups
+difficulty: 2
+created: '2026-11-15'
+status: active

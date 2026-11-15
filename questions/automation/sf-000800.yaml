@@ -1,0 +1,18 @@
+id: sf-000800
+product_area: automation
+true_statement: A single flow test simulates either a record create or a record update, so a flow that reacts to both needs separate tests.
+false_statement: A single flow test can simulate both a record create and a record update, so one test covers a flow that reacts to both.
+explanation: Each flow test is tied to one trigger event, Created or Updated. Covering both events therefore takes two tests.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/flow-tests.md
+  commit: 77b1ca9d4bf1d4f33ec8f2d0a8934780e067b150
+  blob: eeb1bf951d89c60baaba8d3243aa792e5456c000
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:flow-tests
+- kt:record-triggered-flow
+difficulty: 2
+created: '2026-11-15'
+status: active

@@ -1,0 +1,17 @@
+id: sf-000781
+product_area: public-sector-and-compliance
+true_statement: In FedRAMP's agency playbook, the agency's authorizing official is the person who issues the ATO for a cloud service offering.
+false_statement: In FedRAMP's agency playbook, the third-party assessment organization is the party that issues the ATO for a cloud service offering.
+explanation: The ATO is a risk-acceptance decision made by the agency's authorizing official after reviewing the package. Assessors produce evidence such as the Security Assessment Report but do not grant the ATO.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/authority-to-operate.md
+  commit: 77b1ca9d4bf1d4f33ec8f2d0a8934780e067b150
+  blob: 0611692270abb0c450ba117ef4cf171dd12a8a98
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:authority-to-operate
+difficulty: 1
+created: '2026-11-15'
+status: active

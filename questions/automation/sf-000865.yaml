@@ -1,0 +1,17 @@
+id: sf-000865
+product_area: automation
+true_statement: Email alerts are object-specific, so an alert built on Case can't be fired for an Account record.
+false_statement: Email alerts are object-agnostic, so an alert built on Case can be fired for an Account record.
+explanation: Each alert is defined on one object and fills merge fields from that object's record. A different object needs its own alert.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/email-alerts.md
+  commit: 77b1ca9d4bf1d4f33ec8f2d0a8934780e067b150
+  blob: aad20a317ee8e4d0df3dd214406609ace19af8b5
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:email-alerts
+difficulty: 1
+created: '2026-11-15'
+status: active

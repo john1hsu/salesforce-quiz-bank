@@ -1,0 +1,18 @@
+id: sf-000797
+product_area: automation
+true_statement: Flow's HTTP Callout action needs no OpenAPI specification, because Flow infers the request and response schema from sample JSON.
+false_statement: Flow's HTTP Callout action needs an uploaded OpenAPI specification, because Flow cannot infer the schema from sample JSON.
+explanation: HTTP Callout builds its data structures from sample JSON or a live Connect for Schema call. Uploading an OpenAPI spec is the route for registering an external service from Setup.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/flow-http-callout.md
+  commit: 77b1ca9d4bf1d4f33ec8f2d0a8934780e067b150
+  blob: ff3df393b495a52e7c331a57c350e04c0378dd6e
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:flow-http-callout
+- kt:external-services
+difficulty: 2
+created: '2026-11-15'
+status: active

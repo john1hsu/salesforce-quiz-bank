@@ -1,0 +1,19 @@
+id: sf-000844
+product_area: integration
+true_statement: SOAP API and the original Bulk API remain supported but are no longer enhanced, so new work should favour REST and Bulk API 2.0.
+false_statement: SOAP API and the original Bulk API are still actively enhanced, so new work can favour them equally with REST and Bulk API 2.0.
+explanation: Salesforce keeps the older APIs running but invests in REST and Bulk API 2.0. New integrations should therefore start on the actively developed APIs.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/salesforce-apis.md
+  commit: 77b1ca9d4bf1d4f33ec8f2d0a8934780e067b150
+  blob: 8916e92feff1d5269bd5032fc2877a7f98ac6bdd
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:salesforce-apis
+- kt:soap-api
+- kt:bulk-api-2
+difficulty: 2
+created: '2026-11-15'
+status: active

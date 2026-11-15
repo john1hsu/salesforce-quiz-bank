@@ -1,0 +1,18 @@
+id: sf-000805
+product_area: automation
+true_statement: Record-triggered flows can use the action-level new-transaction setting only on asynchronous or scheduled paths.
+false_statement: Record-triggered flows can use the action-level new-transaction setting only on the Run Immediately path.
+explanation: Since Winter '26 every flow type has the setting, but record-triggered flows are restricted to async or scheduled paths. The immediate path stays in the triggering save's transaction.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/flow-transaction-boundaries.md
+  commit: 77b1ca9d4bf1d4f33ec8f2d0a8934780e067b150
+  blob: 22b8a07bc713e6b123ad54d8f9e48d18815e53f0
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:flow-transaction-boundaries
+- kt:record-triggered-flow
+difficulty: 3
+created: '2026-11-15'
+status: active

@@ -1,0 +1,18 @@
+id: sf-000843
+product_area: integration
+true_statement: The Composite Graph resource can run up to 500 subrequests, processing each graph all-or-nothing.
+false_statement: The Composite Graph resource can run up to 100 subrequests, processing each graph all-or-nothing.
+explanation: Composite Graph raises the subrequest ceiling to 500, compared with 25 for plain Composite, and each graph succeeds or fails as a unit.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/salesforce-apis.md
+  commit: 77b1ca9d4bf1d4f33ec8f2d0a8934780e067b150
+  blob: 8916e92feff1d5269bd5032fc2877a7f98ac6bdd
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:salesforce-apis
+- kt:rest-api
+difficulty: 3
+created: '2026-11-15'
+status: active

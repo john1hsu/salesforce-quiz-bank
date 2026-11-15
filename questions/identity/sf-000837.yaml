@@ -1,0 +1,18 @@
+id: sf-000837
+product_area: identity
+true_statement: A Salesforce-initiated OpenID Connect single logout waits about 10 seconds before redirecting to the login page.
+false_statement: A Salesforce-initiated OpenID Connect single logout waits about 60 seconds before redirecting to the login page.
+explanation: The short pause of roughly 10 seconds gives the relying party time to finish logging out. A full minute is far longer than Salesforce waits.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/single-logout.md
+  commit: 77b1ca9d4bf1d4f33ec8f2d0a8934780e067b150
+  blob: fa26e9924f6d26cf2f974d9c58e3f9d7dd4d9bef
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:single-logout
+- kt:openid-connect
+difficulty: 2
+created: '2026-11-15'
+status: active
