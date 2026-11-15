@@ -1,15 +1,24 @@
 {
   "name": "Salesforce True or False",
   "short_name": "SF True/False",
-  "description": "Swipe right for true, left for false.",
+  "description": "An endless feed of true/false Salesforce questions: swipe right for true, left for false, up for the next.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
   "orientation": "portrait",
-  "background_color": "#EEF2F5",
-  "theme_color": "#3D5A80",
+  "background_color": "#0B0F14",
+  "theme_color": "#0B0F14",
   "icons": [
-    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
-    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
   ]
 }

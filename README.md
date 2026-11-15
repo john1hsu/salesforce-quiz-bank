@@ -6,7 +6,18 @@ A bank of paired true/false Salesforce questions, generated daily from the cited
 
 **Open the app: [john1hsu.github.io/salesforce-quiz-bank](https://john1hsu.github.io/salesforce-quiz-bank/)**
 
-The app in `app/` is published with GitHub Pages: **swipe right for true, left for false** (or tap the buttons). After each answer you see the explanation, the release it was verified for, and a link to the source article. Questions are drawn completely at random. Scores stay on your phone; "Copy score history" exports them. Add it to your home screen to use it offline.
+The app in `app/` is published with GitHub Pages. It works like Instagram Reels: an endless, full-screen feed with one question per screen.
+
+| Gesture | What it does |
+| --- | --- |
+| Swipe right | Answer **true** |
+| Swipe left | Answer **false** |
+| Swipe up | Next question |
+| Double-tap | Save the question (or tap **Save** on the right rail) |
+
+After each answer the explanation slides up with the true version (if you were shown the false one), the release it was verified for, and a **Source** link to the article. The top bar shows your streak of correct answers in a row, today's score, and a progress bar toward your daily goal. Tap the filter chip to switch to your saved questions, narrow by area or certification, or change the goal. **Share** sends a question to a friend.
+
+Questions are drawn completely at random with no weighting; each one shows once before any repeats. Scores and saved questions stay on your phone; "Copy scores" exports them. On a computer, use ← / → to answer, ↑ / ↓ to move, and S to save. Add it to your home screen to use it offline.
 
 ## Practice in the terminal
 
