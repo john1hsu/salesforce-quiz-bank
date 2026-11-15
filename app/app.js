@@ -398,7 +398,10 @@
     const dx = e.clientX - drag.x, dy = e.clientY - drag.y;
     if (drag.horizontal === null && Math.hypot(dx, dy) > 8) {
       drag.horizontal = Math.abs(dx) > Math.abs(dy) * 1.1;
-      if (drag.horizontal) { try { drag.card.setPointerCapture(e.pointerId); } catch { /* ignore */ } }
+      if (drag.horizontal) {
+        try { drag.card.setPointerCapture(e.pointerId); } catch { /* ignore */ }
+        placeStamp(drag.item);
+      }
       else { drag = null; return; } // vertical: let the feed scroll
     }
     if (!drag.horizontal) return;
@@ -409,6 +412,22 @@
     drag.card.style.transform = `translateX(${dx}px) rotate(${dx / 22}deg)`;
     drag.item.el.style.setProperty("--lean", Math.max(-1, Math.min(1, dx / 120)).toFixed(3));
   });
+
+  // Put the TRUE/FALSE stamp in empty space so it never covers the text: above the
+  // question if there's room, otherwise below it (long questions on small phones).
+  const STAMP_ROOM = 76; // px of empty space the stamp needs
+  function placeStamp(item) {
+    const slide = item.el.getBoundingClientRect();
+    const text = item.el.querySelector(".q-text").getBoundingClientRect();
+    const top = el.filterBtn.getBoundingClientRect().bottom - slide.top; // below the top bar
+    const bottom = slide.height - 56;                                     // above the up-chevron area
+    const above = text.top - slide.top - top;
+    const below = bottom - (text.bottom - slide.top);
+    const y = above >= STAMP_ROOM || above >= below
+      ? top + above / 2
+      : text.bottom - slide.top + below / 2;
+    item.el.style.setProperty("--stamp-y", `${y}px`);
+  }
 
   function endDrag(e) {
     if (!drag || e.pointerId !== drag.id) return;
