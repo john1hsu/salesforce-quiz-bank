@@ -59,7 +59,7 @@ a { color: var(--accent); }
   display: flex;
   flex-direction: column;
   gap: 14px;
-  padding: calc(76px + env(safe-area-inset-top)) calc(var(--rail-w) + 12px) calc(48px + env(safe-area-inset-bottom)) 30px;
+  padding: calc(76px + env(safe-area-inset-top)) calc(var(--rail-w) + 12px) calc(48px + env(safe-area-inset-bottom)) 20px;
   background:
     radial-gradient(120% 70% at 85% 0%, hsl(calc(var(--h) + 30) 70% 38% / 0.55), transparent 60%),
     radial-gradient(90% 60% at 0% 100%, hsl(var(--h) 75% 30% / 0.6), transparent 65%),
@@ -85,11 +85,6 @@ a { color: var(--accent); }
 .q:focus { outline: none; }
 .q.dragging { cursor: grabbing; }
 .q.settle { transition: transform 0.3s cubic-bezier(.2, .9, .3, 1.25); }
-.q-area {
-  align-self: flex-start; margin: 0 0 14px; padding: 4px 10px; border-radius: 999px;
-  background: var(--glass); border: 1px solid var(--glass-line);
-  font-size: 0.85rem; font-weight: 700; color: var(--muted);
-}
 .q-text {
   margin: 0; font-weight: 700; letter-spacing: -0.005em;
   font-size: clamp(1.32rem, 5.7vw, 1.72rem); line-height: 1.38;
@@ -123,7 +118,6 @@ a { color: var(--accent); }
 .verdict { margin: 0; font-size: 1.45rem; font-weight: 700; line-height: 1.2; }
 .slide.right .verdict { color: var(--true); }
 .slide.wrong .verdict { color: var(--false); }
-.answer-line { margin: 0; font-weight: 700; }
 .true-version { padding: 10px 12px; border-radius: 12px; background: rgba(76, 195, 138, 0.16); border: 1px solid rgba(76, 195, 138, 0.35); }
 .true-version p { margin: 0; }
 .true-version .label { color: var(--muted); font-size: 0.85rem; font-weight: 700; margin-bottom: 2px; }
@@ -140,19 +134,7 @@ a { color: var(--accent); }
 .btn-quiet { background: transparent; border-color: var(--line); }
 
 /* ---------- subtle gesture cues ----------
-   They show only while you're learning (the .learn-* classes on .stage) and fade out after. */
-.edge {
-  position: absolute; z-index: 1; top: 50%; pointer-events: none;
-  writing-mode: vertical-rl;
-  font-size: 0.72rem; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase;
-  transition: opacity 0.4s ease;
-}
-.edge-false { left: 8px; color: var(--false); transform: translateY(-50%) rotate(180deg); opacity: max(calc(var(--lean) * -1), 0); }
-.edge-true { right: 8px; color: var(--true); transform: translateY(-50%); opacity: max(var(--lean), 0); }
-.learn-answer .slide:not(.answered) .edge-false { opacity: max(0.4, calc(var(--lean) * -1)); }
-.learn-answer .slide:not(.answered) .edge-true { opacity: max(0.4, var(--lean)); }
-.slide.answered .edge { display: none; }
-
+   They show only while you're learning (the .learn-next class on .stage) and fade out after. */
 .next-cue {
   position: absolute; z-index: 1; left: 50%; bottom: calc(10px + env(safe-area-inset-bottom));
   margin-left: -16px; width: 32px; height: 32px; pointer-events: none; opacity: 0;
@@ -176,7 +158,7 @@ a { color: var(--accent); }
 /* Right-hand action rail, like Reels */
 .rail {
   position: absolute; z-index: 2; right: 8px; bottom: calc(40px + env(safe-area-inset-bottom));
-  width: var(--rail-w); display: flex; flex-direction: column; align-items: center; gap: 16px;
+  width: var(--rail-w); display: flex; flex-direction: column; align-items: center; gap: 22px;
 }
 .rail-btn {
   display: flex; flex-direction: column; align-items: center; gap: 2px;
@@ -186,7 +168,6 @@ a { color: var(--accent); }
   width: 30px; height: 30px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linejoin: round; stroke-linecap: round;
   filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.5));
 }
-.rail-label { font-size: 0.75rem; font-weight: 700; text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6); }
 .act-save[aria-pressed="true"] { color: var(--save); }
 .act-save[aria-pressed="true"] svg { fill: currentColor; }
 .act-save.pop svg { animation: pop 0.35s ease; }
@@ -206,7 +187,7 @@ a { color: var(--accent); }
 }
 
 /* Empty feed (e.g. nothing saved yet) */
-.slide.empty { justify-content: center; text-align: center; padding-right: 30px; }
+.slide.empty { justify-content: center; text-align: center; padding-right: 20px; }
 .slide.empty h2 { margin: 0; font-size: 1.4rem; }
 .slide.empty p { margin: 0; color: var(--muted); }
 .slide.empty .btn { align-self: center; margin-top: 8px; }
@@ -232,9 +213,6 @@ a { color: var(--accent); }
 .streak { display: inline-flex; align-items: center; gap: 3px; color: #FFB067; }
 .streak svg { width: 20px; height: 20px; fill: currentColor; }
 .streak.bump { animation: pop 0.35s ease; }
-.today { color: var(--muted); font-size: 0.92rem; }
-.goal { position: absolute; left: 14px; right: 14px; bottom: 6px; height: 3px; border-radius: 2px; background: rgba(255, 255, 255, 0.18); overflow: hidden; pointer-events: none; }
-.goal span { display: block; height: 100%; width: 0; background: var(--true); transition: width 0.35s ease; }
 
 /* ---------- toast ---------- */
 .toast {
@@ -306,6 +284,6 @@ select {
 
 @media (prefers-reduced-motion: reduce) {
   .reveal, .burst, .sheet[open], .q.nudge, .learn-next .slide.answered .next-cue, .g-right, .g-left, .g-up, .act-save.pop svg, .streak.bump { animation: none; }
-  .q.settle, .goal span, .q-text, .toast { transition: none; }
+  .q.settle, .q-text, .toast { transition: none; }
   .burst { opacity: 0; }
 }

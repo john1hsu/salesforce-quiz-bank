@@ -19,7 +19,6 @@
   const AHEAD = 3;             // keep at least this many slides queued below the current one
   const DOUBLE_TAP_MS = 320;
   // Gesture cues fade away once you've shown you know the gestures.
-  const LEARN_ANSWERS = 8;     // edge labels show until you've answered this many
   const LEARN_NEXTS = 3;       // the chevron shows until you've moved on after answering this many times
   const NUDGE_ANSWERS = 3;     // a hesitant new user gets a gentle sway until this many answers
   const NUDGE_DELAY = 4500;
@@ -52,8 +51,7 @@
   const $ = (id) => document.getElementById(id);
   const el = {
     feed: $("feed"), tpl: $("slide-tpl"), toast: $("toast"), loadError: $("load-error"),
-    filterBtn: $("filter-btn"), scope: $("scope-label"), streak: $("streak"), today: $("today"),
-    goalBar: $("goal-bar"), goalFill: $("goal-fill"),
+    filterBtn: $("filter-btn"), scope: $("scope-label"), streak: $("streak"),
     coach: $("coach"), coachGo: $("coach-go"),
     sheet: $("sheet"), sheetForm: $("sheet-form"), area: $("f-area"), cert: $("f-cert"),
     poolCount: $("pool-count"), savedCount: $("saved-count"),
@@ -64,7 +62,7 @@
   const load = (key, fallback) => { try { return JSON.parse(localStorage.getItem(key)) ?? fallback; } catch { return fallback; } };
   const store = (key, value) => { try { localStorage.setItem(key, JSON.stringify(value)); } catch { /* storage unavailable */ } };
 
-  const prefs = Object.assign({ feed: "all", area: "", cert: "", goal: 25 }, load(KEYS.prefs, {}));
+  const prefs = Object.assign({ feed: "all", area: "", cert: "" }, load(KEYS.prefs, {}));
   const saved = new Set(load(KEYS.saved, []));
   const learn = Object.assign({ answers: 0, nexts: 0 }, load(KEYS.learn, {}));
   const stats = Object.assign({ streak: 0, best: 0, total: 0, correct: 0, days: {} }, load(KEYS.stats, {}));
@@ -143,7 +141,7 @@
     node._item = item;
     node.style.setProperty("--h", AREA_HUES[q.area] ?? 215);
     node.setAttribute("aria-label", "Question");
-    node.querySelector(".q-area").textContent = `${areaName(q.area)} · ${DIFFICULTY[q.difficulty] || "Practitioner"}`;
+    node.querySelector(".q").setAttribute("aria-label", `${areaName(q.area)}, ${DIFFICULTY[q.difficulty] || "Practitioner"}`);
     node.querySelector(".q-text").textContent = item.showsTrue ? q.t : q.f;
     node.querySelector(".act-source").href = q.source;
     syncSaveButton(item);
@@ -226,7 +224,6 @@
   }
   function applyLearn() {
     const stage = document.getElementById("app");
-    stage.classList.toggle("learn-answer", learn.answers < LEARN_ANSWERS);
     stage.classList.toggle("learn-next", learn.nexts < LEARN_NEXTS);
   }
 
@@ -261,7 +258,6 @@
     card.style.transform = "";
 
     node.querySelector(".verdict").textContent = right ? pick(["Correct", "Nailed it", "Right", "Exactly"]) : "Not quite";
-    node.querySelector(".answer-line").textContent = `This statement is ${showsTrue ? "true" : "false"}.`;
     node.querySelector(".true-version").hidden = showsTrue;
     node.querySelector(".true-text").textContent = q.t;
     node.querySelector(".explanation").textContent = q.x;
@@ -285,7 +281,6 @@
 
   function record(right) {
     const day = todayKey();
-    const [answeredBefore] = stats.days[day] || [0, 0];
     const d = stats.days[day] || [0, 0];
     d[0] += 1;
     if (right) d[1] += 1;
@@ -299,18 +294,11 @@
     store(KEYS.stats, stats);
 
     updateTop(right);
-    if (answeredBefore < prefs.goal && d[0] >= prefs.goal) setTimeout(() => toast(`Daily goal reached: ${prefs.goal} answered`), 350);
-    else if (right && stats.streak > 0 && stats.streak % 10 === 0) setTimeout(() => toast(`${stats.streak} in a row`), 350);
+    if (right && stats.streak > 0 && stats.streak % 10 === 0) setTimeout(() => toast(`${stats.streak} in a row`), 350);
   }
 
   function updateTop(bump) {
-    const [answered, correct] = stats.days[todayKey()] || [0, 0];
     el.streak.textContent = stats.streak;
-    el.today.textContent = answered ? `${correct}/${answered} today` : "0 today";
-    const pct = Math.min(1, answered / prefs.goal);
-    el.goalFill.style.width = `${pct * 100}%`;
-    el.goalBar.setAttribute("aria-valuemax", prefs.goal);
-    el.goalBar.setAttribute("aria-valuenow", Math.min(answered, prefs.goal));
     if (bump && stats.streak > 0 && !reduceMotion()) {
       const s = el.streak.parentElement;
       s.classList.remove("bump"); void s.offsetWidth; s.classList.add("bump");
@@ -329,7 +317,7 @@
     const btn = item.el.querySelector(".act-save");
     const on = saved.has(item.q.id);
     btn.setAttribute("aria-pressed", String(on));
-    btn.querySelector(".rail-label").textContent = on ? "Saved" : "Save";
+    btn.setAttribute("aria-label", on ? "Saved" : "Save");
   }
 
   function setSaved(item, on) {
@@ -475,7 +463,6 @@
   function readSheet() {
     const f = el.sheetForm;
     prefs.feed = f.querySelector("input[name=feed]:checked").value;
-    prefs.goal = Number(f.querySelector("input[name=goal]:checked").value);
     prefs.area = el.area.value;
     prefs.cert = el.cert.value;
     savePrefs();
@@ -485,8 +472,6 @@
     const f = el.sheetForm;
     const feedInput = f.querySelector(`input[name=feed][value="${prefs.feed}"]`);
     if (feedInput) feedInput.checked = true;
-    const goalInput = f.querySelector(`input[name=goal][value="${prefs.goal}"]`);
-    if (goalInput) goalInput.checked = true;
     el.area.value = prefs.area;
     el.cert.value = prefs.cert;
     if (el.area.value !== prefs.area) prefs.area = "";
