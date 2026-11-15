@@ -13,11 +13,11 @@ The app in `app/` is published with GitHub Pages. It works like Instagram Reels:
 | Swipe right | Answer **true** |
 | Swipe left | Answer **false** |
 | Swipe up | Next question |
-| Double-tap | Save the question (or tap **Save** on the right rail) |
+| Double-tap | Save the question (or tap the bookmark on the right) |
 
 There are no answer or next buttons. New users get quiet hints that fade away once they've learned the gestures: a gentle sway if they hesitate and a small up-chevron after answering. Screen readers still get hidden answer and next buttons.
 
-After each answer the explanation slides up with the true version (if you were shown the false one), the release it was verified for, and a **Source** link to the article. The top bar shows your streak of correct answers in a row, today's score, and a progress bar toward your daily goal. Tap the filter chip to switch to your saved questions, narrow by area or certification, or change the goal. **Share** sends a question to a friend.
+The screen is kept minimal: the question, a filter chip, your streak of correct answers in a row, and three icons on the right (save, share, and the source article once you've answered). After each answer the explanation slides up with the true version (if you were shown the false one) and the release it was verified for. Tap the filter chip to switch to your saved questions, narrow by area or certification, and see today's score and your best streak.
 
 Questions are drawn completely at random with no weighting; each one shows once before any repeats. Scores and saved questions stay on your phone; "Copy scores" exports them. On a computer, use ← / → to answer, ↑ / ↓ to move, and S to save. Add it to your home screen to use it offline.
 
