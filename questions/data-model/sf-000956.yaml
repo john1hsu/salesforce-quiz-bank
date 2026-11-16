@@ -1,0 +1,19 @@
+id: sf-000956
+product_area: data-model
+true_statement: The AccountContactRelation object doesn't support lookup, master-detail or roll-up summary fields, so richer relationship data calls for a custom junction object.
+false_statement: The AccountContactRelation object supports lookup, master-detail and roll-up summary fields, so it can replace any custom junction object.
+explanation: The relationship object has a limited schema with no lookups, roll-ups, record types or approvals. When the relationship needs its own children or approvals, build a custom junction object.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/contacts-to-multiple-accounts.md
+  commit: 4d0f07d8de63e830ec8cb90374127798d040ea67
+  blob: 754451b02e5f70d65983da4e458fe4cf9ec85e0a
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:contacts-to-multiple-accounts
+- kt:junction-object
+- kt:object-relationships
+difficulty: 3
+created: '2026-11-16'
+status: active

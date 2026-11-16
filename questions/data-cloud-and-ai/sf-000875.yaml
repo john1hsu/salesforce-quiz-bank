@@ -1,0 +1,18 @@
+id: sf-000875
+product_area: data-cloud-and-ai
+true_statement: When an MCP server's tool descriptions change significantly, Agentforce Registry blocks the affected action and alerts the admin.
+false_statement: When an MCP server's tool descriptions change significantly, Agentforce Registry silently adopts the new descriptions and keeps the action running.
+explanation: To guard against tool drift, the registry blocks an action whose server-side tool description changed significantly and notifies the admin, rather than quietly accepting the change.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/model-context-protocol-in-agentforce.md
+  commit: 4d0f07d8de63e830ec8cb90374127798d040ea67
+  blob: 89f66d5cb65250b6b56f8732801fe32ecd96add7
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:model-context-protocol-in-agentforce
+- kt:agent-actions
+difficulty: 2
+created: '2026-11-16'
+status: active

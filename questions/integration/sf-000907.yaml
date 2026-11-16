@@ -1,0 +1,17 @@
+id: sf-000907
+product_area: integration
+true_statement: When sending integers of 2^31 or larger to User Interface API, clients must pass them as quoted strings.
+false_statement: When sending integers of 2^31 or larger to User Interface API, clients must pass them in scientific notation.
+explanation: Large integers at or above 2^31 have to be sent as quoted strings so they aren't mangled as JSON numbers; scientific notation isn't the documented format. Dates, separately, use ISO 8601.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/user-interface-api.md
+  commit: 4d0f07d8de63e830ec8cb90374127798d040ea67
+  blob: 0fbf00c286d7e34ccc56183c8ebde01921ee3da4
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:user-interface-api
+difficulty: 3
+created: '2026-11-16'
+status: active

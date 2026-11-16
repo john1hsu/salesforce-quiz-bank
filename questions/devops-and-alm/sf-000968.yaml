@@ -1,0 +1,18 @@
+id: sf-000968
+product_area: devops-and-alm
+true_statement: The beta RunRelevantTests level lets Salesforce choose tests from the deployment payload, and @IsTest(critical=true) forces a test to be included.
+false_statement: The beta RunRelevantTests level lets Salesforce choose tests from the deployment payload, and @IsTest(critical=true) excludes a test from the run.
+explanation: RunRelevantTests analyzes the payload and its dependencies to pick tests; marking a test critical, or using testFor, makes sure it always runs.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/continuous-integration-for-salesforce.md
+  commit: 4d0f07d8de63e830ec8cb90374127798d040ea67
+  blob: a40c2102d6222a3ff4a26701fcbcbbf525c08aed
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:continuous-integration-for-salesforce
+- kt:apex-testing
+difficulty: 3
+created: '2026-11-16'
+status: active

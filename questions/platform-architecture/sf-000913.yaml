@@ -1,0 +1,18 @@
+id: sf-000913
+product_area: platform-architecture
+true_statement: Salesforce Engineering describes Hyperforce as replacing rather than patching infrastructure resources, an immutable infrastructure approach.
+false_statement: Salesforce Engineering describes Hyperforce as patching infrastructure resources in place, a mutable infrastructure approach.
+explanation: Hyperforce defines infrastructure as version-controlled code and swaps out resources instead of patching them in place, which is what immutable infrastructure means.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/infrastructure-as-a-service.md
+  commit: 4d0f07d8de63e830ec8cb90374127798d040ea67
+  blob: 3139f0cd290f16e9ed95785c61697df551b81bb3
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:infrastructure-as-a-service
+- kt:hyperforce
+difficulty: 2
+created: '2026-11-16'
+status: active

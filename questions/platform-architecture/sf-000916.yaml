@@ -1,0 +1,18 @@
+id: sf-000916
+product_area: platform-architecture
+true_statement: Salesforce's SaaS explainer lists WebEx (1995) and NetSuite (1998) as SaaS examples that predate Salesforce's 1999 launch of web-based CRM.
+false_statement: Salesforce's SaaS explainer lists WebEx (1995) and NetSuite (1998) as SaaS examples that followed Salesforce's 1993 launch of web-based CRM.
+explanation: The explainer places Salesforce's web-based CRM in 1999, after early hosted offerings like WebEx and NetSuite, in the late-1990s rise of modern SaaS.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/software-as-a-service.md
+  commit: 4d0f07d8de63e830ec8cb90374127798d040ea67
+  blob: e65346dda0f4b0ba10da1243e1c32880c03747c1
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:software-as-a-service
+- kt:salesforce-platform
+difficulty: 1
+created: '2026-11-16'
+status: active

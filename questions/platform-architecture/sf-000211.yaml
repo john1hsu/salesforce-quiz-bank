@@ -6,8 +6,8 @@ explanation: Custom indexes have the stricter 10% threshold with a 333,333-recor
 source:
   repo: john1hsu/salesforce-knowledge-graph
   path: articles/platform-architecture/large-data-volumes.md
-  commit: 1a9626507b2858110c996adbfa985703bee41fd5
-  blob: 46e37c7cf6a3391c47387e71aef57b63f0bd50ec
+  commit: 4d0f07d8de63e830ec8cb90374127798d040ea67
+  blob: 9f572399c388483719453c9b72cb423de92731a9
 verified_release: Winter '27
 feature_status: concept
 concepts:

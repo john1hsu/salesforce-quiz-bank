@@ -1,0 +1,18 @@
+id: sf-000887
+product_area: development
+true_statement: Wired Apex data in a Lightning web component is refreshed by passing the previously emitted wire value to refreshApex().
+false_statement: Wired Apex data in a Lightning web component is refreshed automatically by Lightning Data Service whenever the underlying records change.
+explanation: Lightning Data Service doesn't manage results from Apex, so stale wired Apex values must be refreshed explicitly with refreshApex(), which returns a promise.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/wire-service.md
+  commit: 4d0f07d8de63e830ec8cb90374127798d040ea67
+  blob: 5b372e559a73f3ffb3488a2a4d265ef229645fb4
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:wire-service
+- kt:lightning-data-service
+difficulty: 2
+created: '2026-11-16'
+status: active

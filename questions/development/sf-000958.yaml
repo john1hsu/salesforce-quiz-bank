@@ -1,0 +1,19 @@
+id: sf-000958
+product_area: development
+true_statement: Lightning Out requires Lightning Locker and isn't supported when Lightning Web Security is enabled.
+false_statement: Lightning Out requires Lightning Web Security and isn't supported when Lightning Locker is enabled.
+explanation: A dependency on Lightning Out is the main reason an org stays on Locker, because Lightning Out doesn't run under LWS.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/lightning-locker.md
+  commit: 4d0f07d8de63e830ec8cb90374127798d040ea67
+  blob: 905fd196b5519740d1aca250f4d108e520174b35
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:lightning-locker
+- kt:lightning-out
+- kt:lightning-web-security
+difficulty: 2
+created: '2026-11-16'
+status: active

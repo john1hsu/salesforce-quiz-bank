@@ -1,0 +1,18 @@
+id: sf-000911
+product_area: platform-architecture
+true_statement: Under NIST's IaaS model, the consumer controls the operating systems, storage and deployed applications, and may have limited control over host firewalls.
+false_statement: Under NIST's IaaS model, the provider controls the guest operating systems and deployed applications, and the consumer controls only application settings.
+explanation: 'IaaS hands the consumer the most control of the three service models: guest OS, storage and applications are theirs to run. Controlling only application settings describes SaaS, not IaaS.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/infrastructure-as-a-service.md
+  commit: 4d0f07d8de63e830ec8cb90374127798d040ea67
+  blob: 3139f0cd290f16e9ed95785c61697df551b81bb3
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:infrastructure-as-a-service
+- kt:cloud-computing
+difficulty: 1
+created: '2026-11-16'
+status: active

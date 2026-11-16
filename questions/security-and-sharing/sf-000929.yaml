@@ -1,0 +1,18 @@
+id: sf-000929
+product_area: security-and-sharing
+true_statement: User access policies can use profiles and roles as criteria, but can't assign or revoke a profile or role as an action.
+false_statement: User access policies can use profiles and roles as criteria, and can also assign a new profile or role to matching users as an action.
+explanation: Policy actions cover permission sets, groups, licenses, public groups and queues only. Profiles and roles can filter users but aren't assignable through a policy.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/user-access-policies.md
+  commit: 4d0f07d8de63e830ec8cb90374127798d040ea67
+  blob: 58654df6fba44d7608fff2df4e400a4029ed916a
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:user-access-policies
+- kt:profiles
+difficulty: 2
+created: '2026-11-16'
+status: active

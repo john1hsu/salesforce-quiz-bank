@@ -1,0 +1,18 @@
+id: sf-000902
+product_area: integration
+true_statement: The SOAP API create() and update() calls accept at most 200 records per call, and a larger request fails entirely.
+false_statement: The SOAP API create() and update() calls accept at most 2,000 records per call, and a larger request fails entirely.
+explanation: Synchronous SOAP writes are capped at 200 records per call, which is why very large loads are usually sent through Bulk API 2.0 instead.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/soap-api.md
+  commit: 4d0f07d8de63e830ec8cb90374127798d040ea67
+  blob: a12a1daedfe1c23e0b44b7d215260a1ada3447bd
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:soap-api
+- kt:bulk-api-2
+difficulty: 2
+created: '2026-11-16'
+status: active

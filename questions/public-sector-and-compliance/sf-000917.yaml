@@ -1,0 +1,17 @@
+id: sf-000917
+product_area: public-sector-and-compliance
+true_statement: Under the EU Cloud Sovereignty Framework, a service's overall SEAL rating is the lowest level it reaches on any of the eight sovereignty objectives.
+false_statement: Under the EU Cloud Sovereignty Framework, a service's overall SEAL rating is the average of the levels it reaches across the eight sovereignty objectives.
+explanation: The framework takes the weakest objective as the overall score, so one low rating caps the whole service. It doesn't average the objectives.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/data-sovereignty.md
+  commit: 4d0f07d8de63e830ec8cb90374127798d040ea67
+  blob: 432ac81c0da236bb3ca3abb7bd34cf6f63d1def4
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:data-sovereignty
+difficulty: 2
+created: '2026-11-16'
+status: active

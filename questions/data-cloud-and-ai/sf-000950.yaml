@@ -1,0 +1,18 @@
+id: sf-000950
+product_area: data-cloud-and-ai
+true_statement: On the November 2026 Flex Credits rate card, an Agentforce standard or custom action costs 20 credits in production and 16 in a sandbox.
+false_statement: On the November 2026 Flex Credits rate card, an Agentforce standard or custom action costs 20 credits in production and nothing in a sandbox.
+explanation: 'Sandbox usage still consumes credits, just at a lower rate: 16 credits per action versus 20 in production.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/digital-wallet.md
+  commit: 4d0f07d8de63e830ec8cb90374127798d040ea67
+  blob: a91a27ad2ac2b6b862349c4960a6c58854e5ca03
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:digital-wallet
+- kt:agentforce
+difficulty: 2
+created: '2026-11-16'
+status: active

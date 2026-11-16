@@ -1,0 +1,18 @@
+id: sf-000894
+product_area: devops-and-alm
+true_statement: Service for the legacy Salesforce Data Mask package ends on December 31, 2026, with customers directed to Data Mask & Seed.
+false_statement: Service for the legacy Salesforce Data Mask package ends on December 31, 2026, with customers directed to Shield Platform Encryption.
+explanation: Salesforce labels the Data Mask package legacy and names Data Mask & Seed as its successor; Shield Platform Encryption protects production data at rest and isn't the replacement.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/salesforce-data-mask.md
+  commit: 4d0f07d8de63e830ec8cb90374127798d040ea67
+  blob: 2de84913194546ae635fcc2d478074434f17a5ec
+verified_release: Winter '27
+feature_status: deprecated
+concepts:
+- kt:salesforce-data-mask
+- kt:data-mask-and-seed
+difficulty: 1
+created: '2026-11-16'
+status: active

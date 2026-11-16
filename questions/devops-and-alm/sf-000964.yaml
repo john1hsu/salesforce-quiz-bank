@@ -1,0 +1,19 @@
+id: sf-000964
+product_area: devops-and-alm
+true_statement: For a branch created by hand to sync with a DevOps Center work item, its name must match the work item ID.
+false_statement: For a branch created by hand to sync with a DevOps Center work item, its name must match the target stage branch.
+explanation: DevOps Center links commits to work items through the branch name, so a manually created branch has to carry the work item ID for CLI commits to appear on it.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/branching-strategy.md
+  commit: 4d0f07d8de63e830ec8cb90374127798d040ea67
+  blob: 14c3e9d7b224cd3b15e923bbcc05e9ad3abba86b
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:branching-strategy
+- kt:devops-center
+- kt:salesforce-cli
+difficulty: 3
+created: '2026-11-16'
+status: active

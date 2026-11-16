@@ -1,0 +1,19 @@
+id: sf-000936
+product_area: clouds-and-products
+true_statement: B2C Commerce runs on its own platform with its own APIs, while B2B Commerce runs on the Salesforce Lightning Platform alongside CRM data.
+false_statement: B2B Commerce runs on its own platform with its own APIs, while B2C Commerce runs on the Salesforce Lightning Platform alongside CRM data.
+explanation: B2C Commerce descends from the Demandware acquisition and keeps a separate platform, whereas B2B Commerce is built on the core Lightning Platform. The false statement swaps them.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/commerce-cloud.md
+  commit: 4d0f07d8de63e830ec8cb90374127798d040ea67
+  blob: 80e8816b5cc907d989144f28f7f4010f2b0cc735
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:commerce-cloud
+- kt:b2c-commerce
+- kt:b2b-commerce
+difficulty: 1
+created: '2026-11-16'
+status: active

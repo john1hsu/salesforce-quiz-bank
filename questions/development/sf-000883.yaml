@@ -1,0 +1,18 @@
+id: sf-000883
+product_area: development
+true_statement: A Visualforce standard controller enforces the user's object access and runs in user mode, while a custom controller runs in system mode.
+false_statement: A Visualforce custom controller enforces the user's object access and runs in user mode, while a standard controller runs in system mode.
+explanation: Standard controllers reuse the standard page logic and respect the user's permissions. Custom controllers are Apex classes that run in system mode, so the developer must enforce access; the false statement swaps the two.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/visualforce.md
+  commit: 4d0f07d8de63e830ec8cb90374127798d040ea67
+  blob: 983133b68b0decacc3223bbf50c9988aca8c7461
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:visualforce
+- kt:apex
+difficulty: 2
+created: '2026-11-16'
+status: active

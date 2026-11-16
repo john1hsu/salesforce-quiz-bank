@@ -1,0 +1,18 @@
+id: sf-000963
+product_area: devops-and-alm
+true_statement: DevOps Center creates a temporary feature branch for a work item when the work item moves to In Progress.
+false_statement: DevOps Center creates a temporary feature branch for a work item when the work item is first promoted to the Integration stage.
+explanation: The development stage has no stage branch; instead each work item gets its own feature branch, such as feature/WI-000001, as soon as work starts on it.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/branching-strategy.md
+  commit: 4d0f07d8de63e830ec8cb90374127798d040ea67
+  blob: 14c3e9d7b224cd3b15e923bbcc05e9ad3abba86b
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:branching-strategy
+- kt:devops-center
+difficulty: 2
+created: '2026-11-16'
+status: active

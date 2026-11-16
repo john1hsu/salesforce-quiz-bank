@@ -1,0 +1,20 @@
+id: sf-000944
+product_area: data-cloud-and-ai
+true_statement: An Agentforce Data Library Connect API add-files request can include at most 1,000 files, with unique file names in the batch.
+false_statement: An Agentforce Data Library Connect API add-files request can include at most 100 files, with unique file names in the batch.
+explanation: The resource reference caps a single add-files call at 1,000 files, and names must not repeat within that request.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/agentforce-data-library.md
+  commit: 4d0f07d8de63e830ec8cb90374127798d040ea67
+  blob: 85d03669442afb7e8c5403582da9f1e6d406371e
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:agentforce-specialist-certification
+concepts:
+- kt:agentforce-data-library
+- kt:connect-api
+difficulty: 2
+created: '2026-11-16'
+status: active

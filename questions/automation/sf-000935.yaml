@@ -1,0 +1,18 @@
+id: sf-000935
+product_area: automation
+true_statement: Recommendation strategy flows for Einstein Next Best Action can't call subflows, so shared logic must be duplicated or moved into invocable actions.
+false_statement: Recommendation strategy flows for Einstein Next Best Action can call subflows, so shared logic can be reused across strategies.
+explanation: Subflows aren't supported in recommendation strategy flows. Reusable logic has to be copied into each strategy or packaged as an invocable action.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/einstein-next-best-action.md
+  commit: 4d0f07d8de63e830ec8cb90374127798d040ea67
+  blob: 20a66bb41053aa5d3c74eedd1b6f1a1edcc96cd2
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:einstein-next-best-action
+- kt:flow-builder
+difficulty: 3
+created: '2026-11-16'
+status: active

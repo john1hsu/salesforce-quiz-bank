@@ -1,0 +1,18 @@
+id: sf-000909
+product_area: platform-architecture
+true_statement: Customers who joined the EU Operating Zone before December 17, 2024 have their data stored in Germany.
+false_statement: Customers who joined the EU Operating Zone before December 17, 2024 have their data stored in Switzerland.
+explanation: AWS hosting for the zone is in Germany and Switzerland. Customers onboarded before the December 2024 cutoff are stored in Germany, while new customers choose a country at signup.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/hyperforce-operating-zones.md
+  commit: 4d0f07d8de63e830ec8cb90374127798d040ea67
+  blob: 3f19bbfdd790f58fbeaa821f1ed16d66129f347a
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:hyperforce-operating-zones
+- kt:hyperforce
+difficulty: 3
+created: '2026-11-16'
+status: active

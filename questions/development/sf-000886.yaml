@@ -1,0 +1,18 @@
+id: sf-000886
+product_area: development
+true_statement: To be wired to a Lightning web component, an Apex method must be static and annotated @AuraEnabled(cacheable=true).
+false_statement: To be wired to a Lightning web component, an Apex method must be an instance method annotated @AuraEnabled(cacheable=false).
+explanation: Wired Apex has to be static, public or global, and marked cacheable=true, which also means it may only read data. Non-cacheable or mutating methods must be called imperatively.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/wire-service.md
+  commit: 4d0f07d8de63e830ec8cb90374127798d040ea67
+  blob: 5b372e559a73f3ffb3488a2a4d265ef229645fb4
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:wire-service
+- kt:apex
+difficulty: 2
+created: '2026-11-16'
+status: active

@@ -1,0 +1,18 @@
+id: sf-000908
+product_area: platform-architecture
+true_statement: Even in a Hyperforce Operating Zone, setup metadata such as object names and custom Apex code, plus search queries, is stored in the United States.
+false_statement: In a Hyperforce Operating Zone, setup metadata such as object names and custom Apex code, plus search queries, never leaves the zone.
+explanation: Salesforce documents administrative data, including object names, URLs, Apex code and search queries (not results), as stored in the US, one of the zone's defined exceptions.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/hyperforce-operating-zones.md
+  commit: 4d0f07d8de63e830ec8cb90374127798d040ea67
+  blob: 3f19bbfdd790f58fbeaa821f1ed16d66129f347a
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:hyperforce-operating-zones
+- kt:data-residency
+difficulty: 3
+created: '2026-11-16'
+status: active

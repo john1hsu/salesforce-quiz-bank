@@ -1,0 +1,18 @@
+id: sf-000919
+product_area: public-sector-and-compliance
+true_statement: Salesforce re-fetches Shield Cache-Only Keys after cache flushes, which happen at least every 72 hours, so the customer's key service becomes an org dependency.
+false_statement: Salesforce fetches Shield Cache-Only Keys once at setup and caches them permanently, so the customer's key service isn't an org dependency.
+explanation: Cached keys are flushed at least every 72 hours and must be fetched again, so if the customer's key service is down, encrypted data can become unavailable.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/data-sovereignty.md
+  commit: 4d0f07d8de63e830ec8cb90374127798d040ea67
+  blob: 432ac81c0da236bb3ca3abb7bd34cf6f63d1def4
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:data-sovereignty
+- kt:shield-platform-encryption
+difficulty: 3
+created: '2026-11-16'
+status: active

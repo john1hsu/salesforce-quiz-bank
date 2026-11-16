@@ -1,0 +1,17 @@
+id: sf-000884
+product_area: development
+true_statement: A Visualforce page's view state, stored in an encrypted hidden form field, is capped at 170 KB.
+false_statement: A Visualforce page's view state, stored in an encrypted hidden form field, is capped at 1 MB.
+explanation: Component state, field values and the controller are serialized into view state with a 170 KB ceiling, which is why developers use transient variables and narrower queries to keep it small.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/visualforce.md
+  commit: 4d0f07d8de63e830ec8cb90374127798d040ea67
+  blob: 983133b68b0decacc3223bbf50c9988aca8c7461
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:visualforce
+difficulty: 2
+created: '2026-11-16'
+status: active

@@ -1,0 +1,18 @@
+id: sf-000953
+product_area: data-model
+true_statement: Shared Activities can take up to 48 hours to enable, and only Salesforce Support can turn it off again.
+false_statement: Shared Activities takes effect immediately when enabled, and admins can turn it off again from Activity Settings.
+explanation: Enabling Shared Activities runs a background conversion that can take up to two days, and reversing it requires a Support request, so it's a hard-to-undo choice.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/activity-data-model.md
+  commit: 4d0f07d8de63e830ec8cb90374127798d040ea67
+  blob: a3092f03504204954cb14d475d76668f2fc78634
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:activity-data-model
+- kt:shared-activities
+difficulty: 2
+created: '2026-11-16'
+status: active

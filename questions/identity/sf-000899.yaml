@@ -1,0 +1,18 @@
+id: sf-000899
+product_area: identity
+true_statement: With Salesforce refresh token rotation enabled, every refresh issues a new refresh token and invalidates the old one, and rotation can't be turned off once on.
+false_statement: With Salesforce refresh token rotation enabled, every refresh issues a new refresh token while the old one stays valid, and rotation can be turned off at any time.
+explanation: Rotation replaces the refresh token on each use so a stolen token dies at the next legitimate refresh. Salesforce makes the setting irreversible once enabled.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/refresh-token-policies.md
+  commit: 4d0f07d8de63e830ec8cb90374127798d040ea67
+  blob: 58f5c1606a694cda899faa2e424d9aaba63a751e
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:refresh-token-policies
+- kt:oauth-2-0
+difficulty: 2
+created: '2026-11-16'
+status: active

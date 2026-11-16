@@ -1,0 +1,18 @@
+id: sf-000952
+product_area: data-model
+true_statement: With multiday events enabled in Activity Settings, a single Salesforce event can't span more than 14 days.
+false_statement: With multiday events enabled in Activity Settings, a single Salesforce event can't span more than 31 days.
+explanation: Multiday events must be switched on first, and even then one event is capped at 14 days in length.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/activity-data-model.md
+  commit: 4d0f07d8de63e830ec8cb90374127798d040ea67
+  blob: a3092f03504204954cb14d475d76668f2fc78634
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:activity-data-model
+- kt:standard-objects
+difficulty: 2
+created: '2026-11-16'
+status: active

@@ -1,0 +1,17 @@
+id: sf-000876
+product_area: data-cloud-and-ai
+true_statement: ISVs can package MCP server registration metadata in managed 2GP packages, but MCP tool actions and Gateway policies must be created by subscribers after install.
+false_statement: ISVs can package MCP server registration metadata, MCP tool actions and Gateway policies together in managed 2GP packages.
+explanation: The four registration metadata types can ship in 2GP packages at API version 66.0 or later, but tool actions and Agentforce Gateway policies can't be packaged yet, so subscribers set them up after installing.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/model-context-protocol-in-agentforce.md
+  commit: 4d0f07d8de63e830ec8cb90374127798d040ea67
+  blob: 89f66d5cb65250b6b56f8732801fe32ecd96add7
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:model-context-protocol-in-agentforce
+difficulty: 3
+created: '2026-11-16'
+status: active

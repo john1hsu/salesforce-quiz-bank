@@ -1,0 +1,18 @@
+id: sf-000900
+product_area: identity
+true_statement: A Salesforce refresh token IP allowlist can hold at most 256 IP addresses across all of its ranges.
+false_statement: A Salesforce refresh token IP allowlist can hold at most 16 IP ranges, with no cap on the addresses they cover.
+explanation: The allowlist, used with the web server flow, blocks refresh requests from outside its ranges and is capped at 256 addresses in total, not a count of ranges.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/refresh-token-policies.md
+  commit: 4d0f07d8de63e830ec8cb90374127798d040ea67
+  blob: 58f5c1606a694cda899faa2e424d9aaba63a751e
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:refresh-token-policies
+- kt:login-ip-ranges-and-trusted-ip-ranges
+difficulty: 3
+created: '2026-11-16'
+status: active

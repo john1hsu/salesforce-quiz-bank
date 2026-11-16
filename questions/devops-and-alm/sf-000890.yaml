@@ -1,0 +1,18 @@
+id: sf-000890
+product_area: devops-and-alm
+true_statement: Building a managed 2GP version on anything other than the highest promoted version requires the --skip-ancestor-check flag.
+false_statement: Building a managed 2GP version on anything other than the highest promoted version requires the --branch flag.
+explanation: Branching away from the highest promoted version, for example to abandon a flawed release, must be acknowledged with sf package version create --skip-ancestor-check.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/package-versioning-and-ancestry.md
+  commit: 4d0f07d8de63e830ec8cb90374127798d040ea67
+  blob: 87d63151b83bf4688d7e9e544af79cdd3748a38d
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:package-versioning-and-ancestry
+- kt:salesforce-cli
+difficulty: 3
+created: '2026-11-16'
+status: active

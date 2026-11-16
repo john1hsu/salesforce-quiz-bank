@@ -1,0 +1,18 @@
+id: sf-000912
+product_area: platform-architecture
+true_statement: In NIST SP 500-292, the IaaS provider controls the host operating system and the hypervisors that expose virtual machines.
+false_statement: In NIST SP 500-292, the IaaS consumer controls the host operating system and the hypervisors that expose virtual machines.
+explanation: The provider owns the physical resources plus the host OS and hypervisor layer; the consumer is responsible for guest operating systems, middleware and applications on top.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/infrastructure-as-a-service.md
+  commit: 4d0f07d8de63e830ec8cb90374127798d040ea67
+  blob: 3139f0cd290f16e9ed95785c61697df551b81bb3
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:infrastructure-as-a-service
+- kt:shared-responsibility-model
+difficulty: 2
+created: '2026-11-16'
+status: active

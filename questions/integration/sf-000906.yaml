@@ -1,0 +1,18 @@
+id: sf-000906
+product_area: integration
+true_statement: 'UI API supports HTTP caching: a client sends an ETag back in If-None-Match and gets 304 Not Modified if its copy is still current.'
+false_statement: 'UI API supports HTTP caching: a client sends an ETag back in If-None-Match and gets 204 No Content if its copy is still current.'
+explanation: UI API responses include ETags, and a conditional request whose ETag still matches is answered with 304 Not Modified, returning headers only.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/user-interface-api.md
+  commit: 4d0f07d8de63e830ec8cb90374127798d040ea67
+  blob: 0fbf00c286d7e34ccc56183c8ebde01921ee3da4
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:user-interface-api
+- kt:rest-api
+difficulty: 2
+created: '2026-11-16'
+status: active

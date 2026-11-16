@@ -1,0 +1,18 @@
+id: sf-000895
+product_area: identity
+true_statement: A profile with the External Identity license can access up to ten custom objects, and custom objects from managed packages don't count toward that.
+false_statement: A profile with the External Identity license can access up to ten custom objects, including any custom objects installed from managed packages.
+explanation: External Identity grants a short list of standard objects plus at most ten custom objects per profile. Managed-package custom objects are excluded from the count.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/external-identity-license.md
+  commit: 4d0f07d8de63e830ec8cb90374127798d040ea67
+  blob: dd78e04be82116756d66f2c15b7efe36baee5330
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:external-identity-license
+- kt:profiles
+difficulty: 2
+created: '2026-11-16'
+status: active

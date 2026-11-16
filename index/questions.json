@@ -1,7 +1,7 @@
 {
  "version": 1,
- "count": 867,
- "active": 867,
+ "count": 961,
+ "active": 961,
  "questions": [
   {
    "id": "sf-000001",
@@ -15062,6 +15062,1619 @@
    "difficulty": 3,
    "status": "active",
    "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/financial-services-cloud.md"
+  },
+  {
+   "id": "sf-000874",
+   "area": "data-cloud-and-ai",
+   "t": "In MCP for Agentforce, external and third-party MCP servers are registered in Agentforce Registry, while MuleSoft servers go through API Catalog.",
+   "f": "In MCP for Agentforce, MuleSoft MCP servers are registered in Agentforce Registry, while external and third-party servers go through API Catalog.",
+   "x": "Agentforce Registry is the home for external and third-party servers; MuleSoft and Salesforce standard or custom servers are registered through API Catalog. The false statement swaps the two registration paths.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:model-context-protocol-in-agentforce",
+    "kt:mulesoft-anypoint-platform"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/model-context-protocol-in-agentforce.md"
+  },
+  {
+   "id": "sf-000875",
+   "area": "data-cloud-and-ai",
+   "t": "When an MCP server's tool descriptions change significantly, Agentforce Registry blocks the affected action and alerts the admin.",
+   "f": "When an MCP server's tool descriptions change significantly, Agentforce Registry silently adopts the new descriptions and keeps the action running.",
+   "x": "To guard against tool drift, the registry blocks an action whose server-side tool description changed significantly and notifies the admin, rather than quietly accepting the change.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:model-context-protocol-in-agentforce",
+    "kt:agent-actions"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/model-context-protocol-in-agentforce.md"
+  },
+  {
+   "id": "sf-000876",
+   "area": "data-cloud-and-ai",
+   "t": "ISVs can package MCP server registration metadata in managed 2GP packages, but MCP tool actions and Gateway policies must be created by subscribers after install.",
+   "f": "ISVs can package MCP server registration metadata, MCP tool actions and Gateway policies together in managed 2GP packages.",
+   "x": "The four registration metadata types can ship in 2GP packages at API version 66.0 or later, but tool actions and Agentforce Gateway policies can't be packaged yet, so subscribers set them up after installing.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:model-context-protocol-in-agentforce"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/model-context-protocol-in-agentforce.md"
+  },
+  {
+   "id": "sf-000877",
+   "area": "data-model",
+   "t": "To create a Salesforce file through the API, you insert a ContentVersion, and Salesforce creates the parent ContentDocument automatically.",
+   "f": "To create a Salesforce file through the API, you insert a ContentDocument first, then attach the bytes with a ContentVersion.",
+   "x": "ContentDocument supports query, update and delete but not create. Inserting a ContentVersion with no ContentDocumentId makes the platform generate the parent document for you.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:content-document-model",
+    "kt:standard-objects"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/content-document-model.md"
+  },
+  {
+   "id": "sf-000878",
+   "area": "data-model",
+   "t": "On a ContentDocumentLink, ShareType C grants Collaborator access, letting the user edit the file as well as view it.",
+   "f": "On a ContentDocumentLink, ShareType C grants Inferred access, taken from the linked record or library permission.",
+   "x": "ShareType values are V for Viewer, C for Collaborator (view plus edit) and I for Inferred. The false statement assigns the meaning of I to C.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:content-document-model",
+    "kt:junction-object"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/content-document-model.md"
+  },
+  {
+   "id": "sf-000879",
+   "area": "data-model",
+   "t": "Deleting a ContentDocument cascades to its links, but those cascaded ContentDocumentLink deletions don't fire ContentDocumentLink triggers.",
+   "f": "Deleting a ContentDocument cascades to its links, and each cascaded ContentDocumentLink deletion fires the ContentDocumentLink delete trigger.",
+   "x": "When a document is deleted its versions and links go with it, but the link deletions happen without running ContentDocumentLink triggers, so trigger logic that relies on them will miss those deletes.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:content-document-model",
+    "kt:apex-triggers"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/content-document-model.md"
+  },
+  {
+   "id": "sf-000880",
+   "area": "data-model",
+   "t": "Data 360's Suggest Tags feature reads object and field metadata, not field values, and every suggestion needs administrator approval.",
+   "f": "Data 360's Suggest Tags feature scans stored field values, and its suggestions are applied automatically without administrator approval.",
+   "x": "Suggest Tags works only from metadata about objects and fields and never inspects the data itself. An administrator must approve each proposed tag before it takes effect.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [
+    "kt:platform-data-architect-certification",
+    "kt:data-cloud-consultant-certification"
+   ],
+   "concepts": [
+    "kt:data-governance",
+    "kt:data-cloud",
+    "kt:data-classification"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/data-governance.md"
+  },
+  {
+   "id": "sf-000881",
+   "area": "data-model",
+   "t": "In a hierarchical Data 360 tag taxonomy, a child tag inherits the governance policies attached to its parent tag.",
+   "f": "In a hierarchical Data 360 tag taxonomy, a parent tag inherits the governance policies attached to each of its child tags.",
+   "x": "Building tags as a hierarchy lets policies flow downward, so a child tag picks up its parent's policies. Inheritance does not run upward from children to parents.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [
+    "kt:platform-data-architect-certification",
+    "kt:data-cloud-consultant-certification"
+   ],
+   "concepts": [
+    "kt:data-governance",
+    "kt:data-cloud"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/data-governance.md"
+  },
+  {
+   "id": "sf-000882",
+   "area": "data-model",
+   "t": "The Platform Data Architect exam gives the Data Governance section a 10% weighting.",
+   "f": "The Platform Data Architect exam gives the Data Governance section a 25% weighting.",
+   "x": "Data Governance makes up 10% of the Platform Data Architect exam, covering GDPR-compliant data models and enterprise governance programs. 25% overstates its share.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [
+    "kt:platform-data-architect-certification",
+    "kt:data-cloud-consultant-certification"
+   ],
+   "concepts": [
+    "kt:data-governance",
+    "kt:platform-data-architect-certification"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/data-governance.md"
+  },
+  {
+   "id": "sf-000883",
+   "area": "development",
+   "t": "A Visualforce standard controller enforces the user's object access and runs in user mode, while a custom controller runs in system mode.",
+   "f": "A Visualforce custom controller enforces the user's object access and runs in user mode, while a standard controller runs in system mode.",
+   "x": "Standard controllers reuse the standard page logic and respect the user's permissions. Custom controllers are Apex classes that run in system mode, so the developer must enforce access; the false statement swaps the two.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:visualforce",
+    "kt:apex"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/visualforce.md"
+  },
+  {
+   "id": "sf-000884",
+   "area": "development",
+   "t": "A Visualforce page's view state, stored in an encrypted hidden form field, is capped at 170 KB.",
+   "f": "A Visualforce page's view state, stored in an encrypted hidden form field, is capped at 1 MB.",
+   "x": "Component state, field values and the controller are serialized into view state with a 170 KB ceiling, which is why developers use transient variables and narrower queries to keep it small.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:visualforce"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/visualforce.md"
+  },
+  {
+   "id": "sf-000885",
+   "area": "development",
+   "t": "Adding lightningStylesheets to a Visualforce page gives it the Lightning look, but it isn't supported in Experience Cloud sites or PDF rendering.",
+   "f": "Adding lightningStylesheets to a Visualforce page gives it the Lightning look everywhere, including Experience Cloud sites and PDF rendering.",
+   "x": "The lightningStylesheets attribute styles pages in Lightning Experience and the mobile app only. Experience Cloud sites and renderAs PDF output don't get that styling.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:visualforce",
+    "kt:salesforce-lightning-design-system",
+    "kt:experience-cloud"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/visualforce.md"
+  },
+  {
+   "id": "sf-000886",
+   "area": "development",
+   "t": "To be wired to a Lightning web component, an Apex method must be static and annotated @AuraEnabled(cacheable=true).",
+   "f": "To be wired to a Lightning web component, an Apex method must be an instance method annotated @AuraEnabled(cacheable=false).",
+   "x": "Wired Apex has to be static, public or global, and marked cacheable=true, which also means it may only read data. Non-cacheable or mutating methods must be called imperatively.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:wire-service",
+    "kt:apex"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/wire-service.md"
+  },
+  {
+   "id": "sf-000887",
+   "area": "development",
+   "t": "Wired Apex data in a Lightning web component is refreshed by passing the previously emitted wire value to refreshApex().",
+   "f": "Wired Apex data in a Lightning web component is refreshed automatically by Lightning Data Service whenever the underlying records change.",
+   "x": "Lightning Data Service doesn't manage results from Apex, so stale wired Apex values must be refreshed explicitly with refreshApex(), which returns a promise.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:wire-service",
+    "kt:lightning-data-service"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/wire-service.md"
+  },
+  {
+   "id": "sf-000888",
+   "area": "development",
+   "t": "A wire adapter only provisions data once every dynamic parameter in its config has a value; an undefined parameter means nothing is fetched.",
+   "f": "A wire adapter provisions data as soon as the component connects, treating any undefined dynamic parameter in its config as null.",
+   "x": "The wire service waits until all reactive config values are defined before running the adapter. Passing null to wired Apex still invokes it, but undefined does not.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:wire-service",
+    "kt:lightning-web-components"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/wire-service.md"
+  },
+  {
+   "id": "sf-000889",
+   "area": "devops-and-alm",
+   "t": "In a managed 2GP, setting ancestorVersion to HIGHEST always resolves to the highest promoted version, keeping the upgrade path linear.",
+   "f": "In a managed 2GP, setting ancestorVersion to HIGHEST always resolves to the newest beta build, keeping the upgrade path linear.",
+   "x": "Only versions promoted to managed-released can be ancestors, and HIGHEST picks the highest of those. Beta builds never qualify as ancestors.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:package-versioning-and-ancestry",
+    "kt:second-generation-managed-packages",
+    "kt:salesforce-dx"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/package-versioning-and-ancestry.md"
+  },
+  {
+   "id": "sf-000890",
+   "area": "devops-and-alm",
+   "t": "Building a managed 2GP version on anything other than the highest promoted version requires the --skip-ancestor-check flag.",
+   "f": "Building a managed 2GP version on anything other than the highest promoted version requires the --branch flag.",
+   "x": "Branching away from the highest promoted version, for example to abandon a flawed release, must be acknowledged with sf package version create --skip-ancestor-check.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:package-versioning-and-ancestry",
+    "kt:salesforce-cli"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/package-versioning-and-ancestry.md"
+  },
+  {
+   "id": "sf-000891",
+   "area": "devops-and-alm",
+   "t": "A managed 2GP patch version can never be the direct ancestor of a non-patch version.",
+   "f": "A managed 2GP patch version can be the direct ancestor of a non-patch version if both share the same major number.",
+   "x": "Patches may chain to other patches with matching major and minor numbers, but a non-patch version must name a non-patch ancestor, or use HIGHEST.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:package-versioning-and-ancestry",
+    "kt:second-generation-managed-packages"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/package-versioning-and-ancestry.md"
+  },
+  {
+   "id": "sf-000892",
+   "area": "devops-and-alm",
+   "t": "The legacy Salesforce Data Mask package is installed in production, but its masking jobs run only in sandboxes.",
+   "f": "The legacy Salesforce Data Mask package is installed in each sandbox, and its masking jobs can run in production as well.",
+   "x": "Data Mask is installed in the production org so configurations carry into refreshed sandboxes, yet jobs execute only in sandboxes to prevent masking real production records by accident.",
+   "release": "Winter '27",
+   "featureStatus": "deprecated",
+   "certs": [],
+   "concepts": [
+    "kt:salesforce-data-mask",
+    "kt:sandbox-types"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/salesforce-data-mask.md"
+  },
+  {
+   "id": "sf-000893",
+   "area": "devops-and-alm",
+   "t": "A Salesforce Data Mask job bypasses triggers, validation rules and flows, and deletes the masked object's Field History Tracking when it finishes.",
+   "f": "A Salesforce Data Mask job runs triggers, validation rules and flows, and logs each masked value in the object's Field History Tracking.",
+   "x": "Masking skips automation, including managed-package automation, to run efficiently, and it wipes field history for the masked object so old values aren't left behind.",
+   "release": "Winter '27",
+   "featureStatus": "deprecated",
+   "certs": [],
+   "concepts": [
+    "kt:salesforce-data-mask",
+    "kt:order-of-execution",
+    "kt:field-history-tracking"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/salesforce-data-mask.md"
+  },
+  {
+   "id": "sf-000894",
+   "area": "devops-and-alm",
+   "t": "Service for the legacy Salesforce Data Mask package ends on December 31, 2026, with customers directed to Data Mask & Seed.",
+   "f": "Service for the legacy Salesforce Data Mask package ends on December 31, 2026, with customers directed to Shield Platform Encryption.",
+   "x": "Salesforce labels the Data Mask package legacy and names Data Mask & Seed as its successor; Shield Platform Encryption protects production data at rest and isn't the replacement.",
+   "release": "Winter '27",
+   "featureStatus": "deprecated",
+   "certs": [],
+   "concepts": [
+    "kt:salesforce-data-mask",
+    "kt:data-mask-and-seed"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/salesforce-data-mask.md"
+  },
+  {
+   "id": "sf-000895",
+   "area": "identity",
+   "t": "A profile with the External Identity license can access up to ten custom objects, and custom objects from managed packages don't count toward that.",
+   "f": "A profile with the External Identity license can access up to ten custom objects, including any custom objects installed from managed packages.",
+   "x": "External Identity grants a short list of standard objects plus at most ten custom objects per profile. Managed-package custom objects are excluded from the count.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:external-identity-license",
+    "kt:profiles"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/external-identity-license.md"
+  },
+  {
+   "id": "sf-000896",
+   "area": "identity",
+   "t": "For External Identity users, Salesforce recommends staying under 10 million unique logins per month to avoid extra charges or degraded functionality.",
+   "f": "For External Identity users, Salesforce recommends staying under 1 million unique logins per month to avoid extra charges or degraded functionality.",
+   "x": "The guidance is 10 million unique logins a month; beyond that customers may face added cost and reduced functionality and should talk to Salesforce first.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:external-identity-license",
+    "kt:salesforce-identity"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/external-identity-license.md"
+  },
+  {
+   "id": "sf-000897",
+   "area": "identity",
+   "t": "Experience Cloud objects such as Cases, Orders and Tasks aren't included in the External Identity license; users need a Community license for them.",
+   "f": "Experience Cloud objects such as Cases, Orders and Tasks are included in the External Identity license once the default profile is cloned.",
+   "x": "The license is identity-focused and excludes service objects like Cases, Contracts, Orders and Tasks. Cloning the profile can't grant objects the license lacks; upgrading users to a Community license can.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:external-identity-license",
+    "kt:customer-community-licenses"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/external-identity-license.md"
+  },
+  {
+   "id": "sf-000898",
+   "area": "identity",
+   "t": "The default refresh token policy on a Salesforce connected app is that the refresh token is valid until revoked.",
+   "f": "The default refresh token policy on a Salesforce connected app is that the refresh token expires if not used for 90 days.",
+   "x": "Out of the box, a refresh token never expires on its own and works until a user or admin revokes it. Inactivity windows and fixed lifetimes are options an admin has to choose.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:refresh-token-policies",
+    "kt:connected-apps"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/refresh-token-policies.md"
+  },
+  {
+   "id": "sf-000899",
+   "area": "identity",
+   "t": "With Salesforce refresh token rotation enabled, every refresh issues a new refresh token and invalidates the old one, and rotation can't be turned off once on.",
+   "f": "With Salesforce refresh token rotation enabled, every refresh issues a new refresh token while the old one stays valid, and rotation can be turned off at any time.",
+   "x": "Rotation replaces the refresh token on each use so a stolen token dies at the next legitimate refresh. Salesforce makes the setting irreversible once enabled.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:refresh-token-policies",
+    "kt:oauth-2-0"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/refresh-token-policies.md"
+  },
+  {
+   "id": "sf-000900",
+   "area": "identity",
+   "t": "A Salesforce refresh token IP allowlist can hold at most 256 IP addresses across all of its ranges.",
+   "f": "A Salesforce refresh token IP allowlist can hold at most 16 IP ranges, with no cap on the addresses they cover.",
+   "x": "The allowlist, used with the web server flow, blocks refresh requests from outside its ranges and is capped at 256 addresses in total, not a count of ranges.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:refresh-token-policies",
+    "kt:login-ip-ranges-and-trusted-ip-ranges"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/refresh-token-policies.md"
+  },
+  {
+   "id": "sf-000901",
+   "area": "integration",
+   "t": "The SOAP API partner WSDL is loosely typed and works against any org, while the enterprise WSDL is strongly typed to one org's schema.",
+   "f": "The SOAP API enterprise WSDL is loosely typed and works against any org, while the partner WSDL is strongly typed to one org's schema.",
+   "x": "ISVs use the partner WSDL because it isn't tied to a specific object model. The enterprise WSDL mirrors one org's objects and fields and must be regenerated when they change; the false statement swaps them.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:soap-api",
+    "kt:salesforce-apis"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/soap-api.md"
+  },
+  {
+   "id": "sf-000902",
+   "area": "integration",
+   "t": "The SOAP API create() and update() calls accept at most 200 records per call, and a larger request fails entirely.",
+   "f": "The SOAP API create() and update() calls accept at most 2,000 records per call, and a larger request fails entirely.",
+   "x": "Synchronous SOAP writes are capped at 200 records per call, which is why very large loads are usually sent through Bulk API 2.0 instead.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:soap-api",
+    "kt:bulk-api-2"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/soap-api.md"
+  },
+  {
+   "id": "sf-000903",
+   "area": "integration",
+   "t": "SOAP API login() calls count toward a login rate limit of 3,600 calls per user per hour.",
+   "f": "SOAP API login() calls count toward a login rate limit of 3,600 calls per org per day.",
+   "x": "The login rate limit is applied per user and per hour, at 3,600 calls. It is separate from the org's rolling 24-hour API request allocation.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:soap-api",
+    "kt:api-request-limits"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/soap-api.md"
+  },
+  {
+   "id": "sf-000905",
+   "area": "integration",
+   "t": "UI API batch object-info requests accept up to 2,000 objects, while batch create, update and delete accept up to 200 records per request.",
+   "f": "UI API batch object-info requests accept up to 200 objects, while batch create, update and delete accept up to 2,000 records per request.",
+   "x": "Metadata-only batch reads of object info can cover up to 2,000 objects, but record writes in a batch are capped at 200. The false statement reverses the two numbers.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:user-interface-api"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/user-interface-api.md"
+  },
+  {
+   "id": "sf-000906",
+   "area": "integration",
+   "t": "UI API supports HTTP caching: a client sends an ETag back in If-None-Match and gets 304 Not Modified if its copy is still current.",
+   "f": "UI API supports HTTP caching: a client sends an ETag back in If-None-Match and gets 204 No Content if its copy is still current.",
+   "x": "UI API responses include ETags, and a conditional request whose ETag still matches is answered with 304 Not Modified, returning headers only.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:user-interface-api",
+    "kt:rest-api"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/user-interface-api.md"
+  },
+  {
+   "id": "sf-000907",
+   "area": "integration",
+   "t": "When sending integers of 2^31 or larger to User Interface API, clients must pass them as quoted strings.",
+   "f": "When sending integers of 2^31 or larger to User Interface API, clients must pass them in scientific notation.",
+   "x": "Large integers at or above 2^31 have to be sent as quoted strings so they aren't mangled as JSON numbers; scientific notation isn't the documented format. Dates, separately, use ISO 8601.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:user-interface-api"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/user-interface-api.md"
+  },
+  {
+   "id": "sf-000908",
+   "area": "platform-architecture",
+   "t": "Even in a Hyperforce Operating Zone, setup metadata such as object names and custom Apex code, plus search queries, is stored in the United States.",
+   "f": "In a Hyperforce Operating Zone, setup metadata such as object names and custom Apex code, plus search queries, never leaves the zone.",
+   "x": "Salesforce documents administrative data, including object names, URLs, Apex code and search queries (not results), as stored in the US, one of the zone's defined exceptions.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:hyperforce-operating-zones",
+    "kt:data-residency"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/hyperforce-operating-zones.md"
+  },
+  {
+   "id": "sf-000909",
+   "area": "platform-architecture",
+   "t": "Customers who joined the EU Operating Zone before December 17, 2024 have their data stored in Germany.",
+   "f": "Customers who joined the EU Operating Zone before December 17, 2024 have their data stored in Switzerland.",
+   "x": "AWS hosting for the zone is in Germany and Switzerland. Customers onboarded before the December 2024 cutoff are stored in Germany, while new customers choose a country at signup.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:hyperforce-operating-zones",
+    "kt:hyperforce"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/hyperforce-operating-zones.md"
+  },
+  {
+   "id": "sf-000911",
+   "area": "platform-architecture",
+   "t": "Under NIST's IaaS model, the consumer controls the operating systems, storage and deployed applications, and may have limited control over host firewalls.",
+   "f": "Under NIST's IaaS model, the provider controls the guest operating systems and deployed applications, and the consumer controls only application settings.",
+   "x": "IaaS hands the consumer the most control of the three service models: guest OS, storage and applications are theirs to run. Controlling only application settings describes SaaS, not IaaS.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:infrastructure-as-a-service",
+    "kt:cloud-computing"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/infrastructure-as-a-service.md"
+  },
+  {
+   "id": "sf-000912",
+   "area": "platform-architecture",
+   "t": "In NIST SP 500-292, the IaaS provider controls the host operating system and the hypervisors that expose virtual machines.",
+   "f": "In NIST SP 500-292, the IaaS consumer controls the host operating system and the hypervisors that expose virtual machines.",
+   "x": "The provider owns the physical resources plus the host OS and hypervisor layer; the consumer is responsible for guest operating systems, middleware and applications on top.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:infrastructure-as-a-service",
+    "kt:shared-responsibility-model"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/infrastructure-as-a-service.md"
+  },
+  {
+   "id": "sf-000913",
+   "area": "platform-architecture",
+   "t": "Salesforce Engineering describes Hyperforce as replacing rather than patching infrastructure resources, an immutable infrastructure approach.",
+   "f": "Salesforce Engineering describes Hyperforce as patching infrastructure resources in place, a mutable infrastructure approach.",
+   "x": "Hyperforce defines infrastructure as version-controlled code and swaps out resources instead of patching them in place, which is what immutable infrastructure means.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:infrastructure-as-a-service",
+    "kt:hyperforce"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/infrastructure-as-a-service.md"
+  },
+  {
+   "id": "sf-000914",
+   "area": "platform-architecture",
+   "t": "Under NIST's SaaS definition, the consumer doesn't control servers, storage or application capabilities, except possibly limited user-specific application settings.",
+   "f": "Under NIST's SaaS definition, the consumer doesn't control servers or storage but does control the application's capabilities and its runtime.",
+   "x": "NIST leaves the SaaS consumer only limited, user-specific configuration. Controlling the application and its runtime is closer to PaaS, where consumers deploy their own apps.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:software-as-a-service",
+    "kt:cloud-computing"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/software-as-a-service.md"
+  },
+  {
+   "id": "sf-000915",
+   "area": "platform-architecture",
+   "t": "Trailhead's cloud security module uses Gmail as its example of Software as a Service.",
+   "f": "Trailhead's cloud security module uses Gmail as its example of Infrastructure as a Service.",
+   "x": "Gmail is a fully managed application that users simply consume, so Trailhead presents it as SaaS. IaaS would mean renting raw compute, storage and networks.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:software-as-a-service",
+    "kt:infrastructure-as-a-service"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/software-as-a-service.md"
+  },
+  {
+   "id": "sf-000916",
+   "area": "platform-architecture",
+   "t": "Salesforce's SaaS explainer lists WebEx (1995) and NetSuite (1998) as SaaS examples that predate Salesforce's 1999 launch of web-based CRM.",
+   "f": "Salesforce's SaaS explainer lists WebEx (1995) and NetSuite (1998) as SaaS examples that followed Salesforce's 1993 launch of web-based CRM.",
+   "x": "The explainer places Salesforce's web-based CRM in 1999, after early hosted offerings like WebEx and NetSuite, in the late-1990s rise of modern SaaS.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:software-as-a-service",
+    "kt:salesforce-platform"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/software-as-a-service.md"
+  },
+  {
+   "id": "sf-000917",
+   "area": "public-sector-and-compliance",
+   "t": "Under the EU Cloud Sovereignty Framework, a service's overall SEAL rating is the lowest level it reaches on any of the eight sovereignty objectives.",
+   "f": "Under the EU Cloud Sovereignty Framework, a service's overall SEAL rating is the average of the levels it reaches across the eight sovereignty objectives.",
+   "x": "The framework takes the weakest objective as the overall score, so one low rating caps the whole service. It doesn't average the objectives.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:data-sovereignty"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/data-sovereignty.md"
+  },
+  {
+   "id": "sf-000918",
+   "area": "public-sector-and-compliance",
+   "t": "Shield Cache-Only Keys apply to field-level encryption only, not to Database Encryption.",
+   "f": "Shield Cache-Only Keys apply to Database Encryption only, not to field-level encryption.",
+   "x": "Cache-Only Keys keep the data encryption key in a customer-run key service called through a named credential, and they are supported only for field-level encryption.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:data-sovereignty",
+    "kt:shield-platform-encryption"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/data-sovereignty.md"
+  },
+  {
+   "id": "sf-000919",
+   "area": "public-sector-and-compliance",
+   "t": "Salesforce re-fetches Shield Cache-Only Keys after cache flushes, which happen at least every 72 hours, so the customer's key service becomes an org dependency.",
+   "f": "Salesforce fetches Shield Cache-Only Keys once at setup and caches them permanently, so the customer's key service isn't an org dependency.",
+   "x": "Cached keys are flushed at least every 72 hours and must be fetched again, so if the customer's key service is down, encrypted data can become unavailable.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:data-sovereignty",
+    "kt:shield-platform-encryption"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/data-sovereignty.md"
+  },
+  {
+   "id": "sf-000920",
+   "area": "public-sector-and-compliance",
+   "t": "The 2021 GDPR standard contractual clauses come in four modules, covering controller and processor transfers in each combination.",
+   "f": "The 2021 GDPR standard contractual clauses come in two modules, covering only controller-to-controller and controller-to-processor transfers.",
+   "x": "The June 2021 SCCs have four modules: controller-to-controller, controller-to-processor, processor-to-processor and processor-to-controller.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:gdpr-international-transfers",
+    "kt:security-compliance-frameworks"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/gdpr-international-transfers.md"
+  },
+  {
+   "id": "sf-000921",
+   "area": "public-sector-and-compliance",
+   "t": "Per Salesforce's FAQ, EU exporters relying on SCCs or BCRs for US transfers must run a transfer impact assessment, while DPF-based transfers need none.",
+   "f": "Per Salesforce's FAQ, EU exporters relying on the DPF for US transfers must run a transfer impact assessment, while SCC- or BCR-based transfers need none.",
+   "x": "The DPF is an adequacy decision, so transfers to certified US recipients don't need a TIA. Transfers under SCCs or BCRs still carry the Schrems II duty to assess the destination's laws.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:gdpr-international-transfers",
+    "kt:shared-responsibility-model"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/gdpr-international-transfers.md"
+  },
+  {
+   "id": "sf-000922",
+   "area": "public-sector-and-compliance",
+   "t": "GDPR Article 49 derogations, such as explicit consent, are meant for occasional transfers and not for routine, systematic data flows.",
+   "f": "GDPR Article 49 derogations, such as explicit consent, are the preferred basis for routine, systematic data flows such as CRM replication.",
+   "x": "Derogations are the last resort after adequacy and appropriate safeguards, and regulators treat them as exceptional. Systematic replication needs adequacy, SCCs or BCRs.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:gdpr-international-transfers",
+    "kt:data-governance"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/gdpr-international-transfers.md"
+  },
+  {
+   "id": "sf-000923",
+   "area": "platform-architecture",
+   "t": "In a Hyperforce Operating Zone, MySearch, Chatbot and some Einstein features aren't part of the OZ products, so license parity must be checked before buying.",
+   "f": "In a Hyperforce Operating Zone, MySearch, Chatbot and all Einstein features are included in the OZ products, so license parity is guaranteed.",
+   "x": "Salesforce vets each feature for data leaving the zone and drops ones that would. MySearch, Chatbot and some Einstein features are excluded from the OZ SKUs.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:hyperforce-operating-zones",
+    "kt:hyperforce"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/hyperforce-operating-zones.md"
+  },
+  {
+   "id": "sf-000924",
+   "area": "security-and-sharing",
+   "t": "Each Salesforce user has exactly one user license but can hold several permission set licenses on top of it.",
+   "f": "Each Salesforce user has exactly one permission set license but can hold several user licenses on top of it.",
+   "x": "The user license is the single base license; permission set licenses are optional add-ons that unlock extra features, and a user can have many.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:permission-set-licenses",
+    "kt:user-licenses"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/permission-set-licenses.md"
+  },
+  {
+   "id": "sf-000925",
+   "area": "security-and-sharing",
+   "t": "A permission set license on its own grants nothing visible; it unlocks permissions that a permission set or profile then has to switch on.",
+   "f": "A permission set license on its own grants its feature immediately, with no permission set or profile needed to switch it on.",
+   "x": "Licenses set the ceiling. Admins assign the PSL and then give the user a permission set or profile that actually enables the feature.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:permission-set-licenses",
+    "kt:permission-sets",
+    "kt:profiles"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/permission-set-licenses.md"
+  },
+  {
+   "id": "sf-000926",
+   "area": "security-and-sharing",
+   "t": "ISV permission set license definitions work only in second-generation managed packages, and only for net-new packages.",
+   "f": "ISV permission set license definitions work in both first- and second-generation managed packages, including existing packages.",
+   "x": "PermissionSetLicenseDefinition is a 2GP-only feature limited to net-new packages and US-based paying production subscribers, so 1GP and existing packages can't use it.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:permission-set-licenses",
+    "kt:second-generation-managed-packages"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/permission-set-licenses.md"
+  },
+  {
+   "id": "sf-000927",
+   "area": "security-and-sharing",
+   "t": "An org can have up to 200 active user access policies, and each policy can hold up to 20 actions.",
+   "f": "An org can have up to 20 active user access policies, and each policy can hold up to 200 actions.",
+   "x": "Since GA, the active-policy ceiling is 200 per org, while a single policy is capped at 20 grant or revoke actions. Twenty active policies was the old closed-beta limit.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:user-access-policies",
+    "kt:user-management"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/user-access-policies.md"
+  },
+  {
+   "id": "sf-000928",
+   "area": "security-and-sharing",
+   "t": "When a user matches several active user access policies, only the active policy with the lowest order value applies.",
+   "f": "When a user matches several active user access policies, all matching policies apply, in ascending order value.",
+   "x": "The order field, an integer from 0 to 10,000, decides precedence: only the lowest-valued matching active policy runs for that user.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:user-access-policies",
+    "kt:metadata-api"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/user-access-policies.md"
+  },
+  {
+   "id": "sf-000929",
+   "area": "security-and-sharing",
+   "t": "User access policies can use profiles and roles as criteria, but can't assign or revoke a profile or role as an action.",
+   "f": "User access policies can use profiles and roles as criteria, and can also assign a new profile or role to matching users as an action.",
+   "x": "Policy actions cover permission sets, groups, licenses, public groups and queues only. Profiles and roles can filter users but aren't assignable through a policy.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:user-access-policies",
+    "kt:profiles"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/user-access-policies.md"
+  },
+  {
+   "id": "sf-000930",
+   "area": "architecture-practice",
+   "t": "Trailhead names missing CRUD and field-level security enforcement as the most common reason solutions fail the AppExchange security review.",
+   "f": "Trailhead names cross-site scripting as the most common reason solutions fail the AppExchange security review.",
+   "x": "The review tests common web threats like injection and XSS, but the top failure cause Trailhead cites is code that doesn't enforce CRUD and field-level security.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:build-vs-buy-decisions",
+    "kt:appexchange-security-review"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/build-vs-buy-decisions.md"
+  },
+  {
+   "id": "sf-000931",
+   "area": "architecture-practice",
+   "t": "In a 2020 survey of 157 practitioners, cost was the most frequently chosen criterion in build-vs-buy component decisions, picked by 77%.",
+   "f": "In a 2020 survey of 157 practitioners, component size was the most frequently chosen criterion in build-vs-buy component decisions, picked by 77%.",
+   "x": "Cost led the criteria at 77%, ahead of support, longevity and fit. Component size was rarely weighted, which the authors saw as underestimating integration effort.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:build-vs-buy-decisions",
+    "kt:solution-design-tradeoffs"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/build-vs-buy-decisions.md"
+  },
+  {
+   "id": "sf-000932",
+   "area": "architecture-practice",
+   "t": "In a 2020 build-vs-buy survey, about 90% of practitioners considered in-house development, and none considered commercial off-the-shelf components alone.",
+   "f": "In a 2020 build-vs-buy survey, about 90% of practitioners considered commercial off-the-shelf components alone, and none considered in-house development.",
+   "x": "Most respondents weighed building in-house, often alongside open-source or COTS parts, while no one relied on COTS alone. The false statement inverts the findings.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:build-vs-buy-decisions"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/build-vs-buy-decisions.md"
+  },
+  {
+   "id": "sf-000933",
+   "area": "automation",
+   "t": "Each org gets 5,000 Einstein Next Best Action strategy requests a month at no charge, and every load or refresh of a page with the component counts.",
+   "f": "Each org gets 50,000 Einstein Next Best Action strategy requests a month at no charge, and only accepted recommendations count as requests.",
+   "x": "The free entitlement is 5,000 requests a month, with an add-on adding 10,000. Page loads, refreshes, field updates on the page, strategy tests and REST calls all consume requests.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:einstein-next-best-action"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/einstein-next-best-action.md"
+  },
+  {
+   "id": "sf-000934",
+   "area": "automation",
+   "t": "The Einstein Next Best Action component on a Lightning record page can show at most four recommendations.",
+   "f": "The Einstein Next Best Action component on a Lightning record page can show at most ten recommendations.",
+   "x": "When configuring the component the admin chooses how many recommendations to show, up to a maximum of four, plus whether to show a reject button.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:einstein-next-best-action"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/einstein-next-best-action.md"
+  },
+  {
+   "id": "sf-000935",
+   "area": "automation",
+   "t": "Recommendation strategy flows for Einstein Next Best Action can't call subflows, so shared logic must be duplicated or moved into invocable actions.",
+   "f": "Recommendation strategy flows for Einstein Next Best Action can call subflows, so shared logic can be reused across strategies.",
+   "x": "Subflows aren't supported in recommendation strategy flows. Reusable logic has to be copied into each strategy or packaged as an invocable action.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:einstein-next-best-action",
+    "kt:flow-builder"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/einstein-next-best-action.md"
+  },
+  {
+   "id": "sf-000936",
+   "area": "clouds-and-products",
+   "t": "B2C Commerce runs on its own platform with its own APIs, while B2B Commerce runs on the Salesforce Lightning Platform alongside CRM data.",
+   "f": "B2B Commerce runs on its own platform with its own APIs, while B2C Commerce runs on the Salesforce Lightning Platform alongside CRM data.",
+   "x": "B2C Commerce descends from the Demandware acquisition and keeps a separate platform, whereas B2B Commerce is built on the core Lightning Platform. The false statement swaps them.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:commerce-cloud",
+    "kt:b2c-commerce",
+    "kt:b2b-commerce"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/commerce-cloud.md"
+  },
+  {
+   "id": "sf-000937",
+   "area": "clouds-and-products",
+   "t": "Storefront Next, the recommended option for new B2C Commerce sites, is built on React and React Router and runs on Managed Runtime.",
+   "f": "Storefront Next, the recommended option for new B2C Commerce sites, is built on Lightning Web Components and runs on the Lightning Web Runtime.",
+   "x": "Storefront Next is a React-based, server-side-rendered storefront on Managed Runtime. LWC on LWR is how B2B and D2C stores are built in Experience Builder.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:commerce-cloud",
+    "kt:b2c-commerce"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/commerce-cloud.md"
+  },
+  {
+   "id": "sf-000938",
+   "area": "clouds-and-products",
+   "t": "The B2C Commerce documentation positions SCAPI as the main API for customization, ahead of the older OCAPI.",
+   "f": "The B2C Commerce documentation positions OCAPI as the main API for customization, ahead of the newer SCAPI.",
+   "x": "The B2C Commerce API (SCAPI) is the primary customization API and backs the build-your-own storefront option; OCAPI is the older interface.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:commerce-cloud",
+    "kt:b2c-commerce"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/commerce-cloud.md"
+  },
+  {
+   "id": "sf-000939",
+   "area": "clouds-and-products",
+   "t": "The Heroku Connect demo plan caps sync at 10,000 rows across all mappings, with a 10-minute minimum polling interval.",
+   "f": "The Heroku Connect demo plan caps sync at 100,000 rows across all mappings, with a 1-minute minimum polling interval.",
+   "x": "The demo plan is deliberately small: 10,000 rows total and polling no more often than every 10 minutes. Enterprise and Shield plans set row allocations by contract.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:heroku",
+    "kt:heroku-connect"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/heroku.md"
+  },
+  {
+   "id": "sf-000940",
+   "area": "clouds-and-products",
+   "t": "Heroku Eco dynos go to sleep after 30 minutes of inactivity, so the next request waits a few seconds while they wake.",
+   "f": "Heroku Eco dynos go to sleep after 24 hours of inactivity, so the next request waits a few seconds while they wake.",
+   "x": "Eco dynos sleep after half an hour without traffic, adding a short delay to the first request afterward. That makes them a poor fit for latency-sensitive production apps.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:heroku",
+    "kt:platform-as-a-service"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/heroku.md"
+  },
+  {
+   "id": "sf-000941",
+   "area": "clouds-and-products",
+   "t": "Heroku AppLink currently runs only in the virginia region, which adds latency for apps hosted far from it.",
+   "f": "Heroku AppLink currently runs in every Heroku region, so it adds no latency for apps hosted outside the US.",
+   "x": "AppLink, which publishes Heroku APIs to Salesforce as External Services, is available only in the virginia region today, so distant apps pay a latency cost.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:heroku",
+    "kt:heroku-applink"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/heroku.md"
+  },
+  {
+   "id": "sf-000942",
+   "area": "data-cloud-and-ai",
+   "t": "An Agentforce Data Library's source is chosen when the library is created and can't be changed afterward.",
+   "f": "An Agentforce Data Library's source is chosen when the library is created and can be switched later from the library's settings.",
+   "x": "Each library has a single source, such as Knowledge articles or uploaded files, and Trailhead warns that the choice is permanent; a different source means a new library.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:agentforce-specialist-certification"
+   ],
+   "concepts": [
+    "kt:agentforce-data-library",
+    "kt:agentforce"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/agentforce-data-library.md"
+  },
+  {
+   "id": "sf-000943",
+   "area": "data-cloud-and-ai",
+   "t": "Each Agentforce Data Library gets its own retriever, though two libraries can share one search index.",
+   "f": "Each Agentforce Data Library gets its own search index, though two libraries can share one retriever.",
+   "x": "Provisioning creates a dedicated retriever per library, while the underlying search index may be shared between libraries. The false statement swaps which piece is shared.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:agentforce-specialist-certification"
+   ],
+   "concepts": [
+    "kt:agentforce-data-library",
+    "kt:vector-search-in-data-cloud"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/agentforce-data-library.md"
+  },
+  {
+   "id": "sf-000944",
+   "area": "data-cloud-and-ai",
+   "t": "An Agentforce Data Library Connect API add-files request can include at most 1,000 files, with unique file names in the batch.",
+   "f": "An Agentforce Data Library Connect API add-files request can include at most 100 files, with unique file names in the batch.",
+   "x": "The resource reference caps a single add-files call at 1,000 files, and names must not repeat within that request.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:agentforce-specialist-certification"
+   ],
+   "concepts": [
+    "kt:agentforce-data-library",
+    "kt:connect-api"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/agentforce-data-library.md"
+  },
+  {
+   "id": "sf-000945",
+   "area": "data-cloud-and-ai",
+   "t": "In the current Agentforce Specialist exam outline, AI Agents is the heaviest section at 35%, and Multi-Agent Interoperability the lightest at 5%.",
+   "f": "In the current Agentforce Specialist exam outline, Prompt Engineering is the heaviest section at 35%, and Multi-Agent Interoperability the lightest at 5%.",
+   "x": "The reorganized outline gives AI Agents 35%, with Prompt Engineering, Data Cloud for Agentforce and Deployment Lifecycle at 20% each. Prompt Builder dominated the older AI Specialist outline, not this one.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:agentforce-specialist-certification",
+    "kt:agentforce"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/agentforce-specialist-certification.md"
+  },
+  {
+   "id": "sf-000946",
+   "area": "data-cloud-and-ai",
+   "t": "The Agentforce Specialist prep module lists a 73% passing score for the 60 scored multiple-choice questions.",
+   "f": "The Agentforce Specialist prep module lists a 65% passing score for the 60 scored multiple-choice questions.",
+   "x": "The exam has 60 scored questions plus up to five unscored ones, and the prep module sets the pass mark at 73%.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:agentforce-specialist-certification",
+    "kt:salesforce-certification-program"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/agentforce-specialist-certification.md"
+  },
+  {
+   "id": "sf-000947",
+   "area": "data-cloud-and-ai",
+   "t": "When Salesforce renamed AI Specialist to Agentforce Specialist in 2025, existing AI Specialist holders were converted to the new credential without a new exam.",
+   "f": "When Salesforce renamed AI Specialist to Agentforce Specialist in 2025, existing AI Specialist holders had to pass the new exam to keep the credential.",
+   "x": "Registration under the new name opened March 3, 2025, and current AI Specialist holders simply received the Agentforce Specialist credential.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:agentforce-specialist-certification"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/agentforce-specialist-certification.md"
+  },
+  {
+   "id": "sf-000948",
+   "area": "data-cloud-and-ai",
+   "t": "When the same SKU appears on several contracts, Digital Wallet pools the entitlements on one card and draws usage first from the contract expiring soonest.",
+   "f": "When the same SKU appears on several contracts, Digital Wallet pools the entitlements on one card and draws usage first from the most recently signed contract.",
+   "x": "Pooled entitlements are consumed earliest-expiry first, so credits that would lapse soonest are used before newer ones.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:digital-wallet",
+    "kt:salesforce-pricing"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/digital-wallet.md"
+  },
+  {
+   "id": "sf-000949",
+   "area": "data-cloud-and-ai",
+   "t": "Data Services credits can be spent only on Data 360, while Flex Credits are interchangeable across Data 360, Agentforce and other features.",
+   "f": "Flex Credits can be spent only on Agentforce, while Data Services credits are interchangeable across Data 360, Agentforce and other features.",
+   "x": "Data Services credits are Data 360-only across its usage types; Flex Credits form one pool usable by Data 360, Agentforce and more. Moving between them requires re-contracting.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:digital-wallet",
+    "kt:data-cloud",
+    "kt:agentforce"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/digital-wallet.md"
+  },
+  {
+   "id": "sf-000950",
+   "area": "data-cloud-and-ai",
+   "t": "On the November 2026 Flex Credits rate card, an Agentforce standard or custom action costs 20 credits in production and 16 in a sandbox.",
+   "f": "On the November 2026 Flex Credits rate card, an Agentforce standard or custom action costs 20 credits in production and nothing in a sandbox.",
+   "x": "Sandbox usage still consumes credits, just at a lower rate: 16 credits per action versus 20 in production.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:digital-wallet",
+    "kt:agentforce"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/digital-wallet.md"
+  },
+  {
+   "id": "sf-000951",
+   "area": "data-model",
+   "t": "Salesforce archives activities in the background once they are 365 days old, and a standard query() excludes archived rows while queryAll() returns them.",
+   "f": "Salesforce archives activities in the background once they are 90 days old, and both query() and queryAll() return archived rows.",
+   "x": "Events and closed tasks are archived after a year. Ordinary queries skip archived activities, so queryAll() or an IsArchived filter is needed to reach them.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:activity-data-model",
+    "kt:archiving-strategy",
+    "kt:soql"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/activity-data-model.md"
+  },
+  {
+   "id": "sf-000952",
+   "area": "data-model",
+   "t": "With multiday events enabled in Activity Settings, a single Salesforce event can't span more than 14 days.",
+   "f": "With multiday events enabled in Activity Settings, a single Salesforce event can't span more than 31 days.",
+   "x": "Multiday events must be switched on first, and even then one event is capped at 14 days in length.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:activity-data-model",
+    "kt:standard-objects"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/activity-data-model.md"
+  },
+  {
+   "id": "sf-000953",
+   "area": "data-model",
+   "t": "Shared Activities can take up to 48 hours to enable, and only Salesforce Support can turn it off again.",
+   "f": "Shared Activities takes effect immediately when enabled, and admins can turn it off again from Activity Settings.",
+   "x": "Enabling Shared Activities runs a background conversion that can take up to two days, and reversing it requires a Support request, so it's a hard-to-undo choice.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:activity-data-model",
+    "kt:shared-activities"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/activity-data-model.md"
+  },
+  {
+   "id": "sf-000954",
+   "area": "data-model",
+   "t": "Disabling Contacts to Multiple Accounts deletes every indirect account-contact relationship, while primary account links survive.",
+   "f": "Disabling Contacts to Multiple Accounts hides indirect account-contact relationships, which reappear intact if the feature is turned back on.",
+   "x": "Turning the setting off permanently removes indirect AccountContactRelation rows; only each contact's direct link to its primary account remains.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:contacts-to-multiple-accounts",
+    "kt:standard-objects"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/contacts-to-multiple-accounts.md"
+  },
+  {
+   "id": "sf-000955",
+   "area": "data-model",
+   "t": "Indirect contacts don't appear in reports built on the standard Accounts and Contacts report type.",
+   "f": "Indirect contacts appear alongside direct contacts in reports built on the standard Accounts and Contacts report type.",
+   "x": "The standard Accounts and Contacts report type follows only the primary account link, so indirect relationships need other reporting, such as a report type on the relationship object.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:contacts-to-multiple-accounts"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/contacts-to-multiple-accounts.md"
+  },
+  {
+   "id": "sf-000956",
+   "area": "data-model",
+   "t": "The AccountContactRelation object doesn't support lookup, master-detail or roll-up summary fields, so richer relationship data calls for a custom junction object.",
+   "f": "The AccountContactRelation object supports lookup, master-detail and roll-up summary fields, so it can replace any custom junction object.",
+   "x": "The relationship object has a limited schema with no lookups, roll-ups, record types or approvals. When the relationship needs its own children or approvals, build a custom junction object.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:contacts-to-multiple-accounts",
+    "kt:junction-object",
+    "kt:object-relationships"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/contacts-to-multiple-accounts.md"
+  },
+  {
+   "id": "sf-000957",
+   "area": "development",
+   "t": "Aura components at API version 40.0 or later run under Lightning Locker, while a component pinned to 39.0 or earlier runs without it.",
+   "f": "Aura components at API version 45.0 or later run under Lightning Locker, while a component pinned to 44.0 or earlier runs without it.",
+   "x": "Locker enforcement for Aura is set per component by its API version, starting at 40.0 (Summer '17). This only matters while Locker, not Lightning Web Security, is active.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:lightning-locker",
+    "kt:aura-components"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/lightning-locker.md"
+  },
+  {
+   "id": "sf-000958",
+   "area": "development",
+   "t": "Lightning Out requires Lightning Locker and isn't supported when Lightning Web Security is enabled.",
+   "f": "Lightning Out requires Lightning Web Security and isn't supported when Lightning Locker is enabled.",
+   "x": "A dependency on Lightning Out is the main reason an org stays on Locker, because Lightning Out doesn't run under LWS.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:lightning-locker",
+    "kt:lightning-out",
+    "kt:lightning-web-security"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/lightning-locker.md"
+  },
+  {
+   "id": "sf-000959",
+   "area": "development",
+   "t": "Lightning Locker can be disabled only for Aura components, by API version; it can't be turned off for individual Lightning web components.",
+   "f": "Lightning Locker can be disabled for individual Lightning web components by lowering their API version to 39.0 or earlier.",
+   "x": "The API-version escape hatch applies to Aura components only. Lightning web components always run under whichever security architecture the org uses.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:lightning-locker",
+    "kt:lightning-web-components"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/lightning-locker.md"
+  },
+  {
+   "id": "sf-000960",
+   "area": "development",
+   "t": "Lightning Web Security changes native JavaScript API behaviour through distortions, rather than by substituting secure wrapper objects as Lightning Locker does.",
+   "f": "Lightning Web Security changes native JavaScript API behaviour through secure wrapper objects, rather than through distortions as Lightning Locker does.",
+   "x": "LWS sandboxes each namespace and applies targeted distortions such as content filtering and sanitization. Wrapping globals like SecureWindow is Locker's technique; the false statement swaps them.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:lightning-web-security",
+    "kt:lightning-locker"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/lightning-web-security.md"
+  },
+  {
+   "id": "sf-000961",
+   "area": "development",
+   "t": "With Lightning Web Security on, a component can import components and modules from other namespaces, which fails with a cross-namespace error when it's off.",
+   "f": "With Lightning Web Security on, a component is blocked from importing components and modules from other namespaces, which works only when it's off.",
+   "x": "Because LWS isolates namespaces in sandboxes instead of walling them off, cross-namespace imports become possible; without it, those imports throw a cross-namespace error.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:lightning-web-security",
+    "kt:lightning-web-components"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/lightning-web-security.md"
+  },
+  {
+   "id": "sf-000962",
+   "area": "development",
+   "t": "For large collections under Lightning Web Security, Salesforce recommends plain JavaScript objects over Set and Map, because those globals are host-owned and proxied.",
+   "f": "For large collections under Lightning Web Security, Salesforce recommends Set and Map over plain JavaScript objects, because those globals are sandbox-owned and not proxied.",
+   "x": "Set, Map and typed arrays come from the host and every access crosses a proxy, which gets noticeably slow at tens of thousands of entries. Plain objects avoid that overhead.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:lightning-web-security"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/lightning-web-security.md"
+  },
+  {
+   "id": "sf-000963",
+   "area": "devops-and-alm",
+   "t": "DevOps Center creates a temporary feature branch for a work item when the work item moves to In Progress.",
+   "f": "DevOps Center creates a temporary feature branch for a work item when the work item is first promoted to the Integration stage.",
+   "x": "The development stage has no stage branch; instead each work item gets its own feature branch, such as feature/WI-000001, as soon as work starts on it.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:branching-strategy",
+    "kt:devops-center"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/branching-strategy.md"
+  },
+  {
+   "id": "sf-000964",
+   "area": "devops-and-alm",
+   "t": "For a branch created by hand to sync with a DevOps Center work item, its name must match the work item ID.",
+   "f": "For a branch created by hand to sync with a DevOps Center work item, its name must match the target stage branch.",
+   "x": "DevOps Center links commits to work items through the branch name, so a manually created branch has to carry the work item ID for CLI commits to appear on it.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:branching-strategy",
+    "kt:devops-center",
+    "kt:salesforce-cli"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/branching-strategy.md"
+  },
+  {
+   "id": "sf-000965",
+   "area": "devops-and-alm",
+   "t": "In the Gitflow model for Salesforce, a develop branch feeds the test orgs, release branches are cut for production and hotfixes branch off main.",
+   "f": "In the Gitflow model for Salesforce, only main lives long, and short-lived feature branches are cut from it and merged straight back.",
+   "x": "Gitflow adds develop, release and hotfix branches and suits a fixed release cadence. A lone long-lived main with short feature branches describes simple feature branching instead.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:branching-strategy",
+    "kt:application-lifecycle-management"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/branching-strategy.md"
+  },
+  {
+   "id": "sf-000966",
+   "area": "devops-and-alm",
+   "t": "The official run-code-analyzer GitHub Action should be used at v2, which runs Code Analyzer v5; v1 runs the retired v4.",
+   "f": "The official run-code-analyzer GitHub Action should be used at v1, which runs Code Analyzer v5; v2 runs the retired v4.",
+   "x": "Version 2 of the GitHub Action is the one wired to the current Code Analyzer v5 engine. Pinning v1 leaves a pipeline on the retired v4.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:continuous-integration-for-salesforce",
+    "kt:code-analyzer"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/continuous-integration-for-salesforce.md"
+  },
+  {
+   "id": "sf-000967",
+   "area": "devops-and-alm",
+   "t": "If an org enforces high-assurance (stepped-up) authentication, the identity verification prompt blocks headless JWT logins from a CI job.",
+   "f": "If an org enforces high-assurance (stepped-up) authentication, JWT logins from a CI job bypass the identity verification prompt automatically.",
+   "x": "A headless JWT login can't answer an identity verification challenge, so stepped-up authentication on the org stops the CI login.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:continuous-integration-for-salesforce",
+    "kt:jwt-bearer-flow"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/continuous-integration-for-salesforce.md"
+  },
+  {
+   "id": "sf-000968",
+   "area": "devops-and-alm",
+   "t": "The beta RunRelevantTests level lets Salesforce choose tests from the deployment payload, and @IsTest(critical=true) forces a test to be included.",
+   "f": "The beta RunRelevantTests level lets Salesforce choose tests from the deployment payload, and @IsTest(critical=true) excludes a test from the run.",
+   "x": "RunRelevantTests analyzes the payload and its dependencies to pick tests; marking a test critical, or using testFor, makes sure it always runs.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:continuous-integration-for-salesforce",
+    "kt:apex-testing"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/continuous-integration-for-salesforce.md"
+  },
+  {
+   "id": "sf-000969",
+   "area": "identity",
+   "t": "With delegated authentication, Salesforce sends the username, password and source IP to the customer's SOAP web service, which returns true or false.",
+   "f": "With delegated authentication, Salesforce redirects the user to the customer's identity provider, which returns a signed SAML assertion.",
+   "x": "Delegated authentication is a credential callout: the customer's endpoint validates the password and answers true or false. Redirecting for a signed assertion is how SAML single sign-on works.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:delegated-authentication",
+    "kt:single-sign-on-saml"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/delegated-authentication.md"
   }
  ]
 }

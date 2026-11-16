@@ -1,0 +1,18 @@
+id: sf-000966
+product_area: devops-and-alm
+true_statement: The official run-code-analyzer GitHub Action should be used at v2, which runs Code Analyzer v5; v1 runs the retired v4.
+false_statement: The official run-code-analyzer GitHub Action should be used at v1, which runs Code Analyzer v5; v2 runs the retired v4.
+explanation: Version 2 of the GitHub Action is the one wired to the current Code Analyzer v5 engine. Pinning v1 leaves a pipeline on the retired v4.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/continuous-integration-for-salesforce.md
+  commit: 4d0f07d8de63e830ec8cb90374127798d040ea67
+  blob: a40c2102d6222a3ff4a26701fcbcbbf525c08aed
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:continuous-integration-for-salesforce
+- kt:code-analyzer
+difficulty: 2
+created: '2026-11-16'
+status: active

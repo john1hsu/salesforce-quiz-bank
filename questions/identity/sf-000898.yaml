@@ -1,0 +1,18 @@
+id: sf-000898
+product_area: identity
+true_statement: The default refresh token policy on a Salesforce connected app is that the refresh token is valid until revoked.
+false_statement: The default refresh token policy on a Salesforce connected app is that the refresh token expires if not used for 90 days.
+explanation: Out of the box, a refresh token never expires on its own and works until a user or admin revokes it. Inactivity windows and fixed lifetimes are options an admin has to choose.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/refresh-token-policies.md
+  commit: 4d0f07d8de63e830ec8cb90374127798d040ea67
+  blob: 58f5c1606a694cda899faa2e424d9aaba63a751e
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:refresh-token-policies
+- kt:connected-apps
+difficulty: 1
+created: '2026-11-16'
+status: active

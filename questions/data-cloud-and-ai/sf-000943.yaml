@@ -1,0 +1,20 @@
+id: sf-000943
+product_area: data-cloud-and-ai
+true_statement: Each Agentforce Data Library gets its own retriever, though two libraries can share one search index.
+false_statement: Each Agentforce Data Library gets its own search index, though two libraries can share one retriever.
+explanation: Provisioning creates a dedicated retriever per library, while the underlying search index may be shared between libraries. The false statement swaps which piece is shared.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/agentforce-data-library.md
+  commit: 4d0f07d8de63e830ec8cb90374127798d040ea67
+  blob: 85d03669442afb7e8c5403582da9f1e6d406371e
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:agentforce-specialist-certification
+concepts:
+- kt:agentforce-data-library
+- kt:vector-search-in-data-cloud
+difficulty: 3
+created: '2026-11-16'
+status: active

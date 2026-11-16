@@ -1,0 +1,19 @@
+id: sf-000951
+product_area: data-model
+true_statement: Salesforce archives activities in the background once they are 365 days old, and a standard query() excludes archived rows while queryAll() returns them.
+false_statement: Salesforce archives activities in the background once they are 90 days old, and both query() and queryAll() return archived rows.
+explanation: Events and closed tasks are archived after a year. Ordinary queries skip archived activities, so queryAll() or an IsArchived filter is needed to reach them.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/activity-data-model.md
+  commit: 4d0f07d8de63e830ec8cb90374127798d040ea67
+  blob: a3092f03504204954cb14d475d76668f2fc78634
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:activity-data-model
+- kt:archiving-strategy
+- kt:soql
+difficulty: 2
+created: '2026-11-16'
+status: active

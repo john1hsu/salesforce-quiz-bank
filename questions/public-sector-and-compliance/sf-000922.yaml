@@ -1,0 +1,18 @@
+id: sf-000922
+product_area: public-sector-and-compliance
+true_statement: GDPR Article 49 derogations, such as explicit consent, are meant for occasional transfers and not for routine, systematic data flows.
+false_statement: GDPR Article 49 derogations, such as explicit consent, are the preferred basis for routine, systematic data flows such as CRM replication.
+explanation: Derogations are the last resort after adequacy and appropriate safeguards, and regulators treat them as exceptional. Systematic replication needs adequacy, SCCs or BCRs.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/gdpr-international-transfers.md
+  commit: 4d0f07d8de63e830ec8cb90374127798d040ea67
+  blob: 2a0a230e3759881c6e7e9fce358dc8ce633689ec
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:gdpr-international-transfers
+- kt:data-governance
+difficulty: 2
+created: '2026-11-16'
+status: active

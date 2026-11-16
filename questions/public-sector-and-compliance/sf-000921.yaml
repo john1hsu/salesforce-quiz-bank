@@ -1,0 +1,18 @@
+id: sf-000921
+product_area: public-sector-and-compliance
+true_statement: Per Salesforce's FAQ, EU exporters relying on SCCs or BCRs for US transfers must run a transfer impact assessment, while DPF-based transfers need none.
+false_statement: Per Salesforce's FAQ, EU exporters relying on the DPF for US transfers must run a transfer impact assessment, while SCC- or BCR-based transfers need none.
+explanation: The DPF is an adequacy decision, so transfers to certified US recipients don't need a TIA. Transfers under SCCs or BCRs still carry the Schrems II duty to assess the destination's laws.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/gdpr-international-transfers.md
+  commit: 4d0f07d8de63e830ec8cb90374127798d040ea67
+  blob: 2a0a230e3759881c6e7e9fce358dc8ce633689ec
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:gdpr-international-transfers
+- kt:shared-responsibility-model
+difficulty: 3
+created: '2026-11-16'
+status: active

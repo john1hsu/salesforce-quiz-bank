@@ -1,0 +1,18 @@
+id: sf-000877
+product_area: data-model
+true_statement: To create a Salesforce file through the API, you insert a ContentVersion, and Salesforce creates the parent ContentDocument automatically.
+false_statement: To create a Salesforce file through the API, you insert a ContentDocument first, then attach the bytes with a ContentVersion.
+explanation: ContentDocument supports query, update and delete but not create. Inserting a ContentVersion with no ContentDocumentId makes the platform generate the parent document for you.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/content-document-model.md
+  commit: 4d0f07d8de63e830ec8cb90374127798d040ea67
+  blob: 70414e11128ea19953ef6d35c5125d0617600137
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:content-document-model
+- kt:standard-objects
+difficulty: 2
+created: '2026-11-16'
+status: active

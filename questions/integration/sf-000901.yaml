@@ -1,0 +1,18 @@
+id: sf-000901
+product_area: integration
+true_statement: The SOAP API partner WSDL is loosely typed and works against any org, while the enterprise WSDL is strongly typed to one org's schema.
+false_statement: The SOAP API enterprise WSDL is loosely typed and works against any org, while the partner WSDL is strongly typed to one org's schema.
+explanation: ISVs use the partner WSDL because it isn't tied to a specific object model. The enterprise WSDL mirrors one org's objects and fields and must be regenerated when they change; the false statement swaps them.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/soap-api.md
+  commit: 4d0f07d8de63e830ec8cb90374127798d040ea67
+  blob: a12a1daedfe1c23e0b44b7d215260a1ada3447bd
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:soap-api
+- kt:salesforce-apis
+difficulty: 1
+created: '2026-11-16'
+status: active

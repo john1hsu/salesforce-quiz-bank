@@ -1,0 +1,17 @@
+id: sf-000955
+product_area: data-model
+true_statement: Indirect contacts don't appear in reports built on the standard Accounts and Contacts report type.
+false_statement: Indirect contacts appear alongside direct contacts in reports built on the standard Accounts and Contacts report type.
+explanation: The standard Accounts and Contacts report type follows only the primary account link, so indirect relationships need other reporting, such as a report type on the relationship object.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/contacts-to-multiple-accounts.md
+  commit: 4d0f07d8de63e830ec8cb90374127798d040ea67
+  blob: 754451b02e5f70d65983da4e458fe4cf9ec85e0a
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:contacts-to-multiple-accounts
+difficulty: 2
+created: '2026-11-16'
+status: active

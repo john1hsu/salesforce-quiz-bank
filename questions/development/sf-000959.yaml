@@ -1,0 +1,18 @@
+id: sf-000959
+product_area: development
+true_statement: Lightning Locker can be disabled only for Aura components, by API version; it can't be turned off for individual Lightning web components.
+false_statement: Lightning Locker can be disabled for individual Lightning web components by lowering their API version to 39.0 or earlier.
+explanation: The API-version escape hatch applies to Aura components only. Lightning web components always run under whichever security architecture the org uses.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/lightning-locker.md
+  commit: 4d0f07d8de63e830ec8cb90374127798d040ea67
+  blob: 905fd196b5519740d1aca250f4d108e520174b35
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:lightning-locker
+- kt:lightning-web-components
+difficulty: 3
+created: '2026-11-16'
+status: active

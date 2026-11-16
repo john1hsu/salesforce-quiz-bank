@@ -1,0 +1,18 @@
+id: sf-000967
+product_area: devops-and-alm
+true_statement: If an org enforces high-assurance (stepped-up) authentication, the identity verification prompt blocks headless JWT logins from a CI job.
+false_statement: If an org enforces high-assurance (stepped-up) authentication, JWT logins from a CI job bypass the identity verification prompt automatically.
+explanation: A headless JWT login can't answer an identity verification challenge, so stepped-up authentication on the org stops the CI login.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/continuous-integration-for-salesforce.md
+  commit: 4d0f07d8de63e830ec8cb90374127798d040ea67
+  blob: a40c2102d6222a3ff4a26701fcbcbbf525c08aed
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:continuous-integration-for-salesforce
+- kt:jwt-bearer-flow
+difficulty: 3
+created: '2026-11-16'
+status: active

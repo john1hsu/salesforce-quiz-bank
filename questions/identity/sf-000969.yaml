@@ -1,0 +1,18 @@
+id: sf-000969
+product_area: identity
+true_statement: With delegated authentication, Salesforce sends the username, password and source IP to the customer's SOAP web service, which returns true or false.
+false_statement: With delegated authentication, Salesforce redirects the user to the customer's identity provider, which returns a signed SAML assertion.
+explanation: 'Delegated authentication is a credential callout: the customer''s endpoint validates the password and answers true or false. Redirecting for a signed assertion is how SAML single sign-on works.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/delegated-authentication.md
+  commit: 4d0f07d8de63e830ec8cb90374127798d040ea67
+  blob: ca2c9f0a64461e197ff2a40443c1033701d64b01
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:delegated-authentication
+- kt:single-sign-on-saml
+difficulty: 1
+created: '2026-11-16'
+status: active

@@ -1,0 +1,19 @@
+id: sf-000885
+product_area: development
+true_statement: Adding lightningStylesheets to a Visualforce page gives it the Lightning look, but it isn't supported in Experience Cloud sites or PDF rendering.
+false_statement: Adding lightningStylesheets to a Visualforce page gives it the Lightning look everywhere, including Experience Cloud sites and PDF rendering.
+explanation: The lightningStylesheets attribute styles pages in Lightning Experience and the mobile app only. Experience Cloud sites and renderAs PDF output don't get that styling.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/visualforce.md
+  commit: 4d0f07d8de63e830ec8cb90374127798d040ea67
+  blob: 983133b68b0decacc3223bbf50c9988aca8c7461
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:visualforce
+- kt:salesforce-lightning-design-system
+- kt:experience-cloud
+difficulty: 2
+created: '2026-11-16'
+status: active

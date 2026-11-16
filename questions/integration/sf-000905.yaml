@@ -1,0 +1,17 @@
+id: sf-000905
+product_area: integration
+true_statement: UI API batch object-info requests accept up to 2,000 objects, while batch create, update and delete accept up to 200 records per request.
+false_statement: UI API batch object-info requests accept up to 200 objects, while batch create, update and delete accept up to 2,000 records per request.
+explanation: Metadata-only batch reads of object info can cover up to 2,000 objects, but record writes in a batch are capped at 200. The false statement reverses the two numbers.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/user-interface-api.md
+  commit: 4d0f07d8de63e830ec8cb90374127798d040ea67
+  blob: 0fbf00c286d7e34ccc56183c8ebde01921ee3da4
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:user-interface-api
+difficulty: 3
+created: '2026-11-16'
+status: active

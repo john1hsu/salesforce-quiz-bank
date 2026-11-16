@@ -1,0 +1,18 @@
+id: sf-000957
+product_area: development
+true_statement: Aura components at API version 40.0 or later run under Lightning Locker, while a component pinned to 39.0 or earlier runs without it.
+false_statement: Aura components at API version 45.0 or later run under Lightning Locker, while a component pinned to 44.0 or earlier runs without it.
+explanation: Locker enforcement for Aura is set per component by its API version, starting at 40.0 (Summer '17). This only matters while Locker, not Lightning Web Security, is active.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/lightning-locker.md
+  commit: 4d0f07d8de63e830ec8cb90374127798d040ea67
+  blob: 905fd196b5519740d1aca250f4d108e520174b35
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:lightning-locker
+- kt:aura-components
+difficulty: 3
+created: '2026-11-16'
+status: active

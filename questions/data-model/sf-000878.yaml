@@ -1,0 +1,18 @@
+id: sf-000878
+product_area: data-model
+true_statement: On a ContentDocumentLink, ShareType C grants Collaborator access, letting the user edit the file as well as view it.
+false_statement: On a ContentDocumentLink, ShareType C grants Inferred access, taken from the linked record or library permission.
+explanation: ShareType values are V for Viewer, C for Collaborator (view plus edit) and I for Inferred. The false statement assigns the meaning of I to C.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/content-document-model.md
+  commit: 4d0f07d8de63e830ec8cb90374127798d040ea67
+  blob: 70414e11128ea19953ef6d35c5125d0617600137
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:content-document-model
+- kt:junction-object
+difficulty: 2
+created: '2026-11-16'
+status: active

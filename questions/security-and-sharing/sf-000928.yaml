@@ -1,0 +1,18 @@
+id: sf-000928
+product_area: security-and-sharing
+true_statement: When a user matches several active user access policies, only the active policy with the lowest order value applies.
+false_statement: When a user matches several active user access policies, all matching policies apply, in ascending order value.
+explanation: 'The order field, an integer from 0 to 10,000, decides precedence: only the lowest-valued matching active policy runs for that user.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/user-access-policies.md
+  commit: 4d0f07d8de63e830ec8cb90374127798d040ea67
+  blob: 58654df6fba44d7608fff2df4e400a4029ed916a
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:user-access-policies
+- kt:metadata-api
+difficulty: 3
+created: '2026-11-16'
+status: active

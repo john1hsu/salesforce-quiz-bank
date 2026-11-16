@@ -1,0 +1,18 @@
+id: sf-000927
+product_area: security-and-sharing
+true_statement: An org can have up to 200 active user access policies, and each policy can hold up to 20 actions.
+false_statement: An org can have up to 20 active user access policies, and each policy can hold up to 200 actions.
+explanation: Since GA, the active-policy ceiling is 200 per org, while a single policy is capped at 20 grant or revoke actions. Twenty active policies was the old closed-beta limit.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/user-access-policies.md
+  commit: 4d0f07d8de63e830ec8cb90374127798d040ea67
+  blob: 58654df6fba44d7608fff2df4e400a4029ed916a
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:user-access-policies
+- kt:user-management
+difficulty: 2
+created: '2026-11-16'
+status: active

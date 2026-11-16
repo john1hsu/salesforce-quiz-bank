@@ -1,0 +1,18 @@
+id: sf-000930
+product_area: architecture-practice
+true_statement: Trailhead names missing CRUD and field-level security enforcement as the most common reason solutions fail the AppExchange security review.
+false_statement: Trailhead names cross-site scripting as the most common reason solutions fail the AppExchange security review.
+explanation: The review tests common web threats like injection and XSS, but the top failure cause Trailhead cites is code that doesn't enforce CRUD and field-level security.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/build-vs-buy-decisions.md
+  commit: 4d0f07d8de63e830ec8cb90374127798d040ea67
+  blob: 465595630be8129d39aef1ffe85bf6dcb98a910b
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:build-vs-buy-decisions
+- kt:appexchange-security-review
+difficulty: 2
+created: '2026-11-16'
+status: active

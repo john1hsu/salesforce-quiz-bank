@@ -1,0 +1,18 @@
+id: sf-000926
+product_area: security-and-sharing
+true_statement: ISV permission set license definitions work only in second-generation managed packages, and only for net-new packages.
+false_statement: ISV permission set license definitions work in both first- and second-generation managed packages, including existing packages.
+explanation: PermissionSetLicenseDefinition is a 2GP-only feature limited to net-new packages and US-based paying production subscribers, so 1GP and existing packages can't use it.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/permission-set-licenses.md
+  commit: 4d0f07d8de63e830ec8cb90374127798d040ea67
+  blob: ab5497ec2f2796ae1a2060a224efb282609315a3
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:permission-set-licenses
+- kt:second-generation-managed-packages
+difficulty: 3
+created: '2026-11-16'
+status: active

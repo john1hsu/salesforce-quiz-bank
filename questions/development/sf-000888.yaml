@@ -1,0 +1,18 @@
+id: sf-000888
+product_area: development
+true_statement: A wire adapter only provisions data once every dynamic parameter in its config has a value; an undefined parameter means nothing is fetched.
+false_statement: A wire adapter provisions data as soon as the component connects, treating any undefined dynamic parameter in its config as null.
+explanation: The wire service waits until all reactive config values are defined before running the adapter. Passing null to wired Apex still invokes it, but undefined does not.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/wire-service.md
+  commit: 4d0f07d8de63e830ec8cb90374127798d040ea67
+  blob: 5b372e559a73f3ffb3488a2a4d265ef229645fb4
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:wire-service
+- kt:lightning-web-components
+difficulty: 3
+created: '2026-11-16'
+status: active

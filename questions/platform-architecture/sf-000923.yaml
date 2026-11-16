@@ -1,0 +1,18 @@
+id: sf-000923
+product_area: platform-architecture
+true_statement: In a Hyperforce Operating Zone, MySearch, Chatbot and some Einstein features aren't part of the OZ products, so license parity must be checked before buying.
+false_statement: In a Hyperforce Operating Zone, MySearch, Chatbot and all Einstein features are included in the OZ products, so license parity is guaranteed.
+explanation: Salesforce vets each feature for data leaving the zone and drops ones that would. MySearch, Chatbot and some Einstein features are excluded from the OZ SKUs.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/hyperforce-operating-zones.md
+  commit: 4d0f07d8de63e830ec8cb90374127798d040ea67
+  blob: 3f19bbfdd790f58fbeaa821f1ed16d66129f347a
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:hyperforce-operating-zones
+- kt:hyperforce
+difficulty: 2
+created: '2026-11-16'
+status: active

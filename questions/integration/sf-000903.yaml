@@ -1,0 +1,18 @@
+id: sf-000903
+product_area: integration
+true_statement: SOAP API login() calls count toward a login rate limit of 3,600 calls per user per hour.
+false_statement: SOAP API login() calls count toward a login rate limit of 3,600 calls per org per day.
+explanation: The login rate limit is applied per user and per hour, at 3,600 calls. It is separate from the org's rolling 24-hour API request allocation.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/soap-api.md
+  commit: 4d0f07d8de63e830ec8cb90374127798d040ea67
+  blob: a12a1daedfe1c23e0b44b7d215260a1ada3447bd
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:soap-api
+- kt:api-request-limits
+difficulty: 2
+created: '2026-11-16'
+status: active

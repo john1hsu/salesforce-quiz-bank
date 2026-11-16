@@ -1,0 +1,18 @@
+id: sf-000896
+product_area: identity
+true_statement: For External Identity users, Salesforce recommends staying under 10 million unique logins per month to avoid extra charges or degraded functionality.
+false_statement: For External Identity users, Salesforce recommends staying under 1 million unique logins per month to avoid extra charges or degraded functionality.
+explanation: The guidance is 10 million unique logins a month; beyond that customers may face added cost and reduced functionality and should talk to Salesforce first.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/external-identity-license.md
+  commit: 4d0f07d8de63e830ec8cb90374127798d040ea67
+  blob: dd78e04be82116756d66f2c15b7efe36baee5330
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:external-identity-license
+- kt:salesforce-identity
+difficulty: 2
+created: '2026-11-16'
+status: active

@@ -1,0 +1,17 @@
+id: sf-000947
+product_area: data-cloud-and-ai
+true_statement: When Salesforce renamed AI Specialist to Agentforce Specialist in 2025, existing AI Specialist holders were converted to the new credential without a new exam.
+false_statement: When Salesforce renamed AI Specialist to Agentforce Specialist in 2025, existing AI Specialist holders had to pass the new exam to keep the credential.
+explanation: Registration under the new name opened March 3, 2025, and current AI Specialist holders simply received the Agentforce Specialist credential.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/agentforce-specialist-certification.md
+  commit: 4d0f07d8de63e830ec8cb90374127798d040ea67
+  blob: 27bd9aec3d051b9a5a766f3299878c04eedf9e38
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:agentforce-specialist-certification
+difficulty: 1
+created: '2026-11-16'
+status: active

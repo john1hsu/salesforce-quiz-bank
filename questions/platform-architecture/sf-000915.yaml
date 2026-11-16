@@ -1,0 +1,18 @@
+id: sf-000915
+product_area: platform-architecture
+true_statement: Trailhead's cloud security module uses Gmail as its example of Software as a Service.
+false_statement: Trailhead's cloud security module uses Gmail as its example of Infrastructure as a Service.
+explanation: Gmail is a fully managed application that users simply consume, so Trailhead presents it as SaaS. IaaS would mean renting raw compute, storage and networks.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/software-as-a-service.md
+  commit: 4d0f07d8de63e830ec8cb90374127798d040ea67
+  blob: e65346dda0f4b0ba10da1243e1c32880c03747c1
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:software-as-a-service
+- kt:infrastructure-as-a-service
+difficulty: 1
+created: '2026-11-16'
+status: active

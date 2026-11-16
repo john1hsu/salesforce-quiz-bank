@@ -1,0 +1,18 @@
+id: sf-000914
+product_area: platform-architecture
+true_statement: Under NIST's SaaS definition, the consumer doesn't control servers, storage or application capabilities, except possibly limited user-specific application settings.
+false_statement: Under NIST's SaaS definition, the consumer doesn't control servers or storage but does control the application's capabilities and its runtime.
+explanation: NIST leaves the SaaS consumer only limited, user-specific configuration. Controlling the application and its runtime is closer to PaaS, where consumers deploy their own apps.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/software-as-a-service.md
+  commit: 4d0f07d8de63e830ec8cb90374127798d040ea67
+  blob: e65346dda0f4b0ba10da1243e1c32880c03747c1
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:software-as-a-service
+- kt:cloud-computing
+difficulty: 1
+created: '2026-11-16'
+status: active

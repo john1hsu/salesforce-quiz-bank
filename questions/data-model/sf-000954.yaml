@@ -1,0 +1,18 @@
+id: sf-000954
+product_area: data-model
+true_statement: Disabling Contacts to Multiple Accounts deletes every indirect account-contact relationship, while primary account links survive.
+false_statement: Disabling Contacts to Multiple Accounts hides indirect account-contact relationships, which reappear intact if the feature is turned back on.
+explanation: Turning the setting off permanently removes indirect AccountContactRelation rows; only each contact's direct link to its primary account remains.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/contacts-to-multiple-accounts.md
+  commit: 4d0f07d8de63e830ec8cb90374127798d040ea67
+  blob: 754451b02e5f70d65983da4e458fe4cf9ec85e0a
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:contacts-to-multiple-accounts
+- kt:standard-objects
+difficulty: 2
+created: '2026-11-16'
+status: active

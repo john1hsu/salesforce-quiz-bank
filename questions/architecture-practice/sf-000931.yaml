@@ -1,0 +1,18 @@
+id: sf-000931
+product_area: architecture-practice
+true_statement: In a 2020 survey of 157 practitioners, cost was the most frequently chosen criterion in build-vs-buy component decisions, picked by 77%.
+false_statement: In a 2020 survey of 157 practitioners, component size was the most frequently chosen criterion in build-vs-buy component decisions, picked by 77%.
+explanation: Cost led the criteria at 77%, ahead of support, longevity and fit. Component size was rarely weighted, which the authors saw as underestimating integration effort.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/build-vs-buy-decisions.md
+  commit: 4d0f07d8de63e830ec8cb90374127798d040ea67
+  blob: 465595630be8129d39aef1ffe85bf6dcb98a910b
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:build-vs-buy-decisions
+- kt:solution-design-tradeoffs
+difficulty: 2
+created: '2026-11-16'
+status: active

@@ -1,0 +1,18 @@
+id: sf-000892
+product_area: devops-and-alm
+true_statement: The legacy Salesforce Data Mask package is installed in production, but its masking jobs run only in sandboxes.
+false_statement: The legacy Salesforce Data Mask package is installed in each sandbox, and its masking jobs can run in production as well.
+explanation: Data Mask is installed in the production org so configurations carry into refreshed sandboxes, yet jobs execute only in sandboxes to prevent masking real production records by accident.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/salesforce-data-mask.md
+  commit: 4d0f07d8de63e830ec8cb90374127798d040ea67
+  blob: 2de84913194546ae635fcc2d478074434f17a5ec
+verified_release: Winter '27
+feature_status: deprecated
+concepts:
+- kt:salesforce-data-mask
+- kt:sandbox-types
+difficulty: 2
+created: '2026-11-16'
+status: active

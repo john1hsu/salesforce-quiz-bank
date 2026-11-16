@@ -1,0 +1,18 @@
+id: sf-000946
+product_area: data-cloud-and-ai
+true_statement: The Agentforce Specialist prep module lists a 73% passing score for the 60 scored multiple-choice questions.
+false_statement: The Agentforce Specialist prep module lists a 65% passing score for the 60 scored multiple-choice questions.
+explanation: The exam has 60 scored questions plus up to five unscored ones, and the prep module sets the pass mark at 73%.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/agentforce-specialist-certification.md
+  commit: 4d0f07d8de63e830ec8cb90374127798d040ea67
+  blob: 27bd9aec3d051b9a5a766f3299878c04eedf9e38
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:agentforce-specialist-certification
+- kt:salesforce-certification-program
+difficulty: 1
+created: '2026-11-16'
+status: active

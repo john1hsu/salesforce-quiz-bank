@@ -1,0 +1,18 @@
+id: sf-000948
+product_area: data-cloud-and-ai
+true_statement: When the same SKU appears on several contracts, Digital Wallet pools the entitlements on one card and draws usage first from the contract expiring soonest.
+false_statement: When the same SKU appears on several contracts, Digital Wallet pools the entitlements on one card and draws usage first from the most recently signed contract.
+explanation: Pooled entitlements are consumed earliest-expiry first, so credits that would lapse soonest are used before newer ones.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/digital-wallet.md
+  commit: 4d0f07d8de63e830ec8cb90374127798d040ea67
+  blob: a91a27ad2ac2b6b862349c4960a6c58854e5ca03
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:digital-wallet
+- kt:salesforce-pricing
+difficulty: 2
+created: '2026-11-16'
+status: active

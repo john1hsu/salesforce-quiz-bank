@@ -1,0 +1,19 @@
+id: sf-000925
+product_area: security-and-sharing
+true_statement: A permission set license on its own grants nothing visible; it unlocks permissions that a permission set or profile then has to switch on.
+false_statement: A permission set license on its own grants its feature immediately, with no permission set or profile needed to switch it on.
+explanation: Licenses set the ceiling. Admins assign the PSL and then give the user a permission set or profile that actually enables the feature.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/permission-set-licenses.md
+  commit: 4d0f07d8de63e830ec8cb90374127798d040ea67
+  blob: ab5497ec2f2796ae1a2060a224efb282609315a3
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:permission-set-licenses
+- kt:permission-sets
+- kt:profiles
+difficulty: 2
+created: '2026-11-16'
+status: active

@@ -1,0 +1,18 @@
+id: sf-000924
+product_area: security-and-sharing
+true_statement: Each Salesforce user has exactly one user license but can hold several permission set licenses on top of it.
+false_statement: Each Salesforce user has exactly one permission set license but can hold several user licenses on top of it.
+explanation: The user license is the single base license; permission set licenses are optional add-ons that unlock extra features, and a user can have many.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/permission-set-licenses.md
+  commit: 4d0f07d8de63e830ec8cb90374127798d040ea67
+  blob: ab5497ec2f2796ae1a2060a224efb282609315a3
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:permission-set-licenses
+- kt:user-licenses
+difficulty: 1
+created: '2026-11-16'
+status: active

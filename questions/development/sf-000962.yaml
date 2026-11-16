@@ -1,0 +1,17 @@
+id: sf-000962
+product_area: development
+true_statement: For large collections under Lightning Web Security, Salesforce recommends plain JavaScript objects over Set and Map, because those globals are host-owned and proxied.
+false_statement: For large collections under Lightning Web Security, Salesforce recommends Set and Map over plain JavaScript objects, because those globals are sandbox-owned and not proxied.
+explanation: Set, Map and typed arrays come from the host and every access crosses a proxy, which gets noticeably slow at tens of thousands of entries. Plain objects avoid that overhead.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/lightning-web-security.md
+  commit: 4d0f07d8de63e830ec8cb90374127798d040ea67
+  blob: 57873258a4965a5fa3202d8d3e670197439e2090
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:lightning-web-security
+difficulty: 3
+created: '2026-11-16'
+status: active

@@ -1,0 +1,20 @@
+id: sf-000942
+product_area: data-cloud-and-ai
+true_statement: An Agentforce Data Library's source is chosen when the library is created and can't be changed afterward.
+false_statement: An Agentforce Data Library's source is chosen when the library is created and can be switched later from the library's settings.
+explanation: Each library has a single source, such as Knowledge articles or uploaded files, and Trailhead warns that the choice is permanent; a different source means a new library.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/agentforce-data-library.md
+  commit: 4d0f07d8de63e830ec8cb90374127798d040ea67
+  blob: 85d03669442afb7e8c5403582da9f1e6d406371e
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:agentforce-specialist-certification
+concepts:
+- kt:agentforce-data-library
+- kt:agentforce
+difficulty: 2
+created: '2026-11-16'
+status: active

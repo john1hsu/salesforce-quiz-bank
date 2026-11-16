@@ -1,0 +1,19 @@
+id: sf-000889
+product_area: devops-and-alm
+true_statement: In a managed 2GP, setting ancestorVersion to HIGHEST always resolves to the highest promoted version, keeping the upgrade path linear.
+false_statement: In a managed 2GP, setting ancestorVersion to HIGHEST always resolves to the newest beta build, keeping the upgrade path linear.
+explanation: Only versions promoted to managed-released can be ancestors, and HIGHEST picks the highest of those. Beta builds never qualify as ancestors.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/package-versioning-and-ancestry.md
+  commit: 4d0f07d8de63e830ec8cb90374127798d040ea67
+  blob: 87d63151b83bf4688d7e9e544af79cdd3748a38d
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:package-versioning-and-ancestry
+- kt:second-generation-managed-packages
+- kt:salesforce-dx
+difficulty: 2
+created: '2026-11-16'
+status: active

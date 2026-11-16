@@ -1,0 +1,18 @@
+id: sf-000920
+product_area: public-sector-and-compliance
+true_statement: The 2021 GDPR standard contractual clauses come in four modules, covering controller and processor transfers in each combination.
+false_statement: The 2021 GDPR standard contractual clauses come in two modules, covering only controller-to-controller and controller-to-processor transfers.
+explanation: 'The June 2021 SCCs have four modules: controller-to-controller, controller-to-processor, processor-to-processor and processor-to-controller.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/gdpr-international-transfers.md
+  commit: 4d0f07d8de63e830ec8cb90374127798d040ea67
+  blob: 2a0a230e3759881c6e7e9fce358dc8ce633689ec
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:gdpr-international-transfers
+- kt:security-compliance-frameworks
+difficulty: 2
+created: '2026-11-16'
+status: active

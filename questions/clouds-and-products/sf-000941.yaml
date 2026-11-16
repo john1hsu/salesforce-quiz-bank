@@ -1,0 +1,18 @@
+id: sf-000941
+product_area: clouds-and-products
+true_statement: Heroku AppLink currently runs only in the virginia region, which adds latency for apps hosted far from it.
+false_statement: Heroku AppLink currently runs in every Heroku region, so it adds no latency for apps hosted outside the US.
+explanation: AppLink, which publishes Heroku APIs to Salesforce as External Services, is available only in the virginia region today, so distant apps pay a latency cost.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/heroku.md
+  commit: 4d0f07d8de63e830ec8cb90374127798d040ea67
+  blob: 6745aba70b1fa1019d55f90f96b09aaafcc7f83f
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:heroku
+- kt:heroku-applink
+difficulty: 2
+created: '2026-11-16'
+status: active

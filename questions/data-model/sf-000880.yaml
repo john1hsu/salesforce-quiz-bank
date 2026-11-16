@@ -1,0 +1,22 @@
+id: sf-000880
+product_area: data-model
+true_statement: Data 360's Suggest Tags feature reads object and field metadata, not field values, and every suggestion needs administrator approval.
+false_statement: Data 360's Suggest Tags feature scans stored field values, and its suggestions are applied automatically without administrator approval.
+explanation: Suggest Tags works only from metadata about objects and fields and never inspects the data itself. An administrator must approve each proposed tag before it takes effect.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/data-governance.md
+  commit: 4d0f07d8de63e830ec8cb90374127798d040ea67
+  blob: a56005adb4ce7db7e29d29f1e25c580d460686c4
+verified_release: Winter '27
+feature_status: concept
+certs:
+- kt:platform-data-architect-certification
+- kt:data-cloud-consultant-certification
+concepts:
+- kt:data-governance
+- kt:data-cloud
+- kt:data-classification
+difficulty: 2
+created: '2026-11-16'
+status: active

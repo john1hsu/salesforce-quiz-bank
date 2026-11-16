@@ -1,0 +1,18 @@
+id: sf-000940
+product_area: clouds-and-products
+true_statement: Heroku Eco dynos go to sleep after 30 minutes of inactivity, so the next request waits a few seconds while they wake.
+false_statement: Heroku Eco dynos go to sleep after 24 hours of inactivity, so the next request waits a few seconds while they wake.
+explanation: Eco dynos sleep after half an hour without traffic, adding a short delay to the first request afterward. That makes them a poor fit for latency-sensitive production apps.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/heroku.md
+  commit: 4d0f07d8de63e830ec8cb90374127798d040ea67
+  blob: 6745aba70b1fa1019d55f90f96b09aaafcc7f83f
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:heroku
+- kt:platform-as-a-service
+difficulty: 1
+created: '2026-11-16'
+status: active

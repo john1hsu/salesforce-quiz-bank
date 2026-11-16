@@ -1,0 +1,17 @@
+id: sf-000933
+product_area: automation
+true_statement: Each org gets 5,000 Einstein Next Best Action strategy requests a month at no charge, and every load or refresh of a page with the component counts.
+false_statement: Each org gets 50,000 Einstein Next Best Action strategy requests a month at no charge, and only accepted recommendations count as requests.
+explanation: The free entitlement is 5,000 requests a month, with an add-on adding 10,000. Page loads, refreshes, field updates on the page, strategy tests and REST calls all consume requests.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/einstein-next-best-action.md
+  commit: 4d0f07d8de63e830ec8cb90374127798d040ea67
+  blob: 20a66bb41053aa5d3c74eedd1b6f1a1edcc96cd2
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:einstein-next-best-action
+difficulty: 2
+created: '2026-11-16'
+status: active

@@ -1,0 +1,19 @@
+id: sf-000893
+product_area: devops-and-alm
+true_statement: A Salesforce Data Mask job bypasses triggers, validation rules and flows, and deletes the masked object's Field History Tracking when it finishes.
+false_statement: A Salesforce Data Mask job runs triggers, validation rules and flows, and logs each masked value in the object's Field History Tracking.
+explanation: Masking skips automation, including managed-package automation, to run efficiently, and it wipes field history for the masked object so old values aren't left behind.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/salesforce-data-mask.md
+  commit: 4d0f07d8de63e830ec8cb90374127798d040ea67
+  blob: 2de84913194546ae635fcc2d478074434f17a5ec
+verified_release: Winter '27
+feature_status: deprecated
+concepts:
+- kt:salesforce-data-mask
+- kt:order-of-execution
+- kt:field-history-tracking
+difficulty: 3
+created: '2026-11-16'
+status: active

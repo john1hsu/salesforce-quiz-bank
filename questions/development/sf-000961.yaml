@@ -1,0 +1,18 @@
+id: sf-000961
+product_area: development
+true_statement: With Lightning Web Security on, a component can import components and modules from other namespaces, which fails with a cross-namespace error when it's off.
+false_statement: With Lightning Web Security on, a component is blocked from importing components and modules from other namespaces, which works only when it's off.
+explanation: Because LWS isolates namespaces in sandboxes instead of walling them off, cross-namespace imports become possible; without it, those imports throw a cross-namespace error.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/lightning-web-security.md
+  commit: 4d0f07d8de63e830ec8cb90374127798d040ea67
+  blob: 57873258a4965a5fa3202d8d3e670197439e2090
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:lightning-web-security
+- kt:lightning-web-components
+difficulty: 3
+created: '2026-11-16'
+status: active

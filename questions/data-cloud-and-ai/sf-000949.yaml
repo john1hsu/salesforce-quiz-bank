@@ -1,0 +1,19 @@
+id: sf-000949
+product_area: data-cloud-and-ai
+true_statement: Data Services credits can be spent only on Data 360, while Flex Credits are interchangeable across Data 360, Agentforce and other features.
+false_statement: Flex Credits can be spent only on Agentforce, while Data Services credits are interchangeable across Data 360, Agentforce and other features.
+explanation: Data Services credits are Data 360-only across its usage types; Flex Credits form one pool usable by Data 360, Agentforce and more. Moving between them requires re-contracting.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/digital-wallet.md
+  commit: 4d0f07d8de63e830ec8cb90374127798d040ea67
+  blob: a91a27ad2ac2b6b862349c4960a6c58854e5ca03
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:digital-wallet
+- kt:data-cloud
+- kt:agentforce
+difficulty: 2
+created: '2026-11-16'
+status: active
