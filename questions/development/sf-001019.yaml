@@ -1,0 +1,20 @@
+id: sf-001019
+product_area: development
+true_statement: An Apex subclass declared with no sharing keyword runs in its parent class's sharing mode.
+false_statement: An Apex subclass declared with no sharing keyword runs in the sharing mode of whichever class calls it.
+explanation: A subclass without its own keyword picks up its parent's declared mode. Taking the caller's mode at runtime is what inherited sharing does, and inner classes get nothing from their outer class.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/apex-security-with-sharing.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: 2f0d39d1761a47b540942f4ac49bd4b8c3083368
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:platform-developer-certification
+concepts:
+- kt:apex-security-with-sharing
+- kt:apex
+difficulty: 3
+created: '2026-11-18'
+status: active

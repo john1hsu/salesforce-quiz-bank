@@ -1,0 +1,18 @@
+id: sf-000994
+product_area: architecture-practice
+true_statement: Unlike System Architect, the Heroku Architect credential is earned on its own rather than granted automatically as a roll-up of other exams.
+false_statement: Like System Architect, the Heroku Architect credential is granted automatically as a roll-up once its prerequisite exams are passed.
+explanation: Application Architect and System Architect are roll-ups of other certifications, but Heroku Architect is a separate product credential that does not feed or come from a roll-up.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/heroku-architect-certification.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: d5c3a37cf2f91ba4e2a7f581556b8d234f1ca401
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:heroku-architect-certification
+- kt:system-architect-certification
+difficulty: 1
+created: '2026-11-18'
+status: active

@@ -1,0 +1,17 @@
+id: sf-000973
+product_area: integration
+true_statement: In API-led connectivity, System APIs connect directly to systems of record such as ERPs and CRMs and shield consumers from changes in them.
+false_statement: In API-led connectivity, Experience APIs connect directly to systems of record such as ERPs and CRMs and shield consumers from changes in them.
+explanation: System APIs form the foundation layer that unlocks data in core systems and insulates callers from their complexity. Experience APIs sit at the top and shape data for a channel instead of touching source systems.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/api-led-connectivity.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: 233bbeccdf04d1c3ff31b83a78c1a80956397e3e
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:api-led-connectivity
+difficulty: 1
+created: '2026-11-18'
+status: active

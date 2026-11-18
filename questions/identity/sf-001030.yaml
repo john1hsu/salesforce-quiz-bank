@@ -1,0 +1,19 @@
+id: sf-001030
+product_area: identity
+true_statement: The X.509 certificate uploaded to an app for the Salesforce JWT bearer flow can't exceed 4 KB; a DER-encoded file helps if it does.
+false_statement: The X.509 certificate uploaded to an app for the Salesforce JWT bearer flow can't exceed 16 KB; a DER-encoded file helps if it does.
+explanation: Salesforce caps the signing certificate at 4 KB and suggests DER encoding to shrink an oversized file. 16 KB is not the documented limit.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/jwt-bearer-flow.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: 41ffa8206df186e4ad3175370b9281f7a19783bf
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:jwt-bearer-flow
+- kt:external-client-apps
+- kt:connected-apps
+difficulty: 2
+created: '2026-11-18'
+status: active

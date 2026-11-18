@@ -1,0 +1,18 @@
+id: sf-000998
+product_area: architecture-practice
+true_statement: A user story's acceptance criteria should state the intended outcome rather than prescribe a specific solution such as a button.
+false_statement: A user story's acceptance criteria should prescribe a specific solution such as a button rather than state the intended outcome.
+explanation: Criteria are pass/fail statements of intent that testers verify. Naming a button is solutioning too early, which locks in a design before options have been weighed.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/requirements-gathering.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: 80ed56981817dc8a44709b6f5aabce022b5d1f26
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:requirements-gathering
+- kt:user-stories
+difficulty: 2
+created: '2026-11-18'
+status: active

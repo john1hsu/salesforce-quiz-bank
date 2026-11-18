@@ -1,0 +1,19 @@
+id: sf-001017
+product_area: data-model
+true_statement: The User object can't be the master side of a master-detail relationship, so user-to-user links rely on lookup-style fields.
+false_statement: The User object can be the master side of a master-detail relationship, so user-to-user links can use master-detail fields.
+explanation: The object reference lists User among the standard objects barred from being the master in a master-detail relationship, which is why hierarchical and lookup fields are used.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/hierarchical-relationships.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: 6c1dd08ed0f988e9a4ef9a1aeb4d23827cdb86bf
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:hierarchical-relationships
+- kt:standard-objects
+- kt:lookup-vs-master-detail
+difficulty: 2
+created: '2026-11-18'
+status: active

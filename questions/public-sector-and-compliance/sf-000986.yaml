@@ -1,0 +1,17 @@
+id: sf-000986
+product_area: public-sector-and-compliance
+true_statement: StateRAMP began operating as GovRAMP in 2025, but its legal name remained StateRAMP.
+false_statement: StateRAMP began operating as GovRAMP in 2025, and its legal name was changed to GovRAMP at the same time.
+explanation: The 2025 rebrand moved the program to govramp.org and a new public name to attract local governments, yet the legal entity kept the StateRAMP name.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/govramp.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: 51974f048f86048f2750f46424afe20965e093a4
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:govramp
+difficulty: 2
+created: '2026-11-18'
+status: active

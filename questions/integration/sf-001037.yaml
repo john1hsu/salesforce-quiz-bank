@@ -1,0 +1,19 @@
+id: sf-001037
+product_area: integration
+true_statement: Bulk API 1.0 PK chunking splits a query into ID ranges of 100,000 records by default, with a maximum chunk size of 250,000.
+false_statement: Bulk API 1.0 PK chunking splits a query into ID ranges of 250,000 records by default, with a maximum chunk size of 1,000,000.
+explanation: The Sforce-Enable-PKChunking header defaults to 100,000-record chunks and allows up to 250,000. The higher numbers overstate both the default and the ceiling.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/bulk-api-1.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: d7bb7537c0bf1fcd0b63f7fe730e7abae223558e
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:bulk-api-1
+- kt:large-data-volumes
+- kt:soql
+difficulty: 3
+created: '2026-11-18'
+status: active

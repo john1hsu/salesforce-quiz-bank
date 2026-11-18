@@ -1,0 +1,20 @@
+id: sf-001020
+product_area: development
+true_statement: Apex triggers can't declare a sharing keyword and run without sharing, so logic is best moved into handler classes that declare one.
+false_statement: Apex triggers can't declare a sharing keyword and run with sharing, so logic is best moved into handler classes that declare one.
+explanation: Triggers have no sharing declaration and execute without sharing. Putting the logic in a handler class with an explicit keyword lets the developer control record access.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/apex-security-with-sharing.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: 2f0d39d1761a47b540942f4ac49bd4b8c3083368
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:platform-developer-certification
+concepts:
+- kt:apex-security-with-sharing
+- kt:apex-triggers
+difficulty: 2
+created: '2026-11-18'
+status: active

@@ -1,0 +1,19 @@
+id: sf-001056
+product_area: security-and-sharing
+true_statement: Lightning Web Security sanitizes HTML and SVG strings that components insert via innerHTML, but it does not sanitize input text.
+false_statement: Lightning Web Security sanitizes input text that users type into components, but it does not sanitize HTML strings inserted via innerHTML.
+explanation: LWS filters markup written to the DOM through properties like innerHTML down to allowlisted elements and attributes. It leaves raw input text alone, so output encoding is still needed.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/cross-site-scripting.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: 236eae567cdecfb9158d356e4e12b322dcbc78ca
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:cross-site-scripting
+- kt:lightning-web-security
+- kt:lightning-web-components
+difficulty: 3
+created: '2026-11-18'
+status: active

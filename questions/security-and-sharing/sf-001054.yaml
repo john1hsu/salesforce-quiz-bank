@@ -1,0 +1,18 @@
+id: sf-001054
+product_area: security-and-sharing
+true_statement: Visualforce standard components escape their output by default, and setting escape="false" makes the developer responsible for validating it.
+false_statement: Visualforce standard components leave their output unescaped by default, and setting escape="true" makes the platform responsible for validating it.
+explanation: Escaping is on by default for standard Visualforce components. Turning it off with escape="false" is what opens the door to XSS unless the developer validates the output.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/cross-site-scripting.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: 236eae567cdecfb9158d356e4e12b322dcbc78ca
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:cross-site-scripting
+- kt:visualforce
+difficulty: 1
+created: '2026-11-18'
+status: active

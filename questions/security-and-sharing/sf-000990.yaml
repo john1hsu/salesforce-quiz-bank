@@ -1,0 +1,18 @@
+id: sf-000990
+product_area: security-and-sharing
+true_statement: On a UserLicense record, a null MonthlyLoginsEntitlement means the license is billed per user rather than per login.
+false_statement: On a UserLicense record, a null MonthlyLoginsEntitlement means the license is billed per login rather than per user.
+explanation: MonthlyLoginsEntitlement is populated only for login-based portal licenses. When it is empty, the license is a per-user license.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/user-licenses.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: 6c6d47d7e8967af6ae3d2279f94887e10e22061e
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:user-licenses
+- kt:experience-cloud
+difficulty: 3
+created: '2026-11-18'
+status: active

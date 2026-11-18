@@ -1,0 +1,18 @@
+id: sf-001010
+product_area: data-cloud-and-ai
+true_statement: Real-time data graphs in Data 360 update instantly for in-session use but require the separately purchased Real-Time SKU.
+false_statement: Standard data graphs in Data 360 update instantly for in-session use but require the separately purchased Real-Time SKU.
+explanation: Instant, in-session updates are the real-time variant, which needs the Real-Time SKU. Standard graphs refresh after a delay of minutes to hours and suit batch and reporting.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/data-graphs.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: 5d2335c57ab467f92a3acf104e83cdcd2c808e1a
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:data-graphs
+- kt:agentforce
+difficulty: 2
+created: '2026-11-18'
+status: active

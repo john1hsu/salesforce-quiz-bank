@@ -1,0 +1,18 @@
+id: sf-001053
+product_area: security-and-sharing
+true_statement: In API versions 50.0 to 58.0, a Trusted URL saved with no directive flags set silently defaulted to img-src only.
+false_statement: In API versions 50.0 to 58.0, a Trusted URL saved with no directive flags set silently defaulted to connect-src only.
+explanation: Older API versions fell back to the image directive when no flag was chosen. Since API 59.0 at least one directive or permission flag must be true explicitly.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/content-security-policy.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: 5f2e142d6c151354bcad0b54d701511caaa72ffb
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:content-security-policy
+- kt:metadata-api
+difficulty: 3
+created: '2026-11-18'
+status: active

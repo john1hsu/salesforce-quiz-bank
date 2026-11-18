@@ -1,0 +1,18 @@
+id: sf-000975
+product_area: integration
+true_statement: Experience APIs in API-led connectivity adapt Process API output for a specific channel and do not depend directly on the source systems.
+false_statement: Experience APIs in API-led connectivity adapt System API output for a specific channel and call the source systems directly to cut hops.
+explanation: Experience APIs reshape what Process APIs produce for a particular UI, device or channel, and they are deliberately decoupled from the systems of record. Calling source systems directly would recreate the point-to-point coupling the model avoids.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/api-led-connectivity.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: 233bbeccdf04d1c3ff31b83a78c1a80956397e3e
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:api-led-connectivity
+- kt:point-to-point-integration
+difficulty: 2
+created: '2026-11-18'
+status: active

@@ -1,0 +1,18 @@
+id: sf-001013
+product_area: data-model
+true_statement: A Visualforce page can include at most 10 dependent picklist pairs across all objects, and it fails at runtime if the controlling field is missing.
+false_statement: A Visualforce page can include at most 25 dependent picklist pairs across all objects, and it fails at runtime if the controlling field is missing.
+explanation: apex:inputField renders dependencies automatically, but Visualforce caps a page at 10 dependent picklist pairs, not 25.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/field-dependencies.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: 2f8ca400ca4822ce0a4cd06f09ddbae2d5f5b53f
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:field-dependencies
+- kt:visualforce
+difficulty: 2
+created: '2026-11-18'
+status: active

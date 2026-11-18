@@ -1,0 +1,18 @@
+id: sf-001023
+product_area: development
+true_statement: If a @TestSetup method hits a fatal error such as a DML exception, the whole test class fails and none of its tests run.
+false_statement: If a @TestSetup method hits a fatal error such as a DML exception, only the first test method fails and the remaining tests still run.
+explanation: A setup failure takes down the entire test class, because every method depends on the shared data. No individual test continues after it.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/test-data-factory.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: 9264e9e0346946ef058f03cd4d56a20fa1755c18
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:test-data-factory
+- kt:apex-testing
+difficulty: 2
+created: '2026-11-18'
+status: active

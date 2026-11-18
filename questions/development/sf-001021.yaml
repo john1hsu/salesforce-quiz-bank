@@ -1,0 +1,18 @@
+id: sf-001021
+product_area: development
+true_statement: Annotating a test utility class with @IsTest excludes it from the org's Apex code size limit, an advantage a plain helper class lacks.
+false_statement: Annotating a test utility class with @IsTest excludes it from code coverage calculations, but it still counts toward the Apex code size limit.
+explanation: The @IsTest annotation keeps the factory out of the org's Apex code size limit and restricts it to test context. The false version moves the benefit to coverage and keeps the size cost.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/test-data-factory.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: 9264e9e0346946ef058f03cd4d56a20fa1755c18
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:test-data-factory
+- kt:apex-testing
+difficulty: 2
+created: '2026-11-18'
+status: active

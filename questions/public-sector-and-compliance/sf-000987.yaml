@@ -1,0 +1,18 @@
+id: sf-000987
+product_area: public-sector-and-compliance
+true_statement: Under GovRAMP's FedRAMP Fast Track, the program office reviews a provider's existing FedRAMP artifacts, so a FedRAMP authorization feeds verification rather than replacing it.
+false_statement: Under GovRAMP's FedRAMP Fast Track, a provider's FedRAMP authorization is accepted automatically, so it grants the matching GovRAMP status without further review.
+explanation: Fast Track cuts duplicate work by letting the PMO review federal readiness, assessment and monitoring documents against GovRAMP's requirements. GovRAMP does not describe it as automatic reciprocity, so a review still happens.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/govramp.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: 51974f048f86048f2750f46424afe20965e093a4
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:govramp
+- kt:fedramp
+difficulty: 3
+created: '2026-11-18'
+status: active

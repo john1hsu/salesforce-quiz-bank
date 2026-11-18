@@ -1,0 +1,18 @@
+id: sf-000972
+product_area: identity
+true_statement: In orgs created before Summer '25, admins must turn on passkeys and security keys, while third-party authenticator apps are available automatically.
+false_statement: In orgs created before Summer '25, admins must turn on third-party authenticator apps, while passkeys and security keys are available automatically.
+explanation: Older orgs need an admin to enable passkeys and security keys, but TOTP authenticator apps work out of the box. Newer orgs allow every method by default.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/identity-verification.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: 8ffd216c844a5db5387c76f20043553ddc758192
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:identity-verification
+- kt:multi-factor-authentication
+difficulty: 3
+created: '2026-11-18'
+status: active

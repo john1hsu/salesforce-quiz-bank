@@ -1,0 +1,19 @@
+id: sf-001006
+product_area: clouds-and-products
+true_statement: In April 2026, Salesforce merged AppExchange, the Slack Marketplace and the Agentforce-focused AgentExchange into one storefront called AgentExchange.
+false_statement: In April 2026, Salesforce merged AppExchange and the Agentforce-focused AgentExchange into one storefront, while the Slack Marketplace stayed separate.
+explanation: The unified AgentExchange absorbed all three marketplaces, including the Slack Marketplace, so Slack apps are listed in the same storefront.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/agentexchange.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: 5d89070a3d3662cd5f12b5e146aabef2f97c22bd
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:agentexchange
+- kt:slack-platform
+- kt:agentforce
+difficulty: 1
+created: '2026-11-18'
+status: active

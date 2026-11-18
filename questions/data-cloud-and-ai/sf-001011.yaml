@@ -1,0 +1,18 @@
+id: sf-001011
+product_area: data-cloud-and-ai
+true_statement: Non-real-time Data 360 data graphs refresh daily by default, with hourly, 4-hourly, weekly and monthly schedules also available.
+false_statement: Non-real-time Data 360 data graphs refresh hourly by default, with 4-hourly, daily, weekly and monthly schedules also available.
+explanation: Daily is the default refresh interval for standard graphs; choosing a less frequent interval saves credits when the data doesn't need to be current.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/data-graphs.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: 5d2335c57ab467f92a3acf104e83cdcd2c808e1a
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:data-graphs
+- kt:data-cloud
+difficulty: 2
+created: '2026-11-18'
+status: active

@@ -1,0 +1,17 @@
+id: sf-000980
+product_area: platform-architecture
+true_statement: After an org moves to Salesforce Edge Network, only Salesforce Customer Support can switch it back.
+false_statement: After an org moves to Salesforce Edge Network, an admin can switch it back by clearing the Routing option in Setup.
+explanation: The move is one-way from the admin's point of view; reversing it takes a Customer Support request. That is why firewalls and pinned certificates should be checked before enabling it.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/salesforce-edge-network.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: eb74ed1c24a8c6de4fa6b7e843f356b62718ddce
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:salesforce-edge-network
+difficulty: 2
+created: '2026-11-18'
+status: active

@@ -1,0 +1,18 @@
+id: sf-000989
+product_area: security-and-sharing
+true_statement: From API 64.0, the UsedLicenses field on UserLicense can't be filtered in a SOQL WHERE clause, so rows must be filtered after retrieval.
+false_statement: From API 64.0, the TotalLicenses field on UserLicense can't be filtered in a SOQL WHERE clause, so rows must be filtered after retrieval.
+explanation: The filtering restriction applies to UsedLicenses, the count of assigned seats. Audit queries retrieve the rows and filter in code; TotalLicenses is not the field named.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/user-licenses.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: 6c6d47d7e8967af6ae3d2279f94887e10e22061e
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:user-licenses
+- kt:soql
+difficulty: 3
+created: '2026-11-18'
+status: active

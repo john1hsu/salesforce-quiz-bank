@@ -1,0 +1,18 @@
+id: sf-000999
+product_area: architecture-practice
+true_statement: In Trailhead's process mapping guidance, the end-to-end process owner chairs the mapping workshop and settles disagreements.
+false_statement: In Trailhead's process mapping guidance, the Salesforce admin chairs the mapping workshop and settles disagreements.
+explanation: Live mapping workshops are led by the end-to-end process owner, who resolves disputes so the group can validate the map as it is drawn. The admin is a participant, not the chair.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/requirements-gathering.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: 80ed56981817dc8a44709b6f5aabce022b5d1f26
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:requirements-gathering
+- kt:business-process-mapping
+difficulty: 2
+created: '2026-11-18'
+status: active

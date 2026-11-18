@@ -1,0 +1,17 @@
+id: sf-001029
+product_area: devops-and-alm
+true_statement: Salesforce posts its seasonal upgrade dates on the Trust site up to a year in advance.
+false_statement: Salesforce posts its seasonal upgrade dates on the Trust site up to 3 months in advance.
+explanation: Upgrade dates appear on Trust up to a year ahead, letting teams plan backward from the next two or three releases. About 3 months is when a release cycle begins, not how far ahead dates are published.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/release-management.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: 1d1f3c38e383c2b531fdd978834889f7610e7ab0
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:release-management
+difficulty: 2
+created: '2026-11-18'
+status: active

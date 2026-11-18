@@ -1,0 +1,18 @@
+id: sf-000970
+product_area: identity
+true_statement: Identity Verification History keeps six months of verification attempts, so longer audit evidence has to be exported.
+false_statement: Identity Verification History keeps twelve months of verification attempts, so longer audit evidence has to be exported.
+explanation: The VerificationHistory object retains records for six months. Twelve months is too long, which is why teams with longer retention needs export the data.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/identity-verification.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: 8ffd216c844a5db5387c76f20043553ddc758192
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:identity-verification
+- kt:soql
+difficulty: 2
+created: '2026-11-18'
+status: active

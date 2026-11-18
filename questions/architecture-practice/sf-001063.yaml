@@ -1,0 +1,21 @@
+id: sf-001063
+product_area: architecture-practice
+true_statement: Salesforce architects advise finishing LDV load tests at least three to four weeks before go-live, in a sandbox separate from UAT.
+false_statement: Salesforce architects advise finishing LDV load tests at least one week before go-live, in the same sandbox used for UAT.
+explanation: Load tests need a dedicated sandbox because a shared UAT sandbox is unusable for functional testing while they run, and three to four weeks leaves time to fix what they reveal.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/user-acceptance-testing.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: 7b5a22cdcd8b1459d6907e32a9b8fd7860bc85dc
+verified_release: Winter '27
+feature_status: concept
+certs:
+- kt:business-analyst-certification
+concepts:
+- kt:user-acceptance-testing
+- kt:large-data-volumes
+- kt:sandbox-types
+difficulty: 3
+created: '2026-11-18'
+status: active

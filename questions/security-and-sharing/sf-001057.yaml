@@ -1,0 +1,18 @@
+id: sf-001057
+product_area: security-and-sharing
+true_statement: The org-wide session timeout picklist in Session Settings ranges from 15 minutes to 24 hours.
+false_statement: The org-wide session timeout picklist in Session Settings ranges from 5 minutes to 12 hours.
+explanation: The timeout values run from FifteenMinutes up to TwentyFourHours, with 90 minutes added in API 58.0. Neither 5 minutes nor a 12-hour ceiling matches the picklist.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/session-settings.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: 97c95830a5265c524e0587fbd909bdc9c3d2d4d2
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:session-settings
+- kt:metadata-api
+difficulty: 2
+created: '2026-11-18'
+status: active

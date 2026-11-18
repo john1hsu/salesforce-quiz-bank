@@ -1,0 +1,18 @@
+id: sf-000979
+product_area: platform-architecture
+true_statement: Salesforce Edge Network is turned on in the Routing section of the My Domain Setup page, which requires the Customize Application permission.
+false_statement: Salesforce Edge Network is turned on in the Session Settings Setup page, which requires the Modify All Data permission.
+explanation: 'Edge routing is a My Domain setting: edit Routing and select Use Salesforce Edge Network, with Customize Application. Session Settings and Modify All Data are not involved.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/salesforce-edge-network.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: eb74ed1c24a8c6de4fa6b7e843f356b62718ddce
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:salesforce-edge-network
+- kt:my-domain
+difficulty: 2
+created: '2026-11-18'
+status: active

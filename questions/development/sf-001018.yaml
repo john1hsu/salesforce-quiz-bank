@@ -1,0 +1,20 @@
+id: sf-001018
+product_area: development
+true_statement: A method defined in a with sharing class still enforces sharing when a without sharing class calls it, because the mode comes from where it is defined.
+false_statement: A method defined in a with sharing class drops sharing when a without sharing class calls it, because the mode comes from the calling class.
+explanation: Apex takes the sharing mode from the class that defines the method, not from its caller. Only inherited sharing classes adopt the caller's mode.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/apex-security-with-sharing.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: 2f0d39d1761a47b540942f4ac49bd4b8c3083368
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:platform-developer-certification
+concepts:
+- kt:apex-security-with-sharing
+- kt:salesforce-sharing-model
+difficulty: 2
+created: '2026-11-18'
+status: active

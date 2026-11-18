@@ -1,0 +1,17 @@
+id: sf-001046
+product_area: public-sector-and-compliance
+true_statement: Covering a risk with cyber insurance or outsourcing the activity transfers the risk rather than mitigating it with controls.
+false_statement: Covering a risk with cyber insurance or outsourcing the activity mitigates the risk with controls rather than transferring it.
+explanation: Risk treatment options are mitigate with controls, accept within tolerance, or transfer. Insurance and outsourcing shift the impact to another party, which is transfer, not mitigation.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/governance-risk-and-compliance.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: 27945bad22681889ba1b640d505afb296babb7ea
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:governance-risk-and-compliance
+difficulty: 1
+created: '2026-11-18'
+status: active

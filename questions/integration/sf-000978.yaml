@@ -1,0 +1,17 @@
+id: sf-000978
+product_area: integration
+true_statement: An External Service's read-only systemVersion can't be upgraded in place; you recreate the service from the same spec and repoint references.
+false_statement: An External Service's systemVersion can be upgraded in place from Setup, and existing flow references update automatically.
+explanation: systemVersion is read-only, so moving to a newer version means registering the spec again and pointing flows and code at the new service. There is no in-place upgrade that rewires references for you.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/external-services.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: 2001b6c1b536481ae8561bb61d375ead18543b91
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:external-services
+difficulty: 3
+created: '2026-11-18'
+status: active

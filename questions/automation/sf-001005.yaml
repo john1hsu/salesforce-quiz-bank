@@ -1,0 +1,19 @@
+id: sf-001005
+product_area: automation
+true_statement: A recursive process could evaluate a record up to six times per save, but the flow Migrate to Flow generates from it evaluates the record only once.
+false_statement: A recursive process could evaluate a record up to six times per save, and the flow Migrate to Flow generates from it keeps that same six-pass recursion.
+explanation: Migrated flows evaluate the record a single time, so logic that relied on the process's recursion can silently behave differently after conversion.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/migrate-to-flow-tool.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: 91169b63b3cc683c32256fd03c4b147fbb61c800
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:migrate-to-flow-tool
+- kt:process-builder
+- kt:record-triggered-flow
+difficulty: 3
+created: '2026-11-18'
+status: active

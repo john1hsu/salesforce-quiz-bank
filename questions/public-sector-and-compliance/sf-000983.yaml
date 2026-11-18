@@ -1,0 +1,19 @@
+id: sf-000983
+product_area: public-sector-and-compliance
+true_statement: Government Cloud Plus - Defense is priced at 25% applied to net spend, compared with 15% for the standard Government Cloud Plus edition.
+false_statement: Government Cloud Plus - Defense is priced at 15% applied to net spend, compared with 25% for the standard Government Cloud Plus edition.
+explanation: The physically isolated Defense edition carries the higher 25% uplift on net spend; the standard Plus edition is 15%. Premium, the air-gapped edition, is priced on request.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/government-cloud.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: fb1310d12a662c9a051ee91636ada0fd3370b726
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:government-cloud
+- kt:government-cloud-plus
+- kt:il4-and-il5
+difficulty: 2
+created: '2026-11-18'
+status: active

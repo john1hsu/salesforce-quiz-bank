@@ -1,0 +1,19 @@
+id: sf-001043
+product_area: platform-architecture
+true_statement: A sandbox refresh adds the source instance's Trust Notification subscribers automatically, but after an org migration you must update your subscription yourself.
+false_statement: An org migration moves your Trust Notification subscription automatically, but after a sandbox refresh you must update the subscription yourself.
+explanation: Refreshes copy subscribers to the destination instance, while org migrations leave the old subscription in place. The false version reverses which event is handled for you.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/trust-and-status-site.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: d5fbec4eecbe58858559a71031b3ee4b5df57b80
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:trust-and-status-site
+- kt:instance-refresh-and-org-migration
+- kt:sandbox-types
+difficulty: 2
+created: '2026-11-18'
+status: active

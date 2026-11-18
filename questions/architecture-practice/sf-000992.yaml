@@ -1,0 +1,17 @@
+id: sf-000992
+product_area: architecture-practice
+true_statement: In Salesforce's Discover, Rollout and Optimize change cycle, the change impact assessment is done in Discover, before rollout begins.
+false_statement: In Salesforce's Discover, Rollout and Optimize change cycle, the change impact assessment is done in Optimize, after rollout ends.
+explanation: Discover is where feedback is gathered, sponsors aligned, blockers named and the change impact assessment run. Optimize follows go-live and focuses on adoption metrics and adjustments.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/change-management-and-adoption.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: 493866c69d89f36e616cba01381cbf6fba0cfb91
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:change-management-and-adoption
+difficulty: 2
+created: '2026-11-18'
+status: active

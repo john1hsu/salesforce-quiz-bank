@@ -1,0 +1,17 @@
+id: sf-001042
+product_area: platform-architecture
+true_statement: Anyone can subscribe to Salesforce Trust Notifications, even without a Salesforce user license.
+false_statement: Only users with an active Salesforce user license and admin rights can subscribe to Salesforce Trust Notifications.
+explanation: Trust Notifications are open to any subscriber who confirms by email, with no license required. Admin-only delivery applies to Salesforce's incident emails and webinar invites, not to Trust subscriptions.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/trust-and-status-site.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: d5fbec4eecbe58858559a71031b3ee4b5df57b80
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:trust-and-status-site
+difficulty: 1
+created: '2026-11-18'
+status: active

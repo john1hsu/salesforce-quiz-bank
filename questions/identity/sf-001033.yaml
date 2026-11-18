@@ -1,0 +1,17 @@
+id: sf-001033
+product_area: identity
+true_statement: In Setup, the Add Multiple Users option creates up to 10 users at a time.
+false_statement: In Setup, the Add Multiple Users option creates up to 50 users at a time.
+explanation: Add Multiple Users is a quick-entry form capped at 10 users per use. Larger loads need another approach, so 50 overstates the limit.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/user-management.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: 38dd6c6fa1707cb5341e7ded479f933de4a79ef9
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:user-management
+difficulty: 1
+created: '2026-11-18'
+status: active

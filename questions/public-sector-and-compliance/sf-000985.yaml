@@ -1,0 +1,18 @@
+id: sf-000985
+product_area: public-sector-and-compliance
+true_statement: GovRAMP's Ready status requires an independent third-party assessor to assess 80 NIST controls.
+false_statement: GovRAMP's Ready status requires an independent third-party assessor to assess more than 300 NIST controls.
+explanation: Ready covers 80 controls with a 3PAO assessment, monthly monitoring and an annual assessment. More than 300 controls is the bar for Provisionally Authorized and Authorized.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/govramp.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: 51974f048f86048f2750f46424afe20965e093a4
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:govramp
+- kt:nist-sp-800-53
+difficulty: 2
+created: '2026-11-18'
+status: active

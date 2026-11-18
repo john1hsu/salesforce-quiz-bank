@@ -1,0 +1,19 @@
+id: sf-001003
+product_area: automation
+true_statement: After converting a workflow rule, Migrate to Flow's Switch Activations button deactivates the rule and activates the new flow in a single step.
+false_statement: After converting a process, Migrate to Flow's Switch Activations button deactivates the process and activates the new flow in a single step.
+explanation: Switch Activations is offered only for migrated workflow rules. For processes, the admin must activate the flow and then deactivate the process in Process Builder manually.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/migrate-to-flow-tool.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: 91169b63b3cc683c32256fd03c4b147fbb61c800
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:migrate-to-flow-tool
+- kt:workflow-rules
+- kt:process-builder
+difficulty: 2
+created: '2026-11-18'
+status: active

@@ -1,0 +1,19 @@
+id: sf-001027
+product_area: devops-and-alm
+true_statement: In Trailhead's org development model, a release is combined in a shared Developer Pro sandbox and user-acceptance tested in a Partial Copy sandbox.
+false_statement: In Trailhead's org development model, a release is combined in a Partial Copy sandbox and user-acceptance tested in a shared Developer Pro sandbox.
+explanation: Individual work in Developer sandboxes is merged in a shared Developer Pro sandbox to build the release, then UAT runs in a Partial Copy sandbox. The false statement swaps the two stages.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/release-management.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: 1d1f3c38e383c2b531fdd978834889f7610e7ab0
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:release-management
+- kt:sandbox-types
+- kt:environment-strategy
+difficulty: 2
+created: '2026-11-18'
+status: active

@@ -1,0 +1,18 @@
+id: sf-001022
+product_area: development
+true_statement: An Apex test class can have only one @TestSetup method, and it isn't supported when the class uses @IsTest(SeeAllData=true).
+false_statement: An Apex test class can have up to five @TestSetup methods, and they also run when the class uses @IsTest(SeeAllData=true).
+explanation: Test setup is limited to a single method per class and is incompatible with SeeAllData=true. Multiple setup methods are not allowed.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/test-data-factory.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: 9264e9e0346946ef058f03cd4d56a20fa1755c18
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:test-data-factory
+- kt:seealldata
+difficulty: 2
+created: '2026-11-18'
+status: active

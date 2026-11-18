@@ -1,0 +1,17 @@
+id: sf-001060
+product_area: architecture-practice
+true_statement: Salesforce's commerce guidance estimates TCO as initial costs plus ongoing costs multiplied by the timeframe, and says ongoing costs usually dominate.
+false_statement: Salesforce's commerce guidance estimates TCO as initial costs plus ongoing costs multiplied by the timeframe, and says initial costs usually dominate.
+explanation: The formula multiplies ongoing costs by the timeframe, and the guidance notes that this ongoing portion, not the upfront spend, is usually the larger share.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/total-cost-of-ownership.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: 7c5a3b47efe89bc8ab2c67d5ecc9590dba8f7ce3
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:total-cost-of-ownership
+difficulty: 2
+created: '2026-11-18'
+status: active

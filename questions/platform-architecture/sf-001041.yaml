@@ -1,0 +1,19 @@
+id: sf-001041
+product_area: platform-architecture
+true_statement: Salesforce measured bulk same-record updates as roughly 10 to 20 times faster in before-save flows than in Workflow Rules or Process Builder.
+false_statement: Salesforce measured bulk same-record updates as roughly 2 to 3 times faster in before-save flows than in Workflow Rules or Process Builder.
+explanation: Before-save flows change the record in memory and avoid a recursive save, which Salesforce measured at about 10 to 20 times faster in bulk. The smaller multiple understates the gap.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/recursive-save.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: 41000c70c873a8ac077af4f1c30687ddc7fcad3b
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:recursive-save
+- kt:record-triggered-flow
+- kt:process-builder
+difficulty: 2
+created: '2026-11-18'
+status: active

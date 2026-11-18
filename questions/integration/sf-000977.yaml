@@ -1,0 +1,18 @@
+id: sf-000977
+product_area: integration
+true_statement: Operations from a registered External Service become strongly typed Apex classes and methods in the ExternalService namespace.
+false_statement: Operations from a registered External Service become loosely typed Apex maps that must be parsed with the JSON class in the Http namespace.
+explanation: Registration generates classes and methods under the ExternalService namespace with schema types mapped to Apex types, so developers skip manual JSON parsing. Hand-parsing with Http and JSON is the alternative that External Services removes.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/external-services.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: 2001b6c1b536481ae8561bb61d375ead18543b91
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:external-services
+- kt:apex-callouts
+difficulty: 2
+created: '2026-11-18'
+status: active

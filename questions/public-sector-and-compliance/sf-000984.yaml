@@ -1,0 +1,17 @@
+id: sf-000984
+product_area: public-sector-and-compliance
+true_statement: During an org migration to Government Cloud, Email-to-Case messages are held for at most 24 hours.
+false_statement: During an org migration to Government Cloud, Email-to-Case messages are held for at most 72 hours.
+explanation: Salesforce's migration guidance caps the hold on inbound Email-to-Case messages at 24 hours during the move. 72 hours overstates the buffer and could lead a team to plan an over-long cutover window.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/government-cloud.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: fb1310d12a662c9a051ee91636ada0fd3370b726
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:government-cloud
+difficulty: 2
+created: '2026-11-18'
+status: active

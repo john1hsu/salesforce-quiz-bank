@@ -1,0 +1,17 @@
+id: sf-001007
+product_area: clouds-and-products
+true_statement: Anyone can browse and test-drive AgentExchange listings, but installing one requires an admin or the Download AgentExchange Packages permission.
+false_statement: Anyone can browse and test-drive AgentExchange listings, but installing one requires an admin or the Create AgentExchange Packages permission.
+explanation: Installing is gated by admin rights or the Download AgentExchange Packages permission. The Create and Upload permissions are for partners publishing listings, not for installing.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/agentexchange.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: 5d89070a3d3662cd5f12b5e146aabef2f97c22bd
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:agentexchange
+difficulty: 2
+created: '2026-11-18'
+status: active

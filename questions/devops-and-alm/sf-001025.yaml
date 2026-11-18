@@ -1,0 +1,18 @@
+id: sf-001025
+product_area: devops-and-alm
+true_statement: Data Mask & Seed can seed from a production org, a sandbox or a backup, but seeding from a backup requires Backup & Recover.
+false_statement: Data Mask & Seed can seed from a production org, a sandbox or a backup, and seeding from a backup needs no other product.
+explanation: Backups are a valid seeding source only when Backup & Recover is in place, which is why the product integrates with it.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/data-mask-and-seed.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: 554d7825dd98aa8af479af6c100b8cf33784d945
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:data-mask-and-seed
+- kt:backup-and-recover
+difficulty: 2
+created: '2026-11-18'
+status: active

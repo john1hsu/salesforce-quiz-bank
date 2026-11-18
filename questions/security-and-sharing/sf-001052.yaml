@@ -1,0 +1,18 @@
+id: sf-001052
+product_area: security-and-sharing
+true_statement: Salesforce advises keeping an org's generated CSP header under 12 KB, since problems have been reported as headers approach 16 KB.
+false_statement: Salesforce advises keeping an org's generated CSP header under 64 KB, since problems have been reported as headers approach 128 KB.
+explanation: Every Trusted URL adds to the header, and trouble starts around 16 KB, so the guidance is to stay under 12 KB. The larger figures are far beyond what proxies and browsers tolerate here.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/content-security-policy.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: 5f2e142d6c151354bcad0b54d701511caaa72ffb
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:content-security-policy
+- kt:metadata-api
+difficulty: 3
+created: '2026-11-18'
+status: active

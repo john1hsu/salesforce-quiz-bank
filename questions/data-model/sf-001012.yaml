@@ -1,0 +1,18 @@
+id: sf-001012
+product_area: data-model
+true_statement: A controlling field can be a standard or custom picklist or a checkbox, but a dependent field must be a custom picklist or multi-select picklist.
+false_statement: A dependent field can be a standard or custom picklist or a checkbox, but a controlling field must be a custom picklist or multi-select picklist.
+explanation: 'The roles are asymmetric: checkboxes and standard picklists can control a dependency, but only custom picklists and multi-select picklists can be dependent.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/field-dependencies.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: 2f8ca400ca4822ce0a4cd06f09ddbae2d5f5b53f
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:field-dependencies
+- kt:custom-fields
+difficulty: 2
+created: '2026-11-18'
+status: active

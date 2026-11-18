@@ -1,0 +1,18 @@
+id: sf-001055
+product_area: security-and-sharing
+true_statement: To write a URL parameter such as retURL into a JavaScript string on a Visualforce page safely, wrap the merge field in JSENCODE.
+false_statement: To write a URL parameter such as retURL into a JavaScript string on a Visualforce page safely, wrap the merge field in URLENCODE.
+explanation: Encoding must match the output context, and a JavaScript string needs JavaScript encoding, which JSENCODE provides. URL encoding targets a different context.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/cross-site-scripting.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: 236eae567cdecfb9158d356e4e12b322dcbc78ca
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:cross-site-scripting
+- kt:visualforce
+difficulty: 2
+created: '2026-11-18'
+status: active

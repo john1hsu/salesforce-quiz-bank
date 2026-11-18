@@ -1,0 +1,18 @@
+id: sf-000996
+product_area: architecture-practice
+true_statement: Heroku raised its default slug size limit to 1 GB, and up to 2 GB is available on request.
+false_statement: Heroku raised its default slug size limit to 500 MB, and up to 1 GB is available on request.
+explanation: The Summer '26 maintenance content covers a 1 GB default slug size that can go to 2 GB on request. The smaller figures in the false statement understate both limits.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/heroku-architect-certification.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: d5c3a37cf2f91ba4e2a7f581556b8d234f1ca401
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:heroku-architect-certification
+- kt:heroku
+difficulty: 2
+created: '2026-11-18'
+status: active

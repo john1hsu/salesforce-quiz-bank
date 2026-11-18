@@ -1,0 +1,19 @@
+id: sf-001039
+product_area: platform-architecture
+true_statement: During a recursive save, assignment rules and after-save record-triggered flows are skipped, but before triggers and validation rules run again.
+false_statement: During a recursive save, before triggers and validation rules are skipped, but assignment rules and after-save record-triggered flows run again.
+explanation: A recursive pass skips the middle steps of the save order, including assignment rules and after-save flows, while early steps such as before triggers and validation repeat. The false version swaps which steps are skipped.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/recursive-save.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: 41000c70c873a8ac077af4f1c30687ddc7fcad3b
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:recursive-save
+- kt:order-of-execution
+- kt:record-triggered-flow
+difficulty: 3
+created: '2026-11-18'
+status: active

@@ -1,0 +1,19 @@
+id: sf-001004
+product_area: automation
+true_statement: When migrating a process, Migrate to Flow lets you send individual criteria to separate flows instead of putting all of them in one flow.
+false_statement: When migrating a process, Migrate to Flow always puts all of the process's criteria into one flow and can't split them into separate flows.
+explanation: The tool lets an admin migrate every criterion to one flow or pick specific criteria and migrate them to separate flows, so splitting is supported.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/migrate-to-flow-tool.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: 91169b63b3cc683c32256fd03c4b147fbb61c800
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:migrate-to-flow-tool
+- kt:process-builder
+- kt:record-triggered-flow
+difficulty: 2
+created: '2026-11-18'
+status: active

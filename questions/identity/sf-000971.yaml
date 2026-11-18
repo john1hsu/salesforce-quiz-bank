@@ -1,0 +1,18 @@
+id: sf-000971
+product_area: identity
+true_statement: When challenging a user, Salesforce prompts for the most secure registered method and ranks a security key above Salesforce Authenticator.
+false_statement: When challenging a user, Salesforce prompts for the most secure registered method and ranks Salesforce Authenticator above a security key.
+explanation: The precedence runs passkey, then physical security key, then Salesforce Authenticator, then TOTP apps. A security key is the more secure, phishing-resistant method, so it comes first.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/identity-verification.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: 8ffd216c844a5db5387c76f20043553ddc758192
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:identity-verification
+- kt:multi-factor-authentication
+difficulty: 2
+created: '2026-11-18'
+status: active

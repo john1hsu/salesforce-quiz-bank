@@ -6,8 +6,8 @@ explanation: Enterprise Dev Hubs get 40 active and 80 daily. The 100 active and 
 source:
   repo: john1hsu/salesforce-knowledge-graph
   path: articles/devops-and-alm/scratch-orgs.md
-  commit: 1a9626507b2858110c996adbfa985703bee41fd5
-  blob: f59d0ef682454db82485bb43fd4b8c7bf9a1ed54
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: 5fc907cff76c0dfc9907c1b2b9ec6489c9f945a2
 verified_release: Winter '27
 feature_status: current
 concepts:

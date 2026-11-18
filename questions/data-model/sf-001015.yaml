@@ -1,0 +1,18 @@
+id: sf-001015
+product_area: data-model
+true_statement: A hierarchical relationship field prevents choosing a user who reports to the record's user directly or indirectly, so the chain can't loop.
+false_statement: A hierarchical relationship field allows choosing any active user, including one who reports to the record's user, so loops must be prevented by validation rules.
+explanation: 'Cycle protection is what makes the field hierarchical: like the Manager field, it blocks picking a direct or indirect report, so automation can walk the chain safely.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/hierarchical-relationships.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: 6c1dd08ed0f988e9a4ef9a1aeb4d23827cdb86bf
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:hierarchical-relationships
+- kt:user-management
+difficulty: 2
+created: '2026-11-18'
+status: active

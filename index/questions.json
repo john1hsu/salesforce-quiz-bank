@@ -1,7 +1,7 @@
 {
  "version": 1,
- "count": 961,
- "active": 961,
+ "count": 1055,
+ "active": 1055,
  "questions": [
   {
    "id": "sf-000001",
@@ -16675,6 +16675,1619 @@
    "difficulty": 1,
    "status": "active",
    "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/delegated-authentication.md"
+  },
+  {
+   "id": "sf-000970",
+   "area": "identity",
+   "t": "Identity Verification History keeps six months of verification attempts, so longer audit evidence has to be exported.",
+   "f": "Identity Verification History keeps twelve months of verification attempts, so longer audit evidence has to be exported.",
+   "x": "The VerificationHistory object retains records for six months. Twelve months is too long, which is why teams with longer retention needs export the data.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:identity-verification",
+    "kt:soql"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/identity-verification.md"
+  },
+  {
+   "id": "sf-000971",
+   "area": "identity",
+   "t": "When challenging a user, Salesforce prompts for the most secure registered method and ranks a security key above Salesforce Authenticator.",
+   "f": "When challenging a user, Salesforce prompts for the most secure registered method and ranks Salesforce Authenticator above a security key.",
+   "x": "The precedence runs passkey, then physical security key, then Salesforce Authenticator, then TOTP apps. A security key is the more secure, phishing-resistant method, so it comes first.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:identity-verification",
+    "kt:multi-factor-authentication"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/identity-verification.md"
+  },
+  {
+   "id": "sf-000972",
+   "area": "identity",
+   "t": "In orgs created before Summer '25, admins must turn on passkeys and security keys, while third-party authenticator apps are available automatically.",
+   "f": "In orgs created before Summer '25, admins must turn on third-party authenticator apps, while passkeys and security keys are available automatically.",
+   "x": "Older orgs need an admin to enable passkeys and security keys, but TOTP authenticator apps work out of the box. Newer orgs allow every method by default.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:identity-verification",
+    "kt:multi-factor-authentication"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/identity-verification.md"
+  },
+  {
+   "id": "sf-000973",
+   "area": "integration",
+   "t": "In API-led connectivity, System APIs connect directly to systems of record such as ERPs and CRMs and shield consumers from changes in them.",
+   "f": "In API-led connectivity, Experience APIs connect directly to systems of record such as ERPs and CRMs and shield consumers from changes in them.",
+   "x": "System APIs form the foundation layer that unlocks data in core systems and insulates callers from their complexity. Experience APIs sit at the top and shape data for a channel instead of touching source systems.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:api-led-connectivity"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/api-led-connectivity.md"
+  },
+  {
+   "id": "sf-000974",
+   "area": "integration",
+   "t": "MuleSoft architects advise adding an Experience API only when consumers need a different contract or the Process API definition is expected to change.",
+   "f": "MuleSoft architects advise adding an Experience API only when the system of record behind the System API is expected to be replaced.",
+   "x": "The layers are not mandatory, and an Experience layer earns its cost only when consumers need their own contract or the Process API is likely to change. Swapping a backend system is what the System layer insulates against, not the reason for an Experience API.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:api-led-connectivity"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/api-led-connectivity.md"
+  },
+  {
+   "id": "sf-000975",
+   "area": "integration",
+   "t": "Experience APIs in API-led connectivity adapt Process API output for a specific channel and do not depend directly on the source systems.",
+   "f": "Experience APIs in API-led connectivity adapt System API output for a specific channel and call the source systems directly to cut hops.",
+   "x": "Experience APIs reshape what Process APIs produce for a particular UI, device or channel, and they are deliberately decoupled from the systems of record. Calling source systems directly would recreate the point-to-point coupling the model avoids.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:api-led-connectivity",
+    "kt:point-to-point-integration"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/api-led-connectivity.md"
+  },
+  {
+   "id": "sf-000976",
+   "area": "integration",
+   "t": "An External Services registration accepts an OpenAPI 2.0.x or 3.0.x schema written in either JSON or YAML.",
+   "f": "An External Services registration accepts only an OpenAPI 3.0.x schema, and only when it is written in JSON.",
+   "x": "The ExternalServiceRegistration schema field takes OpenAPI 2.0.x or 3.0.x content in JSON or YAML. Restricting it to 3.0.x JSON understates the supported formats.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:external-services",
+    "kt:metadata-api"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/external-services.md"
+  },
+  {
+   "id": "sf-000977",
+   "area": "integration",
+   "t": "Operations from a registered External Service become strongly typed Apex classes and methods in the ExternalService namespace.",
+   "f": "Operations from a registered External Service become loosely typed Apex maps that must be parsed with the JSON class in the Http namespace.",
+   "x": "Registration generates classes and methods under the ExternalService namespace with schema types mapped to Apex types, so developers skip manual JSON parsing. Hand-parsing with Http and JSON is the alternative that External Services removes.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:external-services",
+    "kt:apex-callouts"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/external-services.md"
+  },
+  {
+   "id": "sf-000978",
+   "area": "integration",
+   "t": "An External Service's read-only systemVersion can't be upgraded in place; you recreate the service from the same spec and repoint references.",
+   "f": "An External Service's systemVersion can be upgraded in place from Setup, and existing flow references update automatically.",
+   "x": "systemVersion is read-only, so moving to a newer version means registering the spec again and pointing flows and code at the new service. There is no in-place upgrade that rewires references for you.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:external-services"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/external-services.md"
+  },
+  {
+   "id": "sf-000979",
+   "area": "platform-architecture",
+   "t": "Salesforce Edge Network is turned on in the Routing section of the My Domain Setup page, which requires the Customize Application permission.",
+   "f": "Salesforce Edge Network is turned on in the Session Settings Setup page, which requires the Modify All Data permission.",
+   "x": "Edge routing is a My Domain setting: edit Routing and select Use Salesforce Edge Network, with Customize Application. Session Settings and Modify All Data are not involved.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:salesforce-edge-network",
+    "kt:my-domain"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/salesforce-edge-network.md"
+  },
+  {
+   "id": "sf-000980",
+   "area": "platform-architecture",
+   "t": "After an org moves to Salesforce Edge Network, only Salesforce Customer Support can switch it back.",
+   "f": "After an org moves to Salesforce Edge Network, an admin can switch it back by clearing the Routing option in Setup.",
+   "x": "The move is one-way from the admin's point of view; reversing it takes a Customer Support request. That is why firewalls and pinned certificates should be checked before enabling it.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:salesforce-edge-network"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/salesforce-edge-network.md"
+  },
+  {
+   "id": "sf-000981",
+   "area": "platform-architecture",
+   "t": "Because Salesforce Edge Network uses data-center-specific certificates, clients that pin should pin the intermediate certificate rather than the leaf.",
+   "f": "Because Salesforce Edge Network uses one certificate shared by all data centers, clients that pin should pin the leaf certificate rather than the intermediate.",
+   "x": "Edge Network serves certificates specific to each data center, so a pinned leaf can break when traffic lands elsewhere. Pinning the intermediate certificate is the documented guidance.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:salesforce-edge-network"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/salesforce-edge-network.md"
+  },
+  {
+   "id": "sf-000982",
+   "area": "public-sector-and-compliance",
+   "t": "When an existing production org is migrated into Government Cloud, its org ID and record IDs stay the same.",
+   "f": "When an existing production org is migrated into Government Cloud, it receives a new org ID and new record IDs.",
+   "x": "Moving into Government Cloud is an instance migration that keeps the org ID and every record ID. What changes are hosts, IP ranges and WSDLs, which is why hard-coded instance references must be removed.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:government-cloud"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/government-cloud.md"
+  },
+  {
+   "id": "sf-000983",
+   "area": "public-sector-and-compliance",
+   "t": "Government Cloud Plus - Defense is priced at 25% applied to net spend, compared with 15% for the standard Government Cloud Plus edition.",
+   "f": "Government Cloud Plus - Defense is priced at 15% applied to net spend, compared with 25% for the standard Government Cloud Plus edition.",
+   "x": "The physically isolated Defense edition carries the higher 25% uplift on net spend; the standard Plus edition is 15%. Premium, the air-gapped edition, is priced on request.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:government-cloud",
+    "kt:government-cloud-plus",
+    "kt:il4-and-il5"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/government-cloud.md"
+  },
+  {
+   "id": "sf-000984",
+   "area": "public-sector-and-compliance",
+   "t": "During an org migration to Government Cloud, Email-to-Case messages are held for at most 24 hours.",
+   "f": "During an org migration to Government Cloud, Email-to-Case messages are held for at most 72 hours.",
+   "x": "Salesforce's migration guidance caps the hold on inbound Email-to-Case messages at 24 hours during the move. 72 hours overstates the buffer and could lead a team to plan an over-long cutover window.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:government-cloud"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/government-cloud.md"
+  },
+  {
+   "id": "sf-000985",
+   "area": "public-sector-and-compliance",
+   "t": "GovRAMP's Ready status requires an independent third-party assessor to assess 80 NIST controls.",
+   "f": "GovRAMP's Ready status requires an independent third-party assessor to assess more than 300 NIST controls.",
+   "x": "Ready covers 80 controls with a 3PAO assessment, monthly monitoring and an annual assessment. More than 300 controls is the bar for Provisionally Authorized and Authorized.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:govramp",
+    "kt:nist-sp-800-53"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/govramp.md"
+  },
+  {
+   "id": "sf-000986",
+   "area": "public-sector-and-compliance",
+   "t": "StateRAMP began operating as GovRAMP in 2025, but its legal name remained StateRAMP.",
+   "f": "StateRAMP began operating as GovRAMP in 2025, and its legal name was changed to GovRAMP at the same time.",
+   "x": "The 2025 rebrand moved the program to govramp.org and a new public name to attract local governments, yet the legal entity kept the StateRAMP name.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:govramp"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/govramp.md"
+  },
+  {
+   "id": "sf-000987",
+   "area": "public-sector-and-compliance",
+   "t": "Under GovRAMP's FedRAMP Fast Track, the program office reviews a provider's existing FedRAMP artifacts, so a FedRAMP authorization feeds verification rather than replacing it.",
+   "f": "Under GovRAMP's FedRAMP Fast Track, a provider's FedRAMP authorization is accepted automatically, so it grants the matching GovRAMP status without further review.",
+   "x": "Fast Track cuts duplicate work by letting the PMO review federal readiness, assessment and monitoring documents against GovRAMP's requirements. GovRAMP does not describe it as automatic reciprocity, so a review still happens.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:govramp",
+    "kt:fedramp"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/govramp.md"
+  },
+  {
+   "id": "sf-000988",
+   "area": "security-and-sharing",
+   "t": "Enterprise, Unlimited and Performance orgs each get five free Salesforce Integration user licenses, and Developer Edition gets one.",
+   "f": "Enterprise, Unlimited and Performance orgs each get ten free Salesforce Integration user licenses, and Developer Edition gets two.",
+   "x": "The API-only Integration license comes five to an Enterprise, Unlimited or Performance org and one to a Developer Edition org. The doubled counts are wrong.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:user-licenses",
+    "kt:integration-security"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/user-licenses.md"
+  },
+  {
+   "id": "sf-000989",
+   "area": "security-and-sharing",
+   "t": "From API 64.0, the UsedLicenses field on UserLicense can't be filtered in a SOQL WHERE clause, so rows must be filtered after retrieval.",
+   "f": "From API 64.0, the TotalLicenses field on UserLicense can't be filtered in a SOQL WHERE clause, so rows must be filtered after retrieval.",
+   "x": "The filtering restriction applies to UsedLicenses, the count of assigned seats. Audit queries retrieve the rows and filter in code; TotalLicenses is not the field named.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:user-licenses",
+    "kt:soql"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/user-licenses.md"
+  },
+  {
+   "id": "sf-000990",
+   "area": "security-and-sharing",
+   "t": "On a UserLicense record, a null MonthlyLoginsEntitlement means the license is billed per user rather than per login.",
+   "f": "On a UserLicense record, a null MonthlyLoginsEntitlement means the license is billed per login rather than per user.",
+   "x": "MonthlyLoginsEntitlement is populated only for login-based portal licenses. When it is empty, the license is a per-user license.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:user-licenses",
+    "kt:experience-cloud"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/user-licenses.md"
+  },
+  {
+   "id": "sf-000991",
+   "area": "architecture-practice",
+   "t": "In Salesforce's LEVERS of Change model, Rewards and Structure are the structural levers, while Values and Enablement are the individual levers.",
+   "f": "In Salesforce's LEVERS of Change model, Values and Enablement are the structural levers, while Rewards and Structure are the individual levers.",
+   "x": "LEVERS groups its six levers as social (Leadership, Ecosystem), individual (Values, Enablement) and structural (Rewards, Structure). The false version swaps the individual and structural groups.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:change-management-and-adoption"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/change-management-and-adoption.md"
+  },
+  {
+   "id": "sf-000992",
+   "area": "architecture-practice",
+   "t": "In Salesforce's Discover, Rollout and Optimize change cycle, the change impact assessment is done in Discover, before rollout begins.",
+   "f": "In Salesforce's Discover, Rollout and Optimize change cycle, the change impact assessment is done in Optimize, after rollout ends.",
+   "x": "Discover is where feedback is gathered, sponsors aligned, blockers named and the change impact assessment run. Optimize follows go-live and focuses on adoption metrics and adjustments.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:change-management-and-adoption"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/change-management-and-adoption.md"
+  },
+  {
+   "id": "sf-000993",
+   "area": "architecture-practice",
+   "t": "Showing in-app guidance prompts on an Experience Cloud site requires an Aura-template site, plus purchased Enablement and PRM.",
+   "f": "Showing in-app guidance prompts on an Experience Cloud site requires an LWR-template site, plus purchased Enablement and PRM.",
+   "x": "In-app prompts on Experience Cloud carry extra prerequisites, and one of them is that the site uses an Aura template. An LWR-template site doesn't meet that requirement.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:change-management-and-adoption",
+    "kt:in-app-guidance"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/change-management-and-adoption.md"
+  },
+  {
+   "id": "sf-000994",
+   "area": "architecture-practice",
+   "t": "Unlike System Architect, the Heroku Architect credential is earned on its own rather than granted automatically as a roll-up of other exams.",
+   "f": "Like System Architect, the Heroku Architect credential is granted automatically as a roll-up once its prerequisite exams are passed.",
+   "x": "Application Architect and System Architect are roll-ups of other certifications, but Heroku Architect is a separate product credential that does not feed or come from a roll-up.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:heroku-architect-certification",
+    "kt:system-architect-certification"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/heroku-architect-certification.md"
+  },
+  {
+   "id": "sf-000995",
+   "area": "architecture-practice",
+   "t": "On Heroku's Fir generation, log export uses OpenTelemetry in place of the syslog drains used on Cedar.",
+   "f": "On Heroku's Fir generation, log export uses syslog drains in place of the OpenTelemetry pipeline used on Cedar.",
+   "x": "Fir, the Kubernetes-based generation, swaps syslog drains for OpenTelemetry. The false statement reverses which generation uses which mechanism.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:heroku-architect-certification",
+    "kt:heroku-fir"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/heroku-architect-certification.md"
+  },
+  {
+   "id": "sf-000996",
+   "area": "architecture-practice",
+   "t": "Heroku raised its default slug size limit to 1 GB, and up to 2 GB is available on request.",
+   "f": "Heroku raised its default slug size limit to 500 MB, and up to 1 GB is available on request.",
+   "x": "The Summer '26 maintenance content covers a 1 GB default slug size that can go to 2 GB on request. The smaller figures in the false statement understate both limits.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:heroku-architect-certification",
+    "kt:heroku"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/heroku-architect-certification.md"
+  },
+  {
+   "id": "sf-000997",
+   "area": "architecture-practice",
+   "t": "Trailhead splits requirements elicitation into three stages: Prepare, Conduct and Confirm.",
+   "f": "Trailhead splits requirements elicitation into three stages: Prepare, Prioritize and Close.",
+   "x": "Prepare builds a picture of the business need, Conduct meets stakeholders, and Confirm checks that stated requirements match the real problem. Prioritize and Close are not stages in that model.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:requirements-gathering",
+    "kt:business-analyst"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/requirements-gathering.md"
+  },
+  {
+   "id": "sf-000998",
+   "area": "architecture-practice",
+   "t": "A user story's acceptance criteria should state the intended outcome rather than prescribe a specific solution such as a button.",
+   "f": "A user story's acceptance criteria should prescribe a specific solution such as a button rather than state the intended outcome.",
+   "x": "Criteria are pass/fail statements of intent that testers verify. Naming a button is solutioning too early, which locks in a design before options have been weighed.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:requirements-gathering",
+    "kt:user-stories"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/requirements-gathering.md"
+  },
+  {
+   "id": "sf-000999",
+   "area": "architecture-practice",
+   "t": "In Trailhead's process mapping guidance, the end-to-end process owner chairs the mapping workshop and settles disagreements.",
+   "f": "In Trailhead's process mapping guidance, the Salesforce admin chairs the mapping workshop and settles disagreements.",
+   "x": "Live mapping workshops are led by the end-to-end process owner, who resolves disputes so the group can validate the map as it is drawn. The admin is a participant, not the chair.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:requirements-gathering",
+    "kt:business-process-mapping"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/requirements-gathering.md"
+  },
+  {
+   "id": "sf-001000",
+   "area": "automation",
+   "t": "An @InvocableMethod must return a list the same size and order as its input list, so failed inputs still get a result entry.",
+   "f": "An @InvocableMethod may return a shorter list than its input, so failed inputs can simply be dropped from the results.",
+   "x": "The i-th output answers the i-th input, which is what lets the action run in bulk. Dropping failed rows breaks that mapping, so the pattern is a result wrapper that reports success or failure.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:platform-developer-certification"
+   ],
+   "concepts": [
+    "kt:invocable-apex-actions",
+    "kt:bulkification"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/invocable-apex-actions.md"
+  },
+  {
+   "id": "sf-001001",
+   "area": "automation",
+   "t": "An @InvocableVariable must be a public or global instance variable; static, final and private variables can't be used.",
+   "f": "An @InvocableVariable can be a static or private variable, as long as the annotation sets a label for it.",
+   "x": "Invocable variables must be public or global instance members. Static, local, final, private and protected variables are not allowed, and a label doesn't change that.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:platform-developer-certification"
+   ],
+   "concepts": [
+    "kt:invocable-apex-actions",
+    "kt:apex"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/invocable-apex-actions.md"
+  },
+  {
+   "id": "sf-001002",
+   "area": "automation",
+   "t": "In a subscriber org, Flow Builder shows only packaged invocable methods and variables that are declared global.",
+   "f": "In a subscriber org, Flow Builder shows packaged invocable methods and variables declared either public or global.",
+   "x": "Packaged invocable code is visible to subscriber flows only when it is global. Public members stay hidden outside the package's namespace.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:platform-developer-certification"
+   ],
+   "concepts": [
+    "kt:invocable-apex-actions",
+    "kt:second-generation-managed-packages",
+    "kt:flow-builder"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/invocable-apex-actions.md"
+  },
+  {
+   "id": "sf-001003",
+   "area": "automation",
+   "t": "After converting a workflow rule, Migrate to Flow's Switch Activations button deactivates the rule and activates the new flow in a single step.",
+   "f": "After converting a process, Migrate to Flow's Switch Activations button deactivates the process and activates the new flow in a single step.",
+   "x": "Switch Activations is offered only for migrated workflow rules. For processes, the admin must activate the flow and then deactivate the process in Process Builder manually.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:migrate-to-flow-tool",
+    "kt:workflow-rules",
+    "kt:process-builder"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/migrate-to-flow-tool.md"
+  },
+  {
+   "id": "sf-001004",
+   "area": "automation",
+   "t": "When migrating a process, Migrate to Flow lets you send individual criteria to separate flows instead of putting all of them in one flow.",
+   "f": "When migrating a process, Migrate to Flow always puts all of the process's criteria into one flow and can't split them into separate flows.",
+   "x": "The tool lets an admin migrate every criterion to one flow or pick specific criteria and migrate them to separate flows, so splitting is supported.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:migrate-to-flow-tool",
+    "kt:process-builder",
+    "kt:record-triggered-flow"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/migrate-to-flow-tool.md"
+  },
+  {
+   "id": "sf-001005",
+   "area": "automation",
+   "t": "A recursive process could evaluate a record up to six times per save, but the flow Migrate to Flow generates from it evaluates the record only once.",
+   "f": "A recursive process could evaluate a record up to six times per save, and the flow Migrate to Flow generates from it keeps that same six-pass recursion.",
+   "x": "Migrated flows evaluate the record a single time, so logic that relied on the process's recursion can silently behave differently after conversion.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:migrate-to-flow-tool",
+    "kt:process-builder",
+    "kt:record-triggered-flow"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/migrate-to-flow-tool.md"
+  },
+  {
+   "id": "sf-001006",
+   "area": "clouds-and-products",
+   "t": "In April 2026, Salesforce merged AppExchange, the Slack Marketplace and the Agentforce-focused AgentExchange into one storefront called AgentExchange.",
+   "f": "In April 2026, Salesforce merged AppExchange and the Agentforce-focused AgentExchange into one storefront, while the Slack Marketplace stayed separate.",
+   "x": "The unified AgentExchange absorbed all three marketplaces, including the Slack Marketplace, so Slack apps are listed in the same storefront.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:agentexchange",
+    "kt:slack-platform",
+    "kt:agentforce"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/agentexchange.md"
+  },
+  {
+   "id": "sf-001007",
+   "area": "clouds-and-products",
+   "t": "Anyone can browse and test-drive AgentExchange listings, but installing one requires an admin or the Download AgentExchange Packages permission.",
+   "f": "Anyone can browse and test-drive AgentExchange listings, but installing one requires an admin or the Create AgentExchange Packages permission.",
+   "x": "Installing is gated by admin rights or the Download AgentExchange Packages permission. The Create and Upload permissions are for partners publishing listings, not for installing.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:agentexchange"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/agentexchange.md"
+  },
+  {
+   "id": "sf-001008",
+   "area": "clouds-and-products",
+   "t": "The AgentExchange Go-To-Market App for private offers supports only 12-month contracts paid NET30 by ACH debit in USD, and orders don't auto-renew.",
+   "f": "The AgentExchange Go-To-Market App for private offers supports only 12-month contracts paid NET30 by ACH debit in USD, and orders auto-renew yearly.",
+   "x": "Private-offer orders from the Go-To-Market App don't renew automatically in Winter '27; cancellations and partner-initiated refunds aren't supported yet either.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:agentexchange",
+    "kt:agentexchange-go-to-market-app"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/agentexchange.md"
+  },
+  {
+   "id": "sf-001009",
+   "area": "data-cloud-and-ai",
+   "t": "A Data 360 data graph stores the joined fields of its primary DMO and related DMOs as one read-only JSON record per entity.",
+   "f": "A Data 360 data graph stores the joined fields of its primary DMO and related DMOs as one editable JSON record per entity that apps can write back to.",
+   "x": "Data graphs precompute and materialize the joins into a read-only JSON blob, so they serve as a fast lookup source rather than a place to write data.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:data-graphs",
+    "kt:data-model-objects"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/data-graphs.md"
+  },
+  {
+   "id": "sf-001010",
+   "area": "data-cloud-and-ai",
+   "t": "Real-time data graphs in Data 360 update instantly for in-session use but require the separately purchased Real-Time SKU.",
+   "f": "Standard data graphs in Data 360 update instantly for in-session use but require the separately purchased Real-Time SKU.",
+   "x": "Instant, in-session updates are the real-time variant, which needs the Real-Time SKU. Standard graphs refresh after a delay of minutes to hours and suit batch and reporting.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:data-graphs",
+    "kt:agentforce"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/data-graphs.md"
+  },
+  {
+   "id": "sf-001011",
+   "area": "data-cloud-and-ai",
+   "t": "Non-real-time Data 360 data graphs refresh daily by default, with hourly, 4-hourly, weekly and monthly schedules also available.",
+   "f": "Non-real-time Data 360 data graphs refresh hourly by default, with 4-hourly, daily, weekly and monthly schedules also available.",
+   "x": "Daily is the default refresh interval for standard graphs; choosing a less frequent interval saves credits when the data doesn't need to be current.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:data-graphs",
+    "kt:data-cloud"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/data-graphs.md"
+  },
+  {
+   "id": "sf-001012",
+   "area": "data-model",
+   "t": "A controlling field can be a standard or custom picklist or a checkbox, but a dependent field must be a custom picklist or multi-select picklist.",
+   "f": "A dependent field can be a standard or custom picklist or a checkbox, but a controlling field must be a custom picklist or multi-select picklist.",
+   "x": "The roles are asymmetric: checkboxes and standard picklists can control a dependency, but only custom picklists and multi-select picklists can be dependent.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:field-dependencies",
+    "kt:custom-fields"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/field-dependencies.md"
+  },
+  {
+   "id": "sf-001013",
+   "area": "data-model",
+   "t": "A Visualforce page can include at most 10 dependent picklist pairs across all objects, and it fails at runtime if the controlling field is missing.",
+   "f": "A Visualforce page can include at most 25 dependent picklist pairs across all objects, and it fails at runtime if the controlling field is missing.",
+   "x": "apex:inputField renders dependencies automatically, but Visualforce caps a page at 10 dependent picklist pairs, not 25.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:field-dependencies",
+    "kt:visualforce"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/field-dependencies.md"
+  },
+  {
+   "id": "sf-001014",
+   "area": "data-model",
+   "t": "Field dependencies aren't enforced when only the controlling field is updated, and the Data Import Wizard ignores them entirely.",
+   "f": "Field dependencies are enforced whenever the controlling field is updated, but the Data Import Wizard ignores them entirely.",
+   "x": "Updating just the controller skips the dependency check, as do Data Import Wizard loads, so a validation rule is needed when a bad combination must never be stored.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:field-dependencies",
+    "kt:validation-rules",
+    "kt:data-quality"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/field-dependencies.md"
+  },
+  {
+   "id": "sf-001015",
+   "area": "data-model",
+   "t": "A hierarchical relationship field prevents choosing a user who reports to the record's user directly or indirectly, so the chain can't loop.",
+   "f": "A hierarchical relationship field allows choosing any active user, including one who reports to the record's user, so loops must be prevented by validation rules.",
+   "x": "Cycle protection is what makes the field hierarchical: like the Manager field, it blocks picking a direct or indirect report, so automation can walk the chain safely.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:hierarchical-relationships",
+    "kt:user-management"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/hierarchical-relationships.md"
+  },
+  {
+   "id": "sf-001016",
+   "area": "data-model",
+   "t": "An approval step can route to the manager named on the record owner's user record, or to a custom hierarchical field used as the approver field.",
+   "f": "An approval step can route only to the submitter's manager via the standard Manager field; custom hierarchical fields can't be used as the approver field.",
+   "x": "Approvers can be resolved from the submitter's or record owner's Manager, and a custom hierarchical field can serve as the approver field when the approval chain differs from the reporting line.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:hierarchical-relationships",
+    "kt:approval-processes"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/hierarchical-relationships.md"
+  },
+  {
+   "id": "sf-001017",
+   "area": "data-model",
+   "t": "The User object can't be the master side of a master-detail relationship, so user-to-user links rely on lookup-style fields.",
+   "f": "The User object can be the master side of a master-detail relationship, so user-to-user links can use master-detail fields.",
+   "x": "The object reference lists User among the standard objects barred from being the master in a master-detail relationship, which is why hierarchical and lookup fields are used.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:hierarchical-relationships",
+    "kt:standard-objects",
+    "kt:lookup-vs-master-detail"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/hierarchical-relationships.md"
+  },
+  {
+   "id": "sf-001018",
+   "area": "development",
+   "t": "A method defined in a with sharing class still enforces sharing when a without sharing class calls it, because the mode comes from where it is defined.",
+   "f": "A method defined in a with sharing class drops sharing when a without sharing class calls it, because the mode comes from the calling class.",
+   "x": "Apex takes the sharing mode from the class that defines the method, not from its caller. Only inherited sharing classes adopt the caller's mode.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:platform-developer-certification"
+   ],
+   "concepts": [
+    "kt:apex-security-with-sharing",
+    "kt:salesforce-sharing-model"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/apex-security-with-sharing.md"
+  },
+  {
+   "id": "sf-001019",
+   "area": "development",
+   "t": "An Apex subclass declared with no sharing keyword runs in its parent class's sharing mode.",
+   "f": "An Apex subclass declared with no sharing keyword runs in the sharing mode of whichever class calls it.",
+   "x": "A subclass without its own keyword picks up its parent's declared mode. Taking the caller's mode at runtime is what inherited sharing does, and inner classes get nothing from their outer class.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:platform-developer-certification"
+   ],
+   "concepts": [
+    "kt:apex-security-with-sharing",
+    "kt:apex"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/apex-security-with-sharing.md"
+  },
+  {
+   "id": "sf-001020",
+   "area": "development",
+   "t": "Apex triggers can't declare a sharing keyword and run without sharing, so logic is best moved into handler classes that declare one.",
+   "f": "Apex triggers can't declare a sharing keyword and run with sharing, so logic is best moved into handler classes that declare one.",
+   "x": "Triggers have no sharing declaration and execute without sharing. Putting the logic in a handler class with an explicit keyword lets the developer control record access.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:platform-developer-certification"
+   ],
+   "concepts": [
+    "kt:apex-security-with-sharing",
+    "kt:apex-triggers"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/apex-security-with-sharing.md"
+  },
+  {
+   "id": "sf-001021",
+   "area": "development",
+   "t": "Annotating a test utility class with @IsTest excludes it from the org's Apex code size limit, an advantage a plain helper class lacks.",
+   "f": "Annotating a test utility class with @IsTest excludes it from code coverage calculations, but it still counts toward the Apex code size limit.",
+   "x": "The @IsTest annotation keeps the factory out of the org's Apex code size limit and restricts it to test context. The false version moves the benefit to coverage and keeps the size cost.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:test-data-factory",
+    "kt:apex-testing"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/test-data-factory.md"
+  },
+  {
+   "id": "sf-001022",
+   "area": "development",
+   "t": "An Apex test class can have only one @TestSetup method, and it isn't supported when the class uses @IsTest(SeeAllData=true).",
+   "f": "An Apex test class can have up to five @TestSetup methods, and they also run when the class uses @IsTest(SeeAllData=true).",
+   "x": "Test setup is limited to a single method per class and is incompatible with SeeAllData=true. Multiple setup methods are not allowed.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:test-data-factory",
+    "kt:seealldata"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/test-data-factory.md"
+  },
+  {
+   "id": "sf-001023",
+   "area": "development",
+   "t": "If a @TestSetup method hits a fatal error such as a DML exception, the whole test class fails and none of its tests run.",
+   "f": "If a @TestSetup method hits a fatal error such as a DML exception, only the first test method fails and the remaining tests still run.",
+   "x": "A setup failure takes down the entire test class, because every method depends on the shared data. No individual test continues after it.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:test-data-factory",
+    "kt:apex-testing"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/test-data-factory.md"
+  },
+  {
+   "id": "sf-001024",
+   "area": "devops-and-alm",
+   "t": "Data Mask & Seed is sold as a platform add-on for Enterprise and Unlimited editions, priced at 10% of net spend.",
+   "f": "Data Mask & Seed is included at no extra cost in Enterprise and Unlimited editions, with no separate add-on fee.",
+   "x": "It is a paid platform add-on for Enterprise and Unlimited editions, priced at 10% of net spend, not a free inclusion.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:data-mask-and-seed"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/data-mask-and-seed.md"
+  },
+  {
+   "id": "sf-001025",
+   "area": "devops-and-alm",
+   "t": "Data Mask & Seed can seed from a production org, a sandbox or a backup, but seeding from a backup requires Backup & Recover.",
+   "f": "Data Mask & Seed can seed from a production org, a sandbox or a backup, and seeding from a backup needs no other product.",
+   "x": "Backups are a valid seeding source only when Backup & Recover is in place, which is why the product integrates with it.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:data-mask-and-seed",
+    "kt:backup-and-recover"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/data-mask-and-seed.md"
+  },
+  {
+   "id": "sf-001026",
+   "area": "devops-and-alm",
+   "t": "A Data Mask & Seed Levels template takes root objects and a number of related-object levels below them to include.",
+   "f": "A Data Mask & Seed Generate template takes root objects and a number of related-object levels below them to include.",
+   "x": "Levels templates choose roots plus a depth of related objects. Generate templates create synthetic records instead of copying from a source, and Nodes templates add each object explicitly.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:data-mask-and-seed",
+    "kt:sandbox-templates"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/data-mask-and-seed.md"
+  },
+  {
+   "id": "sf-001027",
+   "area": "devops-and-alm",
+   "t": "In Trailhead's org development model, a release is combined in a shared Developer Pro sandbox and user-acceptance tested in a Partial Copy sandbox.",
+   "f": "In Trailhead's org development model, a release is combined in a Partial Copy sandbox and user-acceptance tested in a shared Developer Pro sandbox.",
+   "x": "Individual work in Developer sandboxes is merged in a shared Developer Pro sandbox to build the release, then UAT runs in a Partial Copy sandbox. The false statement swaps the two stages.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:release-management",
+    "kt:sandbox-types",
+    "kt:environment-strategy"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/release-management.md"
+  },
+  {
+   "id": "sf-001028",
+   "area": "devops-and-alm",
+   "t": "A deployment run list records the manual steps to do before and after a deployment, while a change list records what each person changed.",
+   "f": "A change list records the manual steps to do before and after a deployment, while a deployment run list records what each person changed.",
+   "x": "The run list captures setup that metadata can't carry, so it isn't forgotten; the change list tracks each person's changes in their development org. The false version swaps their roles.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:release-management"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/release-management.md"
+  },
+  {
+   "id": "sf-001029",
+   "area": "devops-and-alm",
+   "t": "Salesforce posts its seasonal upgrade dates on the Trust site up to a year in advance.",
+   "f": "Salesforce posts its seasonal upgrade dates on the Trust site up to 3 months in advance.",
+   "x": "Upgrade dates appear on Trust up to a year ahead, letting teams plan backward from the next two or three releases. About 3 months is when a release cycle begins, not how far ahead dates are published.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:release-management"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/release-management.md"
+  },
+  {
+   "id": "sf-001030",
+   "area": "identity",
+   "t": "The X.509 certificate uploaded to an app for the Salesforce JWT bearer flow can't exceed 4 KB; a DER-encoded file helps if it does.",
+   "f": "The X.509 certificate uploaded to an app for the Salesforce JWT bearer flow can't exceed 16 KB; a DER-encoded file helps if it does.",
+   "x": "Salesforce caps the signing certificate at 4 KB and suggests DER encoding to shrink an oversized file. 16 KB is not the documented limit.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:jwt-bearer-flow",
+    "kt:external-client-apps",
+    "kt:connected-apps"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/jwt-bearer-flow.md"
+  },
+  {
+   "id": "sf-001031",
+   "area": "identity",
+   "t": "Including the jti claim in a JWT bearer assertion makes Salesforce reject any token it has already seen, giving replay protection.",
+   "f": "Including the iat claim in a JWT bearer assertion makes Salesforce reject any token it has already seen, giving replay protection.",
+   "x": "The jti claim is a unique token identifier, and Salesforce refuses a jti it has seen before. The iat claim only records when the token was issued.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:jwt-bearer-flow",
+    "kt:oauth-2-0"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/jwt-bearer-flow.md"
+  },
+  {
+   "id": "sf-001032",
+   "area": "identity",
+   "t": "For CLI JWT logins, the DX guide recommends a connected app rather than an external client app when the Dev Hub will create scratch orgs or sandboxes.",
+   "f": "For CLI JWT logins, the DX guide recommends an external client app rather than a connected app when the Dev Hub will create scratch orgs or sandboxes.",
+   "x": "The guide generally prefers external client apps, but it carves out Dev Hubs that create scratch orgs or sandboxes, where a connected app is recommended so the new orgs can be authorized with the Dev Hub's key.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:jwt-bearer-flow",
+    "kt:salesforce-cli",
+    "kt:scratch-orgs",
+    "kt:connected-apps"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/jwt-bearer-flow.md"
+  },
+  {
+   "id": "sf-001033",
+   "area": "identity",
+   "t": "In Setup, the Add Multiple Users option creates up to 10 users at a time.",
+   "f": "In Setup, the Add Multiple Users option creates up to 50 users at a time.",
+   "x": "Add Multiple Users is a quick-entry form capped at 10 users per use. Larger loads need another approach, so 50 overstates the limit.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:user-management"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/user-management.md"
+  },
+  {
+   "id": "sf-001034",
+   "area": "identity",
+   "t": "Freezing a user blocks login at once but keeps the license in use; only deactivating the user releases the license.",
+   "f": "Freezing a user blocks login at once and releases the license, just as deactivating the user does.",
+   "x": "Freezing is a stopgap while dependencies are untangled, and the frozen user still holds a license seat. Deactivation is the only step that frees it.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:user-management",
+    "kt:user-licenses"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/user-management.md"
+  },
+  {
+   "id": "sf-001035",
+   "area": "identity",
+   "t": "A Salesforce username must be unique across all Salesforce orgs, while the same email address can be reused across orgs.",
+   "f": "A Salesforce username only has to be unique within its own org, while an email address must be unique across all orgs.",
+   "x": "Usernames are global identifiers in email format, so no two orgs can share one. Email addresses carry no such restriction and can repeat across orgs.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:user-management",
+    "kt:salesforce-identity"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/user-management.md"
+  },
+  {
+   "id": "sf-001036",
+   "area": "integration",
+   "t": "A Bulk API 1.0 batch can hold at most 10,000 records and 10 MB of data.",
+   "f": "A Bulk API 1.0 batch can hold at most 50,000 records and 100 MB of data.",
+   "x": "Each Bulk API 1.0 batch is capped at 10,000 records, 10 MB and 10 million characters. The larger figures don't apply to 1.0 batches.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:bulk-api-1",
+    "kt:bulk-api-allocations"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/bulk-api-1.md"
+  },
+  {
+   "id": "sf-001037",
+   "area": "integration",
+   "t": "Bulk API 1.0 PK chunking splits a query into ID ranges of 100,000 records by default, with a maximum chunk size of 250,000.",
+   "f": "Bulk API 1.0 PK chunking splits a query into ID ranges of 250,000 records by default, with a maximum chunk size of 1,000,000.",
+   "x": "The Sforce-Enable-PKChunking header defaults to 100,000-record chunks and allows up to 250,000. The higher numbers overstate both the default and the ceiling.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:bulk-api-1",
+    "kt:large-data-volumes",
+    "kt:soql"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/bulk-api-1.md"
+  },
+  {
+   "id": "sf-001038",
+   "area": "integration",
+   "t": "A Bulk API 1.0 job's contentType defaults to XML, whereas Bulk API 2.0 ingest jobs accept only CSV.",
+   "f": "A Bulk API 1.0 job's contentType defaults to CSV, whereas Bulk API 2.0 ingest jobs accept only JSON.",
+   "x": "Bulk API 1.0 defaults to XML and also supports CSV, JSON and ZIP variants for attachments. Bulk API 2.0 is limited to CSV, not JSON.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:bulk-api-1",
+    "kt:bulk-api-2"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/bulk-api-1.md"
+  },
+  {
+   "id": "sf-001039",
+   "area": "platform-architecture",
+   "t": "During a recursive save, assignment rules and after-save record-triggered flows are skipped, but before triggers and validation rules run again.",
+   "f": "During a recursive save, before triggers and validation rules are skipped, but assignment rules and after-save record-triggered flows run again.",
+   "x": "A recursive pass skips the middle steps of the save order, including assignment rules and after-save flows, while early steps such as before triggers and validation repeat. The false version swaps which steps are skipped.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:recursive-save",
+    "kt:order-of-execution",
+    "kt:record-triggered-flow"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/recursive-save.md"
+  },
+  {
+   "id": "sf-001040",
+   "area": "platform-architecture",
+   "t": "In the extra trigger run caused by a workflow field update, Trigger.old holds the values from before the user's original update.",
+   "f": "In the extra trigger run caused by a workflow field update, Trigger.old holds the values that the workflow field update just set.",
+   "x": "Salesforce's example changes a field from 1 to 10, workflow bumps it to 11, and Trigger.old in the repeat run still shows 1. It does not reflect the workflow's intermediate value.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:recursive-save",
+    "kt:workflow-rules",
+    "kt:apex-triggers"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/recursive-save.md"
+  },
+  {
+   "id": "sf-001041",
+   "area": "platform-architecture",
+   "t": "Salesforce measured bulk same-record updates as roughly 10 to 20 times faster in before-save flows than in Workflow Rules or Process Builder.",
+   "f": "Salesforce measured bulk same-record updates as roughly 2 to 3 times faster in before-save flows than in Workflow Rules or Process Builder.",
+   "x": "Before-save flows change the record in memory and avoid a recursive save, which Salesforce measured at about 10 to 20 times faster in bulk. The smaller multiple understates the gap.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:recursive-save",
+    "kt:record-triggered-flow",
+    "kt:process-builder"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/recursive-save.md"
+  },
+  {
+   "id": "sf-001042",
+   "area": "platform-architecture",
+   "t": "Anyone can subscribe to Salesforce Trust Notifications, even without a Salesforce user license.",
+   "f": "Only users with an active Salesforce user license and admin rights can subscribe to Salesforce Trust Notifications.",
+   "x": "Trust Notifications are open to any subscriber who confirms by email, with no license required. Admin-only delivery applies to Salesforce's incident emails and webinar invites, not to Trust subscriptions.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:trust-and-status-site"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/trust-and-status-site.md"
+  },
+  {
+   "id": "sf-001043",
+   "area": "platform-architecture",
+   "t": "A sandbox refresh adds the source instance's Trust Notification subscribers automatically, but after an org migration you must update your subscription yourself.",
+   "f": "An org migration moves your Trust Notification subscription automatically, but after a sandbox refresh you must update the subscription yourself.",
+   "x": "Refreshes copy subscribers to the destination instance, while org migrations leave the old subscription in place. The false version reverses which event is handled for you.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:trust-and-status-site",
+    "kt:instance-refresh-and-org-migration",
+    "kt:sandbox-types"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/trust-and-status-site.md"
+  },
+  {
+   "id": "sf-001044",
+   "area": "platform-architecture",
+   "t": "During an incident, Salesforce's Critical Incident Center updates the Trust site roughly every 30 minutes.",
+   "f": "During an incident, Salesforce's Critical Incident Center updates the Trust site roughly every 2 hours.",
+   "x": "The around-the-clock Critical Incident Center posts Trust updates about every 30 minutes while an incident is open. A 2-hour cadence is far slower than the stated practice.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:trust-and-status-site"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/trust-and-status-site.md"
+  },
+  {
+   "id": "sf-001045",
+   "area": "public-sector-and-compliance",
+   "t": "OCEG's GRC Capability Model organizes integrated GRC into four components: Learn, Align, Perform and Review.",
+   "f": "OCEG's GRC Capability Model organizes integrated GRC into four components: Plan, Do, Check and Act.",
+   "x": "The OCEG \"Red Book\" groups its capabilities under Learn, Align, Perform and Review. Plan-Do-Check-Act is a generic improvement cycle, not the components of OCEG's model.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:governance-risk-and-compliance"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/governance-risk-and-compliance.md"
+  },
+  {
+   "id": "sf-001046",
+   "area": "public-sector-and-compliance",
+   "t": "Covering a risk with cyber insurance or outsourcing the activity transfers the risk rather than mitigating it with controls.",
+   "f": "Covering a risk with cyber insurance or outsourcing the activity mitigates the risk with controls rather than transferring it.",
+   "x": "Risk treatment options are mitigate with controls, accept within tolerance, or transfer. Insurance and outsourcing shift the impact to another party, which is transfer, not mitigation.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:governance-risk-and-compliance"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/governance-risk-and-compliance.md"
+  },
+  {
+   "id": "sf-001047",
+   "area": "public-sector-and-compliance",
+   "t": "In compliance work, a change advisory board is an operational control, while allowlisting is a technical control.",
+   "f": "In compliance work, a change advisory board is a technical control, while allowlisting is an operational control.",
+   "x": "Controls are grouped as management (policies, regulations), operational (processes such as a change advisory board) and technical (tooling such as allowlisting). The false version swaps the two categories.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:governance-risk-and-compliance"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/governance-risk-and-compliance.md"
+  },
+  {
+   "id": "sf-001048",
+   "area": "public-sector-and-compliance",
+   "t": "In NIST SP 800-60, Volume I describes the categorization method, while Volume II catalogs information types with provisional impact levels.",
+   "f": "In NIST SP 800-60, Volume II describes the categorization method, while Volume I catalogs information types with provisional impact levels.",
+   "x": "Volume I is the methodology and Volume II holds the appendices of information types, provisional Low/Moderate/High ratings and their rationale. The false statement swaps the two volumes.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:nist-sp-800-60",
+    "kt:fips-199"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/nist-sp-800-60.md"
+  },
+  {
+   "id": "sf-001049",
+   "area": "public-sector-and-compliance",
+   "t": "Under SP 800-60, a single information type such as public data may be rated not applicable for confidentiality, but a whole system may not.",
+   "f": "Under SP 800-60, a whole system may be rated not applicable for confidentiality when every information type it handles is public data.",
+   "x": "Not applicable is allowed for an individual information type, but the guide never lets a system's confidentiality rating fall to not applicable, even if all its data is public.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:nist-sp-800-60",
+    "kt:data-classification"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/nist-sp-800-60.md"
+  },
+  {
+   "id": "sf-001050",
+   "area": "public-sector-and-compliance",
+   "t": "FedRAMP has cloud providers record their SP 800-60 based categorization in the FIPS 199 Categorization Template, Appendix K of the System Security Plan.",
+   "f": "FedRAMP has cloud providers record their SP 800-60 based categorization in the FIPS 199 Categorization Template, Appendix A of the System Security Plan.",
+   "x": "FedRAMP points providers to FIPS 199 plus SP 800-60 Volume II Rev. 1 and asks for the result in the Appendix K template of the SSP, not another appendix.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:nist-sp-800-60",
+    "kt:fedramp"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/nist-sp-800-60.md"
+  },
+  {
+   "id": "sf-001051",
+   "area": "security-and-sharing",
+   "t": "Lightning's CSP sets script-src to 'self', so a third-party JavaScript library must be uploaded as a static resource rather than loaded from a CDN.",
+   "f": "Lightning's CSP sets script-src to any Trusted URL, so a third-party JavaScript library can be loaded from a CDN once its host is trusted.",
+   "x": "Script sources stay locked to the org, and Trusted URL flags cover connect, font, frame, image, media and style directives but not scripts. Libraries therefore go in static resources.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:content-security-policy",
+    "kt:lightning-web-security"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/content-security-policy.md"
+  },
+  {
+   "id": "sf-001052",
+   "area": "security-and-sharing",
+   "t": "Salesforce advises keeping an org's generated CSP header under 12 KB, since problems have been reported as headers approach 16 KB.",
+   "f": "Salesforce advises keeping an org's generated CSP header under 64 KB, since problems have been reported as headers approach 128 KB.",
+   "x": "Every Trusted URL adds to the header, and trouble starts around 16 KB, so the guidance is to stay under 12 KB. The larger figures are far beyond what proxies and browsers tolerate here.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:content-security-policy",
+    "kt:metadata-api"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/content-security-policy.md"
+  },
+  {
+   "id": "sf-001053",
+   "area": "security-and-sharing",
+   "t": "In API versions 50.0 to 58.0, a Trusted URL saved with no directive flags set silently defaulted to img-src only.",
+   "f": "In API versions 50.0 to 58.0, a Trusted URL saved with no directive flags set silently defaulted to connect-src only.",
+   "x": "Older API versions fell back to the image directive when no flag was chosen. Since API 59.0 at least one directive or permission flag must be true explicitly.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:content-security-policy",
+    "kt:metadata-api"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/content-security-policy.md"
+  },
+  {
+   "id": "sf-001054",
+   "area": "security-and-sharing",
+   "t": "Visualforce standard components escape their output by default, and setting escape=\"false\" makes the developer responsible for validating it.",
+   "f": "Visualforce standard components leave their output unescaped by default, and setting escape=\"true\" makes the platform responsible for validating it.",
+   "x": "Escaping is on by default for standard Visualforce components. Turning it off with escape=\"false\" is what opens the door to XSS unless the developer validates the output.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:cross-site-scripting",
+    "kt:visualforce"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/cross-site-scripting.md"
+  },
+  {
+   "id": "sf-001055",
+   "area": "security-and-sharing",
+   "t": "To write a URL parameter such as retURL into a JavaScript string on a Visualforce page safely, wrap the merge field in JSENCODE.",
+   "f": "To write a URL parameter such as retURL into a JavaScript string on a Visualforce page safely, wrap the merge field in URLENCODE.",
+   "x": "Encoding must match the output context, and a JavaScript string needs JavaScript encoding, which JSENCODE provides. URL encoding targets a different context.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:cross-site-scripting",
+    "kt:visualforce"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/cross-site-scripting.md"
+  },
+  {
+   "id": "sf-001056",
+   "area": "security-and-sharing",
+   "t": "Lightning Web Security sanitizes HTML and SVG strings that components insert via innerHTML, but it does not sanitize input text.",
+   "f": "Lightning Web Security sanitizes input text that users type into components, but it does not sanitize HTML strings inserted via innerHTML.",
+   "x": "LWS filters markup written to the DOM through properties like innerHTML down to allowlisted elements and attributes. It leaves raw input text alone, so output encoding is still needed.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:cross-site-scripting",
+    "kt:lightning-web-security",
+    "kt:lightning-web-components"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/cross-site-scripting.md"
+  },
+  {
+   "id": "sf-001057",
+   "area": "security-and-sharing",
+   "t": "The org-wide session timeout picklist in Session Settings ranges from 15 minutes to 24 hours.",
+   "f": "The org-wide session timeout picklist in Session Settings ranges from 5 minutes to 12 hours.",
+   "x": "The timeout values run from FifteenMinutes up to TwentyFourHours, with 90 minutes added in API 58.0. Neither 5 minutes nor a 12-hour ceiling matches the picklist.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:session-settings",
+    "kt:metadata-api"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/session-settings.md"
+  },
+  {
+   "id": "sf-001058",
+   "area": "security-and-sharing",
+   "t": "Sessions that use JWT-based access tokens ignore the Session Settings timeout and follow the connected app or external client app policy instead.",
+   "f": "Sessions that use JWT-based access tokens ignore the connected app or external client app policy and follow the Session Settings timeout instead.",
+   "x": "For JWT-based access tokens the timeout is owned by the app's policy, not the org-wide page. The org setting only governs ordinary UI sessions.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:session-settings",
+    "kt:salesforce-identity"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/session-settings.md"
+  },
+  {
+   "id": "sf-001059",
+   "area": "security-and-sharing",
+   "t": "Most community licenses cap external user sessions at 24 hours, while External Identity licenses allow sessions of up to 7 days.",
+   "f": "External Identity licenses cap external user sessions at 24 hours, while most community licenses allow sessions of up to 7 days.",
+   "x": "Profile session settings for external users have license-dependent ceilings: 24 hours for most community licenses and up to 7 days for External Identity. The false statement swaps them.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:session-settings",
+    "kt:profiles",
+    "kt:experience-cloud"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/session-settings.md"
+  },
+  {
+   "id": "sf-001060",
+   "area": "architecture-practice",
+   "t": "Salesforce's commerce guidance estimates TCO as initial costs plus ongoing costs multiplied by the timeframe, and says ongoing costs usually dominate.",
+   "f": "Salesforce's commerce guidance estimates TCO as initial costs plus ongoing costs multiplied by the timeframe, and says initial costs usually dominate.",
+   "x": "The formula multiplies ongoing costs by the timeframe, and the guidance notes that this ongoing portion, not the upfront spend, is usually the larger share.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:total-cost-of-ownership"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/total-cost-of-ownership.md"
+  },
+  {
+   "id": "sf-001061",
+   "area": "architecture-practice",
+   "t": "To lower TCO, Well-Architected guidance prefers prebuilt platform services first, then AppExchange apps, then low-code customization before code.",
+   "f": "To lower TCO, Well-Architected guidance prefers custom code first, then low-code customization, then AppExchange apps before prebuilt platform services.",
+   "x": "Standard features pick up platform innovation with each release, while custom replicas must be maintained by the team, so the order starts with prebuilt services and ends with code.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:total-cost-of-ownership",
+    "kt:well-architected-framework",
+    "kt:build-vs-buy-decisions"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/total-cost-of-ownership.md"
+  },
+  {
+   "id": "sf-001062",
+   "area": "architecture-practice",
+   "t": "License changes must be mirrored into sandboxes, by refreshing them or using the Match Production License tool, or testing diverges from production.",
+   "f": "License changes flow into existing sandboxes automatically within a day, so no refresh or Match Production License step is needed.",
+   "x": "Sandboxes don't pick up new licenses on their own; a refresh or the Match Production License tool keeps them aligned so tests reflect production.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:total-cost-of-ownership",
+    "kt:user-licenses",
+    "kt:permission-set-licenses"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/total-cost-of-ownership.md"
+  },
+  {
+   "id": "sf-001063",
+   "area": "architecture-practice",
+   "t": "Salesforce architects advise finishing LDV load tests at least three to four weeks before go-live, in a sandbox separate from UAT.",
+   "f": "Salesforce architects advise finishing LDV load tests at least one week before go-live, in the same sandbox used for UAT.",
+   "x": "Load tests need a dedicated sandbox because a shared UAT sandbox is unusable for functional testing while they run, and three to four weeks leaves time to fix what they reveal.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [
+    "kt:business-analyst-certification"
+   ],
+   "concepts": [
+    "kt:user-acceptance-testing",
+    "kt:large-data-volumes",
+    "kt:sandbox-types"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/user-acceptance-testing.md"
   }
  ]
 }

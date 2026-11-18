@@ -1,0 +1,17 @@
+id: sf-000982
+product_area: public-sector-and-compliance
+true_statement: When an existing production org is migrated into Government Cloud, its org ID and record IDs stay the same.
+false_statement: When an existing production org is migrated into Government Cloud, it receives a new org ID and new record IDs.
+explanation: Moving into Government Cloud is an instance migration that keeps the org ID and every record ID. What changes are hosts, IP ranges and WSDLs, which is why hard-coded instance references must be removed.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/government-cloud.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: fb1310d12a662c9a051ee91636ada0fd3370b726
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:government-cloud
+difficulty: 2
+created: '2026-11-18'
+status: active

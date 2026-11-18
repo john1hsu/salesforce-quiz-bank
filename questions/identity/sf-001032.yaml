@@ -1,0 +1,20 @@
+id: sf-001032
+product_area: identity
+true_statement: For CLI JWT logins, the DX guide recommends a connected app rather than an external client app when the Dev Hub will create scratch orgs or sandboxes.
+false_statement: For CLI JWT logins, the DX guide recommends an external client app rather than a connected app when the Dev Hub will create scratch orgs or sandboxes.
+explanation: The guide generally prefers external client apps, but it carves out Dev Hubs that create scratch orgs or sandboxes, where a connected app is recommended so the new orgs can be authorized with the Dev Hub's key.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/jwt-bearer-flow.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: 41ffa8206df186e4ad3175370b9281f7a19783bf
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:jwt-bearer-flow
+- kt:salesforce-cli
+- kt:scratch-orgs
+- kt:connected-apps
+difficulty: 3
+created: '2026-11-18'
+status: active

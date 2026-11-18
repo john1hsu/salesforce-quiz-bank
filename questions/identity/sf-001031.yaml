@@ -1,0 +1,18 @@
+id: sf-001031
+product_area: identity
+true_statement: Including the jti claim in a JWT bearer assertion makes Salesforce reject any token it has already seen, giving replay protection.
+false_statement: Including the iat claim in a JWT bearer assertion makes Salesforce reject any token it has already seen, giving replay protection.
+explanation: The jti claim is a unique token identifier, and Salesforce refuses a jti it has seen before. The iat claim only records when the token was issued.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/jwt-bearer-flow.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: 41ffa8206df186e4ad3175370b9281f7a19783bf
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:jwt-bearer-flow
+- kt:oauth-2-0
+difficulty: 3
+created: '2026-11-18'
+status: active

@@ -1,0 +1,18 @@
+id: sf-000988
+product_area: security-and-sharing
+true_statement: Enterprise, Unlimited and Performance orgs each get five free Salesforce Integration user licenses, and Developer Edition gets one.
+false_statement: Enterprise, Unlimited and Performance orgs each get ten free Salesforce Integration user licenses, and Developer Edition gets two.
+explanation: The API-only Integration license comes five to an Enterprise, Unlimited or Performance org and one to a Developer Edition org. The doubled counts are wrong.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/user-licenses.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: 6c6d47d7e8967af6ae3d2279f94887e10e22061e
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:user-licenses
+- kt:integration-security
+difficulty: 2
+created: '2026-11-18'
+status: active

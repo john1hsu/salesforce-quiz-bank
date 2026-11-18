@@ -1,0 +1,19 @@
+id: sf-001040
+product_area: platform-architecture
+true_statement: In the extra trigger run caused by a workflow field update, Trigger.old holds the values from before the user's original update.
+false_statement: In the extra trigger run caused by a workflow field update, Trigger.old holds the values that the workflow field update just set.
+explanation: Salesforce's example changes a field from 1 to 10, workflow bumps it to 11, and Trigger.old in the repeat run still shows 1. It does not reflect the workflow's intermediate value.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/recursive-save.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: 41000c70c873a8ac077af4f1c30687ddc7fcad3b
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:recursive-save
+- kt:workflow-rules
+- kt:apex-triggers
+difficulty: 3
+created: '2026-11-18'
+status: active

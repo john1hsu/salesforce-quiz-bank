@@ -1,0 +1,20 @@
+id: sf-001000
+product_area: automation
+true_statement: An @InvocableMethod must return a list the same size and order as its input list, so failed inputs still get a result entry.
+false_statement: An @InvocableMethod may return a shorter list than its input, so failed inputs can simply be dropped from the results.
+explanation: The i-th output answers the i-th input, which is what lets the action run in bulk. Dropping failed rows breaks that mapping, so the pattern is a result wrapper that reports success or failure.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/invocable-apex-actions.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: 3091749928206e9c2ed11d618da4756d3b2481de
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:platform-developer-certification
+concepts:
+- kt:invocable-apex-actions
+- kt:bulkification
+difficulty: 2
+created: '2026-11-18'
+status: active

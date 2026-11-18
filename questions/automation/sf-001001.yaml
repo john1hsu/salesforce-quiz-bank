@@ -1,0 +1,20 @@
+id: sf-001001
+product_area: automation
+true_statement: An @InvocableVariable must be a public or global instance variable; static, final and private variables can't be used.
+false_statement: An @InvocableVariable can be a static or private variable, as long as the annotation sets a label for it.
+explanation: Invocable variables must be public or global instance members. Static, local, final, private and protected variables are not allowed, and a label doesn't change that.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/invocable-apex-actions.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: 3091749928206e9c2ed11d618da4756d3b2481de
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:platform-developer-certification
+concepts:
+- kt:invocable-apex-actions
+- kt:apex
+difficulty: 2
+created: '2026-11-18'
+status: active

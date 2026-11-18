@@ -1,0 +1,17 @@
+id: sf-001047
+product_area: public-sector-and-compliance
+true_statement: In compliance work, a change advisory board is an operational control, while allowlisting is a technical control.
+false_statement: In compliance work, a change advisory board is a technical control, while allowlisting is an operational control.
+explanation: Controls are grouped as management (policies, regulations), operational (processes such as a change advisory board) and technical (tooling such as allowlisting). The false version swaps the two categories.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/governance-risk-and-compliance.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: 27945bad22681889ba1b640d505afb296babb7ea
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:governance-risk-and-compliance
+difficulty: 2
+created: '2026-11-18'
+status: active

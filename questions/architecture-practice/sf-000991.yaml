@@ -1,0 +1,17 @@
+id: sf-000991
+product_area: architecture-practice
+true_statement: In Salesforce's LEVERS of Change model, Rewards and Structure are the structural levers, while Values and Enablement are the individual levers.
+false_statement: In Salesforce's LEVERS of Change model, Values and Enablement are the structural levers, while Rewards and Structure are the individual levers.
+explanation: LEVERS groups its six levers as social (Leadership, Ecosystem), individual (Values, Enablement) and structural (Rewards, Structure). The false version swaps the individual and structural groups.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/change-management-and-adoption.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: 493866c69d89f36e616cba01381cbf6fba0cfb91
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:change-management-and-adoption
+difficulty: 2
+created: '2026-11-18'
+status: active

@@ -1,0 +1,18 @@
+id: sf-001008
+product_area: clouds-and-products
+true_statement: The AgentExchange Go-To-Market App for private offers supports only 12-month contracts paid NET30 by ACH debit in USD, and orders don't auto-renew.
+false_statement: The AgentExchange Go-To-Market App for private offers supports only 12-month contracts paid NET30 by ACH debit in USD, and orders auto-renew yearly.
+explanation: Private-offer orders from the Go-To-Market App don't renew automatically in Winter '27; cancellations and partner-initiated refunds aren't supported yet either.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/agentexchange.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: 5d89070a3d3662cd5f12b5e146aabef2f97c22bd
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:agentexchange
+- kt:agentexchange-go-to-market-app
+difficulty: 3
+created: '2026-11-18'
+status: active

@@ -1,0 +1,17 @@
+id: sf-000981
+product_area: platform-architecture
+true_statement: Because Salesforce Edge Network uses data-center-specific certificates, clients that pin should pin the intermediate certificate rather than the leaf.
+false_statement: Because Salesforce Edge Network uses one certificate shared by all data centers, clients that pin should pin the leaf certificate rather than the intermediate.
+explanation: Edge Network serves certificates specific to each data center, so a pinned leaf can break when traffic lands elsewhere. Pinning the intermediate certificate is the documented guidance.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/salesforce-edge-network.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: eb74ed1c24a8c6de4fa6b7e843f356b62718ddce
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:salesforce-edge-network
+difficulty: 3
+created: '2026-11-18'
+status: active

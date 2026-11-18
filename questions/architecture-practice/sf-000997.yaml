@@ -1,0 +1,18 @@
+id: sf-000997
+product_area: architecture-practice
+true_statement: 'Trailhead splits requirements elicitation into three stages: Prepare, Conduct and Confirm.'
+false_statement: 'Trailhead splits requirements elicitation into three stages: Prepare, Prioritize and Close.'
+explanation: Prepare builds a picture of the business need, Conduct meets stakeholders, and Confirm checks that stated requirements match the real problem. Prioritize and Close are not stages in that model.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/requirements-gathering.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: 80ed56981817dc8a44709b6f5aabce022b5d1f26
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:requirements-gathering
+- kt:business-analyst
+difficulty: 1
+created: '2026-11-18'
+status: active

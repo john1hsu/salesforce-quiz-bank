@@ -1,0 +1,18 @@
+id: sf-001036
+product_area: integration
+true_statement: A Bulk API 1.0 batch can hold at most 10,000 records and 10 MB of data.
+false_statement: A Bulk API 1.0 batch can hold at most 50,000 records and 100 MB of data.
+explanation: Each Bulk API 1.0 batch is capped at 10,000 records, 10 MB and 10 million characters. The larger figures don't apply to 1.0 batches.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/bulk-api-1.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: d7bb7537c0bf1fcd0b63f7fe730e7abae223558e
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:bulk-api-1
+- kt:bulk-api-allocations
+difficulty: 2
+created: '2026-11-18'
+status: active

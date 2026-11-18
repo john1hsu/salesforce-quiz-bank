@@ -1,0 +1,17 @@
+id: sf-000974
+product_area: integration
+true_statement: MuleSoft architects advise adding an Experience API only when consumers need a different contract or the Process API definition is expected to change.
+false_statement: MuleSoft architects advise adding an Experience API only when the system of record behind the System API is expected to be replaced.
+explanation: The layers are not mandatory, and an Experience layer earns its cost only when consumers need their own contract or the Process API is likely to change. Swapping a backend system is what the System layer insulates against, not the reason for an Experience API.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/api-led-connectivity.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: 233bbeccdf04d1c3ff31b83a78c1a80956397e3e
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:api-led-connectivity
+difficulty: 3
+created: '2026-11-18'
+status: active

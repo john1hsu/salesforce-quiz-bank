@@ -1,0 +1,19 @@
+id: sf-001059
+product_area: security-and-sharing
+true_statement: Most community licenses cap external user sessions at 24 hours, while External Identity licenses allow sessions of up to 7 days.
+false_statement: External Identity licenses cap external user sessions at 24 hours, while most community licenses allow sessions of up to 7 days.
+explanation: 'Profile session settings for external users have license-dependent ceilings: 24 hours for most community licenses and up to 7 days for External Identity. The false statement swaps them.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/session-settings.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: 97c95830a5265c524e0587fbd909bdc9c3d2d4d2
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:session-settings
+- kt:profiles
+- kt:experience-cloud
+difficulty: 3
+created: '2026-11-18'
+status: active

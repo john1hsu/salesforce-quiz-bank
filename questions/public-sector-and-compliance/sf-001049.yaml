@@ -1,0 +1,18 @@
+id: sf-001049
+product_area: public-sector-and-compliance
+true_statement: Under SP 800-60, a single information type such as public data may be rated not applicable for confidentiality, but a whole system may not.
+false_statement: Under SP 800-60, a whole system may be rated not applicable for confidentiality when every information type it handles is public data.
+explanation: Not applicable is allowed for an individual information type, but the guide never lets a system's confidentiality rating fall to not applicable, even if all its data is public.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/nist-sp-800-60.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: c8288975cf51cc4a255a44356b3ce9bf5821e9bc
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:nist-sp-800-60
+- kt:data-classification
+difficulty: 3
+created: '2026-11-18'
+status: active

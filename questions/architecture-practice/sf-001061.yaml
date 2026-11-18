@@ -1,0 +1,19 @@
+id: sf-001061
+product_area: architecture-practice
+true_statement: To lower TCO, Well-Architected guidance prefers prebuilt platform services first, then AppExchange apps, then low-code customization before code.
+false_statement: To lower TCO, Well-Architected guidance prefers custom code first, then low-code customization, then AppExchange apps before prebuilt platform services.
+explanation: Standard features pick up platform innovation with each release, while custom replicas must be maintained by the team, so the order starts with prebuilt services and ends with code.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/total-cost-of-ownership.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: 7c5a3b47efe89bc8ab2c67d5ecc9590dba8f7ce3
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:total-cost-of-ownership
+- kt:well-architected-framework
+- kt:build-vs-buy-decisions
+difficulty: 2
+created: '2026-11-18'
+status: active

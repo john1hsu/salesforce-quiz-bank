@@ -1,0 +1,18 @@
+id: sf-001034
+product_area: identity
+true_statement: Freezing a user blocks login at once but keeps the license in use; only deactivating the user releases the license.
+false_statement: Freezing a user blocks login at once and releases the license, just as deactivating the user does.
+explanation: Freezing is a stopgap while dependencies are untangled, and the frozen user still holds a license seat. Deactivation is the only step that frees it.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/user-management.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: 38dd6c6fa1707cb5341e7ded479f933de4a79ef9
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:user-management
+- kt:user-licenses
+difficulty: 2
+created: '2026-11-18'
+status: active

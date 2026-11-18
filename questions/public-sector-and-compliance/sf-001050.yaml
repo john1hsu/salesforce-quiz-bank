@@ -1,0 +1,18 @@
+id: sf-001050
+product_area: public-sector-and-compliance
+true_statement: FedRAMP has cloud providers record their SP 800-60 based categorization in the FIPS 199 Categorization Template, Appendix K of the System Security Plan.
+false_statement: FedRAMP has cloud providers record their SP 800-60 based categorization in the FIPS 199 Categorization Template, Appendix A of the System Security Plan.
+explanation: FedRAMP points providers to FIPS 199 plus SP 800-60 Volume II Rev. 1 and asks for the result in the Appendix K template of the SSP, not another appendix.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/nist-sp-800-60.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: c8288975cf51cc4a255a44356b3ce9bf5821e9bc
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:nist-sp-800-60
+- kt:fedramp
+difficulty: 2
+created: '2026-11-18'
+status: active

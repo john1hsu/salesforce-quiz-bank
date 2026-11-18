@@ -1,0 +1,18 @@
+id: sf-001009
+product_area: data-cloud-and-ai
+true_statement: A Data 360 data graph stores the joined fields of its primary DMO and related DMOs as one read-only JSON record per entity.
+false_statement: A Data 360 data graph stores the joined fields of its primary DMO and related DMOs as one editable JSON record per entity that apps can write back to.
+explanation: Data graphs precompute and materialize the joins into a read-only JSON blob, so they serve as a fast lookup source rather than a place to write data.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/data-graphs.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: 5d2335c57ab467f92a3acf104e83cdcd2c808e1a
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:data-graphs
+- kt:data-model-objects
+difficulty: 1
+created: '2026-11-18'
+status: active

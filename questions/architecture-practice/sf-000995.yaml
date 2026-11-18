@@ -1,0 +1,18 @@
+id: sf-000995
+product_area: architecture-practice
+true_statement: On Heroku's Fir generation, log export uses OpenTelemetry in place of the syslog drains used on Cedar.
+false_statement: On Heroku's Fir generation, log export uses syslog drains in place of the OpenTelemetry pipeline used on Cedar.
+explanation: Fir, the Kubernetes-based generation, swaps syslog drains for OpenTelemetry. The false statement reverses which generation uses which mechanism.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/heroku-architect-certification.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: d5c3a37cf2f91ba4e2a7f581556b8d234f1ca401
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:heroku-architect-certification
+- kt:heroku-fir
+difficulty: 2
+created: '2026-11-18'
+status: active

@@ -1,0 +1,17 @@
+id: sf-001044
+product_area: platform-architecture
+true_statement: During an incident, Salesforce's Critical Incident Center updates the Trust site roughly every 30 minutes.
+false_statement: During an incident, Salesforce's Critical Incident Center updates the Trust site roughly every 2 hours.
+explanation: The around-the-clock Critical Incident Center posts Trust updates about every 30 minutes while an incident is open. A 2-hour cadence is far slower than the stated practice.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/trust-and-status-site.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: d5fbec4eecbe58858559a71031b3ee4b5df57b80
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:trust-and-status-site
+difficulty: 2
+created: '2026-11-18'
+status: active

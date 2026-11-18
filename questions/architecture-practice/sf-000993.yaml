@@ -1,0 +1,18 @@
+id: sf-000993
+product_area: architecture-practice
+true_statement: Showing in-app guidance prompts on an Experience Cloud site requires an Aura-template site, plus purchased Enablement and PRM.
+false_statement: Showing in-app guidance prompts on an Experience Cloud site requires an LWR-template site, plus purchased Enablement and PRM.
+explanation: In-app prompts on Experience Cloud carry extra prerequisites, and one of them is that the site uses an Aura template. An LWR-template site doesn't meet that requirement.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/change-management-and-adoption.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: 493866c69d89f36e616cba01381cbf6fba0cfb91
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:change-management-and-adoption
+- kt:in-app-guidance
+difficulty: 3
+created: '2026-11-18'
+status: active

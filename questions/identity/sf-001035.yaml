@@ -1,0 +1,18 @@
+id: sf-001035
+product_area: identity
+true_statement: A Salesforce username must be unique across all Salesforce orgs, while the same email address can be reused across orgs.
+false_statement: A Salesforce username only has to be unique within its own org, while an email address must be unique across all orgs.
+explanation: Usernames are global identifiers in email format, so no two orgs can share one. Email addresses carry no such restriction and can repeat across orgs.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/user-management.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: 38dd6c6fa1707cb5341e7ded479f933de4a79ef9
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:user-management
+- kt:salesforce-identity
+difficulty: 1
+created: '2026-11-18'
+status: active

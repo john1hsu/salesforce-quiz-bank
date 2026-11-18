@@ -1,0 +1,18 @@
+id: sf-001051
+product_area: security-and-sharing
+true_statement: Lightning's CSP sets script-src to 'self', so a third-party JavaScript library must be uploaded as a static resource rather than loaded from a CDN.
+false_statement: Lightning's CSP sets script-src to any Trusted URL, so a third-party JavaScript library can be loaded from a CDN once its host is trusted.
+explanation: Script sources stay locked to the org, and Trusted URL flags cover connect, font, frame, image, media and style directives but not scripts. Libraries therefore go in static resources.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/content-security-policy.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: 5f2e142d6c151354bcad0b54d701511caaa72ffb
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:content-security-policy
+- kt:lightning-web-security
+difficulty: 2
+created: '2026-11-18'
+status: active

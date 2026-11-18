@@ -1,0 +1,21 @@
+id: sf-001002
+product_area: automation
+true_statement: In a subscriber org, Flow Builder shows only packaged invocable methods and variables that are declared global.
+false_statement: In a subscriber org, Flow Builder shows packaged invocable methods and variables declared either public or global.
+explanation: Packaged invocable code is visible to subscriber flows only when it is global. Public members stay hidden outside the package's namespace.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/invocable-apex-actions.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: 3091749928206e9c2ed11d618da4756d3b2481de
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:platform-developer-certification
+concepts:
+- kt:invocable-apex-actions
+- kt:second-generation-managed-packages
+- kt:flow-builder
+difficulty: 3
+created: '2026-11-18'
+status: active

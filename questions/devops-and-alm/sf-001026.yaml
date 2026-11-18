@@ -1,0 +1,18 @@
+id: sf-001026
+product_area: devops-and-alm
+true_statement: A Data Mask & Seed Levels template takes root objects and a number of related-object levels below them to include.
+false_statement: A Data Mask & Seed Generate template takes root objects and a number of related-object levels below them to include.
+explanation: Levels templates choose roots plus a depth of related objects. Generate templates create synthetic records instead of copying from a source, and Nodes templates add each object explicitly.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/data-mask-and-seed.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: 554d7825dd98aa8af479af6c100b8cf33784d945
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:data-mask-and-seed
+- kt:sandbox-templates
+difficulty: 2
+created: '2026-11-18'
+status: active

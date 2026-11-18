@@ -1,0 +1,17 @@
+id: sf-001028
+product_area: devops-and-alm
+true_statement: A deployment run list records the manual steps to do before and after a deployment, while a change list records what each person changed.
+false_statement: A change list records the manual steps to do before and after a deployment, while a deployment run list records what each person changed.
+explanation: The run list captures setup that metadata can't carry, so it isn't forgotten; the change list tracks each person's changes in their development org. The false version swaps their roles.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/release-management.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: 1d1f3c38e383c2b531fdd978834889f7610e7ab0
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:release-management
+difficulty: 2
+created: '2026-11-18'
+status: active

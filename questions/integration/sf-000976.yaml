@@ -1,0 +1,18 @@
+id: sf-000976
+product_area: integration
+true_statement: An External Services registration accepts an OpenAPI 2.0.x or 3.0.x schema written in either JSON or YAML.
+false_statement: An External Services registration accepts only an OpenAPI 3.0.x schema, and only when it is written in JSON.
+explanation: The ExternalServiceRegistration schema field takes OpenAPI 2.0.x or 3.0.x content in JSON or YAML. Restricting it to 3.0.x JSON understates the supported formats.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/external-services.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: 2001b6c1b536481ae8561bb61d375ead18543b91
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:external-services
+- kt:metadata-api
+difficulty: 2
+created: '2026-11-18'
+status: active

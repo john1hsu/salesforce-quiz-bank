@@ -1,0 +1,18 @@
+id: sf-001016
+product_area: data-model
+true_statement: An approval step can route to the manager named on the record owner's user record, or to a custom hierarchical field used as the approver field.
+false_statement: An approval step can route only to the submitter's manager via the standard Manager field; custom hierarchical fields can't be used as the approver field.
+explanation: Approvers can be resolved from the submitter's or record owner's Manager, and a custom hierarchical field can serve as the approver field when the approval chain differs from the reporting line.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/hierarchical-relationships.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: 6c1dd08ed0f988e9a4ef9a1aeb4d23827cdb86bf
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:hierarchical-relationships
+- kt:approval-processes
+difficulty: 2
+created: '2026-11-18'
+status: active

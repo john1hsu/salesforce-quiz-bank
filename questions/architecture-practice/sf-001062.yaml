@@ -1,0 +1,19 @@
+id: sf-001062
+product_area: architecture-practice
+true_statement: License changes must be mirrored into sandboxes, by refreshing them or using the Match Production License tool, or testing diverges from production.
+false_statement: License changes flow into existing sandboxes automatically within a day, so no refresh or Match Production License step is needed.
+explanation: Sandboxes don't pick up new licenses on their own; a refresh or the Match Production License tool keeps them aligned so tests reflect production.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/total-cost-of-ownership.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: 7c5a3b47efe89bc8ab2c67d5ecc9590dba8f7ce3
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:total-cost-of-ownership
+- kt:user-licenses
+- kt:permission-set-licenses
+difficulty: 3
+created: '2026-11-18'
+status: active

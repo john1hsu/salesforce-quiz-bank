@@ -1,0 +1,18 @@
+id: sf-001048
+product_area: public-sector-and-compliance
+true_statement: In NIST SP 800-60, Volume I describes the categorization method, while Volume II catalogs information types with provisional impact levels.
+false_statement: In NIST SP 800-60, Volume II describes the categorization method, while Volume I catalogs information types with provisional impact levels.
+explanation: Volume I is the methodology and Volume II holds the appendices of information types, provisional Low/Moderate/High ratings and their rationale. The false statement swaps the two volumes.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/nist-sp-800-60.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: c8288975cf51cc4a255a44356b3ce9bf5821e9bc
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:nist-sp-800-60
+- kt:fips-199
+difficulty: 1
+created: '2026-11-18'
+status: active

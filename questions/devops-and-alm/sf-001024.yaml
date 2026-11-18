@@ -1,0 +1,17 @@
+id: sf-001024
+product_area: devops-and-alm
+true_statement: Data Mask & Seed is sold as a platform add-on for Enterprise and Unlimited editions, priced at 10% of net spend.
+false_statement: Data Mask & Seed is included at no extra cost in Enterprise and Unlimited editions, with no separate add-on fee.
+explanation: It is a paid platform add-on for Enterprise and Unlimited editions, priced at 10% of net spend, not a free inclusion.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/data-mask-and-seed.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: 554d7825dd98aa8af479af6c100b8cf33784d945
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:data-mask-and-seed
+difficulty: 2
+created: '2026-11-18'
+status: active

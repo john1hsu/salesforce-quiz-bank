@@ -1,0 +1,18 @@
+id: sf-001038
+product_area: integration
+true_statement: A Bulk API 1.0 job's contentType defaults to XML, whereas Bulk API 2.0 ingest jobs accept only CSV.
+false_statement: A Bulk API 1.0 job's contentType defaults to CSV, whereas Bulk API 2.0 ingest jobs accept only JSON.
+explanation: Bulk API 1.0 defaults to XML and also supports CSV, JSON and ZIP variants for attachments. Bulk API 2.0 is limited to CSV, not JSON.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/bulk-api-1.md
+  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
+  blob: d7bb7537c0bf1fcd0b63f7fe730e7abae223558e
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:bulk-api-1
+- kt:bulk-api-2
+difficulty: 2
+created: '2026-11-18'
+status: active
