@@ -1,0 +1,19 @@
+id: sf-001085
+product_area: data-model
+true_statement: If two records in the same SOAP upsert call share an external ID value, both are marked as errors and neither is saved.
+false_statement: If two records in the same SOAP upsert call share an external ID value, the first is inserted and the second updates it.
+explanation: SOAP upsert rejects every record in the call that repeats an external ID value, so neither duplicate is written. It does not process them in order as an insert followed by an update.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/upsert.md
+  commit: f052331c4264f1e7111e95b71a27616054c970e2
+  blob: 3fd62a60eea7eca1be20734db46364739b122d4a
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:upsert
+- kt:soap-api
+- kt:external-id-fields
+difficulty: 3
+created: '2026-11-19'
+status: active

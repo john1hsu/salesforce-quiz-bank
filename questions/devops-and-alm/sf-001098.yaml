@@ -1,0 +1,18 @@
+id: sf-001098
+product_area: devops-and-alm
+true_statement: Apex Replay Debugger in the Salesforce Extension Pack is free and replays execution from a debug log rather than pausing live code.
+false_statement: Apex Replay Debugger in the Salesforce Extension Pack requires a paid licence and pauses live code in real time at breakpoints.
+explanation: Replay Debugger costs nothing and works from a captured debug log; real-time pausing is what the licensed Interactive Debugger does.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/salesforce-extensions-for-vs-code.md
+  commit: f052331c4264f1e7111e95b71a27616054c970e2
+  blob: d491d444381322e9c6a48640bb2a31dbf6a27c8e
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:salesforce-extensions-for-vs-code
+- kt:apex
+difficulty: 1
+created: '2026-11-19'
+status: active

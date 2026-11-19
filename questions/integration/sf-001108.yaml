@@ -1,0 +1,18 @@
+id: sf-001108
+product_area: integration
+true_statement: Bulk API processing has a dedicated limit of 60,000 milliseconds of server CPU time, separate from the per-transaction Apex CPU limit.
+false_statement: Bulk API processing shares the per-transaction Apex CPU limit of 10,000 milliseconds rather than having a dedicated CPU limit.
+explanation: Bulk work is measured against its own 60-second server CPU ceiling. It is not held to the general Apex CPU limit for a transaction.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/bulk-api-allocations.md
+  commit: f052331c4264f1e7111e95b71a27616054c970e2
+  blob: 165b2c25220242b814ed2fb28b3ee7e1bb31ce35
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:bulk-api-allocations
+- kt:governor-limits
+difficulty: 3
+created: '2026-11-19'
+status: active

@@ -1,0 +1,18 @@
+id: sf-001155
+product_area: data-model
+true_statement: Salesforce's LDV guide aims divisions at orgs with more than one million records in a single object and more than 35 licenses.
+false_statement: Salesforce's LDV guide aims divisions at orgs with more than ten million records in a single object and more than 500 licenses.
+explanation: The large data volumes guide sets the divisions threshold at over one million records in one object plus over 35 licenses. The false figures are far higher than documented.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/divisions.md
+  commit: f052331c4264f1e7111e95b71a27616054c970e2
+  blob: 6980ce9920150bb5bcc9629ce3edbbe9f3cd1af4
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:divisions
+- kt:large-data-volumes
+difficulty: 2
+created: '2026-11-19'
+status: active

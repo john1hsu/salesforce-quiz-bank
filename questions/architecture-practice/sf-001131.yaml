@@ -1,0 +1,18 @@
+id: sf-001131
+product_area: architecture-practice
+true_statement: Salesforce's agentic decision guide calls it an anti-pattern to add an agent to a process whose every branch can be defined at design time, which suits Flow or Apex.
+false_statement: Salesforce's agentic decision guide recommends adding an agent to a process whose every branch can be defined at design time, so Flow or Apex isn't needed.
+explanation: Fully deterministic processes belong in Flow or Apex; agents earn their cost where intent is unstructured or goals are open-ended. Wrapping a deterministic path in an agent is the anti-pattern the guide names.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/agentforce-architecture-patterns.md
+  commit: f052331c4264f1e7111e95b71a27616054c970e2
+  blob: 50b2dc0fa3970c03e10531ec59ec9c5f946aeeb5
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:agentforce-architecture-patterns
+- kt:architect-decision-guides
+difficulty: 2
+created: '2026-11-19'
+status: active

@@ -1,0 +1,18 @@
+id: sf-001088
+product_area: development
+true_statement: Only one Batch Apex job's start method can run at a time in an org, even when several of the active batch slots are free.
+false_statement: Up to five Batch Apex jobs' start methods can run at the same time in an org, one in each active batch slot.
+explanation: The Preparing phase, when start runs, is serialized org-wide to one job at a time. The five-slot limit covers queued or active jobs, not concurrent start methods.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/apex-flex-queue.md
+  commit: f052331c4264f1e7111e95b71a27616054c970e2
+  blob: 30890104ede7a12990e9251b21339ef4a520ed6f
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:apex-flex-queue
+- kt:batch-apex
+difficulty: 3
+created: '2026-11-19'
+status: active

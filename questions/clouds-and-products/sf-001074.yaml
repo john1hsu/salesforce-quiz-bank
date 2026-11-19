@@ -1,0 +1,18 @@
+id: sf-001074
+product_area: clouds-and-products
+true_statement: The prebuilt Net Zero Analytics dashboards require the CRM Analytics for Net Zero Cloud add-on license.
+false_statement: The prebuilt Net Zero Analytics dashboards are included with every Net Zero Cloud license, with no add-on license required.
+explanation: The packaged analytics for Net Zero run on CRM Analytics and need its dedicated add-on license; they do not come with the base product.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/net-zero-cloud.md
+  commit: f052331c4264f1e7111e95b71a27616054c970e2
+  blob: 3ec30d39914b3a21a835b16c5ace9f8a68894bf9
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:net-zero-cloud
+- kt:crm-analytics
+difficulty: 2
+created: '2026-11-19'
+status: active

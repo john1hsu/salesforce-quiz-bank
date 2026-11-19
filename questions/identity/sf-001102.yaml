@@ -1,0 +1,18 @@
+id: sf-001102
+product_area: identity
+true_statement: Salesforce advises using a client credentials token until a request returns 401, then rerunning the flow once and raising an error if that also fails.
+false_statement: Salesforce advises requesting a fresh client credentials token before every API call, rather than reusing one until a request returns 401.
+explanation: The recommended pattern is to reuse the token and only rerun the flow after a 401, with a single retry. Requesting a token per call is not the guidance.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/client-credentials-flow.md
+  commit: f052331c4264f1e7111e95b71a27616054c970e2
+  blob: 85f5207841053b324288322eba1b095ddd19312a
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:client-credentials-flow
+- kt:rest-api
+difficulty: 3
+created: '2026-11-19'
+status: active

@@ -1,0 +1,18 @@
+id: sf-001154
+product_area: data-cloud-and-ai
+true_statement: Activating a Data 360 segment to a Data 360 target writes its members into an audience data model object readable through the Query API.
+false_statement: Activating a Data 360 segment to a Data 360 target writes its members into a CSV file in cloud storage for download.
+explanation: A Data 360 target keeps results inside the platform in an audience DMO, viewable in Data Explorer or via the Query API. Cloud-storage file export is a different kind of target.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/data-cloud-activation.md
+  commit: f052331c4264f1e7111e95b71a27616054c970e2
+  blob: 6d976c83b287b2fe0bd0e1143272dd21c2ccb4c3
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:data-cloud-activation
+- kt:data-model-objects
+difficulty: 2
+created: '2026-11-19'
+status: active

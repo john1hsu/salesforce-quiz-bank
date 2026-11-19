@@ -1,0 +1,19 @@
+id: sf-001147
+product_area: clouds-and-products
+true_statement: Tableau Next semantic models are private by default, so users need data space access, Semantic Models permissions and explicit sharing to use one.
+false_statement: Tableau Next semantic models are shared with every user in the data space by default, so only Semantic Models permissions are needed to use one.
+explanation: 'Access to a semantic model is layered: data space access, user-level Semantic Models permissions and sharing of the model itself. New models start private rather than open to the data space.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/tableau-next.md
+  commit: f052331c4264f1e7111e95b71a27616054c970e2
+  blob: 3b406ac981b0485a924e07d044683b2f40b0e173
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:tableau-next
+- kt:tableau-semantics
+- kt:data-spaces
+difficulty: 2
+created: '2026-11-19'
+status: active

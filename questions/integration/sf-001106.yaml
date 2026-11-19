@@ -1,0 +1,18 @@
+id: sf-001106
+product_area: integration
+true_statement: A Bulk API 2.0 ingest batch that can't finish within 5 minutes is retried up to 20 times, after which the whole job fails.
+false_statement: A Bulk API 2.0 ingest batch that can't finish within 5 minutes is retried up to 3 times, after which only that batch fails.
+explanation: Bulk API 2.0 makes up to 20 attempts on a slow batch, and exhausting them fails the entire job with remaining data unprocessed. The false statement understates the retries and the impact.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/bulk-api-allocations.md
+  commit: f052331c4264f1e7111e95b71a27616054c970e2
+  blob: 165b2c25220242b814ed2fb28b3ee7e1bb31ce35
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:bulk-api-allocations
+- kt:bulk-api-2
+difficulty: 3
+created: '2026-11-19'
+status: active

@@ -1,0 +1,18 @@
+id: sf-001161
+product_area: development
+true_statement: In Apex, OrgLimit.getValue() returns usage consumed so far, so headroom is calculated as getLimit() minus getValue().
+false_statement: In Apex, OrgLimit.getValue() returns the remaining allocation, so headroom can be read directly from getValue().
+explanation: getValue reports how much of the limit has been used; unlike the REST limits resource's Remaining figure, headroom must be computed by subtracting it from getLimit.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/orglimits-class.md
+  commit: f052331c4264f1e7111e95b71a27616054c970e2
+  blob: 58d451d61d06b72b7c15a951bc99b60c2fca5411
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:orglimits-class
+- kt:rest-api-limits-resource
+difficulty: 2
+created: '2026-11-19'
+status: active

@@ -1,0 +1,18 @@
+id: sf-001096
+product_area: devops-and-alm
+true_statement: The Metadata Coverage Report is versioned by release, so coverage should be checked against the API version you actually deploy with.
+false_statement: The Metadata Coverage Report is a single unversioned page, so coverage only needs to be checked against the latest release.
+explanation: Each release has its own versioned report back to Spring '20, and coverage changes between releases, so the matching version matters rather than only the newest page.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/metadata-coverage-report.md
+  commit: f052331c4264f1e7111e95b71a27616054c970e2
+  blob: 60fd8a61099e77f6c6b36a2f938ac3ac73ae9a31
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:metadata-coverage-report
+- kt:metadata-api
+difficulty: 1
+created: '2026-11-19'
+status: active

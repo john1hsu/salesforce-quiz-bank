@@ -1,0 +1,18 @@
+id: sf-001065
+product_area: automation
+true_statement: For bulk flow errors other than governor limits, Salesforce retries saving the successful record changes up to three times.
+false_statement: For bulk flow errors other than governor limits, Salesforce retries saving the successful record changes up to ten times.
+explanation: When a non-limit error occurs in a bulk flow operation, the platform makes up to three attempts to save the records that succeeded. Ten is not the documented retry count.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/flow-bulkification.md
+  commit: f052331c4264f1e7111e95b71a27616054c970e2
+  blob: 51f261f3e765580eb91ced0a8c126bb0c80d5fa0
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:flow-bulkification
+- kt:flow-fault-handling
+difficulty: 2
+created: '2026-11-19'
+status: active

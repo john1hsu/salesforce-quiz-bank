@@ -1,0 +1,17 @@
+id: sf-001133
+product_area: architecture-practice
+true_statement: NASA's Technology Readiness Levels place a proof-of-concept model at TRL 3 and a fully functional prototype at TRL 6.
+false_statement: NASA's Technology Readiness Levels place a proof-of-concept model at TRL 6 and a fully functional prototype at TRL 3.
+explanation: A proof of concept sits early on the ladder, at TRL 3, where studies test viability; a working prototype comes later at TRL 6. The false statement inverts the levels.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/proof-of-concept.md
+  commit: f052331c4264f1e7111e95b71a27616054c970e2
+  blob: c6010e0aee984fdcaf3f3f49a0e8d7dde2a9f23f
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:proof-of-concept
+difficulty: 2
+created: '2026-11-19'
+status: active

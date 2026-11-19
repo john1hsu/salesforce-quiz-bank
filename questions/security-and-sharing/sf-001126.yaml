@@ -1,0 +1,19 @@
+id: sf-001126
+product_area: security-and-sharing
+true_statement: For a SOQL query run WITH USER_MODE, QueryException.getInaccessibleFields() returns every field the user can't read, not just the first one.
+false_statement: For a SOQL query run WITH USER_MODE, QueryException.getInaccessibleFields() returns only the first field the user can't read.
+explanation: User mode reports all FLS errors, and getInaccessibleFields exposes the full set. Reporting only the first error is the behavior of WITH SECURITY_ENFORCED.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/apex-user-mode.md
+  commit: f052331c4264f1e7111e95b71a27616054c970e2
+  blob: 2d6fd196a094f883cdd1138ca11d28e52a1a6057
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:apex-user-mode
+- kt:with-security-enforced
+- kt:field-level-security
+difficulty: 3
+created: '2026-11-19'
+status: active

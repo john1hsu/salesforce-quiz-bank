@@ -1,0 +1,18 @@
+id: sf-001099
+product_area: devops-and-alm
+true_statement: With Deploy on Save in VS Code, only one deployment runs at a time, and files saved meanwhile are queued into the next deployment.
+false_statement: With Deploy on Save in VS Code, each saved file starts its own deployment immediately, so several deployments can run at the same time.
+explanation: 'Deploy on Save serializes deployments: saves made while one is running are batched into the following deploy rather than launched in parallel.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/salesforce-extensions-for-vs-code.md
+  commit: f052331c4264f1e7111e95b71a27616054c970e2
+  blob: d491d444381322e9c6a48640bb2a31dbf6a27c8e
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:salesforce-extensions-for-vs-code
+- kt:source-tracking
+difficulty: 2
+created: '2026-11-19'
+status: active

@@ -1,0 +1,18 @@
+id: sf-001158
+product_area: data-model
+true_statement: A Salesforce global value set is always restricted, so its picklist fields can store only values defined in the set.
+false_statement: A Salesforce global value set is always unrestricted, so its picklist fields can store values that aren't defined in the set.
+explanation: Global value sets cannot be made unrestricted, which is how they keep data clean; writes with unknown values fail rather than adding new values.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/picklist-value-sets.md
+  commit: f052331c4264f1e7111e95b71a27616054c970e2
+  blob: d57ea8b0f7c3e03aca1bc0241024cbd9c78254ab
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:picklist-value-sets
+- kt:data-quality
+difficulty: 1
+created: '2026-11-19'
+status: active

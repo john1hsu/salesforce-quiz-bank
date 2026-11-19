@@ -1,0 +1,17 @@
+id: sf-001134
+product_area: architecture-practice
+true_statement: A Developer Edition org used for a proof of concept is free with no time limit, but it carries a 250 MB data storage limit.
+false_statement: A Developer Edition org used for a proof of concept is free with no time limit, but it carries a 5 GB data storage limit.
+explanation: Developer Edition orgs are capped at 250 MB of data, which is one reason they can't answer volume questions. 5 GB overstates the allowance.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/proof-of-concept.md
+  commit: f052331c4264f1e7111e95b71a27616054c970e2
+  blob: c6010e0aee984fdcaf3f3f49a0e8d7dde2a9f23f
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:proof-of-concept
+difficulty: 2
+created: '2026-11-19'
+status: active

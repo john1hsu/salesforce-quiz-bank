@@ -1,0 +1,18 @@
+id: sf-001077
+product_area: data-cloud-and-ai
+true_statement: A data kit's publishing sequence is generated from component creation time, so upstream items like a calculated insight must deploy before the segments that use them.
+false_statement: A data kit's publishing sequence is generated alphabetically by component name, so upstream items like a calculated insight must deploy before the segments that use them.
+explanation: Data kits order components by when they were created, and dependencies must come first or the deployment fails. Alphabetical ordering is not how the sequence is built.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/data-kits.md
+  commit: f052331c4264f1e7111e95b71a27616054c970e2
+  blob: 03229005d20eb26e587c83c819694a5ec3fdc5ad
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:data-kits
+- kt:calculated-insights
+difficulty: 2
+created: '2026-11-19'
+status: active

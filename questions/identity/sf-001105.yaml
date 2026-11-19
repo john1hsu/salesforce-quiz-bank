@@ -1,0 +1,19 @@
+id: sf-001105
+product_area: identity
+true_statement: Since Salesforce's September 2025 restrictions, uninstalled connected apps that use the device flow are blocked even for users who authorized them earlier.
+false_statement: Since Salesforce's September 2025 restrictions, installed connected apps that use the device flow are blocked even for users who authorized them earlier.
+explanation: The restrictions targeted uninstalled apps relying on the device flow, while apps installed in the org kept working. The false statement applies the block to installed apps.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/device-flow.md
+  commit: f052331c4264f1e7111e95b71a27616054c970e2
+  blob: 20ddfffced0189447b1222d8bcac7b7e90961d9a
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:device-flow
+- kt:connected-apps
+- kt:api-access-control
+difficulty: 3
+created: '2026-11-19'
+status: active

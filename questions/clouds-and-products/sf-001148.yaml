@@ -1,0 +1,19 @@
+id: sf-001148
+product_area: clouds-and-products
+true_statement: Tableau Next always reads its data from Data 360 objects such as DMOs, DLOs or calculated insights, keeping only the connection information itself.
+false_statement: Tableau Next imports source data into its own extracts, keeping a separate copy outside Data 360 for each workspace.
+explanation: Data for Tableau Next is always a Data 360 object, even an uploaded CSV, which is stored as a DLO. Tableau Next itself stores connection details, not data copies.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/tableau-next.md
+  commit: f052331c4264f1e7111e95b71a27616054c970e2
+  blob: 3b406ac981b0485a924e07d044683b2f40b0e173
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:tableau-next
+- kt:data-cloud
+- kt:data-model-objects
+difficulty: 1
+created: '2026-11-19'
+status: active

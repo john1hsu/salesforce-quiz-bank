@@ -1,0 +1,18 @@
+id: sf-001100
+product_area: identity
+true_statement: When a Salesforce client credentials access token expires, the client requests a new one with its consumer key and secret, since the flow returns no refresh token.
+false_statement: When a Salesforce client credentials access token expires, the client renews it with the refresh token returned alongside the original access token.
+explanation: The client credentials flow issues only an access token, so renewal means repeating the token request with the app's key and secret. There is no refresh token to use.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/client-credentials-flow.md
+  commit: f052331c4264f1e7111e95b71a27616054c970e2
+  blob: 85f5207841053b324288322eba1b095ddd19312a
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:client-credentials-flow
+- kt:oauth-2-0
+difficulty: 2
+created: '2026-11-19'
+status: active

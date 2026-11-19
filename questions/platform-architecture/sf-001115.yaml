@@ -1,0 +1,17 @@
+id: sf-001115
+product_area: platform-architecture
+true_statement: The Platform Administrator II exam has 60 scored questions and a passing score of 65%.
+false_statement: The Platform Administrator II exam has 60 scored questions and a passing score of 72%.
+explanation: The official exam guide sets the Platform Administrator II pass mark at 65% for its 60 scored questions; 72% is not the published threshold.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/platform-administrator-ii-certification.md
+  commit: f052331c4264f1e7111e95b71a27616054c970e2
+  blob: 91104d5b466a6a581669d10c9b161ad01df3228c
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:platform-administrator-ii-certification
+difficulty: 1
+created: '2026-11-19'
+status: active

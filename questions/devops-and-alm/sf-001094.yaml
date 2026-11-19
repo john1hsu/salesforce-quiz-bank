@@ -1,0 +1,18 @@
+id: sf-001094
+product_area: devops-and-alm
+true_statement: The Apex Metadata API can reach only custom metadata type records and page layouts, so most rows of the Metadata Coverage Report lack an Apex API check.
+false_statement: The Apex Metadata API can reach only custom metadata type records and flows, so most rows of the Metadata Coverage Report lack an Apex API check.
+explanation: 'Apex''s Metadata namespace covers just two kinds of component: custom metadata records and page layouts. Flows are not among them.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/metadata-coverage-report.md
+  commit: f052331c4264f1e7111e95b71a27616054c970e2
+  blob: 60fd8a61099e77f6c6b36a2f938ac3ac73ae9a31
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:metadata-coverage-report
+- kt:custom-metadata-types
+difficulty: 2
+created: '2026-11-19'
+status: active

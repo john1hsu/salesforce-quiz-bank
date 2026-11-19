@@ -1,0 +1,18 @@
+id: sf-001124
+product_area: security-and-sharing
+true_statement: The accessLevel argument is optional on Database.query but required on Database.queryWithBinds, so bind-variable dynamic SOQL always states its mode.
+false_statement: The accessLevel argument is required on Database.query but optional on Database.queryWithBinds, so plain dynamic SOQL always states its mode.
+explanation: Only the WithBinds variants make the access level mandatory; Database.query and similar methods accept it optionally. The false statement reverses which method requires it.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/apex-user-mode.md
+  commit: f052331c4264f1e7111e95b71a27616054c970e2
+  blob: 2d6fd196a094f883cdd1138ca11d28e52a1a6057
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:apex-user-mode
+- kt:dynamic-soql
+difficulty: 3
+created: '2026-11-19'
+status: active

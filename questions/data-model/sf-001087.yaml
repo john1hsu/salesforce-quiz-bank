@@ -1,0 +1,18 @@
+id: sf-001087
+product_area: data-model
+true_statement: An Apex upsert that names no match field matches on record ID, inserting rows with a null ID and updating rows that have one.
+false_statement: An Apex upsert that names no match field matches on the Name field, inserting rows with a new name and updating rows whose name exists.
+explanation: Without a named field, Apex upsert uses the Salesforce record ID as the key. Name is never used as an implicit match field.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/upsert.md
+  commit: f052331c4264f1e7111e95b71a27616054c970e2
+  blob: 3fd62a60eea7eca1be20734db46364739b122d4a
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:upsert
+- kt:apex
+difficulty: 2
+created: '2026-11-19'
+status: active

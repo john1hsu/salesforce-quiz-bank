@@ -1,0 +1,19 @@
+id: sf-001117
+product_area: platform-architecture
+true_statement: Security and Access and Process Automation are the heaviest Platform Administrator II exam sections, at 20% each.
+false_statement: Objects and Applications and Data and Analytics Management are the heaviest Platform Administrator II exam sections, at 20% each.
+explanation: The exam outline gives 20% each to Security and Access and to Process Automation. Objects and Applications is 19% and Data and Analytics Management is 13%.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/platform-administrator-ii-certification.md
+  commit: f052331c4264f1e7111e95b71a27616054c970e2
+  blob: 91104d5b466a6a581669d10c9b161ad01df3228c
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:platform-administrator-ii-certification
+- kt:salesforce-sharing-model
+- kt:order-of-execution
+difficulty: 2
+created: '2026-11-19'
+status: active

@@ -1,0 +1,18 @@
+id: sf-001090
+product_area: development
+true_statement: Test.getFlexQueueOrder() returns only test-context held jobs, even when the test class uses SeeAllData=true.
+false_statement: Test.getFlexQueueOrder() returns the org's real held jobs whenever the test class uses SeeAllData=true.
+explanation: Tests use a separate test-context flex queue, and getFlexQueueOrder reads only that queue regardless of SeeAllData. Real org jobs are never visible to it.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/apex-flex-queue.md
+  commit: f052331c4264f1e7111e95b71a27616054c970e2
+  blob: 30890104ede7a12990e9251b21339ef4a520ed6f
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:apex-flex-queue
+- kt:apex-testing
+difficulty: 3
+created: '2026-11-19'
+status: active

@@ -1,0 +1,21 @@
+id: sf-001081
+product_area: data-cloud-and-ai
+true_statement: A Data 360 batch transform built on data model objects belongs to one data space, while one built on data lake objects can't be associated with a data space.
+false_statement: A Data 360 batch transform built on data lake objects belongs to one data space, while one built on data model objects can't be associated with a data space.
+explanation: Choosing DMOs as the source ties the transform and its output to a single data space. DLO-based transforms have no data space association, so the false statement reverses them.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/data-transforms.md
+  commit: f052331c4264f1e7111e95b71a27616054c970e2
+  blob: 0e8f2b3b6ac88a364ca33096e122ae7249b2169a
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:data-cloud-consultant-certification
+concepts:
+- kt:data-transforms
+- kt:data-model-objects
+- kt:data-lake-objects
+difficulty: 3
+created: '2026-11-19'
+status: active

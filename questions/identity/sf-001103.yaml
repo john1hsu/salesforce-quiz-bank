@@ -1,0 +1,18 @@
+id: sf-001103
+product_area: identity
+true_statement: Salesforce's device flow token request uses grant_type=device, not the RFC 8628 device_code URN, so generic RFC libraries may need adjusting.
+false_statement: Salesforce's device flow token request uses the RFC 8628 device_code URN as its grant_type, so generic RFC libraries work without adjusting.
+explanation: Salesforce chose the short grant type value device instead of the standard URN, which is why off-the-shelf RFC 8628 clients may not work unmodified.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/device-flow.md
+  commit: f052331c4264f1e7111e95b71a27616054c970e2
+  blob: 20ddfffced0189447b1222d8bcac7b7e90961d9a
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:device-flow
+- kt:oauth-2-0
+difficulty: 3
+created: '2026-11-19'
+status: active

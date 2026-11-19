@@ -1,0 +1,17 @@
+id: sf-001153
+product_area: data-cloud-and-ai
+true_statement: Meta won't use a Data 360 activated audience for ad targeting until it has at least 100 matched users.
+false_statement: Meta won't use a Data 360 activated audience for ad targeting until it has at least 1,000 matched users.
+explanation: Meta's minimum for a usable custom audience from the Data 360 connector is 100 matched users, not 1,000.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/data-cloud-activation.md
+  commit: f052331c4264f1e7111e95b71a27616054c970e2
+  blob: 6d976c83b287b2fe0bd0e1143272dd21c2ccb4c3
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:data-cloud-activation
+difficulty: 2
+created: '2026-11-19'
+status: active

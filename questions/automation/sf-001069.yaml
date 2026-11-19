@@ -1,0 +1,18 @@
+id: sf-001069
+product_area: automation
+true_statement: A Transform element is used to turn records into a text collection of Ids because the In operator in Flow data elements accepts only collections of simple values.
+false_statement: A Transform element is used to turn records into a single text value of Ids because the In operator in Flow data elements accepts only single values.
+explanation: The In operator needs a collection of simple values such as Ids, not a record collection, so a Transform extracts the Id field into a text collection first.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/transform-element.md
+  commit: f052331c4264f1e7111e95b71a27616054c970e2
+  blob: 6e6819be9c4f87dc85837b30cb1900a658bc0ec6
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:transform-element
+- kt:flow-builder
+difficulty: 2
+created: '2026-11-19'
+status: active

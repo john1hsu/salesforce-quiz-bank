@@ -1,0 +1,19 @@
+id: sf-001095
+product_area: devops-and-alm
+true_statement: In the Metadata Coverage Report, a footnoted packaging check means the component can go only in a package that has no namespace.
+false_statement: In the Metadata Coverage Report, a footnoted packaging check means the component can go only in a namespaced managed package.
+explanation: The footnote marks types, such as Territory2, that are packageable only without a namespace, for example in a no-namespace unlocked package. Namespaced managed packages are exactly where they can't go.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/metadata-coverage-report.md
+  commit: f052331c4264f1e7111e95b71a27616054c970e2
+  blob: 60fd8a61099e77f6c6b36a2f938ac3ac73ae9a31
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:metadata-coverage-report
+- kt:unlocked-packages
+- kt:second-generation-managed-packages
+difficulty: 3
+created: '2026-11-19'
+status: active

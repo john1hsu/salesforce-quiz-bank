@@ -1,0 +1,18 @@
+id: sf-001078
+product_area: data-cloud-and-ai
+true_statement: Data kits can move between connected orgs in a change set, where they appear as the Data Package Kit Definition component type.
+false_statement: Data kits can move between connected orgs in a change set, where they appear as the Data Stream Definition component type.
+explanation: For simple moves between connected orgs, a data kit is selected in a change set under the Data Package Kit Definition type. Data streams are bundled inside the kit rather than being the kit's component type.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/data-kits.md
+  commit: f052331c4264f1e7111e95b71a27616054c970e2
+  blob: 03229005d20eb26e587c83c819694a5ec3fdc5ad
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:data-kits
+- kt:change-sets
+difficulty: 2
+created: '2026-11-19'
+status: active

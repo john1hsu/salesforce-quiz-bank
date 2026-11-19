@@ -1,0 +1,19 @@
+id: sf-001130
+product_area: architecture-practice
+true_statement: In Salesforce's MOMA archetype, a supervisor agent delegates to agents in other orgs over the A2A protocol, while SOMA keeps all agents in one org.
+false_statement: In Salesforce's SOMA archetype, a supervisor agent delegates to agents in other orgs over the A2A protocol, while MOMA keeps all agents in one org.
+explanation: SOMA means single org, multiple agents under shared governance; MOMA means multi org, with cross-org delegation over Agent-to-Agent. The false statement swaps the two acronyms.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/agentforce-architecture-patterns.md
+  commit: f052331c4264f1e7111e95b71a27616054c970e2
+  blob: 50b2dc0fa3970c03e10531ec59ec9c5f946aeeb5
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:agentforce-architecture-patterns
+- kt:agent-to-agent-protocol
+- kt:multi-agent-orchestration
+difficulty: 2
+created: '2026-11-19'
+status: active

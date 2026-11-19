@@ -1,0 +1,18 @@
+id: sf-001139
+product_area: automation
+true_statement: The Process Automation Setting that lets admins debug flows as other users is available only in sandbox environments.
+false_statement: The Process Automation Setting that lets admins debug flows as other users is available only in production orgs.
+explanation: Salesforce Help restricts debugging as another user to sandboxes, where impersonated runs can't harm live data. It is not a production-only option.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/flow-debugging.md
+  commit: f052331c4264f1e7111e95b71a27616054c970e2
+  blob: e712d4e4b71644a33a345776a90a62c6f8adf7b7
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:flow-debugging
+- kt:process-automation-settings
+difficulty: 2
+created: '2026-11-19'
+status: active

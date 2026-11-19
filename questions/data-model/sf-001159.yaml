@@ -1,0 +1,18 @@
+id: sf-001159
+product_area: data-model
+true_statement: A global value set can hold at most 1,000 values, and inactive values count toward that limit.
+false_statement: A global value set can hold at most 1,000 active values, and inactive values don't count toward that limit.
+explanation: The 1,000-value cap on a GlobalValueSet includes inactive values, so retired values still use up capacity.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/picklist-value-sets.md
+  commit: f052331c4264f1e7111e95b71a27616054c970e2
+  blob: d57ea8b0f7c3e03aca1bc0241024cbd9c78254ab
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:picklist-value-sets
+- kt:metadata-api
+difficulty: 2
+created: '2026-11-19'
+status: active

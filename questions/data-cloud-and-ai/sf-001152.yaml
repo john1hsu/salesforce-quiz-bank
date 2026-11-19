@@ -1,0 +1,17 @@
+id: sf-001152
+product_area: data-cloud-and-ai
+true_statement: In a Data 360 activation, direct attributes hold one value per member, while related attributes can carry several values for the same member.
+false_statement: In a Data 360 activation, related attributes hold one value per member, while direct attributes can carry several values for the same member.
+explanation: Direct attributes such as first name or postal code are single-valued; related attributes come from related objects and can be multi-valued. The false statement reverses them.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/data-cloud-activation.md
+  commit: f052331c4264f1e7111e95b71a27616054c970e2
+  blob: 6d976c83b287b2fe0bd0e1143272dd21c2ccb4c3
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:data-cloud-activation
+difficulty: 2
+created: '2026-11-19'
+status: active

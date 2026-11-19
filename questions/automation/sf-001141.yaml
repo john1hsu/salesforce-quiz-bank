@@ -1,0 +1,18 @@
+id: sf-001141
+product_area: automation
+true_statement: In Salesforce debug logs, flow events such as interview start, element errors and fault paths are logged under the Workflow category.
+false_statement: In Salesforce debug logs, flow events such as interview start, element errors and fault paths are logged under the Apex Code category.
+explanation: Flow interview and element events belong to the Workflow log category, mostly at INFO to FINER levels. The Apex Code category covers Apex execution, not flow events.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/flow-debugging.md
+  commit: f052331c4264f1e7111e95b71a27616054c970e2
+  blob: e712d4e4b71644a33a345776a90a62c6f8adf7b7
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:flow-debugging
+- kt:apex-logging-and-debug-logs
+difficulty: 2
+created: '2026-11-19'
+status: active

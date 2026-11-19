@@ -1,0 +1,18 @@
+id: sf-001138
+product_area: automation
+true_statement: When a flow's filter criteria are known at query time, Salesforce recommends filtering in Get Records rather than with a Collection Filter element.
+false_statement: When a flow's filter criteria are known at query time, Salesforce recommends querying broadly with Get Records and then narrowing with a Collection Filter element.
+explanation: Filtering in Get Records is described as more efficient; Collection Filter is meant for criteria that only become known later in the flow, such as from screen input.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/collection-filter-and-sort.md
+  commit: f052331c4264f1e7111e95b71a27616054c970e2
+  blob: f65ae5df7d07ec1a0df727680817c98d76deeac0
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:collection-filter-and-sort
+- kt:get-records-element
+difficulty: 1
+created: '2026-11-19'
+status: active

@@ -1,0 +1,17 @@
+id: sf-001119
+product_area: public-sector-and-compliance
+true_statement: The Data Classification Upload tool accepts a CSV of at most 10,000 rows, each naming an object, a field and a sensitivity level.
+false_statement: The Data Classification Upload tool accepts a CSV of at most 2,000 rows, each naming an object, a field and a sensitivity level.
+explanation: Bulk classification uploads allow up to 10,000 rows. The 2,000 figure applies to the download, which keeps the first 2,000 records per sensitivity value.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/data-classification.md
+  commit: f052331c4264f1e7111e95b71a27616054c970e2
+  blob: fc3d91080bf233d51f4cce74420d1b77b732f3b9
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:data-classification
+difficulty: 2
+created: '2026-11-19'
+status: active

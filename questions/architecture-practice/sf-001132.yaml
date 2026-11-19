@@ -1,0 +1,18 @@
+id: sf-001132
+product_area: architecture-practice
+true_statement: Salesforce's agentic integration patterns call for every agent write to be idempotent, because retries and event redelivery can repeat an action.
+false_statement: Salesforce's agentic integration patterns call for every agent write to be retried until it succeeds, because agent actions are never repeated by event redelivery.
+explanation: Retries and redelivered events can run an action more than once, so writes must be safe to repeat. Assuming actions never repeat is exactly the risk the guidance addresses.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/agentforce-architecture-patterns.md
+  commit: f052331c4264f1e7111e95b71a27616054c970e2
+  blob: 50b2dc0fa3970c03e10531ec59ec9c5f946aeeb5
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:agentforce-architecture-patterns
+- kt:model-context-protocol-in-agentforce
+difficulty: 3
+created: '2026-11-19'
+status: active

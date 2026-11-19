@@ -1,0 +1,18 @@
+id: sf-001114
+product_area: platform-architecture
+true_statement: On Hyperforce, SalesforceDB runs one primary cluster for writes and two standby clusters that serve queries, with quorum-monitored automated failover.
+false_statement: On Hyperforce, SalesforceDB runs two primary clusters for writes and one standby cluster that serves queries, with quorum-monitored automated failover.
+explanation: Salesforce's architecture describes a single write primary backed by two query-serving standbys. The false statement inverts the counts.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/distributed-computing.md
+  commit: f052331c4264f1e7111e95b71a27616054c970e2
+  blob: dbbe7211a0f20d5fc96ffaa2d8c66fd88aba758d
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:distributed-computing
+- kt:hyperforce
+difficulty: 3
+created: '2026-11-19'
+status: active

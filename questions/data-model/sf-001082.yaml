@@ -1,0 +1,19 @@
+id: sf-001082
+product_area: data-model
+true_statement: 'When Data Loader uses Bulk API or Bulk API 2.0, a field is blanked by putting #N/A in the CSV cell, because the Insert null values setting doesn''t apply.'
+false_statement: When Data Loader uses Bulk API or Bulk API 2.0, a field is blanked by enabling the Insert null values setting and leaving the CSV cell empty.
+explanation: 'The Insert null values option has no effect with either bulk engine, so bulk loads clear fields with the #N/A marker instead of relying on empty cells.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/data-loader.md
+  commit: f052331c4264f1e7111e95b71a27616054c970e2
+  blob: 112e99c69eddab151e11fec179baeae639aece43
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:data-loader
+- kt:bulk-api-1
+- kt:bulk-api-2
+difficulty: 2
+created: '2026-11-19'
+status: active

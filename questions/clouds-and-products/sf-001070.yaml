@@ -1,0 +1,17 @@
+id: sf-001070
+product_area: clouds-and-products
+true_statement: In Salesforce Backup & Recover, a synthetic full backup runs daily, captures only changes since the last run and merges them into the previous backup.
+false_statement: In Salesforce Backup & Recover, a synthetic full backup runs weekly, captures only changes since the last run and merges them into the previous backup.
+explanation: Synthetic full backups are the daily incremental type that folds changes into the prior backup. The weekly cadence belongs to the true full backup, not the synthetic one.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/backup-and-recover.md
+  commit: f052331c4264f1e7111e95b71a27616054c970e2
+  blob: a6cba55a989c02d2260155c474e7181d81a85f7c
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:backup-and-recover
+difficulty: 2
+created: '2026-11-19'
+status: active

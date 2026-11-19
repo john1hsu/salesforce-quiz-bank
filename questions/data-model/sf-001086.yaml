@@ -1,0 +1,18 @@
+id: sf-001086
+product_area: data-model
+true_statement: Upsert matching on an external ID is case-sensitive unless the field is Unique and set to treat values as duplicates regardless of case.
+false_statement: Upsert matching on an external ID is case-insensitive unless the field is Unique and set to treat values as distinct by case.
+explanation: By default the key comparison respects case; only a Unique field configured as case-insensitive makes upsert ignore case. The false statement flips the default.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/upsert.md
+  commit: f052331c4264f1e7111e95b71a27616054c970e2
+  blob: 3fd62a60eea7eca1be20734db46364739b122d4a
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:upsert
+- kt:external-id-fields
+difficulty: 3
+created: '2026-11-19'
+status: active

@@ -1,0 +1,17 @@
+id: sf-001151
+product_area: data-cloud-and-ai
+true_statement: Salesforce advises rotating a Data 360 webhook data action secret key at least every 12 months, and a new key can take up to 15 minutes to take effect.
+false_statement: Salesforce advises rotating a Data 360 webhook data action secret key at least every 90 days, and a new key takes effect immediately.
+explanation: The guidance is a rotation at least yearly, with up to a 15-minute delay before a regenerated key applies, so the receiver must be updated promptly.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/data-actions.md
+  commit: f052331c4264f1e7111e95b71a27616054c970e2
+  blob: eedf762dbcc004ad0b40bf17b978921c37585c3d
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:data-actions
+difficulty: 2
+created: '2026-11-19'
+status: active

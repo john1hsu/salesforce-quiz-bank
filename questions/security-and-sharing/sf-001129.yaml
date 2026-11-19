@@ -1,0 +1,18 @@
+id: sf-001129
+product_area: security-and-sharing
+true_statement: Data Detect custom detection patterns are regular expressions, and a custom pattern or keyword is capped at 255 characters.
+false_statement: Data Detect custom detection patterns are regular expressions, and a custom pattern or keyword is capped at 1,000 characters.
+explanation: Admins can add regex patterns for their own identifiers, but each pattern or keyword is limited to 255 characters, not 1,000.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/data-detect.md
+  commit: f052331c4264f1e7111e95b71a27616054c970e2
+  blob: 4b9e44b67ae8175f96893f841d32646c8c6f7a66
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:data-detect
+- kt:salesforce-shield
+difficulty: 2
+created: '2026-11-19'
+status: active

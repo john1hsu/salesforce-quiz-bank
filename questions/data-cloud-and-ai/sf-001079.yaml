@@ -1,0 +1,19 @@
+id: sf-001079
+product_area: data-cloud-and-ai
+true_statement: In a Data 360 batch data transform, the Upsert write mode reloads all input on every run, while Replace attempts an incremental run of changes only.
+false_statement: In a Data 360 batch data transform, the Replace write mode reloads all input on every run, while Upsert attempts an incremental run of changes only.
+explanation: Upsert reprocesses the full input each time and merges it into the output; Replace is the mode that tries to load only what changed since the last run. The false statement swaps the two.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/data-transforms.md
+  commit: f052331c4264f1e7111e95b71a27616054c970e2
+  blob: 0e8f2b3b6ac88a364ca33096e122ae7249b2169a
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:data-cloud-consultant-certification
+concepts:
+- kt:data-transforms
+difficulty: 3
+created: '2026-11-19'
+status: active

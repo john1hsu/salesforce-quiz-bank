@@ -1,0 +1,19 @@
+id: sf-001064
+product_area: automation
+true_statement: If one flow interview in a bulk transaction hits a governor limit, every interview in that transaction fails and its operations roll back with no retry.
+false_statement: If one flow interview in a bulk transaction hits a governor limit, only that interview fails and the other interviews' operations are saved.
+explanation: Bulkified interviews share one transaction, so a governor-limit breach in any of them fails the whole batch and nothing is retried. Isolating the failing interview is not how limit errors behave.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/flow-bulkification.md
+  commit: f052331c4264f1e7111e95b71a27616054c970e2
+  blob: 51f261f3e765580eb91ced0a8c126bb0c80d5fa0
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:flow-bulkification
+- kt:governor-limits
+- kt:limit-exception
+difficulty: 3
+created: '2026-11-19'
+status: active

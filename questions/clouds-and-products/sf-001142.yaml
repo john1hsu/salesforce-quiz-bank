@@ -1,0 +1,17 @@
+id: sf-001142
+product_area: clouds-and-products
+true_statement: In Salesforce Loyalty Management, qualifying currency has no cash value and drives tier status, while non-qualifying currency is the points members redeem.
+false_statement: In Salesforce Loyalty Management, non-qualifying currency has no cash value and drives tier status, while qualifying currency is the points members redeem.
+explanation: Qualifying points count toward tiers and can't be spent; non-qualifying points are the redeemable balance. The false statement reverses the two currency types.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/loyalty-management.md
+  commit: f052331c4264f1e7111e95b71a27616054c970e2
+  blob: 32b0c4857723c5b2f5a694cc96bb371df5408377
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:loyalty-management
+difficulty: 1
+created: '2026-11-19'
+status: active

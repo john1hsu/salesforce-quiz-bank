@@ -1,0 +1,17 @@
+id: sf-001112
+product_area: platform-architecture
+true_statement: Lamport's happened-before relation is only a partial order, because events not linked by process order or messages are concurrent.
+false_statement: Lamport's happened-before relation is a total order, because every pair of events is linked by process order or messages.
+explanation: Happened-before relates events only through process order, messages and transitivity, leaving unrelated events concurrent. A total order requires an extra tie-breaking rule such as fixed process ordering.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/distributed-computing.md
+  commit: f052331c4264f1e7111e95b71a27616054c970e2
+  blob: dbbe7211a0f20d5fc96ffaa2d8c66fd88aba758d
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:distributed-computing
+difficulty: 2
+created: '2026-11-19'
+status: active

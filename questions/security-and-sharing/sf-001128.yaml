@@ -1,0 +1,17 @@
+id: sf-001128
+product_area: security-and-sharing
+true_statement: In orgs with Person Accounts enabled, Salesforce Data Detect can't scan the Account object.
+false_statement: In orgs with Person Accounts enabled, Salesforce Data Detect can't scan the Contact object.
+explanation: The documented Person Accounts exception for Data Detect is the Account object. Contact is not the object called out.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/data-detect.md
+  commit: f052331c4264f1e7111e95b71a27616054c970e2
+  blob: 4b9e44b67ae8175f96893f841d32646c8c6f7a66
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:data-detect
+difficulty: 2
+created: '2026-11-19'
+status: active

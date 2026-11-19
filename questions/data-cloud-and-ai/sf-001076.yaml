@@ -1,0 +1,19 @@
+id: sf-001076
+product_area: data-cloud-and-ai
+true_statement: Since Winter '25, Data 360 metadata can't share a package with other platform metadata, and unlocked packages can't hold Data 360 metadata at all.
+false_statement: Since Winter '25, Data 360 metadata can't share a package with other platform metadata, and managed packages can't hold Data 360 metadata at all.
+explanation: Data 360 metadata must sit in its own package, and the package types that can carry it are managed and unmanaged ones. It is unlocked packages, not managed ones, that are excluded.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/data-kits.md
+  commit: f052331c4264f1e7111e95b71a27616054c970e2
+  blob: 03229005d20eb26e587c83c819694a5ec3fdc5ad
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:data-kits
+- kt:unlocked-packages
+- kt:second-generation-managed-packages
+difficulty: 3
+created: '2026-11-19'
+status: active

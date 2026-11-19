@@ -1,0 +1,17 @@
+id: sf-001091
+product_area: development
+true_statement: Plain Database.query can bind a simple local variable such as :accountName, but not a field reference like :myRecord.Field__c.
+false_statement: Plain Database.query can bind a field reference like :myRecord.Field__c, but not a simple local variable such as :accountName.
+explanation: Database.query resolves simple in-scope variables, but a field on an object fails with Variable does not exist, so the value must be copied into a local variable first.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/dynamic-soql.md
+  commit: f052331c4264f1e7111e95b71a27616054c970e2
+  blob: 51158fce9a43d63401b1b37a67da1ae12510a23f
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:dynamic-soql
+difficulty: 3
+created: '2026-11-19'
+status: active

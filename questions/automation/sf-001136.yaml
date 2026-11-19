@@ -1,0 +1,17 @@
+id: sf-001136
+product_area: automation
+true_statement: Flow's Collection Sort element modifies the selected collection in place, while Collection Filter writes its results to a new output collection.
+false_statement: Flow's Collection Filter element modifies the selected collection in place, while Collection Sort writes its results to a new output collection.
+explanation: Sort overwrites the source variable with the sorted, possibly truncated list; Filter leaves its input alone and produces a separate output that later elements must reference. The false statement swaps them.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/collection-filter-and-sort.md
+  commit: f052331c4264f1e7111e95b71a27616054c970e2
+  blob: f65ae5df7d07ec1a0df727680817c98d76deeac0
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:collection-filter-and-sort
+difficulty: 2
+created: '2026-11-19'
+status: active

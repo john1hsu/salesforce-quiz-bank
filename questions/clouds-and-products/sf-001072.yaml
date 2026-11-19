@@ -1,0 +1,19 @@
+id: sf-001072
+product_area: clouds-and-products
+true_statement: Backup & Recover Next stores backups natively inside the Salesforce trust boundary and is not subject to API governor limits, unlike API-based Backup & Recover.
+false_statement: Backup & Recover stores backups natively inside the Salesforce trust boundary and is not subject to API governor limits, unlike API-based Backup & Recover Next.
+explanation: The Next product is the native one that bypasses API limits. The original Backup & Recover reads through the API as an integration user, so API limits bound its throughput.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/backup-and-recover.md
+  commit: f052331c4264f1e7111e95b71a27616054c970e2
+  blob: a6cba55a989c02d2260155c474e7181d81a85f7c
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:backup-and-recover
+- kt:backup-and-recover-next
+- kt:api-request-limits
+difficulty: 3
+created: '2026-11-19'
+status: active

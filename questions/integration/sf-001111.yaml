@@ -1,0 +1,18 @@
+id: sf-001111
+product_area: integration
+true_statement: Removing the Heroku AppLink add-on deletes all of its connections, authorizations and publications.
+false_statement: Removing the Heroku AppLink add-on deletes its config vars, while its connections and publications stay active in the connected orgs.
+explanation: 'Deleting the add-on is destructive: every connection, authorization and publication goes with it, so references to the generated actions should be checked first.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/heroku-applink.md
+  commit: f052331c4264f1e7111e95b71a27616054c970e2
+  blob: a70c96d059d7e72c566958256d4680f3fde3060b
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:heroku-applink
+- kt:external-services
+difficulty: 2
+created: '2026-11-19'
+status: active

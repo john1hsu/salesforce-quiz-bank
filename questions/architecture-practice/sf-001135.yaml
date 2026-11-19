@@ -1,0 +1,19 @@
+id: sf-001135
+product_area: architecture-practice
+true_statement: A scratch org copies no data, metadata or users from production; its edition, features and settings come from a definition file, org shape or snapshot.
+false_statement: A scratch org copies production metadata and users but no data; its edition, features and settings come from a definition file, org shape or snapshot.
+explanation: Scratch orgs start empty of production content, and their shape is defined separately so they can mimic production without inheriting it. Copying production metadata is what sandboxes do.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/proof-of-concept.md
+  commit: f052331c4264f1e7111e95b71a27616054c970e2
+  blob: c6010e0aee984fdcaf3f3f49a0e8d7dde2a9f23f
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:proof-of-concept
+- kt:scratch-orgs
+- kt:sandbox-types
+difficulty: 2
+created: '2026-11-19'
+status: active

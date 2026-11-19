@@ -1,0 +1,17 @@
+id: sf-001127
+product_area: security-and-sharing
+true_statement: Salesforce Data Detect scans only text-based fields, and for Rich Text fields it checks only the plain-text content.
+false_statement: Salesforce Data Detect scans text, number and date fields, and for Rich Text fields it also checks embedded images.
+explanation: Data Detect covers Text, Text Area, Long Text Area, Rich Text and encrypted text fields, reading only plain text from Rich Text. Number and date fields and images are outside its scope.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/data-detect.md
+  commit: f052331c4264f1e7111e95b71a27616054c970e2
+  blob: 4b9e44b67ae8175f96893f841d32646c8c6f7a66
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:data-detect
+difficulty: 2
+created: '2026-11-19'
+status: active

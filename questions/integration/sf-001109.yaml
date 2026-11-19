@@ -1,0 +1,17 @@
+id: sf-001109
+product_area: integration
+true_statement: Heroku AppLink's authorized-user mode is the only mode for Heroku-initiated work such as worker dynos and nightly jobs.
+false_statement: Heroku AppLink's user-plus mode is the only mode for Heroku-initiated work such as worker dynos and nightly jobs.
+explanation: Work that starts on Heroku has no invoking Salesforce user, so it must run as a designated authorized user. user-plus extends an invoking user's access and so needs a call from Salesforce.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/heroku-applink.md
+  commit: f052331c4264f1e7111e95b71a27616054c970e2
+  blob: a70c96d059d7e72c566958256d4680f3fde3060b
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:heroku-applink
+difficulty: 2
+created: '2026-11-19'
+status: active

@@ -6,8 +6,8 @@ explanation: Only $Flow reacts to changes on the screen; $Organization, $Profile
 source:
   repo: john1hsu/salesforce-knowledge-graph
   path: articles/automation/screen-flow.md
-  commit: 3bed651e82b5943dc7a6f52de732338747658b9b
-  blob: b296ccd3129ec25d648092c1936cef46152648ea
+  commit: f052331c4264f1e7111e95b71a27616054c970e2
+  blob: 1d049a1e3cd748d44e64b65a25ef6c6b6cc98f57
 verified_release: Winter '27
 feature_status: current
 concepts:

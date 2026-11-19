@@ -1,0 +1,17 @@
+id: sf-001092
+product_area: development
+true_statement: Database.queryWithBinds matches bind map keys case-insensitively, so two keys that differ only in case throw a QueryException.
+false_statement: Database.queryWithBinds matches bind map keys case-sensitively, so two keys that differ only in case are bound as separate variables.
+explanation: Key lookup in the bind map ignores case, which makes keys like Name and name collide and raise a QueryException rather than act as two binds.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/dynamic-soql.md
+  commit: f052331c4264f1e7111e95b71a27616054c970e2
+  blob: 51158fce9a43d63401b1b37a67da1ae12510a23f
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:dynamic-soql
+difficulty: 3
+created: '2026-11-19'
+status: active

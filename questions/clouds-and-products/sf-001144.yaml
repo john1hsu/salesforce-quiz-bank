@@ -1,0 +1,17 @@
+id: sf-001144
+product_area: clouds-and-products
+true_statement: In Salesforce Loyalty Management, a qualifying currency belongs to exactly one tier group, although a tier group can use several qualifying currencies.
+false_statement: In Salesforce Loyalty Management, a tier group uses exactly one qualifying currency, although a qualifying currency can be shared by several tier groups.
+explanation: 'The cardinality runs one way: each qualifying currency maps to a single tier group, while one tier group may draw on multiple qualifying currencies. The false statement flips it.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/loyalty-management.md
+  commit: f052331c4264f1e7111e95b71a27616054c970e2
+  blob: 32b0c4857723c5b2f5a694cc96bb371df5408377
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:loyalty-management
+difficulty: 3
+created: '2026-11-19'
+status: active

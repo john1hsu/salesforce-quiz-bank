@@ -1,0 +1,17 @@
+id: sf-001068
+product_area: automation
+true_statement: Joining two collections in a Flow Transform element keeps only inner-join matches, so records with no partner in the other collection are dropped.
+false_statement: Joining two collections in a Flow Transform element works as a left outer join, so records with no partner in the other collection are kept.
+explanation: A Transform join returns only rows whose key exists in both collections. Unmatched records are discarded rather than kept as in an outer join.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/transform-element.md
+  commit: f052331c4264f1e7111e95b71a27616054c970e2
+  blob: 6e6819be9c4f87dc85837b30cb1900a658bc0ec6
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:transform-element
+difficulty: 3
+created: '2026-11-19'
+status: active

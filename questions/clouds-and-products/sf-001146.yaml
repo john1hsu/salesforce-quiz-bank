@@ -1,0 +1,17 @@
+id: sf-001146
+product_area: clouds-and-products
+true_statement: A Tableau Next asset belongs to exactly one workspace; adding it to another workspace creates a reference, not a copy.
+false_statement: A Tableau Next asset can belong to several workspaces; adding it to another workspace creates an independent copy.
+explanation: Each asset has a single home workspace, and other workspaces only point to it, so edits show up everywhere it is referenced. No duplicate is made.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/tableau-next.md
+  commit: f052331c4264f1e7111e95b71a27616054c970e2
+  blob: 3b406ac981b0485a924e07d044683b2f40b0e173
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:tableau-next
+difficulty: 2
+created: '2026-11-19'
+status: active

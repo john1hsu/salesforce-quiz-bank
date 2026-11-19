@@ -1,0 +1,20 @@
+id: sf-001080
+product_area: data-cloud-and-ai
+true_statement: A Data 360 org can have 25 streaming data transforms by default, a limit that can be adjusted through the Account Executive.
+false_statement: A Data 360 org can have 1,000 streaming data transforms by default, a limit that can be adjusted through the Account Executive.
+explanation: Streaming transforms are capped at 25 per org unless raised. The 1,000 figure is the cap for batch data transforms, not streaming ones.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/data-transforms.md
+  commit: f052331c4264f1e7111e95b71a27616054c970e2
+  blob: 0e8f2b3b6ac88a364ca33096e122ae7249b2169a
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:data-cloud-consultant-certification
+concepts:
+- kt:data-transforms
+- kt:data-cloud-limits
+difficulty: 2
+created: '2026-11-19'
+status: active

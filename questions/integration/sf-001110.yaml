@@ -1,0 +1,18 @@
+id: sf-001110
+product_area: integration
+true_statement: Heroku AppLink's service mesh buildpack must run before the app's language buildpack.
+false_statement: Heroku AppLink's service mesh buildpack must run after the app's language buildpack.
+explanation: The service mesh is the proxy that authenticates incoming Salesforce requests, and the setup guide requires it to come ahead of the language buildpack in the order.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/heroku-applink.md
+  commit: f052331c4264f1e7111e95b71a27616054c970e2
+  blob: a70c96d059d7e72c566958256d4680f3fde3060b
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:heroku-applink
+- kt:heroku
+difficulty: 2
+created: '2026-11-19'
+status: active

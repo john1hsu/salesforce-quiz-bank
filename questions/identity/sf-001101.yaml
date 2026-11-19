@@ -1,0 +1,18 @@
+id: sf-001101
+product_area: identity
+true_statement: RFC 6749 limits the client credentials grant to confidential clients, so a browser or mobile app that can't keep a secret must not use it.
+false_statement: RFC 6749 allows public clients such as browser or mobile apps to use the client credentials grant, provided the secret is sent over TLS.
+explanation: The grant authenticates the client with its own secret, so the standard reserves it for confidential clients. TLS protects the secret in transit but doesn't make a public client able to store it.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/client-credentials-flow.md
+  commit: f052331c4264f1e7111e95b71a27616054c970e2
+  blob: 85f5207841053b324288322eba1b095ddd19312a
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:client-credentials-flow
+- kt:oauth-2-0
+difficulty: 2
+created: '2026-11-19'
+status: active

@@ -1,0 +1,18 @@
+id: sf-001089
+product_area: development
+true_statement: A batch job scheduled with System.scheduleBatch is appended to the end of the Apex flex queue when its scheduled time arrives.
+false_statement: A batch job scheduled with System.scheduleBatch is placed at the front of the Apex flex queue when its scheduled time arrives.
+explanation: Scheduled batches join the flex queue at its tail like any other submission; moving one to the front takes an explicit reorder such as moveJobToFront.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/apex-flex-queue.md
+  commit: f052331c4264f1e7111e95b71a27616054c970e2
+  blob: 30890104ede7a12990e9251b21339ef4a520ed6f
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:apex-flex-queue
+- kt:scheduled-apex
+difficulty: 2
+created: '2026-11-19'
+status: active

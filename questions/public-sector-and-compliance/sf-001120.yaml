@@ -1,0 +1,18 @@
+id: sf-001120
+product_area: public-sector-and-compliance
+true_statement: Querying Person Account __pc fields returns no compliance categorization, because the classification metadata lives on the Contact object.
+false_statement: Querying Person Account __pc fields returns no compliance categorization, because the classification metadata lives on the User object.
+explanation: Person account fields ending in __pc are backed by Contact, so their classification must be read from Contact. The User object is not where it is stored.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/data-classification.md
+  commit: f052331c4264f1e7111e95b71a27616054c970e2
+  blob: fc3d91080bf233d51f4cce74420d1b77b732f3b9
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:data-classification
+- kt:tooling-api
+difficulty: 3
+created: '2026-11-19'
+status: active

@@ -1,0 +1,17 @@
+id: sf-001121
+product_area: public-sector-and-compliance
+true_statement: A HITRUST r2 assessment is valid for two years with an interim review, while the e1 and i1 assessments are each valid for one year.
+false_statement: A HITRUST r2 assessment is valid for three years with annual surveillance, while the e1 and i1 assessments are each valid for one year.
+explanation: The risk-based r2 assessment lasts two years and needs an interim review partway through. e1 and i1 are one-year assessments.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/hitrust-csf.md
+  commit: f052331c4264f1e7111e95b71a27616054c970e2
+  blob: 72452983ee167ba03f17f0b7aa9a7d754f48e735
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:hitrust-csf
+difficulty: 2
+created: '2026-11-19'
+status: active

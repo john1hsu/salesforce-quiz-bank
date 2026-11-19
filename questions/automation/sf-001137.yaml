@@ -1,0 +1,18 @@
+id: sf-001137
+product_area: automation
+true_statement: In Flow's Collection Sort, empty strings and nulls sort last by default, because the nulls-first flag on each sort option defaults to false.
+false_statement: In Flow's Collection Sort, empty strings and nulls sort first by default, because the nulls-first flag on each sort option defaults to true.
+explanation: Each sort option's flag for putting empty values first defaults to false, so nulls and blanks end up at the end unless the builder changes it.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/collection-filter-and-sort.md
+  commit: f052331c4264f1e7111e95b71a27616054c970e2
+  blob: f65ae5df7d07ec1a0df727680817c98d76deeac0
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:collection-filter-and-sort
+- kt:metadata-api
+difficulty: 3
+created: '2026-11-19'
+status: active

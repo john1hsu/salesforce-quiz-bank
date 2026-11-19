@@ -1,0 +1,17 @@
+id: sf-001143
+product_area: clouds-and-products
+true_statement: When escrow is turned on in a Salesforce loyalty program, member balances can't go negative, so escrow can't be combined with negative points.
+false_statement: When escrow is turned on in a Salesforce loyalty program, member balances can go negative, so escrow requires negative points to be enabled.
+explanation: Escrow holds points for a set period to absorb returns, and with it enabled balances are kept at zero or above, making it incompatible with negative points.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/loyalty-management.md
+  commit: f052331c4264f1e7111e95b71a27616054c970e2
+  blob: 32b0c4857723c5b2f5a694cc96bb371df5408377
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:loyalty-management
+difficulty: 3
+created: '2026-11-19'
+status: active

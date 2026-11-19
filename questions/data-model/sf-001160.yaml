@@ -1,0 +1,18 @@
+id: sf-001160
+product_area: data-model
+true_statement: Global value sets created at API version 57.0 or later get a __gvs suffix on their developer name, which deployments must include.
+false_statement: Global value sets created at API version 57.0 or later get a __gs suffix on their developer name, which deployments must include.
+explanation: From API 57.0, Salesforce appends __gvs to new global value set names, and package.xml entries and fullName values must use it.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/picklist-value-sets.md
+  commit: f052331c4264f1e7111e95b71a27616054c970e2
+  blob: d57ea8b0f7c3e03aca1bc0241024cbd9c78254ab
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:picklist-value-sets
+- kt:metadata-api
+difficulty: 3
+created: '2026-11-19'
+status: active

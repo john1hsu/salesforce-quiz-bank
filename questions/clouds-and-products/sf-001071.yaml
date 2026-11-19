@@ -1,0 +1,17 @@
+id: sf-001071
+product_area: clouds-and-products
+true_statement: Salesforce Backup & Recover leaves Knowledge articles and custom big objects out of backups by default.
+false_statement: Salesforce Backup & Recover leaves Chatter feeds and attachments out of backups by default.
+explanation: Knowledge articles and custom big objects are excluded unless configured, while Chatter feeds and attachments are part of the standard coverage alongside objects, fields and files.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/backup-and-recover.md
+  commit: f052331c4264f1e7111e95b71a27616054c970e2
+  blob: a6cba55a989c02d2260155c474e7181d81a85f7c
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:backup-and-recover
+difficulty: 2
+created: '2026-11-19'
+status: active

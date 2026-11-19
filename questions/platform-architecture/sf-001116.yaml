@@ -1,0 +1,18 @@
+id: sf-001116
+product_area: platform-architecture
+true_statement: Environment Management and Deployment is the lightest section of the Platform Administrator II exam, at 7%.
+false_statement: Auditing and Monitoring is the lightest section of the Platform Administrator II exam, at 7%.
+explanation: Environment Management and Deployment carries the smallest weight at 7%. Auditing and Monitoring is weighted at 10%.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/platform-administrator-ii-certification.md
+  commit: f052331c4264f1e7111e95b71a27616054c970e2
+  blob: 91104d5b466a6a581669d10c9b161ad01df3228c
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:platform-administrator-ii-certification
+- kt:change-sets
+difficulty: 2
+created: '2026-11-19'
+status: active

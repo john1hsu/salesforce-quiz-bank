@@ -1,0 +1,18 @@
+id: sf-001118
+product_area: public-sector-and-compliance
+true_statement: Setting a field's Field Usage to Hidden or DeprecateCandidate in Salesforce does not hide or expose the field to any user.
+false_statement: Setting a field's Field Usage to Hidden in Salesforce removes the field from page layouts and blocks API access for all users.
+explanation: 'Data classification attributes are informational only: Field Usage records a decision about the field but changes no access. Field-level security and layouts still control visibility.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/data-classification.md
+  commit: f052331c4264f1e7111e95b71a27616054c970e2
+  blob: fc3d91080bf233d51f4cce74420d1b77b732f3b9
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:data-classification
+- kt:field-level-security
+difficulty: 2
+created: '2026-11-19'
+status: active

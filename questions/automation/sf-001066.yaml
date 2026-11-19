@@ -1,0 +1,18 @@
+id: sf-001066
+product_area: automation
+true_statement: When a Data Loader update of 100 cases runs a flow, the flow's Get Records step is bulkified into a single SOQL query across the interviews.
+false_statement: When a Data Loader update of 100 cases runs a flow, the flow's Get Records step issues one SOQL query per case, 100 queries in total.
+explanation: The Flow runtime collects interviews waiting at the same Get Records element and runs one shared query for them. Per-record queries only happen when the element sits inside a loop within one interview.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/flow-bulkification.md
+  commit: f052331c4264f1e7111e95b71a27616054c970e2
+  blob: 51f261f3e765580eb91ced0a8c126bb0c80d5fa0
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:flow-bulkification
+- kt:record-triggered-flow
+difficulty: 2
+created: '2026-11-19'
+status: active

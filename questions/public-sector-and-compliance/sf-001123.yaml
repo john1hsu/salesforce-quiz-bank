@@ -1,0 +1,19 @@
+id: sf-001123
+product_area: public-sector-and-compliance
+true_statement: To inherit Salesforce's HITRUST controls, a customer creates inheritance requests in MyCSF, and Salesforce approves or rejects each against its Shared Responsibility Matrix.
+false_statement: To inherit Salesforce's HITRUST controls, a customer submits Salesforce's SOC 2 Type 2 report to its assessor, who must accept it in place of the controls.
+explanation: Inheritance runs through HITRUST's MyCSF tool with Salesforce approving each request. Assessors may decline to rely on SOC 2 controls they haven't tested, which is why the inheritance program exists.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/hitrust-csf.md
+  commit: f052331c4264f1e7111e95b71a27616054c970e2
+  blob: 72452983ee167ba03f17f0b7aa9a7d754f48e735
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:hitrust-csf
+- kt:shared-responsibility-model
+- kt:soc-2
+difficulty: 3
+created: '2026-11-19'
+status: active

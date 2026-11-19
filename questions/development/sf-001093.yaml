@@ -1,0 +1,18 @@
+id: sf-001093
+product_area: development
+true_statement: A query passed to Database.getQueryLocator cannot use FOR UPDATE.
+false_statement: A query passed to Database.getQueryLocator cannot use ORDER BY.
+explanation: Record locking with FOR UPDATE is not allowed in a QueryLocator query. Sorting with ORDER BY is not the documented restriction.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/dynamic-soql.md
+  commit: f052331c4264f1e7111e95b71a27616054c970e2
+  blob: 51158fce9a43d63401b1b37a67da1ae12510a23f
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:dynamic-soql
+- kt:batch-apex
+difficulty: 2
+created: '2026-11-19'
+status: active
