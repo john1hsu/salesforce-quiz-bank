@@ -1,0 +1,18 @@
+id: sf-001217
+product_area: clouds-and-products
+true_statement: A dashboard chart or metric widget needs a source report that has at least one grouping.
+false_statement: A dashboard chart or metric widget needs a source report that has at least one bucket column.
+explanation: Charts and metrics on a dashboard summarise grouped data, so their source report must include at least one grouping; without one the chart is silently blocked. Bucket columns are an optional report feature, not the requirement.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/salesforce-analytics.md
+  commit: 77eefa513ef7710d1c3de71061fdc37e030ac096
+  blob: dfd211388d65bb84a158664dbccbbaa8b65ff13f
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:salesforce-analytics
+- kt:reports-and-dashboards
+difficulty: 2
+created: '2026-11-20'
+status: active

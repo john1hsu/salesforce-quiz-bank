@@ -1,45 +1,45 @@
 {
  "totals": {
-  "active": 1152,
+  "active": 1242,
   "retired": 2
  },
  "areas": {
   "architecture-practice": {
-   "active": 103
+   "active": 109
   },
   "automation": {
-   "active": 96
-  },
-  "clouds-and-products": {
-   "active": 101
-  },
-  "data-cloud-and-ai": {
    "active": 102
   },
+  "clouds-and-products": {
+   "active": 107
+  },
+  "data-cloud-and-ai": {
+   "active": 108
+  },
   "data-model": {
-   "active": 100
+   "active": 106
   },
   "development": {
-   "active": 96,
+   "active": 105,
    "retired": 1
   },
   "devops-and-alm": {
-   "active": 89
+   "active": 101
   },
   "identity": {
-   "active": 92
+   "active": 104
   },
   "integration": {
-   "active": 92
+   "active": 101
   },
   "platform-architecture": {
-   "active": 94
+   "active": 100
   },
   "public-sector-and-compliance": {
-   "active": 96
+   "active": 102
   },
   "security-and-sharing": {
-   "active": 91,
+   "active": 97,
    "retired": 1
   }
  },
@@ -89,6 +89,9 @@
   "articles/architecture-practice/environment-strategy.md": {
    "active": 3
   },
+  "articles/architecture-practice/fit-gap-analysis.md": {
+   "active": 3
+  },
   "articles/architecture-practice/heroku-architect-certification.md": {
    "active": 3
   },
@@ -134,6 +137,9 @@
   "articles/architecture-practice/system-architect-certification.md": {
    "active": 3
   },
+  "articles/architecture-practice/tableau-architect-certification.md": {
+   "active": 3
+  },
   "articles/architecture-practice/technical-debt-in-salesforce.md": {
    "active": 3
   },
@@ -153,6 +159,9 @@
    "active": 1
   },
   "articles/automation/assignment-rules.md": {
+   "active": 3
+  },
+  "articles/automation/auto-response-rules.md": {
    "active": 3
   },
   "articles/automation/autolaunched-flow.md": {
@@ -189,6 +198,9 @@
    "active": 1
   },
   "articles/automation/flow-http-callout.md": {
+   "active": 3
+  },
+  "articles/automation/flow-loop-element.md": {
    "active": 3
   },
   "articles/automation/flow-orchestrator.md": {
@@ -302,6 +314,9 @@
   "articles/clouds-and-products/loyalty-management.md": {
    "active": 3
   },
+  "articles/clouds-and-products/marketing-cloud-account-engagement.md": {
+   "active": 3
+  },
   "articles/clouds-and-products/marketing-cloud-engagement.md": {
    "active": 3
   },
@@ -327,6 +342,9 @@
    "active": 3
   },
   "articles/clouds-and-products/sales-cloud.md": {
+   "active": 3
+  },
+  "articles/clouds-and-products/salesforce-analytics.md": {
    "active": 3
   },
   "articles/clouds-and-products/salesforce-cpq.md": {
@@ -449,6 +467,12 @@
   "articles/data-cloud-and-ai/streaming-insights.md": {
    "active": 3
   },
+  "articles/data-cloud-and-ai/tableau-semantics.md": {
+   "active": 3
+  },
+  "articles/data-cloud-and-ai/unstructured-data-in-data-cloud.md": {
+   "active": 3
+  },
   "articles/data-cloud-and-ai/vector-search-in-data-cloud.md": {
    "active": 3
   },
@@ -515,7 +539,13 @@
   "articles/data-model/junction-object.md": {
    "active": 3
   },
+  "articles/data-model/lookup-filters.md": {
+   "active": 3
+  },
   "articles/data-model/lookup-vs-master-detail.md": {
+   "active": 3
+  },
+  "articles/data-model/multiple-currencies.md": {
    "active": 3
   },
   "articles/data-model/object-relationships.md": {
@@ -623,10 +653,16 @@
   "articles/development/limits-class.md": {
    "active": 3
   },
+  "articles/development/mixed-dml-error.md": {
+   "active": 3
+  },
   "articles/development/orglimits-class.md": {
    "active": 1
   },
   "articles/development/platform-developer-certification.md": {
+   "active": 3
+  },
+  "articles/development/platform-developer-ii-certification.md": {
    "active": 3
   },
   "articles/development/queueable-apex.md": {
@@ -648,6 +684,9 @@
   "articles/development/test-data-factory.md": {
    "active": 3
   },
+  "articles/development/transaction-finalizers.md": {
+   "active": 3
+  },
   "articles/development/trigger-framework-pattern.md": {
    "active": 3
   },
@@ -658,6 +697,9 @@
    "active": 3
   },
   "articles/devops-and-alm/agentforce-dx.md": {
+   "active": 3
+  },
+  "articles/devops-and-alm/agentforce-vibes-ide.md": {
    "active": 3
   },
   "articles/devops-and-alm/appexchange-security-review.md": {
@@ -690,6 +732,9 @@
   "articles/devops-and-alm/devops-center.md": {
    "active": 3
   },
+  "articles/devops-and-alm/devops-testing.md": {
+   "active": 3
+  },
   "articles/devops-and-alm/first-generation-managed-packages.md": {
    "active": 3
   },
@@ -705,6 +750,9 @@
   "articles/devops-and-alm/org-check.md": {
    "active": 3
   },
+  "articles/devops-and-alm/org-shape.md": {
+   "active": 3
+  },
   "articles/devops-and-alm/package-dependencies.md": {
    "active": 3
   },
@@ -712,6 +760,9 @@
    "active": 3
   },
   "articles/devops-and-alm/package-xml-manifest.md": {
+   "active": 3
+  },
+  "articles/devops-and-alm/push-upgrades.md": {
    "active": 3
   },
   "articles/devops-and-alm/release-management.md": {
@@ -751,6 +802,12 @@
    "active": 1
   },
   "articles/identity/account-takeover.md": {
+   "active": 3
+  },
+  "articles/identity/api-access-control.md": {
+   "active": 3
+  },
+  "articles/identity/certificate-and-key-management.md": {
    "active": 3
   },
   "articles/identity/client-credentials-flow.md": {
@@ -804,6 +861,9 @@
   "articles/identity/multi-factor-authentication.md": {
    "active": 1
   },
+  "articles/identity/mutual-tls-authentication.md": {
+   "active": 3
+  },
   "articles/identity/my-domain.md": {
    "active": 3
   },
@@ -832,6 +892,9 @@
    "active": 3
   },
   "articles/identity/saml-2-0.md": {
+   "active": 3
+  },
+  "articles/identity/scim.md": {
    "active": 3
   },
   "articles/identity/session-security-levels.md": {
@@ -864,6 +927,9 @@
   "articles/integration/bulk-api-allocations.md": {
    "active": 3
   },
+  "articles/integration/change-data-capture-allocations.md": {
+   "active": 3
+  },
   "articles/integration/change-data-capture.md": {
    "active": 3
   },
@@ -889,6 +955,9 @@
    "active": 3
   },
   "articles/integration/heroku-applink.md": {
+   "active": 3
+  },
+  "articles/integration/heroku-connect.md": {
    "active": 3
   },
   "articles/integration/integration-architect-certification.md": {
@@ -939,6 +1008,9 @@
   "articles/integration/soap-api.md": {
    "active": 3
   },
+  "articles/integration/streaming-api.md": {
+   "active": 3
+  },
   "articles/integration/user-interface-api.md": {
    "active": 3
   },
@@ -946,6 +1018,9 @@
    "active": 3
   },
   "articles/platform-architecture/cloud-computing.md": {
+   "active": 3
+  },
+  "articles/platform-architecture/content-delivery-network.md": {
    "active": 3
   },
   "articles/platform-architecture/custom-index-limits.md": {
@@ -1018,6 +1093,9 @@
    "active": 3
   },
   "articles/platform-architecture/salesforce-edge-network.md": {
+   "active": 3
+  },
+  "articles/platform-architecture/salesforce-go.md": {
    "active": 3
   },
   "articles/platform-architecture/salesforce-platform.md": {
@@ -1101,6 +1179,9 @@
   "articles/public-sector-and-compliance/iso-iec-27001.md": {
    "active": 3
   },
+  "articles/public-sector-and-compliance/iso-iec-27002.md": {
+   "active": 3
+  },
   "articles/public-sector-and-compliance/nist-cybersecurity-framework.md": {
    "active": 3
   },
@@ -1132,6 +1213,9 @@
    "active": 3
   },
   "articles/public-sector-and-compliance/soc-2.md": {
+   "active": 3
+  },
+  "articles/public-sector-and-compliance/zero-trust-architecture.md": {
    "active": 3
   },
   "articles/security-and-sharing/apex-managed-sharing.md": {
@@ -1205,6 +1289,12 @@
   },
   "articles/security-and-sharing/salesforce-shield.md": {
    "active": 1
+  },
+  "articles/security-and-sharing/scoping-rules.md": {
+   "active": 3
+  },
+  "articles/security-and-sharing/secure-coding.md": {
+   "active": 3
   },
   "articles/security-and-sharing/session-settings.md": {
    "active": 3

@@ -1,0 +1,18 @@
+id: sf-001164
+product_area: development
+true_statement: Synchronous governor limits apply inside a Transaction Finalizer, except heap size, enqueueJob jobs and @future calls, which follow asynchronous limits.
+false_statement: Asynchronous governor limits apply inside a Transaction Finalizer, except heap size, enqueueJob jobs and @future calls, which follow synchronous limits.
+explanation: A finalizer runs under the synchronous limit set, with three exceptions (total heap, System.enqueueJob jobs and @future calls per invocation) that use the asynchronous allocations. The false version reverses which set is the default.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/transaction-finalizers.md
+  commit: 77eefa513ef7710d1c3de71061fdc37e030ac096
+  blob: 0f7571b24909b69e98e0111d405d7f8d77f3ecc3
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:transaction-finalizers
+- kt:governor-limits
+difficulty: 3
+created: '2026-11-20'
+status: active

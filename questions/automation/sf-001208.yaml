@@ -1,0 +1,18 @@
+id: sf-001208
+product_area: automation
+true_statement: Apex inserts of leads or cases fire auto-response rules according to the triggerAutoResponseEmail flag on Database.DMLOptions.emailHeader.
+false_statement: Apex inserts of leads or cases fire auto-response rules according to the useDefaultRule flag on Database.DMLOptions.assignmentRuleHeader.
+explanation: The emailHeader's triggerAutoResponseEmail setting controls whether auto-responses send for records created with Apex DML. The assignment rule header governs assignment rules, not auto-response emails.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/auto-response-rules.md
+  commit: 77eefa513ef7710d1c3de71061fdc37e030ac096
+  blob: 0a16165610f5ffede5c7ecdfd4f08c2fc1de27cf
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:auto-response-rules
+- kt:assignment-rules
+difficulty: 2
+created: '2026-11-20'
+status: active

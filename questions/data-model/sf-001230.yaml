@@ -1,0 +1,17 @@
+id: sf-001230
+product_area: data-model
+true_statement: In a multicurrency org, a currency amount's decimal places come from that currency's setup, not from the custom currency field's own setting.
+false_statement: In a multicurrency org, a currency amount's decimal places come from the custom currency field's own setting, not from that currency's setup.
+explanation: Once multiple currencies are on, decimals are set per currency in Manage Currencies and the field-level decimal setting is ignored. The false statement reverses which setting wins.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/multiple-currencies.md
+  commit: 77eefa513ef7710d1c3de71061fdc37e030ac096
+  blob: 52d607a49c7289d4f01c073d0b7dc638878a212c
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:multiple-currencies
+difficulty: 2
+created: '2026-11-20'
+status: active

@@ -1,0 +1,18 @@
+id: sf-001206
+product_area: architecture-practice
+true_statement: Tableau Blueprint suggests self-migration to Tableau Cloud only for small sites of roughly 100 to 150 users or fewer, with one site and simple permissions.
+false_statement: Tableau Blueprint suggests self-migration to Tableau Cloud for sites of up to roughly 1,000 to 1,500 users, with several sites and complex permissions.
+explanation: Blueprint keeps self-migration for small, simple estates of about 100 to 150 users on one site. Larger or more complex estates are pointed to Professional Services or a partner.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/tableau-architect-certification.md
+  commit: 77eefa513ef7710d1c3de71061fdc37e030ac096
+  blob: 894367f72cd8dfdba754da9365e2b9a2126f2107
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:tableau-architect-certification
+- kt:tableau-blueprint
+difficulty: 3
+created: '2026-11-20'
+status: active

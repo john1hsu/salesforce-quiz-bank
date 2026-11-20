@@ -1,0 +1,17 @@
+id: sf-001190
+product_area: public-sector-and-compliance
+true_statement: In ISO/IEC 27002:2022, Annex A explains how to use the control attributes, while Annex B maps the controls back to the 2013 edition.
+false_statement: In ISO/IEC 27002:2022, Annex B explains how to use the control attributes, while Annex A maps the controls back to the 2013 edition.
+explanation: Annex A covers the optional attributes used to filter the catalog, and Annex B is the mapping to 2013 controls that helps update older control matrices. The false statement swaps the two annexes.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/iso-iec-27002.md
+  commit: 77eefa513ef7710d1c3de71061fdc37e030ac096
+  blob: 0ae580d2828de06cbb5a2faea08ab3fa10cb4bb2
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:iso-iec-27002
+difficulty: 3
+created: '2026-11-20'
+status: active

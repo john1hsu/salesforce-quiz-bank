@@ -1,0 +1,18 @@
+id: sf-001228
+product_area: data-model
+true_statement: With Advanced Currency Management, opportunity amounts convert at the dated exchange rate in force on the opportunity's Close Date.
+false_statement: With Advanced Currency Management, opportunity amounts convert at the dated exchange rate in force on the opportunity's Created Date.
+explanation: ACM ties opportunity and opportunity product conversion to the Close Date, so moving that date into another rate period changes the converted amount. The creation date plays no part in picking the rate.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/multiple-currencies.md
+  commit: 77eefa513ef7710d1c3de71061fdc37e030ac096
+  blob: 52d607a49c7289d4f01c073d0b7dc638878a212c
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:multiple-currencies
+- kt:sales-cloud
+difficulty: 2
+created: '2026-11-20'
+status: active

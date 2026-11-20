@@ -1,0 +1,18 @@
+id: sf-001179
+product_area: integration
+true_statement: Each Heroku Connect mapping is read-only by default and becomes read-write only when its option to write database updates to Salesforce is ticked.
+false_statement: Each Heroku Connect mapping is read-write by default and becomes read-only only when its option to write database updates to Salesforce is cleared.
+explanation: Mappings start as one-way syncs from Salesforce into Postgres, and write-back must be switched on per mapping. The false version gets the default direction wrong.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/heroku-connect.md
+  commit: 77eefa513ef7710d1c3de71061fdc37e030ac096
+  blob: df87edc9d5e5639538d98e246196d4b5134994d7
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:heroku-connect
+- kt:heroku-postgres
+difficulty: 1
+created: '2026-11-20'
+status: active

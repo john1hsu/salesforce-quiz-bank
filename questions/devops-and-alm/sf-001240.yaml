@@ -1,0 +1,18 @@
+id: sf-001240
+product_area: devops-and-alm
+true_statement: An org shape captures Metadata API settings with Boolean fields, but settings with integer or string fields must be added to the definition file manually.
+false_statement: An org shape captures Metadata API settings with integer or string fields, but settings with Boolean fields must be added to the definition file manually.
+explanation: The shape records the source org's Boolean Metadata API settings along with its edition, features, limits and package licenses. Integer and string settings are left out and have to be added to the scratch org definition by hand.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/org-shape.md
+  commit: 77eefa513ef7710d1c3de71061fdc37e030ac096
+  blob: 68956b04cbc89493522f40b43dcd3b6987cbac9f
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:org-shape
+- kt:scratch-orgs
+difficulty: 2
+created: '2026-11-20'
+status: active

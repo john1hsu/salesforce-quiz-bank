@@ -1,0 +1,18 @@
+id: sf-001220
+product_area: data-cloud-and-ai
+true_statement: In Tableau Semantics, a relationship's join type is decided at query time, when a query actually uses fields from the related objects.
+false_statement: In Tableau Semantics, a relationship's join type is fixed when the relationship is created, before any query uses the related objects.
+explanation: Relationships in a semantic model don't lock in a join type up front; the semantic layer picks it when a query touches fields from related objects. That is why Trailhead prefers relationships over manual joins.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/tableau-semantics.md
+  commit: 77eefa513ef7710d1c3de71061fdc37e030ac096
+  blob: dbaaaabdf2f0fa7edb015172987dfd1407bb0ff8
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:tableau-semantics
+- kt:data-model-objects
+difficulty: 3
+created: '2026-11-20'
+status: active

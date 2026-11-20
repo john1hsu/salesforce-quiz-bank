@@ -1,0 +1,18 @@
+id: sf-001233
+product_area: development
+true_statement: Mixed DML validation is skipped during deployment, so a test can pass while deploying yet fail when run from the UI.
+false_statement: Mixed DML validation is skipped when tests run from the UI, so a test can pass there yet fail while deploying.
+explanation: Deployment skips the mixed DML check, which is why a test may succeed in a deploy but throw the error in a UI test run. The false statement swaps which context skips the check.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/mixed-dml-error.md
+  commit: 77eefa513ef7710d1c3de71061fdc37e030ac096
+  blob: f512f75ca11976828456c9b2be78124f2404d38f
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:mixed-dml-error
+- kt:apex-testing
+difficulty: 3
+created: '2026-11-20'
+status: active

@@ -1,0 +1,17 @@
+id: sf-001189
+product_area: public-sector-and-compliance
+true_statement: 'ISO/IEC 27002:2022 replaced the 14 control domains of the 2013 edition with four themes: organizational, people, physical and technological.'
+false_statement: 'ISO/IEC 27002:2022 replaced the 14 control domains of the 2013 edition with three themes: organizational, physical and technological.'
+explanation: The 2022 edition reorganized its catalog into four themes, and people is one of them alongside organizational, physical and technological. The false statement drops the people theme.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/iso-iec-27002.md
+  commit: 77eefa513ef7710d1c3de71061fdc37e030ac096
+  blob: 0ae580d2828de06cbb5a2faea08ab3fa10cb4bb2
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:iso-iec-27002
+difficulty: 1
+created: '2026-11-20'
+status: active

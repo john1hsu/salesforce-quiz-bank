@@ -1,0 +1,18 @@
+id: sf-001210
+product_area: automation
+true_statement: 'Trailhead ranks Flow iteration options: use a Transform element if it fits, a Loop element if not, and a manual Decision-based loop only as a last resort.'
+false_statement: 'Trailhead ranks Flow iteration options: use a Loop element if it fits, a Transform element if not, and a manual Decision-based loop only as a last resort.'
+explanation: Transform is the fastest option and least likely to hit limits, so it comes first, with the Loop element second. The false version puts Loop ahead of Transform.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/flow-loop-element.md
+  commit: 77eefa513ef7710d1c3de71061fdc37e030ac096
+  blob: 97db4795c36f063b3852f592586bbb5e362c056b
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:flow-loop-element
+- kt:transform-element
+difficulty: 2
+created: '2026-11-20'
+status: active

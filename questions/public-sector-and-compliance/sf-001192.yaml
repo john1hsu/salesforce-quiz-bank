@@ -1,0 +1,17 @@
+id: sf-001192
+product_area: public-sector-and-compliance
+true_statement: In NIST SP 800-207, the policy engine decides whether to grant, deny or revoke access, while the policy administrator opens the path and issues session credentials.
+false_statement: In NIST SP 800-207, the policy administrator decides whether to grant, deny or revoke access, while the policy engine opens the path and issues session credentials.
+explanation: The policy engine runs the trust algorithm and makes the access decision; the policy administrator acts on it by opening or closing the path and issuing credentials. Together they form the policy decision point, and the false statement swaps their roles.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/zero-trust-architecture.md
+  commit: 77eefa513ef7710d1c3de71061fdc37e030ac096
+  blob: f0586507bbbcf27e6f86e16fa6e80f3f48dedca1
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:zero-trust-architecture
+difficulty: 2
+created: '2026-11-20'
+status: active

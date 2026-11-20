@@ -1,0 +1,18 @@
+id: sf-001195
+product_area: security-and-sharing
+true_statement: A scoping rule only sets which records a user sees by default, so preventing users from seeing records calls for a restriction rule instead.
+false_statement: A restriction rule only sets which records a user sees by default, so preventing users from seeing records calls for a scoping rule instead.
+explanation: Scoping rules narrow default views but leave access unchanged, and users can widen the scope to reach other records they can see. Restriction rules actually remove access, so the false statement reverses the two features.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/scoping-rules.md
+  commit: 77eefa513ef7710d1c3de71061fdc37e030ac096
+  blob: 3e3197afd5b02862e2046d572e170ae5942feaee
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:scoping-rules
+- kt:restriction-rules
+difficulty: 1
+created: '2026-11-20'
+status: active

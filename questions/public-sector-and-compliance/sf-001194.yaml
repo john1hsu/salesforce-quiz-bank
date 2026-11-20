@@ -1,0 +1,18 @@
+id: sf-001194
+product_area: public-sector-and-compliance
+true_statement: OMB memorandum M-22-09 tells federal agencies to enforce MFA at the application layer rather than at the network layer.
+false_statement: OMB memorandum M-22-09 tells federal agencies to enforce MFA at the network layer rather than at the application layer.
+explanation: M-22-09 moves MFA enforcement to the application layer, in line with zero trust's rejection of trust based on network location. Enforcing at the network layer is the perimeter model the memo moves away from.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/zero-trust-architecture.md
+  commit: 77eefa513ef7710d1c3de71061fdc37e030ac096
+  blob: f0586507bbbcf27e6f86e16fa6e80f3f48dedca1
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:zero-trust-architecture
+- kt:multi-factor-authentication
+difficulty: 2
+created: '2026-11-20'
+status: active

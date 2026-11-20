@@ -1,0 +1,18 @@
+id: sf-001211
+product_area: automation
+true_statement: An element inside two nested Flow loops of 5 items each runs 25 times, which is why Trailhead warns against nested loops.
+false_statement: An element inside two nested Flow loops of 5 items each runs 10 times, which is why Trailhead warns against nested loops.
+explanation: Nested loops multiply executions, so 5 times 5 gives 25 runs. Ten would be the count if the loops added rather than multiplied.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/flow-loop-element.md
+  commit: 77eefa513ef7710d1c3de71061fdc37e030ac096
+  blob: 97db4795c36f063b3852f592586bbb5e362c056b
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:flow-loop-element
+- kt:flow-limits
+difficulty: 2
+created: '2026-11-20'
+status: active

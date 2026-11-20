@@ -1,0 +1,17 @@
+id: sf-001225
+product_area: data-model
+true_statement: Each object can have at most five active required lookup filters.
+false_statement: Each object can have at most twenty-five active required lookup filters.
+explanation: Salesforce limits each object to five active required lookup filters, and every unique related-object reference in a required filter counts against the target object's limit. Twenty-five overstates it; only optional filters in Classic are unlimited.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/lookup-filters.md
+  commit: 77eefa513ef7710d1c3de71061fdc37e030ac096
+  blob: 491746d025071e60e466ed732857c9f9967c45ce
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:lookup-filters
+difficulty: 2
+created: '2026-11-20'
+status: active

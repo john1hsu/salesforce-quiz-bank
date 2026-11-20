@@ -1,0 +1,18 @@
+id: sf-001247
+product_area: identity
+true_statement: In SCIM, a user's password is a writeOnly attribute, and a service provider must never return it in clear or hashed form.
+false_statement: In SCIM, a user's password is a readOnly attribute, and a service provider returns it only in hashed form.
+explanation: 'RFC 7643 marks passwords writeOnly: clients can set them, but providers must never return them, hashed or not. readOnly would mean the client can''t set it, and returning a hash is forbidden.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/scim.md
+  commit: 77eefa513ef7710d1c3de71061fdc37e030ac096
+  blob: 83ca90c18c83a64c4281bc30d811a0a41526e1ba
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:scim
+- kt:user-provisioning
+difficulty: 2
+created: '2026-11-20'
+status: active

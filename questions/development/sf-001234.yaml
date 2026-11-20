@@ -1,0 +1,17 @@
+id: sf-001234
+product_area: development
+true_statement: Registering for the Platform Developer II exam costs US$200, and a retake costs US$100, plus applicable taxes.
+false_statement: Registering for the Platform Developer II exam costs US$400, and a retake costs US$200, plus applicable taxes.
+explanation: The PDII exam guide sets the registration fee at US$200 and the retake fee at US$100 before taxes. The doubled figures overstate both fees.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/platform-developer-ii-certification.md
+  commit: 77eefa513ef7710d1c3de71061fdc37e030ac096
+  blob: 60bc90f3780f4134f804744c32f0d6d08f2fe375
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:platform-developer-ii-certification
+difficulty: 1
+created: '2026-11-20'
+status: active

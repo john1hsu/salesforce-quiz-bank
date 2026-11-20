@@ -1,0 +1,19 @@
+id: sf-001236
+product_area: development
+true_statement: Process Automation, Logic, and Integration is the most heavily weighted section of the Platform Developer II exam, at 27%.
+false_statement: User Interface is the most heavily weighted section of the Platform Developer II exam, at 27%.
+explanation: In the PDII outline, Process Automation, Logic, and Integration carries 27%, more than any other section. User Interface is weighted at only 20%.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/platform-developer-ii-certification.md
+  commit: 77eefa513ef7710d1c3de71061fdc37e030ac096
+  blob: 60bc90f3780f4134f804744c32f0d6d08f2fe375
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:platform-developer-ii-certification
+- kt:asynchronous-apex
+- kt:platform-events
+difficulty: 2
+created: '2026-11-20'
+status: active

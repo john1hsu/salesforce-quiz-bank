@@ -1,0 +1,17 @@
+id: sf-001226
+product_area: data-model
+true_statement: In Lightning Experience every lookup filter behaves as required, even one set up as optional.
+false_statement: In Lightning Experience every lookup filter behaves as optional, even one set up as required.
+explanation: Optional lookup filters, which let users show all results and save a non-matching value, are a Classic-only behaviour. Lightning Experience enforces every filter as required regardless of the Setup choice.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/lookup-filters.md
+  commit: 77eefa513ef7710d1c3de71061fdc37e030ac096
+  blob: 491746d025071e60e466ed732857c9f9967c45ce
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:lookup-filters
+difficulty: 2
+created: '2026-11-20'
+status: active

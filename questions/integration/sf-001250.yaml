@@ -1,0 +1,19 @@
+id: sf-001250
+product_area: integration
+true_statement: CDC event delivery usage is counted per subscribed client, so 20,000 change events delivered to two clients consume 40,000 of the allocation.
+false_statement: CDC event delivery usage is counted per published event, so 20,000 change events delivered to two clients consume 20,000 of the allocation.
+explanation: Delivery is metered per subscriber, so each extra API client multiplies usage. Counting each event once regardless of how many clients receive it understates consumption.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/change-data-capture-allocations.md
+  commit: 77eefa513ef7710d1c3de71061fdc37e030ac096
+  blob: ce26ebc63cc6ab29a98ee3b3409915b8598fdb07
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:change-data-capture-allocations
+- kt:pub-sub-api
+- kt:streaming-api
+difficulty: 2
+created: '2026-11-20'
+status: active

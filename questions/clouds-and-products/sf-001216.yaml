@@ -1,0 +1,18 @@
+id: sf-001216
+product_area: clouds-and-products
+true_statement: A report run through the Reports and Dashboards REST API returns at most 2,000 rows and 100 columns.
+false_statement: A report run through the Reports and Dashboards REST API returns at most 50,000 rows and 100 columns.
+explanation: The REST API caps each report run at 2,000 rows and 100 columns, which is a key reason larger analyses move to CRM Analytics or Tableau. A 50,000-row ceiling overstates the API's limit many times over.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/salesforce-analytics.md
+  commit: 77eefa513ef7710d1c3de71061fdc37e030ac096
+  blob: dfd211388d65bb84a158664dbccbbaa8b65ff13f
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:salesforce-analytics
+- kt:reports-and-dashboards
+difficulty: 2
+created: '2026-11-20'
+status: active

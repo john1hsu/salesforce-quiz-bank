@@ -1,0 +1,20 @@
+id: sf-001196
+product_area: security-and-sharing
+true_statement: A scoping rule's SOQL() record-criteria operator is available only when the rule is created through the API, not in Object Manager.
+false_statement: A scoping rule's SOQL() record-criteria operator is available only when the rule is created in Object Manager, not through the API.
+explanation: The SOQL() operator, used for criteria that depend on another object such as a junction object, can be set only through the API. Its subquery must also include USING SCOPE EVERYTHING and may reference only $User.Id.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/scoping-rules.md
+  commit: 77eefa513ef7710d1c3de71061fdc37e030ac096
+  blob: 3e3197afd5b02862e2046d572e170ae5942feaee
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:scoping-rules
+- kt:tooling-api
+- kt:metadata-api
+- kt:soql
+difficulty: 3
+created: '2026-11-20'
+status: active

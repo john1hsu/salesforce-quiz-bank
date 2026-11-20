@@ -1,0 +1,18 @@
+id: sf-001175
+product_area: identity
+true_statement: Renewing a certificate by uploading the existing one through the Metadata API copies its X.509 parameters but generates a new key pair.
+false_statement: Renewing a certificate by uploading the existing one through the Metadata API copies its X.509 parameters and keeps the original key pair.
+explanation: The Metadata API Certificate type can't import or export private keys, so an upload reuses only the certificate's parameters and creates fresh keys. The original private key never travels with it.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/certificate-and-key-management.md
+  commit: 77eefa513ef7710d1c3de71061fdc37e030ac096
+  blob: e2d40d4ad729ada32560f84edad7d6452210e4bf
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:certificate-and-key-management
+- kt:metadata-api
+difficulty: 3
+created: '2026-11-20'
+status: active

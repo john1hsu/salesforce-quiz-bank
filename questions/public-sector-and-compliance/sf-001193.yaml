@@ -1,0 +1,18 @@
+id: sf-001193
+product_area: public-sector-and-compliance
+true_statement: NIST notes that the enhanced identity governance approach to zero trust suits SaaS offerings where customers can't run their own zero trust components.
+false_statement: NIST notes that the micro-segmentation approach to zero trust suits SaaS offerings where customers can't run their own zero trust components.
+explanation: SP 800-207 says the identity-driven approach fits SaaS, which is why a customer's zero trust design for Salesforce leans on identity, MFA and least privilege. Micro-segmentation relies on gateway enforcement points around resources, which SaaS customers typically can't deploy.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/zero-trust-architecture.md
+  commit: 77eefa513ef7710d1c3de71061fdc37e030ac096
+  blob: f0586507bbbcf27e6f86e16fa6e80f3f48dedca1
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:zero-trust-architecture
+- kt:shared-responsibility-model
+difficulty: 3
+created: '2026-11-20'
+status: active

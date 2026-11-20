@@ -1,0 +1,18 @@
+id: sf-001191
+product_area: public-sector-and-compliance
+true_statement: Organizations are certified against ISO/IEC 27001, while ISO/IEC 27002 is guidance on how the chosen controls can be implemented.
+false_statement: Organizations are certified against ISO/IEC 27002, while ISO/IEC 27001 is guidance on how the chosen controls can be implemented.
+explanation: ISO/IEC 27001 is the certifiable ISMS requirements standard; 27002 is a code of practice explaining how controls can be implemented. There is no 27002 certificate, so a vendor's evidence is its 27001 certificate and scope.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/iso-iec-27002.md
+  commit: 77eefa513ef7710d1c3de71061fdc37e030ac096
+  blob: 0ae580d2828de06cbb5a2faea08ab3fa10cb4bb2
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:iso-iec-27002
+- kt:iso-iec-27001
+difficulty: 1
+created: '2026-11-20'
+status: active

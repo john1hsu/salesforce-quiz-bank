@@ -1,0 +1,18 @@
+id: sf-001227
+product_area: data-model
+true_statement: Adding a lookup filter leaves existing values that fail it in place; the next edit of such a record forces a valid value.
+false_statement: Adding a lookup filter immediately clears existing values that fail it, leaving those lookup fields blank.
+explanation: A new filter doesn't retroactively change data, so non-matching values stay until someone edits the record and must then choose a valid one. Nothing is cleared automatically.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/lookup-filters.md
+  commit: 77eefa513ef7710d1c3de71061fdc37e030ac096
+  blob: 491746d025071e60e466ed732857c9f9967c45ce
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:lookup-filters
+- kt:data-quality
+difficulty: 3
+created: '2026-11-20'
+status: active

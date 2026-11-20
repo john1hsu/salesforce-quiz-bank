@@ -1,0 +1,18 @@
+id: sf-001207
+product_area: automation
+true_statement: Salesforce evaluates auto-response rule entries in order and sends only the template of the first entry that matches.
+false_statement: Salesforce evaluates auto-response rule entries in order and sends the template of every entry that matches.
+explanation: Rule entries are checked by sort order and evaluation stops at the first match, so later matching entries are ignored. That is why specific entries go first and a catch-all goes last.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/auto-response-rules.md
+  commit: 77eefa513ef7710d1c3de71061fdc37e030ac096
+  blob: 0a16165610f5ffede5c7ecdfd4f08c2fc1de27cf
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:auto-response-rules
+- kt:email-templates
+difficulty: 1
+created: '2026-11-20'
+status: active

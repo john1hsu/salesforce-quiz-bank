@@ -1,0 +1,18 @@
+id: sf-001221
+product_area: data-cloud-and-ai
+true_statement: Semantic model filters in Tableau Semantics aren't a security boundary; row-level security belongs in Data 360 policies.
+false_statement: Semantic model filters in Tableau Semantics are the security boundary; row-level security belongs in the model's default filters.
+explanation: Tableau's guidance treats model filters as a convenience, not access control, and puts row-level security in Data 360 policies. Relying on model filters to hide rows would leave data exposed.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/tableau-semantics.md
+  commit: 77eefa513ef7710d1c3de71061fdc37e030ac096
+  blob: dbaaaabdf2f0fa7edb015172987dfd1407bb0ff8
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:tableau-semantics
+- kt:data-cloud
+difficulty: 3
+created: '2026-11-20'
+status: active

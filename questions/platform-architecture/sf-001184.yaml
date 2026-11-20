@@ -1,0 +1,18 @@
+id: sf-001184
+product_area: platform-architecture
+true_statement: The Lightning CDN, which serves static Lightning Component framework JavaScript and CSS, is turned on with a checkbox in Session Settings.
+false_statement: The Lightning CDN, which serves static Lightning Component framework JavaScript and CSS, is turned on with a checkbox in My Domain settings.
+explanation: Admins enable the Lightning CDN through the 'Enable Content Delivery Network (CDN) for Lightning Component framework' option in Session Settings. My Domain settings is where other routing choices live, not this checkbox.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/content-delivery-network.md
+  commit: 77eefa513ef7710d1c3de71061fdc37e030ac096
+  blob: 66090945d7018bbaa04a635d754b557c04d15995
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:content-delivery-network
+- kt:session-settings
+difficulty: 2
+created: '2026-11-20'
+status: active

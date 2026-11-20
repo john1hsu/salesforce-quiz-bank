@@ -1,0 +1,18 @@
+id: sf-001162
+product_area: development
+true_statement: A Transaction Finalizer's state is captured when the Queueable finishes executing, so changes the job makes after calling attachFinalizer still reach it.
+false_statement: A Transaction Finalizer's state is captured when attachFinalizer is called, so changes the job makes after calling attachFinalizer never reach it.
+explanation: The finalizer instance is serialized at the end of the Queueable's run, which lets the job keep updating it after attaching it. Only fields marked transient are left out.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/transaction-finalizers.md
+  commit: 77eefa513ef7710d1c3de71061fdc37e030ac096
+  blob: 0f7571b24909b69e98e0111d405d7f8d77f3ecc3
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:transaction-finalizers
+- kt:queueable-apex
+difficulty: 3
+created: '2026-11-20'
+status: active

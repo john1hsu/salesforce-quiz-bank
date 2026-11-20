@@ -1,0 +1,17 @@
+id: sf-001188
+product_area: platform-architecture
+true_statement: In Salesforce Go, the Feature Sets tab groups features that solve one business problem, while the Features tab is the full filterable inventory.
+false_statement: In Salesforce Go, the Features tab groups features that solve one business problem, while the Feature Sets tab is the full filterable inventory.
+explanation: Feature Sets are curated collections aimed at a business goal such as keeping deals on track. The Features tab lists everything, filterable by setup status, availability and cloud, so the false statement reverses the tabs.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/salesforce-go.md
+  commit: 77eefa513ef7710d1c3de71061fdc37e030ac096
+  blob: c0113a0d1c2bec94614a0be79534b4bc32ec5716
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:salesforce-go
+difficulty: 1
+created: '2026-11-20'
+status: active

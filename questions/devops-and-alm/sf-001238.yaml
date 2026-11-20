@@ -1,0 +1,18 @@
+id: sf-001238
+product_area: devops-and-alm
+true_statement: In DevOps Testing, creating a review for a work item or promoting it automatically runs every test suite assigned to that pipeline stage.
+false_statement: In DevOps Testing, test suites assigned to a pipeline stage run only when a user starts them manually from the Test Suites tab.
+explanation: 'DevOps Testing runs are event-driven: a review or promotion triggers all suites assigned to the stage as one job. Manual re-runs exist for failures, but they are not the only way suites run.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/devops-testing.md
+  commit: 77eefa513ef7710d1c3de71061fdc37e030ac096
+  blob: cfc4a5cb72b136f65b8124ddb56da37650be8c48
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:devops-testing
+- kt:devops-center
+difficulty: 2
+created: '2026-11-20'
+status: active

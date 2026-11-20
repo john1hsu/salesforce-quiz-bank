@@ -1,0 +1,18 @@
+id: sf-001178
+product_area: integration
+true_statement: With Heroku Connect's default Ordered Writes, a failed insert blocks later changes for that mapping, whereas Merged Writes retries the failed insert on the next update.
+false_statement: With Heroku Connect's default Merged Writes, a failed insert blocks later changes for that mapping, whereas Ordered Writes retries the failed insert on the next update.
+explanation: Ordered Writes is the default and replays the trigger log strictly in order, so one failed insert holds up the mapping until fixed. Merged Writes condenses changes and retries failed inserts, which the false version attributes to the wrong algorithm.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/heroku-connect.md
+  commit: 77eefa513ef7710d1c3de71061fdc37e030ac096
+  blob: df87edc9d5e5639538d98e246196d4b5134994d7
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:heroku-connect
+- kt:heroku-postgres
+difficulty: 3
+created: '2026-11-20'
+status: active

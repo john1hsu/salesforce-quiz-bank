@@ -1,0 +1,19 @@
+id: sf-001244
+product_area: identity
+true_statement: In Salesforce's inbound mTLS pattern, the JWT bearer signing certificate may be self-signed, but the mTLS client certificate must be CA-signed.
+false_statement: In Salesforce's inbound mTLS pattern, the mTLS client certificate may be self-signed, but the JWT bearer signing certificate must be CA-signed.
+explanation: 'The two certificates do different jobs: the JWT signing certificate can be self-signed, while the certificate uploaded for mutual authentication must be signed by a CA. Swapping those requirements is a common setup failure.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/mutual-tls-authentication.md
+  commit: 77eefa513ef7710d1c3de71061fdc37e030ac096
+  blob: 441717eed07767ee99bcc50bd2e81ea0977b3ff3
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:mutual-tls-authentication
+- kt:jwt-bearer-flow
+- kt:certificate-and-key-management
+difficulty: 3
+created: '2026-11-20'
+status: active

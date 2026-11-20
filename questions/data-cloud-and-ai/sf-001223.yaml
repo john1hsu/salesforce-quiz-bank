@@ -1,0 +1,18 @@
+id: sf-001223
+product_area: data-cloud-and-ai
+true_statement: For blob-store sources such as Amazon S3, Data 360 leaves the files in place and the unstructured data model object references them.
+false_statement: For blob-store sources such as Amazon S3, Data 360 copies the files into its own storage and the unstructured data model object holds them.
+explanation: Data 360 doesn't import blob-store files; the UDMO points at them where they live, and a search index is built over that reference. Copying the files into Data 360 is not how this ingestion works.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/unstructured-data-in-data-cloud.md
+  commit: 77eefa513ef7710d1c3de71061fdc37e030ac096
+  blob: 3b16fd438ed5033d41e3f0503e3a3a92ba1e6a45
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:unstructured-data-in-data-cloud
+- kt:data-model-objects
+difficulty: 2
+created: '2026-11-20'
+status: active

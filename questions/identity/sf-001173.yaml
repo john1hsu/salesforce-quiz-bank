@@ -1,0 +1,18 @@
+id: sf-001173
+product_area: identity
+true_statement: If an app allowlisted under API Access Control is missing OAuth scopes, the fix is to click Block and then Unblock on the Connected Apps OAuth Usage page.
+false_statement: If an app allowlisted under API Access Control is missing OAuth scopes, the fix is to uninstall and then reinstall it from the Connected Apps OAuth Usage page.
+explanation: The documented remedy for missing scopes on an allowlisted app is a Block followed by an Unblock on Connected Apps OAuth Usage. Uninstalling the app would instead remove it from the allowlist and cut off its users.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/api-access-control.md
+  commit: 77eefa513ef7710d1c3de71061fdc37e030ac096
+  blob: c875f71ee8a0ed4ab3bda1b03e509c62eef271de
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:api-access-control
+- kt:connected-apps
+difficulty: 2
+created: '2026-11-20'
+status: active

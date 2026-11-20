@@ -1,0 +1,18 @@
+id: sf-001167
+product_area: devops-and-alm
+true_statement: Agentforce Vibes IDE installs extensions from Open VSX because it can't reach the Microsoft VS Code Marketplace, so some desktop extensions may be missing.
+false_statement: Agentforce Vibes IDE installs extensions from the Microsoft VS Code Marketplace because it can't reach Open VSX, so some desktop extensions may be missing.
+explanation: The browser IDE draws extensions from the Open VSX registry and has no access to Microsoft's marketplace. Teams that need Marketplace-only extensions should use desktop VS Code with Salesforce Extensions.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/agentforce-vibes-ide.md
+  commit: 77eefa513ef7710d1c3de71061fdc37e030ac096
+  blob: 3af0b27471add6808df90eb1e0048ec44e604e43
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:agentforce-vibes-ide
+- kt:salesforce-extensions-for-vs-code
+difficulty: 2
+created: '2026-11-20'
+status: active

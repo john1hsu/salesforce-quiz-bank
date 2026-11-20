@@ -1,0 +1,18 @@
+id: sf-001231
+product_area: development
+true_statement: In Apex saved at API 15.0 or later, a User can be inserted alongside non-setup records without a mixed DML error if its UserRoleId is null.
+false_statement: In Apex saved at API 15.0 or later, a User can be inserted alongside non-setup records without a mixed DML error if its ManagerId is null.
+explanation: The role is what affects record access, so the exception for inserting a User depends on UserRoleId being null. ManagerId isn't the field that decides whether the insert can be mixed.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/mixed-dml-error.md
+  commit: 77eefa513ef7710d1c3de71061fdc37e030ac096
+  blob: f512f75ca11976828456c9b2be78124f2404d38f
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:mixed-dml-error
+- kt:user-management
+difficulty: 3
+created: '2026-11-20'
+status: active

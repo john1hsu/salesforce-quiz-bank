@@ -1,0 +1,18 @@
+id: sf-001204
+product_area: architecture-practice
+true_statement: Salesforce recommended at least one year of Tableau experience across Cloud, Server and Bridge for Tableau Architect candidates.
+false_statement: Salesforce recommended at least six months of Tableau experience across Cloud, Server and Bridge for Tableau Architect candidates.
+explanation: The 2023 announcement suggested a year or more of Tableau experience for the architect credential. About six months is the experience level Trailhead targets for the Tableau Server Administrator credential.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/tableau-architect-certification.md
+  commit: 77eefa513ef7710d1c3de71061fdc37e030ac096
+  blob: 894367f72cd8dfdba754da9365e2b9a2126f2107
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:tableau-architect-certification
+- kt:tableau-server-administrator-certification
+difficulty: 2
+created: '2026-11-20'
+status: active

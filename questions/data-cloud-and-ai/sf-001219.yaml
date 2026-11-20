@@ -1,0 +1,18 @@
+id: sf-001219
+product_area: data-cloud-and-ai
+true_statement: A Tableau Semantics semantic model can draw its data from at most one Data 360 data space.
+false_statement: A Tableau Semantics semantic model can draw its data from up to five Data 360 data spaces.
+explanation: The semantic model builder accepts only one data space per model, which is why the feature depends on data spaces. Combining several data spaces in one model isn't supported.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/tableau-semantics.md
+  commit: 77eefa513ef7710d1c3de71061fdc37e030ac096
+  blob: dbaaaabdf2f0fa7edb015172987dfd1407bb0ff8
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:tableau-semantics
+- kt:data-spaces
+difficulty: 2
+created: '2026-11-20'
+status: active

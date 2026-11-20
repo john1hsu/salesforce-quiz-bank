@@ -1,0 +1,17 @@
+id: sf-001165
+product_area: devops-and-alm
+true_statement: Once a System Administrator enables Agentforce Vibes IDE, any user with the View All Data permission can open it from Setup.
+false_statement: Once a System Administrator enables Agentforce Vibes IDE, any user with the Author Apex permission can open it from Setup.
+explanation: Access to the enabled IDE is gated by the View All Data permission. Author Apex is not the permission the documentation names for opening it.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/agentforce-vibes-ide.md
+  commit: 77eefa513ef7710d1c3de71061fdc37e030ac096
+  blob: 3af0b27471add6808df90eb1e0048ec44e604e43
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:agentforce-vibes-ide
+difficulty: 2
+created: '2026-11-20'
+status: active

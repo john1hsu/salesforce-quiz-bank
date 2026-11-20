@@ -1,0 +1,19 @@
+id: sf-001201
+product_area: architecture-practice
+true_statement: In a fit-gap worksheet, the business usually sets each item's priority, though the architect may raise foundational items so they are built first.
+false_statement: In a fit-gap worksheet, the architect usually sets each item's priority, though the business may raise foundational items so they are built first.
+explanation: Priority is normally owned by the business, and the architect's role is to lift foundational items so the architecture comes first. The false version swaps who owns priority and who raises the foundational items.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/fit-gap-analysis.md
+  commit: 77eefa513ef7710d1c3de71061fdc37e030ac096
+  blob: 7d909eec0b88902a2a6671b7a07614cbfb73879c
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:fit-gap-analysis
+- kt:salesforce-architect
+- kt:business-analyst
+difficulty: 2
+created: '2026-11-20'
+status: active

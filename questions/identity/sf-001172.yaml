@@ -1,0 +1,19 @@
+id: sf-001172
+product_area: identity
+true_statement: Since December 2025, the Approve Uninstalled Connected Apps permission is what lets a user self-authorize uninstalled apps while API Access Control is on.
+false_statement: Since December 2025, the Use Any API Client permission is what lets a user self-authorize uninstalled apps while API Access Control is on.
+explanation: Salesforce moved self-authorization of uninstalled apps to the new Approve Uninstalled Connected Apps permission, meant for trusted admins and developers. Use Any API Client stopped granting that ability in the same change.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/api-access-control.md
+  commit: 77eefa513ef7710d1c3de71061fdc37e030ac096
+  blob: c875f71ee8a0ed4ab3bda1b03e509c62eef271de
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:api-access-control
+- kt:connected-apps
+- kt:permission-sets
+difficulty: 3
+created: '2026-11-20'
+status: active

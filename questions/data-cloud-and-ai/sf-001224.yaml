@@ -1,0 +1,17 @@
+id: sf-001224
+product_area: data-cloud-and-ai
+true_statement: The Data 360 SharePoint Unstructured (Documents) connector ingests only a site's default Documents library, with no subsites or other libraries.
+false_statement: The Data 360 SharePoint Unstructured (Documents) connector ingests every document library on a site, including those in its subsites.
+explanation: The connector's scope is limited to the default Documents library of the site you name; subsites, other libraries and folder-level filtering aren't supported. Content elsewhere on the site is not picked up.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/unstructured-data-in-data-cloud.md
+  commit: 77eefa513ef7710d1c3de71061fdc37e030ac096
+  blob: 3b16fd438ed5033d41e3f0503e3a3a92ba1e6a45
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:unstructured-data-in-data-cloud
+difficulty: 2
+created: '2026-11-20'
+status: active

@@ -1,0 +1,17 @@
+id: sf-001215
+product_area: clouds-and-products
+true_statement: Each Account Engagement business unit needs its own Account Engagement admin, who doesn't need Salesforce admin rights.
+false_statement: Each Account Engagement business unit needs its own Account Engagement admin, who must also hold Salesforce System Administrator rights.
+explanation: A Salesforce admin enables business units and assigns their Account Engagement admins. Those business-unit admins don't need Salesforce admin rights themselves.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/marketing-cloud-account-engagement.md
+  commit: 77eefa513ef7710d1c3de71061fdc37e030ac096
+  blob: fc14e2e525e51c7dd9f814002ec451a0d3261aa4
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:marketing-cloud-account-engagement
+difficulty: 2
+created: '2026-11-20'
+status: active

@@ -1,0 +1,18 @@
+id: sf-001182
+product_area: integration
+true_statement: Performance and Unlimited Edition orgs can define up to 100 PushTopics, while Enterprise Edition orgs are limited to 50.
+false_statement: Performance and Unlimited Edition orgs can define up to 200 PushTopics, while Enterprise Edition orgs are limited to 100.
+explanation: 'PushTopic allocations vary by edition: 100 topics per org in Performance and Unlimited, 50 in Enterprise and 40 in other supported editions. The false statement doubles both numbers.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/streaming-api.md
+  commit: 77eefa513ef7710d1c3de71061fdc37e030ac096
+  blob: f8ec6e4d041dc8034563d408beaf3ed32bd7b634
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:streaming-api
+- kt:pushtopic-streaming-allocations
+difficulty: 2
+created: '2026-11-20'
+status: active

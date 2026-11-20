@@ -1,0 +1,17 @@
+id: sf-001246
+product_area: identity
+true_statement: SCIM 2.0 index-based paging uses a 1-based startIndex with a count, and because it is stateless, results can shift between pages.
+false_statement: SCIM 2.0 index-based paging uses a 0-based startIndex with a count, and because it is stateful, results stay fixed between pages.
+explanation: RFC 7644 defines paging with a startIndex that begins at 1 and a count, without server-side state, so data changes can move results between pages. The 0-based, stateful version gets both points wrong.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/scim.md
+  commit: 77eefa513ef7710d1c3de71061fdc37e030ac096
+  blob: 83ca90c18c83a64c4281bc30d811a0a41526e1ba
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:scim
+difficulty: 2
+created: '2026-11-20'
+status: active

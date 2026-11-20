@@ -1,0 +1,19 @@
+id: sf-001222
+product_area: data-cloud-and-ai
+true_statement: In Data 360, each unstructured data lake object maps to at most one unstructured data model object, but several UDLOs can map to the same UDMO.
+false_statement: In Data 360, each unstructured data model object maps from at most one unstructured data lake object, but one UDLO can map to several UDMOs.
+explanation: 'The cardinality runs many-to-one: a UDLO feeds a single UDMO, while one UDMO can collect several UDLOs, such as recordings from multiple storage buckets. The false statement reverses that direction.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/unstructured-data-in-data-cloud.md
+  commit: 77eefa513ef7710d1c3de71061fdc37e030ac096
+  blob: 3b16fd438ed5033d41e3f0503e3a3a92ba1e6a45
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:unstructured-data-in-data-cloud
+- kt:data-lake-objects
+- kt:data-model-objects
+difficulty: 2
+created: '2026-11-20'
+status: active

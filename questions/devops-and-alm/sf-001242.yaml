@@ -1,0 +1,19 @@
+id: sf-001242
+product_area: devops-and-alm
+true_statement: An org shape can be created from a Developer, Group, Professional, Enterprise or Unlimited edition org, but never from a sandbox or scratch org.
+false_statement: An org shape can be created from a Developer, Group, Professional, Enterprise or Unlimited edition org, or from a Full sandbox, but not a scratch org.
+explanation: Org shape supports production-type source orgs of those editions only; sandboxes and scratch orgs can't be the source. A Full sandbox is therefore not a valid shape source, which is why sandboxes remain a separate tool.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/org-shape.md
+  commit: 77eefa513ef7710d1c3de71061fdc37e030ac096
+  blob: 68956b04cbc89493522f40b43dcd3b6987cbac9f
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:org-shape
+- kt:sandbox-types
+- kt:scratch-orgs
+difficulty: 2
+created: '2026-11-20'
+status: active

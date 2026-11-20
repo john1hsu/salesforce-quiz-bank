@@ -1,0 +1,19 @@
+id: sf-001245
+product_area: identity
+true_statement: For outbound Apex mTLS, Salesforce rotates neither certificate, so the customer must renew and replace them before they expire.
+false_statement: For outbound Apex mTLS, Salesforce rotates the org's client certificate automatically, so the customer only manages the server's certificate.
+explanation: Salesforce's guidance says it rotates no certificates in outbound Apex mTLS, leaving renewal to the customer, ideally automated and rehearsed in a sandbox. It never rotates customer client certificates in any mTLS flow.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/mutual-tls-authentication.md
+  commit: 77eefa513ef7710d1c3de71061fdc37e030ac096
+  blob: 441717eed07767ee99bcc50bd2e81ea0977b3ff3
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:mutual-tls-authentication
+- kt:apex-callouts
+- kt:certificate-and-key-management
+difficulty: 3
+created: '2026-11-20'
+status: active

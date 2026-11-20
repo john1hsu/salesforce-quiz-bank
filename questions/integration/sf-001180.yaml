@@ -1,0 +1,20 @@
+id: sf-001180
+product_area: integration
+true_statement: Legacy PushTopic and generic events can be consumed only through CometD, while platform events and CDC events can also be received by Pub/Sub API and Apex triggers.
+false_statement: Platform events and CDC events can be consumed only through CometD, while legacy PushTopic and generic events can also be received by Pub/Sub API and Apex triggers.
+explanation: Salesforce's streaming feature comparison limits the two legacy event types to CometD subscribers. Platform and change data capture events are the ones with extra subscription routes such as Pub/Sub API and Apex triggers, so the false statement reverses them.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/streaming-api.md
+  commit: 77eefa513ef7710d1c3de71061fdc37e030ac096
+  blob: f8ec6e4d041dc8034563d408beaf3ed32bd7b634
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:streaming-api
+- kt:platform-events
+- kt:change-data-capture
+- kt:pub-sub-api
+difficulty: 2
+created: '2026-11-20'
+status: active

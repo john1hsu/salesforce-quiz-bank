@@ -1,0 +1,18 @@
+id: sf-001232
+product_area: development
+true_statement: Group records can be inserted or updated in the same transaction as non-setup records without causing a mixed DML error.
+false_statement: GroupMember records can be inserted or updated in the same transaction as non-setup records without causing a mixed DML error.
+explanation: Group gets a specific exception for insert and update alongside other sObjects. GroupMember stays on the list of setup objects that can't be mixed in current API versions.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/mixed-dml-error.md
+  commit: 77eefa513ef7710d1c3de71061fdc37e030ac096
+  blob: f512f75ca11976828456c9b2be78124f2404d38f
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:mixed-dml-error
+- kt:transaction-control
+difficulty: 3
+created: '2026-11-20'
+status: active

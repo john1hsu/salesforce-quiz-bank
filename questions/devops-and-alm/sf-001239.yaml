@@ -1,0 +1,18 @@
+id: sf-001239
+product_area: devops-and-alm
+true_statement: When a suite is created or edited in a test provider, it doesn't appear in DevOps Testing until someone runs a sync from the Test Providers tab.
+false_statement: When a suite is created or edited in a test provider, DevOps Testing picks it up automatically on the next pipeline promotion without a sync.
+explanation: Provider-side changes reach DevOps Testing only through a manual sync from the Test Providers tab. A promotion runs the suites already synced; it doesn't pull new or changed suites.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/devops-testing.md
+  commit: 77eefa513ef7710d1c3de71061fdc37e030ac096
+  blob: cfc4a5cb72b136f65b8124ddb56da37650be8c48
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:devops-testing
+- kt:code-analyzer
+difficulty: 2
+created: '2026-11-20'
+status: active

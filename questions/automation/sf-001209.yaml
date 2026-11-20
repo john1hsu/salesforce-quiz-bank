@@ -1,0 +1,19 @@
+id: sf-001209
+product_area: automation
+true_statement: In the save order of execution, auto-response rules run right after assignment rules and before workflow rules.
+false_statement: In the save order of execution, auto-response rules run right after workflow rules and before escalation rules.
+explanation: Auto-response rules sit at step 10, following after triggers and assignment rules and preceding workflow and escalation rules. They do not come after workflow rules.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/auto-response-rules.md
+  commit: 77eefa513ef7710d1c3de71061fdc37e030ac096
+  blob: 0a16165610f5ffede5c7ecdfd4f08c2fc1de27cf
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:auto-response-rules
+- kt:order-of-execution
+- kt:assignment-rules
+difficulty: 2
+created: '2026-11-20'
+status: active

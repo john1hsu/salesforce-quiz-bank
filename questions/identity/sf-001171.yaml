@@ -1,0 +1,19 @@
+id: sf-001171
+product_area: identity
+true_statement: In API Access Control's customers-and-partners mode, external users reach the APIs only through apps installed in the Experience Cloud site, while internal users can still use uninstalled apps.
+false_statement: In API Access Control's customers-and-partners mode, internal users reach the APIs only through apps installed in the org, while external users can still use uninstalled apps.
+explanation: The customers-and-partners mode restricts only external users, limiting them to connected apps installed in the site. Internal users keep access to uninstalled apps, so the false version restricts the wrong group.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/api-access-control.md
+  commit: 77eefa513ef7710d1c3de71061fdc37e030ac096
+  blob: c875f71ee8a0ed4ab3bda1b03e509c62eef271de
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:api-access-control
+- kt:experience-cloud-identity
+- kt:connected-apps
+difficulty: 2
+created: '2026-11-20'
+status: active

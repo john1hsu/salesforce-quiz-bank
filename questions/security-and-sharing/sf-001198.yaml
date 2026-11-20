@@ -1,0 +1,18 @@
+id: sf-001198
+product_area: security-and-sharing
+true_statement: Salesforce's secure coding guidance recommends declaring inherited sharing on Apex entry points such as controllers and REST services.
+false_statement: Salesforce's secure coding guidance recommends declaring without sharing on Apex entry points such as controllers and REST services.
+explanation: Trailhead advises inherited sharing for entry points so they run in the caller's sharing context, with with sharing as the normal choice. Without sharing is reserved for places where elevated access is deliberately intended, not for general entry points.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/secure-coding.md
+  commit: 77eefa513ef7710d1c3de71061fdc37e030ac096
+  blob: 62785c7f704c95a0f4b867908fc415e24ee586e1
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:secure-coding
+- kt:apex-security-with-sharing
+difficulty: 2
+created: '2026-11-20'
+status: active

@@ -1,0 +1,19 @@
+id: sf-001203
+product_area: architecture-practice
+true_statement: In a B2C Commerce launch-readiness review, each gap gets an impact and priority score that decides whether it blocks go-live.
+false_statement: In a B2C Commerce launch-readiness review, every gap from the functional specification blocks go-live until it has been built.
+explanation: Gaps found before launch are scored for impact and priority, so a cosmetic difference may ship while a missing payment method stops launch. Not every gap is a blocker.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/fit-gap-analysis.md
+  commit: 77eefa513ef7710d1c3de71061fdc37e030ac096
+  blob: 7d909eec0b88902a2a6671b7a07614cbfb73879c
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:fit-gap-analysis
+- kt:commerce-cloud
+- kt:user-acceptance-testing
+difficulty: 2
+created: '2026-11-20'
+status: active

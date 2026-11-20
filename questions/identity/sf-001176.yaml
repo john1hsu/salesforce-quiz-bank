@@ -1,0 +1,19 @@
+id: sf-001176
+product_area: identity
+true_statement: Salesforce rotates its inbound TLS server certificate unless you bring your own, but rotating certificates used to sign SAML or JWT assertions is the customer's job.
+false_statement: Salesforce rotates the certificates used to sign SAML or JWT assertions, but rotating its inbound TLS server certificate is the customer's job.
+explanation: Salesforce's guidance gives it responsibility for the inbound TLS server certificate by default, while SSO and JWT signing certificates, like outbound mutual-TLS ones, are customer-managed. The false version reverses that split.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/certificate-and-key-management.md
+  commit: 77eefa513ef7710d1c3de71061fdc37e030ac096
+  blob: e2d40d4ad729ada32560f84edad7d6452210e4bf
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:certificate-and-key-management
+- kt:single-sign-on-saml
+- kt:jwt-bearer-flow
+difficulty: 2
+created: '2026-11-20'
+status: active

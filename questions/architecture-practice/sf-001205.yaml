@@ -1,0 +1,19 @@
+id: sf-001205
+product_area: architecture-practice
+true_statement: Tableau Blueprint notes that Tableau Cloud runs a single site per tenant and doesn't support cubes or guest accounts.
+false_statement: Tableau Blueprint notes that Tableau Server on premises runs a single site per tenant and doesn't support cubes or guest accounts.
+explanation: These are restrictions of the hosted Tableau Cloud option. Self-managed Tableau Server, on premises or in public cloud, gives full control instead.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/tableau-architect-certification.md
+  commit: 77eefa513ef7710d1c3de71061fdc37e030ac096
+  blob: 894367f72cd8dfdba754da9365e2b9a2126f2107
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:tableau-architect-certification
+- kt:tableau-blueprint
+- kt:tableau
+difficulty: 2
+created: '2026-11-20'
+status: active

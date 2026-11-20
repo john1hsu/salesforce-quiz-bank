@@ -1,0 +1,18 @@
+id: sf-001169
+product_area: devops-and-alm
+true_statement: A 1GP package owner can keep subscriber orgs out of a push with the Push Upgrade Exclusion List, which takes up to 500 comma-separated org IDs.
+false_statement: A 1GP package owner can keep subscriber orgs out of a push with the Push Upgrade Exclusion List, which takes up to 5,000 comma-separated org IDs.
+explanation: The exclusion list caps out at 500 org IDs entered as a comma-separated list. 5,000 overstates the limit tenfold.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/push-upgrades.md
+  commit: 77eefa513ef7710d1c3de71061fdc37e030ac096
+  blob: 894f7c12a9949f4f0ffb4241b840bf3e3517ac3d
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:push-upgrades
+- kt:first-generation-managed-packages
+difficulty: 2
+created: '2026-11-20'
+status: active

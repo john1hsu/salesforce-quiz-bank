@@ -1,0 +1,18 @@
+id: sf-001229
+product_area: data-model
+true_statement: When updating a CurrencyType record through the API, omitting IsActive makes it default to false, which can deactivate a live currency.
+false_statement: When updating a CurrencyType record through the API, omitting IsActive keeps its current value, so a live currency stays active.
+explanation: CurrencyType updates must supply every field because a missing IsActive defaults to false and silently deactivates the currency. The existing value is not preserved.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/multiple-currencies.md
+  commit: 77eefa513ef7710d1c3de71061fdc37e030ac096
+  blob: 52d607a49c7289d4f01c073d0b7dc638878a212c
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:multiple-currencies
+- kt:currency-type-object
+difficulty: 3
+created: '2026-11-20'
+status: active

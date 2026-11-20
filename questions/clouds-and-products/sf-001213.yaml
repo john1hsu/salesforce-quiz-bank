@@ -1,0 +1,17 @@
+id: sf-001213
+product_area: clouds-and-products
+true_statement: Account Engagement grades prospects from F to A+ against the ideal customer profile, and every prospect starts with a grade of D.
+false_statement: Account Engagement grades prospects from F to A+ against the ideal customer profile, and every prospect starts with a grade of C.
+explanation: Grading measures explicit fit, and every prospect's starting grade is D before profile criteria move it up or down. C is not the starting grade.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/marketing-cloud-account-engagement.md
+  commit: 77eefa513ef7710d1c3de71061fdc37e030ac096
+  blob: fc14e2e525e51c7dd9f814002ec451a0d3261aa4
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:marketing-cloud-account-engagement
+difficulty: 2
+created: '2026-11-20'
+status: active

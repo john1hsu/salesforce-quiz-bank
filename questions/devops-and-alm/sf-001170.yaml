@@ -1,0 +1,20 @@
+id: sf-001170
+product_area: devops-and-alm
+true_statement: 1GP push upgrades can be run from the UI or the API, but 2GP and unlocked package pushes have no UI and use Salesforce CLI or the API.
+false_statement: 2GP and unlocked package push upgrades can be run from the UI or the API, but 1GP pushes have no UI and use Salesforce CLI or the API.
+explanation: Only first-generation packages offer a push-upgrade UI; 2GP and unlocked pushes are scheduled with sf package push-upgrade commands or the SOAP API objects. The false version reverses which generation has the UI.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/push-upgrades.md
+  commit: 77eefa513ef7710d1c3de71061fdc37e030ac096
+  blob: 894f7c12a9949f4f0ffb4241b840bf3e3517ac3d
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:push-upgrades
+- kt:first-generation-managed-packages
+- kt:salesforce-cli
+- kt:soap-api
+difficulty: 2
+created: '2026-11-20'
+status: active

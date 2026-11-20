@@ -1,0 +1,17 @@
+id: sf-001197
+product_area: security-and-sharing
+true_statement: Related lists ignore scoping rules except contact roles, which a Contact scoping rule filters on accounts, opportunities, cases and contracts.
+false_statement: Related lists ignore scoping rules except activity history, which a Task scoping rule filters on accounts, opportunities, cases and contracts.
+explanation: 'Scope generally doesn''t apply to related lists, but contact roles are the documented exception: a Contact rule silently filters them on related records. Activity history is not named as an exception.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/scoping-rules.md
+  commit: 77eefa513ef7710d1c3de71061fdc37e030ac096
+  blob: 3e3197afd5b02862e2046d572e170ae5942feaee
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:scoping-rules
+difficulty: 3
+created: '2026-11-20'
+status: active

@@ -1,0 +1,18 @@
+id: sf-001185
+product_area: platform-architecture
+true_statement: On an LWR site, an Apex method's result is cached on the CDN only if it is annotated @AuraEnabled(cacheable=true scope='global').
+false_statement: On an LWR site, an Apex method's result is cached on the CDN whenever it is annotated @AuraEnabled(cacheable=true), with no scope setting needed.
+explanation: LWR sites can cache public Apex results at the CDN, but only for methods marked cacheable with global scope. Plain cacheable=true is not enough, and globally scoped methods should return only public data because the CDN is a shared cache.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/content-delivery-network.md
+  commit: 77eefa513ef7710d1c3de71061fdc37e030ac096
+  blob: 66090945d7018bbaa04a635d754b557c04d15995
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:content-delivery-network
+- kt:experience-cloud
+difficulty: 3
+created: '2026-11-20'
+status: active

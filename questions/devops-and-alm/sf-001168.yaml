@@ -1,0 +1,19 @@
+id: sf-001168
+product_area: devops-and-alm
+true_statement: Push upgrades for managed packages are switched on by logging a case with Salesforce Partner Support, while for unlocked packages they're enabled by default.
+false_statement: Push upgrades for unlocked packages are switched on by logging a case with Salesforce Partner Support, while for managed packages they're enabled by default.
+explanation: Managed 1GP and 2GP packages need a Partner Support case to get push upgrades, whereas unlocked packages have the capability out of the box. The false version swaps the two package types.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/push-upgrades.md
+  commit: 77eefa513ef7710d1c3de71061fdc37e030ac096
+  blob: 894f7c12a9949f4f0ffb4241b840bf3e3517ac3d
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:push-upgrades
+- kt:unlocked-packages
+- kt:second-generation-managed-packages
+difficulty: 2
+created: '2026-11-20'
+status: active

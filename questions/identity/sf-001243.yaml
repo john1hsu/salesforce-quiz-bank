@@ -1,0 +1,18 @@
+id: sf-001243
+product_area: identity
+true_statement: Clients calling Salesforce APIs over mutual TLS must connect on port 8443 instead of the default port 443.
+false_statement: Clients calling Salesforce APIs over mutual TLS connect on the default port 443, and Salesforce negotiates the client certificate there.
+explanation: Inbound API mTLS in Salesforce runs on the dedicated port 8443, and a named credential targeting such an org must state it explicitly. Port 443 is the ordinary one-way TLS endpoint.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/mutual-tls-authentication.md
+  commit: 77eefa513ef7710d1c3de71061fdc37e030ac096
+  blob: 441717eed07767ee99bcc50bd2e81ea0977b3ff3
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:mutual-tls-authentication
+- kt:named-credentials
+difficulty: 2
+created: '2026-11-20'
+status: active

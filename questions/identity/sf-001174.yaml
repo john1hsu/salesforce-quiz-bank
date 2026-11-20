@@ -1,0 +1,17 @@
+id: sf-001174
+product_area: identity
+true_statement: Salesforce sets a self-signed certificate to expire after one year with a 2048-bit key and after two years with a 4096-bit key.
+false_statement: Salesforce sets a self-signed certificate to expire after two years with a 2048-bit key and after one year with a 4096-bit key.
+explanation: 'Self-signed certificate expiry is automatic and tied to key size: the default 2048-bit key gets one year, and the slower 4096-bit key gets two. The false version swaps the two lifetimes.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/certificate-and-key-management.md
+  commit: 77eefa513ef7710d1c3de71061fdc37e030ac096
+  blob: e2d40d4ad729ada32560f84edad7d6452210e4bf
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:certificate-and-key-management
+difficulty: 2
+created: '2026-11-20'
+status: active

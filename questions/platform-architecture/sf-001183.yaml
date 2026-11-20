@@ -1,0 +1,19 @@
+id: sf-001183
+product_area: platform-architecture
+true_statement: A custom domain on the Salesforce CDN can serve only subdomains such as www.example.com, so a registrable domain like example.com needs a third-party CDN.
+false_statement: A custom domain on the Salesforce CDN can serve only registrable domains such as example.com, so a subdomain like www.example.com needs a third-party CDN.
+explanation: The Salesforce CDN option for custom domains supports subdomains only. A third-party CDN in front of the domain is the only CDN route for registrable (apex) domains, so the false statement swaps which domain type each option handles.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/content-delivery-network.md
+  commit: 77eefa513ef7710d1c3de71061fdc37e030ac096
+  blob: 66090945d7018bbaa04a635d754b557c04d15995
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:content-delivery-network
+- kt:custom-domains
+- kt:experience-cloud
+difficulty: 2
+created: '2026-11-20'
+status: active

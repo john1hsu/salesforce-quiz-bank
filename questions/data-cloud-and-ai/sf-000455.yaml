@@ -6,8 +6,8 @@ explanation: Committed versions are locked snapshots, and only one of them is ac
 source:
   repo: john1hsu/salesforce-knowledge-graph
   path: articles/data-cloud-and-ai/agentforce-studio.md
-  commit: 2504d4caedf4d80d25089628d89b34723f141e66
-  blob: 0b543628fba0d418a39792116515833e3eca9014
+  commit: 77eefa513ef7710d1c3de71061fdc37e030ac096
+  blob: cacb396d0c5d5df50a9a9b5c3035f62cfd31dfee
 verified_release: Winter '27
 feature_status: current
 concepts:

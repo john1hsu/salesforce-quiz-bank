@@ -1,0 +1,18 @@
+id: sf-001251
+product_area: integration
+true_statement: Enterprise Edition allows 1,000 concurrent CometD clients across streaming event types, while Developer Edition allows 20.
+false_statement: Enterprise Edition allows 2,000 concurrent CometD clients across streaming event types, while Developer Edition allows 200.
+explanation: The shared concurrent CometD client cap is 2,000 for Performance and Unlimited, 1,000 for Enterprise and 20 for Developer Edition. The false figures give Enterprise the top-tier limit and inflate Developer tenfold.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/change-data-capture-allocations.md
+  commit: 77eefa513ef7710d1c3de71061fdc37e030ac096
+  blob: ce26ebc63cc6ab29a98ee3b3409915b8598fdb07
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:change-data-capture-allocations
+- kt:streaming-api
+difficulty: 2
+created: '2026-11-20'
+status: active

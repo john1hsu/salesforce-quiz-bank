@@ -1,0 +1,18 @@
+id: sf-001202
+product_area: architecture-practice
+true_statement: Trailhead's functional consulting workflow places the gap analysis in the design phase, alongside the functional specification and data model.
+false_statement: Trailhead's functional consulting workflow places the gap analysis in the build phase, alongside development and unit testing.
+explanation: Trailhead puts gap analysis in design so missing pieces and customization needs surface before build starts. Doing it during build would be too late to steer the solution and estimates.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/fit-gap-analysis.md
+  commit: 77eefa513ef7710d1c3de71061fdc37e030ac096
+  blob: 7d909eec0b88902a2a6671b7a07614cbfb73879c
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:fit-gap-analysis
+- kt:requirements-gathering
+difficulty: 1
+created: '2026-11-20'
+status: active

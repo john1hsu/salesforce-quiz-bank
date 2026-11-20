@@ -1,0 +1,18 @@
+id: sf-001249
+product_area: integration
+true_statement: Without an add-on, Enterprise Edition gets 25,000 Change Data Capture event deliveries per rolling 24 hours, half the Performance and Unlimited figure.
+false_statement: Without an add-on, Enterprise Edition gets 50,000 Change Data Capture event deliveries per rolling 24 hours, the same as Performance and Unlimited.
+explanation: The default CDC delivery allocation is 50,000 for Performance and Unlimited, 25,000 for Enterprise and 10,000 for Developer Edition. Enterprise does not match the higher editions.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/change-data-capture-allocations.md
+  commit: 77eefa513ef7710d1c3de71061fdc37e030ac096
+  blob: ce26ebc63cc6ab29a98ee3b3409915b8598fdb07
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:change-data-capture-allocations
+- kt:change-data-capture
+difficulty: 2
+created: '2026-11-20'
+status: active

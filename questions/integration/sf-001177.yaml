@@ -1,0 +1,17 @@
+id: sf-001177
+product_area: integration
+true_statement: Heroku Connect's standard polling interval for reading from Salesforce can be set anywhere from 2 to 60 minutes, in 1-minute steps.
+false_statement: Heroku Connect's standard polling interval for reading from Salesforce can be set anywhere from 5 to 120 minutes, in 5-minute steps.
+explanation: Standard polling is adjustable from 2 to 60 minutes in single-minute increments (with a 10-minute default). The 5-to-120 range and 5-minute steps are invented.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/heroku-connect.md
+  commit: 77eefa513ef7710d1c3de71061fdc37e030ac096
+  blob: df87edc9d5e5639538d98e246196d4b5134994d7
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:heroku-connect
+difficulty: 2
+created: '2026-11-20'
+status: active

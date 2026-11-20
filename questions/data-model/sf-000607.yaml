@@ -6,8 +6,8 @@ explanation: 'Compound fields count more than once against the per-object limit:
 source:
   repo: john1hsu/salesforce-knowledge-graph
   path: articles/data-model/custom-fields.md
-  commit: 4d0f07d8de63e830ec8cb90374127798d040ea67
-  blob: 9abcd51d76ffeb9b91510407618fd9f695504645
+  commit: 77eefa513ef7710d1c3de71061fdc37e030ac096
+  blob: 3402bd3f400ccd130c0246238b11e234812f4b27
 verified_release: Winter '27
 feature_status: current
 certs:
