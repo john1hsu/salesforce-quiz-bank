@@ -1,0 +1,18 @@
+id: sf-001287
+product_area: clouds-and-products
+true_statement: A Marketing Cloud Next email needs a Data 360 data graph only when the message uses more than one record type.
+false_statement: A Marketing Cloud Next email needs a Data 360 data graph for every message, even when it uses only one record type.
+explanation: Data graphs shape related records for personalization, so they matter only when several record types feed the message. Salesforce also suggests keeping them to the fields the flow uses.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/marketing-cloud-next.md
+  commit: 44a172d9a8241f8b508f339b197f0fbc7370e56e
+  blob: 167d440d1ee551d1625a4b8b80381a762a28534a
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:marketing-cloud-next
+- kt:data-graphs
+difficulty: 2
+created: '2026-11-21'
+status: active

@@ -1,0 +1,18 @@
+id: sf-001320
+product_area: identity
+true_statement: Login History records a Forwarded-for IP from the X-Forwarded-For header, but that field isn't populated for OAuth and SSO logins.
+false_statement: Login History records a Forwarded-for IP from the X-Forwarded-For header, and that field is populated only for OAuth and SSO logins.
+explanation: Source IP is always the first client address to reach Salesforce, while Forwarded-for comes from the header. OAuth and SSO logins leave the Forwarded-for field empty.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/login-history.md
+  commit: 44a172d9a8241f8b508f339b197f0fbc7370e56e
+  blob: d72bf27da73496db9bd86037c8107d531634ed94
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:login-history
+- kt:oauth-2-flows-in-salesforce
+difficulty: 3
+created: '2026-11-21'
+status: active

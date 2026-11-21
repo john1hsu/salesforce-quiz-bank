@@ -1,0 +1,18 @@
+id: sf-001279
+product_area: automation
+true_statement: An Enterprise or Unlimited Edition org can have 2,000 active flows and 4,000 total flows per flow type.
+false_statement: An Enterprise or Unlimited Edition org can have 500 active flows and 1,000 total flows per flow type.
+explanation: The per-org allocation for Enterprise, Unlimited, Performance and Developer editions is 2,000 active and 4,000 total per flow type. Essentials and Professional are the editions capped far lower, at 5 of each.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/flow-limits.md
+  commit: 44a172d9a8241f8b508f339b197f0fbc7370e56e
+  blob: 584da1230e2207619008a710a2b9fd1088baaa0c
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:flow-limits
+- kt:flow-builder
+difficulty: 2
+created: '2026-11-21'
+status: active

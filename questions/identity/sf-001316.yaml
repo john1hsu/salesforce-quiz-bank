@@ -1,0 +1,19 @@
+id: sf-001316
+product_area: identity
+true_statement: Salesforce JWT-based access tokens can be used only against Salesforce REST APIs, so consumers of SOAP APIs should use opaque tokens.
+false_statement: Salesforce JWT-based access tokens can be used against both REST and SOAP APIs, so they can replace opaque tokens for every consumer.
+explanation: JWT access tokens let off-platform services validate them locally, but they work only with REST APIs. Non-REST consumers such as SOAP clients still need opaque tokens.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/json-web-token.md
+  commit: 44a172d9a8241f8b508f339b197f0fbc7370e56e
+  blob: 48f94227f1b8d14301ec295848d8818480078994
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:json-web-token
+- kt:oauth-2-0
+- kt:external-client-apps
+difficulty: 2
+created: '2026-11-21'
+status: active

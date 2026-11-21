@@ -1,0 +1,18 @@
+id: sf-001344
+product_area: security-and-sharing
+true_statement: Security.stripInaccessible() never removes the Id field, so DML on the records it returns still works.
+false_statement: Security.stripInaccessible() removes the Id field when the user lacks access to it, so DML on the returned records can fail.
+explanation: The Id is always preserved on the sanitized sObjects. That keeps update and delete calls on getRecords() working even when other fields were stripped.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/security-stripinaccessible.md
+  commit: 44a172d9a8241f8b508f339b197f0fbc7370e56e
+  blob: 798ab5d3a05c79d4a6c201e99ce56d8c7c3edeeb
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:security-stripinaccessible
+- kt:apex
+difficulty: 2
+created: '2026-11-21'
+status: active

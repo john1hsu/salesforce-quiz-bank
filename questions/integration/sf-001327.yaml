@@ -1,0 +1,18 @@
+id: sf-001327
+product_area: integration
+true_statement: For Remote Call-In process integration, the remote caller or middleware is responsible for handling duplicate requests after errors or timeouts.
+false_statement: For Remote Call-In process integration, Salesforce automatically detects and discards duplicate inbound requests sent after errors or timeouts.
+explanation: Salesforce's guidance makes idempotent design the caller's job for inbound calls. The platform doesn't deduplicate retried requests on its own.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/process-integration.md
+  commit: 44a172d9a8241f8b508f339b197f0fbc7370e56e
+  blob: 347e3fc6442068c2cad53064ac34096fa71901ae
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:process-integration
+- kt:remote-call-in
+difficulty: 2
+created: '2026-11-21'
+status: active

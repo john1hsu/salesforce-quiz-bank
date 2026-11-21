@@ -1,0 +1,18 @@
+id: sf-001259
+product_area: platform-architecture
+true_statement: Instance-wide Trust Notifications for scheduled maintenance go out about ten days before it starts, while maintenance needing customer action is emailed to admins months ahead.
+false_statement: Instance-wide Trust Notifications for scheduled maintenance go out about ten weeks before it starts, while maintenance needing customer action is emailed to admins days ahead.
+explanation: Salesforce aims for months of email notice when admins must change settings or references, and about ten days for instance-wide Trust Notifications. The swapped timings reverse that order.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/instance-refresh-and-org-migration.md
+  commit: 44a172d9a8241f8b508f339b197f0fbc7370e56e
+  blob: d7f7458153b69958f09b2f5fc2b17fc8c59e6218
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:instance-refresh-and-org-migration
+- kt:trust-and-status-site
+difficulty: 2
+created: '2026-11-21'
+status: active

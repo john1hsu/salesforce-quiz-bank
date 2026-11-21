@@ -1,0 +1,18 @@
+id: sf-001263
+product_area: public-sector-and-compliance
+true_statement: Salesforce, Inc.'s Corporate Governance Guidelines require that its board always have at least a majority of independent directors, judged against NYSE criteria.
+false_statement: Salesforce, Inc.'s Corporate Governance Guidelines require that its board always have at least two-thirds independent directors, judged against Nasdaq criteria.
+explanation: The guidelines set a simple majority of independent directors as the floor and use NYSE independence standards. Two-thirds and Nasdaq are not what they specify.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/corporate-governance.md
+  commit: 44a172d9a8241f8b508f339b197f0fbc7370e56e
+  blob: 11a8728048fedcae950c4e97517d61b79c366278
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:corporate-governance
+- kt:salesforce-inc
+difficulty: 2
+created: '2026-11-21'
+status: active

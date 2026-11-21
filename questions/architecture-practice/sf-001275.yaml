@@ -1,0 +1,18 @@
+id: sf-001275
+product_area: architecture-practice
+true_statement: When no Center of Excellence standard covers a situation, Trailhead suggests the Design Authority fall back on community-vetted best practice.
+false_statement: When no Center of Excellence standard covers a situation, Trailhead suggests the Design Authority pause the work until a new written standard is approved.
+explanation: Trailhead's fallback for gaps in the CoE's own standards is accepted community best practice. Halting work until a new standard exists would turn the DA into the bottleneck it should avoid.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/design-authority.md
+  commit: 44a172d9a8241f8b508f339b197f0fbc7370e56e
+  blob: 0086b6f0998e11bc8aeaf54b69f4231490685bd6
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:design-authority
+- kt:salesforce-center-of-excellence
+difficulty: 2
+created: '2026-11-21'
+status: active

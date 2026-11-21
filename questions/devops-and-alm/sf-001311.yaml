@@ -1,0 +1,18 @@
+id: sf-001311
+product_area: devops-and-alm
+true_statement: SOQL on MetadataComponentDependency doesn't support ORDER BY, count(), queryMore() or OFFSET, so large orgs are partitioned with filters instead.
+false_statement: SOQL on MetadataComponentDependency supports ORDER BY and OFFSET but not count(), so large orgs are paged with OFFSET instead.
+explanation: 'The Dependency API''s SOQL is restricted: none of those clauses or calls work, so paging isn''t possible. Teams split big queries with filters such as component type.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/dependency-api.md
+  commit: 44a172d9a8241f8b508f339b197f0fbc7370e56e
+  blob: 1874680b20fe814f7e43e096ae8061a0b6e51a51
+verified_release: Winter '27
+feature_status: beta
+concepts:
+- kt:dependency-api
+- kt:soql
+difficulty: 2
+created: '2026-11-21'
+status: active

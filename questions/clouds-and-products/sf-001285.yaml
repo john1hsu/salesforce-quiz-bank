@@ -1,0 +1,19 @@
+id: sf-001285
+product_area: clouds-and-products
+true_statement: Marketing Cloud Next orchestrates campaigns in standard Flow Builder, rather than in Journey Builder and Automation Studio.
+false_statement: Marketing Cloud Next orchestrates campaigns in Journey Builder and Automation Studio, rather than in standard Flow Builder.
+explanation: Built on the Salesforce Platform, Marketing Cloud Next uses flows for both segment-based and event-triggered automation. Journey Builder and Automation Studio belong to Marketing Cloud Engagement.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/marketing-cloud-next.md
+  commit: 44a172d9a8241f8b508f339b197f0fbc7370e56e
+  blob: 167d440d1ee551d1625a4b8b80381a762a28534a
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:marketing-cloud-next
+- kt:flow-builder
+- kt:marketing-cloud-engagement
+difficulty: 1
+created: '2026-11-21'
+status: active

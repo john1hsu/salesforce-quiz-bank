@@ -1,0 +1,18 @@
+id: sf-001304
+product_area: development
+true_statement: From Apex API version 41.0, a statement that can never be reached, such as code after an unconditional throw, is a compile-time error.
+false_statement: From Apex API version 41.0, a statement that can never be reached, such as code after an unconditional throw, compiles but is skipped at run time.
+explanation: Newer API versions refuse to compile unreachable statements. Dead code after a throw has to be removed rather than left to be silently skipped.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/custom-exceptions.md
+  commit: 44a172d9a8241f8b508f339b197f0fbc7370e56e
+  blob: 70b406f2fb7dc6062ea1a3ee13bb2d6e41d75765
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:custom-exceptions
+- kt:apex
+difficulty: 2
+created: '2026-11-21'
+status: active

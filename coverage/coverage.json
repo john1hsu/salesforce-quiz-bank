@@ -1,45 +1,45 @@
 {
  "totals": {
-  "active": 1242,
+  "active": 1336,
   "retired": 2
  },
  "areas": {
   "architecture-practice": {
-   "active": 109
+   "active": 116
   },
   "automation": {
-   "active": 102
-  },
-  "clouds-and-products": {
-   "active": 107
-  },
-  "data-cloud-and-ai": {
    "active": 108
   },
+  "clouds-and-products": {
+   "active": 113
+  },
+  "data-cloud-and-ai": {
+   "active": 114
+  },
   "data-model": {
-   "active": 106
+   "active": 112
   },
   "development": {
-   "active": 105,
+   "active": 111,
    "retired": 1
   },
   "devops-and-alm": {
-   "active": 101
+   "active": 107
   },
   "identity": {
-   "active": 104
+   "active": 110
   },
   "integration": {
-   "active": 101
+   "active": 110
   },
   "platform-architecture": {
-   "active": 100
+   "active": 112
   },
   "public-sector-and-compliance": {
-   "active": 102
+   "active": 114
   },
   "security-and-sharing": {
-   "active": 97,
+   "active": 109,
    "retired": 1
   }
  },
@@ -83,6 +83,9 @@
   "articles/architecture-practice/data-migration-strategy.md": {
    "active": 3
   },
+  "articles/architecture-practice/design-authority.md": {
+   "active": 3
+  },
   "articles/architecture-practice/development-lifecycle-and-deployment-architect-certification.md": {
    "active": 3
   },
@@ -94,6 +97,9 @@
   },
   "articles/architecture-practice/heroku-architect-certification.md": {
    "active": 3
+  },
+  "articles/architecture-practice/licensing-strategy.md": {
+   "active": 1
   },
   "articles/architecture-practice/mulesoft-platform-architect-certification.md": {
    "active": 3
@@ -129,6 +135,9 @@
    "active": 3
   },
   "articles/architecture-practice/scale-test.md": {
+   "active": 3
+  },
+  "articles/architecture-practice/solution-design-document.md": {
    "active": 3
   },
   "articles/architecture-practice/solution-design-tradeoffs.md": {
@@ -200,6 +209,9 @@
   "articles/automation/flow-http-callout.md": {
    "active": 3
   },
+  "articles/automation/flow-limits.md": {
+   "active": 3
+  },
   "articles/automation/flow-loop-element.md": {
    "active": 3
   },
@@ -258,6 +270,9 @@
    "active": 3
   },
   "articles/automation/transform-element.md": {
+   "active": 3
+  },
+  "articles/automation/wait-elements.md": {
    "active": 3
   },
   "articles/automation/workflow-rules.md": {
@@ -320,10 +335,16 @@
   "articles/clouds-and-products/marketing-cloud-engagement.md": {
    "active": 3
   },
+  "articles/clouds-and-products/marketing-cloud-next.md": {
+   "active": 3
+  },
   "articles/clouds-and-products/net-zero-cloud.md": {
    "active": 3
   },
   "articles/clouds-and-products/omni-channel.md": {
+   "active": 3
+  },
+  "articles/clouds-and-products/omnistudio-consultant-certification.md": {
    "active": 3
   },
   "articles/clouds-and-products/omnistudio.md": {
@@ -452,6 +473,9 @@
   "articles/data-cloud-and-ai/einstein-trust-layer.md": {
    "active": 3
   },
+  "articles/data-cloud-and-ai/generative-ai-audit-and-feedback-data.md": {
+   "active": 3
+  },
   "articles/data-cloud-and-ai/identity-resolution.md": {
    "active": 3
   },
@@ -477,6 +501,9 @@
    "active": 3
   },
   "articles/data-cloud-and-ai/zero-copy-data-federation.md": {
+   "active": 3
+  },
+  "articles/data-cloud-and-ai/zero-copy-data-sharing.md": {
    "active": 3
   },
   "articles/data-model/activity-data-model.md": {
@@ -533,6 +560,9 @@
   "articles/data-model/formula-fields.md": {
    "active": 1
   },
+  "articles/data-model/geolocation-fields.md": {
+   "active": 3
+  },
   "articles/data-model/hierarchical-relationships.md": {
    "active": 3
   },
@@ -581,6 +611,9 @@
   "articles/data-model/standard-objects.md": {
    "active": 3
   },
+  "articles/data-model/state-and-country-territory-picklists.md": {
+   "active": 3
+  },
   "articles/data-model/upsert.md": {
    "active": 3
   },
@@ -620,6 +653,9 @@
   "articles/development/batch-apex.md": {
    "active": 3
   },
+  "articles/development/custom-exceptions.md": {
+   "active": 3
+  },
   "articles/development/custom-metadata-types.md": {
    "active": 3
   },
@@ -654,6 +690,9 @@
    "active": 3
   },
   "articles/development/mixed-dml-error.md": {
+   "active": 3
+  },
+  "articles/development/omnistudio-developer-certification.md": {
    "active": 3
   },
   "articles/development/orglimits-class.md": {
@@ -723,6 +762,9 @@
   "articles/devops-and-alm/data-mask-and-seed.md": {
    "active": 3
   },
+  "articles/devops-and-alm/dependency-api.md": {
+   "active": 3
+  },
   "articles/devops-and-alm/deployment-validation-and-quick-deploy.md": {
    "active": 3
   },
@@ -736,6 +778,9 @@
    "active": 3
   },
   "articles/devops-and-alm/first-generation-managed-packages.md": {
+   "active": 3
+  },
+  "articles/devops-and-alm/license-management-app.md": {
    "active": 3
   },
   "articles/devops-and-alm/metadata-api.md": {
@@ -846,6 +891,9 @@
   "articles/identity/identity-verification.md": {
    "active": 3
   },
+  "articles/identity/json-web-token.md": {
+   "active": 3
+  },
   "articles/identity/just-in-time-provisioning.md": {
    "active": 3
   },
@@ -853,6 +901,9 @@
    "active": 3
   },
   "articles/identity/login-flows.md": {
+   "active": 3
+  },
+  "articles/identity/login-history.md": {
    "active": 3
   },
   "articles/identity/login-ip-ranges-and-trusted-ip-ranges.md": {
@@ -972,6 +1023,9 @@
   "articles/integration/integration-security.md": {
    "active": 3
   },
+  "articles/integration/mule-runtime-engine.md": {
+   "active": 3
+  },
   "articles/integration/mulesoft-anypoint-platform.md": {
    "active": 3
   },
@@ -984,8 +1038,14 @@
   "articles/integration/platform-event-allocations.md": {
    "active": 3
   },
+  "articles/integration/platform-event-channel-member.md": {
+   "active": 3
+  },
   "articles/integration/platform-events.md": {
    "active": 1
+  },
+  "articles/integration/process-integration.md": {
+   "active": 3
   },
   "articles/integration/pub-sub-api.md": {
    "active": 3
@@ -1012,6 +1072,9 @@
    "active": 3
   },
   "articles/integration/user-interface-api.md": {
+   "active": 3
+  },
+  "articles/platform-architecture/apex-cursors.md": {
    "active": 3
   },
   "articles/platform-architecture/bulkification.md": {
@@ -1050,10 +1113,16 @@
   "articles/platform-architecture/infrastructure-as-a-service.md": {
    "active": 3
   },
+  "articles/platform-architecture/instance-refresh-and-org-migration.md": {
+   "active": 3
+  },
   "articles/platform-architecture/large-data-volumes.md": {
    "active": 3
   },
   "articles/platform-architecture/lightning-app-builder.md": {
+   "active": 3
+  },
+  "articles/platform-architecture/lightning-experience-performance.md": {
    "active": 3
   },
   "articles/platform-architecture/metadata-driven-architecture.md": {
@@ -1104,6 +1173,9 @@
   "articles/platform-architecture/sandbox-types.md": {
    "active": 3
   },
+  "articles/platform-architecture/scale-center.md": {
+   "active": 3
+  },
   "articles/platform-architecture/skinny-tables.md": {
    "active": 3
   },
@@ -1123,6 +1195,9 @@
    "active": 3
   },
   "articles/public-sector-and-compliance/continuous-monitoring.md": {
+   "active": 3
+  },
+  "articles/public-sector-and-compliance/corporate-governance.md": {
    "active": 3
   },
   "articles/public-sector-and-compliance/data-classification.md": {
@@ -1182,6 +1257,9 @@
   "articles/public-sector-and-compliance/iso-iec-27002.md": {
    "active": 3
   },
+  "articles/public-sector-and-compliance/it-governance.md": {
+   "active": 3
+  },
   "articles/public-sector-and-compliance/nist-cybersecurity-framework.md": {
    "active": 3
   },
@@ -1200,6 +1278,9 @@
   "articles/public-sector-and-compliance/nist-sp-800-60.md": {
    "active": 3
   },
+  "articles/public-sector-and-compliance/organizational-governance.md": {
+   "active": 3
+  },
   "articles/public-sector-and-compliance/public-sector-solutions.md": {
    "active": 3
   },
@@ -1210,6 +1291,9 @@
    "active": 3
   },
   "articles/public-sector-and-compliance/shared-responsibility-model.md": {
+   "active": 3
+  },
+  "articles/public-sector-and-compliance/soc-1.md": {
    "active": 3
   },
   "articles/public-sector-and-compliance/soc-2.md": {
@@ -1231,6 +1315,9 @@
    "active": 3
   },
   "articles/security-and-sharing/cross-site-scripting.md": {
+   "active": 3
+  },
+  "articles/security-and-sharing/customer-community-licenses.md": {
    "active": 3
   },
   "articles/security-and-sharing/data-breach-risk.md": {
@@ -1272,6 +1359,9 @@
   "articles/security-and-sharing/profiles.md": {
    "active": 3
   },
+  "articles/security-and-sharing/prompt-injection.md": {
+   "active": 3
+  },
   "articles/security-and-sharing/public-groups.md": {
    "active": 3
   },
@@ -1294,6 +1384,12 @@
    "active": 3
   },
   "articles/security-and-sharing/secure-coding.md": {
+   "active": 3
+  },
+  "articles/security-and-sharing/security-governance.md": {
+   "active": 3
+  },
+  "articles/security-and-sharing/security-stripinaccessible.md": {
    "active": 3
   },
   "articles/security-and-sharing/session-settings.md": {

@@ -1,7 +1,7 @@
 {
  "version": 1,
- "count": 1242,
- "active": 1242,
+ "count": 1336,
+ "active": 1336,
  "questions": [
   {
    "id": "sf-000001",
@@ -21463,6 +21463,1613 @@
    "difficulty": 2,
    "status": "active",
    "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/change-data-capture-allocations.md"
+  },
+  {
+   "id": "sf-001252",
+   "area": "integration",
+   "t": "PlatformEventChannelMember components can't be created or deleted with createMetadata() or deleteMetadata(); a member is removed by deploying destructiveChanges.xml.",
+   "f": "PlatformEventChannelMember components can be created or deleted with createMetadata() or deleteMetadata(); a member is removed by calling deleteMetadata() directly.",
+   "x": "The CRUD-style Metadata API calls aren't supported for this type, so removal goes through a destructive changes deploy. Calling deleteMetadata() on a member won't work.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:platform-event-channel-member",
+    "kt:metadata-api"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/platform-event-channel-member.md"
+  },
+  {
+   "id": "sf-001253",
+   "area": "integration",
+   "t": "A custom streaming channel holds either platform events or change events, never both, and its channel type can't be changed after creation.",
+   "f": "A custom streaming channel can mix platform events and change events, and its channel type can be changed after creation.",
+   "x": "Each channel is dedicated to one event product, and its ChannelType and EventType are fixed once it exists. Mixing the two in one channel isn't allowed.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:platform-event-channel-member",
+    "kt:platform-events",
+    "kt:change-data-capture"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/platform-event-channel-member.md"
+  },
+  {
+   "id": "sf-001254",
+   "area": "integration",
+   "t": "Custom channels and filter expressions serve Pub/Sub API clients, CometD clients and event relays, while Apex triggers subscribe to events without using channels.",
+   "f": "Custom channels and filter expressions serve Pub/Sub API clients, CometD clients and Apex triggers, which must subscribe through a channel to get filtered events.",
+   "x": "Channel filtering applies to external-style subscribers such as Pub/Sub API, CometD and event relays. Apex triggers subscribe directly to the event, so channels add nothing for them.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:platform-event-channel-member",
+    "kt:pub-sub-api",
+    "kt:streaming-api"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/platform-event-channel-member.md"
+  },
+  {
+   "id": "sf-001255",
+   "area": "platform-architecture",
+   "t": "An Apex cursor can hold at most 50 million rows, and a transaction can make at most 100 fetch() calls across its cursors.",
+   "f": "An Apex cursor can hold at most 5 million rows, and a transaction can make at most 100 fetch() calls across its cursors.",
+   "x": "The documented ceiling is 50 million rows per cursor, sync or async, with 100 fetch calls per transaction. Five million understates the cursor size by a factor of ten.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:apex-cursors",
+    "kt:governor-limits"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/apex-cursors.md"
+  },
+  {
+   "id": "sf-001256",
+   "area": "platform-architecture",
+   "t": "Apex cursor daily allowances are charged when the cursor is created, so a cursor over N rows uses N rows of the daily row allowance immediately.",
+   "f": "Apex cursor daily allowances are charged as rows are fetched, so a cursor over N rows uses the daily row allowance only for the rows actually fetched.",
+   "x": "Creation is the billing moment, which is why opening a new cursor in every Queueable hop drains the daily limits fast. Fetching rows does not change what was already charged.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:apex-cursors",
+    "kt:queueable-apex"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/apex-cursors.md"
+  },
+  {
+   "id": "sf-001257",
+   "area": "platform-architecture",
+   "t": "An Apex pagination cursor skips deleted rows so each page stays full, unlike a standard cursor whose record set is fixed at creation.",
+   "f": "An Apex standard cursor skips deleted rows so each batch stays full, unlike a pagination cursor whose record set is fixed at creation.",
+   "x": "Pagination cursors, built for UI paging with fetchPage, leave out deleted rows to keep pages full. Standard cursors lock in their record IDs when created, like a QueryLocator.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:apex-cursors",
+    "kt:lightning-web-components"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/apex-cursors.md"
+  },
+  {
+   "id": "sf-001258",
+   "area": "platform-architecture",
+   "t": "An instance refresh is maintenance that changes the hostname of every org on an instance, while an org migration moves a single org to a different instance.",
+   "f": "An org migration is maintenance that changes the hostname of every org on an instance, while an instance refresh moves a single org to a different instance.",
+   "x": "A refresh acts on a whole instance and its orgs, putting them read-only while it runs. A migration is about one org changing instance, for example moving to Hyperforce.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:instance-refresh-and-org-migration",
+    "kt:hyperforce"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/instance-refresh-and-org-migration.md"
+  },
+  {
+   "id": "sf-001259",
+   "area": "platform-architecture",
+   "t": "Instance-wide Trust Notifications for scheduled maintenance go out about ten days before it starts, while maintenance needing customer action is emailed to admins months ahead.",
+   "f": "Instance-wide Trust Notifications for scheduled maintenance go out about ten weeks before it starts, while maintenance needing customer action is emailed to admins days ahead.",
+   "x": "Salesforce aims for months of email notice when admins must change settings or references, and about ten days for instance-wide Trust Notifications. The swapped timings reverse that order.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:instance-refresh-and-org-migration",
+    "kt:trust-and-status-site"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/instance-refresh-and-org-migration.md"
+  },
+  {
+   "id": "sf-001260",
+   "area": "platform-architecture",
+   "t": "Heroku Connect authorized against an org without My Domain must be re-authorized after an instance refresh, whereas a My Domain hostname avoids that step.",
+   "f": "Heroku Connect authorized against an org with My Domain must be re-authorized after an instance refresh, whereas an instance hostname avoids that step.",
+   "x": "Heroku Connect ties its authorization to the org's hostname. A stable My Domain hostname survives the refresh, while an instance hostname changes and breaks the authorization.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:instance-refresh-and-org-migration",
+    "kt:heroku-connect",
+    "kt:my-domain"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/instance-refresh-and-org-migration.md"
+  },
+  {
+   "id": "sf-001261",
+   "area": "public-sector-and-compliance",
+   "t": "Under SEC rules adopted in July 2023, a public company generally must report a material cybersecurity incident on Form 8-K within four business days of determining materiality.",
+   "f": "Under SEC rules adopted in July 2023, a public company generally must report a material cybersecurity incident on Form 8-K within thirty business days of determining materiality.",
+   "x": "The SEC's Form 8-K Item 1.05 clock is four business days, counted from the materiality determination. Thirty business days is far longer than the rule allows.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:corporate-governance",
+    "kt:data-breach-risk"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/corporate-governance.md"
+  },
+  {
+   "id": "sf-001262",
+   "area": "public-sector-and-compliance",
+   "t": "The 2023 G20/OECD Principles of Corporate Governance added guidance on sustainability and resilience, including climate-related risks, for the first time.",
+   "f": "The 2023 G20/OECD Principles of Corporate Governance removed earlier guidance on sustainability and resilience, leaving climate-related risks to national regulators.",
+   "x": "The September 2023 revision introduced a new chapter on sustainability and resilience that covers climate risk. It added that topic rather than dropping it.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:corporate-governance"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/corporate-governance.md"
+  },
+  {
+   "id": "sf-001263",
+   "area": "public-sector-and-compliance",
+   "t": "Salesforce, Inc.'s Corporate Governance Guidelines require that its board always have at least a majority of independent directors, judged against NYSE criteria.",
+   "f": "Salesforce, Inc.'s Corporate Governance Guidelines require that its board always have at least two-thirds independent directors, judged against Nasdaq criteria.",
+   "x": "The guidelines set a simple majority of independent directors as the floor and use NYSE independence standards. Two-thirds and Nasdaq are not what they specify.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:corporate-governance",
+    "kt:salesforce-inc"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/corporate-governance.md"
+  },
+  {
+   "id": "sf-001264",
+   "area": "public-sector-and-compliance",
+   "t": "Under the carve-out method, a SOC 1 report excludes a subservice organization's controls from testing, so the opinion covers only the provider's own controls.",
+   "f": "Under the inclusive method, a SOC 1 report excludes a subservice organization's controls from testing, so the opinion covers only the provider's own controls.",
+   "x": "Carve-out leaves the subservice party's controls out, which is the more common approach. The inclusive method is the one that brings those controls into the tested scope.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:soc-1",
+    "kt:governance-risk-and-compliance"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/soc-1.md"
+  },
+  {
+   "id": "sf-001265",
+   "area": "public-sector-and-compliance",
+   "t": "A SOC 1 examination is performed by a CPA service auditor under the AICPA attestation standard AT-C section 320.",
+   "f": "A SOC 1 examination is performed by a CPA service auditor under the AICPA attestation standard AT-C section 205 and the Trust Services Criteria.",
+   "x": "SOC 1 engagements follow AT-C 320 and focus on controls relevant to financial reporting. The Trust Services Criteria belong to SOC 2, not SOC 1.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:soc-1",
+    "kt:soc-2"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/soc-1.md"
+  },
+  {
+   "id": "sf-001266",
+   "area": "public-sector-and-compliance",
+   "t": "Because Salesforce's SOC 1 reports cover six-month windows, a customer's audit year usually needs two reports plus a bridge letter for any gap.",
+   "f": "Because Salesforce's SOC 1 reports cover twelve-month windows, a customer's audit year usually needs one report plus a bridge letter for any gap.",
+   "x": "Salesforce lists its SOC 1 versions in six-month periods, so a full year of coverage takes two of them. A bridge letter covers any days the reports leave out.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:soc-1",
+    "kt:hyperforce"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/soc-1.md"
+  },
+  {
+   "id": "sf-001267",
+   "area": "security-and-sharing",
+   "t": "Salesforce provisions login-based Customer Community licenses at a 1-to-20 ratio, so buying 1,000 monthly logins gives 20,000 login licenses.",
+   "f": "Salesforce provisions login-based Customer Community licenses at a 1-to-5 ratio, so buying 1,000 monthly logins gives 5,000 login licenses.",
+   "x": "Each purchased monthly login comes with twenty provisioned login licenses. A one-to-five ratio would provision far fewer users than Salesforce actually does.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:customer-community-licenses",
+    "kt:user-licenses"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/customer-community-licenses.md"
+  },
+  {
+   "id": "sf-001268",
+   "area": "security-and-sharing",
+   "t": "Account Role Optimization delays creating external roles for a Customer Community Plus account until a second user joins that account.",
+   "f": "Account Role Optimization delays creating external roles for a Customer Community Plus account until a tenth user joins that account.",
+   "x": "The optimization skips role creation while an account has only one external user, then creates roles once a second one arrives. That keeps role counts down at scale.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:customer-community-licenses",
+    "kt:role-hierarchy"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/customer-community-licenses.md"
+  },
+  {
+   "id": "sf-001269",
+   "area": "security-and-sharing",
+   "t": "A Customer Community user can be upgraded to Customer Community Plus, but once the user holds a license that needs a role, the change can't be reversed.",
+   "f": "A Customer Community user can be upgraded to Customer Community Plus, and the user can later be downgraded back as long as no external role was assigned.",
+   "x": "The upgrade is one way: after the user has a role-requiring license, there is no return to Customer Community. The upgrade also strips sharing set and permission set assignments.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:customer-community-licenses",
+    "kt:sharing-sets"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/customer-community-licenses.md"
+  },
+  {
+   "id": "sf-001270",
+   "area": "security-and-sharing",
+   "t": "In indirect prompt injection, the attacker plants instructions in a resource the system later ingests, such as a document, rather than typing them as the application's user.",
+   "f": "In direct prompt injection, the attacker plants instructions in a resource the system later ingests, such as a document, rather than typing them as the application's user.",
+   "x": "NIST's taxonomy calls it indirect when a third party hides instructions in ingested content. Direct injection is when the system's own user appends instructions to override the system prompt.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:prompt-injection",
+    "kt:retrieval-augmented-generation-in-salesforce"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/prompt-injection.md"
+  },
+  {
+   "id": "sf-001271",
+   "area": "security-and-sharing",
+   "t": "Salesforce advises wrapping untrusted prompt input in a random-sequence enclosure generated fresh for each inference, instead of quote-style delimiters.",
+   "f": "Salesforce advises wrapping untrusted prompt input in a fixed quote-style delimiter reused for every inference, instead of random-sequence enclosures.",
+   "x": "A securely generated token per inference is hard for an attacker to guess and close. Static quote-style delimiters are easy to break out of, which is why the guidance moves away from them.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:prompt-injection",
+    "kt:prompt-builder"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/prompt-injection.md"
+  },
+  {
+   "id": "sf-001272",
+   "area": "security-and-sharing",
+   "t": "Salesforce's partner guidance limits where packaged Agentforce prompts may be stored to prompt templates, protected custom settings and protected custom metadata.",
+   "f": "Salesforce's partner guidance limits where packaged Agentforce prompts may be stored to static resources, public custom settings and Apex string constants.",
+   "x": "AgentExchange guidance allows only prompt templates and protected settings or metadata for packaged prompts, and bars secrets inside them. Public settings and code constants are not on that list.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:prompt-injection",
+    "kt:agentexchange"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/prompt-injection.md"
+  },
+  {
+   "id": "sf-001273",
+   "area": "architecture-practice",
+   "t": "Trailhead's CoE guidance has the Design Authority review planned metadata for a data migration before construction starts.",
+   "f": "Trailhead's CoE guidance has the Design Authority review planned metadata for a data migration only after the migration loads have finished.",
+   "x": "The review happens up front, with the CoE members who own data models, so problems are caught before anything is built. A review after loading would be too late to shape the design.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:design-authority",
+    "kt:data-migration-strategy"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/design-authority.md"
+  },
+  {
+   "id": "sf-001274",
+   "area": "architecture-practice",
+   "t": "Salesforce's architecture blog holds that the Salesforce architect stays accountable for every key architectural decision, whoever sits on the Design Authority.",
+   "f": "Salesforce's architecture blog holds that the CoE executive sponsor stays accountable for every key architectural decision, whoever sits on the Design Authority.",
+   "x": "Membership varies by organization, but accountability for key architecture decisions rests with the Salesforce architect. The executive sponsor is not named as that owner.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:design-authority",
+    "kt:salesforce-architect"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/design-authority.md"
+  },
+  {
+   "id": "sf-001275",
+   "area": "architecture-practice",
+   "t": "When no Center of Excellence standard covers a situation, Trailhead suggests the Design Authority fall back on community-vetted best practice.",
+   "f": "When no Center of Excellence standard covers a situation, Trailhead suggests the Design Authority pause the work until a new written standard is approved.",
+   "x": "Trailhead's fallback for gaps in the CoE's own standards is accepted community best practice. Halting work until a new standard exists would turn the DA into the bottleneck it should avoid.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:design-authority",
+    "kt:salesforce-center-of-excellence"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/design-authority.md"
+  },
+  {
+   "id": "sf-001276",
+   "area": "architecture-practice",
+   "t": "In Salesforce delivery guidance, the functional design specification describes what the system does for users, while the technical design specification describes how it does it.",
+   "f": "In Salesforce delivery guidance, the technical design specification describes what the system does for users, while the functional design specification describes how it does it.",
+   "x": "The functional spec is written from the user's point of view, and the technical spec gives developers the precise build detail. Swapping their roles reverses the split.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:solution-design-document",
+    "kt:requirements-gathering"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/solution-design-document.md"
+  },
+  {
+   "id": "sf-001277",
+   "area": "architecture-practice",
+   "t": "Salesforce's delivery guidance has the design specifications date- and version-stamped and signed off by the customer before build starts.",
+   "f": "Salesforce's delivery guidance has the design specifications date- and version-stamped and signed off by the customer after user acceptance testing ends.",
+   "x": "Sign-off on a versioned spec happens before any build, so it becomes the baseline for developers and later for UAT. Waiting until after UAT would leave the build without an agreed baseline.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:solution-design-document",
+    "kt:user-acceptance-testing"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/solution-design-document.md"
+  },
+  {
+   "id": "sf-001278",
+   "area": "architecture-practice",
+   "t": "Trailhead's B2C Commerce guidance says a design document's integration summary is backed by a separate interface specification document for each third-party provider.",
+   "f": "Trailhead's B2C Commerce guidance says a design document's integration summary replaces separate interface specification documents for third-party providers.",
+   "x": "The design document keeps a summary table by integration type and links or embeds one interface spec per provider. The summary doesn't stand in for those per-provider specs.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:solution-design-document",
+    "kt:b2c-solution-architect-certification"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/solution-design-document.md"
+  },
+  {
+   "id": "sf-001279",
+   "area": "automation",
+   "t": "An Enterprise or Unlimited Edition org can have 2,000 active flows and 4,000 total flows per flow type.",
+   "f": "An Enterprise or Unlimited Edition org can have 500 active flows and 1,000 total flows per flow type.",
+   "x": "The per-org allocation for Enterprise, Unlimited, Performance and Developer editions is 2,000 active and 4,000 total per flow type. Essentials and Professional are the editions capped far lower, at 5 of each.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:flow-limits",
+    "kt:flow-builder"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/flow-limits.md"
+  },
+  {
+   "id": "sf-001280",
+   "area": "automation",
+   "t": "The cap of 2,000 executed elements per flow interview applied only to API version 56.0 and earlier; API version 57.0 removed it.",
+   "f": "The cap of 2,000 executed elements per flow interview applies to every API version, including flows saved at API version 57.0 and later.",
+   "x": "The executed-element ceiling is a legacy limit tied to older flow API versions. From API 57.0 it no longer applies, though per-transaction governor limits still do.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:flow-limits",
+    "kt:flow-versioning"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/flow-limits.md"
+  },
+  {
+   "id": "sf-001281",
+   "area": "automation",
+   "t": "Flow resume events share a combined org total of 20,000 time-based automations with process scheduled actions and workflow rule time triggers.",
+   "f": "Flow resume events have their own separate org total of 20,000 time-based automations, apart from process scheduled actions and workflow rule time triggers.",
+   "x": "The 20,000 figure is one shared pool across flow resumes, scheduled actions in processes and legacy workflow time triggers. Heavy use in one reduces what's left for the others.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:flow-limits",
+    "kt:workflow-rules"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/flow-limits.md"
+  },
+  {
+   "id": "sf-001282",
+   "area": "automation",
+   "t": "In a Wait for Conditions element, if no wait configuration's conditions are met, the interview doesn't pause and follows the default path instead.",
+   "f": "In a Wait for Conditions element, if no wait configuration's conditions are met, the interview pauses until the first configuration's resume event occurs.",
+   "x": "Wait conditions decide at run time whether the interview waits at all. With none met, it skips the pause and takes the default connector.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:wait-elements",
+    "kt:flow-builder"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/wait-elements.md"
+  },
+  {
+   "id": "sf-001283",
+   "area": "automation",
+   "t": "Deactivating a flow version doesn't stop its paused interviews, and a flow version that still has paused interviews can't be deleted.",
+   "f": "Deactivating a flow version cancels its paused interviews, after which the flow version can be deleted right away.",
+   "x": "Paused interviews survive deactivation and keep the version in use, which blocks deletion. Admins must deal with them through the Paused and Failed Flow Interviews list.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:wait-elements",
+    "kt:autolaunched-flow"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/wait-elements.md"
+  },
+  {
+   "id": "sf-001284",
+   "area": "automation",
+   "t": "Platform event filter values in a flow Wait element's resume event are capped at 765 characters.",
+   "f": "Platform event filter values in a flow Wait element's resume event are capped at 255 characters.",
+   "x": "The documented ceiling for those filter values is 765 characters. A 255-character cap is a common text-field figure but not this limit.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:wait-elements",
+    "kt:platform-events"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/wait-elements.md"
+  },
+  {
+   "id": "sf-001285",
+   "area": "clouds-and-products",
+   "t": "Marketing Cloud Next orchestrates campaigns in standard Flow Builder, rather than in Journey Builder and Automation Studio.",
+   "f": "Marketing Cloud Next orchestrates campaigns in Journey Builder and Automation Studio, rather than in standard Flow Builder.",
+   "x": "Built on the Salesforce Platform, Marketing Cloud Next uses flows for both segment-based and event-triggered automation. Journey Builder and Automation Studio belong to Marketing Cloud Engagement.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:marketing-cloud-next",
+    "kt:flow-builder",
+    "kt:marketing-cloud-engagement"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/marketing-cloud-next.md"
+  },
+  {
+   "id": "sf-001286",
+   "area": "clouds-and-products",
+   "t": "In Marketing Cloud Next, email is included in both the Growth and Advanced editions, while SMS, WhatsApp and RCS are paid add-ons.",
+   "f": "In Marketing Cloud Next, email and SMS are included in both the Growth and Advanced editions, while only WhatsApp and RCS are paid add-ons.",
+   "x": "Only email comes with the base editions. SMS is licensed separately, just like WhatsApp and RCS.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:marketing-cloud-next"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/marketing-cloud-next.md"
+  },
+  {
+   "id": "sf-001287",
+   "area": "clouds-and-products",
+   "t": "A Marketing Cloud Next email needs a Data 360 data graph only when the message uses more than one record type.",
+   "f": "A Marketing Cloud Next email needs a Data 360 data graph for every message, even when it uses only one record type.",
+   "x": "Data graphs shape related records for personalization, so they matter only when several record types feed the message. Salesforce also suggests keeping them to the fields the flow uses.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:marketing-cloud-next",
+    "kt:data-graphs"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/marketing-cloud-next.md"
+  },
+  {
+   "id": "sf-001288",
+   "area": "clouds-and-products",
+   "t": "FlexCards is the most heavily weighted section of the Omnistudio Consultant exam, at 18%, while Best Fit Solutions is the lightest at 15%.",
+   "f": "OmniScripts is the most heavily weighted section of the Omnistudio Consultant exam, at 22%, while Best Fit Solutions is the lightest at 10%.",
+   "x": "The six sections are close in weight, with FlexCards on top at 18% and Best Fit Solutions at 15%. OmniScripts sits at 17%, and no section reaches 22%.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:omnistudio-consultant-certification",
+    "kt:omnistudio"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/omnistudio-consultant-certification.md"
+  },
+  {
+   "id": "sf-001289",
+   "area": "clouds-and-products",
+   "t": "The Omnistudio Consultant exam guide lists no prerequisite credential; Platform Administrator and Platform App Builder appear only as related certifications.",
+   "f": "The Omnistudio Consultant exam guide requires the Platform Administrator credential as a prerequisite before candidates can register.",
+   "x": "Anyone can sit the exam without holding another credential first. Trailhead shows Platform Administrator, Platform App Builder and Revenue Management Consultant as related, not required.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:omnistudio-consultant-certification",
+    "kt:salesforce-certification-program"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/omnistudio-consultant-certification.md"
+  },
+  {
+   "id": "sf-001290",
+   "area": "clouds-and-products",
+   "t": "The Omnistudio Consultant exam doesn't test writing JavaScript, HTML, CSS or Apex; its questions focus on recommending the right tool and design.",
+   "f": "The Omnistudio Consultant exam tests writing JavaScript and Apex for custom Omnistudio components, alongside recommending the right tool and design.",
+   "x": "The guide scopes coding, configuration and troubleshooting out of this consultant exam. Building with code is the territory of the Omnistudio Developer credential.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:omnistudio-consultant-certification",
+    "kt:omnistudio-developer-certification"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/omnistudio-consultant-certification.md"
+  },
+  {
+   "id": "sf-001291",
+   "area": "data-cloud-and-ai",
+   "t": "After an admin turns on Einstein Generative AI Data Collection, the first audit and feedback data can take up to 24 hours to appear in Data 360.",
+   "f": "After an admin turns on Einstein Generative AI Data Collection, the first audit and feedback data appears in Data 360 within 15 minutes.",
+   "x": "Initial records can take as long as a day to flow through data lake objects into the standard DMOs. A 15-minute window understates that delay.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:generative-ai-audit-and-feedback-data",
+    "kt:data-cloud"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/generative-ai-audit-and-feedback-data.md"
+  },
+  {
+   "id": "sf-001292",
+   "area": "data-cloud-and-ai",
+   "t": "Switching off Einstein Generative AI Data Collection pauses the stream, so the paused period is simply missing from later audit reports.",
+   "f": "Switching off Einstein Generative AI Data Collection buffers the stream, so the paused period is backfilled into audit reports when collection resumes.",
+   "x": "Turning collection off stops capture rather than queuing it. Nothing from that window is recovered later, which leaves a gap in reporting.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:generative-ai-audit-and-feedback-data",
+    "kt:einstein-trust-layer"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/generative-ai-audit-and-feedback-data.md"
+  },
+  {
+   "id": "sf-001293",
+   "area": "data-cloud-and-ai",
+   "t": "In the generative AI audit data model, one gateway request can produce many generations, and each generation can have zero or many feedback records.",
+   "f": "In the generative AI audit data model, each gateway request produces exactly one generation, and each generation has exactly one feedback record.",
+   "x": "The model is one-to-many at both levels, which is why joins repeat request IDs and counts need deduplicating. A strict one-to-one chain doesn't match the schema.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:generative-ai-audit-and-feedback-data",
+    "kt:data-model-objects"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/generative-ai-audit-and-feedback-data.md"
+  },
+  {
+   "id": "sf-001294",
+   "area": "data-cloud-and-ai",
+   "t": "A Data 360 data share must be active before it can be linked to a data share target, which holds the connection and credentials for one external account.",
+   "f": "A Data 360 data share target must be linked first, and the data share becomes active only once it is linked to that target.",
+   "x": "Saving a data share makes it active, and only then can it be linked to a target. The target is the separate object that carries the external account's connection details.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:zero-copy-data-sharing",
+    "kt:data-cloud"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/zero-copy-data-sharing.md"
+  },
+  {
+   "id": "sf-001295",
+   "area": "data-cloud-and-ai",
+   "t": "Moving Data 360 shares from the legacy Snowflake target to the Snowflake V2 target isn't automatic, and the V2 target should be linked before the legacy one is unlinked.",
+   "f": "Moving Data 360 shares from the legacy Snowflake target to the Snowflake V2 target happens automatically, and the legacy target should be unlinked before V2 is linked.",
+   "x": "Admins migrate each share themselves and link V2 first so consumers keep access. Snowflake also supplies a function to swap database names for downstream references.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:zero-copy-data-sharing"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/zero-copy-data-sharing.md"
+  },
+  {
+   "id": "sf-001296",
+   "area": "data-cloud-and-ai",
+   "t": "Reading a Data 360 share from Databricks needs a Unity Catalog workspace and doesn't work on single-user clusters.",
+   "f": "Reading a Data 360 share from Databricks works on any cluster type, including single-user clusters, without needing a Unity Catalog workspace.",
+   "x": "Databricks exposes the share as a Unity Catalog foreign catalog, so Unity Catalog is required. Single-user clusters are not supported for these reads.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:zero-copy-data-sharing",
+    "kt:data-virtualization"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/zero-copy-data-sharing.md"
+  },
+  {
+   "id": "sf-001297",
+   "area": "data-model",
+   "t": "In a SOQL WHERE clause, the DISTANCE function supports only the < and > comparison operators, not equality.",
+   "f": "In a SOQL WHERE clause, the DISTANCE function supports <, > and = comparisons, so a query can match an exact distance.",
+   "x": "Location-based SOQL compares distances only with less-than or greater-than. Equality isn't supported, which fits the approximate nature of the distance calculation.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:geolocation-fields",
+    "kt:soql"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/geolocation-fields.md"
+  },
+  {
+   "id": "sf-001298",
+   "area": "data-model",
+   "t": "When a SOQL DISTANCE call mixes a geolocation field with GEOLOCATION(), the field must be the first argument, or the query fails as malformed.",
+   "f": "When a SOQL DISTANCE call mixes a geolocation field with GEOLOCATION(), the GEOLOCATION() literal must be the first argument, or the query fails as malformed.",
+   "x": "The field goes first and the literal point second. Reversing that order makes the query malformed.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:geolocation-fields",
+    "kt:soql"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/geolocation-fields.md"
+  },
+  {
+   "id": "sf-001299",
+   "area": "data-model",
+   "t": "A geolocation value counts as null only when both latitude and longitude are null, and a record with just one coordinate set is treated as unset in distance filters.",
+   "f": "A geolocation value counts as null when either latitude or longitude is null, and a record with just one coordinate set is filtered as if the missing one were zero.",
+   "x": "Nullness is judged on both coordinates together, yet a half-filled location is still ignored when filtering or sorting by distance. Missing coordinates are not treated as zero.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:geolocation-fields",
+    "kt:custom-fields"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/geolocation-fields.md"
+  },
+  {
+   "id": "sf-001300",
+   "area": "data-model",
+   "t": "With State and Country/Territory Picklists, the integration value is what Apex, SOQL and API integrations see in the text State and Country fields, while the label is never stored on the record.",
+   "f": "With State and Country/Territory Picklists, the label is what Apex, SOQL and API integrations see in the text State and Country fields, while the integration value is never stored on the record.",
+   "x": "Integration values act like API names and are written to the text fields; labels are looked up from the code for display. Code that compares against labels won't match stored values.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:state-and-country-territory-picklists",
+    "kt:data-quality"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/state-and-country-territory-picklists.md"
+  },
+  {
+   "id": "sf-001301",
+   "area": "data-model",
+   "t": "State and Country/Territory Picklists can't be moved with change sets, so their AddressSettings configuration is promoted through Metadata API deployments.",
+   "f": "State and Country/Territory Picklists are moved with change sets, because the Metadata API AddressSettings type can't be deployed between orgs.",
+   "x": "Change sets are one of the channels the feature doesn't support. The AddressSettings metadata type, a single Address.settings file, is how the configuration travels as code.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:state-and-country-territory-picklists",
+    "kt:change-sets",
+    "kt:metadata-api"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/state-and-country-territory-picklists.md"
+  },
+  {
+   "id": "sf-001302",
+   "area": "data-model",
+   "t": "Editing a state or country integration value isn't retroactive: records already saved keep the old value, and hard-coded references must be updated.",
+   "f": "Editing a state or country integration value is retroactive: records already saved are rewritten with the new value, and hard-coded references update automatically.",
+   "x": "A changed integration value applies only to future saves. Existing records and anything that hard-codes the old value, such as rules or integrations, must be handled separately.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:state-and-country-territory-picklists",
+    "kt:validation-rules"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/state-and-country-territory-picklists.md"
+  },
+  {
+   "id": "sf-001303",
+   "area": "development",
+   "t": "An Apex exception's initCause method works only if no cause has been set yet, for example through a constructor that took a cause.",
+   "f": "An Apex exception's initCause method can be called at any time to replace a cause that was already set through a constructor.",
+   "x": "initCause is for setting a cause once on an exception that has none. If the cause was already supplied, initCause can't overwrite it.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:custom-exceptions",
+    "kt:apex"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/custom-exceptions.md"
+  },
+  {
+   "id": "sf-001304",
+   "area": "development",
+   "t": "From Apex API version 41.0, a statement that can never be reached, such as code after an unconditional throw, is a compile-time error.",
+   "f": "From Apex API version 41.0, a statement that can never be reached, such as code after an unconditional throw, compiles but is skipped at run time.",
+   "x": "Newer API versions refuse to compile unreachable statements. Dead code after a throw has to be removed rather than left to be silently skipped.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:custom-exceptions",
+    "kt:apex"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/custom-exceptions.md"
+  },
+  {
+   "id": "sf-001305",
+   "area": "development",
+   "t": "An unhandled custom exception thrown to a Lightning web component exposes its class name and a stack trace, while AuraHandledException returns only its message.",
+   "f": "An unhandled custom exception thrown to a Lightning web component returns only its message, while AuraHandledException exposes its class name and a stack trace.",
+   "x": "Unhandled user-defined exceptions send the exception type, an isUserDefinedException flag and line-level stack details to the client. AuraHandledException is the way to send only a controlled message.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:custom-exceptions",
+    "kt:lightning-web-components",
+    "kt:aura-components"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/custom-exceptions.md"
+  },
+  {
+   "id": "sf-001306",
+   "area": "development",
+   "t": "The Omnistudio Developer exam requires a 72% passing score, a higher bar than the Omnistudio Consultant exam with the same format, time and fees.",
+   "f": "The Omnistudio Developer exam requires a 65% passing score, a lower bar than the Omnistudio Consultant exam with the same format, time and fees.",
+   "x": "The developer exam's pass mark is 72%, above the consultant exam's 67%. Question count, time limit and prices otherwise match.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:omnistudio-developer-certification",
+    "kt:omnistudio-consultant-certification"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/omnistudio-developer-certification.md"
+  },
+  {
+   "id": "sf-001308",
+   "area": "development",
+   "t": "The Omnistudio Developer exam has a 15% Troubleshooting and Debugging section, which the Omnistudio Consultant exam has no equivalent of.",
+   "f": "The Omnistudio Developer exam folds troubleshooting into its Fundamentals section, while the Omnistudio Consultant exam has a separate 15% troubleshooting section.",
+   "x": "Debugging display, mapping, caching and deployment problems gets its own section in the developer guide. The consultant exam scopes troubleshooting out entirely.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:omnistudio-developer-certification",
+    "kt:omnistudio-consultant-certification"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/omnistudio-developer-certification.md"
+  },
+  {
+   "id": "sf-001309",
+   "area": "devops-and-alm",
+   "t": "A Tooling API query on MetadataComponentDependency returns at most 2,000 records, while a Bulk API 2.0 query can return up to 100,000.",
+   "f": "A Tooling API query on MetadataComponentDependency returns at most 50,000 records, while a Bulk API 2.0 query can return up to 100,000.",
+   "x": "The Tooling API path is capped at 2,000 rows, which is why large dependency sets go through Bulk API 2.0 with its 100,000-row ceiling. A 50,000-row Tooling cap overstates it.",
+   "release": "Winter '27",
+   "featureStatus": "beta",
+   "certs": [],
+   "concepts": [
+    "kt:dependency-api",
+    "kt:tooling-api",
+    "kt:bulk-api-2"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/dependency-api.md"
+  },
+  {
+   "id": "sf-001310",
+   "area": "devops-and-alm",
+   "t": "Metadata dependencies that involve reports come back from the Dependency API only through Bulk API 2.0, not through Tooling API queries.",
+   "f": "Metadata dependencies that involve reports come back from the Dependency API only through Tooling API queries, not through Bulk API 2.0.",
+   "x": "Report dependencies are left out of Tooling API results. Querying MetadataComponentDependency through Bulk API 2.0 is the way to include them.",
+   "release": "Winter '27",
+   "featureStatus": "beta",
+   "certs": [],
+   "concepts": [
+    "kt:dependency-api",
+    "kt:bulk-api-2"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/dependency-api.md"
+  },
+  {
+   "id": "sf-001311",
+   "area": "devops-and-alm",
+   "t": "SOQL on MetadataComponentDependency doesn't support ORDER BY, count(), queryMore() or OFFSET, so large orgs are partitioned with filters instead.",
+   "f": "SOQL on MetadataComponentDependency supports ORDER BY and OFFSET but not count(), so large orgs are paged with OFFSET instead.",
+   "x": "The Dependency API's SOQL is restricted: none of those clauses or calls work, so paging isn't possible. Teams split big queries with filters such as component type.",
+   "release": "Winter '27",
+   "featureStatus": "beta",
+   "certs": [],
+   "concepts": [
+    "kt:dependency-api",
+    "kt:soql"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/dependency-api.md"
+  },
+  {
+   "id": "sf-001312",
+   "area": "devops-and-alm",
+   "t": "A License Management Org can manage many 1GP and 2GP packages, but each package can belong to only one License Management Org.",
+   "f": "A License Management Org can manage only one package, but each package can be registered with several License Management Orgs.",
+   "x": "One LMO can hold many first- and second-generation packages. The reverse isn't allowed: a package is tied to a single LMO.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:license-management-app",
+    "kt:second-generation-managed-packages"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/license-management-app.md"
+  },
+  {
+   "id": "sf-001313",
+   "area": "devops-and-alm",
+   "t": "The License Management App can't track unlocked packages, and only managed-released 1GP and promoted 2GP versions appear in it.",
+   "f": "The License Management App tracks unlocked packages as well as managed ones, and beta versions appear in it alongside released versions.",
+   "x": "Unlocked packages can't be registered with the LMA, and beta versions stay hidden. Only released 1GP and promoted 2GP versions show up.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:license-management-app",
+    "kt:first-generation-managed-packages"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/license-management-app.md"
+  },
+  {
+   "id": "sf-001314",
+   "area": "devops-and-alm",
+   "t": "In the License Management App, a trial license lasts up to 90 days, and once converted to Active it can't return to Trial.",
+   "f": "In the License Management App, a trial license lasts up to 30 days, and once converted to Active it can be switched back to Trial.",
+   "x": "Trials run for at most 90 days, and status changes are one-way: Active can't revert to Trial. Uninstalled licenses are also locked from changes.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:license-management-app",
+    "kt:agentexchange"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/license-management-app.md"
+  },
+  {
+   "id": "sf-001315",
+   "area": "identity",
+   "t": "On a Salesforce external credential using the JWT bearer flow, exp defaults to two minutes ahead when no expiration is set, and the algorithm is fixed to RS256.",
+   "f": "On a Salesforce external credential using the JWT bearer flow, exp defaults to sixty minutes ahead when no expiration is set, and the algorithm can be set to HS256.",
+   "x": "Admins can edit iss, sub and aud, but an unset expiry becomes two minutes and alg is locked to RS256. Neither a one-hour default nor HS256 is offered.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:json-web-token",
+    "kt:named-credentials",
+    "kt:jwt-bearer-flow"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/json-web-token.md"
+  },
+  {
+   "id": "sf-001316",
+   "area": "identity",
+   "t": "Salesforce JWT-based access tokens can be used only against Salesforce REST APIs, so consumers of SOAP APIs should use opaque tokens.",
+   "f": "Salesforce JWT-based access tokens can be used against both REST and SOAP APIs, so they can replace opaque tokens for every consumer.",
+   "x": "JWT access tokens let off-platform services validate them locally, but they work only with REST APIs. Non-REST consumers such as SOAP clients still need opaque tokens.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:json-web-token",
+    "kt:oauth-2-0",
+    "kt:external-client-apps"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/json-web-token.md"
+  },
+  {
+   "id": "sf-001317",
+   "area": "identity",
+   "t": "Under RFC 7519, a recipient that doesn't identify itself with a value in a JWT's aud claim must reject the token.",
+   "f": "Under RFC 7519, a recipient that doesn't identify itself with a value in a JWT's iss claim must reject the token.",
+   "x": "The audience claim names the intended recipients, so a party outside it must refuse the token. The issuer claim identifies who created the token, not who should accept it.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:json-web-token",
+    "kt:integration-security"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/json-web-token.md"
+  },
+  {
+   "id": "sf-001318",
+   "area": "identity",
+   "t": "The Login History page in Setup lists up to 20,000 login records from the past six months; the full six months can be downloaded as CSV or GZIP.",
+   "f": "The Login History page in Setup lists up to 20,000 login records from the past twelve months; the full twelve months can be downloaded as CSV or GZIP.",
+   "x": "Login History keeps six months of data, and the page and list views stop at 20,000 rows. Longer retention needs scheduled exports or Event Monitoring.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:login-history",
+    "kt:salesforce-identity"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/login-history.md"
+  },
+  {
+   "id": "sf-001319",
+   "area": "identity",
+   "t": "Since API version 37.0, any user can retrieve their own LoginHistory records, while querying others' requires Manage Users or Monitor Login History.",
+   "f": "Since API version 37.0, querying any LoginHistory records, including a user's own, requires the Manage Users or Monitor Login History permission.",
+   "x": "The admin permissions are needed to see other users' logins, but API 37.0 opened each user's own records to them. A blanket permission requirement no longer applies.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:login-history",
+    "kt:soql",
+    "kt:standard-objects"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/login-history.md"
+  },
+  {
+   "id": "sf-001320",
+   "area": "identity",
+   "t": "Login History records a Forwarded-for IP from the X-Forwarded-For header, but that field isn't populated for OAuth and SSO logins.",
+   "f": "Login History records a Forwarded-for IP from the X-Forwarded-For header, and that field is populated only for OAuth and SSO logins.",
+   "x": "Source IP is always the first client address to reach Salesforce, while Forwarded-for comes from the header. OAuth and SSO logins leave the Forwarded-for field empty.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:login-history",
+    "kt:oauth-2-flows-in-salesforce"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/login-history.md"
+  },
+  {
+   "id": "sf-001321",
+   "area": "development",
+   "t": "The Omnistudio Developer exam guide recommends about a year of general developer experience plus three to six months of hands-on Omnistudio work.",
+   "f": "The Omnistudio Developer exam guide recommends about three years of general developer experience plus two years of hands-on Omnistudio work.",
+   "x": "The guide sets a modest bar: roughly one year as a developer and three to six months designing and deploying with Omnistudio. Multi-year Omnistudio experience isn't what it asks for.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:omnistudio-developer-certification",
+    "kt:omnistudio"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/omnistudio-developer-certification.md"
+  },
+  {
+   "id": "sf-001322",
+   "area": "integration",
+   "t": "Mule domains, which share global configuration across apps, can be deployed only when Mule runs on premises, not on CloudHub.",
+   "f": "Mule domains, which share global configuration across apps, can be deployed only on CloudHub 2.0, not when Mule runs on premises.",
+   "x": "Domain deployment is limited to on-premises runtimes. Designs that share connector configuration through a domain don't carry over to CloudHub.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:mule-runtime-engine",
+    "kt:mulesoft-anypoint-platform"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/mule-runtime-engine.md"
+  },
+  {
+   "id": "sf-001323",
+   "area": "integration",
+   "t": "In Mule 4, an operation that declares no processing type is treated as CPU-Light by default, alongside the Blocking I/O and CPU Intensive types.",
+   "f": "In Mule 4, an operation that declares no processing type is treated as Blocking I/O by default, alongside the CPU-Light and CPU Intensive types.",
+   "x": "Mule's reactive engine uses each operation's declared type to schedule work, and CPU-Light is the fallback. Blocking I/O covers work like database selects and must be declared.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:mule-runtime-engine"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/mule-runtime-engine.md"
+  },
+  {
+   "id": "sf-001324",
+   "area": "integration",
+   "t": "Mule LTS releases ship each February and get at least 18 months of Standard Support, while Edge releases arrive up to three times a year with short support windows.",
+   "f": "Mule LTS releases ship each October and get at least 36 months of Standard Support, while Edge releases arrive monthly with short support windows.",
+   "x": "MuleSoft's LTS channel is a yearly February release with at least 18 months of Standard Support. Edge releases come up to three times a year and are supported only briefly.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:mule-runtime-engine",
+    "kt:anypoint-runtime-manager"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/mule-runtime-engine.md"
+  },
+  {
+   "id": "sf-001325",
+   "area": "integration",
+   "t": "Salesforce can't join a distributed transaction or one started outside Salesforce, so multi-system rollback or compensation logic belongs in middleware.",
+   "f": "Salesforce can join a distributed transaction started outside Salesforce, so multi-system rollback logic can be kept in Apex with savepoints.",
+   "x": "Salesforce is transactional only within itself. Coordinating commit or compensation across systems has to happen in a middleware layer.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:process-integration",
+    "kt:transaction-control",
+    "kt:mulesoft-anypoint-platform"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/process-integration.md"
+  },
+  {
+   "id": "sf-001326",
+   "area": "integration",
+   "t": "In orchestration a central controller directs each participating service, while in choreography the participants act autonomously and react to one another.",
+   "f": "In choreography a central controller directs each participating service, while in orchestration the participants act autonomously and react to one another.",
+   "x": "Orchestration has one coordinator describing the whole process. Choreography has no central authority; each participant responds to events from the others.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:process-integration",
+    "kt:event-driven-architecture",
+    "kt:flow-orchestrator"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/process-integration.md"
+  },
+  {
+   "id": "sf-001327",
+   "area": "integration",
+   "t": "For Remote Call-In process integration, the remote caller or middleware is responsible for handling duplicate requests after errors or timeouts.",
+   "f": "For Remote Call-In process integration, Salesforce automatically detects and discards duplicate inbound requests sent after errors or timeouts.",
+   "x": "Salesforce's guidance makes idempotent design the caller's job for inbound calls. The platform doesn't deduplicate retried requests on its own.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:process-integration",
+    "kt:remote-call-in"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/process-integration.md"
+  },
+  {
+   "id": "sf-001328",
+   "area": "platform-architecture",
+   "t": "Experienced Page Time ends when a Lightning page shows no further activity for about two frames, and Salesforce reports it at the 75th percentile.",
+   "f": "Experienced Page Time ends when a Lightning page fires its browser load event, and Salesforce reports it at the 95th percentile.",
+   "x": "EPT waits for roughly 33 ms of inactivity because subcomponents load after their parents, so a plain load event would mislead. The reported figure is P75, not P95.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:lightning-experience-performance",
+    "kt:non-functional-requirements"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/lightning-experience-performance.md"
+  },
+  {
+   "id": "sf-001329",
+   "area": "platform-architecture",
+   "t": "For Lightning Experience, Salesforce recommends network latency of 150 ms or lower and a download speed of at least 3 Mbps.",
+   "f": "For Lightning Experience, Salesforce recommends network latency of 500 ms or lower and a download speed of at least 1 Mbps.",
+   "x": "Lightning pages need many round trips, so Salesforce asks for 150 ms or less and 3 Mbps or more, checked on the org's Speedtest page. The looser figures are not its guidance.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:lightning-experience-performance",
+    "kt:salesforce-platform"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/lightning-experience-performance.md"
+  },
+  {
+   "id": "sf-001330",
+   "area": "platform-architecture",
+   "t": "When timing a Lightning page by hand, avoid opening it in a new tab or reloading it, because the framework bootstrap then inflates the measurement.",
+   "f": "When timing a Lightning page by hand, always open it in a new tab or reload it, because that removes the framework bootstrap from the measurement.",
+   "x": "A fresh tab or reload triggers the framework bootstrap counted in first-page-load EPT. Navigating within the session gives the subsequent-load figure that tuning should target.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:lightning-experience-performance",
+    "kt:lightning-app-builder"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/lightning-experience-performance.md"
+  },
+  {
+   "id": "sf-001331",
+   "area": "platform-architecture",
+   "t": "After an admin turns on Enable Scale Center in Setup, its performance metrics can take up to about two hours to appear.",
+   "f": "After an admin turns on Enable Scale Center in Setup, its performance metrics can take up to about two days to appear.",
+   "x": "Scale Center starts showing near real-time metrics within roughly two hours of being enabled. Two days overstates the wait.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:scale-center",
+    "kt:salesforce-platform"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/scale-center.md"
+  },
+  {
+   "id": "sf-001332",
+   "area": "platform-architecture",
+   "t": "Since early 2026, Scale Insights can be generated on demand, with an allowance of three on-demand insights per week per org.",
+   "f": "Since early 2026, Scale Insights can be generated on demand, with an allowance of three on-demand insights per day per org.",
+   "x": "On-demand generation joined the scheduled insights, but the stated allowance is weekly, at three per org. A daily allowance of three would be seven times as generous.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:scale-center"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/scale-center.md"
+  },
+  {
+   "id": "sf-001333",
+   "area": "platform-architecture",
+   "t": "Scale Center runs in Full Copy sandboxes but isn't supported in Developer, Developer Pro or Partial Copy sandboxes.",
+   "f": "Scale Center runs in Partial Copy sandboxes but isn't supported in Full Copy, Developer or Developer Pro sandboxes.",
+   "x": "Full Copy sandboxes are the supported sandbox type, and their results are meaningful only when refreshed to match production. Partial Copy and Developer sandboxes are excluded.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:scale-center",
+    "kt:sandbox-types"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/scale-center.md"
+  },
+  {
+   "id": "sf-001334",
+   "area": "public-sector-and-compliance",
+   "t": "ISO/IEC 38500:2024 grows from six to eleven guiding principles, which it adopts from ISO 37000 on organizational governance.",
+   "f": "ISO/IEC 38500:2024 cuts its guiding principles from eleven to six, dropping the ones it had adopted from ISO 37000.",
+   "x": "The 2024 edition expands the principle set to eleven and aligns with ISO 37000. The earlier 2015 edition was the one with six principles.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:it-governance",
+    "kt:organizational-governance"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/it-governance.md"
+  },
+  {
+   "id": "sf-001335",
+   "area": "public-sector-and-compliance",
+   "t": "COBIT 2019 defines 40 governance and management objectives, with the governance objectives grouped in the Evaluate, Direct and Monitor domain.",
+   "f": "COBIT 2019 defines 40 governance and management objectives, with the governance objectives grouped in the Align, Plan and Organize domain.",
+   "x": "COBIT keeps governance in the EDM domain and splits management across four other domains. Align, Plan and Organize is one of those management domains.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:it-governance",
+    "kt:cobit"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/it-governance.md"
+  },
+  {
+   "id": "sf-001336",
+   "area": "public-sector-and-compliance",
+   "t": "NIST moved governance out of the Identify function into a new Govern function in CSF 2.0 so it would visibly support the whole cybersecurity program.",
+   "f": "NIST moved governance out of a separate Govern function into the Identify function in CSF 2.0 so it would sit with asset management.",
+   "x": "CSF 2.0 created Govern as its own function covering risk tolerance, roles and policy. Governance previously sat under Identify, not the other way round.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:it-governance",
+    "kt:nist-cybersecurity-framework",
+    "kt:security-governance"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/it-governance.md"
+  },
+  {
+   "id": "sf-001337",
+   "area": "public-sector-and-compliance",
+   "t": "The Institute of Internal Auditors published the Three Lines Model in July 2020, replacing its earlier Three Lines of Defense model.",
+   "f": "The Institute of Internal Auditors published the Three Lines of Defense model in July 2020, replacing its earlier Three Lines Model.",
+   "x": "The 2020 Three Lines Model superseded the older Three Lines of Defense. The swapped version gets the order of the two models backwards.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:organizational-governance",
+    "kt:governance-risk-and-compliance"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/organizational-governance.md"
+  },
+  {
+   "id": "sf-001338",
+   "area": "public-sector-and-compliance",
+   "t": "In the IIA Three Lines Model, internal audit is the third line and is accountable to the governing body, independent of management.",
+   "f": "In the IIA Three Lines Model, internal audit is the second line and reports to management alongside the compliance and security teams.",
+   "x": "The second line is management's risk expertise and challenge, such as compliance and security. Internal audit gives independent assurance as the third line, answering to the governing body.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:organizational-governance"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/organizational-governance.md"
+  },
+  {
+   "id": "sf-001339",
+   "area": "public-sector-and-compliance",
+   "t": "ISO 26000 on social responsibility lists organizational governance as one of its seven core subjects, and it is guidance rather than a certifiable standard.",
+   "f": "ISO 26000 on social responsibility lists organizational governance as one of its seven core subjects, and organizations can be certified against it.",
+   "x": "ISO 26000 puts governance beside subjects such as human rights and the environment. Like ISO 37000, it offers guidance and can't be certified against.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:organizational-governance",
+    "kt:corporate-governance"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/organizational-governance.md"
+  },
+  {
+   "id": "sf-001340",
+   "area": "security-and-sharing",
+   "t": "Salesforce Security Center aggregates security metrics from child tenants into a parent tenant and can deploy versioned security policies to chosen tenants.",
+   "f": "Salesforce Security Center aggregates security metrics from a parent tenant into each child tenant and can deploy versioned security policies only to the parent.",
+   "x": "The parent tenant is the monitoring hub that collects metrics from child orgs and pushes policies out to selected ones. The data flows up from children, not down from the parent.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:security-governance",
+    "kt:security-center"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/security-governance.md"
+  },
+  {
+   "id": "sf-001341",
+   "area": "security-and-sharing",
+   "t": "The example risk audit in Salesforce's Well-Architected Security Policy Template reviews all org access and sensitive-field access quarterly.",
+   "f": "The example risk audit in Salesforce's Well-Architected Security Policy Template reviews all org access and sensitive-field access every two years.",
+   "x": "The template's sample audit runs every quarter. A two-year cycle would leave access drift unchecked far longer than the template suggests.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:security-governance",
+    "kt:principle-of-least-privilege"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/security-governance.md"
+  },
+  {
+   "id": "sf-001342",
+   "area": "security-and-sharing",
+   "t": "In the Salesforce Architects security governance model, the risk-based security strategy and its guiding principles are reviewed at least once a year.",
+   "f": "In the Salesforce Architects security governance model, the risk-based security strategy and its guiding principles are reviewed only when a security incident occurs.",
+   "x": "The model asks for a yearly review at minimum, covering areas such as authentication and data access. Waiting for an incident would leave principles stale.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:security-governance",
+    "kt:salesforce-governance"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/security-governance.md"
+  },
+  {
+   "id": "sf-001343",
+   "area": "security-and-sharing",
+   "t": "Passing AggregateResult records to Security.stripInaccessible() throws an exception, so aggregate queries need another way to enforce field-level security.",
+   "f": "Passing AggregateResult records to Security.stripInaccessible() strips inaccessible grouped fields, so aggregate queries can be secured the same way as sObject queries.",
+   "x": "The method works on sObjects and rejects AggregateResult input with an exception. Aggregate queries need user mode or another enforcement method instead.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:security-stripinaccessible",
+    "kt:field-level-security"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/security-stripinaccessible.md"
+  },
+  {
+   "id": "sf-001344",
+   "area": "security-and-sharing",
+   "t": "Security.stripInaccessible() never removes the Id field, so DML on the records it returns still works.",
+   "f": "Security.stripInaccessible() removes the Id field when the user lacks access to it, so DML on the returned records can fail.",
+   "x": "The Id is always preserved on the sanitized sObjects. That keeps update and delete calls on getRecords() working even when other fields were stripped.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:security-stripinaccessible",
+    "kt:apex"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/security-stripinaccessible.md"
+  },
+  {
+   "id": "sf-001345",
+   "area": "security-and-sharing",
+   "t": "The enforceRootObjectCRUD argument of Security.stripInaccessible() defaults to true, and when that object-level check fails the method throws instead of stripping.",
+   "f": "The enforceRootObjectCRUD argument of Security.stripInaccessible() defaults to false, and when that object-level check fails the method returns an empty list instead of throwing.",
+   "x": "Object-level CRUD is checked by default, and a failed check raises an exception rather than degrading gracefully. Field-level gaps are the ones that get stripped quietly.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:security-stripinaccessible",
+    "kt:permission-sets"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/security-stripinaccessible.md"
+  },
+  {
+   "id": "sf-001346",
+   "area": "architecture-practice",
+   "t": "Channel Account licenses are counted per partner account rather than per person, allowing up to 40 partner users per licensed account.",
+   "f": "Channel Account licenses are counted per partner user rather than per account, with each licensed user allowed up to 40 partner accounts.",
+   "x": "Unlike seat-based external licenses, Channel Account is licensed at the partner account level and covers up to 40 users on that account. It isn't a per-person license.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [
+    "kt:experience-cloud-consultant-certification"
+   ],
+   "concepts": [
+    "kt:licensing-strategy",
+    "kt:user-licenses"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/licensing-strategy.md"
   }
  ]
 }

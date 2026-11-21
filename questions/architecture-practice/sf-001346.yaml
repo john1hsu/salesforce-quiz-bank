@@ -1,0 +1,20 @@
+id: sf-001346
+product_area: architecture-practice
+true_statement: Channel Account licenses are counted per partner account rather than per person, allowing up to 40 partner users per licensed account.
+false_statement: Channel Account licenses are counted per partner user rather than per account, with each licensed user allowed up to 40 partner accounts.
+explanation: Unlike seat-based external licenses, Channel Account is licensed at the partner account level and covers up to 40 users on that account. It isn't a per-person license.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/licensing-strategy.md
+  commit: 44a172d9a8241f8b508f339b197f0fbc7370e56e
+  blob: 5ea9b4eed26c99a8b3cbe64bf076ded73462ec40
+verified_release: Winter '27
+feature_status: concept
+certs:
+- kt:experience-cloud-consultant-certification
+concepts:
+- kt:licensing-strategy
+- kt:user-licenses
+difficulty: 2
+created: '2026-11-21'
+status: active

@@ -1,0 +1,18 @@
+id: sf-001293
+product_area: data-cloud-and-ai
+true_statement: In the generative AI audit data model, one gateway request can produce many generations, and each generation can have zero or many feedback records.
+false_statement: In the generative AI audit data model, each gateway request produces exactly one generation, and each generation has exactly one feedback record.
+explanation: The model is one-to-many at both levels, which is why joins repeat request IDs and counts need deduplicating. A strict one-to-one chain doesn't match the schema.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/generative-ai-audit-and-feedback-data.md
+  commit: 44a172d9a8241f8b508f339b197f0fbc7370e56e
+  blob: 87fe52a94e2146def2911200f7bc693f4a167224
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:generative-ai-audit-and-feedback-data
+- kt:data-model-objects
+difficulty: 2
+created: '2026-11-21'
+status: active

@@ -1,0 +1,18 @@
+id: sf-001310
+product_area: devops-and-alm
+true_statement: Metadata dependencies that involve reports come back from the Dependency API only through Bulk API 2.0, not through Tooling API queries.
+false_statement: Metadata dependencies that involve reports come back from the Dependency API only through Tooling API queries, not through Bulk API 2.0.
+explanation: Report dependencies are left out of Tooling API results. Querying MetadataComponentDependency through Bulk API 2.0 is the way to include them.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/dependency-api.md
+  commit: 44a172d9a8241f8b508f339b197f0fbc7370e56e
+  blob: 1874680b20fe814f7e43e096ae8061a0b6e51a51
+verified_release: Winter '27
+feature_status: beta
+concepts:
+- kt:dependency-api
+- kt:bulk-api-2
+difficulty: 3
+created: '2026-11-21'
+status: active
