@@ -1,0 +1,17 @@
+id: sf-001406
+product_area: public-sector-and-compliance
+true_statement: 'The Trust Services Criteria''s points of focus are not a checklist: an entity need not address every one and may tailor them to its situation.'
+false_statement: 'The Trust Services Criteria''s points of focus are a mandatory checklist: an entity must address every one for an auditor to issue an opinion.'
+explanation: Points of focus describe important characteristics of each criterion to guide control design and evaluation. The AICPA states they are optional and can be tailored, unlike the criteria themselves.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/trust-services-criteria.md
+  commit: 5b0927c1ce57f15a133dc1bb705a26efad1acc40
+  blob: e397a481bb90155bb4262307896805863811dcdd
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:trust-services-criteria
+difficulty: 2
+created: '2026-11-22'
+status: active

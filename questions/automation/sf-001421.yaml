@@ -1,0 +1,17 @@
+id: sf-001421
+product_area: automation
+true_statement: With multiple selection in a Flow Data Table, the First Selected Row output holds the row the user clicked first, not necessarily the first row in the table.
+false_statement: With multiple selection in a Flow Data Table, the First Selected Row output always holds the topmost selected row in table order.
+explanation: Trailhead warns that First Selected Row follows the order of the user's clicks. Selected Rows is the output that lists picks in table order.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/data-table-screen-component.md
+  commit: 5b0927c1ce57f15a133dc1bb705a26efad1acc40
+  blob: b11b02c4097c5bd7f76cf13ab981d00bb2b9575b
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:data-table-screen-component
+difficulty: 2
+created: '2026-11-22'
+status: active

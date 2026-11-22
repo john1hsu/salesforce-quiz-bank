@@ -1,0 +1,17 @@
+id: sf-001372
+product_area: data-model
+true_statement: Fields in a field set's Available for the Field Set container belong to the set but stay hidden until an admin moves them into In the Field Set.
+false_statement: Fields in a field set's Available for the Field Set container are shown by default, while fields in In the Field Set stay hidden until needed.
+explanation: In the Field Set holds the fields displayed by default, in order; Available for the Field Set holds members that are hidden until moved across. The false version reverses the two containers.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/field-sets.md
+  commit: 5b0927c1ce57f15a133dc1bb705a26efad1acc40
+  blob: f28b76925b44d348fbaa326834eff87c335f3ca3
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:field-sets
+difficulty: 2
+created: '2026-11-22'
+status: active

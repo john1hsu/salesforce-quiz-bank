@@ -6,8 +6,8 @@ explanation: Unlocked package versions need 75% Apex code coverage to be promote
 source:
   repo: john1hsu/salesforce-knowledge-graph
   path: articles/devops-and-alm/unlocked-packages.md
-  commit: eaa09f2d3680083b0228ad1bdc4b1896c1c57934
-  blob: a20d538b53b68e9e4e3afce64a5bb21558ec1920
+  commit: 5b0927c1ce57f15a133dc1bb705a26efad1acc40
+  blob: b907121e994e8f21467f184723b90b37c04b1548
 verified_release: Winter '27
 feature_status: current
 concepts:

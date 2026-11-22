@@ -1,0 +1,18 @@
+id: sf-001398
+product_area: platform-architecture
+true_statement: Under Abadi's PACELC model, default Dynamo, Cassandra and Riak are classed PA/EL, favouring availability under partition and latency otherwise.
+false_statement: Under Abadi's PACELC model, default Dynamo, Cassandra and Riak are classed PC/EC, favouring consistency under partition and otherwise.
+explanation: 'Abadi puts these Dynamo-style stores in PA/EL: they stay available during partitions and trade consistency for lower latency in normal running. PC/EC is his class for systems such as VoltDB/H-Store and Megastore.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/cap-theorem.md
+  commit: 5b0927c1ce57f15a133dc1bb705a26efad1acc40
+  blob: 8076583a5d88260ed82c4fb3586690ec80dffd34
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:cap-theorem
+- kt:distributed-computing
+difficulty: 3
+created: '2026-11-22'
+status: active

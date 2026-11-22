@@ -1,0 +1,17 @@
+id: sf-001359
+product_area: clouds-and-products
+true_statement: Marketing Cloud Personalization was formerly called Interaction Studio, while Marketing Cloud Intelligence was formerly called Datorama.
+false_statement: Marketing Cloud Personalization was formerly called Datorama, while Marketing Cloud Intelligence was formerly called Interaction Studio.
+explanation: Interaction Studio became Marketing Cloud Personalization, the real-time interaction product, and Datorama became Marketing Cloud Intelligence, the performance-data product. The false version swaps the former names.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/salesforce-marketing-solutions.md
+  commit: 5b0927c1ce57f15a133dc1bb705a26efad1acc40
+  blob: 175ac84a25f2ce7844e523dbfb02278754969ae3
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:salesforce-marketing-solutions
+difficulty: 1
+created: '2026-11-22'
+status: active

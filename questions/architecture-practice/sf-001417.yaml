@@ -1,0 +1,17 @@
+id: sf-001417
+product_area: architecture-practice
+true_statement: The RASCI variant of a RACI matrix adds Support for people who help with the work without holding formal responsibility.
+false_statement: The RASCI variant of a RACI matrix adds Sponsor for the executive who funds the work without holding formal responsibility.
+explanation: The S in RASCI stands for Support, which Cornell suggests instead of piling up extra Rs. A sponsor isn't the added role.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/raci-matrix.md
+  commit: 5b0927c1ce57f15a133dc1bb705a26efad1acc40
+  blob: b04201c3d2919b64da5f935a5195a479e9536e51
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:raci-matrix
+difficulty: 2
+created: '2026-11-22'
+status: active

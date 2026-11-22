@@ -1,0 +1,17 @@
+id: sf-001408
+product_area: security-and-sharing
+true_statement: Security Center is free in Developer Edition orgs, while other editions need a license obtained through the Salesforce account team.
+false_statement: Security Center is free in Enterprise Edition and above, while Developer Edition orgs need a license obtained through the Salesforce account team.
+explanation: Developer Edition includes Security Center at no cost, but production editions must license it. The false version reverses which editions pay.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/security-center.md
+  commit: 5b0927c1ce57f15a133dc1bb705a26efad1acc40
+  blob: 240ffc608a2dc3280f445145b3d60c244d14e204
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:security-center
+difficulty: 2
+created: '2026-11-22'
+status: active

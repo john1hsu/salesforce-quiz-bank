@@ -1,0 +1,18 @@
+id: sf-001380
+product_area: devops-and-alm
+true_statement: In Setup, the Release Updates page replaced the older Critical Updates console, and Security Alerts were also folded into it.
+false_statement: In Setup, the Release Updates page runs alongside the older Critical Updates console, which still holds Security Alerts.
+explanation: Release Updates superseded Critical Updates with more detail and absorbed Security Alerts too. The two consoles don't run side by side.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/release-updates.md
+  commit: 5b0927c1ce57f15a133dc1bb705a26efad1acc40
+  blob: 7ae85064aa5e1df1b3003c8992dabe8d8077a00b
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:release-updates
+- kt:release-management
+difficulty: 1
+created: '2026-11-22'
+status: active

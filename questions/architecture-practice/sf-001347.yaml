@@ -1,0 +1,18 @@
+id: sf-001347
+product_area: architecture-practice
+true_statement: In Trailhead's implementation sales process, the order is discovery, then a rough order of magnitude, then a proposal, and finally the statement of work.
+false_statement: In Trailhead's implementation sales process, the order is discovery, then the statement of work, then a rough order of magnitude, and finally a proposal.
+explanation: 'Trailhead puts the SOW last: discovery comes first, a rough order of magnitude gives a cost range, and a proposal tightens the estimate before the SOW commits to deliverables. The false version moves the SOW ahead of the estimates it depends on.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/statement-of-work.md
+  commit: 5b0927c1ce57f15a133dc1bb705a26efad1acc40
+  blob: 4e0e8bf0af9a86c28ea678fad7ec6c485cd147e0
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:statement-of-work
+- kt:requirements-gathering
+difficulty: 1
+created: '2026-11-22'
+status: active

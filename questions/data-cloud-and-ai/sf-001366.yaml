@@ -1,0 +1,18 @@
+id: sf-001366
+product_area: data-cloud-and-ai
+true_statement: The Data 360 Ingestion API allows 20 bulk jobs per hour with at most 5 running concurrently.
+false_statement: The Data 360 Ingestion API allows 100 bulk jobs per hour with at most 25 running concurrently.
+explanation: The Ingestion API reference caps bulk at 20 jobs an hour and 5 concurrent jobs, and an HTTP 429 means back off. The larger figures in the false version aren't the documented limits.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/ingestion-api.md
+  commit: 5b0927c1ce57f15a133dc1bb705a26efad1acc40
+  blob: 260cc303a9956644592f0eb9db86d109f99c6056
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:ingestion-api
+- kt:data-cloud-limits
+difficulty: 2
+created: '2026-11-22'
+status: active

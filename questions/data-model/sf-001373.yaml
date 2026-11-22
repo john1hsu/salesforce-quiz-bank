@@ -1,0 +1,19 @@
+id: sf-001373
+product_area: data-model
+true_statement: A Visualforce standard controller loads field set fields automatically, while a custom controller must add them to its own SOQL query.
+false_statement: Both Visualforce standard and custom controllers load field set fields automatically, so neither needs to add them to a SOQL query.
+explanation: Only standard controllers fetch field set members for you. A custom controller builds its own query, usually from each member's field path, so it must include those fields itself.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/field-sets.md
+  commit: 5b0927c1ce57f15a133dc1bb705a26efad1acc40
+  blob: f28b76925b44d348fbaa326834eff87c335f3ca3
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:field-sets
+- kt:visualforce
+- kt:dynamic-soql
+difficulty: 2
+created: '2026-11-22'
+status: active

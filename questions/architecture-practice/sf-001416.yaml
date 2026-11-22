@@ -1,0 +1,18 @@
+id: sf-001416
+product_area: architecture-practice
+true_statement: In a RACI matrix, several people can share the Responsible role for an item, but each item should have exactly one Accountable owner.
+false_statement: In a RACI matrix, several people can share the Accountable role for an item, but each item should have exactly one Responsible owner.
+explanation: Responsible is the doer and can be shared; Accountable is the single owner who signs off. Two names in the A column invite disputes, which is why every source insists on one A per row.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/raci-matrix.md
+  commit: 5b0927c1ce57f15a133dc1bb705a26efad1acc40
+  blob: b04201c3d2919b64da5f935a5195a479e9536e51
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:raci-matrix
+- kt:salesforce-governance
+difficulty: 1
+created: '2026-11-22'
+status: active

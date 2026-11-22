@@ -1,0 +1,17 @@
+id: sf-001353
+product_area: automation
+true_statement: A quick action that creates a detail record in a master-detail relationship must be an object-specific action rather than a global action.
+false_statement: A quick action that creates a detail record in a master-detail relationship must be a global action rather than an object-specific action.
+explanation: A detail record needs its master, so the action must run with record context, which only object-specific actions have. Global actions carry no record context.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/quick-actions.md
+  commit: 5b0927c1ce57f15a133dc1bb705a26efad1acc40
+  blob: 22793a9e7c3b31d14b1b21b9bcaf2164d507d14c
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:quick-actions
+difficulty: 2
+created: '2026-11-22'
+status: active

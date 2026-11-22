@@ -1,0 +1,17 @@
+id: sf-001399
+product_area: platform-architecture
+true_statement: Eric Brewer first presented CAP as a conjecture in his invited PODC talk in July 2000, and Gilbert and Lynch proved it as a theorem in 2002.
+false_statement: Eric Brewer first presented CAP as a proved theorem in his invited PODC talk in July 2000, and Gilbert and Lynch disproved one case in 2002.
+explanation: Brewer's 2000 talk offered CAP as a conjecture; Gilbert and Lynch supplied the formal proof in a 2002 ACM SIGACT News note. They proved it rather than disproving any part.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/cap-theorem.md
+  commit: 5b0927c1ce57f15a133dc1bb705a26efad1acc40
+  blob: 8076583a5d88260ed82c4fb3586690ec80dffd34
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:cap-theorem
+difficulty: 1
+created: '2026-11-22'
+status: active

@@ -1,0 +1,18 @@
+id: sf-001423
+product_area: automation
+true_statement: To check that a Get Records result isn't empty, the Is Empty operator in a Decision catches both a null value and an empty collection.
+false_statement: To check that a Get Records result isn't empty, the Is Null operator in a Decision catches both a null value and an empty collection.
+explanation: The Admins guidance recommends Is Empty because it covers null and empty collections alike. Is Null misses a collection that exists but holds no records.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/get-records-element.md
+  commit: 5b0927c1ce57f15a133dc1bb705a26efad1acc40
+  blob: 3d758774a6d2a0d26106e481c154e3f5c0b98c9c
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:get-records-element
+- kt:flow-fault-handling
+difficulty: 2
+created: '2026-11-22'
+status: active

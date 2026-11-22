@@ -1,0 +1,18 @@
+id: sf-001365
+product_area: data-cloud-and-ai
+true_statement: 'An Ingestion API connector''s schema is append-only: you can add objects and fields, but can''t delete them or change a field''s type.'
+false_statement: 'An Ingestion API connector''s schema is fully editable: you can add or delete objects and fields and change a field''s type at any time.'
+explanation: Once a schema is uploaded, objects and fields can only be added, and an updated object must still list its existing fields. Deleting fields or changing types isn't allowed, which is a common surprise.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/ingestion-api.md
+  commit: 5b0927c1ce57f15a133dc1bb705a26efad1acc40
+  blob: 260cc303a9956644592f0eb9db86d109f99c6056
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:ingestion-api
+- kt:data-streams
+difficulty: 2
+created: '2026-11-22'
+status: active

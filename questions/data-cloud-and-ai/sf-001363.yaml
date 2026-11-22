@@ -1,0 +1,18 @@
+id: sf-001363
+product_area: data-cloud-and-ai
+true_statement: Activating a Data Cloud-triggered flow doesn't process Data 360 records that already exist; only later qualifying new or changed records start it.
+false_statement: Activating a Data Cloud-triggered flow processes every existing Data 360 record that meets its conditions, then handles later changes.
+explanation: The trigger is a qualifying record change after activation, so records already sitting in Data 360 are not swept up. A refresh that changes nothing also starts nothing.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/data-cloud-triggered-flows.md
+  commit: 5b0927c1ce57f15a133dc1bb705a26efad1acc40
+  blob: 1c449adb12c4b7f25cb11fc08d9db71716cd53b5
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:data-cloud-triggered-flows
+- kt:data-model-objects
+difficulty: 2
+created: '2026-11-22'
+status: active

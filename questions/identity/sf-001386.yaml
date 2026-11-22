@@ -1,0 +1,18 @@
+id: sf-001386
+product_area: identity
+true_statement: Under RFC 7636, a PKCE code_verifier is a random string of 43 to 128 characters.
+false_statement: Under RFC 7636, a PKCE code_verifier is a random string of 16 to 32 characters.
+explanation: PKCE requires the client's code_verifier to be between 43 and 128 characters, from which the code_challenge is derived. A 16 to 32 character verifier would be too short to meet the standard.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/web-server-flow.md
+  commit: 5b0927c1ce57f15a133dc1bb705a26efad1acc40
+  blob: 0e913bf1efc4a9b070c5a54127defe75c49530bb
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:web-server-flow
+- kt:oauth-2-0
+difficulty: 2
+created: '2026-11-22'
+status: active

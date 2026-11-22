@@ -1,0 +1,19 @@
+id: sf-001369
+product_area: data-model
+true_statement: The SOQL DISTANCE function works with standard address and geolocation fields but not with custom address fields.
+false_statement: The SOQL DISTANCE function works with standard address and custom address fields but not with geolocation fields.
+explanation: DISTANCE is listed as unsupported for custom address fields, while standard addresses and geolocation fields support it. The false version wrongly excludes geolocation fields, which are built for distance queries.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/custom-address-fields.md
+  commit: 5b0927c1ce57f15a133dc1bb705a26efad1acc40
+  blob: 9eb4b6a809473e1757b360664567c6f17861602a
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:custom-address-fields
+- kt:geolocation-fields
+- kt:soql
+difficulty: 2
+created: '2026-11-22'
+status: active

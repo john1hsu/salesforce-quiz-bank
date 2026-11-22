@@ -1,0 +1,18 @@
+id: sf-001419
+product_area: automation
+true_statement: The Flow Data Table screen component can show up to 1,500 records, of which the user can select up to 200.
+false_statement: The Flow Data Table screen component can show up to 1,500 records, of which the user can select up to 50.
+explanation: Salesforce Help caps the Data Table at 1,500 displayed records and 200 selected rows. Fifty understates the selection limit.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/data-table-screen-component.md
+  commit: 5b0927c1ce57f15a133dc1bb705a26efad1acc40
+  blob: b11b02c4097c5bd7f76cf13ab981d00bb2b9575b
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:data-table-screen-component
+- kt:screen-flow
+difficulty: 2
+created: '2026-11-22'
+status: active

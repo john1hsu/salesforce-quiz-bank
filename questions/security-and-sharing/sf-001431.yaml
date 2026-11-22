@@ -1,0 +1,18 @@
+id: sf-001431
+product_area: security-and-sharing
+true_statement: WITH SECURITY_ENFORCED doesn't support traversing polymorphic lookups such as What.Name, except for the Owner, CreatedBy and LastModifiedBy relationships.
+false_statement: WITH SECURITY_ENFORCED doesn't support traversing polymorphic lookups such as What.Name, except for the Who, Parent and RelatedTo relationships.
+explanation: Polymorphic relationship fields are generally unsupported by the clause; the documented exceptions are Owner, CreatedBy and LastModifiedBy. Who, Parent and RelatedTo aren't on that list.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/with-security-enforced.md
+  commit: 5b0927c1ce57f15a133dc1bb705a26efad1acc40
+  blob: ef58100ee760e2e39bc13b13b65b08b48ba17f20
+verified_release: Winter '27
+feature_status: deprecated
+concepts:
+- kt:with-security-enforced
+- kt:polymorphic-relationships
+difficulty: 3
+created: '2026-11-22'
+status: active

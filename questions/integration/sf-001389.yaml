@@ -1,0 +1,18 @@
+id: sf-001389
+product_area: integration
+true_statement: Winter '23 introduced the extensible named credential model, which splits the endpoint from the authentication held in an external credential.
+false_statement: Spring '21 introduced the extensible named credential model, which splits the endpoint from the authentication held in an external credential.
+explanation: The separation of named credentials (endpoint) from external credentials (authentication) arrived in Winter '23, leaving the single-record form as the legacy model. Spring '21 is the wrong release.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/legacy-named-credentials.md
+  commit: 5b0927c1ce57f15a133dc1bb705a26efad1acc40
+  blob: 9be8cc318cbf21e400efad1cb637dbb258215541
+verified_release: Winter '27
+feature_status: deprecated
+concepts:
+- kt:legacy-named-credentials
+- kt:named-credentials
+difficulty: 2
+created: '2026-11-22'
+status: active

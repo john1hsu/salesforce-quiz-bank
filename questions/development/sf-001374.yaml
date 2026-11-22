@@ -1,0 +1,19 @@
+id: sf-001374
+product_area: development
+true_statement: From API version 66.0, an Apex class used as an invocable action parameter needs a visible no-argument constructor.
+false_statement: From API version 66.0, an Apex class used as an invocable action parameter needs a constructor that takes every field as an argument.
+explanation: The InvocableVariable reference says classes used as invocable parameters need a public (or global, outside a managed package) no-argument constructor from API 66.0. A constructor taking all fields isn't the requirement.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/apex-defined-types.md
+  commit: 5b0927c1ce57f15a133dc1bb705a26efad1acc40
+  blob: d6a3b20704ba0391c39437c034e1ca805296b80e
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:apex-defined-types
+- kt:invocable-methods
+- kt:apex
+difficulty: 3
+created: '2026-11-22'
+status: active

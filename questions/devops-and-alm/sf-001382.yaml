@@ -1,0 +1,17 @@
+id: sf-001382
+product_area: devops-and-alm
+true_statement: 'Salesforce Help groups release updates into four statuses: Needs Action, Due Soon, Overdue and Archived.'
+false_statement: 'Salesforce Help groups release updates into four statuses: Needs Action, In Progress, Enforced and Archived.'
+explanation: The Release Updates home page uses Needs Action, Due Soon (deadline approaching), Overdue (deadline passed with steps open) and Archived (complete). In Progress and Enforced aren't the documented status groups.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/release-updates.md
+  commit: 5b0927c1ce57f15a133dc1bb705a26efad1acc40
+  blob: 7ae85064aa5e1df1b3003c8992dabe8d8077a00b
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:release-updates
+difficulty: 2
+created: '2026-11-22'
+status: active

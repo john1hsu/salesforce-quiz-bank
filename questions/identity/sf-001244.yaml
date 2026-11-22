@@ -6,8 +6,8 @@ explanation: 'The two certificates do different jobs: the JWT signing certificat
 source:
   repo: john1hsu/salesforce-knowledge-graph
   path: articles/identity/mutual-tls-authentication.md
-  commit: 77eefa513ef7710d1c3de71061fdc37e030ac096
-  blob: 441717eed07767ee99bcc50bd2e81ea0977b3ff3
+  commit: 5b0927c1ce57f15a133dc1bb705a26efad1acc40
+  blob: 09ad41d88a9b521be077210bb4ff446a5d1fc0af
 verified_release: Winter '27
 feature_status: current
 concepts:

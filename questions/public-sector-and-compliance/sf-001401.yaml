@@ -1,0 +1,18 @@
+id: sf-001401
+product_area: public-sector-and-compliance
+true_statement: COBIT 2019's Design Guide tailors the core model with eleven design factors, grouped as contextual, strategic and tactical.
+false_statement: COBIT 2019's Design Guide tailors the core model with five design factors, grouped as contextual, strategic and tactical.
+explanation: COBIT 2019 uses eleven design factors, such as enterprise size, risk appetite and sourcing model, to rank objectives and set target capability levels. Five is too few.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/cobit.md
+  commit: 5b0927c1ce57f15a133dc1bb705a26efad1acc40
+  blob: 8d1572c7b07ee2376416e5de800dd045d539e8bc
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:cobit
+- kt:it-governance
+difficulty: 2
+created: '2026-11-22'
+status: active

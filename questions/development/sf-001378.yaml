@@ -1,0 +1,18 @@
+id: sf-001378
+product_area: development
+true_statement: A CLASS_TRACING trace flag on an Apex class overrides log levels for that code but never creates a debug log on its own.
+false_statement: A CLASS_TRACING trace flag on an Apex class creates a debug log every time that class runs, for any user.
+explanation: Class and trigger trace flags only adjust the levels used for that code inside a log that some other flag, such as USER_DEBUG, is already producing. By themselves they generate no log.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/apex-logging-and-debug-logs.md
+  commit: 5b0927c1ce57f15a133dc1bb705a26efad1acc40
+  blob: 10e741075d88dade0e2abcf476fa22a1b1b9d601
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:apex-logging-and-debug-logs
+- kt:tooling-api
+difficulty: 3
+created: '2026-11-22'
+status: active

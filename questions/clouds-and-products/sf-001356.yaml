@@ -1,0 +1,18 @@
+id: sf-001356
+product_area: clouds-and-products
+true_statement: In Journey Builder, entry data is a snapshot taken when a contact enters the journey, while contact data reflects current values in Contact Builder.
+false_statement: In Journey Builder, contact data is a snapshot taken when a contact enters the journey, while entry data reflects current values in Contact Builder.
+explanation: Entry data is frozen at entry; contact data is live from Contact Builder. Comparing the two is how a split can detect an attribute that changed mid-journey, and the false version swaps their roles.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/journey-builder.md
+  commit: 5b0927c1ce57f15a133dc1bb705a26efad1acc40
+  blob: 2852b742258fcfff7f0db227adbd40d80bd7be64
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:journey-builder
+- kt:contact-builder
+difficulty: 2
+created: '2026-11-22'
+status: active

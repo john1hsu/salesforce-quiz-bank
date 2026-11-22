@@ -1,0 +1,18 @@
+id: sf-001426
+product_area: clouds-and-products
+true_statement: Trailhead states that Automation Studio SQL queries time out after 30 minutes.
+false_statement: Trailhead states that Automation Studio SQL queries time out after 120 minutes.
+explanation: The documented query timeout is 30 minutes, which is one reason to limit date ranges and filter on indexed fields. Two hours isn't the stated limit.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/automation-studio.md
+  commit: 5b0927c1ce57f15a133dc1bb705a26efad1acc40
+  blob: dffda8bf62a9c8b32c0dda923ea15c4e1f3d1f53
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:automation-studio
+- kt:marketing-cloud-sql
+difficulty: 2
+created: '2026-11-22'
+status: active

@@ -1,0 +1,18 @@
+id: sf-001396
+product_area: platform-architecture
+true_statement: ApexGuru's first reports can take up to 24 hours to appear and are then refreshed weekly, so it isn't a real-time tool.
+false_statement: ApexGuru's first reports appear within an hour and are then refreshed hourly, so it works as a near real-time tool.
+explanation: After ApexGuru Insights is enabled, the initial report can take a day and later updates arrive weekly. It's a periodic analysis, not live monitoring.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/apexguru.md
+  commit: 5b0927c1ce57f15a133dc1bb705a26efad1acc40
+  blob: 18582968725fdfee60024f1528dc8416366ee89d
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:apexguru
+- kt:scale-center
+difficulty: 2
+created: '2026-11-22'
+status: active

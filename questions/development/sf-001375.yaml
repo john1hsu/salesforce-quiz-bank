@@ -1,0 +1,18 @@
+id: sf-001375
+product_area: development
+true_statement: A property in an Apex-defined type is visible to Flow and to flow screen components only if it is annotated with @AuraEnabled.
+false_statement: A property in an Apex-defined type is visible to Flow and to flow screen components only if it is annotated with @InvocableVariable.
+explanation: Apex-defined types expose their fields to Flow through @AuraEnabled; an unannotated property is invisible. @InvocableVariable marks the inputs and outputs of an invocable action, not the members of an Apex-defined type.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/apex-defined-types.md
+  commit: 5b0927c1ce57f15a133dc1bb705a26efad1acc40
+  blob: d6a3b20704ba0391c39437c034e1ca805296b80e
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:apex-defined-types
+- kt:flow-builder
+difficulty: 2
+created: '2026-11-22'
+status: active

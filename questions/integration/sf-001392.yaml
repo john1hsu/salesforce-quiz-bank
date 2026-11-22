@@ -1,0 +1,19 @@
+id: sf-001392
+product_area: integration
+true_statement: A Salesforce org can create at most 200 unique managed event subscriptions for Pub/Sub API.
+false_statement: A Salesforce org can create at most 2,000 unique managed event subscriptions for Pub/Sub API.
+explanation: The documented cap is 200 managed subscriptions per org. Ten times that figure isn't the limit, and the subscriptions also draw on the normal event delivery allocations.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/managed-event-subscriptions.md
+  commit: 5b0927c1ce57f15a133dc1bb705a26efad1acc40
+  blob: 2172c792123d3a49b6c2ebe46a77f2bcd548f057
+verified_release: Winter '27
+feature_status: beta
+concepts:
+- kt:managed-event-subscriptions
+- kt:pub-sub-api
+- kt:platform-event-allocations
+difficulty: 2
+created: '2026-11-22'
+status: active

@@ -1,0 +1,19 @@
+id: sf-001395
+product_area: platform-architecture
+true_statement: ApexGuru labels a method critically expensive when it uses at least 5% of CPU time, and expensive when it uses 2 to 5%.
+false_statement: ApexGuru labels a method critically expensive when it uses at least 20% of CPU time, and expensive when it uses 10 to 20%.
+explanation: ApexGuru's expensive-methods report flags methods at 5% or more of CPU time as critically expensive and those at 2 to 5% as expensive. The higher bands in the false version aren't its thresholds.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/apexguru.md
+  commit: 5b0927c1ce57f15a133dc1bb705a26efad1acc40
+  blob: 18582968725fdfee60024f1528dc8416366ee89d
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:apexguru
+- kt:apex
+- kt:governor-limits
+difficulty: 2
+created: '2026-11-22'
+status: active

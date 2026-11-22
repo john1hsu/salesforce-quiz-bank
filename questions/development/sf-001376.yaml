@@ -1,0 +1,18 @@
+id: sf-001376
+product_area: development
+true_statement: Flow Builder's resource picker shows only the first-level fields of an Apex-defined variable, so deeper nested fields need dot notation typed by hand.
+false_statement: Flow Builder's resource picker shows every nested level of an Apex-defined variable, so deeper fields can always be selected without typing.
+explanation: The picker exposes just the top-level members of an Apex-defined value. Fields further down a nested structure have to be referenced manually with dot notation.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/apex-defined-types.md
+  commit: 5b0927c1ce57f15a133dc1bb705a26efad1acc40
+  blob: d6a3b20704ba0391c39437c034e1ca805296b80e
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:apex-defined-types
+- kt:flow-builder
+difficulty: 2
+created: '2026-11-22'
+status: active

@@ -1,0 +1,19 @@
+id: sf-001422
+product_area: automation
+true_statement: In Flow, the filter conditions of Update Records and Delete Records elements also use a SOQL query, just as each Get Records element does.
+false_statement: In Flow, only Get Records elements use a SOQL query; the filter conditions of Update Records and Delete Records don't count as queries.
+explanation: Trailhead notes that filtering in Update Records or Delete Records requires a query, so those elements count against the 100-query limit alongside Get Records. Treating them as query-free leads to surprise limit errors.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/get-records-element.md
+  commit: 5b0927c1ce57f15a133dc1bb705a26efad1acc40
+  blob: 3d758774a6d2a0d26106e481c154e3f5c0b98c9c
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:get-records-element
+- kt:flow-limits
+- kt:soql
+difficulty: 2
+created: '2026-11-22'
+status: active

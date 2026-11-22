@@ -1,0 +1,18 @@
+id: sf-001433
+product_area: data-cloud-and-ai
+true_statement: Trailhead recommends reviewing at least 30 days of history before setting an Agentforce health alert threshold where normal variation ends.
+false_statement: Trailhead recommends reviewing at least 7 days of history before setting an Agentforce health alert threshold where normal variation ends.
+explanation: The alert guidance asks for a month or more of data so the threshold sits beyond normal variation, and suggests starting with a few owned, high-value alerts. A single week is shorter than advised.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/agentforce-observability.md
+  commit: 5b0927c1ce57f15a133dc1bb705a26efad1acc40
+  blob: 14a509bb1e6e3b9155ff3495925974b77e5f5799
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:agentforce-observability
+- kt:agentforce-studio
+difficulty: 2
+created: '2026-11-22'
+status: active

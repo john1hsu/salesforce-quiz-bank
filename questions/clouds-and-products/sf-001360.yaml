@@ -1,0 +1,19 @@
+id: sf-001360
+product_area: clouds-and-products
+true_statement: Marketing Cloud Engagement stores audience data in data extensions, while Marketing Cloud Account Engagement works with prospects and lists.
+false_statement: Marketing Cloud Account Engagement stores audience data in data extensions, while Marketing Cloud Engagement works with prospects and lists.
+explanation: Engagement, the B2C stack, is built on subscribers and data extensions; Account Engagement, the B2B stack formerly called Pardot, is built on prospects and lists. The false version reverses the data structures.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/salesforce-marketing-solutions.md
+  commit: 5b0927c1ce57f15a133dc1bb705a26efad1acc40
+  blob: 175ac84a25f2ce7844e523dbfb02278754969ae3
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:salesforce-marketing-solutions
+- kt:marketing-cloud-engagement
+- kt:marketing-cloud-account-engagement
+difficulty: 1
+created: '2026-11-22'
+status: active

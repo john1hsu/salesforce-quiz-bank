@@ -1,0 +1,17 @@
+id: sf-001348
+product_area: architecture-practice
+true_statement: Trailhead says that when a customer wants a lower SOW price, cutting estimated hours while keeping the same scope is the lever to avoid.
+false_statement: Trailhead says that when a customer wants a lower SOW price, offering an explicit discount while keeping the same scope is the lever to avoid.
+explanation: Reducing scope, lowering the hourly rate or giving an explicit discount are all legitimate ways to lower the price. Trimming hours on unchanged scope just pushes the shortfall into delivery, which is why Trailhead warns against it.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/statement-of-work.md
+  commit: 5b0927c1ce57f15a133dc1bb705a26efad1acc40
+  blob: 4e0e8bf0af9a86c28ea678fad7ec6c485cd147e0
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:statement-of-work
+difficulty: 2
+created: '2026-11-22'
+status: active

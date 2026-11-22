@@ -1,0 +1,18 @@
+id: sf-001411
+product_area: security-and-sharing
+true_statement: In SOQL, WITH SECURITY_ENFORCED goes after the WHERE clause, or after FROM if there is none, and before ORDER BY, LIMIT or OFFSET.
+false_statement: In SOQL, WITH SECURITY_ENFORCED goes at the very end of the query, after any ORDER BY, LIMIT or OFFSET clauses.
+explanation: 'The clause has a fixed position: following WHERE (or FROM) and preceding ORDER BY, LIMIT, OFFSET and aggregate clauses. Putting it last breaks the query syntax.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/with-security-enforced.md
+  commit: 5b0927c1ce57f15a133dc1bb705a26efad1acc40
+  blob: ef58100ee760e2e39bc13b13b65b08b48ba17f20
+verified_release: Winter '27
+feature_status: deprecated
+concepts:
+- kt:with-security-enforced
+- kt:soql
+difficulty: 2
+created: '2026-11-22'
+status: active

@@ -1,0 +1,17 @@
+id: sf-001428
+product_area: clouds-and-products
+true_statement: Trailhead advises creating no more than three populations per Marketing Cloud Engagement account in Contact Builder, for performance reasons.
+false_statement: Trailhead advises creating no more than ten populations per Marketing Cloud Engagement account in Contact Builder, for performance reasons.
+explanation: Populations are large master subsets of contacts, and Trailhead caps its recommendation at three per account to protect performance. Ten is far above that guidance.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/contact-builder.md
+  commit: 5b0927c1ce57f15a133dc1bb705a26efad1acc40
+  blob: 5ad58c6b19c9a1c88743e53ca42b7014823bb07c
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:contact-builder
+difficulty: 2
+created: '2026-11-22'
+status: active

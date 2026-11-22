@@ -1,0 +1,18 @@
+id: sf-001415
+product_area: architecture-practice
+true_statement: In Salesforce's B2C Commerce project methodology, the formal handover from the build team to the customer's support team is called transition governance.
+false_statement: In Salesforce's B2C Commerce project methodology, the formal handover from the build team to the customer's support team is called release governance.
+explanation: 'The Trailhead unit names this step transition governance: a structured transfer of knowledge, followed by documentation and access checks and a retrospective. Release governance isn''t the term it uses.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/hypercare.md
+  commit: 5b0927c1ce57f15a133dc1bb705a26efad1acc40
+  blob: 8beefcc1b12c41f2b10d41f43eb02536cce9b6f1
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:hypercare
+- kt:salesforce-governance
+difficulty: 2
+created: '2026-11-22'
+status: active

@@ -1,0 +1,18 @@
+id: sf-001418
+product_area: architecture-practice
+true_statement: PMI says automation and AI agents can be Responsible for bounded tasks in a RACI, but the Accountable role and escalation must stay with a named human.
+false_statement: PMI says AI agents can be Accountable for bounded tasks in a RACI, as long as a named human is listed as Responsible for escalation.
+explanation: An agent can do the work, so it can fill an R cell, but PMI keeps accountability and escalation with a person. Making the agent Accountable reverses that guidance.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/raci-matrix.md
+  commit: 5b0927c1ce57f15a133dc1bb705a26efad1acc40
+  blob: b04201c3d2919b64da5f935a5195a479e9536e51
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:raci-matrix
+- kt:agentforce
+difficulty: 2
+created: '2026-11-22'
+status: active

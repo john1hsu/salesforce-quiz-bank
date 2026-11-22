@@ -1,0 +1,18 @@
+id: sf-001390
+product_area: integration
+true_statement: In Metadata API, a NamedCredential with NamedCredentialType Legacy is the only kind that can use the endpoint, protocol and principalType fields deprecated in API 56.0.
+false_statement: In Metadata API, a NamedCredential with NamedCredentialType SecuredEndpoint is the only kind that can use the endpoint, protocol and principalType fields deprecated in API 56.0.
+explanation: The fields that embed authentication in the named credential are valid only on the Legacy type and were deprecated in API 56.0. SecuredEndpoint is one of the external-credential-based types that don't use them.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/legacy-named-credentials.md
+  commit: 5b0927c1ce57f15a133dc1bb705a26efad1acc40
+  blob: 9be8cc318cbf21e400efad1cb637dbb258215541
+verified_release: Winter '27
+feature_status: deprecated
+concepts:
+- kt:legacy-named-credentials
+- kt:metadata-api
+difficulty: 3
+created: '2026-11-22'
+status: active

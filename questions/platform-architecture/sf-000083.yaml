@@ -6,8 +6,8 @@ explanation: Salesforce flags sandboxes with no logins for 180 days as eligible 
 source:
   repo: john1hsu/salesforce-knowledge-graph
   path: articles/platform-architecture/sandbox-types.md
-  commit: ee7571c675638f9605db9044cd8e6d5432c21c41
-  blob: 7a8f0702831ad633ad4d89590cbf10421f2c290f
+  commit: 5b0927c1ce57f15a133dc1bb705a26efad1acc40
+  blob: cbe9874f42333ceb871b07b6b92394dbd36598ae
 verified_release: Winter '27
 feature_status: current
 concepts:

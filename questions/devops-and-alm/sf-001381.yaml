@@ -1,0 +1,19 @@
+id: sf-001381
+product_area: devops-and-alm
+true_statement: A release update's Enable Test Run toggle can be switched on and off until its Complete Steps By date, though sandbox test periods can end sooner.
+false_statement: A release update's Enable Test Run toggle can be switched on only once, and after that the update stays enforced in the org.
+explanation: The test run is a reversible toggle that turns the new behaviour on immediately for evaluation and can be turned off again until the deadline. Sandbox test windows may close earlier.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/release-updates.md
+  commit: 5b0927c1ce57f15a133dc1bb705a26efad1acc40
+  blob: 7ae85064aa5e1df1b3003c8992dabe8d8077a00b
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:release-updates
+- kt:testing-strategy
+- kt:sandbox-types
+difficulty: 2
+created: '2026-11-22'
+status: active

@@ -1,0 +1,18 @@
+id: sf-001393
+product_area: integration
+true_statement: Setting a managed event subscription's state to STOP disconnects the client and deletes the committed replay ID, so the next run starts from defaultReplay.
+false_statement: Setting a managed event subscription's state to STOP disconnects the client but keeps the committed replay ID, so the next run resumes where it left off.
+explanation: STOP wipes the stored position, which is why runbooks should treat it as a reset rather than a pause. On restart, delivery begins wherever defaultReplay points.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/managed-event-subscriptions.md
+  commit: 5b0927c1ce57f15a133dc1bb705a26efad1acc40
+  blob: 2172c792123d3a49b6c2ebe46a77f2bcd548f057
+verified_release: Winter '27
+feature_status: beta
+concepts:
+- kt:managed-event-subscriptions
+- kt:pub-sub-api
+difficulty: 3
+created: '2026-11-22'
+status: active

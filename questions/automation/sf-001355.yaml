@@ -1,0 +1,18 @@
+id: sf-001355
+product_area: automation
+true_statement: Lightning web component quick actions work only on Lightning Experience record pages, not as global actions or in the Salesforce mobile app.
+false_statement: Lightning web component quick actions work on Lightning Experience record pages and as global actions, but not in the Salesforce mobile app.
+explanation: 'LWC actions are record-page only: they can''t be global actions and aren''t available in the mobile app. The false version wrongly allows them as global actions.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/quick-actions.md
+  commit: 5b0927c1ce57f15a133dc1bb705a26efad1acc40
+  blob: 22793a9e7c3b31d14b1b21b9bcaf2164d507d14c
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:quick-actions
+- kt:lightning-web-components
+difficulty: 2
+created: '2026-11-22'
+status: active

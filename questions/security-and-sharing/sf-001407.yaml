@@ -1,0 +1,18 @@
+id: sf-001407
+product_area: security-and-sharing
+true_statement: In Security Center, a production parent tenant can connect production or sandbox children, but a sandbox parent can connect only sandbox children.
+false_statement: In Security Center, a sandbox parent tenant can connect production or sandbox children, but a production parent can connect only production children.
+explanation: Trailhead says sandbox parents are limited to sandbox children, while production parents can take either kind. That is why a production org is the usual parent for an estate-wide view.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/security-center.md
+  commit: 5b0927c1ce57f15a133dc1bb705a26efad1acc40
+  blob: 240ffc608a2dc3280f445145b3d60c244d14e204
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:security-center
+- kt:security-governance
+difficulty: 2
+created: '2026-11-22'
+status: active

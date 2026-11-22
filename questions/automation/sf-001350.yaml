@@ -1,0 +1,19 @@
+id: sf-001350
+product_area: automation
+true_statement: To appear in Flow Builder, a custom screen component's .js-meta.xml must set isExposed to true and list lightning__FlowScreen as a target.
+false_statement: To appear in Flow Builder, a custom screen component's .js-meta.xml must set isExposed to true and list lightning__RecordPage as a target.
+explanation: The lightning__FlowScreen target is what makes an exposed Lightning web component available on flow screens. lightning__RecordPage exposes it to Lightning App Builder record pages instead, not to screen flows.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/custom-flow-screen-components.md
+  commit: 5b0927c1ce57f15a133dc1bb705a26efad1acc40
+  blob: 99b8bf04a55ddbd25e2e23dccbb83331b00c1848
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:custom-flow-screen-components
+- kt:lightning-web-components
+- kt:screen-flow
+difficulty: 1
+created: '2026-11-22'
+status: active

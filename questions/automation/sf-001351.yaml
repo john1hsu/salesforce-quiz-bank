@@ -1,0 +1,18 @@
+id: sf-001351
+product_area: automation
+true_statement: When conditional visibility hides a custom flow screen component, Flow sets all of its outputs to null as the user leaves the screen.
+false_statement: When conditional visibility hides a custom flow screen component, Flow keeps its last output values as the user leaves the screen.
+explanation: Salesforce documents that a hidden component's outputs are cleared to null on leaving the screen, so downstream elements can't rely on stale values. Keeping the previous values is the behaviour developers often wrongly assume.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/custom-flow-screen-components.md
+  commit: 5b0927c1ce57f15a133dc1bb705a26efad1acc40
+  blob: 99b8bf04a55ddbd25e2e23dccbb83331b00c1848
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:custom-flow-screen-components
+- kt:screen-flow
+difficulty: 2
+created: '2026-11-22'
+status: active

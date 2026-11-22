@@ -1,0 +1,19 @@
+id: sf-001427
+product_area: clouds-and-products
+true_statement: Click and open data in Marketing Cloud Engagement's system data views is stored in Central Standard Time, with no daylight saving adjustment.
+false_statement: Click and open data in Marketing Cloud Engagement's system data views is stored in UTC, adjusted to each account's local time zone at query time.
+explanation: Data views such as _Open and _Click record times in CST year-round, ignoring daylight saving. Queries that compare times must account for that rather than assume UTC.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/automation-studio.md
+  commit: 5b0927c1ce57f15a133dc1bb705a26efad1acc40
+  blob: dffda8bf62a9c8b32c0dda923ea15c4e1f3d1f53
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:automation-studio
+- kt:contact-builder
+- kt:marketing-cloud-sql
+difficulty: 3
+created: '2026-11-22'
+status: active

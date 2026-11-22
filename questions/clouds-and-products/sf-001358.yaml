@@ -1,0 +1,19 @@
+id: sf-001358
+product_area: clouds-and-products
+true_statement: Journey Builder's Sales and Service Cloud activities, such as creating a Case or converting a Lead, work only when Marketing Cloud Connect is installed.
+false_statement: Journey Builder's Sales and Service Cloud activities, such as creating a Case or converting a Lead, work only when Automation Studio is installed.
+explanation: The CRM-writing activities depend on Marketing Cloud Connect, the connector between Marketing Cloud Engagement and Salesforce orgs. Automation Studio handles batch data preparation and doesn't unlock these activities.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/journey-builder.md
+  commit: 5b0927c1ce57f15a133dc1bb705a26efad1acc40
+  blob: 2852b742258fcfff7f0db227adbd40d80bd7be64
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:journey-builder
+- kt:marketing-cloud-connect
+- kt:automation-studio
+difficulty: 1
+created: '2026-11-22'
+status: active

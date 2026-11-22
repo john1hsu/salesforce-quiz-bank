@@ -1,0 +1,18 @@
+id: sf-001404
+product_area: public-sector-and-compliance
+true_statement: In the Trust Services Criteria, confidentiality covers any information an entity designates as confidential, while privacy covers only personal information.
+false_statement: In the Trust Services Criteria, privacy covers any information an entity designates as confidential, while confidentiality covers only personal information.
+explanation: Confidentiality protects sensitive information of any kind that the entity commits to protect, personal or not. Privacy is narrower and applies to how personal information is collected, used, kept and disposed of.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/trust-services-criteria.md
+  commit: 5b0927c1ce57f15a133dc1bb705a26efad1acc40
+  blob: e397a481bb90155bb4262307896805863811dcdd
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:trust-services-criteria
+- kt:soc-2
+difficulty: 2
+created: '2026-11-22'
+status: active

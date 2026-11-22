@@ -1,0 +1,17 @@
+id: sf-001403
+product_area: public-sector-and-compliance
+true_statement: COBIT 2019 replaced COBIT 5's enablers with governance components and based its performance management model on CMMI.
+false_statement: COBIT 2019 kept COBIT 5's enablers unchanged and based its performance management model on ISO/IEC 15504.
+explanation: The 2019 edition swapped enablers for governance components, added design factors and focus areas, and moved its performance management model onto a CMMI basis. The false version wrongly says nothing changed.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/cobit.md
+  commit: 5b0927c1ce57f15a133dc1bb705a26efad1acc40
+  blob: 8d1572c7b07ee2376416e5de800dd045d539e8bc
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:cobit
+difficulty: 3
+created: '2026-11-22'
+status: active

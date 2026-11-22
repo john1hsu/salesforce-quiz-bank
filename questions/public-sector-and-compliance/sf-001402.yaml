@@ -1,0 +1,18 @@
+id: sf-001402
+product_area: public-sector-and-compliance
+true_statement: In COBIT 2019, BAI06 is the management objective for managed IT changes, sitting in the Build, Acquire and Implement domain.
+false_statement: In COBIT 2019, DSS06 is the management objective for managed IT changes, sitting in the Deliver, Service and Support domain.
+explanation: Change control lives under BAI06 in the Build, Acquire and Implement domain, which is why a Salesforce CoE can map release and change processes to it. The DSS code in the false version is the wrong domain.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/cobit.md
+  commit: 5b0927c1ce57f15a133dc1bb705a26efad1acc40
+  blob: 8d1572c7b07ee2376416e5de800dd045d539e8bc
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:cobit
+- kt:salesforce-center-of-excellence
+difficulty: 3
+created: '2026-11-22'
+status: active

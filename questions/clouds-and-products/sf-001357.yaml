@@ -1,0 +1,18 @@
+id: sf-001357
+product_area: clouds-and-products
+true_statement: Journey Builder custom activities must be hosted on an SSL web server on port 443 and registered as an endpoint in an installed package.
+false_statement: Journey Builder custom activities must be hosted on an SSL web server on port 8443 and registered as an endpoint in an installed package.
+explanation: Salesforce requires custom activities and entry events to be served over SSL on port 443 and registered through an installed package. Port 8443 is not the documented requirement.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/journey-builder.md
+  commit: 5b0927c1ce57f15a133dc1bb705a26efad1acc40
+  blob: 2852b742258fcfff7f0db227adbd40d80bd7be64
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:journey-builder
+- kt:marketing-cloud-engagement
+difficulty: 3
+created: '2026-11-22'
+status: active

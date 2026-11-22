@@ -1,0 +1,18 @@
+id: sf-001383
+product_area: identity
+true_statement: A Salesforce token exchange handler is an Apex class that extends Auth.Oauth2TokenExchangeHandler and overrides validateIncomingToken and getUserForTokenSubject.
+false_statement: A Salesforce token exchange handler is an Apex class that implements Auth.RegistrationHandler and overrides createUser and updateUser.
+explanation: Token exchange uses its own handler base class, Auth.Oauth2TokenExchangeHandler, with one method to validate the incoming token and one to map its subject to a user. Auth.RegistrationHandler belongs to auth provider single sign-on, not this flow.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/token-exchange-flow.md
+  commit: 5b0927c1ce57f15a133dc1bb705a26efad1acc40
+  blob: 74b547df98c3cd46c0e509be6422ae74e123ebde
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:token-exchange-flow
+- kt:apex
+difficulty: 2
+created: '2026-11-22'
+status: active

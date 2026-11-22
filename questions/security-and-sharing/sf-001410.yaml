@@ -1,0 +1,19 @@
+id: sf-001410
+product_area: security-and-sharing
+true_statement: WITH SECURITY_ENFORCED checks only fields in a query's SELECT and FROM clauses, so a field used only in WHERE or ORDER BY isn't evaluated.
+false_statement: WITH SECURITY_ENFORCED checks every field a query references, including fields used only in its WHERE and ORDER BY clauses.
+explanation: The clause enforces object and field permissions on what the query returns, meaning the SELECT and FROM parts. Filter and sort fields slip past it, one reason user mode is now preferred.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/with-security-enforced.md
+  commit: 5b0927c1ce57f15a133dc1bb705a26efad1acc40
+  blob: ef58100ee760e2e39bc13b13b65b08b48ba17f20
+verified_release: Winter '27
+feature_status: deprecated
+concepts:
+- kt:with-security-enforced
+- kt:field-level-security
+- kt:soql
+difficulty: 2
+created: '2026-11-22'
+status: active

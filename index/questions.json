@@ -1,7 +1,7 @@
 {
  "version": 1,
- "count": 1336,
- "active": 1336,
+ "count": 1423,
+ "active": 1423,
  "questions": [
   {
    "id": "sf-000001",
@@ -23070,6 +23070,1488 @@
    "difficulty": 2,
    "status": "active",
    "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/licensing-strategy.md"
+  },
+  {
+   "id": "sf-001347",
+   "area": "architecture-practice",
+   "t": "In Trailhead's implementation sales process, the order is discovery, then a rough order of magnitude, then a proposal, and finally the statement of work.",
+   "f": "In Trailhead's implementation sales process, the order is discovery, then the statement of work, then a rough order of magnitude, and finally a proposal.",
+   "x": "Trailhead puts the SOW last: discovery comes first, a rough order of magnitude gives a cost range, and a proposal tightens the estimate before the SOW commits to deliverables. The false version moves the SOW ahead of the estimates it depends on.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:statement-of-work",
+    "kt:requirements-gathering"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/statement-of-work.md"
+  },
+  {
+   "id": "sf-001348",
+   "area": "architecture-practice",
+   "t": "Trailhead says that when a customer wants a lower SOW price, cutting estimated hours while keeping the same scope is the lever to avoid.",
+   "f": "Trailhead says that when a customer wants a lower SOW price, offering an explicit discount while keeping the same scope is the lever to avoid.",
+   "x": "Reducing scope, lowering the hourly rate or giving an explicit discount are all legitimate ways to lower the price. Trimming hours on unchanged scope just pushes the shortfall into delivery, which is why Trailhead warns against it.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:statement-of-work"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/statement-of-work.md"
+  },
+  {
+   "id": "sf-001349",
+   "area": "architecture-practice",
+   "t": "Under FAR 37.602, a statement of objectives that bidders turn into a performance work statement does not itself become part of the contract.",
+   "f": "Under FAR 37.602, a statement of objectives that bidders turn into a performance work statement becomes part of the contract alongside it.",
+   "x": "In federal performance-based acquisition, the agency may issue a statement of objectives that bidders convert into a PWS, and that statement of objectives stays outside the contract. Only the resulting PWS describes the contracted results.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:statement-of-work",
+    "kt:performance-work-statement"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/statement-of-work.md"
+  },
+  {
+   "id": "sf-001350",
+   "area": "automation",
+   "t": "To appear in Flow Builder, a custom screen component's .js-meta.xml must set isExposed to true and list lightning__FlowScreen as a target.",
+   "f": "To appear in Flow Builder, a custom screen component's .js-meta.xml must set isExposed to true and list lightning__RecordPage as a target.",
+   "x": "The lightning__FlowScreen target is what makes an exposed Lightning web component available on flow screens. lightning__RecordPage exposes it to Lightning App Builder record pages instead, not to screen flows.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:custom-flow-screen-components",
+    "kt:lightning-web-components",
+    "kt:screen-flow"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/custom-flow-screen-components.md"
+  },
+  {
+   "id": "sf-001351",
+   "area": "automation",
+   "t": "When conditional visibility hides a custom flow screen component, Flow sets all of its outputs to null as the user leaves the screen.",
+   "f": "When conditional visibility hides a custom flow screen component, Flow keeps its last output values as the user leaves the screen.",
+   "x": "Salesforce documents that a hidden component's outputs are cleared to null on leaving the screen, so downstream elements can't rely on stale values. Keeping the previous values is the behaviour developers often wrongly assume.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:custom-flow-screen-components",
+    "kt:screen-flow"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/custom-flow-screen-components.md"
+  },
+  {
+   "id": "sf-001352",
+   "area": "automation",
+   "t": "In a custom property editor, Flow Builder shows only the count of errors returned by validate(), so the editor must display the messages itself.",
+   "f": "In a custom property editor, Flow Builder shows every error message returned by validate(), so the editor doesn't need to display them itself.",
+   "x": "The editor's validate() runs when the admin clicks Done and returns key/error pairs, but Flow Builder surfaces only how many errors there are. Showing the actual messages is the editor's job.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:custom-flow-screen-components",
+    "kt:custom-property-editors",
+    "kt:flow-builder"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/custom-flow-screen-components.md"
+  },
+  {
+   "id": "sf-001353",
+   "area": "automation",
+   "t": "A quick action that creates a detail record in a master-detail relationship must be an object-specific action rather than a global action.",
+   "f": "A quick action that creates a detail record in a master-detail relationship must be a global action rather than an object-specific action.",
+   "x": "A detail record needs its master, so the action must run with record context, which only object-specific actions have. Global actions carry no record context.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:quick-actions"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/quick-actions.md"
+  },
+  {
+   "id": "sf-001354",
+   "area": "automation",
+   "t": "On a quick action, a predefined field value takes precedence over the field's own default value.",
+   "f": "On a quick action, the field's own default value takes precedence over a predefined field value.",
+   "x": "Predefined values are applied by the action and override the field's default, which lets admins drop those fields from the action layout. The false version reverses that order.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:quick-actions",
+    "kt:page-layouts"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/quick-actions.md"
+  },
+  {
+   "id": "sf-001355",
+   "area": "automation",
+   "t": "Lightning web component quick actions work only on Lightning Experience record pages, not as global actions or in the Salesforce mobile app.",
+   "f": "Lightning web component quick actions work on Lightning Experience record pages and as global actions, but not in the Salesforce mobile app.",
+   "x": "LWC actions are record-page only: they can't be global actions and aren't available in the mobile app. The false version wrongly allows them as global actions.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:quick-actions",
+    "kt:lightning-web-components"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/quick-actions.md"
+  },
+  {
+   "id": "sf-001356",
+   "area": "clouds-and-products",
+   "t": "In Journey Builder, entry data is a snapshot taken when a contact enters the journey, while contact data reflects current values in Contact Builder.",
+   "f": "In Journey Builder, contact data is a snapshot taken when a contact enters the journey, while entry data reflects current values in Contact Builder.",
+   "x": "Entry data is frozen at entry; contact data is live from Contact Builder. Comparing the two is how a split can detect an attribute that changed mid-journey, and the false version swaps their roles.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:journey-builder",
+    "kt:contact-builder"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/journey-builder.md"
+  },
+  {
+   "id": "sf-001357",
+   "area": "clouds-and-products",
+   "t": "Journey Builder custom activities must be hosted on an SSL web server on port 443 and registered as an endpoint in an installed package.",
+   "f": "Journey Builder custom activities must be hosted on an SSL web server on port 8443 and registered as an endpoint in an installed package.",
+   "x": "Salesforce requires custom activities and entry events to be served over SSL on port 443 and registered through an installed package. Port 8443 is not the documented requirement.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:journey-builder",
+    "kt:marketing-cloud-engagement"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/journey-builder.md"
+  },
+  {
+   "id": "sf-001358",
+   "area": "clouds-and-products",
+   "t": "Journey Builder's Sales and Service Cloud activities, such as creating a Case or converting a Lead, work only when Marketing Cloud Connect is installed.",
+   "f": "Journey Builder's Sales and Service Cloud activities, such as creating a Case or converting a Lead, work only when Automation Studio is installed.",
+   "x": "The CRM-writing activities depend on Marketing Cloud Connect, the connector between Marketing Cloud Engagement and Salesforce orgs. Automation Studio handles batch data preparation and doesn't unlock these activities.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:journey-builder",
+    "kt:marketing-cloud-connect",
+    "kt:automation-studio"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/journey-builder.md"
+  },
+  {
+   "id": "sf-001359",
+   "area": "clouds-and-products",
+   "t": "Marketing Cloud Personalization was formerly called Interaction Studio, while Marketing Cloud Intelligence was formerly called Datorama.",
+   "f": "Marketing Cloud Personalization was formerly called Datorama, while Marketing Cloud Intelligence was formerly called Interaction Studio.",
+   "x": "Interaction Studio became Marketing Cloud Personalization, the real-time interaction product, and Datorama became Marketing Cloud Intelligence, the performance-data product. The false version swaps the former names.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:salesforce-marketing-solutions"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/salesforce-marketing-solutions.md"
+  },
+  {
+   "id": "sf-001360",
+   "area": "clouds-and-products",
+   "t": "Marketing Cloud Engagement stores audience data in data extensions, while Marketing Cloud Account Engagement works with prospects and lists.",
+   "f": "Marketing Cloud Account Engagement stores audience data in data extensions, while Marketing Cloud Engagement works with prospects and lists.",
+   "x": "Engagement, the B2C stack, is built on subscribers and data extensions; Account Engagement, the B2B stack formerly called Pardot, is built on prospects and lists. The false version reverses the data structures.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:salesforce-marketing-solutions",
+    "kt:marketing-cloud-engagement",
+    "kt:marketing-cloud-account-engagement"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/salesforce-marketing-solutions.md"
+  },
+  {
+   "id": "sf-001361",
+   "area": "clouds-and-products",
+   "t": "Salesforce says existing Marketing Cloud Engagement and Account Engagement customers can use Marketing Cloud Next's AI capabilities without switching platforms.",
+   "f": "Salesforce says existing Marketing Cloud Engagement and Account Engagement customers must migrate to Marketing Cloud Next before using its AI capabilities.",
+   "x": "Salesforce's marketing site states that Next's AI features are available to Engagement and Account Engagement customers without a platform switch. Requiring a migration first contradicts that positioning.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:salesforce-marketing-solutions",
+    "kt:marketing-cloud-next"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/salesforce-marketing-solutions.md"
+  },
+  {
+   "id": "sf-001362",
+   "area": "data-cloud-and-ai",
+   "t": "A Data Cloud-triggered flow can start from a Bring Your Own Lake object only if that external object is accelerated.",
+   "f": "A Data Cloud-triggered flow can start from any Bring Your Own Lake object, whether or not that external object is accelerated.",
+   "x": "Accelerated external objects, including BYOL objects, can trigger these flows, but a non-accelerated BYOL object has no trigger path. The false version drops the acceleration requirement.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:data-cloud-triggered-flows",
+    "kt:zero-copy-data-federation"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/data-cloud-triggered-flows.md"
+  },
+  {
+   "id": "sf-001363",
+   "area": "data-cloud-and-ai",
+   "t": "Activating a Data Cloud-triggered flow doesn't process Data 360 records that already exist; only later qualifying new or changed records start it.",
+   "f": "Activating a Data Cloud-triggered flow processes every existing Data 360 record that meets its conditions, then handles later changes.",
+   "x": "The trigger is a qualifying record change after activation, so records already sitting in Data 360 are not swept up. A refresh that changes nothing also starts nothing.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:data-cloud-triggered-flows",
+    "kt:data-model-objects"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/data-cloud-triggered-flows.md"
+  },
+  {
+   "id": "sf-001364",
+   "area": "data-cloud-and-ai",
+   "t": "A Data 360 record whose data change event exceeds about 128k characters is skipped with no flow error, so you monitor the Data Actions Activity tab.",
+   "f": "A Data 360 record whose data change event exceeds about 128k characters fails the flow with an error email, so you monitor flow error emails.",
+   "x": "Each qualifying record reaches the org as a data change event with a 128k-character record limit, and oversized records are silently skipped. The Data Actions Activity tab, not a flow error, is where they show up.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:data-cloud-triggered-flows",
+    "kt:data-actions"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/data-cloud-triggered-flows.md"
+  },
+  {
+   "id": "sf-001365",
+   "area": "data-cloud-and-ai",
+   "t": "An Ingestion API connector's schema is append-only: you can add objects and fields, but can't delete them or change a field's type.",
+   "f": "An Ingestion API connector's schema is fully editable: you can add or delete objects and fields and change a field's type at any time.",
+   "x": "Once a schema is uploaded, objects and fields can only be added, and an updated object must still list its existing fields. Deleting fields or changing types isn't allowed, which is a common surprise.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:ingestion-api",
+    "kt:data-streams"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/ingestion-api.md"
+  },
+  {
+   "id": "sf-001366",
+   "area": "data-cloud-and-ai",
+   "t": "The Data 360 Ingestion API allows 20 bulk jobs per hour with at most 5 running concurrently.",
+   "f": "The Data 360 Ingestion API allows 100 bulk jobs per hour with at most 25 running concurrently.",
+   "x": "The Ingestion API reference caps bulk at 20 jobs an hour and 5 concurrent jobs, and an HTTP 429 means back off. The larger figures in the false version aren't the documented limits.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:ingestion-api",
+    "kt:data-cloud-limits"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/ingestion-api.md"
+  },
+  {
+   "id": "sf-001367",
+   "area": "data-cloud-and-ai",
+   "t": "Appending /actions/test to an Ingestion API streaming endpoint validates records against the schema without loading them into Data 360.",
+   "f": "Appending /actions/test to an Ingestion API streaming endpoint loads records into a sandbox copy of Data 360 for testing before production.",
+   "x": "The test action checks payloads against the connector's schema and loads nothing, so developers can catch field-name or type errors safely. It does not route data to a separate sandbox copy.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:ingestion-api"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/ingestion-api.md"
+  },
+  {
+   "id": "sf-001368",
+   "area": "data-model",
+   "t": "Once an admin turns on the Use custom address fields setting, it can't be disabled again, so enabling it is a one-way org-wide decision.",
+   "f": "Once an admin turns on the Use custom address fields setting, it can be disabled again as long as no custom address fields remain in the org.",
+   "x": "Salesforce states the custom address field setting can't be disabled after it is enabled. There is no route back by deleting the fields first, which is why it should be treated as a permanent choice.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:custom-address-fields",
+    "kt:custom-fields"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/custom-address-fields.md"
+  },
+  {
+   "id": "sf-001369",
+   "area": "data-model",
+   "t": "The SOQL DISTANCE function works with standard address and geolocation fields but not with custom address fields.",
+   "f": "The SOQL DISTANCE function works with standard address and custom address fields but not with geolocation fields.",
+   "x": "DISTANCE is listed as unsupported for custom address fields, while standard addresses and geolocation fields support it. The false version wrongly excludes geolocation fields, which are built for distance queries.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:custom-address-fields",
+    "kt:geolocation-fields",
+    "kt:soql"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/custom-address-fields.md"
+  },
+  {
+   "id": "sf-001370",
+   "area": "data-model",
+   "t": "A managed or unmanaged package containing a custom address field installs only in an org that already has custom address fields enabled.",
+   "f": "A managed or unmanaged package containing a custom address field enables the custom address fields setting automatically in the org it installs into.",
+   "x": "The installing org must have the feature turned on beforehand, otherwise the package install fails. Installing a package doesn't switch the setting on for you.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:custom-address-fields",
+    "kt:metadata-api"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/custom-address-fields.md"
+  },
+  {
+   "id": "sf-001371",
+   "area": "data-model",
+   "t": "An object can hold up to 2,000 field sets, but one Visualforce page can reference at most 50 of them.",
+   "f": "An object can hold up to 2,000 field sets, but one Visualforce page can reference at most 10 of them.",
+   "x": "The documented ceilings are 2,000 field sets per object and 50 referenced by a single Visualforce page. Ten is well below the real per-page limit.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:field-sets",
+    "kt:visualforce"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/field-sets.md"
+  },
+  {
+   "id": "sf-001372",
+   "area": "data-model",
+   "t": "Fields in a field set's Available for the Field Set container belong to the set but stay hidden until an admin moves them into In the Field Set.",
+   "f": "Fields in a field set's Available for the Field Set container are shown by default, while fields in In the Field Set stay hidden until needed.",
+   "x": "In the Field Set holds the fields displayed by default, in order; Available for the Field Set holds members that are hidden until moved across. The false version reverses the two containers.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:field-sets"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/field-sets.md"
+  },
+  {
+   "id": "sf-001373",
+   "area": "data-model",
+   "t": "A Visualforce standard controller loads field set fields automatically, while a custom controller must add them to its own SOQL query.",
+   "f": "Both Visualforce standard and custom controllers load field set fields automatically, so neither needs to add them to a SOQL query.",
+   "x": "Only standard controllers fetch field set members for you. A custom controller builds its own query, usually from each member's field path, so it must include those fields itself.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:field-sets",
+    "kt:visualforce",
+    "kt:dynamic-soql"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/field-sets.md"
+  },
+  {
+   "id": "sf-001374",
+   "area": "development",
+   "t": "From API version 66.0, an Apex class used as an invocable action parameter needs a visible no-argument constructor.",
+   "f": "From API version 66.0, an Apex class used as an invocable action parameter needs a constructor that takes every field as an argument.",
+   "x": "The InvocableVariable reference says classes used as invocable parameters need a public (or global, outside a managed package) no-argument constructor from API 66.0. A constructor taking all fields isn't the requirement.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:apex-defined-types",
+    "kt:invocable-methods",
+    "kt:apex"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/apex-defined-types.md"
+  },
+  {
+   "id": "sf-001375",
+   "area": "development",
+   "t": "A property in an Apex-defined type is visible to Flow and to flow screen components only if it is annotated with @AuraEnabled.",
+   "f": "A property in an Apex-defined type is visible to Flow and to flow screen components only if it is annotated with @InvocableVariable.",
+   "x": "Apex-defined types expose their fields to Flow through @AuraEnabled; an unannotated property is invisible. @InvocableVariable marks the inputs and outputs of an invocable action, not the members of an Apex-defined type.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:apex-defined-types",
+    "kt:flow-builder"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/apex-defined-types.md"
+  },
+  {
+   "id": "sf-001376",
+   "area": "development",
+   "t": "Flow Builder's resource picker shows only the first-level fields of an Apex-defined variable, so deeper nested fields need dot notation typed by hand.",
+   "f": "Flow Builder's resource picker shows every nested level of an Apex-defined variable, so deeper fields can always be selected without typing.",
+   "x": "The picker exposes just the top-level members of an Apex-defined value. Fields further down a nested structure have to be referenced manually with dot notation.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:apex-defined-types",
+    "kt:flow-builder"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/apex-defined-types.md"
+  },
+  {
+   "id": "sf-001377",
+   "area": "development",
+   "t": "A Salesforce debug log is capped at 20 MB, and when it reaches that size about 200 KB, usually the oldest lines, is dropped.",
+   "f": "A Salesforce debug log is capped at 5 MB, and when it reaches that size about 200 KB, usually the oldest lines, is dropped.",
+   "x": "Each debug log can grow to 20 MB before Salesforce trims roughly 200 KB, typically from the start, so early events can disappear. Five megabytes is not the documented cap.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:apex-logging-and-debug-logs"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/apex-logging-and-debug-logs.md"
+  },
+  {
+   "id": "sf-001378",
+   "area": "development",
+   "t": "A CLASS_TRACING trace flag on an Apex class overrides log levels for that code but never creates a debug log on its own.",
+   "f": "A CLASS_TRACING trace flag on an Apex class creates a debug log every time that class runs, for any user.",
+   "x": "Class and trigger trace flags only adjust the levels used for that code inside a log that some other flag, such as USER_DEBUG, is already producing. By themselves they generate no log.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:apex-logging-and-debug-logs",
+    "kt:tooling-api"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/apex-logging-and-debug-logs.md"
+  },
+  {
+   "id": "sf-001379",
+   "area": "development",
+   "t": "System debug logs are kept for 24 hours and monitoring debug logs for seven days, so debug logs can't serve as an audit trail.",
+   "f": "System debug logs are kept for seven days and monitoring debug logs for 30 days, so debug logs can't serve as an audit trail.",
+   "x": "Salesforce retains system debug logs for a day and monitoring logs for a week. That short retention is why long-lived logging needs a custom framework or Event Monitoring instead.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:apex-logging-and-debug-logs",
+    "kt:event-monitoring"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/apex-logging-and-debug-logs.md"
+  },
+  {
+   "id": "sf-001380",
+   "area": "devops-and-alm",
+   "t": "In Setup, the Release Updates page replaced the older Critical Updates console, and Security Alerts were also folded into it.",
+   "f": "In Setup, the Release Updates page runs alongside the older Critical Updates console, which still holds Security Alerts.",
+   "x": "Release Updates superseded Critical Updates with more detail and absorbed Security Alerts too. The two consoles don't run side by side.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:release-updates",
+    "kt:release-management"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/release-updates.md"
+  },
+  {
+   "id": "sf-001381",
+   "area": "devops-and-alm",
+   "t": "A release update's Enable Test Run toggle can be switched on and off until its Complete Steps By date, though sandbox test periods can end sooner.",
+   "f": "A release update's Enable Test Run toggle can be switched on only once, and after that the update stays enforced in the org.",
+   "x": "The test run is a reversible toggle that turns the new behaviour on immediately for evaluation and can be turned off again until the deadline. Sandbox test windows may close earlier.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:release-updates",
+    "kt:testing-strategy",
+    "kt:sandbox-types"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/release-updates.md"
+  },
+  {
+   "id": "sf-001382",
+   "area": "devops-and-alm",
+   "t": "Salesforce Help groups release updates into four statuses: Needs Action, Due Soon, Overdue and Archived.",
+   "f": "Salesforce Help groups release updates into four statuses: Needs Action, In Progress, Enforced and Archived.",
+   "x": "The Release Updates home page uses Needs Action, Due Soon (deadline approaching), Overdue (deadline passed with steps open) and Archived (complete). In Progress and Enforced aren't the documented status groups.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:release-updates"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/release-updates.md"
+  },
+  {
+   "id": "sf-001383",
+   "area": "identity",
+   "t": "A Salesforce token exchange handler is an Apex class that extends Auth.Oauth2TokenExchangeHandler and overrides validateIncomingToken and getUserForTokenSubject.",
+   "f": "A Salesforce token exchange handler is an Apex class that implements Auth.RegistrationHandler and overrides createUser and updateUser.",
+   "x": "Token exchange uses its own handler base class, Auth.Oauth2TokenExchangeHandler, with one method to validate the incoming token and one to map its subject to a user. Auth.RegistrationHandler belongs to auth provider single sign-on, not this flow.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:token-exchange-flow",
+    "kt:apex"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/token-exchange-flow.md"
+  },
+  {
+   "id": "sf-001384",
+   "area": "identity",
+   "t": "In the token exchange flow, a new user is created only if isUserCreationAllowed is true in metadata, canCreateUser is true in the call, and no matching user exists.",
+   "f": "In the token exchange flow, a new user is created whenever isUserCreationAllowed is true in metadata, even if canCreateUser is false in the call.",
+   "x": "All three conditions must hold: the metadata allows creation, the runtime passes canCreateUser as true, and the handler finds no existing user. The metadata flag alone doesn't force creation.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:token-exchange-flow",
+    "kt:just-in-time-provisioning"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/token-exchange-flow.md"
+  },
+  {
+   "id": "sf-001385",
+   "area": "identity",
+   "t": "The OauthTokenExchangeHandler metadata type, introduced in API version 60.0, can mark a default handler used when a request omits the token_handler parameter.",
+   "f": "The OauthTokenExchangeHandler metadata type, introduced in API version 60.0, requires every token exchange request to name its handler in the token_handler parameter.",
+   "x": "The metadata's enablements tie a handler to specific apps and can flag one as the default, which applies when the request leaves out token_handler. Naming the handler in every request isn't mandatory.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:token-exchange-flow",
+    "kt:external-client-apps",
+    "kt:connected-apps"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/token-exchange-flow.md"
+  },
+  {
+   "id": "sf-001386",
+   "area": "identity",
+   "t": "Under RFC 7636, a PKCE code_verifier is a random string of 43 to 128 characters.",
+   "f": "Under RFC 7636, a PKCE code_verifier is a random string of 16 to 32 characters.",
+   "x": "PKCE requires the client's code_verifier to be between 43 and 128 characters, from which the code_challenge is derived. A 16 to 32 character verifier would be too short to meet the standard.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:web-server-flow",
+    "kt:oauth-2-0"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/web-server-flow.md"
+  },
+  {
+   "id": "sf-001387",
+   "area": "identity",
+   "t": "Salesforce requires PKCE on partner-built connected apps and external client apps used by more than two customer production orgs, for public and confidential clients.",
+   "f": "Salesforce requires PKCE on partner-built connected apps and external client apps used by more than two customer production orgs, but only for public clients.",
+   "x": "The partner requirement covers both client types: public clients send just the code_verifier, and confidential clients send it along with the client_secret. Exempting confidential clients is the error.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:web-server-flow",
+    "kt:connected-apps",
+    "kt:external-client-apps",
+    "kt:appexchange-security-review"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/web-server-flow.md"
+  },
+  {
+   "id": "sf-001388",
+   "area": "identity",
+   "t": "The signature in a Salesforce web server flow token response is an HMAC-SHA256 over the identity URL and issue time, keyed with the consumer secret.",
+   "f": "The signature in a Salesforce web server flow token response is an RSA-SHA256 over the access token, signed with the org's private certificate key.",
+   "x": "Salesforce returns a signature computed with HMAC-SHA256 over the id and issued_at values, using the consumer secret as the key, so the app can check the response came from Salesforce. It isn't an RSA signature over the token.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:web-server-flow",
+    "kt:oauth-2-flows-in-salesforce"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/web-server-flow.md"
+  },
+  {
+   "id": "sf-001389",
+   "area": "integration",
+   "t": "Winter '23 introduced the extensible named credential model, which splits the endpoint from the authentication held in an external credential.",
+   "f": "Spring '21 introduced the extensible named credential model, which splits the endpoint from the authentication held in an external credential.",
+   "x": "The separation of named credentials (endpoint) from external credentials (authentication) arrived in Winter '23, leaving the single-record form as the legacy model. Spring '21 is the wrong release.",
+   "release": "Winter '27",
+   "featureStatus": "deprecated",
+   "certs": [],
+   "concepts": [
+    "kt:legacy-named-credentials",
+    "kt:named-credentials"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/legacy-named-credentials.md"
+  },
+  {
+   "id": "sf-001390",
+   "area": "integration",
+   "t": "In Metadata API, a NamedCredential with NamedCredentialType Legacy is the only kind that can use the endpoint, protocol and principalType fields deprecated in API 56.0.",
+   "f": "In Metadata API, a NamedCredential with NamedCredentialType SecuredEndpoint is the only kind that can use the endpoint, protocol and principalType fields deprecated in API 56.0.",
+   "x": "The fields that embed authentication in the named credential are valid only on the Legacy type and were deprecated in API 56.0. SecuredEndpoint is one of the external-credential-based types that don't use them.",
+   "release": "Winter '27",
+   "featureStatus": "deprecated",
+   "certs": [],
+   "concepts": [
+    "kt:legacy-named-credentials",
+    "kt:metadata-api"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/legacy-named-credentials.md"
+  },
+  {
+   "id": "sf-001391",
+   "area": "integration",
+   "t": "A legacy named credential's URL may include a path but not a query string; query strings are added in the callout reference instead.",
+   "f": "A legacy named credential's URL may include a query string but not a path; extra path segments are added in the callout reference instead.",
+   "x": "The URL must start with http:// or https:// and can carry a path, while query strings and further path segments belong in the callout that references the credential. The false version reverses what the URL may hold.",
+   "release": "Winter '27",
+   "featureStatus": "deprecated",
+   "certs": [],
+   "concepts": [
+    "kt:legacy-named-credentials",
+    "kt:apex-callouts"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/legacy-named-credentials.md"
+  },
+  {
+   "id": "sf-001392",
+   "area": "integration",
+   "t": "A Salesforce org can create at most 200 unique managed event subscriptions for Pub/Sub API.",
+   "f": "A Salesforce org can create at most 2,000 unique managed event subscriptions for Pub/Sub API.",
+   "x": "The documented cap is 200 managed subscriptions per org. Ten times that figure isn't the limit, and the subscriptions also draw on the normal event delivery allocations.",
+   "release": "Winter '27",
+   "featureStatus": "beta",
+   "certs": [],
+   "concepts": [
+    "kt:managed-event-subscriptions",
+    "kt:pub-sub-api",
+    "kt:platform-event-allocations"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/managed-event-subscriptions.md"
+  },
+  {
+   "id": "sf-001393",
+   "area": "integration",
+   "t": "Setting a managed event subscription's state to STOP disconnects the client and deletes the committed replay ID, so the next run starts from defaultReplay.",
+   "f": "Setting a managed event subscription's state to STOP disconnects the client but keeps the committed replay ID, so the next run resumes where it left off.",
+   "x": "STOP wipes the stored position, which is why runbooks should treat it as a reset rather than a pause. On restart, delivery begins wherever defaultReplay points.",
+   "release": "Winter '27",
+   "featureStatus": "beta",
+   "certs": [],
+   "concepts": [
+    "kt:managed-event-subscriptions",
+    "kt:pub-sub-api"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/managed-event-subscriptions.md"
+  },
+  {
+   "id": "sf-001394",
+   "area": "integration",
+   "t": "A managed event subscription belongs to exactly one client, so several consumers reading one topic independently should use the classic Subscribe RPC.",
+   "f": "A managed event subscription can be shared by several clients, each keeping its own committed replay ID on the server for the same topic.",
+   "x": "Managed subscriptions can't be shared between clients. When multiple consumers need independent positions on a topic, the regular Subscribe RPC with client-stored replay IDs is the fit.",
+   "release": "Winter '27",
+   "featureStatus": "beta",
+   "certs": [],
+   "concepts": [
+    "kt:managed-event-subscriptions",
+    "kt:event-driven-architecture"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/managed-event-subscriptions.md"
+  },
+  {
+   "id": "sf-001395",
+   "area": "platform-architecture",
+   "t": "ApexGuru labels a method critically expensive when it uses at least 5% of CPU time, and expensive when it uses 2 to 5%.",
+   "f": "ApexGuru labels a method critically expensive when it uses at least 20% of CPU time, and expensive when it uses 10 to 20%.",
+   "x": "ApexGuru's expensive-methods report flags methods at 5% or more of CPU time as critically expensive and those at 2 to 5% as expensive. The higher bands in the false version aren't its thresholds.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:apexguru",
+    "kt:apex",
+    "kt:governor-limits"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/apexguru.md"
+  },
+  {
+   "id": "sf-001396",
+   "area": "platform-architecture",
+   "t": "ApexGuru's first reports can take up to 24 hours to appear and are then refreshed weekly, so it isn't a real-time tool.",
+   "f": "ApexGuru's first reports appear within an hour and are then refreshed hourly, so it works as a near real-time tool.",
+   "x": "After ApexGuru Insights is enabled, the initial report can take a day and later updates arrive weekly. It's a periodic analysis, not live monitoring.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:apexguru",
+    "kt:scale-center"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/apexguru.md"
+  },
+  {
+   "id": "sf-001397",
+   "area": "platform-architecture",
+   "t": "Code Analyzer's ApexGuru engine runs in Advanced Mode when ApexGuru is enabled in the org or its parent org family, and the mode can't be chosen manually.",
+   "f": "Code Analyzer's ApexGuru engine runs in Advanced Mode only when the developer passes a flag requesting it, whatever the org's ApexGuru setting.",
+   "x": "The engine picks Advanced Mode, using runtime data, automatically when ApexGuru is on for the org or its parent family, and otherwise falls back to Basic Mode static analysis. There's no manual mode switch.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:apexguru",
+    "kt:code-analyzer"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/apexguru.md"
+  },
+  {
+   "id": "sf-001398",
+   "area": "platform-architecture",
+   "t": "Under Abadi's PACELC model, default Dynamo, Cassandra and Riak are classed PA/EL, favouring availability under partition and latency otherwise.",
+   "f": "Under Abadi's PACELC model, default Dynamo, Cassandra and Riak are classed PC/EC, favouring consistency under partition and otherwise.",
+   "x": "Abadi puts these Dynamo-style stores in PA/EL: they stay available during partitions and trade consistency for lower latency in normal running. PC/EC is his class for systems such as VoltDB/H-Store and Megastore.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:cap-theorem",
+    "kt:distributed-computing"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/cap-theorem.md"
+  },
+  {
+   "id": "sf-001399",
+   "area": "platform-architecture",
+   "t": "Eric Brewer first presented CAP as a conjecture in his invited PODC talk in July 2000, and Gilbert and Lynch proved it as a theorem in 2002.",
+   "f": "Eric Brewer first presented CAP as a proved theorem in his invited PODC talk in July 2000, and Gilbert and Lynch disproved one case in 2002.",
+   "x": "Brewer's 2000 talk offered CAP as a conjecture; Gilbert and Lynch supplied the formal proof in a 2002 ACM SIGACT News note. They proved it rather than disproving any part.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:cap-theorem"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/cap-theorem.md"
+  },
+  {
+   "id": "sf-001400",
+   "area": "platform-architecture",
+   "t": "In Gilbert and Lynch's CAP proof, consistency means atomic, linearizable operations, which is narrower than the C in ACID transactions.",
+   "f": "In Gilbert and Lynch's CAP proof, consistency means the same thing as the C in ACID transactions, that each transaction preserves database invariants.",
+   "x": "Gilbert and Lynch define consistency as a single total order where each operation appears to take effect instantly, and they explicitly say this differs from ACID's consistency. Equating the two is a common confusion.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:cap-theorem",
+    "kt:distributed-computing"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/cap-theorem.md"
+  },
+  {
+   "id": "sf-001401",
+   "area": "public-sector-and-compliance",
+   "t": "COBIT 2019's Design Guide tailors the core model with eleven design factors, grouped as contextual, strategic and tactical.",
+   "f": "COBIT 2019's Design Guide tailors the core model with five design factors, grouped as contextual, strategic and tactical.",
+   "x": "COBIT 2019 uses eleven design factors, such as enterprise size, risk appetite and sourcing model, to rank objectives and set target capability levels. Five is too few.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:cobit",
+    "kt:it-governance"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/cobit.md"
+  },
+  {
+   "id": "sf-001402",
+   "area": "public-sector-and-compliance",
+   "t": "In COBIT 2019, BAI06 is the management objective for managed IT changes, sitting in the Build, Acquire and Implement domain.",
+   "f": "In COBIT 2019, DSS06 is the management objective for managed IT changes, sitting in the Deliver, Service and Support domain.",
+   "x": "Change control lives under BAI06 in the Build, Acquire and Implement domain, which is why a Salesforce CoE can map release and change processes to it. The DSS code in the false version is the wrong domain.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:cobit",
+    "kt:salesforce-center-of-excellence"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/cobit.md"
+  },
+  {
+   "id": "sf-001403",
+   "area": "public-sector-and-compliance",
+   "t": "COBIT 2019 replaced COBIT 5's enablers with governance components and based its performance management model on CMMI.",
+   "f": "COBIT 2019 kept COBIT 5's enablers unchanged and based its performance management model on ISO/IEC 15504.",
+   "x": "The 2019 edition swapped enablers for governance components, added design factors and focus areas, and moved its performance management model onto a CMMI basis. The false version wrongly says nothing changed.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:cobit"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/cobit.md"
+  },
+  {
+   "id": "sf-001404",
+   "area": "public-sector-and-compliance",
+   "t": "In the Trust Services Criteria, confidentiality covers any information an entity designates as confidential, while privacy covers only personal information.",
+   "f": "In the Trust Services Criteria, privacy covers any information an entity designates as confidential, while confidentiality covers only personal information.",
+   "x": "Confidentiality protects sensitive information of any kind that the entity commits to protect, personal or not. Privacy is narrower and applies to how personal information is collected, used, kept and disposed of.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:trust-services-criteria",
+    "kt:soc-2"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/trust-services-criteria.md"
+  },
+  {
+   "id": "sf-001405",
+   "area": "public-sector-and-compliance",
+   "t": "In the 2017 Trust Services Criteria, the CC8 series covers change management, while CC6 covers logical and physical access.",
+   "f": "In the 2017 Trust Services Criteria, the CC6 series covers change management, while CC8 covers logical and physical access.",
+   "x": "The technology-specific supplemental series are CC6 logical and physical access, CC7 system operations, CC8 change management and CC9 risk mitigation. The false version swaps CC6 and CC8.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:trust-services-criteria",
+    "kt:coso-internal-control-framework"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/trust-services-criteria.md"
+  },
+  {
+   "id": "sf-001406",
+   "area": "public-sector-and-compliance",
+   "t": "The Trust Services Criteria's points of focus are not a checklist: an entity need not address every one and may tailor them to its situation.",
+   "f": "The Trust Services Criteria's points of focus are a mandatory checklist: an entity must address every one for an auditor to issue an opinion.",
+   "x": "Points of focus describe important characteristics of each criterion to guide control design and evaluation. The AICPA states they are optional and can be tailored, unlike the criteria themselves.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:trust-services-criteria"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/trust-services-criteria.md"
+  },
+  {
+   "id": "sf-001407",
+   "area": "security-and-sharing",
+   "t": "In Security Center, a production parent tenant can connect production or sandbox children, but a sandbox parent can connect only sandbox children.",
+   "f": "In Security Center, a sandbox parent tenant can connect production or sandbox children, but a production parent can connect only production children.",
+   "x": "Trailhead says sandbox parents are limited to sandbox children, while production parents can take either kind. That is why a production org is the usual parent for an estate-wide view.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:security-center",
+    "kt:security-governance"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/security-center.md"
+  },
+  {
+   "id": "sf-001408",
+   "area": "security-and-sharing",
+   "t": "Security Center is free in Developer Edition orgs, while other editions need a license obtained through the Salesforce account team.",
+   "f": "Security Center is free in Enterprise Edition and above, while Developer Edition orgs need a license obtained through the Salesforce account team.",
+   "x": "Developer Edition includes Security Center at no cost, but production editions must license it. The false version reverses which editions pay.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:security-center"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/security-center.md"
+  },
+  {
+   "id": "sf-001409",
+   "area": "security-and-sharing",
+   "t": "Security Agent in Security Center needs Security Center, Event Monitoring and an Agentforce Platform add-on, because it reads Event Monitoring logs.",
+   "f": "Security Agent in Security Center needs only Security Center and Security Health Check, because it reads Health Check scores rather than event logs.",
+   "x": "Security Agent summarizes a user's activity from login, report and API logs, which come from Event Monitoring, and it runs on Agentforce. All three licences are required.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:security-center",
+    "kt:event-monitoring",
+    "kt:agentforce"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/security-center.md"
+  },
+  {
+   "id": "sf-001410",
+   "area": "security-and-sharing",
+   "t": "WITH SECURITY_ENFORCED checks only fields in a query's SELECT and FROM clauses, so a field used only in WHERE or ORDER BY isn't evaluated.",
+   "f": "WITH SECURITY_ENFORCED checks every field a query references, including fields used only in its WHERE and ORDER BY clauses.",
+   "x": "The clause enforces object and field permissions on what the query returns, meaning the SELECT and FROM parts. Filter and sort fields slip past it, one reason user mode is now preferred.",
+   "release": "Winter '27",
+   "featureStatus": "deprecated",
+   "certs": [],
+   "concepts": [
+    "kt:with-security-enforced",
+    "kt:field-level-security",
+    "kt:soql"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/with-security-enforced.md"
+  },
+  {
+   "id": "sf-001411",
+   "area": "security-and-sharing",
+   "t": "In SOQL, WITH SECURITY_ENFORCED goes after the WHERE clause, or after FROM if there is none, and before ORDER BY, LIMIT or OFFSET.",
+   "f": "In SOQL, WITH SECURITY_ENFORCED goes at the very end of the query, after any ORDER BY, LIMIT or OFFSET clauses.",
+   "x": "The clause has a fixed position: following WHERE (or FROM) and preceding ORDER BY, LIMIT, OFFSET and aggregate clauses. Putting it last breaks the query syntax.",
+   "release": "Winter '27",
+   "featureStatus": "deprecated",
+   "certs": [],
+   "concepts": [
+    "kt:with-security-enforced",
+    "kt:soql"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/with-security-enforced.md"
+  },
+  {
+   "id": "sf-001413",
+   "area": "architecture-practice",
+   "t": "Salesforce says hypercare typically lasts one to four weeks after a major launch, shorter for small changes and longer for migrations.",
+   "f": "Salesforce says hypercare typically lasts three to six months after a major launch, shorter for small changes and longer for migrations.",
+   "x": "Salesforce's guidance puts hypercare at roughly one to four weeks, adjusted for the size of the change, and suggests ending it on evidence such as stable case volumes. Months-long hypercare isn't the stated norm.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:hypercare",
+    "kt:release-management"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/hypercare.md"
+  },
+  {
+   "id": "sf-001414",
+   "area": "architecture-practice",
+   "t": "Microsoft's implementation guidance recommends rehearsing the handover from hypercare to business-as-usual support during user acceptance testing.",
+   "f": "Microsoft's implementation guidance recommends rehearsing the handover from hypercare to business-as-usual support only after go-live.",
+   "x": "Microsoft advises starting the support transition during implementation, practising it in UAT and involving future support staff early. Leaving the rehearsal until after go-live defeats the point.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:hypercare",
+    "kt:user-acceptance-testing"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/hypercare.md"
+  },
+  {
+   "id": "sf-001415",
+   "area": "architecture-practice",
+   "t": "In Salesforce's B2C Commerce project methodology, the formal handover from the build team to the customer's support team is called transition governance.",
+   "f": "In Salesforce's B2C Commerce project methodology, the formal handover from the build team to the customer's support team is called release governance.",
+   "x": "The Trailhead unit names this step transition governance: a structured transfer of knowledge, followed by documentation and access checks and a retrospective. Release governance isn't the term it uses.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:hypercare",
+    "kt:salesforce-governance"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/hypercare.md"
+  },
+  {
+   "id": "sf-001416",
+   "area": "architecture-practice",
+   "t": "In a RACI matrix, several people can share the Responsible role for an item, but each item should have exactly one Accountable owner.",
+   "f": "In a RACI matrix, several people can share the Accountable role for an item, but each item should have exactly one Responsible owner.",
+   "x": "Responsible is the doer and can be shared; Accountable is the single owner who signs off. Two names in the A column invite disputes, which is why every source insists on one A per row.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:raci-matrix",
+    "kt:salesforce-governance"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/raci-matrix.md"
+  },
+  {
+   "id": "sf-001417",
+   "area": "architecture-practice",
+   "t": "The RASCI variant of a RACI matrix adds Support for people who help with the work without holding formal responsibility.",
+   "f": "The RASCI variant of a RACI matrix adds Sponsor for the executive who funds the work without holding formal responsibility.",
+   "x": "The S in RASCI stands for Support, which Cornell suggests instead of piling up extra Rs. A sponsor isn't the added role.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:raci-matrix"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/raci-matrix.md"
+  },
+  {
+   "id": "sf-001418",
+   "area": "architecture-practice",
+   "t": "PMI says automation and AI agents can be Responsible for bounded tasks in a RACI, but the Accountable role and escalation must stay with a named human.",
+   "f": "PMI says AI agents can be Accountable for bounded tasks in a RACI, as long as a named human is listed as Responsible for escalation.",
+   "x": "An agent can do the work, so it can fill an R cell, but PMI keeps accountability and escalation with a person. Making the agent Accountable reverses that guidance.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:raci-matrix",
+    "kt:agentforce"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/raci-matrix.md"
+  },
+  {
+   "id": "sf-001419",
+   "area": "automation",
+   "t": "The Flow Data Table screen component can show up to 1,500 records, of which the user can select up to 200.",
+   "f": "The Flow Data Table screen component can show up to 1,500 records, of which the user can select up to 50.",
+   "x": "Salesforce Help caps the Data Table at 1,500 displayed records and 200 selected rows. Fifty understates the selection limit.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:data-table-screen-component",
+    "kt:screen-flow"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/data-table-screen-component.md"
+  },
+  {
+   "id": "sf-001420",
+   "area": "automation",
+   "t": "Confirming an inline edit in a Flow Data Table doesn't save it; the changes come back in the Edited Rows output for an Update Records element.",
+   "f": "Confirming an inline edit in a Flow Data Table saves the record immediately, so no Update Records element is needed afterward.",
+   "x": "Since Spring '26 the table supports inline editing, but a confirmed edit only updates the Edited Rows collection. The flow must pass that collection to Update Records to commit it.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:data-table-screen-component",
+    "kt:screen-flow"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/data-table-screen-component.md"
+  },
+  {
+   "id": "sf-001421",
+   "area": "automation",
+   "t": "With multiple selection in a Flow Data Table, the First Selected Row output holds the row the user clicked first, not necessarily the first row in the table.",
+   "f": "With multiple selection in a Flow Data Table, the First Selected Row output always holds the topmost selected row in table order.",
+   "x": "Trailhead warns that First Selected Row follows the order of the user's clicks. Selected Rows is the output that lists picks in table order.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:data-table-screen-component"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/data-table-screen-component.md"
+  },
+  {
+   "id": "sf-001422",
+   "area": "automation",
+   "t": "In Flow, the filter conditions of Update Records and Delete Records elements also use a SOQL query, just as each Get Records element does.",
+   "f": "In Flow, only Get Records elements use a SOQL query; the filter conditions of Update Records and Delete Records don't count as queries.",
+   "x": "Trailhead notes that filtering in Update Records or Delete Records requires a query, so those elements count against the 100-query limit alongside Get Records. Treating them as query-free leads to surprise limit errors.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:get-records-element",
+    "kt:flow-limits",
+    "kt:soql"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/get-records-element.md"
+  },
+  {
+   "id": "sf-001423",
+   "area": "automation",
+   "t": "To check that a Get Records result isn't empty, the Is Empty operator in a Decision catches both a null value and an empty collection.",
+   "f": "To check that a Get Records result isn't empty, the Is Null operator in a Decision catches both a null value and an empty collection.",
+   "x": "The Admins guidance recommends Is Empty because it covers null and empty collections alike. Is Null misses a collection that exists but holds no records.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:get-records-element",
+    "kt:flow-fault-handling"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/get-records-element.md"
+  },
+  {
+   "id": "sf-001424",
+   "area": "automation",
+   "t": "In Experience Cloud screen flows, Salesforce advises against storing all fields from Get Records when the records feed screen components, as the data can show in browser developer tools.",
+   "f": "In Experience Cloud screen flows, Salesforce advises storing all fields from Get Records when the records feed screen components, as unused fields are stripped before reaching the browser.",
+   "x": "Fields loaded into records passed to screen components travel to the browser, where developer tools can reveal them. Storing only the needed fields limits that exposure; nothing strips them automatically.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:get-records-element",
+    "kt:flow-builder"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/get-records-element.md"
+  },
+  {
+   "id": "sf-001425",
+   "area": "clouds-and-products",
+   "t": "In Automation Studio, activities in the same step run together, so an activity that reads a data extension must sit in a later step than the query that fills it.",
+   "f": "In Automation Studio, activities in the same step run in order from top to bottom, so a query and the activity that reads its results can share one step.",
+   "x": "Steps run sequentially but activities inside one step run together. Putting a query and its consumer in the same step means the consumer finds no results yet.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:automation-studio",
+    "kt:data-extensions"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/automation-studio.md"
+  },
+  {
+   "id": "sf-001426",
+   "area": "clouds-and-products",
+   "t": "Trailhead states that Automation Studio SQL queries time out after 30 minutes.",
+   "f": "Trailhead states that Automation Studio SQL queries time out after 120 minutes.",
+   "x": "The documented query timeout is 30 minutes, which is one reason to limit date ranges and filter on indexed fields. Two hours isn't the stated limit.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:automation-studio",
+    "kt:marketing-cloud-sql"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/automation-studio.md"
+  },
+  {
+   "id": "sf-001427",
+   "area": "clouds-and-products",
+   "t": "Click and open data in Marketing Cloud Engagement's system data views is stored in Central Standard Time, with no daylight saving adjustment.",
+   "f": "Click and open data in Marketing Cloud Engagement's system data views is stored in UTC, adjusted to each account's local time zone at query time.",
+   "x": "Data views such as _Open and _Click record times in CST year-round, ignoring daylight saving. Queries that compare times must account for that rather than assume UTC.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:automation-studio",
+    "kt:contact-builder",
+    "kt:marketing-cloud-sql"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/automation-studio.md"
+  },
+  {
+   "id": "sf-001428",
+   "area": "clouds-and-products",
+   "t": "Trailhead advises creating no more than three populations per Marketing Cloud Engagement account in Contact Builder, for performance reasons.",
+   "f": "Trailhead advises creating no more than ten populations per Marketing Cloud Engagement account in Contact Builder, for performance reasons.",
+   "x": "Populations are large master subsets of contacts, and Trailhead caps its recommendation at three per account to protect performance. Ten is far above that guidance.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:contact-builder"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/contact-builder.md"
+  },
+  {
+   "id": "sf-001429",
+   "area": "clouds-and-products",
+   "t": "In Marketing Cloud Engagement, every subscriber is a contact, but a contact becomes a subscriber only after opting in to a particular channel.",
+   "f": "In Marketing Cloud Engagement, every contact is a subscriber, but a subscriber becomes a contact only after opting in to a particular channel.",
+   "x": "A contact is anyone the account messages; a subscriber is a contact who has opted in to a channel. Contacts from Sales or Service Cloud can appear in All Contacts without ever being subscribers.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:contact-builder",
+    "kt:marketing-cloud-engagement"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/contact-builder.md"
+  },
+  {
+   "id": "sf-001430",
+   "area": "clouds-and-products",
+   "t": "When Contact Builder deletes a contact, it is first suppressed for a configurable default of 2 days, then hard-deleted with no way to undo it.",
+   "f": "When Contact Builder deletes a contact, it is first suppressed for a configurable default of 30 days, during which the deletion can be undone.",
+   "x": "Contact Delete starts with a suppression period that defaults to two days, and the final deletion from the account and sendable data extensions is permanent. Thirty days and an undo option aren't how it works.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:contact-builder",
+    "kt:data-extensions"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/contact-builder.md"
+  },
+  {
+   "id": "sf-001431",
+   "area": "security-and-sharing",
+   "t": "WITH SECURITY_ENFORCED doesn't support traversing polymorphic lookups such as What.Name, except for the Owner, CreatedBy and LastModifiedBy relationships.",
+   "f": "WITH SECURITY_ENFORCED doesn't support traversing polymorphic lookups such as What.Name, except for the Who, Parent and RelatedTo relationships.",
+   "x": "Polymorphic relationship fields are generally unsupported by the clause; the documented exceptions are Owner, CreatedBy and LastModifiedBy. Who, Parent and RelatedTo aren't on that list.",
+   "release": "Winter '27",
+   "featureStatus": "deprecated",
+   "certs": [],
+   "concepts": [
+    "kt:with-security-enforced",
+    "kt:polymorphic-relationships"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/with-security-enforced.md"
+  },
+  {
+   "id": "sf-001432",
+   "area": "data-cloud-and-ai",
+   "t": "Salesforce says core Agentforce observability, including tracing ingestion and out-of-the-box dashboard queries, is free and unmetered, while building new dashboards still consumes credits.",
+   "f": "Salesforce says core Agentforce observability, including tracing ingestion and out-of-the-box dashboard queries, consumes credits, while building new dashboards is free and unmetered.",
+   "x": "Tracing ingestion, metric aggregation and the shipped dashboards cost nothing, but new dashboards, external ingestion and new semantic objects still draw credits. The false version reverses which side is metered.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:agentforce-observability",
+    "kt:digital-wallet"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/agentforce-observability.md"
+  },
+  {
+   "id": "sf-001433",
+   "area": "data-cloud-and-ai",
+   "t": "Trailhead recommends reviewing at least 30 days of history before setting an Agentforce health alert threshold where normal variation ends.",
+   "f": "Trailhead recommends reviewing at least 7 days of history before setting an Agentforce health alert threshold where normal variation ends.",
+   "x": "The alert guidance asks for a month or more of data so the threshold sits beyond normal variation, and suggests starting with a few owned, high-value alerts. A single week is shorter than advised.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:agentforce-observability",
+    "kt:agentforce-studio"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/agentforce-observability.md"
+  },
+  {
+   "id": "sf-001434",
+   "area": "data-cloud-and-ai",
+   "t": "In Agentforce observability, the thumbs-up or thumbs-down user satisfaction metric is available only for Employee Agent.",
+   "f": "In Agentforce observability, the thumbs-up or thumbs-down user satisfaction metric is available only for Service Agent.",
+   "x": "Trailhead lists user satisfaction via thumbs feedback as an Employee Agent metric. Service Agent isn't where that metric is offered.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:agentforce-observability",
+    "kt:agentforce"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/agentforce-observability.md"
   }
  ]
 }
