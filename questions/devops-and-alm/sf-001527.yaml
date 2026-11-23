@@ -1,0 +1,18 @@
+id: sf-001527
+product_area: devops-and-alm
+true_statement: Scratch org snapshots don't capture connected apps, external credentials or named credentials, so integrations must be set up again in each new org.
+false_statement: Scratch org snapshots capture connected apps, external credentials and named credentials, so integrations work unchanged in each new org.
+explanation: Snapshots copy packages, features, settings, metadata and data, but leave out connected apps and credential setups. Integrations therefore need to be reconfigured in orgs created from a snapshot.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/scratch-org-snapshots.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: 254a25f6fb5f7a8bd1e69633d1ba4c38113502a0
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:scratch-org-snapshots
+- kt:continuous-integration-for-salesforce
+difficulty: 2
+created: '2026-11-23'
+status: active

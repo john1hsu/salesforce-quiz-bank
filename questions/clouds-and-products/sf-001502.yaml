@@ -1,0 +1,17 @@
+id: sf-001502
+product_area: clouds-and-products
+true_statement: In Salesforce Scheduler, an admin can map only one work type from a given work type group to any one service territory.
+false_statement: In Salesforce Scheduler, an admin can map up to five work types from a given work type group to any one service territory.
+explanation: Scheduler allows a single work type per work type group per territory. Allowing several would make the template for a topic at one location ambiguous.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/salesforce-scheduler.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: 2836c54c83985d4c9e17b14659e4e03acc80c454
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:salesforce-scheduler
+difficulty: 2
+created: '2026-11-23'
+status: active

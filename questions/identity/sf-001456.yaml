@@ -1,0 +1,20 @@
+id: sf-001456
+product_area: identity
+true_statement: SAML assertions issued by Salesforce as an identity provider are valid for 5 minutes after issue, with a 30-second clock-skew buffer.
+false_statement: SAML assertions issued by Salesforce as an identity provider are valid for 15 minutes after issue, with a 5-minute clock-skew buffer.
+explanation: Service providers must accept a Salesforce assertion within 5 minutes of issue, allowing only 30 seconds of clock skew, so clock sync matters. The longer window and buffer are not what Salesforce uses.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/salesforce-as-identity-provider.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: 6beb60711ff873df39103301144f561d7bfb7371
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:identity-and-access-management-architect-certification
+concepts:
+- kt:salesforce-as-identity-provider
+- kt:saml-2-0
+difficulty: 2
+created: '2026-11-23'
+status: active

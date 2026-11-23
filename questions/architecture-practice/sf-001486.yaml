@@ -1,0 +1,18 @@
+id: sf-001486
+product_area: architecture-practice
+true_statement: A solution architecture diagram is more prescriptive than a reference architecture, naming the specific tools and resources a delivery team will use.
+false_statement: A reference architecture is more prescriptive than a solution architecture diagram, naming the specific tools and resources a delivery team will use.
+explanation: Trailhead treats a reference architecture as a broad blueprint of recommended patterns, while the solution architecture diagram gets specific about tools for the build. The false statement reverses which one is prescriptive.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/reference-architectures.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: c296224890136bfa7e366de435b5ac1e6f7ca4ef
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:reference-architectures
+- kt:solution-design-document
+difficulty: 2
+created: '2026-11-23'
+status: active

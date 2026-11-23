@@ -1,0 +1,19 @@
+id: sf-001470
+product_area: platform-architecture
+true_statement: On Hyperforce, a supercell groups several cells that share services, marking out a larger blast radius for those shared components.
+false_statement: On Hyperforce, a supercell splits one cell into several smaller units, shrinking the blast radius of each unit's components.
+explanation: 'Supercells sit above cells: they bundle multiple cells around shared services, so a failure in those services can reach every cell in the group. They don''t subdivide a cell.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/pod-and-instance-architecture.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: 8d86d63c7cccb6323ed14becde6f51ee300adf6f
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:pod-and-instance-architecture
+- kt:hyperforce
+- kt:multitenancy
+difficulty: 3
+created: '2026-11-23'
+status: active

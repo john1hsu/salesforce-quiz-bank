@@ -1,0 +1,18 @@
+id: sf-001452
+product_area: devops-and-alm
+true_statement: Test and demo orgs created from an Environment Hub expire after one year by default, and the expiry can be extended through a case.
+false_statement: Test and demo orgs created from an Environment Hub expire after 30 days by default, and the expiry can be extended through a case.
+explanation: Hub-created test and demo orgs last a year by default. The 30-day ceiling belongs to scratch orgs, which the hub cannot even connect.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/environment-hub.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: fdaa281460c3fc4538bafdf1f46d5a6aa1e6090e
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:environment-hub
+- kt:partner-business-org
+difficulty: 2
+created: '2026-11-23'
+status: active

@@ -1,0 +1,18 @@
+id: sf-001469
+product_area: platform-architecture
+true_statement: A trailing S in an instance name, as in JPN156S, marks a sandbox instance paired with the production instance JPN156.
+false_statement: A trailing S in an instance name, as in JPN156S, marks a standby disaster-recovery instance paired with the production instance JPN156.
+explanation: Sandboxes live on their own instances whose names add an S to the paired production instance. The suffix has nothing to do with disaster-recovery standbys.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/pod-and-instance-architecture.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: 8d86d63c7cccb6323ed14becde6f51ee300adf6f
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:pod-and-instance-architecture
+- kt:sandbox-types
+difficulty: 1
+created: '2026-11-23'
+status: active

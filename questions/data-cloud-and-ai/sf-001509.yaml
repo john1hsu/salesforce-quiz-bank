@@ -1,0 +1,18 @@
+id: sf-001509
+product_area: data-cloud-and-ai
+true_statement: Turning an existing Data 360 org into a Data Cloud One companion requires deprovisioning it, which deletes that org's Data 360 data and metadata.
+false_statement: Turning an existing Data 360 org into a Data Cloud One companion keeps that org's Data 360 data and metadata and merges them into the home org.
+explanation: Converting an org into a companion means deprovisioning its Data 360 instance, which deletes its data and metadata, so they should be moved first, for example with data kits. Nothing is merged into the home org automatically.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/data-cloud-one.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: 2ffbc9d05d053ddad243c33ba8933dde6aaff115
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:data-cloud-one
+- kt:org-strategy
+difficulty: 3
+created: '2026-11-23'
+status: active

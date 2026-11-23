@@ -1,0 +1,19 @@
+id: sf-001513
+product_area: data-model
+true_statement: After a name field changed from Auto Number to Text, Heroku Connect saved record IDs as names until the mapping's field metadata was refreshed.
+false_statement: After a name field changed from Auto Number to Text, Heroku Connect saved record IDs as names until the org's search index was rebuilt.
+explanation: Heroku Connect caches the name field's type in its mapping, so after the type change it kept writing IDs as names until that mapping's field metadata was refreshed. A search index rebuild has nothing to do with the cached mapping.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/record-name-field.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: bca2c8d2ab373996bffec2e0f2ce178fd0f6bb7b
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:record-name-field
+- kt:heroku-connect
+- kt:auto-number-fields
+difficulty: 3
+created: '2026-11-23'
+status: active

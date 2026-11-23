@@ -1,0 +1,18 @@
+id: sf-001500
+product_area: clouds-and-products
+true_statement: The Customer 360 Data Model is the Data 360 data model that Sales and Service objects map into, not the Sales or Service object schema itself.
+false_statement: The Customer 360 Data Model is the Sales and Service object schema itself, which Data 360 data model objects map into.
+explanation: The name refers to Data 360's harmonized model of data model objects such as Contact Point Email. CRM objects map into it; it is not the CRM schema.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/customer-360.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: 469494193857af579c161e5085b98997948b2be7
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:customer-360
+- kt:data-cloud
+difficulty: 2
+created: '2026-11-23'
+status: active

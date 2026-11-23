@@ -1,0 +1,18 @@
+id: sf-001507
+product_area: data-cloud-and-ai
+true_statement: In Data Cloud One, queries, segment runs, flows and AI activity performed in a companion org consume the home org's Data 360 credits.
+false_statement: In Data Cloud One, queries, segment runs, flows and AI activity performed in a companion org consume that companion org's own Data 360 credits.
+explanation: Data Cloud One bills all companion-org usage to the home org's credits, with per-org usage visible in Digital Wallet. Companion orgs don't draw on a separate credit pool of their own.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/data-cloud-one.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: 2ffbc9d05d053ddad243c33ba8933dde6aaff115
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:data-cloud-one
+- kt:digital-wallet
+difficulty: 2
+created: '2026-11-23'
+status: active

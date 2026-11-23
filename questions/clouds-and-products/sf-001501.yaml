@@ -1,0 +1,17 @@
+id: sf-001501
+product_area: clouds-and-products
+true_statement: Salesforce Scheduler is an extra-cost add-on, available in Enterprise, Unlimited, Performance and Developer editions.
+false_statement: Salesforce Scheduler is included at no extra cost in Enterprise, Unlimited, Performance and Developer editions.
+explanation: Scheduler is sold separately, so a plain Sales or Service Cloud org does not have it. The editions listed only determine where the add-on can be bought.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/salesforce-scheduler.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: 2836c54c83985d4c9e17b14659e4e03acc80c454
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:salesforce-scheduler
+difficulty: 1
+created: '2026-11-23'
+status: active

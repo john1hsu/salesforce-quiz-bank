@@ -1,0 +1,17 @@
+id: sf-001443
+product_area: data-model
+true_statement: A custom object record created through the API without a name value takes its record ID as its name.
+false_statement: A custom object record created through the API without a name value takes the object's label as its name.
+explanation: When an API insert leaves the name field empty, Salesforce fills it with the record ID. It does not fall back to the object's label.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/custom-objects.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: e4850f31e0e2419e75a86bbdc97c4cf027500703
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:custom-objects
+difficulty: 2
+created: '2026-11-23'
+status: active

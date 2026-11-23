@@ -1,0 +1,17 @@
+id: sf-001517
+product_area: development
+true_statement: A static resource with Public cache control can be fetched by unauthenticated internet traffic through a shared cache, while Private limits it to authenticated users.
+false_statement: A static resource with Private cache control can be fetched by unauthenticated internet traffic through a shared cache, while Public limits it to authenticated users.
+explanation: Public cache control serves the file to anyone, including unauthenticated users, from a faster shared cache, whereas Private restricts it to authenticated users with per-user caching. The false statement swaps the two settings.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/static-resources.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: 1384a1be27195e8ce8db28126b8b86364f78265a
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:static-resources
+difficulty: 2
+created: '2026-11-23'
+status: active

@@ -1,45 +1,45 @@
 {
  "totals": {
-  "active": 1423,
+  "active": 1520,
   "retired": 2
  },
  "areas": {
   "architecture-practice": {
-   "active": 125
+   "active": 131
   },
   "automation": {
-   "active": 120
+   "active": 126
   },
   "clouds-and-products": {
-   "active": 125
+   "active": 131
   },
   "data-cloud-and-ai": {
-   "active": 123
+   "active": 132
   },
   "data-model": {
-   "active": 118
+   "active": 130
   },
   "development": {
-   "active": 117,
+   "active": 129,
    "retired": 1
   },
   "devops-and-alm": {
-   "active": 110
+   "active": 122
   },
   "identity": {
-   "active": 116
+   "active": 126
   },
   "integration": {
-   "active": 116
+   "active": 122
   },
   "platform-architecture": {
-   "active": 118
+   "active": 124
   },
   "public-sector-and-compliance": {
-   "active": 120
+   "active": 126
   },
   "security-and-sharing": {
-   "active": 115,
+   "active": 121,
    "retired": 1
   }
  },
@@ -116,6 +116,9 @@
   "articles/architecture-practice/raci-matrix.md": {
    "active": 3
   },
+  "articles/architecture-practice/reference-architectures.md": {
+   "active": 3
+  },
   "articles/architecture-practice/requirements-gathering.md": {
    "active": 3
   },
@@ -138,6 +141,9 @@
    "active": 3
   },
   "articles/architecture-practice/salesforce-governance.md": {
+   "active": 3
+  },
+  "articles/architecture-practice/salesforce-solution-kits.md": {
    "active": 3
   },
   "articles/architecture-practice/scale-test.md": {
@@ -200,6 +206,9 @@
   "articles/automation/data-table-screen-component.md": {
    "active": 3
   },
+  "articles/automation/decision-tables.md": {
+   "active": 3
+  },
   "articles/automation/einstein-next-best-action.md": {
    "active": 3
   },
@@ -220,6 +229,9 @@
   },
   "articles/automation/flow-fault-handling.md": {
    "active": 1
+  },
+  "articles/automation/flow-formula-resources.md": {
+   "active": 3
   },
   "articles/automation/flow-http-callout.md": {
    "active": 3
@@ -326,6 +338,9 @@
   "articles/clouds-and-products/crm-analytics.md": {
    "active": 3
   },
+  "articles/clouds-and-products/customer-360.md": {
+   "active": 3
+  },
   "articles/clouds-and-products/entitlement-management.md": {
    "active": 3
   },
@@ -413,6 +428,9 @@
   "articles/clouds-and-products/salesforce-pricing.md": {
    "active": 3
   },
+  "articles/clouds-and-products/salesforce-scheduler.md": {
+   "active": 3
+  },
   "articles/clouds-and-products/service-cloud.md": {
    "active": 3
   },
@@ -464,6 +482,12 @@
   "articles/data-cloud-and-ai/calculated-insights.md": {
    "active": 3
   },
+  "articles/data-cloud-and-ai/consent-management-in-data-cloud.md": {
+   "active": 3
+  },
+  "articles/data-cloud-and-ai/data-360-query-api.md": {
+   "active": 3
+  },
   "articles/data-cloud-and-ai/data-actions.md": {
    "active": 3
   },
@@ -474,6 +498,9 @@
    "active": 3
   },
   "articles/data-cloud-and-ai/data-cloud-limits.md": {
+   "active": 3
+  },
+  "articles/data-cloud-and-ai/data-cloud-one.md": {
    "active": 3
   },
   "articles/data-cloud-and-ai/data-cloud-segmentation.md": {
@@ -551,10 +578,16 @@
   "articles/data-model/activity-data-model.md": {
    "active": 3
   },
+  "articles/data-model/auto-number-fields.md": {
+   "active": 3
+  },
   "articles/data-model/big-objects.md": {
    "active": 3
   },
   "articles/data-model/business-processes.md": {
+   "active": 3
+  },
+  "articles/data-model/compact-layouts.md": {
    "active": 3
   },
   "articles/data-model/contacts-to-multiple-accounts.md": {
@@ -567,6 +600,9 @@
    "active": 3
   },
   "articles/data-model/custom-fields.md": {
+   "active": 3
+  },
+  "articles/data-model/custom-objects.md": {
    "active": 3
   },
   "articles/data-model/data-governance.md": {
@@ -645,6 +681,9 @@
    "active": 3
   },
   "articles/data-model/price-books.md": {
+   "active": 3
+  },
+  "articles/data-model/record-name-field.md": {
    "active": 3
   },
   "articles/data-model/record-types.md": {
@@ -764,6 +803,9 @@
   "articles/development/scheduled-apex.md": {
    "active": 3
   },
+  "articles/development/seealldata.md": {
+   "active": 3
+  },
   "articles/development/soql-injection.md": {
    "active": 3
   },
@@ -774,7 +816,16 @@
   "articles/development/sosl.md": {
    "active": 3
   },
+  "articles/development/static-resources.md": {
+   "active": 3
+  },
   "articles/development/test-data-factory.md": {
+   "active": 3
+  },
+  "articles/development/test-loaddata.md": {
+   "active": 3
+  },
+  "articles/development/test-setup-methods.md": {
    "active": 3
   },
   "articles/development/transaction-finalizers.md": {
@@ -831,6 +882,9 @@
   "articles/devops-and-alm/devops-testing.md": {
    "active": 3
   },
+  "articles/devops-and-alm/environment-hub.md": {
+   "active": 3
+  },
   "articles/devops-and-alm/first-generation-managed-packages.md": {
    "active": 3
   },
@@ -861,6 +915,12 @@
   "articles/devops-and-alm/package-xml-manifest.md": {
    "active": 3
   },
+  "articles/devops-and-alm/partner-business-org.md": {
+   "active": 3
+  },
+  "articles/devops-and-alm/post-install-scripts.md": {
+   "active": 3
+  },
   "articles/devops-and-alm/push-upgrades.md": {
    "active": 3
   },
@@ -886,6 +946,9 @@
    "active": 3
   },
   "articles/devops-and-alm/scratch-org-allocations.md": {
+   "active": 3
+  },
+  "articles/devops-and-alm/scratch-org-snapshots.md": {
    "active": 3
   },
   "articles/devops-and-alm/scratch-orgs.md": {
@@ -945,6 +1008,9 @@
   "articles/identity/identity-connect.md": {
    "active": 3
   },
+  "articles/identity/identity-provider-event-log.md": {
+   "active": 3
+  },
   "articles/identity/identity-verification.md": {
    "active": 3
   },
@@ -956,6 +1022,9 @@
   },
   "articles/identity/jwt-bearer-flow.md": {
    "active": 3
+  },
+  "articles/identity/lightning-login.md": {
+   "active": 1
   },
   "articles/identity/login-flows.md": {
    "active": 3
@@ -991,6 +1060,12 @@
    "active": 3
   },
   "articles/identity/refresh-token-policies.md": {
+   "active": 3
+  },
+  "articles/identity/salesforce-as-identity-provider.md": {
+   "active": 3
+  },
+  "articles/identity/salesforce-authenticator.md": {
    "active": 3
   },
   "articles/identity/salesforce-identity.md": {
@@ -1092,6 +1167,9 @@
   "articles/integration/managed-event-subscriptions.md": {
    "active": 3
   },
+  "articles/integration/marketing-cloud-connect.md": {
+   "active": 3
+  },
   "articles/integration/mule-runtime-engine.md": {
    "active": 3
   },
@@ -1117,6 +1195,9 @@
    "active": 3
   },
   "articles/integration/pub-sub-api.md": {
+   "active": 3
+  },
+  "articles/integration/pushtopic-streaming-allocations.md": {
    "active": 3
   },
   "articles/integration/remote-call-in.md": {
@@ -1227,6 +1308,9 @@
   "articles/platform-architecture/platform-cache.md": {
    "active": 3
   },
+  "articles/platform-architecture/pod-and-instance-architecture.md": {
+   "active": 3
+  },
   "articles/platform-architecture/query-optimizer-selectivity.md": {
    "active": 3
   },
@@ -1240,6 +1324,9 @@
    "active": 3
   },
   "articles/platform-architecture/salesforce-go.md": {
+   "active": 3
+  },
+  "articles/platform-architecture/salesforce-licensing.md": {
    "active": 3
   },
   "articles/platform-architecture/salesforce-platform.md": {
@@ -1276,6 +1363,9 @@
    "active": 3
   },
   "articles/public-sector-and-compliance/corporate-governance.md": {
+   "active": 3
+  },
+  "articles/public-sector-and-compliance/coso-internal-control-framework.md": {
    "active": 3
   },
   "articles/public-sector-and-compliance/data-classification.md": {
@@ -1333,6 +1423,9 @@
    "active": 3
   },
   "articles/public-sector-and-compliance/iso-iec-27002.md": {
+   "active": 3
+  },
+  "articles/public-sector-and-compliance/iso-iec-27017.md": {
    "active": 3
   },
   "articles/public-sector-and-compliance/it-governance.md": {
@@ -1422,6 +1515,9 @@
   "articles/security-and-sharing/implicit-sharing.md": {
    "active": 3
   },
+  "articles/security-and-sharing/opportunity-teams.md": {
+   "active": 3
+  },
   "articles/security-and-sharing/organization-wide-defaults.md": {
    "active": 1
   },
@@ -1471,6 +1567,9 @@
    "active": 3
   },
   "articles/security-and-sharing/security-governance.md": {
+   "active": 3
+  },
+  "articles/security-and-sharing/security-health-check.md": {
    "active": 3
   },
   "articles/security-and-sharing/security-stripinaccessible.md": {

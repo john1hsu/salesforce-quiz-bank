@@ -1,0 +1,18 @@
+id: sf-001487
+product_area: architecture-practice
+true_statement: Lucidchart offers three Salesforce shape libraries, Salesforce Header, Salesforce Cards and Salesforce Icons, for keeping standard diagram notation.
+false_statement: Lucidchart offers two Salesforce shape libraries, Salesforce Cards and Salesforce Icons, for keeping standard diagram notation.
+explanation: There are three Salesforce shape libraries in Lucidchart, and Salesforce Header is one of them alongside Cards and Icons. The false statement drops the Header library.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/reference-architectures.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: c296224890136bfa7e366de435b5ac1e6f7ca4ef
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:reference-architectures
+- kt:salesforce-diagrams
+difficulty: 2
+created: '2026-11-23'
+status: active

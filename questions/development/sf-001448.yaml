@@ -1,0 +1,18 @@
+id: sf-001448
+product_area: development
+true_statement: Test.loadData inserts the CSV rows itself and returns the inserted records, so the test should not insert the returned list again.
+false_statement: Test.loadData returns the CSV rows as unsaved sObjects, so the test must insert the returned list before querying the records.
+explanation: The method performs the insert and hands back the saved records. Older examples that insert the list a second time reflect a misunderstanding, not a required step.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/test-loaddata.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: bc2c852a9d2235889da17838465f71a5d1bae5e2
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:test-loaddata
+- kt:apex-testing
+difficulty: 2
+created: '2026-11-23'
+status: active

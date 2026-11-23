@@ -1,0 +1,18 @@
+id: sf-001476
+product_area: public-sector-and-compliance
+true_statement: COSO treated its original 1992 internal control framework as superseded from December 15, 2014, after a transition period.
+false_statement: COSO treated its original 1992 internal control framework as superseded from May 2013, with no transition period.
+explanation: The update was released in May 2013, but COSO let the 1992 version stay acceptable during a transition and considered it superseded only from December 15, 2014.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/coso-internal-control-framework.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: 860137b0a8400e2f930b91206808f192a6c41a25
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:coso-internal-control-framework
+- kt:sarbanes-oxley-act
+difficulty: 3
+created: '2026-11-23'
+status: active

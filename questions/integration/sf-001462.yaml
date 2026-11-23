@@ -1,0 +1,18 @@
+id: sf-001462
+product_area: integration
+true_statement: Marketing Cloud Connect recognizes a subscriber as a CRM record only when the subscriber key is the CRM contact or lead ID.
+false_statement: Marketing Cloud Connect recognizes a subscriber as a CRM record only when the subscriber key is the CRM contact or lead email address.
+explanation: The connector matches subscribers to CRM records through the contact or lead ID used as subscriber key, which is why older accounts may need a subscriber key migration. Email address is not the matching key.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/marketing-cloud-connect.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: ff2eadbd7826ce0512afa6670aec703586c27eae
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:marketing-cloud-connect
+- kt:marketing-cloud-engagement
+difficulty: 2
+created: '2026-11-23'
+status: active

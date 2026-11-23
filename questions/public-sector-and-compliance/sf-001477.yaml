@@ -1,0 +1,19 @@
+id: sf-001477
+product_area: public-sector-and-compliance
+true_statement: The table of contents of ISO/IEC 27017:2026 lists four cloud-specific CLD controls, including shared roles and segregation in virtual computing environments.
+false_statement: The table of contents of ISO/IEC 27017:2026 lists nine cloud-specific CLD controls, including shared roles and segregation in virtual computing environments.
+explanation: 'The 2026 edition slots four CLD controls into the 27002:2022 numbering: 5.38, 5.39, 8.35 and 8.36. Several 2015-era cloud topics no longer appear as separate controls, so nine overstates the count.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/iso-iec-27017.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: 7ed5b7563140bf5aacda52296e7ab85bf797fdb2
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:iso-iec-27017
+- kt:iso-iec-27002
+- kt:multitenancy
+difficulty: 3
+created: '2026-11-23'
+status: active

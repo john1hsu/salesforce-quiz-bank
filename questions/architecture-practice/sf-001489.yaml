@@ -1,0 +1,18 @@
+id: sf-001489
+product_area: architecture-practice
+true_statement: In a Salesforce solution kit, the Connecting technology section lists the connectors or APIs that move data or identity between the products.
+false_statement: In a Salesforce solution kit, the Design considerations section lists the connectors or APIs that move data or identity between the products.
+explanation: Each kit has a Connecting technology section for the connectors and APIs between clouds. Design considerations covers limits and performance guardrails instead, such as data set import limits.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/salesforce-solution-kits.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: d1f93e90016484d6c2439c25e2eea6e007c8a1ae
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:salesforce-solution-kits
+- kt:cross-cloud-integration
+difficulty: 2
+created: '2026-11-23'
+status: active

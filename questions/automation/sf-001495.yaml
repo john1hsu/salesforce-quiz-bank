@@ -1,0 +1,18 @@
+id: sf-001495
+product_area: automation
+true_statement: A Flow formula resource stores no value and is recalculated each time an element references it, so its result can change mid-flow.
+false_statement: A Flow formula resource is calculated once when the interview starts and keeps that value, so its result cannot change mid-flow.
+explanation: Flow recomputes a formula on every reference, so if an input variable changes the formula's result changes too. To freeze a value, copy it into a variable with an Assignment.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/flow-formula-resources.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: fee4567ff3166397a980eb6729df55a741745ce8
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:flow-formula-resources
+- kt:flow-builder
+difficulty: 2
+created: '2026-11-23'
+status: active

@@ -1,0 +1,18 @@
+id: sf-001450
+product_area: devops-and-alm
+true_statement: An Environment Hub can create up to 20 member orgs per day; creating more requires a support case.
+false_statement: An Environment Hub can create up to 50 member orgs per day; creating more requires a support case.
+explanation: The daily cap on orgs created from an Environment Hub is 20, raised only through a Partner Community support case. 50 is not the documented figure.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/environment-hub.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: fdaa281460c3fc4538bafdf1f46d5a6aa1e6090e
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:environment-hub
+- kt:partner-business-org
+difficulty: 2
+created: '2026-11-23'
+status: active

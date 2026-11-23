@@ -1,0 +1,18 @@
+id: sf-001466
+product_area: integration
+true_statement: For generic streaming events, every paid edition can define up to 1,000 streaming channels, while free orgs can define 200.
+false_statement: For generic streaming events, every paid edition can define up to 100 streaming channels, while free orgs can define 20.
+explanation: Generic events have their own channel cap of 1,000 per paid org and 200 in free orgs. The 100 and 20 figures are far below that and resemble PushTopic or client counts instead.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/pushtopic-streaming-allocations.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: d426aae01f311636d2ed2ca25c1b28b394c69464
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:pushtopic-streaming-allocations
+- kt:streaming-api
+difficulty: 2
+created: '2026-11-23'
+status: active

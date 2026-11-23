@@ -1,0 +1,19 @@
+id: sf-001499
+product_area: clouds-and-products
+true_statement: In Salesforce's four-layer Agentforce 360 architecture, the Customer 360 Apps layer supplies the business logic that agents reuse.
+false_statement: In Salesforce's four-layer Agentforce 360 architecture, the Data 360 layer supplies the business logic that agents reuse.
+explanation: Customer 360 Apps hold approval chains, definitions and workflow steps that agents reuse. Data 360 is the unified data layer that gives agents context, not the business logic.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/customer-360.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: 469494193857af579c161e5085b98997948b2be7
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:customer-360
+- kt:agentforce
+- kt:data-cloud
+difficulty: 2
+created: '2026-11-23'
+status: active

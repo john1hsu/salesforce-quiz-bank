@@ -1,0 +1,18 @@
+id: sf-001483
+product_area: security-and-sharing
+true_statement: Querying the SecurityHealthCheck and SecurityHealthCheckRisks Tooling API objects requires the View Setup and Configuration permission.
+false_statement: Querying the SecurityHealthCheck and SecurityHealthCheckRisks Tooling API objects requires the Modify All Data permission.
+explanation: Health Check's Tooling API objects can be queried by any user holding View Setup and Configuration, which makes scripted monitoring practical. Modify All Data is not the gating permission.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/security-health-check.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: e91d3a1ff11c369480b87dd57bab561589e21f32
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:security-health-check
+- kt:tooling-api
+difficulty: 2
+created: '2026-11-23'
+status: active

@@ -1,0 +1,19 @@
+id: sf-001525
+product_area: devops-and-alm
+true_statement: Managed package versions built from a scratch org snapshot can't be promoted to Released, while unlocked package versions built from one can.
+false_statement: Unlocked package versions built from a scratch org snapshot can't be promoted to Released, while managed package versions built from one can.
+explanation: A snapshot can speed up package builds, but a managed release candidate must be rebuilt without the snapshot before promotion; unlocked versions have no such restriction. The false statement swaps the two package types.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/scratch-org-snapshots.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: 254a25f6fb5f7a8bd1e69633d1ba4c38113502a0
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:scratch-org-snapshots
+- kt:second-generation-managed-packages
+- kt:unlocked-packages
+difficulty: 3
+created: '2026-11-23'
+status: active

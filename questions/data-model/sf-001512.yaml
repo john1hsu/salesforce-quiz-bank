@@ -1,0 +1,17 @@
+id: sf-001512
+product_area: data-model
+true_statement: Long text area, rich text area and multi-select picklist fields can't be added to a compact layout.
+false_statement: Long text area, rich text area and multi-select picklist fields can be added to a compact layout as long as they are not first.
+explanation: These field types are unsupported on compact layouts in any position. The false version invents a placement condition that would allow them.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/compact-layouts.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: bfadd34590b19dbb9ba034380244c2cb0b37ff69
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:compact-layouts
+difficulty: 2
+created: '2026-11-23'
+status: active

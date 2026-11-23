@@ -1,0 +1,17 @@
+id: sf-001464
+product_area: integration
+true_statement: In Marketing Cloud Connect, CRM-only users can see email results on records but cannot send, while integrated users can send to Salesforce reports and campaigns.
+false_statement: In Marketing Cloud Connect, CRM-only users can send to Salesforce reports and campaigns, while integrated users can only see email results on records.
+explanation: Sending to reports and campaigns needs an integrated user linked on both sides; a CRM-only user just sees the tracking results. The false statement swaps the two roles.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/marketing-cloud-connect.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: ff2eadbd7826ce0512afa6670aec703586c27eae
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:marketing-cloud-connect
+difficulty: 2
+created: '2026-11-23'
+status: active

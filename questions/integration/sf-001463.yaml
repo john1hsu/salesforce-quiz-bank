@@ -1,0 +1,18 @@
+id: sf-001463
+product_area: integration
+true_statement: Synchronized data extensions from Marketing Cloud Connect sit at the top level of an Enterprise account, so business units need a query or filter into a shared data extension.
+false_statement: Synchronized data extensions from Marketing Cloud Connect are copied into every business unit of an Enterprise account, so business units can segment them directly.
+explanation: Synced objects land as _Salesforce data extensions at the Enterprise account's top level. To use them across business units you move the data with a query or filter activity into a shared data extension; they are not copied into each unit.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/marketing-cloud-connect.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: ff2eadbd7826ce0512afa6670aec703586c27eae
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:marketing-cloud-connect
+- kt:contact-builder
+difficulty: 3
+created: '2026-11-23'
+status: active

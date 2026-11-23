@@ -1,0 +1,18 @@
+id: sf-001504
+product_area: data-cloud-and-ai
+true_statement: On the Data 360 Query API V3 endpoint, ADAPTIVE is the default transferMode and returns rows inline when the query finishes in time.
+false_statement: On the Data 360 Query API V3 endpoint, ASYNC is the default transferMode and returns rows inline when the query finishes in time.
+explanation: ADAPTIVE is the default and falls back to an asynchronous response only when the query runs past its timeout. ASYNC never returns rows inline; it sends metadata and the client polls.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/data-360-query-api.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: 55bdd2efcb1465d7d7e082f7c06dfc1e1f30f1a6
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:data-360-query-api
+- kt:data-cloud
+difficulty: 2
+created: '2026-11-23'
+status: active

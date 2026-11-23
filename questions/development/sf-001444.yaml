@@ -1,0 +1,18 @@
+id: sf-001444
+product_area: development
+true_statement: A test method marked SeeAllData=false inside a class marked SeeAllData=true is ignored, so the method keeps access to org data.
+false_statement: A test method marked SeeAllData=false inside a class marked SeeAllData=true overrides the class, so the method is isolated from org data.
+explanation: 'Precedence only works one way: a method set to true can open data in a class set to false, but a method set to false cannot close access that the class grants. Its false setting is simply ignored.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/seealldata.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: 63343913fcecda81a42ada287cc451b4596a6b68
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:seealldata
+- kt:apex-testing
+difficulty: 3
+created: '2026-11-23'
+status: active

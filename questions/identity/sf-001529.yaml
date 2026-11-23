@@ -1,0 +1,18 @@
+id: sf-001529
+product_area: identity
+true_statement: In the Identity Provider Event Log, the status NoUserFedId means the user has no Federation Identifier while the service provider expects one.
+false_statement: In the Identity Provider Event Log, the status NoUserFedId means the service provider's IdP certificate is missing or invalid.
+explanation: 'NoUserFedId is a user-level problem: the app expects a Federation Identifier the user doesn''t have. A missing or invalid certificate shows up as InvalidSettings instead.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/identity-provider-event-log.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: 4b4ea7c193126ca9330d5ecfdca046ec1f23523b
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:identity-provider-event-log
+- kt:connected-apps
+difficulty: 2
+created: '2026-11-23'
+status: active

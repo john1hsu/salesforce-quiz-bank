@@ -1,0 +1,17 @@
+id: sf-001516
+product_area: development
+true_statement: A single Salesforce static resource can be up to 5 MB, and an org can hold up to 250 MB of static resources in total.
+false_statement: A single Salesforce static resource can be up to 25 MB, and an org can hold up to 1 GB of static resources in total.
+explanation: Static resources are capped at 5 MB each and 250 MB per org. The larger figures in the false statement overstate both limits.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/static-resources.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: 1384a1be27195e8ce8db28126b8b86364f78265a
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:static-resources
+difficulty: 2
+created: '2026-11-23'
+status: active

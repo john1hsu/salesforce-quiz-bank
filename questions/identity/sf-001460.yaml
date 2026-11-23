@@ -1,0 +1,18 @@
+id: sf-001460
+product_area: identity
+true_statement: Each account in Salesforce Authenticator gets its own 6-digit TOTP code that rotates every 30 seconds and works without a data connection.
+false_statement: Each account in Salesforce Authenticator gets its own 6-digit TOTP code that rotates every 5 minutes and works without a data connection.
+explanation: The app's offline passcodes follow the TOTP standard and change every 30 seconds per connected account. A five-minute rotation is far longer than the app uses.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/salesforce-authenticator.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: b196e30d4a7be2758bb60313536e9391218d5eb5
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:salesforce-authenticator
+- kt:time-based-one-time-password
+difficulty: 2
+created: '2026-11-23'
+status: active

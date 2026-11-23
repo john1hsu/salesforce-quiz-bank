@@ -1,0 +1,18 @@
+id: sf-001455
+product_area: devops-and-alm
+true_statement: A post install script can't make synchronous callouts; any asynchronous callouts it starts run only after the script and installation commit.
+false_statement: A post install script can make synchronous callouts, which run before the installation commits so their results can shape the install.
+explanation: Install scripts are limited to asynchronous callouts, and those execute after the script and the install have committed. Synchronous callouts during the install are not allowed.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/post-install-scripts.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: e2468cb1ccb664c57183ec4a8eb4f5bda79ca89e
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:post-install-scripts
+- kt:asynchronous-apex
+difficulty: 3
+created: '2026-11-23'
+status: active

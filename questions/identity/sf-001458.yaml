@@ -1,0 +1,20 @@
+id: sf-001458
+product_area: identity
+true_statement: When a service provider sends ForceAuthn, Salesforce as the identity provider makes the user re-enter credentials even with a live session, with no extra setup.
+false_statement: When a service provider sends ForceAuthn, Salesforce as the identity provider reuses a live session unless an admin enables forced reauthentication.
+explanation: Salesforce honours ForceAuthn out of the box and prompts for credentials again despite an active session. No org setting is needed to turn that behaviour on.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/salesforce-as-identity-provider.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: 6beb60711ff873df39103301144f561d7bfb7371
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:identity-and-access-management-architect-certification
+concepts:
+- kt:salesforce-as-identity-provider
+- kt:saml-2-0
+difficulty: 3
+created: '2026-11-23'
+status: active

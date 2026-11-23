@@ -1,0 +1,19 @@
+id: sf-001518
+product_area: development
+true_statement: If an Aura component loads a script with ltng:require and a Lightning web component loads the same script with loadScript, the duplicate load isn't detected.
+false_statement: If an Aura component loads a script with ltng:require and a Lightning web component loads the same script with loadScript, the platform detects the duplicate and loads it once.
+explanation: The two loaders don't share tracking, so a script loaded by both can run twice and must guard itself. The false statement assumes deduplication that doesn't happen across Aura and LWC.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/static-resources.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: 1384a1be27195e8ce8db28126b8b86364f78265a
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:static-resources
+- kt:lightning-web-components
+- kt:aura-components
+difficulty: 3
+created: '2026-11-23'
+status: active

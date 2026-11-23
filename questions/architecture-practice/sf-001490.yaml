@@ -1,0 +1,18 @@
+id: sf-001490
+product_area: architecture-practice
+true_statement: Salesforce introduced solution kits in 2019 with six cross-cloud use cases spanning Commerce, Marketing and Service.
+false_statement: Salesforce introduced solution kits in 2022 with six cross-cloud use cases spanning Commerce, Marketing and Service.
+explanation: The first set of kits arrived in 2019 as downloadable Help articles covering six use cases such as abandoned cart. They are older than 2022, which is why product names in them may be outdated.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/salesforce-solution-kits.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: d1f93e90016484d6c2439c25e2eea6e007c8a1ae
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:salesforce-solution-kits
+- kt:customer-360
+difficulty: 1
+created: '2026-11-23'
+status: active

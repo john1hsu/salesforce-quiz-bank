@@ -1,0 +1,18 @@
+id: sf-001498
+product_area: clouds-and-products
+true_statement: Salesforce said Customer 360 Truth, introduced at Dreamforce 2019, was powered by the open-source Cloud Information Model.
+false_statement: Salesforce said Customer 360 Truth, introduced at Dreamforce 2019, was powered by the open-source Common Data Model.
+explanation: The 2019 Customer 360 Truth launch was tied to the open-source Cloud Information Model. The Common Data Model is a different initiative and not what Salesforce named.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/customer-360.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: 469494193857af579c161e5085b98997948b2be7
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:customer-360
+- kt:data-cloud
+difficulty: 2
+created: '2026-11-23'
+status: active

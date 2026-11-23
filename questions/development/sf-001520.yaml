@@ -1,0 +1,18 @@
+id: sf-001520
+product_area: development
+true_statement: Apex test setup methods are available only in test classes saved at API version 24.0 or later.
+false_statement: Apex test setup methods are available only in test classes saved at API version 40.0 or later.
+explanation: Test setup depends on test data isolation, which arrived in API version 24.0, so classes at 24.0 or later can use it. 40.0 is not the cutoff.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/test-setup-methods.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: 90c2dbd2f67455db7e24f6bbe5dcb073552262f7
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:test-setup-methods
+- kt:apex-testing
+difficulty: 2
+created: '2026-11-23'
+status: active

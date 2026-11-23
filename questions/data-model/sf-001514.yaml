@@ -1,0 +1,19 @@
+id: sf-001514
+product_area: data-model
+true_statement: An external object's name field is chosen by setting isNameField to true on one of its custom fields.
+false_statement: An external object's name field is chosen by setting nameField to Auto Number in the external data source definition.
+explanation: External objects don't get a name field from the wizard; instead one of their custom fields is flagged with isNameField. The false version points at the wrong metadata and type.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/record-name-field.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: bca2c8d2ab373996bffec2e0f2ce178fd0f6bb7b
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:record-name-field
+- kt:external-objects
+- kt:metadata-api
+difficulty: 3
+created: '2026-11-23'
+status: active

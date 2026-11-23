@@ -1,0 +1,18 @@
+id: sf-001451
+product_area: devops-and-alm
+true_statement: Environment Hub SSO matches users first by an explicit user mapping, then by Federation ID, then by a username formula, and the first match wins.
+false_statement: Environment Hub SSO matches users first by Federation ID, then by a username formula, then by an explicit user mapping, and the first match wins.
+explanation: The hub checks an explicit mapping before Federation ID and the username formula, so a defined mapping always takes priority. The false order puts the mapping last.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/environment-hub.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: fdaa281460c3fc4538bafdf1f46d5a6aa1e6090e
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:environment-hub
+- kt:single-sign-on-saml
+difficulty: 3
+created: '2026-11-23'
+status: active

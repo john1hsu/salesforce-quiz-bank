@@ -1,0 +1,18 @@
+id: sf-001482
+product_area: security-and-sharing
+true_statement: When an opportunity's owner changes through the API, the previous owner stays on the team with Read Only or the org-wide default, whichever is greater.
+false_statement: When an opportunity's owner changes through the API, the previous owner is removed from the team and keeps no access beyond the org-wide default.
+explanation: An API owner change keeps the old owner as a team member at Read Only or the org-wide default level, whichever is higher. In the UI, the user picks that level instead; the old owner is not dropped.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/opportunity-teams.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: 21f17fc9d94f20a7bff3497fbaf7f0877956fd43
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:opportunity-teams
+- kt:organization-wide-defaults
+difficulty: 2
+created: '2026-11-23'
+status: active

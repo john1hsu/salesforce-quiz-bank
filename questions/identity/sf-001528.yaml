@@ -1,0 +1,18 @@
+id: sf-001528
+product_area: identity
+true_statement: The Identity Provider Event Log page in Setup shows only the 50 most recent login attempts, so a custom report is needed to see more.
+false_statement: The Identity Provider Event Log page in Setup shows the 20,000 most recent login attempts, so a custom report is rarely needed to see more.
+explanation: The Setup view of the IdP event log is limited to the latest 50 attempts, and a custom report is the way to look further back. The 20,000 figure belongs to a different page.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/identity-provider-event-log.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: 4b4ea7c193126ca9330d5ecfdca046ec1f23523b
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:identity-provider-event-log
+- kt:salesforce-as-identity-provider
+difficulty: 2
+created: '2026-11-23'
+status: active

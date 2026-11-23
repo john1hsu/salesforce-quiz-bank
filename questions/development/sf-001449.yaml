@@ -1,0 +1,18 @@
+id: sf-001449
+product_area: development
+true_statement: To link files loaded with Test.loadData, the parent CSV gets an Id column and the child CSV's lookup column, such as AccountId, holds those Id values.
+false_statement: To link files loaded with Test.loadData, the child CSV's lookup column, such as AccountId, holds the parent rows' Name values instead of an Id column.
+explanation: The pattern is to give parent rows placeholder Id values and reference those same values in the child file's lookup column, loading the parent first. Matching on names is not how the relationship is resolved.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/test-loaddata.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: bc2c852a9d2235889da17838465f71a5d1bae5e2
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:test-loaddata
+- kt:static-resources
+difficulty: 3
+created: '2026-11-23'
+status: active

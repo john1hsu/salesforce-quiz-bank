@@ -1,0 +1,18 @@
+id: sf-001508
+product_area: data-cloud-and-ai
+true_statement: In Data Cloud One, companion orgs can't ingest or unify data; ingestion, identity resolution and unification all run in the home org.
+false_statement: In Data Cloud One, each companion org ingests and unifies its own data, and the home org only hosts the shared data spaces.
+explanation: The home org does all ingestion, identity resolution and unification, and companions only consume the shared metadata and data through the Data Cloud One app. The false version gives companions ingestion duties they don't have.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/data-cloud-one.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: 2ffbc9d05d053ddad243c33ba8933dde6aaff115
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:data-cloud-one
+- kt:data-spaces
+difficulty: 2
+created: '2026-11-23'
+status: active

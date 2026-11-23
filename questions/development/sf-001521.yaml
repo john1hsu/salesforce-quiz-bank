@@ -1,0 +1,18 @@
+id: sf-001521
+product_area: development
+true_statement: When an Apex @TestSetup method calls a non-test method in another class, no code coverage is calculated for that called method.
+false_statement: When an Apex @TestSetup method calls a non-test method in another class, that called method earns code coverage just as it would from a test method.
+explanation: Code invoked from a setup method doesn't count toward coverage, so the code under test should be exercised from the test methods themselves. The false statement assumes setup calls produce coverage.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/test-setup-methods.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: 90c2dbd2f67455db7e24f6bbe5dcb073552262f7
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:test-setup-methods
+- kt:apex-testing
+difficulty: 3
+created: '2026-11-23'
+status: active

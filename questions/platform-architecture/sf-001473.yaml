@@ -1,0 +1,17 @@
+id: sf-001473
+product_area: platform-architecture
+true_statement: Platform-level permissions are set by Salesforce provisioning and can't be changed by an admin, while platform-level preferences such as time zone can be edited in Setup.
+false_statement: Platform-level preferences such as time zone are set by Salesforce provisioning and can't be changed by an admin, while platform-level permissions can be edited in Setup.
+explanation: Perms are switched on or off from the purchase by the provisioning system, so admins can't toggle them. Prefs like language or time zone are configurable settings an admin edits; the false statement swaps the two.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/salesforce-licensing.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: 764484cee25d6e683e3f39a916a65c54db713ed2
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:salesforce-licensing
+difficulty: 2
+created: '2026-11-23'
+status: active

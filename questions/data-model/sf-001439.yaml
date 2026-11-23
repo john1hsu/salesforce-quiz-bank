@@ -1,0 +1,17 @@
+id: sf-001439
+product_area: data-model
+true_statement: Date tokens such as {YYYY} and {MM} in an auto-number display format take their values from the record's creation date evaluated in GMT.
+false_statement: Date tokens such as {YYYY} and {MM} in an auto-number display format take their values from the record's creation date in the creating user's time zone.
+explanation: Auto-number date tokens are evaluated in GMT, not in the user's local time zone, so records created near midnight can show an unexpected date. The false statement swaps in the user's time zone.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/auto-number-fields.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: e728c002b2f816d18d37ac7216ceeed2d9eb1a3f
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:auto-number-fields
+difficulty: 3
+created: '2026-11-23'
+status: active

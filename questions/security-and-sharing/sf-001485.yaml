@@ -1,0 +1,17 @@
+id: sf-001485
+product_area: security-and-sharing
+true_statement: Security Health Check scores an org from 0 to 100, where 100 means its settings match the active baseline as securely as possible.
+false_statement: Security Health Check scores an org from 0 to 10, where 10 means its settings match the active baseline as securely as possible.
+explanation: The Health Check score runs on a 0-100 scale, with 100 meaning full alignment with the baseline in use. It is not a 10-point scale.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/security-health-check.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: e91d3a1ff11c369480b87dd57bab561589e21f32
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:security-health-check
+difficulty: 1
+created: '2026-11-23'
+status: active

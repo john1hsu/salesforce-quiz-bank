@@ -1,0 +1,18 @@
+id: sf-001467
+product_area: integration
+true_statement: A Streaming API CometD socket times out after 110 seconds during a connection, and the client must reconnect within 40 seconds after a successful connect.
+false_statement: A Streaming API CometD socket times out after 40 seconds during a connection, and the client must reconnect within 110 seconds after a successful connect.
+explanation: The fixed ceilings are a 110-second socket timeout and a 40-second window to reconnect. The false statement swaps the two numbers.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/pushtopic-streaming-allocations.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: d426aae01f311636d2ed2ca25c1b28b394c69464
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:pushtopic-streaming-allocations
+- kt:streaming-api
+difficulty: 3
+created: '2026-11-23'
+status: active

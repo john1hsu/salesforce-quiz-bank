@@ -1,0 +1,18 @@
+id: sf-001446
+product_area: development
+true_statement: In an isolated Apex test, querying Owner.IsActive on Account returns null because references through the Owner relationship aren't supported.
+false_statement: In an isolated Apex test, querying Owner.IsActive on Account returns the owner's value because User data stays visible through the Owner relationship.
+explanation: Data silo tests do not support cross-object references via Owner, so such a field comes back null. Although User records are visible to isolated tests, that does not extend to Owner traversal.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/seealldata.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: 63343913fcecda81a42ada287cc451b4596a6b68
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:seealldata
+- kt:apex-testing
+difficulty: 3
+created: '2026-11-23'
+status: active

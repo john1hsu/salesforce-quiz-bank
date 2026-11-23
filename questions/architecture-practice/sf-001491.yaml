@@ -1,0 +1,19 @@
+id: sf-001491
+product_area: architecture-practice
+true_statement: In the B2C single-login solution kit, Experience Cloud is the system of record for profile data and credentials, while B2C Commerce keeps shopping data.
+false_statement: In the B2C single-login solution kit, B2C Commerce is the system of record for profile data and credentials, while Experience Cloud keeps shopping data.
+explanation: The identity kit makes Experience Cloud own profiles and credentials, with Salesforce Identity acting as OAuth provider, and leaves address books and wish lists in B2C Commerce. The false statement swaps the two roles.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/salesforce-solution-kits.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: d1f93e90016484d6c2439c25e2eea6e007c8a1ae
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:salesforce-solution-kits
+- kt:experience-cloud-identity
+- kt:commerce-cloud
+difficulty: 3
+created: '2026-11-23'
+status: active

@@ -1,0 +1,18 @@
+id: sf-001524
+product_area: devops-and-alm
+true_statement: Dev Hub is disabled in a newly provisioned Partner Business Org and must be switched on in Setup before packaging work can begin.
+false_statement: Dev Hub is enabled by default in a newly provisioned Partner Business Org, so packaging work can begin without any Setup change.
+explanation: Although Salesforce wants partners to use the PBO as their Dev Hub, the feature starts off and has to be enabled first. The false statement assumes it is on from day one.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/partner-business-org.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: 291aa06c8ed4c3671252f66afc6de8476f6f3358
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:partner-business-org
+- kt:dev-hub
+difficulty: 2
+created: '2026-11-23'
+status: active

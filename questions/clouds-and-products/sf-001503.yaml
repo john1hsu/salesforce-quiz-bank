@@ -1,0 +1,18 @@
+id: sf-001503
+product_area: clouds-and-products
+true_statement: In Salesforce Scheduler, Service Territory Work Type links a work type to a location, while Work Type Group Member links it to a topic.
+false_statement: In Salesforce Scheduler, Work Type Group Member links a work type to a location, while Service Territory Work Type links it to a topic.
+explanation: Service Territory Work Type is the junction to territories (locations), and Work Type Group Member is the junction to work type groups (topics). The false statement swaps them.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/salesforce-scheduler.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: 2836c54c83985d4c9e17b14659e4e03acc80c454
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:salesforce-scheduler
+- kt:service-appointments
+difficulty: 3
+created: '2026-11-23'
+status: active

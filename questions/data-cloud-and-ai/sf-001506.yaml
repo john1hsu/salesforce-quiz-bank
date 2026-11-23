@@ -1,0 +1,17 @@
+id: sf-001506
+product_area: data-cloud-and-ai
+true_statement: Setting queryRowLimit to zero in a Data 360 Query API V3 request returns only the result schema, with no rows.
+false_statement: Setting queryRowLimit to zero in a Data 360 Query API V3 request removes the row limit and returns every matching row.
+explanation: queryRowLimit works like an implicit LIMIT, so zero yields no rows and just the schema. It does not mean unlimited.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/data-360-query-api.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: 55bdd2efcb1465d7d7e082f7c06dfc1e1f30f1a6
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:data-360-query-api
+difficulty: 2
+created: '2026-11-23'
+status: active

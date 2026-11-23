@@ -1,0 +1,17 @@
+id: sf-001471
+product_area: platform-architecture
+true_statement: Active validation rules per object are capped at 20 in Starter and Professional editions but 200 in Enterprise and Unlimited editions.
+false_statement: Active validation rules per object are capped at 100 in Starter and Professional editions but 500 in Enterprise and Unlimited editions.
+explanation: 'Edition sets the ceiling: Trailhead''s ISV planning unit gives 20 active validation rules per object for Starter and Professional and 200 for Enterprise and Unlimited. The 100 and 500 figures are invented.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/salesforce-licensing.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: 764484cee25d6e683e3f39a916a65c54db713ed2
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:salesforce-licensing
+difficulty: 2
+created: '2026-11-23'
+status: active

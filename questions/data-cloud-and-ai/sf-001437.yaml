@@ -1,0 +1,18 @@
+id: sf-001437
+product_area: data-cloud-and-ai
+true_statement: For a double opt-in, a flow should use the Consent Request action, which grants the opt-in only after the recipient clicks the verification link.
+false_statement: For a double opt-in, a flow should write the opt-in straight to the consent DMO, which grants it as soon as the confirmation email is sent.
+explanation: The Consent Request action holds the opt-in until the verification link is clicked. Writing directly to the consent DMO does not update marketing consent as expected because of a cache layer, and granting on send would defeat the double opt-in.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/consent-management-in-data-cloud.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: e50cab0e2272af12bc9a7aa6e33180285276448f
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:consent-management-in-data-cloud
+- kt:data-cloud-triggered-flows
+difficulty: 3
+created: '2026-11-23'
+status: active

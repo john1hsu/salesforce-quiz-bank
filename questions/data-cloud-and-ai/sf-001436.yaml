@@ -1,0 +1,18 @@
+id: sf-001436
+product_area: data-cloud-and-ai
+true_statement: To retire a Communication Subscription in Marketing Cloud Next, hide it from preference pages, because deleting it cascades and erases its consent history.
+false_statement: To retire a Communication Subscription in Marketing Cloud Next, delete it, because deletion moves its consent history into a read-only audit archive.
+explanation: Deleting a subscription cascades to its consent records and wipes the history permanently, so the recommended path is to hide it from preference pages. There is no archive that preserves the history after deletion.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/consent-management-in-data-cloud.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: e50cab0e2272af12bc9a7aa6e33180285276448f
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:consent-management-in-data-cloud
+- kt:marketing-cloud-next
+difficulty: 2
+created: '2026-11-23'
+status: active

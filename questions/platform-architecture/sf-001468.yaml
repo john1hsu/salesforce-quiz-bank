@@ -1,0 +1,18 @@
+id: sf-001468
+product_area: platform-architecture
+true_statement: An instance name starting with three letters, such as GBR10, runs on Hyperforce, while one starting with two letters, such as AP0, runs in Salesforce-managed data centers.
+false_statement: An instance name starting with two letters, such as AP0, runs on Hyperforce, while one starting with three letters, such as GBR10, runs in Salesforce-managed data centers.
+explanation: 'The prefix length signals the infrastructure: three letters mean Hyperforce and two letters mean first-party data centers. The false statement reverses the mapping.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/pod-and-instance-architecture.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: 8d86d63c7cccb6323ed14becde6f51ee300adf6f
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:pod-and-instance-architecture
+- kt:hyperforce
+difficulty: 2
+created: '2026-11-23'
+status: active

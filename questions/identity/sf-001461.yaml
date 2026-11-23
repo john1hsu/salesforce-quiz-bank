@@ -1,0 +1,18 @@
+id: sf-001461
+product_area: identity
+true_statement: To register Salesforce Authenticator, the app shows a two-word phrase that the user types into the browser, then confirms the connection in the app.
+false_statement: To register Salesforce Authenticator, the browser shows a QR code that the user scans with the app, then confirms the connection in the app.
+explanation: Registration pairs the app and the user's account by having the user enter the app's two-word phrase in the browser. QR scanning is how outside TOTP services are typically added, not how a Salesforce account is paired.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/salesforce-authenticator.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: b196e30d4a7be2758bb60313536e9391218d5eb5
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:salesforce-authenticator
+- kt:identity-verification
+difficulty: 1
+created: '2026-11-23'
+status: active

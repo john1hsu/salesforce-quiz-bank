@@ -1,0 +1,20 @@
+id: sf-001523
+product_area: devops-and-alm
+true_statement: In a Partner Business Org, Environment Hub, the License Management App and the Channel Order App are preinstalled, but the Feature Management App is not.
+false_statement: In a Partner Business Org, Environment Hub, the License Management App and the Feature Management App are preinstalled, but the Channel Order App is not.
+explanation: The PBO comes with Environment Hub, LMA, Channel Order App and Checkout Management App preinstalled; the Feature Management App must be added separately. The false statement swaps which app is missing.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/partner-business-org.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: 291aa06c8ed4c3671252f66afc6de8476f6f3358
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:partner-business-org
+- kt:environment-hub
+- kt:license-management-app
+- kt:channel-order-app
+difficulty: 2
+created: '2026-11-23'
+status: active

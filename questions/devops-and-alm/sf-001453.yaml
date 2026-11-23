@@ -1,0 +1,18 @@
+id: sf-001453
+product_area: devops-and-alm
+true_statement: If a managed package's post install script throws an exception, the install or upgrade is aborted and the error is emailed to the Notify on Apex Error user.
+false_statement: If a managed package's post install script throws an exception, the install or upgrade still completes and the error is emailed to the Notify on Apex Error user.
+explanation: An unhandled exception in onInstall stops the whole installation or upgrade, which is why scripts should catch and log errors. The package is not installed with a failed script.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/post-install-scripts.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: e2468cb1ccb664c57183ec4a8eb4f5bda79ca89e
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:post-install-scripts
+- kt:apex
+difficulty: 2
+created: '2026-11-23'
+status: active

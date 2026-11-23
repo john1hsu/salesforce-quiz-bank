@@ -1,0 +1,18 @@
+id: sf-001519
+product_area: development
+true_statement: A static variable set inside an Apex @TestSetup method is reset before each test method runs, because the static context is reinitialized per transaction.
+false_statement: A static variable set inside an Apex @TestSetup method keeps its value in every test method, because setup and tests share one static context.
+explanation: Setup and each test method run as separate transactions with the static context rebuilt each time, so shared state must live in records. The false statement assumes static values carry over.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/test-setup-methods.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: 90c2dbd2f67455db7e24f6bbe5dcb073552262f7
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:test-setup-methods
+- kt:transaction-control
+difficulty: 2
+created: '2026-11-23'
+status: active

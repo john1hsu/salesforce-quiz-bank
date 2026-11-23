@@ -1,0 +1,18 @@
+id: sf-001515
+product_area: data-model
+true_statement: In Apex describe results, isNameField() returns true for an object's Name field while isCustom() returns false for it, even on custom objects.
+false_statement: In Apex describe results, isNameField() returns true for an object's Name field and isCustom() also returns true for it on custom objects.
+explanation: The name field is a standard field even on a custom object, so isCustom() reports false while isNameField() reports true. The false statement treats it as a custom field.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/record-name-field.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: bca2c8d2ab373996bffec2e0f2ce178fd0f6bb7b
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:record-name-field
+- kt:custom-objects
+difficulty: 3
+created: '2026-11-23'
+status: active

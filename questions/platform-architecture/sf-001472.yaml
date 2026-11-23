@@ -1,0 +1,17 @@
+id: sf-001472
+product_area: platform-architecture
+true_statement: License provisioning applies only to production orgs; Demo, Developer, Scratch and Trial orgs are not provisioned that way.
+false_statement: License provisioning applies to production, Developer and Scratch orgs; only Demo and Trial orgs are not provisioned that way.
+explanation: Salesforce runs provisioning on purchases, upgrades and license-definition patches for production orgs only. Developer and Scratch orgs are excluded along with Demo and Trial orgs.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/salesforce-licensing.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: 764484cee25d6e683e3f39a916a65c54db713ed2
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:salesforce-licensing
+difficulty: 3
+created: '2026-11-23'
+status: active

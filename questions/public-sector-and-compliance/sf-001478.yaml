@@ -1,0 +1,19 @@
+id: sf-001478
+product_area: public-sector-and-compliance
+true_statement: ISO/IEC 27017 gives cloud security guidance to both the cloud service provider and the cloud service customer.
+false_statement: ISO/IEC 27017 gives cloud security guidance only to the cloud service provider, leaving customer duties to ISO/IEC 27018.
+explanation: The standard is written for both sides of the cloud relationship, so a certified provider does not relieve the customer of its own controls. ISO/IEC 27018 is about personal data in public clouds, not customer duties in general.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/iso-iec-27017.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: 7ed5b7563140bf5aacda52296e7ab85bf797fdb2
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:iso-iec-27017
+- kt:shared-responsibility-model
+- kt:iso-iec-27018
+difficulty: 2
+created: '2026-11-23'
+status: active

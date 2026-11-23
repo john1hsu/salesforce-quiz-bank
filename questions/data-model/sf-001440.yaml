@@ -1,0 +1,18 @@
+id: sf-001440
+product_area: data-model
+true_statement: Changing an auto-number field's display format applies only to new records; existing records keep the old format unless you convert, mass-update and convert back.
+false_statement: Changing an auto-number field's display format reformats every existing record automatically, so old and new records always share one format.
+explanation: Format changes are not retroactive. To restyle existing values you temporarily convert the field to Text, update the values with Data Loader, then convert it back to Auto Number.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/auto-number-fields.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: e728c002b2f816d18d37ac7216ceeed2d9eb1a3f
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:auto-number-fields
+- kt:data-loader
+difficulty: 2
+created: '2026-11-23'
+status: active

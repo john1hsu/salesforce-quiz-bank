@@ -1,0 +1,18 @@
+id: sf-001526
+product_area: devops-and-alm
+true_statement: A scratch org snapshot can be taken only from a scratch org that has no namespace and was not itself created from a snapshot.
+false_statement: A scratch org snapshot can be taken only from a scratch org that has a namespace and was itself created from an org shape.
+explanation: Snapshot sources must be namespace-free scratch orgs that weren't built from another snapshot. The false statement reverses the namespace rule and adds an org shape requirement that doesn't exist.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/scratch-org-snapshots.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: 254a25f6fb5f7a8bd1e69633d1ba4c38113502a0
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:scratch-org-snapshots
+- kt:scratch-orgs
+difficulty: 3
+created: '2026-11-23'
+status: active

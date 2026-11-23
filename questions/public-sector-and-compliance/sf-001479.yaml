@@ -1,0 +1,18 @@
+id: sf-001479
+product_area: public-sector-and-compliance
+true_statement: Salesforce's compliance site lists an ISO/IEC 27017 certificate against the 2015 edition, even though the 2026 edition is now current.
+false_statement: Salesforce's compliance site lists an ISO/IEC 27017 certificate against the 2026 edition, matching the edition that is now current.
+explanation: The listed Salesforce certificate cites ISO/IEC 27017:2015, while the second edition appeared in July 2026. That gap is why architects should check which edition a vendor's certificate names.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/iso-iec-27017.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: 7ed5b7563140bf5aacda52296e7ab85bf797fdb2
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:iso-iec-27017
+- kt:hyperforce
+difficulty: 2
+created: '2026-11-23'
+status: active

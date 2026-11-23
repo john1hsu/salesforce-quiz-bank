@@ -1,0 +1,18 @@
+id: sf-001488
+product_area: architecture-practice
+true_statement: Salesforce's 2026 refresh of its reference diagrams retired the diagrams that had been made for the Decision Guides and Fundamentals content.
+false_statement: Salesforce's 2026 refresh of its reference diagrams retired the diagrams that had been made for the Well-Architected and Integration Patterns content.
+explanation: The 2026 refresh updated diagrams for Agentforce, accessibility and renames, and dropped those built for the Decision Guides and Fundamentals. Well-Architected and Integration Patterns diagrams are not what it retired.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/reference-architectures.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: c296224890136bfa7e366de435b5ac1e6f7ca4ef
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:reference-architectures
+- kt:salesforce-architecture-center
+difficulty: 2
+created: '2026-11-23'
+status: active

@@ -1,0 +1,18 @@
+id: sf-001493
+product_area: automation
+true_statement: A Business Rules Engine decision table can combine a primary source object with up to four related objects.
+false_statement: A Business Rules Engine decision table can combine a primary source object with up to two related objects.
+explanation: Multi-object decision tables allow four objects related to the primary source, letting one lookup return values from several of them. The limit is four, not two.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/decision-tables.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: 753dd061d9dcbed5fc881be7c9bdff9a2101a06e
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:decision-tables
+- kt:business-rules-engine
+difficulty: 2
+created: '2026-11-23'
+status: active

@@ -1,0 +1,18 @@
+id: sf-001505
+product_area: data-cloud-and-ai
+true_statement: In ADAPTIVE mode, the Data 360 Query API resultRange.byteLimit for inline results is 20 MB by default and at most.
+false_statement: In ADAPTIVE mode, the Data 360 Query API resultRange.byteLimit for inline results is 100 MB by default and at most.
+explanation: The inline result cap is 20 MB, which is both the default and the maximum. Larger results should be read through the chunk resource.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/data-360-query-api.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: 55bdd2efcb1465d7d7e082f7c06dfc1e1f30f1a6
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:data-360-query-api
+- kt:data-cloud-limits
+difficulty: 3
+created: '2026-11-23'
+status: active

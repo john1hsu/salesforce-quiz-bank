@@ -1,0 +1,17 @@
+id: sf-001484
+product_area: security-and-sharing
+true_statement: Health Check's Fix Risks action applies recommended values to several non-compliant settings at once, so testing it in a sandbox first is advised.
+false_statement: Health Check's Edit link applies recommended values to several non-compliant settings at once, so testing it in a sandbox first is advised.
+explanation: Fix Risks is the bulk action that changes many flagged settings in one go, which can break integrations or access. Edit only opens the page for a single setting so you change it on its own.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/security-health-check.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: e91d3a1ff11c369480b87dd57bab561589e21f32
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:security-health-check
+difficulty: 2
+created: '2026-11-23'
+status: active

@@ -1,0 +1,17 @@
+id: sf-001481
+product_area: security-and-sharing
+true_statement: The OpportunityTeamMember field OpportunityAccessLevel can be used in Apex triggers but not in workflow or validation rules.
+false_statement: The OpportunityTeamMember field OpportunityAccessLevel can be used in validation rules but not in Apex triggers or workflow.
+explanation: The access-level picklist (Read, Edit, All) is available to triggers, while workflow and validation rules can't reference it. The false statement reverses where it works.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/opportunity-teams.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: 21f17fc9d94f20a7bff3497fbaf7f0877956fd43
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:opportunity-teams
+difficulty: 3
+created: '2026-11-23'
+status: active

@@ -1,0 +1,18 @@
+id: sf-001445
+product_area: development
+true_statement: Since API 28.0, a validation rule's VLOOKUP looks up org data during an Apex test only when the test uses SeeAllData=true.
+false_statement: Since API 28.0, a validation rule's VLOOKUP looks up org data during an Apex test whether or not the test uses SeeAllData=true.
+explanation: From API 28.0 onward VLOOKUP honours test data isolation, so it reaches org records only when the test opts in with SeeAllData=true. It does not bypass isolation.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/seealldata.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: 63343913fcecda81a42ada287cc451b4596a6b68
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:seealldata
+- kt:apex-testing
+difficulty: 3
+created: '2026-11-23'
+status: active

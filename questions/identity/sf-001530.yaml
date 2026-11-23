@@ -1,0 +1,18 @@
+id: sf-001530
+product_area: identity
+true_statement: The IdpEventLog object supports only describeSObjects(), query() and retrieve(), so its entries are read-only through the API.
+false_statement: The IdpEventLog object supports create(), update() and delete() as well as query(), so admins can purge its entries through the API.
+explanation: IdpEventLog exposes only describe, query and retrieve calls, making it a read-only object queried with SOQL. No write or delete calls are available on it.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/identity-provider-event-log.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: 4b4ea7c193126ca9330d5ecfdca046ec1f23523b
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:identity-provider-event-log
+- kt:soql
+difficulty: 2
+created: '2026-11-23'
+status: active

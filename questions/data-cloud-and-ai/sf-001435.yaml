@@ -1,0 +1,18 @@
+id: sf-001435
+product_area: data-cloud-and-ai
+true_statement: In Data 360 consent management, consent is anchored to the contact point, so a customer's new email address needs its own new consent record.
+false_statement: In Data 360 consent management, consent is anchored to the person, so a customer's existing consent carries over to a new email address.
+explanation: Consent hangs off the specific email address or phone number rather than the individual, so when the address changes the old consent does not transfer and a fresh record is required. The false statement wrongly attaches consent to the person.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/consent-management-in-data-cloud.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: e50cab0e2272af12bc9a7aa6e33180285276448f
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:consent-management-in-data-cloud
+- kt:data-model-objects
+difficulty: 2
+created: '2026-11-23'
+status: active

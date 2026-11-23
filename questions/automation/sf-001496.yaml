@@ -1,0 +1,18 @@
+id: sf-001496
+product_area: automation
+true_statement: A Salesforce Admins article puts the size limit for a single Flow formula at 3,900 characters.
+false_statement: A Salesforce Admins article puts the size limit for a single Flow formula at 10,000 characters.
+explanation: Flow formulas are capped at 3,900 characters, alongside a limited calculation time. 10,000 characters overstates the limit.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/flow-formula-resources.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: fee4567ff3166397a980eb6729df55a741745ce8
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:flow-formula-resources
+- kt:flow-limits
+difficulty: 2
+created: '2026-11-23'
+status: active

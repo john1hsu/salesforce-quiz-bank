@@ -1,0 +1,18 @@
+id: sf-001459
+product_area: identity
+true_statement: Salesforce Authenticator automation auto-approves a request only when its five factors all match a request the user has approved three times before.
+false_statement: Salesforce Authenticator automation auto-approves a request only when its five factors all match a request the user has approved ten times before.
+explanation: Automation compares service, username, action, location and client with earlier requests and kicks in after a matching request has been approved three times. Ten approvals is not the threshold.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/salesforce-authenticator.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: b196e30d4a7be2758bb60313536e9391218d5eb5
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:salesforce-authenticator
+- kt:multi-factor-authentication
+difficulty: 2
+created: '2026-11-23'
+status: active

@@ -1,0 +1,18 @@
+id: sf-001531
+product_area: identity
+true_statement: If a transaction security policy requires MFA, Lightning Login isn't supported and enrolled users fall back to logging in with username and password.
+false_statement: If a transaction security policy requires MFA, Lightning Login satisfies it and enrolled users keep logging in without a password.
+explanation: Salesforce lists MFA-requiring transaction security policies as a case where Lightning Login is unsupported, sending enrolled users back to password login. The false statement assumes the policy accepts Lightning Login.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/lightning-login.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: 08cfe13af64f04b51b41b7050b14ff769b9a2e8b
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:lightning-login
+- kt:multi-factor-authentication
+difficulty: 3
+created: '2026-11-23'
+status: active

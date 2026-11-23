@@ -1,0 +1,17 @@
+id: sf-001492
+product_area: automation
+true_statement: A decision table's incremental refresh fails when changes exceed 2,000 records, and a full refresh is then required.
+false_statement: A decision table's incremental refresh fails when changes exceed 50,000 records, and a full refresh is then required.
+explanation: Incremental refresh only handles up to 2,000 changed source records; beyond that it fails and a full refresh must run, so bulk loads should be followed by a full refresh. The 50,000 figure is wrong.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/decision-tables.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: 753dd061d9dcbed5fc881be7c9bdff9a2101a06e
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:decision-tables
+difficulty: 2
+created: '2026-11-23'
+status: active

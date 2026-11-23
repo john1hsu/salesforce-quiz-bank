@@ -1,0 +1,18 @@
+id: sf-001480
+product_area: security-and-sharing
+true_statement: Opportunity team roles come from a picklist shared with account teams, so deleting a role value also removes it from account teams.
+false_statement: Opportunity team roles come from their own picklist, separate from account teams, so deleting a role value leaves account teams unchanged.
+explanation: Admins edit one Team Roles picklist that serves both opportunity and account teams, so a rename or deletion hits both. There is no separate picklist for opportunity teams.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/opportunity-teams.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: 21f17fc9d94f20a7bff3497fbaf7f0877956fd43
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:opportunity-teams
+- kt:account-teams
+difficulty: 2
+created: '2026-11-23'
+status: active

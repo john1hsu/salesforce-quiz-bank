@@ -1,0 +1,18 @@
+id: sf-001475
+product_area: public-sector-and-compliance
+true_statement: 'COSO groups internal control objectives into three categories: operations, reporting and compliance.'
+false_statement: 'COSO groups internal control objectives into four categories: strategy, operations, reporting and compliance.'
+explanation: The internal control framework names three objective categories, with reporting covering financial and non-financial, internal and external reporting. A separate strategy category is not one of them.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/coso-internal-control-framework.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: 860137b0a8400e2f930b91206808f192a6c41a25
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:coso-internal-control-framework
+- kt:governance-risk-and-compliance
+difficulty: 1
+created: '2026-11-23'
+status: active

@@ -1,0 +1,17 @@
+id: sf-001474
+product_area: public-sector-and-compliance
+true_statement: The 2013 COSO Internal Control–Integrated Framework spreads 17 principles across its five components.
+false_statement: The 2013 COSO Internal Control–Integrated Framework spreads 20 principles across its five components.
+explanation: The 2013 update introduced 17 principles, each supported by points of focus, distributed over the five components. Twenty is not the count.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/coso-internal-control-framework.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: 860137b0a8400e2f930b91206808f192a6c41a25
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:coso-internal-control-framework
+difficulty: 2
+created: '2026-11-23'
+status: active

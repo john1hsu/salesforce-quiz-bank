@@ -1,0 +1,18 @@
+id: sf-001442
+product_area: data-model
+true_statement: On a custom object, Bulk API, sharing and Streaming API access are enabled as a set, so turning on one requires the other two.
+false_statement: On a custom object, Bulk API, reports and activities are enabled as a set, so turning on one requires the other two.
+explanation: The object definition ties Bulk API, sharing and Streaming API together as one group of switches. Reports and activities are separate settings that can be toggled on their own.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/custom-objects.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: e4850f31e0e2419e75a86bbdc97c4cf027500703
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:custom-objects
+- kt:metadata-api
+difficulty: 3
+created: '2026-11-23'
+status: active

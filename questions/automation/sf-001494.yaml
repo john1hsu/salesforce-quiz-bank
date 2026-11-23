@@ -1,0 +1,17 @@
+id: sf-001494
+product_area: automation
+true_statement: With the Any Value result filter, a decision table returns an output only when every matching row agrees, otherwise an empty response.
+false_statement: With the First Match result filter, a decision table returns an output only when every matching row agrees, otherwise an empty response.
+explanation: Any Value is the filter that returns a result only if all matching rows give the same output. First Match simply returns the output of the first matching row.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/decision-tables.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: 753dd061d9dcbed5fc881be7c9bdff9a2101a06e
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:decision-tables
+difficulty: 3
+created: '2026-11-23'
+status: active

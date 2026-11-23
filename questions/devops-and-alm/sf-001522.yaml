@@ -1,0 +1,17 @@
+id: sf-001522
+product_area: devops-and-alm
+true_statement: A Partner Business Org ships with two Sales & Service Cloud Enterprise Edition licenses for the partner's internal use.
+false_statement: A Partner Business Org ships with ten Sales & Service Cloud Unlimited Edition licenses for the partner's internal use.
+explanation: The PBO is an internal production org that comes with two Enterprise Edition licenses, enough for a small operations team. The false statement inflates both the count and the edition.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/partner-business-org.md
+  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
+  blob: 291aa06c8ed4c3671252f66afc6de8476f6f3358
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:partner-business-org
+difficulty: 2
+created: '2026-11-23'
+status: active
