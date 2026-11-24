@@ -1,0 +1,19 @@
+id: sf-001536
+product_area: integration
+true_statement: Every REST API response carries an Sforce-Limit-Info header showing daily API usage as used over limit, so a client can track it without polling the Limits resource.
+false_statement: Every REST API response carries an Sforce-Limit-Info header showing hourly platform event usage as used over limit, so a client can track it without polling the Limits resource.
+explanation: The header reports api-usage, the daily API request counter, on each response. It does not report platform event publishing; that allocation is read from the Limits resource itself.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/rest-api-limits-resource.md
+  commit: 6f174e2e75fd193adec31ed100620f5ef54797a0
+  blob: ef202247bc5addfadf085d27c6e48386230a3081
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:rest-api-limits-resource
+- kt:rest-api
+- kt:api-request-limits
+difficulty: 2
+created: '2026-11-24'
+status: active

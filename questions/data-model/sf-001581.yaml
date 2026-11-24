@@ -1,0 +1,18 @@
+id: sf-001581
+product_area: data-model
+true_statement: Trailhead's data management material places identity resolution under data validation, as the step that matches and reconciles duplicate records.
+false_statement: Trailhead's data management material places identity resolution under data retention, as the step that decides how long duplicate records are kept.
+explanation: In the delivery stage, validation includes identity resolution, which finds and merges duplicates. Retention belongs to maintenance and sets how long data is kept.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/data-management.md
+  commit: 6f174e2e75fd193adec31ed100620f5ef54797a0
+  blob: 1c520311fa260562e11d4368b40b7a4b2a17c00d
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:data-management
+- kt:identity-resolution
+difficulty: 2
+created: '2026-11-24'
+status: active

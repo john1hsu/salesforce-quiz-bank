@@ -1,0 +1,18 @@
+id: sf-001566
+product_area: automation
+true_statement: When a publisher push-upgrades a packaged flow template, the subscriber's clone made from it stays unchanged.
+false_statement: When a publisher push-upgrades a packaged flow template, the subscriber's clone made from it is updated to match.
+explanation: A clone is a separate flow owned by the subscriber. Upgrades reach only the original template, so the subscriber maintains the clone itself.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/flow-templates.md
+  commit: 6f174e2e75fd193adec31ed100620f5ef54797a0
+  blob: 8c6ecbd36d414e25f194dc12bd071d3a29d7a58e
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:flow-templates
+- kt:second-generation-managed-packages
+difficulty: 2
+created: '2026-11-24'
+status: active

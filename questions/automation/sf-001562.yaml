@@ -1,0 +1,18 @@
+id: sf-001562
+product_area: automation
+true_statement: A Visualforce email template can be at most 1 MB and can't be used for mass email.
+false_statement: A Visualforce email template can be at most 10 MB and is the recommended template type for mass email.
+explanation: Visualforce templates are capped at 1 MB and are excluded from mass email. The larger size and mass-email use are both wrong.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/email-templates.md
+  commit: 6f174e2e75fd193adec31ed100620f5ef54797a0
+  blob: ba2e87167157bead7f92a289630c711ebeef283b
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:email-templates
+- kt:visualforce
+difficulty: 2
+created: '2026-11-24'
+status: active

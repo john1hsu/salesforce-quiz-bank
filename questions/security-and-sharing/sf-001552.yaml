@@ -1,0 +1,18 @@
+id: sf-001552
+product_area: security-and-sharing
+true_statement: Compliant Data Sharing participant groups can nest other groups up to five levels, and the most permissive access a user reaches wins.
+false_statement: Compliant Data Sharing participant groups can nest other groups up to five levels, and the most restrictive access a user reaches wins.
+explanation: When a user is linked to a record through several participant groups with different levels, CDS grants the most permissive one. It never narrows access to the lowest level.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/compliant-data-sharing.md
+  commit: 6f174e2e75fd193adec31ed100620f5ef54797a0
+  blob: dec0d78f5cbdf6c7ca7899ccc29f4d0cc3cf5bbc
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:compliant-data-sharing
+- kt:public-groups
+difficulty: 2
+created: '2026-11-24'
+status: active

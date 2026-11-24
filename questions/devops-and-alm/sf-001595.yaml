@@ -1,0 +1,18 @@
+id: sf-001595
+product_area: devops-and-alm
+true_statement: In an unmanaged package, a custom field on a standard object must be added explicitly, while a field on a packaged custom object is included automatically.
+false_statement: In an unmanaged package, a custom field on a packaged custom object must be added explicitly, while a field on a standard object is included automatically.
+explanation: Components that depend on a packaged custom object ride along implicitly when the object is added. Standard objects aren't packaged, so their custom fields, triggers and layouts must be added one by one.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/unmanaged-packages.md
+  commit: 6f174e2e75fd193adec31ed100620f5ef54797a0
+  blob: a89c5c316f2fb7116d83913a784d309334665f30
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:unmanaged-packages
+- kt:first-generation-managed-packages
+difficulty: 2
+created: '2026-11-24'
+status: active

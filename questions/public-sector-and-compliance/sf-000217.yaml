@@ -6,8 +6,8 @@ explanation: 'The letters rise with impact: Class B covers Low and LI-SaaS, Clas
 source:
   repo: john1hsu/salesforce-knowledge-graph
   path: articles/public-sector-and-compliance/fedramp.md
-  commit: 1a9626507b2858110c996adbfa985703bee41fd5
-  blob: 76ad9b68fd57625188f033da8be450b0b84fc53a
+  commit: 6f174e2e75fd193adec31ed100620f5ef54797a0
+  blob: 28bbf1cda6992323715bc554dc05f590b4d13f72
 verified_release: Winter '27
 feature_status: concept
 concepts:

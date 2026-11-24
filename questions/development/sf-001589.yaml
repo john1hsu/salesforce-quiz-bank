@@ -1,0 +1,20 @@
+id: sf-001589
+product_area: development
+true_statement: Assigning an inline SOQL query that matches no rows to a single sObject variable throws a QueryException, while assigning it to a list just gives an empty list.
+false_statement: Assigning an inline SOQL query that matches no rows to a list variable throws a QueryException, while assigning it to a single sObject just gives null.
+explanation: Single-sObject assignment expects exactly one row and fails with "List has no rows for assignment to SObject" otherwise. List assignment never throws for zero rows, so code should check its size.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/static-soql.md
+  commit: 6f174e2e75fd193adec31ed100620f5ef54797a0
+  blob: c62d54526681c8ebf6900a0bdfe51e26236d0530
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:platform-developer-certification
+concepts:
+- kt:static-soql
+- kt:apex
+difficulty: 1
+created: '2026-11-24'
+status: active

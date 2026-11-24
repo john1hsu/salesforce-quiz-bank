@@ -1,0 +1,18 @@
+id: sf-001572
+product_area: clouds-and-products
+true_statement: Setting FSL__Pinned__c on a service appointment stops automatic scheduling and optimization from moving it.
+false_statement: Setting FSL__Emergency__c on a service appointment stops automatic scheduling and optimization from moving it.
+explanation: The Pinned field locks an appointment in place on the Gantt. The Emergency field is set by the Emergency Wizard to mark urgent work, not to freeze it.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/service-appointments.md
+  commit: 6f174e2e75fd193adec31ed100620f5ef54797a0
+  blob: e1fb62c36b38a423b1520729286401e348aa11a3
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:service-appointments
+- kt:dispatcher-console
+difficulty: 2
+created: '2026-11-24'
+status: active

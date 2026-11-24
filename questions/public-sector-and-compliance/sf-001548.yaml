@@ -1,0 +1,18 @@
+id: sf-001548
+product_area: public-sector-and-compliance
+true_statement: Salesforce publishes its SOC 3 reports per service and tags each by infrastructure, such as first party, Hyperforce, AWS or GCP.
+false_statement: Salesforce publishes a single SOC 3 report that covers every service on every infrastructure it runs on.
+explanation: The SOC 3 category lists dozens of separate documents by service and infrastructure, so an architect must confirm that each cloud in a design, on its actual infrastructure, has a listed report.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/soc-3.md
+  commit: 6f174e2e75fd193adec31ed100620f5ef54797a0
+  blob: e2dfb4e881268669a490794ed226f581d4bc8f1f
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:soc-3
+- kt:hyperforce
+difficulty: 2
+created: '2026-11-24'
+status: active

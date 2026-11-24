@@ -1,0 +1,19 @@
+id: sf-001599
+product_area: identity
+true_statement: The Certificate-Based Login button appears after an admin selects Certificate as an authentication service in My Domain's Authentication Configuration.
+false_statement: The Certificate-Based Login button appears after an admin selects Certificate as an authentication service in the user's profile login settings.
+explanation: CBA is enabled under Identity Verification, but the login option is exposed on the My Domain login page by adding Certificate as an authentication service, which needs Customize Application.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/certificate-based-authentication.md
+  commit: 6f174e2e75fd193adec31ed100620f5ef54797a0
+  blob: 97fc0c5141164e5a70f255ef27b5a352ff945ae3
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:certificate-based-authentication
+- kt:my-domain
+- kt:identity-verification
+difficulty: 2
+created: '2026-11-24'
+status: active

@@ -1,0 +1,18 @@
+id: sf-001532
+product_area: integration
+true_statement: API Experience Hub requires an API Experience Hub license plus at least 2,000 External Identity licenses.
+false_statement: API Experience Hub requires an API Experience Hub license plus at least 200 External Identity licenses.
+explanation: The getting-started prerequisites call for a minimum of 2,000 External Identity licenses, which back the package's 100 service access requests. 200 is far below the stated floor.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/api-experience-hub.md
+  commit: 6f174e2e75fd193adec31ed100620f5ef54797a0
+  blob: 28748e11ed3aefa0e961d3f1375b45559da7f778
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:api-experience-hub
+- kt:external-identity-license
+difficulty: 2
+created: '2026-11-24'
+status: active

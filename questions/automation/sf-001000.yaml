@@ -6,8 +6,8 @@ explanation: The i-th output answers the i-th input, which is what lets the acti
 source:
   repo: john1hsu/salesforce-knowledge-graph
   path: articles/automation/invocable-apex-actions.md
-  commit: f49f2fed2fb2206a1b1451a3a780b0a0decda2cd
-  blob: 3091749928206e9c2ed11d618da4756d3b2481de
+  commit: 6f174e2e75fd193adec31ed100620f5ef54797a0
+  blob: 8ca8241777cbbb9c0ee2e5fd66374fdac5617a0a
 verified_release: Winter '27
 feature_status: current
 certs:

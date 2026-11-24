@@ -1,0 +1,18 @@
+id: sf-001609
+product_area: integration
+true_statement: In API Visualizer, consumers are grouped by client application only when a ClientId enforcement policy is in place; otherwise their traffic falls under an External Traffic node.
+false_statement: In API Visualizer, consumers are always grouped by client application, whether or not a ClientId enforcement policy is in place.
+explanation: Without ClientId enforcement, Visualizer can't tell callers apart, so it lumps their traffic into a single External Traffic node at the top of the canvas.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/application-network.md
+  commit: 6f174e2e75fd193adec31ed100620f5ef54797a0
+  blob: d30dec26341284428c238e9e176622246b477be7
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:application-network
+- kt:api-visualizer
+difficulty: 3
+created: '2026-11-24'
+status: active

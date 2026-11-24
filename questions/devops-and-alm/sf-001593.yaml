@@ -1,0 +1,18 @@
+id: sf-001593
+product_area: devops-and-alm
+true_statement: The sf org create sandbox command has no flag for a post-copy Apex class, so the class must be named in a sandbox definition file.
+false_statement: The sf org create sandbox command takes an --apex-class flag for the post-copy Apex class, so no sandbox definition file is needed.
+explanation: Only the name and license type are available as flags. A post-copy class is set with apexClassName or apexClassId in the definition file, and only one of the two may be used.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/sandboxpostcopy-interface.md
+  commit: 6f174e2e75fd193adec31ed100620f5ef54797a0
+  blob: 667b33324c362e12999f7667382f3fbd7d6120a8
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:sandboxpostcopy-interface
+- kt:salesforce-cli
+difficulty: 2
+created: '2026-11-24'
+status: active

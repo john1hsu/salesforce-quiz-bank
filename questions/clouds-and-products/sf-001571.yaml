@@ -1,0 +1,18 @@
+id: sf-001571
+product_area: clouds-and-products
+true_statement: Service appointments and work orders have separate status lists in Field Service, so completing an appointment doesn't close its work order.
+false_statement: Service appointments and work orders share one status list in Field Service, so completing an appointment automatically closes its work order.
+explanation: Appointments move from None through Completed, Cannot Complete or Canceled, while work orders have their own values such as On Hold and Closed. Each record's status has to be updated in its own right.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/service-appointments.md
+  commit: 6f174e2e75fd193adec31ed100620f5ef54797a0
+  blob: e1fb62c36b38a423b1520729286401e348aa11a3
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:service-appointments
+- kt:work-orders
+difficulty: 2
+created: '2026-11-24'
+status: active

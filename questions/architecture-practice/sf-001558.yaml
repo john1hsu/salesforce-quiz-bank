@@ -1,0 +1,18 @@
+id: sf-001558
+product_area: architecture-practice
+true_statement: Trailhead's B2C Commerce guidance leaves a manual process that involves no system integration off the architecture diagram.
+false_statement: Trailhead's B2C Commerce guidance includes every manual process on the architecture diagram, even ones that involve no system integration.
+explanation: The architecture diagram shows systems in scope and how they interact, including which is the system of record. Purely manual steps without an integration don't belong on it.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/system-landscape-diagrams.md
+  commit: 6f174e2e75fd193adec31ed100620f5ef54797a0
+  blob: b79ad5adcf44023de7226df48fff78f1285c97cb
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:system-landscape-diagrams
+- kt:solution-design-document
+difficulty: 2
+created: '2026-11-24'
+status: active

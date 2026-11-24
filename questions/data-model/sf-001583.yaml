@@ -1,0 +1,18 @@
+id: sf-001583
+product_area: data-model
+true_statement: Salesforce's five-stage data quality framework ends with monitoring, the stage explicitly carried by governance processes and data stewardship.
+false_statement: Salesforce's five-stage data quality framework begins with monitoring, the stage explicitly carried by governance processes and data stewardship.
+explanation: The framework runs profile, clean and standardize, enrich, unify, then monitor. Profiling comes first, and monitoring is the closing, ongoing stage that stewards own.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/data-stewardship.md
+  commit: 6f174e2e75fd193adec31ed100620f5ef54797a0
+  blob: 069bf857dd8d3b0df6274e0e4432fe4f19e5275f
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:data-stewardship
+- kt:data-quality
+difficulty: 2
+created: '2026-11-24'
+status: active

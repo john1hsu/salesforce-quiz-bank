@@ -1,0 +1,18 @@
+id: sf-001565
+product_area: automation
+true_statement: A flow installed from a managed package can be opened and cloned by the subscriber only if the packaged flow is marked as a template.
+false_statement: A flow installed from a managed package can be opened and cloned by the subscriber only if the packaged flow is left active.
+explanation: Packaged flows are normally protected as the publisher's intellectual property. The Template flag is the exception that lets subscribers view, clone and customize a copy; activation status doesn't grant that.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/flow-templates.md
+  commit: 6f174e2e75fd193adec31ed100620f5ef54797a0
+  blob: 8c6ecbd36d414e25f194dc12bd071d3a29d7a58e
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:flow-templates
+- kt:second-generation-managed-packages
+difficulty: 2
+created: '2026-11-24'
+status: active

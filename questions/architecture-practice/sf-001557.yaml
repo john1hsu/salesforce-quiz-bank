@@ -1,0 +1,17 @@
+id: sf-001557
+product_area: architecture-practice
+true_statement: The C4 model describes a system landscape as essentially a system context diagram without a single system at its centre.
+false_statement: The C4 model describes a system landscape as essentially a container diagram centred on a single software system.
+explanation: C4 frames the landscape as a map of all systems in a chosen scope, like a context diagram with no focal system. A container diagram zooms into one system instead.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/system-landscape-diagrams.md
+  commit: 6f174e2e75fd193adec31ed100620f5ef54797a0
+  blob: b79ad5adcf44023de7226df48fff78f1285c97cb
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:system-landscape-diagrams
+difficulty: 2
+created: '2026-11-24'
+status: active

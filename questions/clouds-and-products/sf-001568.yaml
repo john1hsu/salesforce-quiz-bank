@@ -1,0 +1,18 @@
+id: sf-001568
+product_area: clouds-and-products
+true_statement: In the Field Service Dispatcher Console, the Customer First scheduling policy is selected by default, and a dispatcher can switch policies, for example during an emergency.
+false_statement: In the Field Service Dispatcher Console, the Emergency scheduling policy is selected by default, and a dispatcher can switch policies, for example for routine work.
+explanation: The appointment list's Policy control defaults to Customer First. Dispatchers change it when a situation such as an emergency calls for a different policy.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/dispatcher-console.md
+  commit: 6f174e2e75fd193adec31ed100620f5ef54797a0
+  blob: 5e22a1b15a39b657e31ecade1938a16f414c1a0c
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:dispatcher-console
+- kt:field-service-scheduling-policies
+difficulty: 2
+created: '2026-11-24'
+status: active

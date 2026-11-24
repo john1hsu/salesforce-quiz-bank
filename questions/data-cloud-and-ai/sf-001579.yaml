@@ -1,0 +1,17 @@
+id: sf-001579
+product_area: data-cloud-and-ai
+true_statement: By default, a Data 360 engagement related list enrichment shows only the last 7 days of engagement records.
+false_statement: By default, a Data 360 engagement related list enrichment shows the last 90 days of engagement records.
+explanation: Engagement related lists default to a 7-day window, and a dynamic list filter overrides it only if it covers every field mapped to Event Time.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/data-360-enrichments.md
+  commit: 6f174e2e75fd193adec31ed100620f5ef54797a0
+  blob: 73f353305a093fea9f95da71cb54e481e20bf7fb
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:data-360-enrichments
+difficulty: 2
+created: '2026-11-24'
+status: active

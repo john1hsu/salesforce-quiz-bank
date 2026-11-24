@@ -1,0 +1,18 @@
+id: sf-001567
+product_area: automation
+true_statement: A flow approval process version needs a description before it can be saved as a template.
+false_statement: A flow approval process version needs to be activated before it can be saved as a template.
+explanation: The documented steps save the approval process as a new version with a description and then select Template under Show Advanced. A missing description, not activation status, is what blocks saving it as a template.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/flow-templates.md
+  commit: 6f174e2e75fd193adec31ed100620f5ef54797a0
+  blob: 8c6ecbd36d414e25f194dc12bd071d3a29d7a58e
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:flow-templates
+- kt:approval-processes
+difficulty: 2
+created: '2026-11-24'
+status: active

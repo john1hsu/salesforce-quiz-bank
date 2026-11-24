@@ -1,0 +1,18 @@
+id: sf-001555
+product_area: security-and-sharing
+true_statement: In a managed package, a protected custom permission can't be referenced from subscriber orgs, letting ISVs keep internal feature switches hidden.
+false_statement: In a managed package, a protected custom permission can be referenced from subscriber orgs, letting ISVs expose feature switches to customers.
+explanation: Marking a packaged custom permission as protected (IsProtected) hides it from subscriber orgs, which is how ISVs ship hidden switches.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/custom-permissions.md
+  commit: 6f174e2e75fd193adec31ed100620f5ef54797a0
+  blob: f406fff60f0a37ce189c43e3b236ce7cabe357ad
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:custom-permissions
+- kt:second-generation-managed-packages
+difficulty: 2
+created: '2026-11-24'
+status: active

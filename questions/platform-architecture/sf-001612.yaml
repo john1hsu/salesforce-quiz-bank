@@ -1,0 +1,18 @@
+id: sf-001612
+product_area: platform-architecture
+true_statement: Without an Event Monitoring license, API Total Usage event log files are available as daily files covering the last 24 hours.
+false_statement: Without an Event Monitoring license, API Total Usage event log files are available as hourly files kept for 30 days.
+explanation: API Total Usage logs are free, but unlicensed orgs get only daily files for the last 24 hours. Hourly and daily files kept for 30 days require an Event Monitoring license.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/api-version-lifecycle.md
+  commit: 6f174e2e75fd193adec31ed100620f5ef54797a0
+  blob: 30868fd9b6624095b79d7a557f495eb99057f004
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:api-version-lifecycle
+- kt:event-monitoring
+difficulty: 2
+created: '2026-11-24'
+status: active

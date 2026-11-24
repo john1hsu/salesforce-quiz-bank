@@ -1,0 +1,18 @@
+id: sf-001608
+product_area: integration
+true_statement: MuleSoft's API Visualizer draws the application network from traffic seen in the last seven days, without prior configuration.
+false_statement: MuleSoft's API Visualizer draws the application network from traffic seen in the last 30 days, after each API is registered manually.
+explanation: API Visualizer builds its real-time graph automatically, and its connections reflect the past seven days of traffic. It needs no manual registration of each API.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/application-network.md
+  commit: 6f174e2e75fd193adec31ed100620f5ef54797a0
+  blob: d30dec26341284428c238e9e176622246b477be7
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:application-network
+- kt:api-visualizer
+difficulty: 2
+created: '2026-11-24'
+status: active

@@ -1,0 +1,18 @@
+id: sf-001575
+product_area: data-cloud-and-ai
+true_statement: In a Data 360 clean room collaboration, the consumer creates the collaboration and the provider must accept the invitation before it becomes active.
+false_statement: In a Data 360 clean room collaboration, the provider creates the collaboration and the consumer must accept the invitation before it becomes active.
+explanation: The consumer, typically the advertiser, starts the collaboration and sends the invitation. The provider, who owns the data and the use case template, accepts it to make it Active.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/data-360-clean-rooms.md
+  commit: 6f174e2e75fd193adec31ed100620f5ef54797a0
+  blob: 4202a393ab1de529532d19cf389e1d8b5aacdd54
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:data-360-clean-rooms
+- kt:data-clean-room
+difficulty: 2
+created: '2026-11-24'
+status: active

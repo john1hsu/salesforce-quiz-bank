@@ -1,0 +1,18 @@
+id: sf-001554
+product_area: security-and-sharing
+true_statement: A custom permission imported into a Lightning web component evaluates to undefined for users who lack it, so code should test it for truthiness.
+false_statement: A custom permission imported into a Lightning web component evaluates to false for users who lack it, so code should compare it to false.
+explanation: The static import from @salesforce/customPermission returns true for holders and undefined otherwise, so a strict comparison to false would fail.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/custom-permissions.md
+  commit: 6f174e2e75fd193adec31ed100620f5ef54797a0
+  blob: f406fff60f0a37ce189c43e3b236ce7cabe357ad
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:custom-permissions
+- kt:lightning-web-components
+difficulty: 3
+created: '2026-11-24'
+status: active

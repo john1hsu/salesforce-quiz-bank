@@ -1,0 +1,18 @@
+id: sf-001570
+product_area: clouds-and-products
+true_statement: A Dispatcher Console custom action can open a Visualforce page, but not one that belongs to a managed package.
+false_statement: A Dispatcher Console custom action can open any Visualforce page, including one that belongs to a managed package.
+explanation: Custom actions can call Apex or open Visualforce pages that receive ids and dates as GET parameters, but pages shipped in a managed package can't be the target.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/dispatcher-console.md
+  commit: 6f174e2e75fd193adec31ed100620f5ef54797a0
+  blob: 5e22a1b15a39b657e31ecade1938a16f414c1a0c
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:dispatcher-console
+- kt:visualforce
+difficulty: 3
+created: '2026-11-24'
+status: active

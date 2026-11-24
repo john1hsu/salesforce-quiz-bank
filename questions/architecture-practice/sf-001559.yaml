@@ -1,0 +1,18 @@
+id: sf-001559
+product_area: architecture-practice
+true_statement: In TOGAF's Architecture Development Method, Phase E (Opportunities and Solutions) is the first phase concerned directly with implementation and produces the initial Architecture Roadmap.
+false_statement: In TOGAF's Architecture Development Method, Phase A (Architecture Vision) is the first phase concerned directly with implementation and produces the initial Architecture Roadmap.
+explanation: Phase A scopes the work and gets a Statement of Architecture Work approved. Implementation concerns first appear in Phase E, which creates the initial roadmap and any Transition Architectures.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/togaf.md
+  commit: 6f174e2e75fd193adec31ed100620f5ef54797a0
+  blob: b2f66696f9fc6f40510da67e8f82cbbd45cea952
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:togaf
+- kt:enterprise-architecture
+difficulty: 2
+created: '2026-11-24'
+status: active

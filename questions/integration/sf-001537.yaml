@@ -1,0 +1,17 @@
+id: sf-001537
+product_area: integration
+true_statement: The /limits/recordCount resource returns approximate, cached per-object counts that exclude recycle-bin records, so an exact figure needs a SOQL count() query.
+false_statement: The /limits/recordCount resource returns exact, real-time per-object counts that include recycle-bin records, so no SOQL count() query is needed.
+explanation: recordCount serves a snapshot refreshed on no fixed schedule and leaves out recycled and archived rows. When precision matters, Salesforce points to a count() query instead.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/rest-api-limits-resource.md
+  commit: 6f174e2e75fd193adec31ed100620f5ef54797a0
+  blob: ef202247bc5addfadf085d27c6e48386230a3081
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:rest-api-limits-resource
+difficulty: 2
+created: '2026-11-24'
+status: active

@@ -1,0 +1,19 @@
+id: sf-001578
+product_area: data-cloud-and-ai
+true_statement: Each Data 360 copy field enrichment consumes one data action and one data target from the org's Data 360 license.
+false_statement: Each Data 360 copy field enrichment consumes one calculated insight and one data space from the org's Data 360 license.
+explanation: Copy fields are built on the data action machinery, so each enrichment uses a data action and a data target allocation. Calculated insights and data spaces are not what it draws down.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/data-360-enrichments.md
+  commit: 6f174e2e75fd193adec31ed100620f5ef54797a0
+  blob: 73f353305a093fea9f95da71cb54e481e20bf7fb
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:data-360-enrichments
+- kt:data-actions
+- kt:data-cloud-limits
+difficulty: 2
+created: '2026-11-24'
+status: active

@@ -1,0 +1,18 @@
+id: sf-001585
+product_area: data-model
+true_statement: Trailhead treats a field that suddenly stops being populated as a data drift signal that can point to a broken integration or a changed process.
+false_statement: Trailhead treats a field that suddenly stops being populated as normal record ageing that needs no investigation by data stewards.
+explanation: Data drift is the gradual change that erodes quality, and automated checks flag signals like a field going quiet so stewards can trace the integration or process behind it.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/data-stewardship.md
+  commit: 6f174e2e75fd193adec31ed100620f5ef54797a0
+  blob: 069bf857dd8d3b0df6274e0e4432fe4f19e5275f
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:data-stewardship
+- kt:data-quality
+difficulty: 2
+created: '2026-11-24'
+status: active

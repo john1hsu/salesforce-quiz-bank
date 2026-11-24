@@ -1,0 +1,18 @@
+id: sf-001582
+product_area: data-model
+true_statement: Under the U.S. Evidence Act of 2018, every executive agency must appoint a Chief Data Officer.
+false_statement: Under the U.S. Evidence Act of 2018, every executive agency must appoint a Chief Information Security Officer to lead data governance.
+explanation: The Evidence Act requires a Chief Data Officer in each executive agency, and OMB guidance has the CDO chair the data governance body. The CISO is not the role it mandates.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/data-management.md
+  commit: 6f174e2e75fd193adec31ed100620f5ef54797a0
+  blob: 1c520311fa260562e11d4368b40b7a4b2a17c00d
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:data-management
+- kt:data-governance
+difficulty: 2
+created: '2026-11-24'
+status: active

@@ -1,0 +1,18 @@
+id: sf-001544
+product_area: public-sector-and-compliance
+true_statement: SOX Section 404(a) management assessment applies to all public companies, but the Dodd-Frank Act permanently exempted issuers under $75 million in public float from 404(b) auditor attestation.
+false_statement: SOX Section 404(b) auditor attestation applies to all public companies, but the Dodd-Frank Act permanently exempted issuers under $75 million in public float from 404(a) management assessment.
+explanation: Every public company must include management's ICFR assessment under 404(a). The exemption for small issuers applies to the auditor attestation in 404(b), not the other way around.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/sarbanes-oxley-act.md
+  commit: 6f174e2e75fd193adec31ed100620f5ef54797a0
+  blob: 30755a91ea40964bcfc64136d2625e9fb9669a2c
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:sarbanes-oxley-act
+- kt:governance-risk-and-compliance
+difficulty: 3
+created: '2026-11-24'
+status: active

@@ -1,0 +1,18 @@
+id: sf-001598
+product_area: identity
+true_statement: Salesforce doesn't issue user authentication certificates; an enterprise CA or PIV issuer does, and admins upload each user's public certificate to the org.
+false_statement: Salesforce issues user authentication certificates itself from Certificate and Key Management, so no enterprise CA or PIV issuer is needed.
+explanation: UserAuthCertificate records are documented as externally uploaded. The certificate comes from the organization's own PKI or smart-card issuer, and the org stores the public certificate per user.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/certificate-based-authentication.md
+  commit: 6f174e2e75fd193adec31ed100620f5ef54797a0
+  blob: 97fc0c5141164e5a70f255ef27b5a352ff945ae3
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:certificate-based-authentication
+- kt:certificate-and-key-management
+difficulty: 2
+created: '2026-11-24'
+status: active

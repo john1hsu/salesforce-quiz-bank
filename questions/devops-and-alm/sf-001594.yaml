@@ -1,0 +1,18 @@
+id: sf-001594
+product_area: devops-and-alm
+true_statement: An overload of Test.testSandboxPostCopyScript() takes a Boolean that runs the test as the Automated Process user.
+false_statement: An overload of Test.testSandboxPostCopyScript() takes a Boolean that runs the test as a system administrator to bypass permission checks.
+explanation: The extra Boolean simulates real execution by running as the Automated Process user, catching failures that a test run as an administrator would miss.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/sandboxpostcopy-interface.md
+  commit: 6f174e2e75fd193adec31ed100620f5ef54797a0
+  blob: 667b33324c362e12999f7667382f3fbd7d6120a8
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:sandboxpostcopy-interface
+- kt:apex-testing
+difficulty: 3
+created: '2026-11-24'
+status: active

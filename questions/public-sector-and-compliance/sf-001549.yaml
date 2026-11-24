@@ -1,0 +1,18 @@
+id: sf-001549
+product_area: public-sector-and-compliance
+true_statement: The AICPA's illustrative SOC 3 report is not prescriptive, and each organization chooses which trust services categories are in scope.
+false_statement: The AICPA's illustrative SOC 3 report is prescriptive, and every SOC 3 must cover all five trust services categories.
+explanation: The AICPA treats its example SOC 3 and the categories shown in it as illustrative. As with SOC 2, the organization selects the categories it reports on.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/soc-3.md
+  commit: 6f174e2e75fd193adec31ed100620f5ef54797a0
+  blob: e2dfb4e881268669a490794ed226f581d4bc8f1f
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:soc-3
+- kt:trust-services-criteria
+difficulty: 2
+created: '2026-11-24'
+status: active

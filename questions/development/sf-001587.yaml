@@ -1,0 +1,18 @@
+id: sf-001587
+product_area: development
+true_statement: Design tokens are supported in SLDS 1 themes but not in SLDS 2 themes, where global styling hooks replace them.
+false_statement: Design tokens are supported in SLDS 2 themes but not in SLDS 1 themes, where global styling hooks replace them.
+explanation: SLDS 2 drops design tokens in favor of styling hooks, and SLDS Linter or SLDS Validator finds tokens and swaps in global hooks before an org moves to Cosmos.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/salesforce-lightning-design-system.md
+  commit: 6f174e2e75fd193adec31ed100620f5ef54797a0
+  blob: 67891ed9dcc861df41a6f88b63a60c5f4d509387
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:salesforce-lightning-design-system
+- kt:slds-linter
+difficulty: 2
+created: '2026-11-24'
+status: active

@@ -1,0 +1,17 @@
+id: sf-001604
+product_area: integration
+true_statement: For an Apex REST URL mapping, an exact match wins, and otherwise the longest matching wildcard pattern handles the request.
+false_statement: For an Apex REST URL mapping, the first wildcard pattern deployed wins, even when another class has an exact match for the request.
+explanation: Salesforce resolves Apex REST routes by preferring an exact urlMapping match, then the longest matching wildcard. A request matching nothing gets HTTP 404.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/apex-rest-services.md
+  commit: 6f174e2e75fd193adec31ed100620f5ef54797a0
+  blob: a19880143f8b20b5e0cde864a99c382c83de6c5b
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:apex-rest-services
+difficulty: 2
+created: '2026-11-24'
+status: active

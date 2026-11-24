@@ -1,0 +1,18 @@
+id: sf-001569
+product_area: clouds-and-products
+true_statement: A service territory's Number of Services to Drip Feed field overrides the org-wide drip-feed dispatching value for that territory.
+false_statement: The org-wide drip-feed dispatching value in Field Service Settings overrides any Number of Services to Drip Feed value set on a service territory.
+explanation: Drip-feed dispatching releases a set number of appointments at a time, configured org-wide under Dispatch settings. A value on an individual territory takes precedence there.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/dispatcher-console.md
+  commit: 6f174e2e75fd193adec31ed100620f5ef54797a0
+  blob: 5e22a1b15a39b657e31ecade1938a16f414c1a0c
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:dispatcher-console
+- kt:field-service
+difficulty: 2
+created: '2026-11-24'
+status: active

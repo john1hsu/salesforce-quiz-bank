@@ -1,0 +1,17 @@
+id: sf-001547
+product_area: public-sector-and-compliance
+true_statement: Although SOC 3 is a general-use report, Salesforce's compliance site requires a login before its SOC 3 documents can be downloaded.
+false_statement: Because SOC 3 is a general-use report, Salesforce's compliance site offers its SOC 3 documents as public links that need no login to download.
+explanation: General-use status means the report may be freely shared, but Salesforce's document pages still put downloads behind a compliance-site login, so buyers should plan for an account.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/soc-3.md
+  commit: 6f174e2e75fd193adec31ed100620f5ef54797a0
+  blob: e2dfb4e881268669a490794ed226f581d4bc8f1f
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:soc-3
+difficulty: 2
+created: '2026-11-24'
+status: active

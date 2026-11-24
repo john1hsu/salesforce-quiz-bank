@@ -1,0 +1,18 @@
+id: sf-001610
+product_area: platform-architecture
+true_statement: Salesforce's API end-of-life policy supports each API version for at least three years and gives users at least one year's notice before support ends.
+false_statement: Salesforce's API end-of-life policy supports each API version for at least five years and gives users at least six months' notice before support ends.
+explanation: The published policy promises a minimum of three years of support per version and a minimum one-year notice to customers still using a version before it is retired.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/api-version-lifecycle.md
+  commit: 6f174e2e75fd193adec31ed100620f5ef54797a0
+  blob: 30868fd9b6624095b79d7a557f495eb99057f004
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:api-version-lifecycle
+- kt:salesforce-apis
+difficulty: 2
+created: '2026-11-24'
+status: active

@@ -1,0 +1,19 @@
+id: sf-001615
+product_area: platform-architecture
+true_statement: Out of Region Disaster Recovery is a separately sold Hyperforce offering that replicates an instance to a secondary geography for failover after a regional disruption.
+false_statement: Out of Region Disaster Recovery is included for every Hyperforce customer and replicates an instance to a secondary geography for failover after a regional disruption.
+explanation: Cross-AZ resilience inside one region is standard, but replicating to another region is an add-on Salesforce sells. It also differs from Backup & Recover, which restores org data.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/disaster-recovery-and-site-switching.md
+  commit: 6f174e2e75fd193adec31ed100620f5ef54797a0
+  blob: e36e27af524f0f2b3660383ba9a0f35ce65d4fb7
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:disaster-recovery-and-site-switching
+- kt:hyperforce
+- kt:backup-and-recover
+difficulty: 2
+created: '2026-11-24'
+status: active

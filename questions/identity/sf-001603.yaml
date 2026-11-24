@@ -1,0 +1,18 @@
+id: sf-001603
+product_area: identity
+true_statement: WebAuthn security keys work in Chrome, Edge Chromium, Firefox and Safari, while older U2F keys work only in Chrome and Edge Chromium.
+false_statement: U2F security keys work in Chrome, Edge Chromium, Firefox and Safari, while newer WebAuthn keys work only in Chrome and Edge Chromium.
+explanation: WebAuthn has broad browser support, whereas the legacy U2F standard is limited to Chrome 41 or later and Edge Chromium.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/security-keys.md
+  commit: 6f174e2e75fd193adec31ed100620f5ef54797a0
+  blob: 1907ad68c5d030f83e53d376da568f7c202331e6
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:security-keys
+- kt:webauthn
+difficulty: 2
+created: '2026-11-24'
+status: active

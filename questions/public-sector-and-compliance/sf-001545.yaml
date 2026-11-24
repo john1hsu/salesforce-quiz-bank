@@ -1,0 +1,17 @@
+id: sf-001545
+product_area: public-sector-and-compliance
+true_statement: SOX Section 103 requires registered audit firms to keep audit workpapers for at least seven years.
+false_statement: SOX Section 103 requires registered audit firms to keep audit workpapers for at least three years.
+explanation: Section 103 sets a seven-year minimum for retaining audit workpapers and also requires a second-partner review of each audit. Three years is too short.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/sarbanes-oxley-act.md
+  commit: 6f174e2e75fd193adec31ed100620f5ef54797a0
+  blob: 30755a91ea40964bcfc64136d2625e9fb9669a2c
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:sarbanes-oxley-act
+difficulty: 2
+created: '2026-11-24'
+status: active

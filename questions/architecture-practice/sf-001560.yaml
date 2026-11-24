@@ -1,0 +1,18 @@
+id: sf-001560
+product_area: architecture-practice
+true_statement: TOGAF defines four architecture domains, business, data, application and technology, and treats security as a concern that cuts across all of them.
+false_statement: TOGAF defines five architecture domains, business, data, application, technology and security, with security as a domain of its own.
+explanation: The standard has four domains. Security is handled as a cross-cutting concern, with its own Series Guide, rather than as a fifth domain.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/togaf.md
+  commit: 6f174e2e75fd193adec31ed100620f5ef54797a0
+  blob: b2f66696f9fc6f40510da67e8f82cbbd45cea952
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:togaf
+- kt:business-architecture
+difficulty: 2
+created: '2026-11-24'
+status: active

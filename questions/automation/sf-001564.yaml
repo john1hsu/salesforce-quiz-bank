@@ -1,0 +1,18 @@
+id: sf-001564
+product_area: automation
+true_statement: An enhanced letterhead can be attached only to Lightning email templates that don't use Salesforce Merge Language.
+false_statement: An enhanced letterhead can be attached only to Classic Visualforce email templates that use Salesforce Merge Language.
+explanation: The EnhancedLetterhead object supplies a header and footer for Lightning templates, and only those without Salesforce Merge Language. It is not a Visualforce template feature.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/email-templates.md
+  commit: 6f174e2e75fd193adec31ed100620f5ef54797a0
+  blob: ba2e87167157bead7f92a289630c711ebeef283b
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:email-templates
+- kt:enhanced-letterheads
+difficulty: 2
+created: '2026-11-24'
+status: active

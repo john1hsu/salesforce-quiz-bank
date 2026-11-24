@@ -1,0 +1,19 @@
+id: sf-001543
+product_area: platform-architecture
+true_statement: Setting a scratch org's release to preview fails when the Dev Hub is already on the newest release.
+false_statement: Setting a scratch org's release to previous fails when the Dev Hub is already on the newest release.
+explanation: 'The values are relative to the Dev Hub''s version: preview errors once the Dev Hub is on the newest release, while previous errors when the Dev Hub is on the GA release.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/sandbox-preview.md
+  commit: 6f174e2e75fd193adec31ed100620f5ef54797a0
+  blob: b957652a35d536021b021336de6e2f6983c34c87
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:sandbox-preview
+- kt:scratch-orgs
+- kt:dev-hub
+difficulty: 3
+created: '2026-11-24'
+status: active

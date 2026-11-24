@@ -1,0 +1,19 @@
+id: sf-001534
+product_area: integration
+true_statement: API Experience Hub portals are set up starting in Anypoint Platform, which handles deployment, catalog and user management, while the portal itself runs on Experience Cloud.
+false_statement: API Experience Hub portals are set up starting in Salesforce Setup, which handles deployment, catalog and user management, while the portal itself runs on Experience Cloud.
+explanation: An admin begins in Anypoint Platform, links it to a Salesforce org and curates services from Anypoint Exchange there. Salesforce Setup is not the starting point, though Experience Cloud hosts the resulting portal.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/api-experience-hub.md
+  commit: 6f174e2e75fd193adec31ed100620f5ef54797a0
+  blob: 28748e11ed3aefa0e961d3f1375b45559da7f778
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:api-experience-hub
+- kt:mulesoft-anypoint-platform
+- kt:experience-cloud
+difficulty: 1
+created: '2026-11-24'
+status: active

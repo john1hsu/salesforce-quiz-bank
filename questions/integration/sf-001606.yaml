@@ -1,0 +1,18 @@
+id: sf-001606
+product_area: integration
+true_statement: An Apex REST request or response can be at most 6 MB for synchronous Apex and 12 MB for asynchronous Apex.
+false_statement: An Apex REST request or response can be at most 3 MB for synchronous Apex and 6 MB for asynchronous Apex.
+explanation: Apex REST payloads are capped at 6 MB synchronously and 12 MB asynchronously, on top of the normal governor and API request limits.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/apex-rest-services.md
+  commit: 6f174e2e75fd193adec31ed100620f5ef54797a0
+  blob: a19880143f8b20b5e0cde864a99c382c83de6c5b
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:apex-rest-services
+- kt:governor-limits
+difficulty: 2
+created: '2026-11-24'
+status: active

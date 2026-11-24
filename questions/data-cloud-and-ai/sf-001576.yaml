@@ -1,0 +1,18 @@
+id: sf-001576
+product_area: data-cloud-and-ai
+true_statement: In Data 360 Clean Rooms, only segments can be shared, and individual records may be shared only in hashed form with the party that owns them.
+false_statement: In Data 360 Clean Rooms, individual records can be shared in plain text with the other party, as long as both are Data 360 customers.
+explanation: Clean rooms exchange audiences, not customer lists. Record-level data appears only hashed and only to its owner, which keeps each side's raw data private.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/data-360-clean-rooms.md
+  commit: 6f174e2e75fd193adec31ed100620f5ef54797a0
+  blob: 4202a393ab1de529532d19cf389e1d8b5aacdd54
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:data-360-clean-rooms
+- kt:data-cloud-segmentation
+difficulty: 2
+created: '2026-11-24'
+status: active

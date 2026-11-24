@@ -1,0 +1,18 @@
+id: sf-001602
+product_area: identity
+true_statement: U2F security keys registered before Summer '22 are encrypted with a master key on the Certificate and Key Management page, and deleting that key locks those users out.
+false_statement: U2F security keys registered before Summer '22 are encrypted with each user's password hash, so resetting the password locks those users out.
+explanation: Legacy U2F registrations depend on a master encryption key stored in Certificate and Key Management. Removing it makes those registrations unusable.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/security-keys.md
+  commit: 6f174e2e75fd193adec31ed100620f5ef54797a0
+  blob: 1907ad68c5d030f83e53d376da568f7c202331e6
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:security-keys
+- kt:certificate-and-key-management
+difficulty: 3
+created: '2026-11-24'
+status: active

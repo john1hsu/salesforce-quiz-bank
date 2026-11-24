@@ -6,8 +6,8 @@ explanation: Invocable Apex is limited to after-save record-triggered flows. Bef
 source:
   repo: john1hsu/salesforce-knowledge-graph
   path: articles/automation/flow-builder.md
-  commit: 91f8675154c337a548ff9902de9162f1a8c8a1fe
-  blob: fd0af4b6a6fb0f8b5daf6d9d37a1bbc4db3536d1
+  commit: 6f174e2e75fd193adec31ed100620f5ef54797a0
+  blob: 4c55c767afa82901a7d845beb8f9ea4db24c4f8c
 verified_release: Winter '27
 feature_status: current
 concepts:

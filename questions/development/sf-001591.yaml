@@ -1,0 +1,20 @@
+id: sf-001591
+product_area: development
+true_statement: In static SOQL, bind variables can supply WHERE values, IN lists, LIMIT and OFFSET, but not the units argument of the DISTANCE function.
+false_statement: In static SOQL, bind variables can supply WHERE values, IN lists and the units argument of the DISTANCE function, but not LIMIT or OFFSET.
+explanation: Apex binds are accepted in filters, IN and NOT IN lists, LIMIT, OFFSET and WITH DIVISION. DISTANCE units are the documented exception.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/static-soql.md
+  commit: 6f174e2e75fd193adec31ed100620f5ef54797a0
+  blob: c62d54526681c8ebf6900a0bdfe51e26236d0530
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:platform-developer-certification
+concepts:
+- kt:static-soql
+- kt:soql
+difficulty: 3
+created: '2026-11-24'
+status: active

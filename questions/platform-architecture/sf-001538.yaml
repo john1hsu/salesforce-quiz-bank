@@ -1,0 +1,18 @@
+id: sf-001538
+product_area: platform-architecture
+true_statement: A seasonal release's pre-release org is a Developer Edition org on the new version that contains none of your own customisations.
+false_statement: A seasonal release's pre-release org is a copy of your production org on the new version that contains all of your own customisations.
+explanation: Pre-release orgs are fresh Developer Edition orgs, usually available a few weeks before sandbox preview, for trying new features. Testing against your own metadata happens in a sandbox on a preview instance instead.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/salesforce-seasonal-releases.md
+  commit: 6f174e2e75fd193adec31ed100620f5ef54797a0
+  blob: 6abb937193e8c5255138c0e8f5dff1abd7a5dacc
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:salesforce-seasonal-releases
+- kt:sandbox-preview
+difficulty: 1
+created: '2026-11-24'
+status: active

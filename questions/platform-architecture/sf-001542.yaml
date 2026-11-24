@@ -1,0 +1,19 @@
+id: sf-001542
+product_area: platform-architecture
+true_statement: When creating a preview scratch org, the --release flag of sf org create scratch overrides the release value in the scratch org definition file.
+false_statement: When creating a preview scratch org, the release value in the scratch org definition file overrides the --release flag of sf org create scratch.
+explanation: Both places accept preview or previous, and if they disagree the command-line flag takes precedence over the definition file.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/sandbox-preview.md
+  commit: 6f174e2e75fd193adec31ed100620f5ef54797a0
+  blob: b957652a35d536021b021336de6e2f6983c34c87
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:sandbox-preview
+- kt:scratch-orgs
+- kt:dev-hub
+difficulty: 2
+created: '2026-11-24'
+status: active

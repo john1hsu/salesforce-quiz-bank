@@ -1,0 +1,18 @@
+id: sf-001607
+product_area: integration
+true_statement: In MuleSoft's terms, an application network is the outcome an integration program aims for, while API-led connectivity is the method used to build it.
+false_statement: In MuleSoft's terms, API-led connectivity is the outcome an integration program aims for, while an application network is the method used to build it.
+explanation: The application network is the target state of reusable, governed APIs linking apps, data and devices. API-led connectivity, with its System, Process and Experience layers, is how you get there.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/application-network.md
+  commit: 6f174e2e75fd193adec31ed100620f5ef54797a0
+  blob: d30dec26341284428c238e9e176622246b477be7
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:application-network
+- kt:api-led-connectivity
+difficulty: 1
+created: '2026-11-24'
+status: active

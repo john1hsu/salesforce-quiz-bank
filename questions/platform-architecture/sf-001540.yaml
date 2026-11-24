@@ -1,0 +1,18 @@
+id: sf-001540
+product_area: platform-architecture
+true_statement: Salesforce's three yearly seasonal upgrades are applied automatically to every customer and need only about five minutes of scheduled maintenance.
+false_statement: Salesforce's three yearly seasonal upgrades are applied when each customer opts in and need about five hours of scheduled maintenance.
+explanation: Every org is upgraded automatically, keeping all customers on one version, and the upgrade takes roughly five minutes of maintenance. Customers cannot opt out, and the window is not hours long.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/salesforce-seasonal-releases.md
+  commit: 6f174e2e75fd193adec31ed100620f5ef54797a0
+  blob: 6abb937193e8c5255138c0e8f5dff1abd7a5dacc
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:salesforce-seasonal-releases
+- kt:multitenancy
+difficulty: 1
+created: '2026-11-24'
+status: active

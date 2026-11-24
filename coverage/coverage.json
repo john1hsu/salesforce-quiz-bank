@@ -1,45 +1,45 @@
 {
  "totals": {
-  "active": 1520,
+  "active": 1605,
   "retired": 2
  },
  "areas": {
   "architecture-practice": {
-   "active": 131
+   "active": 137
   },
   "automation": {
-   "active": 126
-  },
-  "clouds-and-products": {
-   "active": 131
-  },
-  "data-cloud-and-ai": {
    "active": 132
   },
+  "clouds-and-products": {
+   "active": 137
+  },
+  "data-cloud-and-ai": {
+   "active": 138
+  },
   "data-model": {
-   "active": 130
+   "active": 136
   },
   "development": {
-   "active": 129,
+   "active": 135,
    "retired": 1
   },
   "devops-and-alm": {
-   "active": 122
+   "active": 128
   },
   "identity": {
-   "active": 126
+   "active": 132
   },
   "integration": {
-   "active": 122
+   "active": 134
   },
   "platform-architecture": {
-   "active": 124
+   "active": 136
   },
   "public-sector-and-compliance": {
-   "active": 126
+   "active": 133
   },
   "security-and-sharing": {
-   "active": 121,
+   "active": 127,
    "retired": 1
   }
  },
@@ -161,6 +161,9 @@
   "articles/architecture-practice/system-architect-certification.md": {
    "active": 3
   },
+  "articles/architecture-practice/system-landscape-diagrams.md": {
+   "active": 3
+  },
   "articles/architecture-practice/tableau-architect-certification.md": {
    "active": 3
   },
@@ -168,6 +171,9 @@
    "active": 3
   },
   "articles/architecture-practice/testing-strategy.md": {
+   "active": 3
+  },
+  "articles/architecture-practice/togaf.md": {
    "active": 3
   },
   "articles/architecture-practice/total-cost-of-ownership.md": {
@@ -215,6 +221,9 @@
   "articles/automation/email-alerts.md": {
    "active": 3
   },
+  "articles/automation/email-templates.md": {
+   "active": 3
+  },
   "articles/automation/escalation-rules.md": {
    "active": 3
   },
@@ -243,6 +252,9 @@
    "active": 3
   },
   "articles/automation/flow-orchestrator.md": {
+   "active": 3
+  },
+  "articles/automation/flow-templates.md": {
    "active": 3
   },
   "articles/automation/flow-tests.md": {
@@ -341,6 +353,9 @@
   "articles/clouds-and-products/customer-360.md": {
    "active": 3
   },
+  "articles/clouds-and-products/dispatcher-console.md": {
+   "active": 3
+  },
   "articles/clouds-and-products/entitlement-management.md": {
    "active": 3
   },
@@ -431,6 +446,9 @@
   "articles/clouds-and-products/salesforce-scheduler.md": {
    "active": 3
   },
+  "articles/clouds-and-products/service-appointments.md": {
+   "active": 3
+  },
   "articles/clouds-and-products/service-cloud.md": {
    "active": 3
   },
@@ -483,6 +501,12 @@
    "active": 3
   },
   "articles/data-cloud-and-ai/consent-management-in-data-cloud.md": {
+   "active": 3
+  },
+  "articles/data-cloud-and-ai/data-360-clean-rooms.md": {
+   "active": 3
+  },
+  "articles/data-cloud-and-ai/data-360-enrichments.md": {
    "active": 3
   },
   "articles/data-cloud-and-ai/data-360-query-api.md": {
@@ -611,10 +635,16 @@
   "articles/data-model/data-loader.md": {
    "active": 3
   },
+  "articles/data-model/data-management.md": {
+   "active": 3
+  },
   "articles/data-model/data-quality.md": {
    "active": 3
   },
   "articles/data-model/data-skew.md": {
+   "active": 3
+  },
+  "articles/data-model/data-stewardship.md": {
    "active": 3
   },
   "articles/data-model/divisions.md": {
@@ -800,6 +830,9 @@
   "articles/development/queueable-apex.md": {
    "active": 3
   },
+  "articles/development/salesforce-lightning-design-system.md": {
+   "active": 3
+  },
   "articles/development/scheduled-apex.md": {
    "active": 3
   },
@@ -817,6 +850,9 @@
    "active": 3
   },
   "articles/development/static-resources.md": {
+   "active": 3
+  },
+  "articles/development/static-soql.md": {
    "active": 3
   },
   "articles/development/test-data-factory.md": {
@@ -945,6 +981,9 @@
   "articles/devops-and-alm/sandbox-templates.md": {
    "active": 3
   },
+  "articles/devops-and-alm/sandboxpostcopy-interface.md": {
+   "active": 3
+  },
   "articles/devops-and-alm/scratch-org-allocations.md": {
    "active": 3
   },
@@ -966,6 +1005,9 @@
   "articles/devops-and-alm/unlocked-packages.md": {
    "active": 1
   },
+  "articles/devops-and-alm/unmanaged-packages.md": {
+   "active": 3
+  },
   "articles/identity/account-takeover.md": {
    "active": 3
   },
@@ -973,6 +1015,9 @@
    "active": 3
   },
   "articles/identity/certificate-and-key-management.md": {
+   "active": 3
+  },
+  "articles/identity/certificate-based-authentication.md": {
    "active": 3
   },
   "articles/identity/client-credentials-flow.md": {
@@ -1080,6 +1125,9 @@
   "articles/identity/scim.md": {
    "active": 3
   },
+  "articles/identity/security-keys.md": {
+   "active": 3
+  },
   "articles/identity/session-security-levels.md": {
    "active": 3
   },
@@ -1098,10 +1146,19 @@
   "articles/identity/web-server-flow.md": {
    "active": 3
   },
+  "articles/integration/apex-rest-services.md": {
+   "active": 3
+  },
+  "articles/integration/api-experience-hub.md": {
+   "active": 3
+  },
   "articles/integration/api-led-connectivity.md": {
    "active": 3
   },
   "articles/integration/api-request-limits.md": {
+   "active": 3
+  },
+  "articles/integration/application-network.md": {
    "active": 3
   },
   "articles/integration/batch-data-synchronization.md": {
@@ -1206,6 +1263,9 @@
   "articles/integration/remote-site-settings.md": {
    "active": 3
   },
+  "articles/integration/rest-api-limits-resource.md": {
+   "active": 3
+  },
   "articles/integration/rest-api.md": {
    "active": 3
   },
@@ -1230,6 +1290,9 @@
   "articles/platform-architecture/apexguru.md": {
    "active": 3
   },
+  "articles/platform-architecture/api-version-lifecycle.md": {
+   "active": 3
+  },
   "articles/platform-architecture/bulkification.md": {
    "active": 3
   },
@@ -1249,6 +1312,9 @@
    "active": 3
   },
   "articles/platform-architecture/data-and-file-storage-allocations.md": {
+   "active": 3
+  },
+  "articles/platform-architecture/disaster-recovery-and-site-switching.md": {
    "active": 3
   },
   "articles/platform-architecture/distributed-computing.md": {
@@ -1330,6 +1396,12 @@
    "active": 3
   },
   "articles/platform-architecture/salesforce-platform.md": {
+   "active": 3
+  },
+  "articles/platform-architecture/salesforce-seasonal-releases.md": {
+   "active": 3
+  },
+  "articles/platform-architecture/sandbox-preview.md": {
    "active": 3
   },
   "articles/platform-architecture/sandbox-types.md": {
@@ -1428,6 +1500,9 @@
   "articles/public-sector-and-compliance/iso-iec-27017.md": {
    "active": 3
   },
+  "articles/public-sector-and-compliance/iso-iec-27018.md": {
+   "active": 1
+  },
   "articles/public-sector-and-compliance/it-governance.md": {
    "active": 3
   },
@@ -1455,6 +1530,9 @@
   "articles/public-sector-and-compliance/public-sector-solutions.md": {
    "active": 3
   },
+  "articles/public-sector-and-compliance/sarbanes-oxley-act.md": {
+   "active": 3
+  },
   "articles/public-sector-and-compliance/section-508-accessibility.md": {
    "active": 3
   },
@@ -1468,6 +1546,9 @@
    "active": 3
   },
   "articles/public-sector-and-compliance/soc-2.md": {
+   "active": 3
+  },
+  "articles/public-sector-and-compliance/soc-3.md": {
    "active": 3
   },
   "articles/public-sector-and-compliance/trust-services-criteria.md": {
@@ -1485,10 +1566,16 @@
   "articles/security-and-sharing/classic-encryption.md": {
    "active": 3
   },
+  "articles/security-and-sharing/compliant-data-sharing.md": {
+   "active": 3
+  },
   "articles/security-and-sharing/content-security-policy.md": {
    "active": 3
   },
   "articles/security-and-sharing/cross-site-scripting.md": {
+   "active": 3
+  },
+  "articles/security-and-sharing/custom-permissions.md": {
    "active": 3
   },
   "articles/security-and-sharing/customer-community-licenses.md": {

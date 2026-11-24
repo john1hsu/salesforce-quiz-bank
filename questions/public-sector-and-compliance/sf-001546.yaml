@@ -1,0 +1,18 @@
+id: sf-001546
+product_area: public-sector-and-compliance
+true_statement: The SOX-created Public Company Accounting Oversight Board has five members, of whom at most two may be CPAs.
+false_statement: The SOX-created Public Company Accounting Oversight Board has five members, of whom at least three must be CPAs.
+explanation: Section 101 caps CPA membership on the five-member PCAOB at two, keeping the majority of the board outside the accounting profession.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/sarbanes-oxley-act.md
+  commit: 6f174e2e75fd193adec31ed100620f5ef54797a0
+  blob: 30755a91ea40964bcfc64136d2625e9fb9669a2c
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:sarbanes-oxley-act
+- kt:corporate-governance
+difficulty: 2
+created: '2026-11-24'
+status: active

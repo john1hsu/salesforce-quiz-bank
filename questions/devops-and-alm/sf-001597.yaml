@@ -1,0 +1,18 @@
+id: sf-001597
+product_area: devops-and-alm
+true_statement: Salesforce advises installing an unmanaged package only while the org that uploaded it still exists, because installs can fail once that org is gone.
+false_statement: Salesforce advises that an unmanaged package installs reliably even after the org that uploaded it has been deleted, because the package is self-contained.
+explanation: The packaging guide warns that installs depend on the source org, so the uploading org should be kept for as long as the package will be installed.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/unmanaged-packages.md
+  commit: 6f174e2e75fd193adec31ed100620f5ef54797a0
+  blob: a89c5c316f2fb7116d83913a784d309334665f30
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:unmanaged-packages
+- kt:application-lifecycle-management
+difficulty: 2
+created: '2026-11-24'
+status: active

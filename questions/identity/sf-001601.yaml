@@ -1,0 +1,18 @@
+id: sf-001601
+product_area: identity
+true_statement: Once an admin enables security keys or built-in passkeys in an org, every user can use them; admins can't restrict them to admins only.
+false_statement: Once an admin enables security keys or built-in passkeys in an org, they can be restricted to admins only through a permission set.
+explanation: Enabling the method in Identity Verification settings opens it to all users in the org. There is no option to scope it to privileged users alone.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/security-keys.md
+  commit: 6f174e2e75fd193adec31ed100620f5ef54797a0
+  blob: 1907ad68c5d030f83e53d376da568f7c202331e6
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:security-keys
+- kt:identity-verification
+difficulty: 2
+created: '2026-11-24'
+status: active

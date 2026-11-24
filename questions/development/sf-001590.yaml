@@ -1,0 +1,20 @@
+id: sf-001590
+product_area: development
+true_statement: Because aggregate SOQL queries don't support queryMore, one returning more than 2,000 rows in a SOQL for loop throws a run-time exception.
+false_statement: Because SOQL for loops page through results with queryMore, an aggregate query returning more than 2,000 rows runs safely in a SOQL for loop.
+explanation: SOQL for loops normally fetch rows in chunks via queryMore, but aggregate queries can't use it. Past 2,000 aggregate rows, the loop fails at run time.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/static-soql.md
+  commit: 6f174e2e75fd193adec31ed100620f5ef54797a0
+  blob: c62d54526681c8ebf6900a0bdfe51e26236d0530
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:platform-developer-certification
+concepts:
+- kt:static-soql
+- kt:governor-limits
+difficulty: 3
+created: '2026-11-24'
+status: active

@@ -1,0 +1,18 @@
+id: sf-001614
+product_area: platform-architecture
+true_statement: Hyperforce is designed to survive the loss of an entire availability zone plus one more component failure in another zone, with a 99.99% availability objective.
+false_statement: Hyperforce is designed to survive the loss of an entire region plus one more availability zone failure, with a 99.999% availability objective.
+explanation: 'Salesforce calls the goal AZ+1: a whole AZ down plus one further failure elsewhere, at 99.99%. Region-wide failures are covered only by the separately sold Out of Region Disaster Recovery.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/disaster-recovery-and-site-switching.md
+  commit: 6f174e2e75fd193adec31ed100620f5ef54797a0
+  blob: e36e27af524f0f2b3660383ba9a0f35ce65d4fb7
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:disaster-recovery-and-site-switching
+- kt:hyperforce
+difficulty: 3
+created: '2026-11-24'
+status: active

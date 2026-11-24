@@ -1,0 +1,18 @@
+id: sf-001616
+product_area: public-sector-and-compliance
+true_statement: ISO/IEC 27018 is written for public cloud providers acting as PII processors, handling personal data on behalf of their customers.
+false_statement: ISO/IEC 27018 is written for public cloud providers acting as PII controllers, deciding the purposes for which personal data is processed.
+explanation: The code of practice targets cloud providers that process PII under contract for customers. It may be relevant to controllers, but its guidance is framed from the processor's side.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/iso-iec-27018.md
+  commit: 6f174e2e75fd193adec31ed100620f5ef54797a0
+  blob: 1d215965a0e0b01c61f426f65f7d53a87f33b7d7
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:iso-iec-27018
+- kt:shared-responsibility-model
+difficulty: 1
+created: '2026-11-24'
+status: active

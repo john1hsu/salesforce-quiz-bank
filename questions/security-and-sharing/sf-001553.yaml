@@ -1,0 +1,17 @@
+id: sf-001553
+product_area: security-and-sharing
+true_statement: In Apex, FeatureManagement.checkPermission(apiName) returns true when the running user has the named custom permission enabled.
+false_statement: In Apex, UserInfo.checkPermission(apiName) returns true when the running user has the named custom permission enabled.
+explanation: Apex checks custom permissions through the FeatureManagement class's checkPermission method. UserInfo is not the documented class for this check.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/custom-permissions.md
+  commit: 6f174e2e75fd193adec31ed100620f5ef54797a0
+  blob: f406fff60f0a37ce189c43e3b236ce7cabe357ad
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:custom-permissions
+difficulty: 2
+created: '2026-11-24'
+status: active

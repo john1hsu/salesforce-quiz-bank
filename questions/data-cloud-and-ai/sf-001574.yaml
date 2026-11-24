@@ -1,0 +1,18 @@
+id: sf-001574
+product_area: data-cloud-and-ai
+true_statement: Only accelerated data streams can feed a Data 360 clean room; file federation and live-query federation aren't supported.
+false_statement: Only live-query federation can feed a Data 360 clean room; accelerated data streams and file federation aren't supported.
+explanation: Clean room inputs must come from accelerated data streams, and both federation modes are excluded. The false version swaps the supported and unsupported sources.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/data-360-clean-rooms.md
+  commit: 6f174e2e75fd193adec31ed100620f5ef54797a0
+  blob: 4202a393ab1de529532d19cf389e1d8b5aacdd54
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:data-360-clean-rooms
+- kt:data-streams
+difficulty: 2
+created: '2026-11-24'
+status: active

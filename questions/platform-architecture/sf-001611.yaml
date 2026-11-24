@@ -1,0 +1,19 @@
+id: sf-001611
+product_area: platform-architecture
+true_statement: A REST API call to a retired API version returns HTTP 410 GONE, while a SOAP API call returns 500 UNSUPPORTED_API_VERSION.
+false_statement: A REST API call to a retired API version silently falls back to the oldest supported version instead of returning an error.
+explanation: 'Retired versions are refused outright with version-specific errors: 410 GONE for REST, 500 UNSUPPORTED_API_VERSION for SOAP and 400 InvalidVersion for Bulk API. There is no fallback.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/api-version-lifecycle.md
+  commit: 6f174e2e75fd193adec31ed100620f5ef54797a0
+  blob: 30868fd9b6624095b79d7a557f495eb99057f004
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:api-version-lifecycle
+- kt:rest-api
+- kt:soap-api
+difficulty: 2
+created: '2026-11-24'
+status: active

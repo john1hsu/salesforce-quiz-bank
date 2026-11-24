@@ -1,0 +1,19 @@
+id: sf-001613
+product_area: platform-architecture
+true_statement: While an org is read-only during a site switch, Apex callouts keep running but any DML performed after the callout fails.
+false_statement: While an org is read-only during a site switch, Apex callouts are blocked but DML performed in the same transaction still succeeds.
+explanation: Read-only mode stops writes, not outbound calls. Code can check System.getApplicationReadWriteMode() for READ_ONLY and defer its DML.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/disaster-recovery-and-site-switching.md
+  commit: 6f174e2e75fd193adec31ed100620f5ef54797a0
+  blob: e36e27af524f0f2b3660383ba9a0f35ce65d4fb7
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:disaster-recovery-and-site-switching
+- kt:read-only-mode
+- kt:apex-callouts
+difficulty: 2
+created: '2026-11-24'
+status: active

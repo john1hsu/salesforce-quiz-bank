@@ -1,0 +1,17 @@
+id: sf-001561
+product_area: architecture-practice
+true_statement: In TOGAF, Requirements Management sits at the centre of the ADM and feeds every phase, and the phases need not run in a fixed order.
+false_statement: In TOGAF, Requirements Management is the final ADM phase after Architecture Change Management, and the phases must run in a fixed order.
+explanation: 'Requirements Management is the hub of the ADM cycle rather than a last step, and the method is adaptable: it neither fixes the phase order nor prescribes waterfall delivery.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/togaf.md
+  commit: 6f174e2e75fd193adec31ed100620f5ef54797a0
+  blob: b2f66696f9fc6f40510da67e8f82cbbd45cea952
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:togaf
+difficulty: 2
+created: '2026-11-24'
+status: active

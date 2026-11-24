@@ -1,0 +1,17 @@
+id: sf-001563
+product_area: automation
+true_statement: For a custom object to be chosen as a Lightning email template's Related Entity Type, the object needs Allow Activities enabled.
+false_statement: For a custom object to be chosen as a Lightning email template's Related Entity Type, the object needs Allow Reports enabled.
+explanation: The related entity drives which merge fields a Lightning template can use, and custom objects qualify only when Allow Activities is turned on in Object Manager. Allow Reports has no bearing on it.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/email-templates.md
+  commit: 6f174e2e75fd193adec31ed100620f5ef54797a0
+  blob: ba2e87167157bead7f92a289630c711ebeef283b
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:email-templates
+difficulty: 2
+created: '2026-11-24'
+status: active

@@ -1,0 +1,18 @@
+id: sf-001586
+product_area: development
+true_statement: Component styling hooks prefixed --slds-c- are supported only in SLDS 1, so components that rely on them should stay on SLDS 1 for now.
+false_statement: Component styling hooks prefixed --slds-c- are supported only in SLDS 2, so components that rely on them should move to SLDS 2 now.
+explanation: As of Summer '25, SLDS 2 doesn't yet support component-level hooks; it relies on global and semantic hooks. Teams with heavy --slds-c- customizations are advised to remain on SLDS 1.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/salesforce-lightning-design-system.md
+  commit: 6f174e2e75fd193adec31ed100620f5ef54797a0
+  blob: 67891ed9dcc861df41a6f88b63a60c5f4d509387
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:salesforce-lightning-design-system
+- kt:lightning-web-components
+difficulty: 2
+created: '2026-11-24'
+status: active

@@ -1,0 +1,18 @@
+id: sf-001556
+product_area: architecture-practice
+true_statement: Salesforce Diagrams treats the system landscape as its Level 1 "Big Picture" view, naming products and technologies while leaving most detail out.
+false_statement: Salesforce Diagrams treats the system landscape as its Level 3 view, naming products and technologies while adding time-based sequencing.
+explanation: The landscape is the widest, Level 1 zoom that detailed diagrams drill into. Sequenced, time-based interactions belong at Level 3, not on the landscape.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/system-landscape-diagrams.md
+  commit: 6f174e2e75fd193adec31ed100620f5ef54797a0
+  blob: b79ad5adcf44023de7226df48fff78f1285c97cb
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:system-landscape-diagrams
+- kt:salesforce-diagrams
+difficulty: 1
+created: '2026-11-24'
+status: active

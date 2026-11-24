@@ -1,0 +1,17 @@
+id: sf-001533
+product_area: integration
+true_statement: The Salesforce org linked to API Experience Hub must be on Enterprise, Unlimited or Performance edition.
+false_statement: The Salesforce org linked to API Experience Hub can be on Professional, Enterprise or Unlimited edition.
+explanation: The prerequisites list Enterprise, Unlimited and Performance as the supported editions for the linked org. Professional edition is not among them.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/api-experience-hub.md
+  commit: 6f174e2e75fd193adec31ed100620f5ef54797a0
+  blob: 28748e11ed3aefa0e961d3f1375b45559da7f778
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:api-experience-hub
+difficulty: 2
+created: '2026-11-24'
+status: active

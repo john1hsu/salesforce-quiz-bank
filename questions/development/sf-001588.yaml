@@ -1,0 +1,17 @@
+id: sf-001588
+product_area: development
+true_statement: SLDS 2's default theme is Salesforce Cosmos, while SLDS 1 uses the Lightning Blue theme.
+false_statement: SLDS 2's default theme is Lightning Blue, while SLDS 1 uses the Salesforce Cosmos theme.
+explanation: Cosmos, with circular motifs and refreshed colors and typography, is the SLDS 2 theme an org opts in to. Lightning Blue is the original SLDS 1 default.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/salesforce-lightning-design-system.md
+  commit: 6f174e2e75fd193adec31ed100620f5ef54797a0
+  blob: 67891ed9dcc861df41a6f88b63a60c5f4d509387
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:salesforce-lightning-design-system
+difficulty: 1
+created: '2026-11-24'
+status: active

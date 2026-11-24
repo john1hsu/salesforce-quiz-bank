@@ -1,0 +1,17 @@
+id: sf-001596
+product_area: devops-and-alm
+true_statement: When an unmanaged package's Apex class clashes with an existing class name in the target org, the installation is blocked.
+false_statement: When an unmanaged package's Apex class clashes with an existing class name in the target org, the class is renamed automatically and installation continues.
+explanation: Only some types, such as reports, dashboards, documents and list views, are auto-renamed on conflict. A clash on an Apex class, custom object or Visualforce page stops the install.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/unmanaged-packages.md
+  commit: 6f174e2e75fd193adec31ed100620f5ef54797a0
+  blob: a89c5c316f2fb7116d83913a784d309334665f30
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:unmanaged-packages
+difficulty: 2
+created: '2026-11-24'
+status: active

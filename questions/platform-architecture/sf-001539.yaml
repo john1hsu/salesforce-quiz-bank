@@ -1,0 +1,19 @@
+id: sf-001539
+product_area: platform-architecture
+true_statement: Salesforce strongly recommends against deploying changes from a sandbox on the preview release to an environment still on the current release.
+false_statement: Salesforce recommends deploying changes from a sandbox on the preview release to an environment still on the current release to test compatibility.
+explanation: Moving metadata from a newer version into an older one risks incompatibilities, so Salesforce advises keeping preview and non-preview environments separate during the preview window.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/salesforce-seasonal-releases.md
+  commit: 6f174e2e75fd193adec31ed100620f5ef54797a0
+  blob: 6abb937193e8c5255138c0e8f5dff1abd7a5dacc
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:salesforce-seasonal-releases
+- kt:sandbox-preview
+- kt:release-management
+difficulty: 2
+created: '2026-11-24'
+status: active

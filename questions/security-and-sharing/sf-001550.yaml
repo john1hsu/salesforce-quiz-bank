@@ -1,0 +1,17 @@
+id: sf-001550
+product_area: security-and-sharing
+true_statement: In Compliant Data Sharing, an object can have at most 10 active participant roles.
+false_statement: In Compliant Data Sharing, an object can have at most 50 active participant roles.
+explanation: Trailhead's participant-setup limits cap each object at 10 active participant roles, and only active roles can be assigned. 50 is not the stated limit.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/compliant-data-sharing.md
+  commit: 6f174e2e75fd193adec31ed100620f5ef54797a0
+  blob: dec0d78f5cbdf6c7ca7899ccc29f4d0cc3cf5bbc
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:compliant-data-sharing
+difficulty: 2
+created: '2026-11-24'
+status: active

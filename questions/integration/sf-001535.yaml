@@ -1,0 +1,18 @@
+id: sf-001535
+product_area: integration
+true_statement: Salesforce says the values returned by the REST API Limits resource are accurate within five minutes of the allocation being consumed.
+false_statement: Salesforce says the values returned by the REST API Limits resource are accurate within one hour of the allocation being consumed.
+explanation: The Limits resource is near real time, with tabulated values lagging consumption by up to five minutes. An hour overstates the lag, though rapid repeated calls can still give inconsistent results.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/rest-api-limits-resource.md
+  commit: 6f174e2e75fd193adec31ed100620f5ef54797a0
+  blob: ef202247bc5addfadf085d27c6e48386230a3081
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:rest-api-limits-resource
+- kt:api-request-limits
+difficulty: 2
+created: '2026-11-24'
+status: active

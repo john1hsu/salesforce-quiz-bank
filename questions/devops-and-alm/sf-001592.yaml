@@ -1,0 +1,18 @@
+id: sf-001592
+product_area: devops-and-alm
+true_statement: A SandboxPostCopy script runs at the end of the sandbox copy as a hidden Automated Process user, with that user's permissions.
+false_statement: A SandboxPostCopy script runs at the end of the sandbox copy as the user who requested the sandbox, with that user's permissions.
+explanation: Salesforce executes the post-copy class under a special Automated Process user that isn't visible in the org. Its limited access is why some setup steps can fail inside the script.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/sandboxpostcopy-interface.md
+  commit: 6f174e2e75fd193adec31ed100620f5ef54797a0
+  blob: 667b33324c362e12999f7667382f3fbd7d6120a8
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:sandboxpostcopy-interface
+- kt:apex
+difficulty: 2
+created: '2026-11-24'
+status: active

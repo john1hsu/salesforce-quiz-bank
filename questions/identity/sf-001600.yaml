@@ -1,0 +1,17 @@
+id: sf-001600
+product_area: identity
+true_statement: For Salesforce mobile apps, certificate-based authentication is switched on through an MDM key, RequireCertAuth, rather than in Setup.
+false_statement: For Salesforce mobile apps, certificate-based authentication is switched on in Setup's Identity Verification page rather than through an MDM key.
+explanation: Mobile CBA is driven by managed app configuration from a mobile device management suite. RequireCertAuth starts the flow, and on Android ManagedAppCertAlias picks the certificate.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/certificate-based-authentication.md
+  commit: 6f174e2e75fd193adec31ed100620f5ef54797a0
+  blob: 97fc0c5141164e5a70f255ef27b5a352ff945ae3
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:certificate-based-authentication
+difficulty: 3
+created: '2026-11-24'
+status: active
