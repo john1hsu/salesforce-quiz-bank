@@ -1,0 +1,18 @@
+id: sf-001697
+product_area: security-and-sharing
+true_statement: Record access granted through a sharing set isn't extended to users above the recipient in a role hierarchy.
+false_statement: Record access granted through a sharing set is automatically extended to users above the recipient in the role hierarchy.
+explanation: Sharing sets grant access to the matched site users only; nothing rolls up to managers through roles. The false version applies role-hierarchy inheritance that sharing sets don't use.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/sharing-sets.md
+  commit: c73f767414eea7203eed30925e91b1e841ec3124
+  blob: cbca5461a85bbd36bbbc856360ee98389b3dc283
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:sharing-sets
+- kt:role-hierarchy
+difficulty: 2
+created: '2026-11-25'
+status: active

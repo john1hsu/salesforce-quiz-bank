@@ -1,0 +1,19 @@
+id: sf-001621
+product_area: security-and-sharing
+true_statement: New Salesforce orgs can have at most 50,000 account roles for Experience Cloud users, and reaching 100,000 requires a Support request and design review.
+false_statement: New Salesforce orgs can have at most 25,000 account roles for Experience Cloud users, and reaching 50,000 requires a Support request and design review.
+explanation: The starting ceiling for external account roles is 50,000; 100,000 needs Support plus a system design review, and 500,000 is the absolute cap with special approval. The false version halves those thresholds.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/partner-community-licenses.md
+  commit: c73f767414eea7203eed30925e91b1e841ec3124
+  blob: 1847aa84fcfe111703e4f7396ea62389f31d5a2c
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:partner-community-licenses
+- kt:role-hierarchy
+- kt:experience-cloud
+difficulty: 3
+created: '2026-11-25'
+status: active

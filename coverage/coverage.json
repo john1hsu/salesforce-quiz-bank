@@ -1,45 +1,45 @@
 {
  "totals": {
-  "active": 1605,
+  "active": 1699,
   "retired": 2
  },
  "areas": {
   "architecture-practice": {
-   "active": 137
+   "active": 149
   },
   "automation": {
-   "active": 132
+   "active": 144
   },
   "clouds-and-products": {
-   "active": 137
+   "active": 144
   },
   "data-cloud-and-ai": {
-   "active": 138
+   "active": 144
   },
   "data-model": {
-   "active": 136
+   "active": 142
   },
   "development": {
-   "active": 135,
+   "active": 141,
    "retired": 1
   },
   "devops-and-alm": {
-   "active": 128
-  },
-  "identity": {
-   "active": 132
-  },
-  "integration": {
    "active": 134
   },
+  "identity": {
+   "active": 138
+  },
+  "integration": {
+   "active": 140
+  },
   "platform-architecture": {
-   "active": 136
+   "active": 142
   },
   "public-sector-and-compliance": {
-   "active": 133
+   "active": 142
   },
   "security-and-sharing": {
-   "active": 127,
+   "active": 139,
    "retired": 1
   }
  },
@@ -77,10 +77,16 @@
   "articles/architecture-practice/cta-review-board.md": {
    "active": 3
   },
+  "articles/architecture-practice/cutover-plan.md": {
+   "active": 3
+  },
   "articles/architecture-practice/data-architecture.md": {
    "active": 3
   },
   "articles/architecture-practice/data-migration-strategy.md": {
+   "active": 3
+  },
+  "articles/architecture-practice/data-reconciliation.md": {
    "active": 3
   },
   "articles/architecture-practice/design-authority.md": {
@@ -99,6 +105,9 @@
    "active": 3
   },
   "articles/architecture-practice/hypercare.md": {
+   "active": 3
+  },
+  "articles/architecture-practice/interface-specification-document.md": {
    "active": 3
   },
   "articles/architecture-practice/licensing-strategy.md": {
@@ -123,6 +132,9 @@
    "active": 3
   },
   "articles/architecture-practice/risk-and-assumption-logs.md": {
+   "active": 3
+  },
+  "articles/architecture-practice/rough-order-of-magnitude-estimate.md": {
    "active": 3
   },
   "articles/architecture-practice/salesforce-architect.md": {
@@ -185,6 +197,12 @@
   "articles/architecture-practice/well-architected-framework.md": {
    "active": 3
   },
+  "articles/automation/action-plans.md": {
+   "active": 3
+  },
+  "articles/automation/agentforce-for-flow.md": {
+   "active": 3
+  },
   "articles/automation/approval-processes.md": {
    "active": 1
   },
@@ -209,6 +227,9 @@
   "articles/automation/custom-flow-screen-components.md": {
    "active": 3
   },
+  "articles/automation/custom-property-editors.md": {
+   "active": 3
+  },
   "articles/automation/data-table-screen-component.md": {
    "active": 3
   },
@@ -231,6 +252,9 @@
    "active": 3
   },
   "articles/automation/flow-bulkification.md": {
+   "active": 3
+  },
+  "articles/automation/flow-choice-resources.md": {
    "active": 3
   },
   "articles/automation/flow-debugging.md": {
@@ -365,6 +389,12 @@
   "articles/clouds-and-products/experience-cloud.md": {
    "active": 3
   },
+  "articles/clouds-and-products/field-service-mobile-app.md": {
+   "active": 1
+  },
+  "articles/clouds-and-products/field-service-scheduling-policies.md": {
+   "active": 3
+  },
   "articles/clouds-and-products/field-service.md": {
    "active": 3
   },
@@ -446,6 +476,9 @@
   "articles/clouds-and-products/salesforce-scheduler.md": {
    "active": 3
   },
+  "articles/clouds-and-products/salesforce-voice.md": {
+   "active": 3
+  },
   "articles/clouds-and-products/service-appointments.md": {
    "active": 3
   },
@@ -473,7 +506,13 @@
   "articles/data-cloud-and-ai/agentforce-data-library.md": {
    "active": 3
   },
+  "articles/data-cloud-and-ai/agentforce-employee-agents.md": {
+   "active": 3
+  },
   "articles/data-cloud-and-ai/agentforce-observability.md": {
+   "active": 3
+  },
+  "articles/data-cloud-and-ai/agentforce-sdr.md": {
    "active": 3
   },
   "articles/data-cloud-and-ai/agentforce-specialist-certification.md": {
@@ -632,6 +671,9 @@
   "articles/data-model/data-governance.md": {
    "active": 3
   },
+  "articles/data-model/data-import-wizard.md": {
+   "active": 3
+  },
   "articles/data-model/data-loader.md": {
    "active": 3
   },
@@ -719,6 +761,9 @@
   "articles/data-model/record-types.md": {
    "active": 3
   },
+  "articles/data-model/rich-text-area-fields.md": {
+   "active": 3
+  },
   "articles/data-model/roll-up-summary-field.md": {
    "active": 3
   },
@@ -791,6 +836,9 @@
   "articles/development/future-methods.md": {
    "active": 3
   },
+  "articles/development/javascript-developer-certification.md": {
+   "active": 3
+  },
   "articles/development/lightning-data-service.md": {
    "active": 3
   },
@@ -810,6 +858,9 @@
    "active": 3
   },
   "articles/development/limits-class.md": {
+   "active": 3
+  },
+  "articles/development/lwc-jest-testing.md": {
    "active": 3
   },
   "articles/development/mixed-dml-error.md": {
@@ -954,6 +1005,9 @@
   "articles/devops-and-alm/partner-business-org.md": {
    "active": 3
   },
+  "articles/devops-and-alm/permission-set-led-deployment.md": {
+   "active": 3
+  },
   "articles/devops-and-alm/post-install-scripts.md": {
    "active": 3
   },
@@ -1000,6 +1054,9 @@
    "active": 3
   },
   "articles/devops-and-alm/tooling-api.md": {
+   "active": 3
+  },
+  "articles/devops-and-alm/trialforce.md": {
    "active": 3
   },
   "articles/devops-and-alm/unlocked-packages.md": {
@@ -1137,10 +1194,16 @@
   "articles/identity/single-sign-on-saml.md": {
    "active": 3
   },
+  "articles/identity/time-based-one-time-password.md": {
+   "active": 3
+  },
   "articles/identity/token-exchange-flow.md": {
    "active": 3
   },
   "articles/identity/user-management.md": {
+   "active": 3
+  },
+  "articles/identity/username-password-flow.md": {
    "active": 3
   },
   "articles/identity/web-server-flow.md": {
@@ -1233,6 +1296,9 @@
   "articles/integration/mulesoft-anypoint-platform.md": {
    "active": 3
   },
+  "articles/integration/mulesoft-composer.md": {
+   "active": 3
+  },
   "articles/integration/named-credentials.md": {
    "active": 3
   },
@@ -1247,6 +1313,9 @@
   },
   "articles/integration/platform-events.md": {
    "active": 1
+  },
+  "articles/integration/point-to-point-integration.md": {
+   "active": 3
   },
   "articles/integration/process-integration.md": {
    "active": 3
@@ -1395,10 +1464,16 @@
   "articles/platform-architecture/salesforce-licensing.md": {
    "active": 3
   },
+  "articles/platform-architecture/salesforce-mobile-app.md": {
+   "active": 3
+  },
   "articles/platform-architecture/salesforce-platform.md": {
    "active": 3
   },
   "articles/platform-architecture/salesforce-seasonal-releases.md": {
+   "active": 3
+  },
+  "articles/platform-architecture/salesforce-sites.md": {
    "active": 3
   },
   "articles/platform-architecture/sandbox-preview.md": {
@@ -1491,6 +1566,9 @@
   "articles/public-sector-and-compliance/il4-and-il5.md": {
    "active": 3
   },
+  "articles/public-sector-and-compliance/irs-publication-1075.md": {
+   "active": 3
+  },
   "articles/public-sector-and-compliance/iso-iec-27001.md": {
    "active": 3
   },
@@ -1504,6 +1582,9 @@
    "active": 1
   },
   "articles/public-sector-and-compliance/it-governance.md": {
+   "active": 3
+  },
+  "articles/public-sector-and-compliance/management.md": {
    "active": 3
   },
   "articles/public-sector-and-compliance/nist-cybersecurity-framework.md": {
@@ -1525,6 +1606,9 @@
    "active": 3
   },
   "articles/public-sector-and-compliance/organizational-governance.md": {
+   "active": 3
+  },
+  "articles/public-sector-and-compliance/performance-work-statement.md": {
    "active": 3
   },
   "articles/public-sector-and-compliance/public-sector-solutions.md": {
@@ -1608,6 +1692,9 @@
   "articles/security-and-sharing/organization-wide-defaults.md": {
    "active": 1
   },
+  "articles/security-and-sharing/partner-community-licenses.md": {
+   "active": 3
+  },
   "articles/security-and-sharing/permission-set-groups.md": {
    "active": 3
   },
@@ -1665,6 +1752,12 @@
   "articles/security-and-sharing/session-settings.md": {
    "active": 3
   },
+  "articles/security-and-sharing/setup-audit-trail.md": {
+   "active": 3
+  },
+  "articles/security-and-sharing/share-groups.md": {
+   "active": 3
+  },
   "articles/security-and-sharing/sharing-and-visibility-architect-certification.md": {
    "active": 2,
    "retired": 1
@@ -1673,6 +1766,9 @@
    "active": 3
   },
   "articles/security-and-sharing/sharing-rules.md": {
+   "active": 3
+  },
+  "articles/security-and-sharing/sharing-sets.md": {
    "active": 3
   },
   "articles/security-and-sharing/shield-platform-encryption.md": {

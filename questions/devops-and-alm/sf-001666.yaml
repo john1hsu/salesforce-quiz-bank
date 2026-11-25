@@ -1,0 +1,17 @@
+id: sf-001666
+product_area: devops-and-alm
+true_statement: A Trialforce source org can create templates only while it is itself a trial org, not after it is converted to an active, paying org.
+false_statement: A Trialforce source org can create templates only after it is converted to an active, paying org, not while it is still a trial org.
+explanation: Template creation is tied to the source org's trial status; converting it to a paid org removes that ability. The false version reverses the requirement.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/trialforce.md
+  commit: c73f767414eea7203eed30925e91b1e841ec3124
+  blob: 778bd0ae833099ccec196f0b2e1a7f26a4c0cd75
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:trialforce
+difficulty: 3
+created: '2026-11-25'
+status: active

@@ -1,0 +1,19 @@
+id: sf-001619
+product_area: public-sector-and-compliance
+true_statement: The FAR prescribes no mandatory format for a performance work statement or a statement of objectives.
+false_statement: The FAR prescribes a mandatory section-by-section format for a performance work statement and a statement of objectives.
+explanation: The regulation sets content expectations, such as results-based requirements and measurable standards, but leaves the document layout open. DoD guidance suggests a requirements roadmap instead of a fixed template.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/performance-work-statement.md
+  commit: c73f767414eea7203eed30925e91b1e841ec3124
+  blob: 7ce55f51fbdb9590894ad91e56bc92a4a1b0d8d7
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:performance-work-statement
+- kt:federal-acquisition-regulation
+- kt:statement-of-objectives
+difficulty: 2
+created: '2026-11-25'
+status: active

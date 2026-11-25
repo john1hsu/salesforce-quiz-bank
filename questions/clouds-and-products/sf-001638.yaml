@@ -1,0 +1,18 @@
+id: sf-001638
+product_area: clouds-and-products
+true_statement: Trailhead lists Service Resource Availability, Earliest Start Permitted and Due Date Match Time as the work rules a Field Service scheduling policy needs to function.
+false_statement: Trailhead lists Match Skills, Match Territory and Required Resource as the work rules a Field Service scheduling policy needs to function.
+explanation: The three mandatory rules cover worker availability and the appointment's allowed time window. Skill, territory and required-resource rules are optional filters added as the business needs them.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/field-service-scheduling-policies.md
+  commit: c73f767414eea7203eed30925e91b1e841ec3124
+  blob: 7dd9dd277e96ac6f404f8f02c7234a7a8a40e907
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:field-service-scheduling-policies
+- kt:field-service
+difficulty: 2
+created: '2026-11-25'
+status: active

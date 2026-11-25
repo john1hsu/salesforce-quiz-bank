@@ -1,0 +1,18 @@
+id: sf-001698
+product_area: architecture-practice
+true_statement: Data Loader exports produce no success file unless Generate status files for exports is enabled in Advanced Settings.
+false_statement: Data Loader exports always produce a success file, and the Generate status files for exports setting only adds an error file.
+explanation: Status files are off by default for exports, so reconciliation evidence for an export must be switched on in Advanced Settings. Inserts, updates and other operations write success and error files regardless.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/data-reconciliation.md
+  commit: c73f767414eea7203eed30925e91b1e841ec3124
+  blob: a35c3d74e0627940291e01864c657f2748cec481
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:data-reconciliation
+- kt:data-loader
+difficulty: 2
+created: '2026-11-25'
+status: active

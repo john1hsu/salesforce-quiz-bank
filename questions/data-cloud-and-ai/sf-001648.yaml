@@ -1,0 +1,18 @@
+id: sf-001648
+product_area: data-cloud-and-ai
+true_statement: The Agentforce SDR agent needs a dedicated company-domain mailbox whose address matches the email on the agent's user record.
+false_statement: The Agentforce SDR agent sends from the lead owner's own mailbox, so no separate address is needed on the agent's user record.
+explanation: The agent runs as its own user and sends from a dedicated mailbox, and the connected email account must be the same address as on that user. It does not borrow the seller's inbox.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/agentforce-sdr.md
+  commit: c73f767414eea7203eed30925e91b1e841ec3124
+  blob: ac065c92dc576823951b9adc672cea363da23d36
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:agentforce-sdr
+- kt:einstein-activity-capture
+difficulty: 2
+created: '2026-11-25'
+status: active

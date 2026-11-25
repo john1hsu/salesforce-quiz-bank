@@ -1,0 +1,19 @@
+id: sf-001679
+product_area: integration
+true_statement: Salesforce's event-driven decision guide recommends adding a new subscriber to the event bus instead of building another custom point-to-point link.
+false_statement: Salesforce's event-driven decision guide recommends building another custom point-to-point link instead of adding a new subscriber to the event bus.
+explanation: Publishing once to a bus lets any number of consumers subscribe without new custom connections, which avoids fan-out technical debt. The false version reverses the recommendation.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/point-to-point-integration.md
+  commit: c73f767414eea7203eed30925e91b1e841ec3124
+  blob: 46fa55e7e591de1139f5f50aafc508348662eb3a
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:point-to-point-integration
+- kt:event-driven-architecture
+- kt:platform-events
+difficulty: 1
+created: '2026-11-25'
+status: active

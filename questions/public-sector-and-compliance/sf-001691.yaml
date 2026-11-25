@@ -1,0 +1,18 @@
+id: sf-001691
+product_area: public-sector-and-compliance
+true_statement: ISO/IEC 38500, the first international standard for governance of IT, was published in 2008 and derived from Australia's AS 8015.
+false_statement: ISO/IEC 38500, the first international standard for governance of IT, was published in 2008 and derived from the UK's BS 7799.
+explanation: The standard grew out of the Australian standard AS 8015. BS 7799 is the British information security standard behind the ISO/IEC 27000 family, not IT governance.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/management.md
+  commit: c73f767414eea7203eed30925e91b1e841ec3124
+  blob: 17bdcd5c85ec7a51b42a522eb9034a28a1baf3bf
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:management
+- kt:it-governance
+difficulty: 2
+created: '2026-11-25'
+status: active

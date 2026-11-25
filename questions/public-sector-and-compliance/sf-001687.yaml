@@ -1,0 +1,18 @@
+id: sf-001687
+product_area: public-sector-and-compliance
+true_statement: IRS guidance requires a FedRAMP authorization for any cloud holding Federal Tax Information, but FedRAMP alone does not satisfy Publication 1075.
+false_statement: IRS guidance treats a FedRAMP Moderate authorization as fully satisfying Publication 1075 for any cloud holding Federal Tax Information.
+explanation: FedRAMP at moderate impact or higher is a precondition, yet Publication 1075 adds its own conditions such as onshore support, tenant isolation and notification. A FedRAMP or 3PAO attestation is not enough by itself.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/irs-publication-1075.md
+  commit: c73f767414eea7203eed30925e91b1e841ec3124
+  blob: dcfa99a5ee716c9d52a109a41b5325f38858fbda
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:irs-publication-1075
+- kt:fedramp
+difficulty: 2
+created: '2026-11-25'
+status: active

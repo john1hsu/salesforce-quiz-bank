@@ -1,0 +1,19 @@
+id: sf-001625
+product_area: security-and-sharing
+true_statement: Each share group is tied to a sharing set and applies across all Experience Cloud sites in the org.
+false_statement: Each share group is tied to a public group and applies only to the one Experience Cloud site where it was activated.
+explanation: Share groups are configured from a sharing set's Share Group Settings tab and take effect org-wide across sites. They are not built on public groups, which high-volume users cannot join.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/share-groups.md
+  commit: c73f767414eea7203eed30925e91b1e841ec3124
+  blob: 34e1aae497f1f2cb123da3f0f283a39384d7f2a3
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:share-groups
+- kt:sharing-sets
+- kt:experience-cloud
+difficulty: 2
+created: '2026-11-25'
+status: active

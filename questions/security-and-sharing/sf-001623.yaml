@@ -1,0 +1,18 @@
+id: sf-001623
+product_area: security-and-sharing
+true_statement: Salesforce emails the admin when share group activation finishes, but sends no email when a share group deactivation finishes.
+false_statement: Salesforce emails the admin when share group deactivation finishes, but sends no email when a share group activation finishes.
+explanation: Activation runs in the background and ends with a confirmation email; deactivation, which strips everyone else's access to the records, finishes silently. The false version swaps the two.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/share-groups.md
+  commit: c73f767414eea7203eed30925e91b1e841ec3124
+  blob: 34e1aae497f1f2cb123da3f0f283a39384d7f2a3
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:share-groups
+- kt:sharing-sets
+difficulty: 2
+created: '2026-11-25'
+status: active

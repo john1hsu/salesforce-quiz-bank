@@ -1,0 +1,19 @@
+id: sf-001664
+product_area: devops-and-alm
+true_statement: In a Metadata API retrieve, a * wildcard on CustomObject returns permissions for custom objects only, so standard objects must be listed explicitly.
+false_statement: In a Metadata API retrieve, a * wildcard on CustomObject returns permissions for both standard and custom objects, so nothing needs listing explicitly.
+explanation: The wildcard does not expand to standard objects, so a profile or permission set retrieve misses their permissions unless each one is named. The false version assumes the wildcard covers everything.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/permission-set-led-deployment.md
+  commit: c73f767414eea7203eed30925e91b1e841ec3124
+  blob: 0f9da00f3a7bbc145722fcbf060b9aa52b5f67a3
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:permission-set-led-deployment
+- kt:package-xml-manifest
+- kt:metadata-api
+difficulty: 3
+created: '2026-11-25'
+status: active

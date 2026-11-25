@@ -1,0 +1,18 @@
+id: sf-001624
+product_area: security-and-sharing
+true_statement: Share group members can be internal users and external users from the same parent account as the high-volume user who owns the records.
+false_statement: Share group members can be internal users and any authenticated external user of the same Experience Cloud site as the high-volume record owner.
+explanation: External membership is limited to users under the owner's parent account, alongside chosen internal users. Site membership alone does not make an external user eligible.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/share-groups.md
+  commit: c73f767414eea7203eed30925e91b1e841ec3124
+  blob: 34e1aae497f1f2cb123da3f0f283a39384d7f2a3
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:share-groups
+- kt:high-volume-experience-cloud-users
+difficulty: 2
+created: '2026-11-25'
+status: active

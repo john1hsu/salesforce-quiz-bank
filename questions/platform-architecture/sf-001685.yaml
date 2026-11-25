@@ -1,0 +1,17 @@
+id: sf-001685
+product_area: platform-architecture
+true_statement: Salesforce can disable an org's Sites if page views exceed 110% of the allocation for four straight months or reach 300% in a single month.
+false_statement: Salesforce can disable an org's Sites if page views exceed 100% of the allocation for one month or reach 150% in a single day.
+explanation: Sites are disabled, after notice to admins, only for sustained overuse past 110% over four months or a spike to 300% in one month. The false version sets much tighter thresholds.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/salesforce-sites.md
+  commit: c73f767414eea7203eed30925e91b1e841ec3124
+  blob: 7ed9bc93ef756ba8817639bf908d8a9d65d71fc0
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:salesforce-sites
+difficulty: 3
+created: '2026-11-25'
+status: active

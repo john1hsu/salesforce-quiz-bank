@@ -1,0 +1,19 @@
+id: sf-001645
+product_area: data-cloud-and-ai
+true_statement: 'The Agentforce Employee Agent template ships with three system subagents: General FAQ, Off Topic and Ambiguous Question.'
+false_statement: 'The Agentforce Employee Agent template ships with three system subagents: General FAQ, Escalation and Ambiguous Question.'
+explanation: The template's Agent Router starts with General FAQ, Off Topic and Ambiguous Question, and General FAQ answers from Knowledge. Escalation is not one of the built-in system subagents.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/agentforce-employee-agents.md
+  commit: c73f767414eea7203eed30925e91b1e841ec3124
+  blob: d141f11d337d8c291161e7be08bc7c337f0aacef
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:agentforce-employee-agents
+- kt:agentforce-subagents
+- kt:agentforce-studio
+difficulty: 2
+created: '2026-11-25'
+status: active

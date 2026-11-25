@@ -6,8 +6,8 @@ explanation: The service mesh is the proxy that authenticates incoming Salesforc
 source:
   repo: john1hsu/salesforce-knowledge-graph
   path: articles/integration/heroku-applink.md
-  commit: f052331c4264f1e7111e95b71a27616054c970e2
-  blob: a70c96d059d7e72c566958256d4680f3fde3060b
+  commit: c73f767414eea7203eed30925e91b1e841ec3124
+  blob: bac9bb9598e631baf139a9c2935e83413471be39
 verified_release: Winter '27
 feature_status: current
 concepts:

@@ -1,0 +1,18 @@
+id: sf-001641
+product_area: clouds-and-products
+true_statement: In Salesforce Voice, reps accept calls in the Omni-Channel widget rather than in the older Salesforce Call Center softphone.
+false_statement: In Salesforce Voice, reps accept calls in the older Salesforce Call Center softphone rather than in the Omni-Channel widget.
+explanation: Voice routes calls as Omni-Channel work, so they arrive in the same widget as cases and messaging. The legacy Call Center softphone is not how Voice delivers calls.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/salesforce-voice.md
+  commit: c73f767414eea7203eed30925e91b1e841ec3124
+  blob: f70570035708d49cfc3162c6350768d7e1dca274
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:salesforce-voice
+- kt:omni-channel
+difficulty: 1
+created: '2026-11-25'
+status: active

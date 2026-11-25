@@ -1,0 +1,18 @@
+id: sf-001668
+product_area: identity
+true_statement: Both RFC 6238 and NIST require a TOTP verifier to refuse a code that was already accepted once, even if it is still inside its validity window.
+false_statement: Both RFC 6238 and NIST allow a TOTP verifier to accept the same code more than once, as long as it is still inside its validity window.
+explanation: Rejecting reused codes blocks replay attacks within the time step. The false version permits reuse until the window expires.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/time-based-one-time-password.md
+  commit: c73f767414eea7203eed30925e91b1e841ec3124
+  blob: 8c74f4167e879263e8f2886b030ac27bbe5ece72
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:time-based-one-time-password
+- kt:nist-digital-identity-guidelines
+difficulty: 2
+created: '2026-11-25'
+status: active

@@ -1,0 +1,18 @@
+id: sf-001678
+product_area: integration
+true_statement: MuleSoft's guidance treats three or fewer systems as the range where point-to-point integration stays manageable.
+false_statement: MuleSoft's guidance treats ten or fewer systems as the range where point-to-point integration stays manageable.
+explanation: Point-to-point is acceptable only for a handful of systems, about three, with no growth expected. At ten systems the mesh already needs dozens of links.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/point-to-point-integration.md
+  commit: c73f767414eea7203eed30925e91b1e841ec3124
+  blob: 46fa55e7e591de1139f5f50aafc508348662eb3a
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:point-to-point-integration
+- kt:mulesoft-anypoint-platform
+difficulty: 2
+created: '2026-11-25'
+status: active

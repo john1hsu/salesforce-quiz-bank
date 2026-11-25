@@ -1,0 +1,18 @@
+id: sf-001675
+product_area: integration
+true_statement: MuleSoft Composer connections can be reused across flows but belong only to the user who created them.
+false_statement: MuleSoft Composer connections can be reused across flows and are shared with every Composer user in the org by default.
+explanation: Connections are private to their creator, so team-owned flows need planned shared service users. The false version makes connections org-wide.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/mulesoft-composer.md
+  commit: c73f767414eea7203eed30925e91b1e841ec3124
+  blob: cb6754c04f8638a11f8eb1aeb75c1a250ae47561
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:mulesoft-composer
+- kt:named-credentials
+difficulty: 2
+created: '2026-11-25'
+status: active

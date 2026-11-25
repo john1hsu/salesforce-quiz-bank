@@ -1,0 +1,18 @@
+id: sf-001647
+product_area: data-cloud-and-ai
+true_statement: Agentforce SDR data library uploads accept text or HTML files up to 4 MB and PDF files up to 100 MB.
+false_statement: Agentforce SDR data library uploads accept text or HTML files up to 100 MB and PDF files up to 4 MB.
+explanation: The implementation guide sets a small 4 MB cap for text and HTML and a much larger 100 MB cap for PDFs. The false version swaps the two limits.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/agentforce-sdr.md
+  commit: c73f767414eea7203eed30925e91b1e841ec3124
+  blob: ac065c92dc576823951b9adc672cea363da23d36
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:agentforce-sdr
+- kt:agentforce-data-library
+difficulty: 2
+created: '2026-11-25'
+status: active

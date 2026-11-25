@@ -1,0 +1,19 @@
+id: sf-001670
+product_area: identity
+true_statement: Salesforce emails a user whenever a new verification method is added to their account, whether the user or an admin added it.
+false_statement: Salesforce emails a user about a new verification method only when an admin adds it, not when the user registers it themselves.
+explanation: The notification is sent for every newly added method regardless of who added it, so users can spot unexpected registrations. The false version limits it to admin changes.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/time-based-one-time-password.md
+  commit: c73f767414eea7203eed30925e91b1e841ec3124
+  blob: 8c74f4167e879263e8f2886b030ac27bbe5ece72
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:time-based-one-time-password
+- kt:multi-factor-authentication
+- kt:identity-verification
+difficulty: 2
+created: '2026-11-25'
+status: active

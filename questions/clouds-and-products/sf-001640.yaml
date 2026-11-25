@@ -1,0 +1,18 @@
+id: sf-001640
+product_area: clouds-and-products
+true_statement: Event-triggered Field Service scheduling runs as the Automated Process user by default, which lacks the Field Service permission sets the scheduling API needs.
+false_statement: Event-triggered Field Service scheduling runs as the user who fired the event by default, so that user's Field Service permission sets always apply.
+explanation: FSL.ScheduleService needs a user with a Field Service Admin, Dispatcher, Call Center or Self-Service permission set, and the default Automated Process user has none of them. Scheduling from event triggers therefore needs a deliberately chosen running user.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/field-service-scheduling-policies.md
+  commit: c73f767414eea7203eed30925e91b1e841ec3124
+  blob: 7dd9dd277e96ac6f404f8f02c7234a7a8a40e907
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:field-service-scheduling-policies
+- kt:field-service
+difficulty: 3
+created: '2026-11-25'
+status: active

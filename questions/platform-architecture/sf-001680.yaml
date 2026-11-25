@@ -1,0 +1,18 @@
+id: sf-001680
+product_area: platform-architecture
+true_statement: Trailhead recommends that quick action layouts in the Salesforce mobile app have fewer than five fields and never more than eight.
+false_statement: Trailhead recommends that quick action layouts in the Salesforce mobile app have fewer than ten fields and never more than fifteen.
+explanation: Short action layouts keep mobile data entry fast, so the guidance is under five fields with eight as the ceiling. The false version roughly doubles both numbers.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/salesforce-mobile-app.md
+  commit: c73f767414eea7203eed30925e91b1e841ec3124
+  blob: f26a3b59bfbf307e12206ed508dec772813e3894
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:salesforce-mobile-app
+- kt:quick-actions
+difficulty: 2
+created: '2026-11-25'
+status: active

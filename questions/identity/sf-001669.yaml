@@ -1,0 +1,18 @@
+id: sf-001669
+product_area: identity
+true_statement: NIST requires rate limiting for OTP verifiers whenever the OTP output is shorter than 64 bits, which covers every 6- or 8-digit TOTP code.
+false_statement: NIST requires rate limiting for OTP verifiers only when the OTP output is shorter than 6 digits, so standard 6- or 8-digit TOTP codes are exempt.
+explanation: Six or eight decimal digits are far below 64 bits, so ordinary TOTP codes fall under the rate-limiting rule. The false version exempts them.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/time-based-one-time-password.md
+  commit: c73f767414eea7203eed30925e91b1e841ec3124
+  blob: 8c74f4167e879263e8f2886b030ac27bbe5ece72
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:time-based-one-time-password
+- kt:nist-digital-identity-guidelines
+difficulty: 3
+created: '2026-11-25'
+status: active

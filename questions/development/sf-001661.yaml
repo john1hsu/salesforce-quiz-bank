@@ -1,0 +1,18 @@
+id: sf-001661
+product_area: development
+true_statement: In an LWC Jest test, after changing a property on an attached component, the test must wait on a resolved promise before checking the DOM.
+false_statement: In an LWC Jest test, after changing a property on an attached component, the DOM updates synchronously and can be checked on the next line.
+explanation: Rendering in LWC is asynchronous, so the test has to await a resolved promise for the re-render to finish. Asserting immediately would see the old DOM.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/lwc-jest-testing.md
+  commit: c73f767414eea7203eed30925e91b1e841ec3124
+  blob: 037c10371c1606bf7876b197cf8f9c1583511f1c
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:lwc-jest-testing
+- kt:lightning-web-components
+difficulty: 2
+created: '2026-11-25'
+status: active

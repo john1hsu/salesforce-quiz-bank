@@ -1,0 +1,18 @@
+id: sf-001655
+product_area: data-model
+true_statement: By default, images uploaded through lightning-input-rich-text are accessible to all users in the org, and share-with-entity-id narrows that access.
+false_statement: By default, images uploaded through lightning-input-rich-text are visible only to the uploading user, and share-with-entity-id widens that access.
+explanation: Uploaded images start out org-wide, so a developer who wants them tied to a record, group or user must set share-with-entity-id. The false version assumes a private default.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/rich-text-area-fields.md
+  commit: c73f767414eea7203eed30925e91b1e841ec3124
+  blob: b28f16ea63d3b3e44422b4c7b67726d8ae121866
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:rich-text-area-fields
+- kt:lightning-web-components
+difficulty: 3
+created: '2026-11-25'
+status: active

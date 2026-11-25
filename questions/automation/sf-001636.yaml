@@ -1,0 +1,19 @@
+id: sf-001636
+product_area: automation
+true_statement: A multi-select choice component in a screen flow returns one text string of values separated by semicolons rather than a collection.
+false_statement: A multi-select choice component in a screen flow returns a text collection variable with one item per selected value.
+explanation: Multi-select selections come back as a single semicolon-delimited string, which elements expecting a real collection cannot use without conversion. The false version claims a ready-made collection.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/flow-choice-resources.md
+  commit: c73f767414eea7203eed30925e91b1e841ec3124
+  blob: 6e377e994c19146002aa5ab001502fc70e9335c6
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:flow-choice-resources
+- kt:screen-flow
+- kt:flow-loop-element
+difficulty: 2
+created: '2026-11-25'
+status: active

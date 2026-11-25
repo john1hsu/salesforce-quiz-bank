@@ -1,0 +1,19 @@
+id: sf-001705
+product_area: automation
+true_statement: Salesforce Help lists Data 360 being provisioned and enabled as a prerequisite for drafting flows with Agentforce for Flow.
+false_statement: Salesforce Help says Agentforce for Flow drafting works without Data 360, needing only Einstein generative AI to be turned on.
+explanation: Drafting requires Einstein generative AI, Data 360 and the Agentforce flow automation option in Process Automation Settings. Leaving out Data 360 misses one of the stated prerequisites.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/agentforce-for-flow.md
+  commit: c73f767414eea7203eed30925e91b1e841ec3124
+  blob: faa75c367969bffe7677aae8e25c7d7a13f9ef43
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:agentforce-for-flow
+- kt:data-cloud
+- kt:process-automation-settings
+difficulty: 2
+created: '2026-11-25'
+status: active

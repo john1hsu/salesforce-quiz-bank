@@ -1,0 +1,18 @@
+id: sf-001700
+product_area: architecture-practice
+true_statement: Salesforce's migration guidance recommends loading and verifying a single record before loading the full file.
+false_statement: Salesforce's migration guidance recommends loading the full file first and then verifying a single sampled record.
+explanation: Testing one record up front catches mapping mistakes before they multiply across thousands of rows. Verifying only after a full load lets errors spread.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/data-reconciliation.md
+  commit: c73f767414eea7203eed30925e91b1e841ec3124
+  blob: a35c3d74e0627940291e01864c657f2748cec481
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:data-reconciliation
+- kt:data-migration-strategy
+difficulty: 1
+created: '2026-11-25'
+status: active

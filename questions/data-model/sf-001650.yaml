@@ -1,0 +1,20 @@
+id: sf-001650
+product_area: data-model
+true_statement: The Salesforce Data Import Wizard can import up to 50,000 records at a time.
+false_statement: The Salesforce Data Import Wizard can import up to 500,000 records at a time.
+explanation: The wizard's capacity is 50,000 records per import; larger volumes are Data Loader territory. The false version inflates the cap tenfold.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/data-import-wizard.md
+  commit: c73f767414eea7203eed30925e91b1e841ec3124
+  blob: 77f1d8ac96befbee4bbbd60d5e4018aa7af91800
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:platform-administrator-certification
+concepts:
+- kt:data-import-wizard
+- kt:data-loader
+difficulty: 1
+created: '2026-11-25'
+status: active

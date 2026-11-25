@@ -1,0 +1,18 @@
+id: sf-001631
+product_area: architecture-practice
+true_statement: Salesforce's integration patterns classify integrations by type as process, data or virtual integration.
+false_statement: Salesforce's integration patterns classify integrations by type as process, data or user-interface integration.
+explanation: The three pattern types are process, data and virtual integration, and patterns are separately classed by timing as synchronous or asynchronous. User-interface integration is not one of the listed types.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/interface-specification-document.md
+  commit: c73f767414eea7203eed30925e91b1e841ec3124
+  blob: ffffe2dca650662710a0304410dd2e0cda3d6842
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:interface-specification-document
+- kt:integration-patterns
+difficulty: 2
+created: '2026-11-25'
+status: active

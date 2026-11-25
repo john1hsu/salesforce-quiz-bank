@@ -1,0 +1,20 @@
+id: sf-001652
+product_area: data-model
+true_statement: The Data Import Wizard processes jobs asynchronously through the Bulk API, and progress shows on the Bulk Data Load Jobs page in Setup.
+false_statement: The Data Import Wizard writes records synchronously through the SOAP API, so the browser must stay open until every record is saved.
+explanation: Unlike the older per-object wizards, the unified wizard hands work to the Bulk API and emails the user when it finishes. Synchronous writing was the old wizards' behaviour.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/data-import-wizard.md
+  commit: c73f767414eea7203eed30925e91b1e841ec3124
+  blob: 77f1d8ac96befbee4bbbd60d5e4018aa7af91800
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:platform-administrator-certification
+concepts:
+- kt:data-import-wizard
+- kt:bulk-api-1
+difficulty: 2
+created: '2026-11-25'
+status: active

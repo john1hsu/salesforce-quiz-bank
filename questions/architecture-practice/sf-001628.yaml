@@ -1,0 +1,18 @@
+id: sf-001628
+product_area: architecture-practice
+true_statement: AWS cutover guidance advises naming a single person who decides, at predefined checkpoints, whether to fix forward or roll back.
+false_statement: AWS cutover guidance advises that, at predefined checkpoints, the whole cutover team votes on whether to fix forward or roll back.
+explanation: Having one named decision-maker avoids stalls when a checkpoint fails and predefined rollback conditions are met. A group vote is not what the guidance recommends.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/cutover-plan.md
+  commit: c73f767414eea7203eed30925e91b1e841ec3124
+  blob: 57c790c0d4c8cae39326996a02e3a4a4d0493927
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:cutover-plan
+- kt:rollback-plan
+difficulty: 2
+created: '2026-11-25'
+status: active

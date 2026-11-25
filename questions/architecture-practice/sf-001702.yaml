@@ -1,0 +1,18 @@
+id: sf-001702
+product_area: architecture-practice
+true_statement: Per GAO, a rough order of magnitude estimate can be produced by one person or a small group in hours, days or weeks, usually from historical data.
+false_statement: Per GAO, a rough order of magnitude estimate needs a large estimating team working for many months, usually from detailed design.
+explanation: ROMs are quick and lean on past projects; the large-team, months-long effort describes GAO's full program office estimate. The false version gives the ROM the profile of that budget estimate.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/rough-order-of-magnitude-estimate.md
+  commit: c73f767414eea7203eed30925e91b1e841ec3124
+  blob: 6e9dd805ea552b3cc7ea009ba0985760336c15a7
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:rough-order-of-magnitude-estimate
+- kt:life-cycle-cost-estimate
+difficulty: 2
+created: '2026-11-25'
+status: active

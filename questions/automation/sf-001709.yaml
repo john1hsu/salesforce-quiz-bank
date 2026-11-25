@@ -1,0 +1,19 @@
+id: sf-001709
+product_area: automation
+true_statement: A custom property editor runs only at design time in Flow Builder; the component or action it configures is what runs when the flow executes.
+false_statement: A custom property editor runs both in Flow Builder and at flow runtime, where it replaces the screen component's interface for end users.
+explanation: The editor exists to help admins configure inputs while building the flow. At runtime, users see the configured screen component or the action simply executes.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/custom-property-editors.md
+  commit: c73f767414eea7203eed30925e91b1e841ec3124
+  blob: f260d8dcad1595587cd716a7613936ae681f5a37
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:custom-property-editors
+- kt:flow-builder
+- kt:custom-flow-screen-components
+difficulty: 1
+created: '2026-11-25'
+status: active

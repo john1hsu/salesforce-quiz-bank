@@ -1,0 +1,18 @@
+id: sf-001639
+product_area: clouds-and-products
+true_statement: With Enhanced Scheduling and Optimization, candidates collect penalty points and the lowest penalty wins, while the legacy engine awards points and picks the highest.
+false_statement: With Enhanced Scheduling and Optimization, candidates collect reward points and the highest score wins, while the legacy engine assigns penalties and picks the lowest.
+explanation: The enhanced engine scores options by penalties, so the smallest total is best; the legacy engine works the other way, adding up rewards. The false version swaps the two engines' scoring.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/field-service-scheduling-policies.md
+  commit: c73f767414eea7203eed30925e91b1e841ec3124
+  blob: 7dd9dd277e96ac6f404f8f02c7234a7a8a40e907
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:field-service-scheduling-policies
+- kt:enhanced-scheduling-and-optimization
+difficulty: 3
+created: '2026-11-25'
+status: active

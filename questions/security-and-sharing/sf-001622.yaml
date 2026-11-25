@@ -1,0 +1,18 @@
+id: sf-001622
+product_area: security-and-sharing
+true_statement: Raising the number of roles allowed per partner account doesn't add roles to partner accounts that were already enabled.
+false_statement: Raising the number of roles allowed per partner account automatically adds the extra roles to partner accounts that were already enabled.
+explanation: The higher role count only applies to accounts enabled afterwards, so existing partner accounts keep the roles they already have. The false version claims the change is retroactive.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/partner-community-licenses.md
+  commit: c73f767414eea7203eed30925e91b1e841ec3124
+  blob: 1847aa84fcfe111703e4f7396ea62389f31d5a2c
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:partner-community-licenses
+- kt:role-hierarchy
+difficulty: 3
+created: '2026-11-25'
+status: active

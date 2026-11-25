@@ -1,0 +1,17 @@
+id: sf-001667
+product_area: devops-and-alm
+true_statement: When Trialforce creates a template, PII in User fields such as addresses is scrubbed, but PII in custom objects and fields is copied unchanged.
+false_statement: When Trialforce creates a template, PII is scrubbed from every object, including custom objects and fields, before trial orgs are created.
+explanation: Only User object PII is cleaned automatically, so partners must keep personal data out of custom objects in the source org themselves. The false version promises scrubbing everywhere.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/trialforce.md
+  commit: c73f767414eea7203eed30925e91b1e841ec3124
+  blob: 778bd0ae833099ccec196f0b2e1a7f26a4c0cd75
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:trialforce
+difficulty: 3
+created: '2026-11-25'
+status: active

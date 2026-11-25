@@ -1,0 +1,18 @@
+id: sf-001629
+product_area: architecture-practice
+true_statement: Trailhead advises using delta batch feeds wherever possible, because they are smaller, faster and more resilient to network interruptions than full feeds.
+false_statement: Trailhead advises using full batch feeds wherever possible, because they are simpler and more resilient to network interruptions than delta feeds.
+explanation: Delta feeds send only what changed, so they move less data and recover more easily if a transfer breaks. The false version recommends the heavier full feed.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/interface-specification-document.md
+  commit: c73f767414eea7203eed30925e91b1e841ec3124
+  blob: ffffe2dca650662710a0304410dd2e0cda3d6842
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:interface-specification-document
+- kt:integration-patterns
+difficulty: 2
+created: '2026-11-25'
+status: active

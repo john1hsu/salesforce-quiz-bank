@@ -1,0 +1,18 @@
+id: sf-001618
+product_area: public-sector-and-compliance
+true_statement: Under a PWS-based services contract, the contractor's own quality-control program is the primary control, while the government monitors through the QASP.
+false_statement: Under a PWS-based services contract, the government's QASP is the primary quality control, while the contractor's own quality-control program is only advisory.
+explanation: Quality control stays the contractor's job; the government's surveillance plan checks results against the PWS standards. The false version reverses those roles.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/performance-work-statement.md
+  commit: c73f767414eea7203eed30925e91b1e841ec3124
+  blob: 7ce55f51fbdb9590894ad91e56bc92a4a1b0d8d7
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:performance-work-statement
+- kt:quality-assurance-surveillance-plan
+difficulty: 2
+created: '2026-11-25'
+status: active

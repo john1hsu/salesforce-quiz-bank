@@ -1,0 +1,18 @@
+id: sf-001701
+product_area: architecture-practice
+true_statement: GAO's cost guide says a rough order of magnitude estimate should never be considered a budget-quality cost estimate.
+false_statement: GAO's cost guide says a rough order of magnitude estimate can serve as a budget-quality cost estimate once a sponsor approves it.
+explanation: A ROM is built quickly from few details, so GAO rules it out as a budget basis under any circumstances. Approval does not change its precision.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/rough-order-of-magnitude-estimate.md
+  commit: c73f767414eea7203eed30925e91b1e841ec3124
+  blob: 6e9dd805ea552b3cc7ea009ba0985760336c15a7
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:rough-order-of-magnitude-estimate
+- kt:project-estimation
+difficulty: 1
+created: '2026-11-25'
+status: active

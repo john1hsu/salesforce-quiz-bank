@@ -1,0 +1,18 @@
+id: sf-001626
+product_area: architecture-practice
+true_statement: A mock cutover rehearses go-live in a test environment using the same data volumes, tools, people, steps and timings as the real event.
+false_statement: A mock cutover rehearses go-live in a test environment using a small data sample, so it validates the steps without reproducing the real timings.
+explanation: The point of the dress rehearsal is to reproduce real timings, so it uses full data volumes and is repeated until it runs cleanly. A small sample would hide exactly the duration problems it is meant to expose.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/cutover-plan.md
+  commit: c73f767414eea7203eed30925e91b1e841ec3124
+  blob: 57c790c0d4c8cae39326996a02e3a4a4d0493927
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:cutover-plan
+- kt:environment-strategy
+difficulty: 2
+created: '2026-11-25'
+status: active

@@ -1,0 +1,18 @@
+id: sf-001707
+product_area: automation
+true_statement: An invocable Apex action names its custom property editor through the configurationEditor modifier on its @InvocableMethod annotation.
+false_statement: An invocable Apex action names its custom property editor through a configurationEditor element in the Apex class's -meta.xml file.
+explanation: For actions the editor is declared on the annotation itself; only screen components register it in their .js-meta.xml targetConfig. The Apex class metadata file has no such element.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/custom-property-editors.md
+  commit: c73f767414eea7203eed30925e91b1e841ec3124
+  blob: f260d8dcad1595587cd716a7613936ae681f5a37
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:custom-property-editors
+- kt:invocable-apex-actions
+difficulty: 2
+created: '2026-11-25'
+status: active

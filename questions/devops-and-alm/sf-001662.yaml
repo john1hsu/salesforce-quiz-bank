@@ -1,0 +1,19 @@
+id: sf-001662
+product_area: devops-and-alm
+true_statement: From API version 40.0, deploying a PermissionSet disables any permission the file doesn't specify, so the deploy should include the set's full content.
+false_statement: From API version 40.0, deploying a PermissionSet leaves any permission the file doesn't specify unchanged, so partial files are safe to deploy.
+explanation: Permission set deploys are treated as the complete definition, so omitted permissions are switched off. Profiles behave differently, which is why partial permission set files are risky.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/permission-set-led-deployment.md
+  commit: c73f767414eea7203eed30925e91b1e841ec3124
+  blob: 0f9da00f3a7bbc145722fcbf060b9aa52b5f67a3
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:permission-set-led-deployment
+- kt:permission-sets
+- kt:metadata-api
+difficulty: 3
+created: '2026-11-25'
+status: active

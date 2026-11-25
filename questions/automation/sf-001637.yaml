@@ -1,0 +1,18 @@
+id: sf-001637
+product_area: automation
+true_statement: A Flow picklist choice set can't be filtered, so it shows all of the field's values even where a record type narrows that picklist.
+false_statement: A Flow picklist choice set is filtered by the record's record type, so it shows only the values that record type allows for that picklist.
+explanation: Picklist choice sets read every value of the field with no filtering, so record-type restrictions seen on page layouts don't apply in the flow. The false version assumes record-type filtering.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/flow-choice-resources.md
+  commit: c73f767414eea7203eed30925e91b1e841ec3124
+  blob: 6e377e994c19146002aa5ab001502fc70e9335c6
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:flow-choice-resources
+- kt:picklist-value-sets
+difficulty: 2
+created: '2026-11-25'
+status: active

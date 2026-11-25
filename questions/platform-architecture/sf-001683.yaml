@@ -1,0 +1,17 @@
+id: sf-001683
+product_area: platform-architecture
+true_statement: Salesforce Sites allows one site in Developer Edition and up to 25 sites in Enterprise and Performance editions.
+false_statement: Salesforce Sites allows five sites in Developer Edition and up to 100 sites in Enterprise and Performance editions.
+explanation: Developer Edition gets a single site with no page-view allocation, while Enterprise and Performance allow 25. The false version inflates both allowances.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/salesforce-sites.md
+  commit: c73f767414eea7203eed30925e91b1e841ec3124
+  blob: 7ed9bc93ef756ba8817639bf908d8a9d65d71fc0
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:salesforce-sites
+difficulty: 2
+created: '2026-11-25'
+status: active

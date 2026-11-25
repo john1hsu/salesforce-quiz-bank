@@ -1,0 +1,18 @@
+id: sf-001690
+product_area: public-sector-and-compliance
+true_statement: ISO does not certify organizations itself; certification to a management system standard is optional and done by external certification bodies.
+false_statement: ISO certifies organizations itself, and certification to a management system standard is mandatory for any organization that adopts one.
+explanation: ISO writes the standards but leaves certification to independent bodies, and organizations may adopt a standard without certifying. The false version makes ISO the certifier and certification compulsory.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/management.md
+  commit: c73f767414eea7203eed30925e91b1e841ec3124
+  blob: 17bdcd5c85ec7a51b42a522eb9034a28a1baf3bf
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:management
+- kt:governance-risk-and-compliance
+difficulty: 1
+created: '2026-11-25'
+status: active

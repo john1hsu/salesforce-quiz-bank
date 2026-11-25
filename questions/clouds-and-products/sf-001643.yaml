@@ -1,0 +1,19 @@
+id: sf-001643
+product_area: clouds-and-products
+true_statement: In Government Cloud, Salesforce Voice supports only the Amazon Connect and partner-telephony variants.
+false_statement: In Government Cloud, Salesforce Voice supports only the bring-your-own-telephony variant.
+explanation: Government Cloud orgs can use Voice with Amazon Connect or with partner telephony. Bring your own telephony is not among the variants supported there.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/salesforce-voice.md
+  commit: c73f767414eea7203eed30925e91b1e841ec3124
+  blob: f70570035708d49cfc3162c6350768d7e1dca274
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:salesforce-voice
+- kt:government-cloud
+- kt:amazon-connect
+difficulty: 2
+created: '2026-11-25'
+status: active

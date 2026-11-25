@@ -1,0 +1,17 @@
+id: sf-001632
+product_area: automation
+true_statement: In an action plan template, a task can depend on up to three prerequisite tasks, and dependent tasks are created only after their prerequisites are completed.
+false_statement: In an action plan template, a task can depend on up to ten prerequisite tasks, and all tasks are created when the plan starts regardless of prerequisites.
+explanation: Action plans support at most three prerequisites per task, and only tasks without prerequisites exist at launch; the rest appear as their predecessors finish. The false version raises the limit and creates everything up front.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/action-plans.md
+  commit: c73f767414eea7203eed30925e91b1e841ec3124
+  blob: f46498e1ee06b26d3b3a6d6dc4f09b3ca3b4266b
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:action-plans
+difficulty: 2
+created: '2026-11-25'
+status: active

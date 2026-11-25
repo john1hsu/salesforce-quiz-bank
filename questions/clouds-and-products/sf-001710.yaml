@@ -1,0 +1,18 @@
+id: sf-001710
+product_area: clouds-and-products
+true_statement: By default, the Field Service mobile app primes service appointments from 45 days before to 45 days after today.
+false_statement: By default, the Field Service mobile app primes service appointments from 7 days before to 7 days after today.
+explanation: The default offline priming window spans 45 days on either side of today, and admins can shorten it to speed up app launch. The false version shrinks the default to a week.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/field-service-mobile-app.md
+  commit: c73f767414eea7203eed30925e91b1e841ec3124
+  blob: d0c3cdb6015ca97c039737ee498bb469d3024d54
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:field-service-mobile-app
+- kt:service-appointments
+difficulty: 2
+created: '2026-11-25'
+status: active

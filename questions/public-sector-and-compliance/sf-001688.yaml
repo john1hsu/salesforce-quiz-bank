@@ -1,0 +1,19 @@
+id: sf-001688
+product_area: public-sector-and-compliance
+true_statement: The outside assessment of Government Cloud Plus against IRS 1075 used NIST SP 800-53 revision 4, not the revision 5 baseline of the current publication.
+false_statement: The outside assessment of Government Cloud Plus against IRS 1075 used NIST SP 800-53 revision 5, matching the baseline of the current publication.
+explanation: The 2021 Publication 1075 is built on 800-53 Rev. 5, but Salesforce's attestation was reviewed against Rev. 4, so agencies may need their own gap analysis. The false version claims the revisions match.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/irs-publication-1075.md
+  commit: c73f767414eea7203eed30925e91b1e841ec3124
+  blob: dcfa99a5ee716c9d52a109a41b5325f38858fbda
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:irs-publication-1075
+- kt:government-cloud-plus
+- kt:nist-sp-800-53
+difficulty: 3
+created: '2026-11-25'
+status: active

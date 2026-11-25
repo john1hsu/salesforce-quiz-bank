@@ -1,0 +1,18 @@
+id: sf-001676
+product_area: integration
+true_statement: MuleSoft Composer flow control is limited to If/Else, For Each over records, and an Error Handler block.
+false_statement: MuleSoft Composer flow control includes If/Else, For Each, parallel branches and inline DataWeave transformation blocks.
+explanation: Composer deliberately keeps logic simple with just three control blocks and no DataWeave code. Parallel branching and DataWeave belong to full Mule applications on Anypoint Platform.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/mulesoft-composer.md
+  commit: c73f767414eea7203eed30925e91b1e841ec3124
+  blob: cb6754c04f8638a11f8eb1aeb75c1a250ae47561
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:mulesoft-composer
+- kt:mulesoft-anypoint-platform
+difficulty: 2
+created: '2026-11-25'
+status: active

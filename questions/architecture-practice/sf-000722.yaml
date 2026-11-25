@@ -6,8 +6,8 @@ explanation: The example uses green for at target, yellow for one level short, r
 source:
   repo: john1hsu/salesforce-knowledge-graph
   path: articles/architecture-practice/capability-maps.md
-  commit: 5b0927c1ce57f15a133dc1bb705a26efad1acc40
-  blob: 0a15b6eb6dd9e0606e55064656d0f54726db298a
+  commit: c73f767414eea7203eed30925e91b1e841ec3124
+  blob: 2ac8f7a9ce304cbdd2d083c85fbd0bc34e8a10cb
 verified_release: Winter '27
 feature_status: concept
 concepts:

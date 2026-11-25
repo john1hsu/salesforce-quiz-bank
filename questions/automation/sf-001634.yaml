@@ -1,0 +1,18 @@
+id: sf-001634
+product_area: automation
+true_statement: Action plan status doesn't follow task progress automatically; admins clone and activate the Update Action Plan Status flow template to keep it in sync.
+false_statement: Action plan status follows task progress automatically, so no flow is needed to mark a plan complete when its tasks are done.
+explanation: Out of the box the plan's status stays where it was set; the provided flow template must be cloned and activated to update it from task completion. The false version assumes built-in syncing.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/action-plans.md
+  commit: c73f767414eea7203eed30925e91b1e841ec3124
+  blob: f46498e1ee06b26d3b3a6d6dc4f09b3ca3b4266b
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:action-plans
+- kt:process-automation
+difficulty: 2
+created: '2026-11-25'
+status: active

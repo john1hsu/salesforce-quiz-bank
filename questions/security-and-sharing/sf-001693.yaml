@@ -1,0 +1,18 @@
+id: sf-001693
+product_area: security-and-sharing
+true_statement: Since API version 35.0, SetupAuditTrail records the delegate user when an admin made a change while logged in as another user.
+false_statement: Since API version 35.0, SetupAuditTrail records only the impersonated user when an admin made a change while logged in as another user.
+explanation: The object captures the delegate user behind a Login-As session, so changes can be traced to the admin who actually made them. Recording only the impersonated user would hide that.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/setup-audit-trail.md
+  commit: c73f767414eea7203eed30925e91b1e841ec3124
+  blob: 86d437a8e7081204817819d50c6f0f439338a70e
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:setup-audit-trail
+- kt:soql
+difficulty: 3
+created: '2026-11-25'
+status: active

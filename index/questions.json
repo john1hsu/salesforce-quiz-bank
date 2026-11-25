@@ -1,7 +1,7 @@
 {
  "version": 1,
- "count": 1605,
- "active": 1605,
+ "count": 1699,
+ "active": 1699,
  "questions": [
   {
    "id": "sf-000001",
@@ -27647,6 +27647,1611 @@
    "difficulty": 1,
    "status": "active",
    "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/iso-iec-27018.md"
+  },
+  {
+   "id": "sf-001617",
+   "area": "public-sector-and-compliance",
+   "t": "A quality assurance surveillance plan is not a formal part of the contract, so if it conflicts with the contract, the contract governs.",
+   "f": "A quality assurance surveillance plan is a formal part of the contract, so if it conflicts with the contract, the QASP governs.",
+   "x": "GSA's template treats the QASP as a living monitoring document outside the contract itself; where the two disagree the contract wins. The false version makes the QASP binding and controlling.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:performance-work-statement",
+    "kt:quality-assurance-surveillance-plan"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/performance-work-statement.md"
+  },
+  {
+   "id": "sf-001618",
+   "area": "public-sector-and-compliance",
+   "t": "Under a PWS-based services contract, the contractor's own quality-control program is the primary control, while the government monitors through the QASP.",
+   "f": "Under a PWS-based services contract, the government's QASP is the primary quality control, while the contractor's own quality-control program is only advisory.",
+   "x": "Quality control stays the contractor's job; the government's surveillance plan checks results against the PWS standards. The false version reverses those roles.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:performance-work-statement",
+    "kt:quality-assurance-surveillance-plan"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/performance-work-statement.md"
+  },
+  {
+   "id": "sf-001619",
+   "area": "public-sector-and-compliance",
+   "t": "The FAR prescribes no mandatory format for a performance work statement or a statement of objectives.",
+   "f": "The FAR prescribes a mandatory section-by-section format for a performance work statement and a statement of objectives.",
+   "x": "The regulation sets content expectations, such as results-based requirements and measurable standards, but leaves the document layout open. DoD guidance suggests a requirements roadmap instead of a fixed template.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:performance-work-statement",
+    "kt:federal-acquisition-regulation",
+    "kt:statement-of-objectives"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/performance-work-statement.md"
+  },
+  {
+   "id": "sf-001620",
+   "area": "security-and-sharing",
+   "t": "Each enabled partner account gets one account role by default, and the Digital Experiences settings allow up to three.",
+   "f": "Each enabled partner account gets three account roles by default, and the Digital Experiences settings allow up to five.",
+   "x": "Partner accounts start with a single role and can be raised to a maximum of three, though Salesforce recommends staying at one for performance. The false version inflates both numbers.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:partner-community-licenses",
+    "kt:role-hierarchy"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/partner-community-licenses.md"
+  },
+  {
+   "id": "sf-001621",
+   "area": "security-and-sharing",
+   "t": "New Salesforce orgs can have at most 50,000 account roles for Experience Cloud users, and reaching 100,000 requires a Support request and design review.",
+   "f": "New Salesforce orgs can have at most 25,000 account roles for Experience Cloud users, and reaching 50,000 requires a Support request and design review.",
+   "x": "The starting ceiling for external account roles is 50,000; 100,000 needs Support plus a system design review, and 500,000 is the absolute cap with special approval. The false version halves those thresholds.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:partner-community-licenses",
+    "kt:role-hierarchy",
+    "kt:experience-cloud"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/partner-community-licenses.md"
+  },
+  {
+   "id": "sf-001622",
+   "area": "security-and-sharing",
+   "t": "Raising the number of roles allowed per partner account doesn't add roles to partner accounts that were already enabled.",
+   "f": "Raising the number of roles allowed per partner account automatically adds the extra roles to partner accounts that were already enabled.",
+   "x": "The higher role count only applies to accounts enabled afterwards, so existing partner accounts keep the roles they already have. The false version claims the change is retroactive.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:partner-community-licenses",
+    "kt:role-hierarchy"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/partner-community-licenses.md"
+  },
+  {
+   "id": "sf-001623",
+   "area": "security-and-sharing",
+   "t": "Salesforce emails the admin when share group activation finishes, but sends no email when a share group deactivation finishes.",
+   "f": "Salesforce emails the admin when share group deactivation finishes, but sends no email when a share group activation finishes.",
+   "x": "Activation runs in the background and ends with a confirmation email; deactivation, which strips everyone else's access to the records, finishes silently. The false version swaps the two.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:share-groups",
+    "kt:sharing-sets"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/share-groups.md"
+  },
+  {
+   "id": "sf-001624",
+   "area": "security-and-sharing",
+   "t": "Share group members can be internal users and external users from the same parent account as the high-volume user who owns the records.",
+   "f": "Share group members can be internal users and any authenticated external user of the same Experience Cloud site as the high-volume record owner.",
+   "x": "External membership is limited to users under the owner's parent account, alongside chosen internal users. Site membership alone does not make an external user eligible.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:share-groups",
+    "kt:high-volume-experience-cloud-users"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/share-groups.md"
+  },
+  {
+   "id": "sf-001625",
+   "area": "security-and-sharing",
+   "t": "Each share group is tied to a sharing set and applies across all Experience Cloud sites in the org.",
+   "f": "Each share group is tied to a public group and applies only to the one Experience Cloud site where it was activated.",
+   "x": "Share groups are configured from a sharing set's Share Group Settings tab and take effect org-wide across sites. They are not built on public groups, which high-volume users cannot join.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:share-groups",
+    "kt:sharing-sets",
+    "kt:experience-cloud"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/share-groups.md"
+  },
+  {
+   "id": "sf-001626",
+   "area": "architecture-practice",
+   "t": "A mock cutover rehearses go-live in a test environment using the same data volumes, tools, people, steps and timings as the real event.",
+   "f": "A mock cutover rehearses go-live in a test environment using a small data sample, so it validates the steps without reproducing the real timings.",
+   "x": "The point of the dress rehearsal is to reproduce real timings, so it uses full data volumes and is repeated until it runs cleanly. A small sample would hide exactly the duration problems it is meant to expose.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:cutover-plan",
+    "kt:environment-strategy"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/cutover-plan.md"
+  },
+  {
+   "id": "sf-001627",
+   "area": "architecture-practice",
+   "t": "Microsoft's implementation guidance describes a typical cutover window as often a weekend lasting under 48 hours.",
+   "f": "Microsoft's implementation guidance describes a typical cutover window as often a single business day lasting under 8 hours.",
+   "x": "The guidance frames cutover as a short window, frequently a weekend of less than 48 hours, during which neither old nor new system is fully usable. The false version shrinks it to a single working day.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:cutover-plan"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/cutover-plan.md"
+  },
+  {
+   "id": "sf-001628",
+   "area": "architecture-practice",
+   "t": "AWS cutover guidance advises naming a single person who decides, at predefined checkpoints, whether to fix forward or roll back.",
+   "f": "AWS cutover guidance advises that, at predefined checkpoints, the whole cutover team votes on whether to fix forward or roll back.",
+   "x": "Having one named decision-maker avoids stalls when a checkpoint fails and predefined rollback conditions are met. A group vote is not what the guidance recommends.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:cutover-plan",
+    "kt:rollback-plan"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/cutover-plan.md"
+  },
+  {
+   "id": "sf-001629",
+   "area": "architecture-practice",
+   "t": "Trailhead advises using delta batch feeds wherever possible, because they are smaller, faster and more resilient to network interruptions than full feeds.",
+   "f": "Trailhead advises using full batch feeds wherever possible, because they are simpler and more resilient to network interruptions than delta feeds.",
+   "x": "Delta feeds send only what changed, so they move less data and recover more easily if a transfer breaks. The false version recommends the heavier full feed.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:interface-specification-document",
+    "kt:integration-patterns"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/interface-specification-document.md"
+  },
+  {
+   "id": "sf-001630",
+   "area": "architecture-practice",
+   "t": "Because Salesforce cannot guarantee a call is delivered only once, an interface specification should say how the receiving system de-duplicates repeated messages.",
+   "f": "Because Salesforce guarantees each outbound call is delivered exactly once, an interface specification can leave de-duplication of repeated messages undefined.",
+   "x": "Retries mean the same message can arrive more than once, so the receiver must be idempotent and the spec should say how. Exactly-once delivery is not something Salesforce promises.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:interface-specification-document",
+    "kt:integration-patterns"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/interface-specification-document.md"
+  },
+  {
+   "id": "sf-001631",
+   "area": "architecture-practice",
+   "t": "Salesforce's integration patterns classify integrations by type as process, data or virtual integration.",
+   "f": "Salesforce's integration patterns classify integrations by type as process, data or user-interface integration.",
+   "x": "The three pattern types are process, data and virtual integration, and patterns are separately classed by timing as synchronous or asynchronous. User-interface integration is not one of the listed types.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:interface-specification-document",
+    "kt:integration-patterns"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/interface-specification-document.md"
+  },
+  {
+   "id": "sf-001632",
+   "area": "automation",
+   "t": "In an action plan template, a task can depend on up to three prerequisite tasks, and dependent tasks are created only after their prerequisites are completed.",
+   "f": "In an action plan template, a task can depend on up to ten prerequisite tasks, and all tasks are created when the plan starts regardless of prerequisites.",
+   "x": "Action plans support at most three prerequisites per task, and only tasks without prerequisites exist at launch; the rest appear as their predecessors finish. The false version raises the limit and creates everything up front.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:action-plans"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/action-plans.md"
+  },
+  {
+   "id": "sf-001633",
+   "area": "automation",
+   "t": "An action plan item assigned to a role held by two or more users falls back to the plan creator.",
+   "f": "An action plan item assigned to a role held by two or more users falls back to the target record's owner.",
+   "x": "When a role does not resolve to exactly one user, or no user resolves at all, the item goes to whoever created the plan. The record owner is not the fallback.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:action-plans",
+    "kt:opportunity-teams"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/action-plans.md"
+  },
+  {
+   "id": "sf-001634",
+   "area": "automation",
+   "t": "Action plan status doesn't follow task progress automatically; admins clone and activate the Update Action Plan Status flow template to keep it in sync.",
+   "f": "Action plan status follows task progress automatically, so no flow is needed to mark a plan complete when its tasks are done.",
+   "x": "Out of the box the plan's status stays where it was set; the provided flow template must be cloned and activated to update it from task completion. The false version assumes built-in syncing.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:action-plans",
+    "kt:process-automation"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/action-plans.md"
+  },
+  {
+   "id": "sf-001635",
+   "area": "automation",
+   "t": "Trailhead warns that a Flow record choice set returns only the first 200 matching records, so large objects need a filter.",
+   "f": "Trailhead warns that a Flow record choice set returns only the first 2,000 matching records, so large objects need a filter.",
+   "x": "A record choice set stops at 200 records, which is why filter conditions matter on big objects. The false version overstates the cap tenfold.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:flow-choice-resources",
+    "kt:screen-flow"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/flow-choice-resources.md"
+  },
+  {
+   "id": "sf-001636",
+   "area": "automation",
+   "t": "A multi-select choice component in a screen flow returns one text string of values separated by semicolons rather than a collection.",
+   "f": "A multi-select choice component in a screen flow returns a text collection variable with one item per selected value.",
+   "x": "Multi-select selections come back as a single semicolon-delimited string, which elements expecting a real collection cannot use without conversion. The false version claims a ready-made collection.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:flow-choice-resources",
+    "kt:screen-flow",
+    "kt:flow-loop-element"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/flow-choice-resources.md"
+  },
+  {
+   "id": "sf-001637",
+   "area": "automation",
+   "t": "A Flow picklist choice set can't be filtered, so it shows all of the field's values even where a record type narrows that picklist.",
+   "f": "A Flow picklist choice set is filtered by the record's record type, so it shows only the values that record type allows for that picklist.",
+   "x": "Picklist choice sets read every value of the field with no filtering, so record-type restrictions seen on page layouts don't apply in the flow. The false version assumes record-type filtering.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:flow-choice-resources",
+    "kt:picklist-value-sets"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/flow-choice-resources.md"
+  },
+  {
+   "id": "sf-001638",
+   "area": "clouds-and-products",
+   "t": "Trailhead lists Service Resource Availability, Earliest Start Permitted and Due Date Match Time as the work rules a Field Service scheduling policy needs to function.",
+   "f": "Trailhead lists Match Skills, Match Territory and Required Resource as the work rules a Field Service scheduling policy needs to function.",
+   "x": "The three mandatory rules cover worker availability and the appointment's allowed time window. Skill, territory and required-resource rules are optional filters added as the business needs them.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:field-service-scheduling-policies",
+    "kt:field-service"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/field-service-scheduling-policies.md"
+  },
+  {
+   "id": "sf-001639",
+   "area": "clouds-and-products",
+   "t": "With Enhanced Scheduling and Optimization, candidates collect penalty points and the lowest penalty wins, while the legacy engine awards points and picks the highest.",
+   "f": "With Enhanced Scheduling and Optimization, candidates collect reward points and the highest score wins, while the legacy engine assigns penalties and picks the lowest.",
+   "x": "The enhanced engine scores options by penalties, so the smallest total is best; the legacy engine works the other way, adding up rewards. The false version swaps the two engines' scoring.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:field-service-scheduling-policies",
+    "kt:enhanced-scheduling-and-optimization"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/field-service-scheduling-policies.md"
+  },
+  {
+   "id": "sf-001640",
+   "area": "clouds-and-products",
+   "t": "Event-triggered Field Service scheduling runs as the Automated Process user by default, which lacks the Field Service permission sets the scheduling API needs.",
+   "f": "Event-triggered Field Service scheduling runs as the user who fired the event by default, so that user's Field Service permission sets always apply.",
+   "x": "FSL.ScheduleService needs a user with a Field Service Admin, Dispatcher, Call Center or Self-Service permission set, and the default Automated Process user has none of them. Scheduling from event triggers therefore needs a deliberately chosen running user.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:field-service-scheduling-policies",
+    "kt:field-service"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/field-service-scheduling-policies.md"
+  },
+  {
+   "id": "sf-001641",
+   "area": "clouds-and-products",
+   "t": "In Salesforce Voice, reps accept calls in the Omni-Channel widget rather than in the older Salesforce Call Center softphone.",
+   "f": "In Salesforce Voice, reps accept calls in the older Salesforce Call Center softphone rather than in the Omni-Channel widget.",
+   "x": "Voice routes calls as Omni-Channel work, so they arrive in the same widget as cases and messaging. The legacy Call Center softphone is not how Voice delivers calls.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:salesforce-voice",
+    "kt:omni-channel"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/salesforce-voice.md"
+  },
+  {
+   "id": "sf-001642",
+   "area": "clouds-and-products",
+   "t": "If an org exceeds its Salesforce Voice concurrent-call or calls-per-second limit, VoiceCall records can't be created.",
+   "f": "If an org exceeds its Salesforce Voice concurrent-call or calls-per-second limit, VoiceCall records are still created but transcription stops.",
+   "x": "Hitting the call-rate limits blocks VoiceCall creation, which shows up in the InvokeTelephonyIntegrationApi Lambda output. Stopped transcription is the separate symptom of exceeding the transcription limit.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:salesforce-voice",
+    "kt:telephony-integration-api"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/salesforce-voice.md"
+  },
+  {
+   "id": "sf-001643",
+   "area": "clouds-and-products",
+   "t": "In Government Cloud, Salesforce Voice supports only the Amazon Connect and partner-telephony variants.",
+   "f": "In Government Cloud, Salesforce Voice supports only the bring-your-own-telephony variant.",
+   "x": "Government Cloud orgs can use Voice with Amazon Connect or with partner telephony. Bring your own telephony is not among the variants supported there.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:salesforce-voice",
+    "kt:government-cloud",
+    "kt:amazon-connect"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/salesforce-voice.md"
+  },
+  {
+   "id": "sf-001644",
+   "area": "data-cloud-and-ai",
+   "t": "An Agentforce employee agent runs in the context of the logged-in user, so its actions are limited by that person's licenses and permissions.",
+   "f": "An Agentforce employee agent runs as a shared agent user, so every employee who asks it gets the same data access regardless of their own permissions.",
+   "x": "Employee agents act as the person using them, so a manager and a direct report see different results according to their own access. They do not run under a common agent user identity.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:agentforce-employee-agents",
+    "kt:salesforce-sharing-model"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/agentforce-employee-agents.md"
+  },
+  {
+   "id": "sf-001645",
+   "area": "data-cloud-and-ai",
+   "t": "The Agentforce Employee Agent template ships with three system subagents: General FAQ, Off Topic and Ambiguous Question.",
+   "f": "The Agentforce Employee Agent template ships with three system subagents: General FAQ, Escalation and Ambiguous Question.",
+   "x": "The template's Agent Router starts with General FAQ, Off Topic and Ambiguous Question, and General FAQ answers from Knowledge. Escalation is not one of the built-in system subagents.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:agentforce-employee-agents",
+    "kt:agentforce-subagents",
+    "kt:agentforce-studio"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/agentforce-employee-agents.md"
+  },
+  {
+   "id": "sf-001646",
+   "area": "data-cloud-and-ai",
+   "t": "A live Agentforce employee agent must be deactivated before it can be changed.",
+   "f": "A live Agentforce employee agent can be edited while it is active, and the changes reach users immediately.",
+   "x": "Changes to an active agent require deactivating it first; once reactivated it is available wherever it has been shared. Editing in place while live is not supported.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:agentforce-employee-agents",
+    "kt:agentforce-studio"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/agentforce-employee-agents.md"
+  },
+  {
+   "id": "sf-001647",
+   "area": "data-cloud-and-ai",
+   "t": "Agentforce SDR data library uploads accept text or HTML files up to 4 MB and PDF files up to 100 MB.",
+   "f": "Agentforce SDR data library uploads accept text or HTML files up to 100 MB and PDF files up to 4 MB.",
+   "x": "The implementation guide sets a small 4 MB cap for text and HTML and a much larger 100 MB cap for PDFs. The false version swaps the two limits.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:agentforce-sdr",
+    "kt:agentforce-data-library"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/agentforce-sdr.md"
+  },
+  {
+   "id": "sf-001648",
+   "area": "data-cloud-and-ai",
+   "t": "The Agentforce SDR agent needs a dedicated company-domain mailbox whose address matches the email on the agent's user record.",
+   "f": "The Agentforce SDR agent sends from the lead owner's own mailbox, so no separate address is needed on the agent's user record.",
+   "x": "The agent runs as its own user and sends from a dedicated mailbox, and the connected email account must be the same address as on that user. It does not borrow the seller's inbox.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:agentforce-sdr",
+    "kt:einstein-activity-capture"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/agentforce-sdr.md"
+  },
+  {
+   "id": "sf-001649",
+   "area": "data-cloud-and-ai",
+   "t": "In the Agentforce builder's test environment, the SDR agent can't schedule or send emails to leads.",
+   "f": "In the Agentforce builder's test environment, the SDR agent sends real emails to leads, so testing should use dummy lead records.",
+   "x": "The builder's test environment does not schedule or send outreach, which is why the guide supplies static do-not-schedule test prompts. The false version assumes live sending during tests.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:agentforce-sdr",
+    "kt:agentforce-studio"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/agentforce-sdr.md"
+  },
+  {
+   "id": "sf-001650",
+   "area": "data-model",
+   "t": "The Salesforce Data Import Wizard can import up to 50,000 records at a time.",
+   "f": "The Salesforce Data Import Wizard can import up to 500,000 records at a time.",
+   "x": "The wizard's capacity is 50,000 records per import; larger volumes are Data Loader territory. The false version inflates the cap tenfold.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:platform-administrator-certification"
+   ],
+   "concepts": [
+    "kt:data-import-wizard",
+    "kt:data-loader"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/data-import-wizard.md"
+  },
+  {
+   "id": "sf-001651",
+   "area": "data-model",
+   "t": "When the Data Import Wizard links contacts to a manager through Reports To, it can match only on Salesforce ID or email, not on name.",
+   "f": "When the Data Import Wizard links contacts to a manager through Reports To, it can match on the manager's full name or email, but not on Salesforce ID.",
+   "x": "Reports To lookups in the wizard resolve by record ID or email address; names are not a supported match key. The false version reverses which keys are allowed.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:platform-administrator-certification"
+   ],
+   "concepts": [
+    "kt:data-import-wizard",
+    "kt:standard-objects"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/data-import-wizard.md"
+  },
+  {
+   "id": "sf-001652",
+   "area": "data-model",
+   "t": "The Data Import Wizard processes jobs asynchronously through the Bulk API, and progress shows on the Bulk Data Load Jobs page in Setup.",
+   "f": "The Data Import Wizard writes records synchronously through the SOAP API, so the browser must stay open until every record is saved.",
+   "x": "Unlike the older per-object wizards, the unified wizard hands work to the Bulk API and emails the user when it finishes. Synchronous writing was the old wizards' behaviour.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [
+    "kt:platform-administrator-certification"
+   ],
+   "concepts": [
+    "kt:data-import-wizard",
+    "kt:bulk-api-1"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/data-import-wizard.md"
+  },
+  {
+   "id": "sf-001653",
+   "area": "data-model",
+   "t": "A rich text area field holds up to 131,072 characters, and that limit counts HTML tags and formatting as well as visible text.",
+   "f": "A rich text area field holds up to 131,072 characters, and that limit counts only visible text, not the HTML tags or formatting.",
+   "x": "Rich text is stored as HTML, so every tag and formatting character uses the budget and heavily styled content fills the field sooner. The false version exempts the markup.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:rich-text-area-fields",
+    "kt:custom-fields"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/rich-text-area-fields.md"
+  },
+  {
+   "id": "sf-001654",
+   "area": "data-model",
+   "t": "Images inserted into a rich text area field must be GIF, JPEG or PNG files of no more than 1 MB each.",
+   "f": "Images inserted into a rich text area field must be GIF, JPEG or PNG files of no more than 5 MB each.",
+   "x": "The rich text editor caps each uploaded image at 1 MB in those three formats. The false version raises the size limit to 5 MB.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:rich-text-area-fields"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/rich-text-area-fields.md"
+  },
+  {
+   "id": "sf-001655",
+   "area": "data-model",
+   "t": "By default, images uploaded through lightning-input-rich-text are accessible to all users in the org, and share-with-entity-id narrows that access.",
+   "f": "By default, images uploaded through lightning-input-rich-text are visible only to the uploading user, and share-with-entity-id widens that access.",
+   "x": "Uploaded images start out org-wide, so a developer who wants them tied to a record, group or user must set share-with-entity-id. The false version assumes a private default.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:rich-text-area-fields",
+    "kt:lightning-web-components"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/rich-text-area-fields.md"
+  },
+  {
+   "id": "sf-001656",
+   "area": "development",
+   "t": "The passing score for the Salesforce JavaScript Developer exam is 65%.",
+   "f": "The passing score for the Salesforce JavaScript Developer exam is 72%.",
+   "x": "The exam guide sets the JavaScript Developer pass mark at 65% for its 60 scored questions. 72% is not the stated threshold.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:javascript-developer-certification"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/javascript-developer-certification.md"
+  },
+  {
+   "id": "sf-001657",
+   "area": "development",
+   "t": "Objects, Functions, and Classes is the most heavily weighted section of the JavaScript Developer exam, at 25%.",
+   "f": "Browser and Events is the most heavily weighted section of the JavaScript Developer exam, at 25%.",
+   "x": "Objects, Functions, and Classes leads at 25%, followed by Variables, Types, and Collections at 23%. Browser and Events carries 17%.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:javascript-developer-certification"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/javascript-developer-certification.md"
+  },
+  {
+   "id": "sf-001658",
+   "area": "development",
+   "t": "The JavaScript Developer credential has its own maintenance badge on the Summer cycle.",
+   "f": "The JavaScript Developer credential is maintained through the Platform Developer badge on the Winter cycle.",
+   "x": "JavaScript Developer holders complete a dedicated badge each Summer cycle, separate from the Platform Developer maintenance. The false version merges it into the Winter developer badge.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:javascript-developer-certification",
+    "kt:salesforce-certification-program"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/javascript-developer-certification.md"
+  },
+  {
+   "id": "sf-001659",
+   "area": "development",
+   "t": "Jest tests built with sfdx-lwc-jest cover Lightning web components only and do not work with Aura components.",
+   "f": "Jest tests built with sfdx-lwc-jest cover both Lightning web components and Aura components in the same test suite.",
+   "x": "The sfdx-lwc-jest tooling targets the LWC framework; Aura components need other testing approaches. The false version claims Aura support.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:lwc-jest-testing",
+    "kt:lightning-web-components"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/lwc-jest-testing.md"
+  },
+  {
+   "id": "sf-001660",
+   "area": "development",
+   "t": "LWC Jest watch mode uses Git to find changed files, so it fails if the project is not a Git repository.",
+   "f": "LWC Jest watch mode uses the Salesforce CLI's source tracking to find changed files, so it fails if no default org is set.",
+   "x": "Watch mode relies on Git to detect changes and needs no org at all. The false version ties it to CLI source tracking and an org connection.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:lwc-jest-testing",
+    "kt:salesforce-cli"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/lwc-jest-testing.md"
+  },
+  {
+   "id": "sf-001661",
+   "area": "development",
+   "t": "In an LWC Jest test, after changing a property on an attached component, the test must wait on a resolved promise before checking the DOM.",
+   "f": "In an LWC Jest test, after changing a property on an attached component, the DOM updates synchronously and can be checked on the next line.",
+   "x": "Rendering in LWC is asynchronous, so the test has to await a resolved promise for the re-render to finish. Asserting immediately would see the old DOM.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:lwc-jest-testing",
+    "kt:lightning-web-components"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/lwc-jest-testing.md"
+  },
+  {
+   "id": "sf-001662",
+   "area": "devops-and-alm",
+   "t": "From API version 40.0, deploying a PermissionSet disables any permission the file doesn't specify, so the deploy should include the set's full content.",
+   "f": "From API version 40.0, deploying a PermissionSet leaves any permission the file doesn't specify unchanged, so partial files are safe to deploy.",
+   "x": "Permission set deploys are treated as the complete definition, so omitted permissions are switched off. Profiles behave differently, which is why partial permission set files are risky.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:permission-set-led-deployment",
+    "kt:permission-sets",
+    "kt:metadata-api"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/permission-set-led-deployment.md"
+  },
+  {
+   "id": "sf-001663",
+   "area": "devops-and-alm",
+   "t": "A profile retrieved through Metadata API includes security settings only for the other components named in the same retrieve request.",
+   "f": "A profile retrieved through Metadata API always includes security settings for every object and field in the org, whatever else is in the request.",
+   "x": "Object, field and similar access in a retrieved profile is scoped to the components listed alongside it; only user permissions, IP ranges and login hours always come back. That makes profile files hard to manage in source.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:permission-set-led-deployment",
+    "kt:profiles",
+    "kt:package-xml-manifest"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/permission-set-led-deployment.md"
+  },
+  {
+   "id": "sf-001664",
+   "area": "devops-and-alm",
+   "t": "In a Metadata API retrieve, a * wildcard on CustomObject returns permissions for custom objects only, so standard objects must be listed explicitly.",
+   "f": "In a Metadata API retrieve, a * wildcard on CustomObject returns permissions for both standard and custom objects, so nothing needs listing explicitly.",
+   "x": "The wildcard does not expand to standard objects, so a profile or permission set retrieve misses their permissions unless each one is named. The false version assumes the wildcard covers everything.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:permission-set-led-deployment",
+    "kt:package-xml-manifest",
+    "kt:metadata-api"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/permission-set-led-deployment.md"
+  },
+  {
+   "id": "sf-001665",
+   "area": "devops-and-alm",
+   "t": "A Trialforce source org must be 1 GB or smaller, and by default it can hold at most 10 Trialforce templates.",
+   "f": "A Trialforce source org must be 10 GB or smaller, and by default it can hold at most 50 Trialforce templates.",
+   "x": "Trialforce caps the source org at 1 GB and allows 10 templates per source org unless Partner Support raises it. The false version inflates both limits.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:trialforce"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/trialforce.md"
+  },
+  {
+   "id": "sf-001666",
+   "area": "devops-and-alm",
+   "t": "A Trialforce source org can create templates only while it is itself a trial org, not after it is converted to an active, paying org.",
+   "f": "A Trialforce source org can create templates only after it is converted to an active, paying org, not while it is still a trial org.",
+   "x": "Template creation is tied to the source org's trial status; converting it to a paid org removes that ability. The false version reverses the requirement.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:trialforce"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/trialforce.md"
+  },
+  {
+   "id": "sf-001667",
+   "area": "devops-and-alm",
+   "t": "When Trialforce creates a template, PII in User fields such as addresses is scrubbed, but PII in custom objects and fields is copied unchanged.",
+   "f": "When Trialforce creates a template, PII is scrubbed from every object, including custom objects and fields, before trial orgs are created.",
+   "x": "Only User object PII is cleaned automatically, so partners must keep personal data out of custom objects in the source org themselves. The false version promises scrubbing everywhere.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:trialforce"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/trialforce.md"
+  },
+  {
+   "id": "sf-001668",
+   "area": "identity",
+   "t": "Both RFC 6238 and NIST require a TOTP verifier to refuse a code that was already accepted once, even if it is still inside its validity window.",
+   "f": "Both RFC 6238 and NIST allow a TOTP verifier to accept the same code more than once, as long as it is still inside its validity window.",
+   "x": "Rejecting reused codes blocks replay attacks within the time step. The false version permits reuse until the window expires.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:time-based-one-time-password",
+    "kt:nist-digital-identity-guidelines"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/time-based-one-time-password.md"
+  },
+  {
+   "id": "sf-001669",
+   "area": "identity",
+   "t": "NIST requires rate limiting for OTP verifiers whenever the OTP output is shorter than 64 bits, which covers every 6- or 8-digit TOTP code.",
+   "f": "NIST requires rate limiting for OTP verifiers only when the OTP output is shorter than 6 digits, so standard 6- or 8-digit TOTP codes are exempt.",
+   "x": "Six or eight decimal digits are far below 64 bits, so ordinary TOTP codes fall under the rate-limiting rule. The false version exempts them.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:time-based-one-time-password",
+    "kt:nist-digital-identity-guidelines"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/time-based-one-time-password.md"
+  },
+  {
+   "id": "sf-001670",
+   "area": "identity",
+   "t": "Salesforce emails a user whenever a new verification method is added to their account, whether the user or an admin added it.",
+   "f": "Salesforce emails a user about a new verification method only when an admin adds it, not when the user registers it themselves.",
+   "x": "The notification is sent for every newly added method regardless of who added it, so users can spot unexpected registrations. The false version limits it to admin changes.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:time-based-one-time-password",
+    "kt:multi-factor-authentication",
+    "kt:identity-verification"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/time-based-one-time-password.md"
+  },
+  {
+   "id": "sf-001671",
+   "area": "identity",
+   "t": "In the Salesforce username-password OAuth flow, the password parameter carries the user's password with their security token appended.",
+   "f": "In the Salesforce username-password OAuth flow, the user's security token is sent in its own security_token parameter, separate from the password.",
+   "x": "The flow has no separate token field: the security token is concatenated onto the end of the password value. The false version invents a dedicated parameter.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:username-password-flow",
+    "kt:oauth-2-flows-in-salesforce"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/username-password-flow.md"
+  },
+  {
+   "id": "sf-001672",
+   "area": "identity",
+   "t": "Because the user never logs in through a Salesforce page, the username-password OAuth flow can't issue refresh tokens.",
+   "f": "Because the client already holds the user's password, the username-password OAuth flow always issues a long-lived refresh token.",
+   "x": "With no interactive Salesforce login there is no refresh token, so apps needing one must use a redirect-based flow such as the web server flow. Holding the password does not unlock refresh tokens.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:username-password-flow",
+    "kt:oauth-2-0"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/username-password-flow.md"
+  },
+  {
+   "id": "sf-001673",
+   "area": "identity",
+   "t": "RFC 9700, the 2025 OAuth security best current practice, says the resource owner password credentials grant must not be used.",
+   "f": "RFC 9700, the 2025 OAuth security best current practice, says the resource owner password credentials grant may still be used by confidential clients.",
+   "x": "RFC 9700 goes beyond RFC 6749's advice to minimize the grant and forbids it outright, citing credential exposure and its poor fit with multi-step login. It makes no exception for confidential clients.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:username-password-flow",
+    "kt:oauth-2-0"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/username-password-flow.md"
+  },
+  {
+   "id": "sf-001674",
+   "area": "integration",
+   "t": "Since May 2026, MuleSoft Composer automatically deactivates a flow that has 100 or more consecutive errors over 10 or more days.",
+   "f": "Since May 2026, MuleSoft Composer automatically deactivates a flow that has 10 or more consecutive errors over 1 or more days.",
+   "x": "The auto-deactivation threshold is 100 consecutive errors spanning at least 10 days. The false version makes the rule far more aggressive.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:mulesoft-composer"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/mulesoft-composer.md"
+  },
+  {
+   "id": "sf-001675",
+   "area": "integration",
+   "t": "MuleSoft Composer connections can be reused across flows but belong only to the user who created them.",
+   "f": "MuleSoft Composer connections can be reused across flows and are shared with every Composer user in the org by default.",
+   "x": "Connections are private to their creator, so team-owned flows need planned shared service users. The false version makes connections org-wide.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:mulesoft-composer",
+    "kt:named-credentials"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/mulesoft-composer.md"
+  },
+  {
+   "id": "sf-001676",
+   "area": "integration",
+   "t": "MuleSoft Composer flow control is limited to If/Else, For Each over records, and an Error Handler block.",
+   "f": "MuleSoft Composer flow control includes If/Else, For Each, parallel branches and inline DataWeave transformation blocks.",
+   "x": "Composer deliberately keeps logic simple with just three control blocks and no DataWeave code. Parallel branching and DataWeave belong to full Mule applications on Anypoint Platform.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:mulesoft-composer",
+    "kt:mulesoft-anypoint-platform"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/mulesoft-composer.md"
+  },
+  {
+   "id": "sf-001677",
+   "area": "integration",
+   "t": "MuleSoft illustrates point-to-point growth with five systems needing ten connections and ten or more systems needing at least 45.",
+   "f": "MuleSoft illustrates point-to-point growth with five systems needing five connections and ten or more systems needing at least 10.",
+   "x": "A fully connected mesh needs n(n-1)/2 links, so five systems need ten and ten systems need 45. The false version assumes connections grow only linearly with systems.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:point-to-point-integration",
+    "kt:integration-patterns"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/point-to-point-integration.md"
+  },
+  {
+   "id": "sf-001678",
+   "area": "integration",
+   "t": "MuleSoft's guidance treats three or fewer systems as the range where point-to-point integration stays manageable.",
+   "f": "MuleSoft's guidance treats ten or fewer systems as the range where point-to-point integration stays manageable.",
+   "x": "Point-to-point is acceptable only for a handful of systems, about three, with no growth expected. At ten systems the mesh already needs dozens of links.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:point-to-point-integration",
+    "kt:mulesoft-anypoint-platform"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/point-to-point-integration.md"
+  },
+  {
+   "id": "sf-001679",
+   "area": "integration",
+   "t": "Salesforce's event-driven decision guide recommends adding a new subscriber to the event bus instead of building another custom point-to-point link.",
+   "f": "Salesforce's event-driven decision guide recommends building another custom point-to-point link instead of adding a new subscriber to the event bus.",
+   "x": "Publishing once to a bus lets any number of consumers subscribe without new custom connections, which avoids fan-out technical debt. The false version reverses the recommendation.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:point-to-point-integration",
+    "kt:event-driven-architecture",
+    "kt:platform-events"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/point-to-point-integration.md"
+  },
+  {
+   "id": "sf-001680",
+   "area": "platform-architecture",
+   "t": "Trailhead recommends that quick action layouts in the Salesforce mobile app have fewer than five fields and never more than eight.",
+   "f": "Trailhead recommends that quick action layouts in the Salesforce mobile app have fewer than ten fields and never more than fifteen.",
+   "x": "Short action layouts keep mobile data entry fast, so the guidance is under five fields with eight as the ceiling. The false version roughly doubles both numbers.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:salesforce-mobile-app",
+    "kt:quick-actions"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/salesforce-mobile-app.md"
+  },
+  {
+   "id": "sf-001681",
+   "area": "platform-architecture",
+   "t": "Every record shown on a user's offline Landing Page in the Salesforce mobile app must also be included in that user's briefcase.",
+   "f": "Records shown on a user's offline Landing Page in the Salesforce mobile app are primed automatically, so they don't need to be in the user's briefcase.",
+   "x": "The offline Landing Page relies on the briefcase for record details, so its records must be primed through Briefcase Builder. Nothing is primed automatically outside the briefcase.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:salesforce-mobile-app",
+    "kt:briefcase-builder"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/salesforce-mobile-app.md"
+  },
+  {
+   "id": "sf-001682",
+   "area": "platform-architecture",
+   "t": "In the Salesforce mobile app, the default app is the first Lightning app listed in the App Launcher.",
+   "f": "In the Salesforce mobile app, the default app is always the Sales app, regardless of the App Launcher order.",
+   "x": "The mobile menu mirrors the active Lightning app, and the starting app is whichever Lightning app comes first in the App Launcher. No single app is hard-wired as the default.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:salesforce-mobile-app",
+    "kt:lightning-app-builder"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/salesforce-mobile-app.md"
+  },
+  {
+   "id": "sf-001683",
+   "area": "platform-architecture",
+   "t": "Salesforce Sites allows one site in Developer Edition and up to 25 sites in Enterprise and Performance editions.",
+   "f": "Salesforce Sites allows five sites in Developer Edition and up to 100 sites in Enterprise and Performance editions.",
+   "x": "Developer Edition gets a single site with no page-view allocation, while Enterprise and Performance allow 25. The false version inflates both allowances.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:salesforce-sites"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/salesforce-sites.md"
+  },
+  {
+   "id": "sf-001684",
+   "area": "platform-architecture",
+   "t": "For Salesforce Sites page views, the Authorization Required error page counts, while static resources, images and robots.txt do not.",
+   "f": "For Salesforce Sites page views, static resources, images and robots.txt count, while the Authorization Required error page does not.",
+   "x": "Unauthenticated page requests, including the Authorization Required page and AJAX traffic, are counted; static assets and other error pages are not. The false version reverses which requests count.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:salesforce-sites",
+    "kt:static-resources"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/salesforce-sites.md"
+  },
+  {
+   "id": "sf-001685",
+   "area": "platform-architecture",
+   "t": "Salesforce can disable an org's Sites if page views exceed 110% of the allocation for four straight months or reach 300% in a single month.",
+   "f": "Salesforce can disable an org's Sites if page views exceed 100% of the allocation for one month or reach 150% in a single day.",
+   "x": "Sites are disabled, after notice to admins, only for sustained overuse past 110% over four months or a spike to 300% in one month. The false version sets much tighter thresholds.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:salesforce-sites"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/salesforce-sites.md"
+  },
+  {
+   "id": "sf-001686",
+   "area": "public-sector-and-compliance",
+   "t": "Under IRS Publication 1075, an agency must notify the Office of Safeguards at least 45 days before moving Federal Tax Information into a cloud.",
+   "f": "Under IRS Publication 1075, an agency must notify the Office of Safeguards within 15 days after moving Federal Tax Information into a cloud.",
+   "x": "The cloud notification is due in advance, at least 45 days before the move, and documents controls, FedRAMP status, data center locations and encryption. An after-the-fact notice does not meet the rule.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:irs-publication-1075"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/irs-publication-1075.md"
+  },
+  {
+   "id": "sf-001687",
+   "area": "public-sector-and-compliance",
+   "t": "IRS guidance requires a FedRAMP authorization for any cloud holding Federal Tax Information, but FedRAMP alone does not satisfy Publication 1075.",
+   "f": "IRS guidance treats a FedRAMP Moderate authorization as fully satisfying Publication 1075 for any cloud holding Federal Tax Information.",
+   "x": "FedRAMP at moderate impact or higher is a precondition, yet Publication 1075 adds its own conditions such as onshore support, tenant isolation and notification. A FedRAMP or 3PAO attestation is not enough by itself.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:irs-publication-1075",
+    "kt:fedramp"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/irs-publication-1075.md"
+  },
+  {
+   "id": "sf-001688",
+   "area": "public-sector-and-compliance",
+   "t": "The outside assessment of Government Cloud Plus against IRS 1075 used NIST SP 800-53 revision 4, not the revision 5 baseline of the current publication.",
+   "f": "The outside assessment of Government Cloud Plus against IRS 1075 used NIST SP 800-53 revision 5, matching the baseline of the current publication.",
+   "x": "The 2021 Publication 1075 is built on 800-53 Rev. 5, but Salesforce's attestation was reviewed against Rev. 4, so agencies may need their own gap analysis. The false version claims the revisions match.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:irs-publication-1075",
+    "kt:government-cloud-plus",
+    "kt:nist-sp-800-53"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/irs-publication-1075.md"
+  },
+  {
+   "id": "sf-001689",
+   "area": "public-sector-and-compliance",
+   "t": "ISO's Harmonized Structure, historically published as Annex SL, gives its management system standards identical clause numbers, order and titles.",
+   "f": "ISO's Harmonized Structure, historically published as Annex SL, shares only core terms across its management system standards, while each sets its own clause numbering.",
+   "x": "The common skeleton covers clause numbers, order, titles, shared terms and core requirements, which is what makes integrated management systems practical. The false version limits it to terminology.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:management",
+    "kt:iso-iec-27001"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/management.md"
+  },
+  {
+   "id": "sf-001690",
+   "area": "public-sector-and-compliance",
+   "t": "ISO does not certify organizations itself; certification to a management system standard is optional and done by external certification bodies.",
+   "f": "ISO certifies organizations itself, and certification to a management system standard is mandatory for any organization that adopts one.",
+   "x": "ISO writes the standards but leaves certification to independent bodies, and organizations may adopt a standard without certifying. The false version makes ISO the certifier and certification compulsory.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:management",
+    "kt:governance-risk-and-compliance"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/management.md"
+  },
+  {
+   "id": "sf-001691",
+   "area": "public-sector-and-compliance",
+   "t": "ISO/IEC 38500, the first international standard for governance of IT, was published in 2008 and derived from Australia's AS 8015.",
+   "f": "ISO/IEC 38500, the first international standard for governance of IT, was published in 2008 and derived from the UK's BS 7799.",
+   "x": "The standard grew out of the Australian standard AS 8015. BS 7799 is the British information security standard behind the ISO/IEC 27000 family, not IT governance.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:management",
+    "kt:it-governance"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/management.md"
+  },
+  {
+   "id": "sf-001692",
+   "area": "security-and-sharing",
+   "t": "The SetupAuditTrail object exposes Setup changes for at least the last 180 days, and older entries can't be recovered natively.",
+   "f": "The SetupAuditTrail object exposes Setup changes for at least the last 10 years, so older entries never need exporting.",
+   "x": "Setup Audit Trail keeps roughly 180 days of history; audits needing a longer look-back must export or archive entries. The false version claims long-term retention.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:setup-audit-trail",
+    "kt:security-governance"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/setup-audit-trail.md"
+  },
+  {
+   "id": "sf-001693",
+   "area": "security-and-sharing",
+   "t": "Since API version 35.0, SetupAuditTrail records the delegate user when an admin made a change while logged in as another user.",
+   "f": "Since API version 35.0, SetupAuditTrail records only the impersonated user when an admin made a change while logged in as another user.",
+   "x": "The object captures the delegate user behind a Login-As session, so changes can be traced to the admin who actually made them. Recording only the impersonated user would hide that.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:setup-audit-trail",
+    "kt:soql"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/setup-audit-trail.md"
+  },
+  {
+   "id": "sf-001694",
+   "area": "security-and-sharing",
+   "t": "Setup Audit Trail records that most configuration changes happened but not their full before-and-after values.",
+   "f": "Setup Audit Trail records full before-and-after values for every configuration change, so any old setting can be restored from it.",
+   "x": "Entries describe who changed what and when, but usually not the prior value, so the trail rarely tells you what an old setting was. It also misses some changes, such as list view edits.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:setup-audit-trail"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/setup-audit-trail.md"
+  },
+  {
+   "id": "sf-001695",
+   "area": "security-and-sharing",
+   "t": "Each profile can belong to only one sharing set, so all access mappings for that profile's users live together.",
+   "f": "Each profile can belong to up to five sharing sets, so access mappings for one profile can be split across several sets.",
+   "x": "A profile can appear in just one sharing set, which keeps every mapping for those users in one container. The false version lets a profile span multiple sets.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:sharing-sets",
+    "kt:profiles"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/sharing-sets.md"
+  },
+  {
+   "id": "sf-001696",
+   "area": "security-and-sharing",
+   "t": "If an object's org-wide default is Public Read Only, a sharing set mapping for it can grant only Read/Write access.",
+   "f": "If an object's org-wide default is Public Read Only, a sharing set mapping for it can grant only Read Only access.",
+   "x": "Users already have read access under a Public Read Only default, so the only meaningful upgrade a sharing set can offer is Read/Write. Public Read/Write objects can't be added at all.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:sharing-sets",
+    "kt:organization-wide-defaults"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/sharing-sets.md"
+  },
+  {
+   "id": "sf-001697",
+   "area": "security-and-sharing",
+   "t": "Record access granted through a sharing set isn't extended to users above the recipient in a role hierarchy.",
+   "f": "Record access granted through a sharing set is automatically extended to users above the recipient in the role hierarchy.",
+   "x": "Sharing sets grant access to the matched site users only; nothing rolls up to managers through roles. The false version applies role-hierarchy inheritance that sharing sets don't use.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:sharing-sets",
+    "kt:role-hierarchy"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/sharing-sets.md"
+  },
+  {
+   "id": "sf-001698",
+   "area": "architecture-practice",
+   "t": "Data Loader exports produce no success file unless Generate status files for exports is enabled in Advanced Settings.",
+   "f": "Data Loader exports always produce a success file, and the Generate status files for exports setting only adds an error file.",
+   "x": "Status files are off by default for exports, so reconciliation evidence for an export must be switched on in Advanced Settings. Inserts, updates and other operations write success and error files regardless.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:data-reconciliation",
+    "kt:data-loader"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/data-reconciliation.md"
+  },
+  {
+   "id": "sf-001699",
+   "area": "architecture-practice",
+   "t": "If an object has a column named success or error, Data Loader's output files can show incorrect information, so those columns should be renamed first.",
+   "f": "If an object has a column named success or error, Data Loader automatically renames its own status columns, so the output files stay correct.",
+   "x": "Data Loader writes its own success and error columns, and a same-named source column can collide with them. The guidance is to rename such columns before loading.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:data-reconciliation",
+    "kt:data-loader"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/data-reconciliation.md"
+  },
+  {
+   "id": "sf-001700",
+   "area": "architecture-practice",
+   "t": "Salesforce's migration guidance recommends loading and verifying a single record before loading the full file.",
+   "f": "Salesforce's migration guidance recommends loading the full file first and then verifying a single sampled record.",
+   "x": "Testing one record up front catches mapping mistakes before they multiply across thousands of rows. Verifying only after a full load lets errors spread.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:data-reconciliation",
+    "kt:data-migration-strategy"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/data-reconciliation.md"
+  },
+  {
+   "id": "sf-001701",
+   "area": "architecture-practice",
+   "t": "GAO's cost guide says a rough order of magnitude estimate should never be considered a budget-quality cost estimate.",
+   "f": "GAO's cost guide says a rough order of magnitude estimate can serve as a budget-quality cost estimate once a sponsor approves it.",
+   "x": "A ROM is built quickly from few details, so GAO rules it out as a budget basis under any circumstances. Approval does not change its precision.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:rough-order-of-magnitude-estimate",
+    "kt:project-estimation"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/rough-order-of-magnitude-estimate.md"
+  },
+  {
+   "id": "sf-001702",
+   "area": "architecture-practice",
+   "t": "Per GAO, a rough order of magnitude estimate can be produced by one person or a small group in hours, days or weeks, usually from historical data.",
+   "f": "Per GAO, a rough order of magnitude estimate needs a large estimating team working for many months, usually from detailed design.",
+   "x": "ROMs are quick and lean on past projects; the large-team, months-long effort describes GAO's full program office estimate. The false version gives the ROM the profile of that budget estimate.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:rough-order-of-magnitude-estimate",
+    "kt:life-cycle-cost-estimate"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/rough-order-of-magnitude-estimate.md"
+  },
+  {
+   "id": "sf-001703",
+   "area": "architecture-practice",
+   "t": "GAO likens a rough order of magnitude estimate to what OMB terminology calls a conceptual estimate.",
+   "f": "GAO likens a rough order of magnitude estimate to what OMB terminology calls a definitive estimate.",
+   "x": "The ROM maps to OMB's early, conceptual estimate category because it is made when few details are known. A definitive estimate implies the precision a ROM lacks.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:rough-order-of-magnitude-estimate",
+    "kt:project-estimation"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/rough-order-of-magnitude-estimate.md"
+  },
+  {
+   "id": "sf-001704",
+   "area": "automation",
+   "t": "Drafting a flow with Agentforce for Flow does not consume generative AI credits, per the Spring '26 release notes.",
+   "f": "Drafting a flow with Agentforce for Flow consumes generative AI credits for each draft, per the Spring '26 release notes.",
+   "x": "The Spring '26 notes state that drafting is free of generative AI credit usage for eligible editions. The false version adds a per-draft charge.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:agentforce-for-flow",
+    "kt:flow-builder"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/agentforce-for-flow.md"
+  },
+  {
+   "id": "sf-001705",
+   "area": "automation",
+   "t": "Salesforce Help lists Data 360 being provisioned and enabled as a prerequisite for drafting flows with Agentforce for Flow.",
+   "f": "Salesforce Help says Agentforce for Flow drafting works without Data 360, needing only Einstein generative AI to be turned on.",
+   "x": "Drafting requires Einstein generative AI, Data 360 and the Agentforce flow automation option in Process Automation Settings. Leaving out Data 360 misses one of the stated prerequisites.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:agentforce-for-flow",
+    "kt:data-cloud",
+    "kt:process-automation-settings"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/agentforce-for-flow.md"
+  },
+  {
+   "id": "sf-001706",
+   "area": "automation",
+   "t": "Since Spring '26, Agentforce for Flow can change an existing flow, showing each proposed change for the builder to accept or reject.",
+   "f": "Since Spring '26, Agentforce for Flow can change an existing flow, applying each proposed change automatically and saving a new version.",
+   "x": "The Agentforce panel proposes edits such as adding a Decision or a fault path, and the builder approves or rejects each one. Changes are not applied without the builder's review.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:agentforce-for-flow",
+    "kt:flow-builder"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/agentforce-for-flow.md"
+  },
+  {
+   "id": "sf-001707",
+   "area": "automation",
+   "t": "An invocable Apex action names its custom property editor through the configurationEditor modifier on its @InvocableMethod annotation.",
+   "f": "An invocable Apex action names its custom property editor through a configurationEditor element in the Apex class's -meta.xml file.",
+   "x": "For actions the editor is declared on the annotation itself; only screen components register it in their .js-meta.xml targetConfig. The Apex class metadata file has no such element.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:custom-property-editors",
+    "kt:invocable-apex-actions"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/custom-property-editors.md"
+  },
+  {
+   "id": "sf-001708",
+   "area": "automation",
+   "t": "In a custom property editor for an invocable action, generic sObject inputs are addressed with a T__ prefix and outputs with a U__ prefix.",
+   "f": "In a custom property editor for an invocable action, generic sObject inputs are addressed with a U__ prefix and outputs with a T__ prefix.",
+   "x": "T__ marks input type mappings and U__ marks output mappings, and the text after the prefix must match the @InvocableVariable name. The false version swaps the prefixes.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:custom-property-editors",
+    "kt:invocable-apex-actions"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/custom-property-editors.md"
+  },
+  {
+   "id": "sf-001709",
+   "area": "automation",
+   "t": "A custom property editor runs only at design time in Flow Builder; the component or action it configures is what runs when the flow executes.",
+   "f": "A custom property editor runs both in Flow Builder and at flow runtime, where it replaces the screen component's interface for end users.",
+   "x": "The editor exists to help admins configure inputs while building the flow. At runtime, users see the configured screen component or the action simply executes.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:custom-property-editors",
+    "kt:flow-builder",
+    "kt:custom-flow-screen-components"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/custom-property-editors.md"
+  },
+  {
+   "id": "sf-001710",
+   "area": "clouds-and-products",
+   "t": "By default, the Field Service mobile app primes service appointments from 45 days before to 45 days after today.",
+   "f": "By default, the Field Service mobile app primes service appointments from 7 days before to 7 days after today.",
+   "x": "The default offline priming window spans 45 days on either side of today, and admins can shorten it to speed up app launch. The false version shrinks the default to a week.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:field-service-mobile-app",
+    "kt:service-appointments"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/field-service-mobile-app.md"
   }
  ]
 }

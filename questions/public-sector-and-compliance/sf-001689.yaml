@@ -1,0 +1,18 @@
+id: sf-001689
+product_area: public-sector-and-compliance
+true_statement: ISO's Harmonized Structure, historically published as Annex SL, gives its management system standards identical clause numbers, order and titles.
+false_statement: ISO's Harmonized Structure, historically published as Annex SL, shares only core terms across its management system standards, while each sets its own clause numbering.
+explanation: The common skeleton covers clause numbers, order, titles, shared terms and core requirements, which is what makes integrated management systems practical. The false version limits it to terminology.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/management.md
+  commit: c73f767414eea7203eed30925e91b1e841ec3124
+  blob: 17bdcd5c85ec7a51b42a522eb9034a28a1baf3bf
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:management
+- kt:iso-iec-27001
+difficulty: 2
+created: '2026-11-25'
+status: active

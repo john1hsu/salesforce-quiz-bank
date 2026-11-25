@@ -1,0 +1,18 @@
+id: sf-001620
+product_area: security-and-sharing
+true_statement: Each enabled partner account gets one account role by default, and the Digital Experiences settings allow up to three.
+false_statement: Each enabled partner account gets three account roles by default, and the Digital Experiences settings allow up to five.
+explanation: Partner accounts start with a single role and can be raised to a maximum of three, though Salesforce recommends staying at one for performance. The false version inflates both numbers.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/partner-community-licenses.md
+  commit: c73f767414eea7203eed30925e91b1e841ec3124
+  blob: 1847aa84fcfe111703e4f7396ea62389f31d5a2c
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:partner-community-licenses
+- kt:role-hierarchy
+difficulty: 2
+created: '2026-11-25'
+status: active

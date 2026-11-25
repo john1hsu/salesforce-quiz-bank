@@ -1,0 +1,18 @@
+id: sf-001660
+product_area: development
+true_statement: LWC Jest watch mode uses Git to find changed files, so it fails if the project is not a Git repository.
+false_statement: LWC Jest watch mode uses the Salesforce CLI's source tracking to find changed files, so it fails if no default org is set.
+explanation: Watch mode relies on Git to detect changes and needs no org at all. The false version ties it to CLI source tracking and an org connection.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/lwc-jest-testing.md
+  commit: c73f767414eea7203eed30925e91b1e841ec3124
+  blob: 037c10371c1606bf7876b197cf8f9c1583511f1c
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:lwc-jest-testing
+- kt:salesforce-cli
+difficulty: 2
+created: '2026-11-25'
+status: active

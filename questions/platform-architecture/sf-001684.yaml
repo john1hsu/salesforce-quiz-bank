@@ -1,0 +1,18 @@
+id: sf-001684
+product_area: platform-architecture
+true_statement: For Salesforce Sites page views, the Authorization Required error page counts, while static resources, images and robots.txt do not.
+false_statement: For Salesforce Sites page views, static resources, images and robots.txt count, while the Authorization Required error page does not.
+explanation: Unauthenticated page requests, including the Authorization Required page and AJAX traffic, are counted; static assets and other error pages are not. The false version reverses which requests count.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/salesforce-sites.md
+  commit: c73f767414eea7203eed30925e91b1e841ec3124
+  blob: 7ed9bc93ef756ba8817639bf908d8a9d65d71fc0
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:salesforce-sites
+- kt:static-resources
+difficulty: 3
+created: '2026-11-25'
+status: active

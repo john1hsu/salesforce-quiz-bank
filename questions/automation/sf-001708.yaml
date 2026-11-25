@@ -1,0 +1,18 @@
+id: sf-001708
+product_area: automation
+true_statement: In a custom property editor for an invocable action, generic sObject inputs are addressed with a T__ prefix and outputs with a U__ prefix.
+false_statement: In a custom property editor for an invocable action, generic sObject inputs are addressed with a U__ prefix and outputs with a T__ prefix.
+explanation: T__ marks input type mappings and U__ marks output mappings, and the text after the prefix must match the @InvocableVariable name. The false version swaps the prefixes.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/custom-property-editors.md
+  commit: c73f767414eea7203eed30925e91b1e841ec3124
+  blob: f260d8dcad1595587cd716a7613936ae681f5a37
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:custom-property-editors
+- kt:invocable-apex-actions
+difficulty: 3
+created: '2026-11-25'
+status: active

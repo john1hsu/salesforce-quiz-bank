@@ -1,0 +1,17 @@
+id: sf-001686
+product_area: public-sector-and-compliance
+true_statement: Under IRS Publication 1075, an agency must notify the Office of Safeguards at least 45 days before moving Federal Tax Information into a cloud.
+false_statement: Under IRS Publication 1075, an agency must notify the Office of Safeguards within 15 days after moving Federal Tax Information into a cloud.
+explanation: The cloud notification is due in advance, at least 45 days before the move, and documents controls, FedRAMP status, data center locations and encryption. An after-the-fact notice does not meet the rule.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/irs-publication-1075.md
+  commit: c73f767414eea7203eed30925e91b1e841ec3124
+  blob: dcfa99a5ee716c9d52a109a41b5325f38858fbda
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:irs-publication-1075
+difficulty: 2
+created: '2026-11-25'
+status: active

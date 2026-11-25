@@ -1,0 +1,18 @@
+id: sf-001672
+product_area: identity
+true_statement: Because the user never logs in through a Salesforce page, the username-password OAuth flow can't issue refresh tokens.
+false_statement: Because the client already holds the user's password, the username-password OAuth flow always issues a long-lived refresh token.
+explanation: With no interactive Salesforce login there is no refresh token, so apps needing one must use a redirect-based flow such as the web server flow. Holding the password does not unlock refresh tokens.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/username-password-flow.md
+  commit: c73f767414eea7203eed30925e91b1e841ec3124
+  blob: 64d3f58b641816d2cb922997be56b317f1583b60
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:username-password-flow
+- kt:oauth-2-0
+difficulty: 2
+created: '2026-11-25'
+status: active

@@ -1,0 +1,17 @@
+id: sf-001674
+product_area: integration
+true_statement: Since May 2026, MuleSoft Composer automatically deactivates a flow that has 100 or more consecutive errors over 10 or more days.
+false_statement: Since May 2026, MuleSoft Composer automatically deactivates a flow that has 10 or more consecutive errors over 1 or more days.
+explanation: The auto-deactivation threshold is 100 consecutive errors spanning at least 10 days. The false version makes the rule far more aggressive.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/mulesoft-composer.md
+  commit: c73f767414eea7203eed30925e91b1e841ec3124
+  blob: cb6754c04f8638a11f8eb1aeb75c1a250ae47561
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:mulesoft-composer
+difficulty: 2
+created: '2026-11-25'
+status: active

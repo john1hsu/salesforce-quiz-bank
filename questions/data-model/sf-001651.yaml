@@ -1,0 +1,20 @@
+id: sf-001651
+product_area: data-model
+true_statement: When the Data Import Wizard links contacts to a manager through Reports To, it can match only on Salesforce ID or email, not on name.
+false_statement: When the Data Import Wizard links contacts to a manager through Reports To, it can match on the manager's full name or email, but not on Salesforce ID.
+explanation: Reports To lookups in the wizard resolve by record ID or email address; names are not a supported match key. The false version reverses which keys are allowed.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/data-import-wizard.md
+  commit: c73f767414eea7203eed30925e91b1e841ec3124
+  blob: 77f1d8ac96befbee4bbbd60d5e4018aa7af91800
+verified_release: Winter '27
+feature_status: current
+certs:
+- kt:platform-administrator-certification
+concepts:
+- kt:data-import-wizard
+- kt:standard-objects
+difficulty: 3
+created: '2026-11-25'
+status: active

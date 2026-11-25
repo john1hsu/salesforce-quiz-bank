@@ -1,0 +1,17 @@
+id: sf-001654
+product_area: data-model
+true_statement: Images inserted into a rich text area field must be GIF, JPEG or PNG files of no more than 1 MB each.
+false_statement: Images inserted into a rich text area field must be GIF, JPEG or PNG files of no more than 5 MB each.
+explanation: The rich text editor caps each uploaded image at 1 MB in those three formats. The false version raises the size limit to 5 MB.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/rich-text-area-fields.md
+  commit: c73f767414eea7203eed30925e91b1e841ec3124
+  blob: b28f16ea63d3b3e44422b4c7b67726d8ae121866
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:rich-text-area-fields
+difficulty: 2
+created: '2026-11-25'
+status: active

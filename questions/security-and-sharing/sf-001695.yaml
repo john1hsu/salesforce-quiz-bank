@@ -1,0 +1,18 @@
+id: sf-001695
+product_area: security-and-sharing
+true_statement: Each profile can belong to only one sharing set, so all access mappings for that profile's users live together.
+false_statement: Each profile can belong to up to five sharing sets, so access mappings for one profile can be split across several sets.
+explanation: A profile can appear in just one sharing set, which keeps every mapping for those users in one container. The false version lets a profile span multiple sets.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/sharing-sets.md
+  commit: c73f767414eea7203eed30925e91b1e841ec3124
+  blob: cbca5461a85bbd36bbbc856360ee98389b3dc283
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:sharing-sets
+- kt:profiles
+difficulty: 2
+created: '2026-11-25'
+status: active

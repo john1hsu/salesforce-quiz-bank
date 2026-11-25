@@ -1,0 +1,17 @@
+id: sf-001656
+product_area: development
+true_statement: The passing score for the Salesforce JavaScript Developer exam is 65%.
+false_statement: The passing score for the Salesforce JavaScript Developer exam is 72%.
+explanation: The exam guide sets the JavaScript Developer pass mark at 65% for its 60 scored questions. 72% is not the stated threshold.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/javascript-developer-certification.md
+  commit: c73f767414eea7203eed30925e91b1e841ec3124
+  blob: 144a641b30fd40479ebaa07c94a74418013e7632
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:javascript-developer-certification
+difficulty: 1
+created: '2026-11-25'
+status: active

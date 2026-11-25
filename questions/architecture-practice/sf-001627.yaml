@@ -1,0 +1,17 @@
+id: sf-001627
+product_area: architecture-practice
+true_statement: Microsoft's implementation guidance describes a typical cutover window as often a weekend lasting under 48 hours.
+false_statement: Microsoft's implementation guidance describes a typical cutover window as often a single business day lasting under 8 hours.
+explanation: The guidance frames cutover as a short window, frequently a weekend of less than 48 hours, during which neither old nor new system is fully usable. The false version shrinks it to a single working day.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/cutover-plan.md
+  commit: c73f767414eea7203eed30925e91b1e841ec3124
+  blob: 57c790c0d4c8cae39326996a02e3a4a4d0493927
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:cutover-plan
+difficulty: 1
+created: '2026-11-25'
+status: active

@@ -1,0 +1,18 @@
+id: sf-001696
+product_area: security-and-sharing
+true_statement: If an object's org-wide default is Public Read Only, a sharing set mapping for it can grant only Read/Write access.
+false_statement: If an object's org-wide default is Public Read Only, a sharing set mapping for it can grant only Read Only access.
+explanation: Users already have read access under a Public Read Only default, so the only meaningful upgrade a sharing set can offer is Read/Write. Public Read/Write objects can't be added at all.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/sharing-sets.md
+  commit: c73f767414eea7203eed30925e91b1e841ec3124
+  blob: cbca5461a85bbd36bbbc856360ee98389b3dc283
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:sharing-sets
+- kt:organization-wide-defaults
+difficulty: 3
+created: '2026-11-25'
+status: active

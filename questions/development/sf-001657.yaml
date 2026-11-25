@@ -1,0 +1,17 @@
+id: sf-001657
+product_area: development
+true_statement: Objects, Functions, and Classes is the most heavily weighted section of the JavaScript Developer exam, at 25%.
+false_statement: Browser and Events is the most heavily weighted section of the JavaScript Developer exam, at 25%.
+explanation: Objects, Functions, and Classes leads at 25%, followed by Variables, Types, and Collections at 23%. Browser and Events carries 17%.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/javascript-developer-certification.md
+  commit: c73f767414eea7203eed30925e91b1e841ec3124
+  blob: 144a641b30fd40479ebaa07c94a74418013e7632
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:javascript-developer-certification
+difficulty: 2
+created: '2026-11-25'
+status: active

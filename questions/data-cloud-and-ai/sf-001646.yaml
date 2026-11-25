@@ -1,0 +1,18 @@
+id: sf-001646
+product_area: data-cloud-and-ai
+true_statement: A live Agentforce employee agent must be deactivated before it can be changed.
+false_statement: A live Agentforce employee agent can be edited while it is active, and the changes reach users immediately.
+explanation: Changes to an active agent require deactivating it first; once reactivated it is available wherever it has been shared. Editing in place while live is not supported.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/agentforce-employee-agents.md
+  commit: c73f767414eea7203eed30925e91b1e841ec3124
+  blob: d141f11d337d8c291161e7be08bc7c337f0aacef
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:agentforce-employee-agents
+- kt:agentforce-studio
+difficulty: 2
+created: '2026-11-25'
+status: active

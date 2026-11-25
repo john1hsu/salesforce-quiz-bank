@@ -1,0 +1,18 @@
+id: sf-001682
+product_area: platform-architecture
+true_statement: In the Salesforce mobile app, the default app is the first Lightning app listed in the App Launcher.
+false_statement: In the Salesforce mobile app, the default app is always the Sales app, regardless of the App Launcher order.
+explanation: The mobile menu mirrors the active Lightning app, and the starting app is whichever Lightning app comes first in the App Launcher. No single app is hard-wired as the default.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/salesforce-mobile-app.md
+  commit: c73f767414eea7203eed30925e91b1e841ec3124
+  blob: f26a3b59bfbf307e12206ed508dec772813e3894
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:salesforce-mobile-app
+- kt:lightning-app-builder
+difficulty: 2
+created: '2026-11-25'
+status: active

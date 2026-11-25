@@ -1,0 +1,18 @@
+id: sf-001677
+product_area: integration
+true_statement: MuleSoft illustrates point-to-point growth with five systems needing ten connections and ten or more systems needing at least 45.
+false_statement: MuleSoft illustrates point-to-point growth with five systems needing five connections and ten or more systems needing at least 10.
+explanation: A fully connected mesh needs n(n-1)/2 links, so five systems need ten and ten systems need 45. The false version assumes connections grow only linearly with systems.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/point-to-point-integration.md
+  commit: c73f767414eea7203eed30925e91b1e841ec3124
+  blob: 46fa55e7e591de1139f5f50aafc508348662eb3a
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:point-to-point-integration
+- kt:integration-patterns
+difficulty: 2
+created: '2026-11-25'
+status: active

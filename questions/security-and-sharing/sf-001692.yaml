@@ -1,0 +1,18 @@
+id: sf-001692
+product_area: security-and-sharing
+true_statement: The SetupAuditTrail object exposes Setup changes for at least the last 180 days, and older entries can't be recovered natively.
+false_statement: The SetupAuditTrail object exposes Setup changes for at least the last 10 years, so older entries never need exporting.
+explanation: Setup Audit Trail keeps roughly 180 days of history; audits needing a longer look-back must export or archive entries. The false version claims long-term retention.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/setup-audit-trail.md
+  commit: c73f767414eea7203eed30925e91b1e841ec3124
+  blob: 86d437a8e7081204817819d50c6f0f439338a70e
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:setup-audit-trail
+- kt:security-governance
+difficulty: 1
+created: '2026-11-25'
+status: active

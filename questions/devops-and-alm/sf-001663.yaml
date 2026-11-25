@@ -1,0 +1,19 @@
+id: sf-001663
+product_area: devops-and-alm
+true_statement: A profile retrieved through Metadata API includes security settings only for the other components named in the same retrieve request.
+false_statement: A profile retrieved through Metadata API always includes security settings for every object and field in the org, whatever else is in the request.
+explanation: Object, field and similar access in a retrieved profile is scoped to the components listed alongside it; only user permissions, IP ranges and login hours always come back. That makes profile files hard to manage in source.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/permission-set-led-deployment.md
+  commit: c73f767414eea7203eed30925e91b1e841ec3124
+  blob: 0f9da00f3a7bbc145722fcbf060b9aa52b5f67a3
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:permission-set-led-deployment
+- kt:profiles
+- kt:package-xml-manifest
+difficulty: 3
+created: '2026-11-25'
+status: active

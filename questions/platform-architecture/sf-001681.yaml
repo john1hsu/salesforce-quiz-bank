@@ -1,0 +1,18 @@
+id: sf-001681
+product_area: platform-architecture
+true_statement: Every record shown on a user's offline Landing Page in the Salesforce mobile app must also be included in that user's briefcase.
+false_statement: Records shown on a user's offline Landing Page in the Salesforce mobile app are primed automatically, so they don't need to be in the user's briefcase.
+explanation: The offline Landing Page relies on the briefcase for record details, so its records must be primed through Briefcase Builder. Nothing is primed automatically outside the briefcase.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/salesforce-mobile-app.md
+  commit: c73f767414eea7203eed30925e91b1e841ec3124
+  blob: f26a3b59bfbf307e12206ed508dec772813e3894
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:salesforce-mobile-app
+- kt:briefcase-builder
+difficulty: 3
+created: '2026-11-25'
+status: active

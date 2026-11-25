@@ -1,0 +1,18 @@
+id: sf-001699
+product_area: architecture-practice
+true_statement: If an object has a column named success or error, Data Loader's output files can show incorrect information, so those columns should be renamed first.
+false_statement: If an object has a column named success or error, Data Loader automatically renames its own status columns, so the output files stay correct.
+explanation: Data Loader writes its own success and error columns, and a same-named source column can collide with them. The guidance is to rename such columns before loading.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/data-reconciliation.md
+  commit: c73f767414eea7203eed30925e91b1e841ec3124
+  blob: a35c3d74e0627940291e01864c657f2748cec481
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:data-reconciliation
+- kt:data-loader
+difficulty: 3
+created: '2026-11-25'
+status: active

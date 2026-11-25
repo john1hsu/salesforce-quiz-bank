@@ -1,0 +1,17 @@
+id: sf-001665
+product_area: devops-and-alm
+true_statement: A Trialforce source org must be 1 GB or smaller, and by default it can hold at most 10 Trialforce templates.
+false_statement: A Trialforce source org must be 10 GB or smaller, and by default it can hold at most 50 Trialforce templates.
+explanation: Trialforce caps the source org at 1 GB and allows 10 templates per source org unless Partner Support raises it. The false version inflates both limits.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/trialforce.md
+  commit: c73f767414eea7203eed30925e91b1e841ec3124
+  blob: 778bd0ae833099ccec196f0b2e1a7f26a4c0cd75
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:trialforce
+difficulty: 2
+created: '2026-11-25'
+status: active

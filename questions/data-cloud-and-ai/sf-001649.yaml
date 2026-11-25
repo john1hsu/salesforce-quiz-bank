@@ -1,0 +1,18 @@
+id: sf-001649
+product_area: data-cloud-and-ai
+true_statement: In the Agentforce builder's test environment, the SDR agent can't schedule or send emails to leads.
+false_statement: In the Agentforce builder's test environment, the SDR agent sends real emails to leads, so testing should use dummy lead records.
+explanation: The builder's test environment does not schedule or send outreach, which is why the guide supplies static do-not-schedule test prompts. The false version assumes live sending during tests.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/agentforce-sdr.md
+  commit: c73f767414eea7203eed30925e91b1e841ec3124
+  blob: ac065c92dc576823951b9adc672cea363da23d36
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:agentforce-sdr
+- kt:agentforce-studio
+difficulty: 2
+created: '2026-11-25'
+status: active

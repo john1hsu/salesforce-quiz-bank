@@ -1,0 +1,18 @@
+id: sf-001659
+product_area: development
+true_statement: Jest tests built with sfdx-lwc-jest cover Lightning web components only and do not work with Aura components.
+false_statement: Jest tests built with sfdx-lwc-jest cover both Lightning web components and Aura components in the same test suite.
+explanation: The sfdx-lwc-jest tooling targets the LWC framework; Aura components need other testing approaches. The false version claims Aura support.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/lwc-jest-testing.md
+  commit: c73f767414eea7203eed30925e91b1e841ec3124
+  blob: 037c10371c1606bf7876b197cf8f9c1583511f1c
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:lwc-jest-testing
+- kt:lightning-web-components
+difficulty: 1
+created: '2026-11-25'
+status: active

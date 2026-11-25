@@ -1,0 +1,18 @@
+id: sf-001644
+product_area: data-cloud-and-ai
+true_statement: An Agentforce employee agent runs in the context of the logged-in user, so its actions are limited by that person's licenses and permissions.
+false_statement: An Agentforce employee agent runs as a shared agent user, so every employee who asks it gets the same data access regardless of their own permissions.
+explanation: Employee agents act as the person using them, so a manager and a direct report see different results according to their own access. They do not run under a common agent user identity.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/agentforce-employee-agents.md
+  commit: c73f767414eea7203eed30925e91b1e841ec3124
+  blob: d141f11d337d8c291161e7be08bc7c337f0aacef
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:agentforce-employee-agents
+- kt:salesforce-sharing-model
+difficulty: 1
+created: '2026-11-25'
+status: active

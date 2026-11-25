@@ -1,0 +1,18 @@
+id: sf-001642
+product_area: clouds-and-products
+true_statement: If an org exceeds its Salesforce Voice concurrent-call or calls-per-second limit, VoiceCall records can't be created.
+false_statement: If an org exceeds its Salesforce Voice concurrent-call or calls-per-second limit, VoiceCall records are still created but transcription stops.
+explanation: Hitting the call-rate limits blocks VoiceCall creation, which shows up in the InvokeTelephonyIntegrationApi Lambda output. Stopped transcription is the separate symptom of exceeding the transcription limit.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/salesforce-voice.md
+  commit: c73f767414eea7203eed30925e91b1e841ec3124
+  blob: f70570035708d49cfc3162c6350768d7e1dca274
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:salesforce-voice
+- kt:telephony-integration-api
+difficulty: 3
+created: '2026-11-25'
+status: active

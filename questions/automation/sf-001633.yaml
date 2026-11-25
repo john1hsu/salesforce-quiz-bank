@@ -1,0 +1,18 @@
+id: sf-001633
+product_area: automation
+true_statement: An action plan item assigned to a role held by two or more users falls back to the plan creator.
+false_statement: An action plan item assigned to a role held by two or more users falls back to the target record's owner.
+explanation: When a role does not resolve to exactly one user, or no user resolves at all, the item goes to whoever created the plan. The record owner is not the fallback.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/action-plans.md
+  commit: c73f767414eea7203eed30925e91b1e841ec3124
+  blob: f46498e1ee06b26d3b3a6d6dc4f09b3ca3b4266b
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:action-plans
+- kt:opportunity-teams
+difficulty: 2
+created: '2026-11-25'
+status: active

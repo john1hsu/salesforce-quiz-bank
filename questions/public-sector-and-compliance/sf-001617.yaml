@@ -1,0 +1,18 @@
+id: sf-001617
+product_area: public-sector-and-compliance
+true_statement: A quality assurance surveillance plan is not a formal part of the contract, so if it conflicts with the contract, the contract governs.
+false_statement: A quality assurance surveillance plan is a formal part of the contract, so if it conflicts with the contract, the QASP governs.
+explanation: GSA's template treats the QASP as a living monitoring document outside the contract itself; where the two disagree the contract wins. The false version makes the QASP binding and controlling.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/performance-work-statement.md
+  commit: c73f767414eea7203eed30925e91b1e841ec3124
+  blob: 7ce55f51fbdb9590894ad91e56bc92a4a1b0d8d7
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:performance-work-statement
+- kt:quality-assurance-surveillance-plan
+difficulty: 2
+created: '2026-11-25'
+status: active

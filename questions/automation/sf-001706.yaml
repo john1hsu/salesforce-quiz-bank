@@ -1,0 +1,18 @@
+id: sf-001706
+product_area: automation
+true_statement: Since Spring '26, Agentforce for Flow can change an existing flow, showing each proposed change for the builder to accept or reject.
+false_statement: Since Spring '26, Agentforce for Flow can change an existing flow, applying each proposed change automatically and saving a new version.
+explanation: The Agentforce panel proposes edits such as adding a Decision or a fault path, and the builder approves or rejects each one. Changes are not applied without the builder's review.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/agentforce-for-flow.md
+  commit: c73f767414eea7203eed30925e91b1e841ec3124
+  blob: faa75c367969bffe7677aae8e25c7d7a13f9ef43
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:agentforce-for-flow
+- kt:flow-builder
+difficulty: 2
+created: '2026-11-25'
+status: active
