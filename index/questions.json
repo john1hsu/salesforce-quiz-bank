@@ -1,7 +1,7 @@
 {
  "version": 1,
- "count": 1699,
- "active": 1699,
+ "count": 1787,
+ "active": 1787,
  "questions": [
   {
    "id": "sf-000001",
@@ -29252,6 +29252,1498 @@
    "difficulty": 2,
    "status": "active",
    "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/field-service-mobile-app.md"
+  },
+  {
+   "id": "sf-001711",
+   "area": "clouds-and-products",
+   "t": "In a Lightning console app, opening a record from the split view list panel creates a new workspace tab.",
+   "f": "In a Lightning console app, opening a record from the split view list panel creates a subtab under the current workspace tab.",
+   "x": "Split view lets a rep step through a list, and each record picked from it opens in its own workspace tab. Subtabs are for related records opened from within a workspace tab.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:lightning-service-console"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/lightning-service-console.md"
+  },
+  {
+   "id": "sf-001712",
+   "area": "clouds-and-products",
+   "t": "Every property of the standard Service Console app can be changed except its Developer Name.",
+   "f": "Every property of the standard Service Console app can be changed except its assigned profiles.",
+   "x": "Admins can rename, rebrand and reassign the standard console app; only the Developer Name is locked. It is assigned to all standard and custom profiles by default, and that assignment is editable.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:lightning-service-console",
+    "kt:service-cloud"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/lightning-service-console.md"
+  },
+  {
+   "id": "sf-001713",
+   "area": "clouds-and-products",
+   "t": "Workspace API tab methods such as openTab, openSubtab and focusTab work only inside Lightning console apps.",
+   "f": "Workspace API tab methods such as openTab, openSubtab and focusTab work in any Lightning app, including standard navigation apps.",
+   "x": "The tab-control methods depend on console navigation's workspace tabs and subtabs, so they only function in console apps. Standard navigation apps have no such tabs to control.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:lightning-service-console",
+    "kt:workspace-api"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/lightning-service-console.md"
+  },
+  {
+   "id": "sf-001714",
+   "area": "data-cloud-and-ai",
+   "t": "Admins get access to Setup with Agentforce through the Setup with Agentforce User permission set group.",
+   "f": "Admins get access to Setup with Agentforce automatically through the System Administrator profile, with no extra assignment.",
+   "x": "After the feature is turned on, each admin who will use it must be assigned the Setup with Agentforce User permission set group. Having the admin profile alone does not grant it.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:agentforce-setup-agent",
+    "kt:permission-set-groups"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/agentforce-setup-agent.md"
+  },
+  {
+   "id": "sf-001715",
+   "area": "data-cloud-and-ai",
+   "t": "The Setup agent only performs tasks the admin already has permission to do and asks for approval before making a change.",
+   "f": "The Setup agent can perform tasks beyond the admin's own permissions, provided the admin approves the change first.",
+   "x": "The agent acts within the requesting admin's permissions, so it never widens what they can change. Approval is an extra safeguard, not a way to exceed those permissions.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:agentforce-setup-agent"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/agentforce-setup-agent.md"
+  },
+  {
+   "id": "sf-001716",
+   "area": "data-cloud-and-ai",
+   "t": "Setup with Agentforce requires both Agentforce and Data 360 to be enabled in the org.",
+   "f": "Setup with Agentforce requires only Agentforce to be enabled, running without Data 360 in the org.",
+   "x": "Data 360 is a prerequisite alongside Agentforce, and the enablement path starts with finishing Data 360 setup. Salesforce notes both come with Salesforce Foundations.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:agentforce-setup-agent",
+    "kt:data-cloud",
+    "kt:agentforce"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/agentforce-setup-agent.md"
+  },
+  {
+   "id": "sf-001717",
+   "area": "data-cloud-and-ai",
+   "t": "In a scratch org definition, einsteinGptSettings.enableEinsteinGptPlatform turns on Einstein, and agentPlatformSettings.enableAgentPlatform turns on Agentforce.",
+   "f": "In a scratch org definition, agentPlatformSettings.enableAgentPlatform turns on Einstein, and einsteinGptSettings.enableEinsteinGptPlatform turns on Agentforce.",
+   "x": "The EinsteinGptSettings type carries the Einstein switch and AgentPlatformSettings carries the Agentforce switch. The false statement swaps which setting controls which feature.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:einstein-generative-ai-setup",
+    "kt:scratch-orgs",
+    "kt:metadata-api"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/einstein-generative-ai-setup.md"
+  },
+  {
+   "id": "sf-001718",
+   "area": "data-cloud-and-ai",
+   "t": "Salesforce recommends a sandbox rather than a scratch org when development needs Data 360 or Agentforce Data Library features.",
+   "f": "Salesforce recommends a scratch org rather than a sandbox when development needs Data 360 or Agentforce Data Library features.",
+   "x": "Scratch orgs can be made Agentforce-ready, but for work that depends on Data 360 data or Data Library, Salesforce points developers to a sandbox instead.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:einstein-generative-ai-setup",
+    "kt:scratch-orgs",
+    "kt:data-cloud"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/einstein-generative-ai-setup.md"
+  },
+  {
+   "id": "sf-001719",
+   "area": "data-cloud-and-ai",
+   "t": "The Einstein Trust Layer's default masking leaves invalid credit card, SSN or phone values unmasked.",
+   "f": "The Einstein Trust Layer's default masking also masks credit card, SSN or phone values that fail validation.",
+   "x": "Pattern-based masking only catches values that look valid, so malformed card, SSN or phone numbers can slip through to the model unmasked.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:einstein-generative-ai-setup",
+    "kt:einstein-trust-layer"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/einstein-generative-ai-setup.md"
+  },
+  {
+   "id": "sf-001720",
+   "area": "data-model",
+   "t": "Converting a Text field to a Picklist fails if the field holds more than 4,000 unique values.",
+   "f": "Converting a Text field to a Picklist fails if the field holds more than 400 unique values.",
+   "x": "The cap on distinct values for a Text-to-Picklist conversion is 4,000, counted case-insensitively and including soft-deleted values still in the Recycle Bin. 400 is far too low.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:field-type-conversion",
+    "kt:custom-fields"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/field-type-conversion.md"
+  },
+  {
+   "id": "sf-001721",
+   "area": "data-model",
+   "t": "Converting a Long Text Area field to Text keeps only the first 255 characters of each existing value.",
+   "f": "Converting a Long Text Area field to Text is blocked whenever any existing value is longer than 255 characters.",
+   "x": "This conversion truncates rather than refusing: each value is cut to its first 255 characters. That silent truncation is why backing up data first matters.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:field-type-conversion"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/field-type-conversion.md"
+  },
+  {
+   "id": "sf-001722",
+   "area": "data-model",
+   "t": "A destructive field type conversion publishes a single change event whose recordIds header is the object's key prefix plus an asterisk.",
+   "f": "A destructive field type conversion publishes one change event per affected record, each listing that record's ID in recordIds.",
+   "x": "When a conversion nulls the field everywhere, Change Data Capture sends one event with a wildcard such as 001* instead of an event per record. Subscribers must treat it as affecting all records of the object.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:field-type-conversion",
+    "kt:change-data-capture"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/field-type-conversion.md"
+  },
+  {
+   "id": "sf-001723",
+   "area": "data-model",
+   "t": "In SOQL, INCLUDES ('AAA;BBB','CCC') matches records with both AAA and BBB selected, or with CCC selected.",
+   "f": "In SOQL, INCLUDES ('AAA;BBB','CCC') matches records with AAA or BBB selected, and also with CCC selected.",
+   "x": "A semicolon inside one quoted string means all those values must be selected, while separate comma-separated strings are alternatives. The false statement treats the semicolon as OR.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:multi-select-picklists",
+    "kt:soql"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/multi-select-picklists.md"
+  },
+  {
+   "id": "sf-001724",
+   "area": "data-model",
+   "t": "A custom multi-select picklist can have up to 500 values, and a user can select up to 100 of them on one record.",
+   "f": "A custom multi-select picklist can have up to 500 values, and a user can select up to 50 of them on one record.",
+   "x": "Salesforce Help caps a custom multi-select picklist at 500 values, with at most 100 selectable at once on a record. Fifty understates the per-record selection limit.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:multi-select-picklists"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/multi-select-picklists.md"
+  },
+  {
+   "id": "sf-001725",
+   "area": "data-model",
+   "t": "An import or API update to a multi-select picklist must include every value the record should keep, because the new string replaces the old one.",
+   "f": "An import or API update to a multi-select picklist only needs the values to add, because new values are appended to the existing selection.",
+   "x": "The field stores one semicolon-delimited string, so an update overwrites the whole selection. Sending only new values drops the ones that were already selected.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:multi-select-picklists",
+    "kt:data-quality"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/multi-select-picklists.md"
+  },
+  {
+   "id": "sf-001726",
+   "area": "development",
+   "t": "In Apex, String map keys are case-sensitive, so keys that differ only in case are stored as separate entries.",
+   "f": "In Apex, String map keys are case-insensitive, so keys that differ only in case overwrite the same entry.",
+   "x": "Even though Apex code itself ignores case, map lookups on String keys compare exact case. 'Acme' and 'ACME' are two different keys for put, get, containsKey and remove.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:apex-collections",
+    "kt:apex"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/apex-collections.md"
+  },
+  {
+   "id": "sf-001727",
+   "area": "development",
+   "t": "Apex lists, sets and maps can nest other collections up to seven levels deep, for eight levels in total.",
+   "f": "Apex lists, sets and maps can nest other collections up to three levels deep, for four levels in total.",
+   "x": "The Apex guide allows collections within collections to seven nested levels, eight counting the outer one. Three levels understates the limit.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:apex-collections"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/apex-collections.md"
+  },
+  {
+   "id": "sf-001728",
+   "area": "development",
+   "t": "Calling List.sort() on a list of custom class objects throws a System.ListException unless the class implements Comparable.",
+   "f": "Calling List.sort() on a list of custom class objects sorts them by their toString() value unless the class implements Comparable.",
+   "x": "Only primitives have a natural sort order, and sObjects have a built-in one. A custom element type needs a Comparable implementation, otherwise sort() raises a ListException instead of falling back to any default.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:apex-collections",
+    "kt:apex-defined-types"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/apex-collections.md"
+  },
+  {
+   "id": "sf-001729",
+   "area": "development",
+   "t": "JSON.deserializeStrict throws on extra JSON attributes for Apex classes in every API version, but not for sObjects.",
+   "f": "JSON.deserializeStrict throws on extra JSON attributes for sObjects in every API version, but not for Apex classes.",
+   "x": "Strict mode enforces that every attribute exists on an Apex class target. sObject targets are not held to that check by deserializeStrict, so the false statement reverses the two.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:apex-json-serialization",
+    "kt:apex"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/apex-json-serialization.md"
+  },
+  {
+   "id": "sf-001730",
+   "area": "development",
+   "t": "When an Apex variable is typed as a parent class, JSON.serialize outputs only the parent's fields, losing any subtype data.",
+   "f": "When an Apex variable is typed as a parent class, JSON.serialize outputs the runtime subtype's fields, including any it adds.",
+   "x": "Serialization follows the declared type, so fields defined only on a subclass are dropped. Code that needs them should declare the variable as the subtype.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:apex-json-serialization",
+    "kt:apex-defined-types"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/apex-json-serialization.md"
+  },
+  {
+   "id": "sf-001731",
+   "area": "development",
+   "t": "From API version 63.0, serializing custom exceptions and most built-in exceptions to JSON in Apex is unsupported.",
+   "f": "From API version 63.0, Apex supports serializing custom exceptions and built-in exceptions to JSON with JSON.serialize.",
+   "x": "API 63.0 removed support for serializing most exceptions, including custom ones. Code that logged exceptions by serializing them needs to copy the message and details into its own class instead.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:apex-json-serialization",
+    "kt:custom-exceptions"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/apex-json-serialization.md"
+  },
+  {
+   "id": "sf-001732",
+   "area": "devops-and-alm",
+   "t": "sf package version create requires either --installation-key or --installation-key-bypass, so every new version needs an explicit key decision.",
+   "f": "sf package version create applies the previous version's installation key by default, so only the first version needs an explicit key decision.",
+   "x": "The key is set per package version, and the create command refuses to run without one of the two flags. CI scripts therefore have to pass a key or the bypass flag on every build.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:package-installation-keys",
+    "kt:salesforce-cli",
+    "kt:package-versioning-and-ancestry"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/package-installation-keys.md"
+  },
+  {
+   "id": "sf-001733",
+   "area": "devops-and-alm",
+   "t": "Until an installer enters a package version's installation key, the package's name and component list stay hidden.",
+   "f": "Before an installer enters a package version's installation key, the package's name and component list are shown so they can review it first.",
+   "x": "The key is the very first step of installation and it guards the package's contents, not just the install button. Nothing about the package is revealed until the key is supplied.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:package-installation-keys",
+    "kt:unlocked-packages"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/package-installation-keys.md"
+  },
+  {
+   "id": "sf-001734",
+   "area": "devops-and-alm",
+   "t": "To change the installation key on an existing package version, run sf package version update with a new --installation-key value.",
+   "f": "To change the installation key on an existing package version, run sf package install with a new --installation-key value.",
+   "x": "The update command targets the version by alias or 04t ID and sets the new key. The install command's --installation-key flag only supplies a key when installing; it cannot change one.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:package-installation-keys",
+    "kt:salesforce-cli"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/package-installation-keys.md"
+  },
+  {
+   "id": "sf-001735",
+   "area": "devops-and-alm",
+   "t": "Roll-up summary fields deleted through the Metadata API are purged immediately, even when purgeOnDelete isn't set.",
+   "f": "Roll-up summary fields deleted through the Metadata API go to the Recycle Bin unless purgeOnDelete is set.",
+   "x": "Most deleted components land in the Recycle Bin unless purgeOnDelete is used, but roll-up summary fields are an exception and are purged regardless. A rollback plan should treat those deletions as permanent.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:rollback-plan",
+    "kt:destructive-changes"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/rollback-plan.md"
+  },
+  {
+   "id": "sf-001736",
+   "area": "devops-and-alm",
+   "t": "A destructive changes manifest doesn't support wildcards and is deployed with a companion package.xml that lists no components.",
+   "f": "A destructive changes manifest supports wildcards such as * and is deployed with a companion package.xml that lists no components.",
+   "x": "Each component to delete must be named explicitly in the destructive manifest, because wildcards aren't accepted. The empty package.xml alongside it is required either way.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:rollback-plan",
+    "kt:destructive-changes"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/rollback-plan.md"
+  },
+  {
+   "id": "sf-001737",
+   "area": "devops-and-alm",
+   "t": "The Salesforce CLI's --ignore-errors deploy flag shouldn't be used against production, because skipping failed components can leave the org inconsistent.",
+   "f": "The Salesforce CLI's --ignore-errors deploy flag is recommended for production, because it rolls back failed components while keeping successful ones consistent.",
+   "x": "With --ignore-errors, components that succeed are saved and failures are skipped, so a release can land half-applied. The CLI reference warns against using it on production.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:rollback-plan",
+    "kt:salesforce-cli"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/rollback-plan.md"
+  },
+  {
+   "id": "sf-001738",
+   "area": "identity",
+   "t": "Only users with the View Setup and Configuration permission can be added as delegated administrators.",
+   "f": "Only users with the Manage Users permission can be added as delegated administrators.",
+   "x": "Delegated administrators need View Setup and Configuration so they can reach the Setup pages they manage. Requiring Manage Users would defeat the purpose, since delegation exists to avoid handing out that broad permission.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:delegated-administration",
+    "kt:user-management"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/delegated-administration.md"
+  },
+  {
+   "id": "sf-001739",
+   "area": "identity",
+   "t": "Delegated administrators can't create or change relationships on a delegated custom object or set its org-wide sharing defaults.",
+   "f": "Delegated administrators can create relationships on a delegated custom object and set its org-wide sharing defaults, but can't create a custom tab for it.",
+   "x": "Custom object delegation covers nearly everything, including creating a custom tab, but relationships and org-wide defaults stay with full admins. The false statement reverses which rights are excluded.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:delegated-administration"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/delegated-administration.md"
+  },
+  {
+   "id": "sf-001740",
+   "area": "identity",
+   "t": "Choosing a role for a delegated administration group's user administration automatically includes all of that role's subordinate roles.",
+   "f": "Choosing a role for a delegated administration group's user administration covers only that role; each subordinate role must be added separately.",
+   "x": "Delegation follows the role hierarchy downward, so listing a role brings its subordinates along. Delegates can then manage users anywhere beneath it.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:delegated-administration",
+    "kt:role-hierarchy"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/delegated-administration.md"
+  },
+  {
+   "id": "sf-001741",
+   "area": "identity",
+   "t": "The Administrators Can Log in as Any User setting is offered in Enterprise, Performance, Unlimited and Developer Editions, but not Professional Edition or lower.",
+   "f": "The Administrators Can Log in as Any User setting is offered in Professional, Enterprise, Performance, Unlimited and Developer Editions.",
+   "x": "The any-user login setting can't be activated in Professional Edition or below. In eligible editions where the checkbox is missing, Salesforce has to provision it.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:grant-login-access",
+    "kt:user-management"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/grant-login-access.md"
+  },
+  {
+   "id": "sf-001742",
+   "area": "identity",
+   "t": "Login flows assigned to either the admin's or the user's profile don't run during a Log In As session.",
+   "f": "Login flows assigned to the impersonated user's profile run at the start of a Log In As session.",
+   "x": "Log In As skips login flows entirely, whichever profile they are on. Admins can't rely on a login flow to gate or log impersonation.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:grant-login-access",
+    "kt:login-flows"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/grant-login-access.md"
+  },
+  {
+   "id": "sf-001743",
+   "area": "identity",
+   "t": "When a managed package is licensed to the whole org, only an admin with Manage Users can grant the publisher login access.",
+   "f": "When a managed package is licensed to the whole org, any user in the org can grant the publisher login access.",
+   "x": "Org-wide licensing means no individual user holds a package licence, so the publisher drops out of ordinary users' grant lists. An admin with Manage Users must grant the access instead.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:grant-login-access",
+    "kt:license-management-app"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/grant-login-access.md"
+  },
+  {
+   "id": "sf-001744",
+   "area": "integration",
+   "t": "In Salesforce Voice with Amazon Connect, Amazon Transcribe covers only the first 15 minutes of a call, so Contact Lens suits longer calls.",
+   "f": "In Salesforce Voice with Amazon Connect, Contact Lens covers only the first 15 minutes of a call, so Amazon Transcribe suits longer calls.",
+   "x": "A Lambda limitation stops Amazon Transcribe-based transcription after 15 minutes. Contact Lens has no such cutoff, which is why it is the option for long calls.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:amazon-connect",
+    "kt:salesforce-voice",
+    "kt:aws-lambda"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/amazon-connect.md"
+  },
+  {
+   "id": "sf-001745",
+   "area": "integration",
+   "t": "After each Amazon Connect call, contact record sync uses a Lambda function to copy contact record data into the Salesforce VoiceCall object.",
+   "f": "After each Amazon Connect call, contact record sync uses a Salesforce platform event to copy contact record data into the VoiceCall object.",
+   "x": "Contact record sync is on by default and runs through a Lambda function. Because sync can occasionally fail, Salesforce suggests backing records up to S3 and resyncing gaps.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:amazon-connect",
+    "kt:telephony-integration-api",
+    "kt:aws-lambda"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/amazon-connect.md"
+  },
+  {
+   "id": "sf-001746",
+   "area": "integration",
+   "t": "For Salesforce Voice with Amazon Connect, limits on concurrent active calls and reachable outbound countries come from AWS service quotas.",
+   "f": "For Salesforce Voice with Amazon Connect, limits on concurrent active calls and reachable outbound countries come from Salesforce org limits.",
+   "x": "These caps are set on the AWS side, so increases are requested from AWS before go-live. Salesforce doesn't control them.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:amazon-connect",
+    "kt:salesforce-voice"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/amazon-connect.md"
+  },
+  {
+   "id": "sf-001747",
+   "area": "integration",
+   "t": "A Telephony Integration API caller signs its own RS256 JWT, with an exp no more than 24 hours out, and sends it as a bearer token.",
+   "f": "A Telephony Integration API caller exchanges a signed JWT at the Salesforce OAuth token endpoint for an access token valid for up to 24 hours.",
+   "x": "The API has no OAuth token endpoint: the self-signed JWT itself is the bearer credential. That is the key difference from the OAuth JWT bearer flow.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:telephony-integration-api",
+    "kt:json-web-token",
+    "kt:jwt-bearer-flow"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/telephony-integration-api.md"
+  },
+  {
+   "id": "sf-001748",
+   "area": "integration",
+   "t": "The Telephony Integration API's voice call update is asynchronous, returns a pending status, and should be sent only once per call.",
+   "f": "The Telephony Integration API's voice call update is synchronous, returns the saved record, and can be resent safely to correct durations.",
+   "x": "The PATCH returns a pending status whose result can't be polled. Sending it again overwrites the hold and interaction durations instead of correcting them.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:telephony-integration-api",
+    "kt:salesforce-voice"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/telephony-integration-api.md"
+  },
+  {
+   "id": "sf-001749",
+   "area": "integration",
+   "t": "After a call transfer, transcripts sent to the Telephony Integration API must use the vendorCallKey of the first VoiceCall.",
+   "f": "After a call transfer, transcripts sent to the Telephony Integration API must use the Salesforce record ID of the new VoiceCall.",
+   "x": "Transcript messages are posted by vendorCallKey, and after a transfer that key must be the original call's. Using a Salesforce record ID, or the transferred call's key, is wrong.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:telephony-integration-api"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/telephony-integration-api.md"
+  },
+  {
+   "id": "sf-001750",
+   "area": "platform-architecture",
+   "t": "If a user can't access the field that a Dynamic Actions visibility filter checks, that criterion evaluates to true and the action can still appear.",
+   "f": "If a user can't access the field that a Dynamic Actions visibility filter checks, that criterion evaluates to false and the action is hidden.",
+   "x": "An unreadable filter field counts as a match, so the action shows. That is why visibility rules on hidden fields aren't a reliable way to keep an action from someone.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:dynamic-actions",
+    "kt:lightning-app-builder"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/dynamic-actions.md"
+  },
+  {
+   "id": "sf-001751",
+   "area": "platform-architecture",
+   "t": "Custom objects use Dynamic Actions on mobile by default, while standard objects need a setting in the Salesforce Mobile App area of Setup.",
+   "f": "Standard objects use Dynamic Actions on mobile by default, while custom objects need a setting in the Salesforce Mobile App area of Setup.",
+   "x": "Mobile support for dynamic actions is automatic only for custom objects. For standard objects an admin must turn it on in the mobile app settings; the false statement swaps the two.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:dynamic-actions",
+    "kt:salesforce-mobile-app"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/dynamic-actions.md"
+  },
+  {
+   "id": "sf-001752",
+   "area": "platform-architecture",
+   "t": "The Group object ignores Dynamic Actions set in Lightning App Builder, keeping its actions on the Group Layouts page.",
+   "f": "The Group object ignores page-layout actions, so its actions must be configured as Dynamic Actions in Lightning App Builder.",
+   "x": "Group is an exception to Dynamic Actions: its buttons still come from Group Layouts. Orgs that need to manage Group actions keep using the layout.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:dynamic-actions",
+    "kt:page-layouts"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/dynamic-actions.md"
+  },
+  {
+   "id": "sf-001753",
+   "area": "platform-architecture",
+   "t": "The Dynamic Highlights Panel on a Lightning record page can hold at most 12 fields.",
+   "f": "The Dynamic Highlights Panel on a Lightning record page can hold at most 20 fields.",
+   "x": "Salesforce caps the component at 12 fields, and practitioners suggest using far fewer so the summary stays easy to scan.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:dynamic-highlights-panel",
+    "kt:lightning-app-builder"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/dynamic-highlights-panel.md"
+  },
+  {
+   "id": "sf-001754",
+   "area": "platform-architecture",
+   "t": "If field-level security hides the Dynamic Highlights Panel's primary field from a user, the panel shows the record Name instead.",
+   "f": "If field-level security hides the Dynamic Highlights Panel's primary field from a user, the panel shows the next field in its list instead.",
+   "x": "The primary field falls back to the record Name when the user can't see it. It also can't carry a visibility rule or be a cross-object field.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:dynamic-highlights-panel",
+    "kt:field-level-security"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/dynamic-highlights-panel.md"
+  },
+  {
+   "id": "sf-001755",
+   "area": "platform-architecture",
+   "t": "To show the Dynamic Highlights Panel in the Salesforce mobile app, an admin must turn on the setting it shares with Dynamic Forms for mobile.",
+   "f": "The Dynamic Highlights Panel appears in the Salesforce mobile app as soon as the page is saved, with no separate mobile setting needed.",
+   "x": "Desktop users see the panel on save, but mobile needs Dynamic Forms and Dynamic Highlights Panel on Mobile enabled in Setup. Without it, mobile users get no highlights area unless a standard Highlights Panel is also on the page.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:dynamic-highlights-panel",
+    "kt:salesforce-mobile-app",
+    "kt:dynamic-forms"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/dynamic-highlights-panel.md"
+  },
+  {
+   "id": "sf-001756",
+   "area": "public-sector-and-compliance",
+   "t": "FedRAMP 20x Class A accepts an existing credential from the past 12 months, such as a SOC 2 Type II report or a GovRAMP certification.",
+   "f": "FedRAMP 20x Class A requires a fresh independent assessment by a FedRAMP Recognized assessor completed within the previous three months.",
+   "x": "Class A is for mature services new to the federal market and can reuse a recent Rev5, SOC 2 Type II or GovRAMP credential. The three-month independent assessment applies to Classes B, C and D.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:fedramp-20x",
+    "kt:soc-2",
+    "kt:govramp"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/fedramp-20x.md"
+  },
+  {
+   "id": "sf-001757",
+   "area": "public-sector-and-compliance",
+   "t": "A cloud provider must not pursue both FedRAMP Rev5 and FedRAMP 20x certification for the same cloud offering.",
+   "f": "A cloud provider may pursue FedRAMP Rev5 and FedRAMP 20x certification in parallel for the same cloud offering.",
+   "x": "FedRAMP's rules require choosing one path per offering. Rev5 and 20x are alternative routes to certification, not complementary ones.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:fedramp-20x",
+    "kt:fedramp"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/fedramp-20x.md"
+  },
+  {
+   "id": "sf-001758",
+   "area": "public-sector-and-compliance",
+   "t": "In FedRAMP 20x, Class D is the High-impact equivalent and is still being developed, so High workloads rely on the Rev5 path for now.",
+   "f": "In FedRAMP 20x, Class C is the High-impact equivalent and is available now, so High workloads can already use the 20x path.",
+   "x": "Class C covers common enterprise services, not High. Class D is the High equivalent and isn't open yet, so High-impact environments still go through Rev5.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:fedramp-20x",
+    "kt:fedramp-high"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/fedramp-20x.md"
+  },
+  {
+   "id": "sf-001759",
+   "area": "public-sector-and-compliance",
+   "t": "The FedRAMP indicator KSI-CMT-RMV prefers redeploying version-controlled resources over modifying them in place.",
+   "f": "The FedRAMP indicator KSI-CMT-RMV prefers modifying running resources in place over redeploying them from version control.",
+   "x": "This change-management indicator favours immutable, version-controlled redeployment so changes are traceable. In-place modification is what it steers providers away from.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:key-security-indicators",
+    "kt:fedramp-20x"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/key-security-indicators.md"
+  },
+  {
+   "id": "sf-001760",
+   "area": "public-sector-and-compliance",
+   "t": "For each Key Security Indicator, the provider records its own minimum information and artifacts in a Security Decision Record, rather than following FedRAMP-set thresholds.",
+   "f": "For each Key Security Indicator, FedRAMP sets the specific tools and numeric thresholds the provider must use, recorded in a Security Decision Record.",
+   "x": "FedRAMP mostly avoids prescribing tools or numbers for KSIs. The provider decides what evidence demonstrates each indicator and documents that choice itself.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:key-security-indicators",
+    "kt:continuous-monitoring"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/key-security-indicators.md"
+  },
+  {
+   "id": "sf-001761",
+   "area": "public-sector-and-compliance",
+   "t": "AWS reported that the FedRAMP 20x Phase Two pilot required automated validation for at least 70% of Key Security Indicators.",
+   "f": "AWS reported that the FedRAMP 20x Phase Two pilot required automated validation for at least 50% of Key Security Indicators.",
+   "x": "AWS's analysis cites a 70% minimum share of KSIs validated automatically, plus Moderate machine-based checks at least every three days. Fifty percent is too low.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:key-security-indicators",
+    "kt:fedramp-20x"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/key-security-indicators.md"
+  },
+  {
+   "id": "sf-001762",
+   "area": "security-and-sharing",
+   "t": "AccountShare rows with the Team row cause are read-only; integrations change them by writing account team member records instead.",
+   "f": "AccountShare rows with the Team row cause can be inserted or updated directly by integrations, just like Manual rows.",
+   "x": "Only Manual share rows can be created, edited or deleted directly. Team rows follow team membership, so code must add or change team members to alter that access.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:account-teams",
+    "kt:salesforce-sharing-model"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/account-teams.md"
+  },
+  {
+   "id": "sf-001763",
+   "area": "security-and-sharing",
+   "t": "An account team member's contact access level can't be set when the org's default contact access is Controlled by Parent.",
+   "f": "An account team member's case access level can't be set when the org's default case access is Controlled by Parent.",
+   "x": "The contact grant, added in API version 10.0, is unavailable when contacts are Controlled by Parent, because contact access then simply follows the account. The restriction is specific to contacts.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:account-teams",
+    "kt:organization-wide-defaults"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/account-teams.md"
+  },
+  {
+   "id": "sf-001764",
+   "area": "security-and-sharing",
+   "t": "Account teams are off by default, and an admin turns them on in Setup by selecting Account Teams Enabled.",
+   "f": "Account teams are on by default, and an admin only needs to add the Account Team related list to page layouts.",
+   "x": "The feature must be enabled first in the Account Teams settings. Choosing page layouts for the related list is part of that enablement, not a substitute for it.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:account-teams",
+    "kt:sales-cloud"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/account-teams.md"
+  },
+  {
+   "id": "sf-001765",
+   "area": "security-and-sharing",
+   "t": "External Apps is one of the high-volume Experience Cloud license types, so its users have no roles.",
+   "f": "Customer Community Plus is one of the high-volume Experience Cloud license types, so its users have no roles.",
+   "x": "The high-volume category spans Customer Community, High Volume Customer Portal, Authenticated Website and External Apps. Customer Community Plus is a role-based license, used when external users need the role hierarchy or sharing rules.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:high-volume-experience-cloud-users",
+    "kt:customer-community-licenses"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/high-volume-experience-cloud-users.md"
+  },
+  {
+   "id": "sf-001766",
+   "area": "security-and-sharing",
+   "t": "High-volume Experience Cloud users can't join account, opportunity or case teams, and can't be assigned to territories.",
+   "f": "High-volume Experience Cloud users can join case teams, though they can't join account teams or be assigned to territories.",
+   "x": "Team membership of every kind is off-limits to high-volume users, alongside owning accounts and territory assignment. Case teams are no exception.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:high-volume-experience-cloud-users",
+    "kt:experience-cloud"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/high-volume-experience-cloud-users.md"
+  },
+  {
+   "id": "sf-001767",
+   "area": "security-and-sharing",
+   "t": "A custom object with no account or contact lookup can't be selected in a sharing set for high-volume users.",
+   "f": "A custom object with no account or contact lookup can be selected in a sharing set, which then grants access through record ownership.",
+   "x": "Sharing sets work by matching a record's account or contact lookup to the user's own account or contact. Without such a lookup there is nothing to match, so the object can't be chosen.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:high-volume-experience-cloud-users",
+    "kt:sharing-sets"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/high-volume-experience-cloud-users.md"
+  },
+  {
+   "id": "sf-001768",
+   "area": "architecture-practice",
+   "t": "Salesforce Architects describes a good architecture roadmap as a phased plan covering roughly the next 12 to 24 months.",
+   "f": "Salesforce Architects describes a good architecture roadmap as a phased plan covering roughly the next three to five years.",
+   "x": "The guidance scopes a roadmap to about 12 to 24 months and explicitly says it is not a five-year long-range plan.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:architecture-roadmaps",
+    "kt:salesforce-architect"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/architecture-roadmaps.md"
+  },
+  {
+   "id": "sf-001769",
+   "area": "architecture-practice",
+   "t": "A feature roadmap zooms into one capability and lists its supporting features, for business planning, budgeting and change management.",
+   "f": "A component roadmap zooms into one business capability and lists its supporting features, for business planning, budgeting and change management.",
+   "x": "Feature roadmaps are a business roadmap type that drills into a single capability. Component roadmaps are a technology type covering specific technology components and their timeframes.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:architecture-roadmaps",
+    "kt:capability-maps"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/architecture-roadmaps.md"
+  },
+  {
+   "id": "sf-001770",
+   "area": "architecture-practice",
+   "t": "In TOGAF Phase E, each Transition Architecture should deliver measurable business value, and transitions need not be evenly spaced.",
+   "f": "In TOGAF Phase E, Transition Architectures should be evenly spaced in time, even if some deliver no measurable business value.",
+   "x": "TOGAF adds Transition Architectures where change must be incremental, and each one should deliver business value. Even spacing isn't required.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:architecture-roadmaps",
+    "kt:togaf"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/architecture-roadmaps.md"
+  },
+  {
+   "id": "sf-001771",
+   "area": "architecture-practice",
+   "t": "Salesforce's B2C Commerce Launch Gate holds its first review two to three weeks before the planned go-live date.",
+   "f": "Salesforce's B2C Commerce Launch Gate holds its first review two to three days before the planned go-live date.",
+   "x": "The first Launch Gate review comes two to three weeks out, which leaves time to fix blockers. A review just days before launch is the timing risk Microsoft's guidance warns about.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:go-live-readiness-assessment",
+    "kt:release-management"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/go-live-readiness-assessment.md"
+  },
+  {
+   "id": "sf-001772",
+   "area": "architecture-practice",
+   "t": "The Launch Gate allows at most two reviews, and the second one re-checks only the items that failed the first.",
+   "f": "The Launch Gate allows at most three reviews, and each one re-checks every item from the full assessment.",
+   "x": "Salesforce caps the Launch Gate at two reviews. The follow-up review is limited to the failed items rather than a full repeat.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:go-live-readiness-assessment"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/go-live-readiness-assessment.md"
+  },
+  {
+   "id": "sf-001773",
+   "area": "architecture-practice",
+   "t": "In the Launch Gate, a launch blocker fails the assessment automatically, but the customer still makes the final go-live decision.",
+   "f": "In the Launch Gate, a launch blocker fails the assessment automatically, and the reviewers then make the final go-live decision.",
+   "x": "Blockers such as missing SSL certificates or a failed load test trigger an automatic fail and a recommendation to delay. The decision to launch anyway or wait stays with the customer.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:go-live-readiness-assessment",
+    "kt:scale-test"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/go-live-readiness-assessment.md"
+  },
+  {
+   "id": "sf-001774",
+   "area": "automation",
+   "t": "A Flow Decision element takes only the first outcome, in Outcome Order, whose conditions are met, even if later outcomes would also match.",
+   "f": "A Flow Decision element runs every outcome whose conditions are met, one after another in Outcome Order.",
+   "x": "Decision outcomes are checked in sequence and the first match wins, so just one path runs. That is why the most specific outcome should go first.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:flow-decision-element",
+    "kt:flow-builder"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/flow-decision-element.md"
+  },
+  {
+   "id": "sf-001775",
+   "area": "automation",
+   "t": "When an outcome in a Flow Decision has several conditions, Flow Builder applies All Conditions Are Met (AND) by default.",
+   "f": "When an outcome in a Flow Decision has several conditions, Flow Builder applies Any Condition Is Met (OR) by default.",
+   "x": "New condition rows are combined with AND unless the builder switches the requirement to OR or custom logic.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:flow-decision-element"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/flow-decision-element.md"
+  },
+  {
+   "id": "sf-001776",
+   "area": "automation",
+   "t": "In a record-triggered flow, a Decision outcome can be set to count as met only when the record changes to meet its conditions.",
+   "f": "In a record-triggered flow, only the Start element can require a record change to meet conditions; Decision outcomes always evaluate current values.",
+   "x": "Decision rules carry their own option to require that the record was changed to meet the criteria, similar to the Start element's setting for the whole flow. Both help avoid repeating actions on later edits.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:flow-decision-element",
+    "kt:record-triggered-flow"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/flow-decision-element.md"
+  },
+  {
+   "id": "sf-001777",
+   "area": "automation",
+   "t": "A flow in system context with sharing can use every object and field, but record visibility still follows the user's sharing settings.",
+   "f": "A flow in system context with sharing sees every record regardless of sharing, but the user's object and field permissions still apply.",
+   "x": "'With sharing' keeps record-level rules such as org-wide defaults and sharing rules, while object and field permissions are not enforced. The false statement swaps which layer is enforced.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:flow-run-context",
+    "kt:salesforce-sharing-model"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/flow-run-context.md"
+  },
+  {
+   "id": "sf-001778",
+   "area": "automation",
+   "t": "The Run Flows permission lets a user run active, unrestricted flows, while running inactive flows requires Manage Flow.",
+   "f": "The Run Flows permission lets a user run both active and inactive flows, while Manage Flow is needed only to edit them.",
+   "x": "Run Flows covers active flows whose access isn't restricted. Starting an inactive flow is a builder-level task that needs Manage Flow.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:flow-run-context",
+    "kt:principle-of-least-privilege"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/flow-run-context.md"
+  },
+  {
+   "id": "sf-001779",
+   "area": "automation",
+   "t": "In a screen flow running in system context, components that query data themselves, such as lookups and file upload, still apply the user's permissions.",
+   "f": "In a screen flow running in system context, components that query data themselves, such as lookups and file upload, also bypass the user's permissions.",
+   "x": "The flow's elevated context doesn't extend to screen components that run their own queries. Those components enforce the running user's access regardless of the flow's mode.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:flow-run-context",
+    "kt:screen-flow"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/flow-run-context.md"
+  },
+  {
+   "id": "sf-001780",
+   "area": "clouds-and-products",
+   "t": "The Field Service Scheduling Console's Gantt runs in the service territory's time zone; individual user time zones aren't supported.",
+   "f": "The Field Service Scheduling Console's Gantt runs in each dispatcher's own user time zone rather than the territory's.",
+   "x": "The Gantt always shows times in the service territory's time zone. Dispatchers in other zones can't switch it to their personal time zone.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:scheduling-console",
+    "kt:field-service"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/scheduling-console.md"
+  },
+  {
+   "id": "sf-001781",
+   "area": "clouds-and-products",
+   "t": "In the Scheduling Console, resource utilization is scheduled work plus travel time, divided by working hours minus absence hours.",
+   "f": "In the Scheduling Console, resource utilization is scheduled work alone, divided by working hours including absence hours.",
+   "x": "Utilization counts travel as well as work, and the denominator removes absence hours from working hours. Leaving out travel and keeping absences would understate how busy a resource is.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:scheduling-console"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/scheduling-console.md"
+  },
+  {
+   "id": "sf-001782",
+   "area": "clouds-and-products",
+   "t": "Trailhead states that the Scheduling Console is available only with Enhanced Scheduling and Optimization.",
+   "f": "Trailhead states that the Scheduling Console works with either the legacy scheduling engine or Enhanced Scheduling and Optimization.",
+   "x": "The console requires the Enhanced Scheduling and Optimization engine, so orgs should plan that engine before moving dispatchers from the Classic Dispatch Console.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:scheduling-console",
+    "kt:enhanced-scheduling-and-optimization"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/scheduling-console.md"
+  },
+  {
+   "id": "sf-001783",
+   "area": "clouds-and-products",
+   "t": "Changing a work order's status doesn't change the status of its line items or its service appointments.",
+   "f": "Changing a work order's status automatically cascades the same status to its line items and service appointments.",
+   "x": "Each level keeps its own status, so closing a work order leaves its line items and appointments as they were. Close-out automation has to update every level itself.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:work-orders",
+    "kt:service-appointments"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/work-orders.md"
+  },
+  {
+   "id": "sf-001784",
+   "area": "clouds-and-products",
+   "t": "A work order's Duration is independent of its line items' durations and isn't calculated as their sum.",
+   "f": "A work order's Duration is a read-only roll-up calculated as the sum of its line items' durations.",
+   "x": "Duration on the work order stands on its own; when blank it can fall back to the work type's duration, but it never totals the line items.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:work-orders"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/work-orders.md"
+  },
+  {
+   "id": "sf-001785",
+   "area": "clouds-and-products",
+   "t": "A work order's FSL__VisitingHours__c limits when its appointments can be scheduled only if the scheduling policy includes the Visiting Hours work rule.",
+   "f": "A work order's FSL__VisitingHours__c always limits when its appointments can be scheduled, whatever work rules the scheduling policy includes.",
+   "x": "The visiting-hours lookup is only enforced through the Visiting Hours work rule. Without that rule in the policy, the scheduler ignores the field.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:work-orders",
+    "kt:field-service-scheduling-policies"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/work-orders.md"
+  },
+  {
+   "id": "sf-001786",
+   "area": "data-cloud-and-ai",
+   "t": "Only Agentforce Employee Agent type agents can be built for Slack.",
+   "f": "Both Agentforce Employee Agents and Agentforce Service Agents can be built for Slack using its starter templates.",
+   "x": "Slack deployment is limited to the Employee Agent type, and Slack's templates (Customer Insights, Employee Help and Onboarding) are all employee agents. Service agents there stay locked until an admin assigns access.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:agentforce-in-slack",
+    "kt:agentforce-employee-agents"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/agentforce-in-slack.md"
+  },
+  {
+   "id": "sf-001787",
+   "area": "data-cloud-and-ai",
+   "t": "Slack actions such as Create a Slack Canvas fail in the Salesforce agent preview, so they must be tested inside Slack.",
+   "f": "Slack actions such as Create a Slack Canvas run in the Salesforce agent preview, so they can be fully tested before installing in Slack.",
+   "x": "These standard actions need the Slack environment to execute. The builder's preview can't run them, so canvas and DM flows have to be tested in Slack itself.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:agentforce-in-slack",
+    "kt:agent-actions"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/agentforce-in-slack.md"
+  },
+  {
+   "id": "sf-001788",
+   "area": "data-cloud-and-ai",
+   "t": "A Slack member without a Salesforce account needs a provisional Salesforce license before being mapped to use an Agentforce agent.",
+   "f": "A Slack member without a Salesforce account can use an Agentforce agent in Slack without any Salesforce license or user mapping.",
+   "x": "Agents in Slack act on Salesforce permissions, so every member must map to a Salesforce user. Members who have no account get a provisional license first.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:agentforce-in-slack",
+    "kt:slack-platform"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/agentforce-in-slack.md"
+  },
+  {
+   "id": "sf-001789",
+   "area": "data-cloud-and-ai",
+   "t": "In production orgs, the Models API allows 10,000 generation requests per minute per org per endpoint, but only 1,000 per minute for embeddings.",
+   "f": "In production orgs, the Models API allows 1,000 generation requests per minute per org per endpoint, but 10,000 per minute for embeddings.",
+   "x": "Generation endpoints get the higher 10,000-per-minute ceiling, while embeddings and feedback are each capped at 1,000 per minute. The false statement swaps the two.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:models-api"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/models-api.md"
+  },
+  {
+   "id": "sf-001790",
+   "area": "data-cloud-and-ai",
+   "t": "Models API calls made from Apex in a sandbox are limited to 500 requests per hour, while sandbox REST calls use the production limits.",
+   "f": "Models API calls made over REST in a sandbox are limited to 500 requests per hour, while sandbox Apex calls use the production limits.",
+   "x": "The reduced sandbox quota applies to the Apex classes, not to REST. REST calls from a sandbox get the same limits as production.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:models-api"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/models-api.md"
+  },
+  {
+   "id": "sf-001791",
+   "area": "data-cloud-and-ai",
+   "t": "The Models API's Apex methods are generated with External Services, so they are subject to Apex callout limits.",
+   "f": "The Models API's Apex methods run natively inside the org, so they aren't subject to Apex callout limits.",
+   "x": "Salesforce builds the aiplatform.ModelsAPI classes from the REST spec using External Services, which makes each call a callout. Bulk designs must respect callout limits instead of calling the model per record in a trigger.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:models-api",
+    "kt:ai-models"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/models-api.md"
+  },
+  {
+   "id": "sf-001792",
+   "area": "data-model",
+   "t": "An undeleted custom field comes back with a _del suffix on its developer name, so references to the old API name must be updated.",
+   "f": "An undeleted custom field comes back with its original developer name, so references to the old API name keep working.",
+   "x": "Restoring a field brings back its data but appends _del to the developer name. Code, formulas or integrations that used the original API name have to be repointed.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:deleted-fields-and-field-undelete",
+    "kt:custom-fields"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/deleted-fields-and-field-undelete.md"
+  },
+  {
+   "id": "sf-001793",
+   "area": "data-model",
+   "t": "The Purge button on the Deleted Fields page appears once an org reaches 75% of its custom field allocation and has fields ready for hard delete.",
+   "f": "The Purge button on the Deleted Fields page appears once an org reaches 90% of its custom field allocation and has fields ready for hard delete.",
+   "x": "Salesforce shows Purge at 75% of the allocation so admins can free space early instead of waiting out the retention window. Ninety percent is the wrong threshold.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:deleted-fields-and-field-undelete",
+    "kt:custom-field-allocations"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/deleted-fields-and-field-undelete.md"
+  },
+  {
+   "id": "sf-001794",
+   "area": "data-model",
+   "t": "An auto-number field keeps counting while it is deleted, so after an undelete it carries the correct current values.",
+   "f": "An auto-number field stops counting while it is deleted, so after an undelete it resumes from the value it had when deleted.",
+   "x": "Numbering continues in the background during the soft-delete window. A restored auto-number field therefore picks up where the sequence actually is, not where it was at deletion.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:deleted-fields-and-field-undelete",
+    "kt:auto-number-fields"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/deleted-fields-and-field-undelete.md"
+  },
+  {
+   "id": "sf-001795",
+   "area": "data-model",
+   "t": "A Currency field with zero decimal places truncates entered values, so 23.5 is stored as 23.",
+   "f": "A Currency field with zero decimal places rounds half away from zero, so 23.5 is stored as 24.",
+   "x": "Currency fields with at least one decimal place round half away from zero, but with zero decimal places they truncate instead. That is why 23.5 becomes 23.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:number-currency-and-percent-fields",
+    "kt:custom-fields"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/number-currency-and-percent-fields.md"
+  },
+  {
+   "id": "sf-001796",
+   "area": "data-model",
+   "t": "In the API, a numeric field's precision is its total number of digits and its scale is the digits after the decimal point.",
+   "f": "In the API, a numeric field's precision is the digits before the decimal point and its scale is the digits after it.",
+   "x": "In the API, precision counts every digit, so the digits to the left equal precision minus scale; 256.99 has precision 5 and scale 2. The setup UI's Length means only the left-hand digits, which causes confusion.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:number-currency-and-percent-fields",
+    "kt:metadata-api"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/number-currency-and-percent-fields.md"
+  },
+  {
+   "id": "sf-001797",
+   "area": "data-model",
+   "t": "Of the numeric field types, only Number can be an External ID field; Currency and Percent fields aren't eligible.",
+   "f": "Number, Currency and Percent fields can all be marked as External ID fields for upserts.",
+   "x": "External IDs are limited to auto-number, email, number and text fields. Currency and Percent can't be used, so a numeric key for upserts must be a Number field.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:number-currency-and-percent-fields",
+    "kt:external-id-fields"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/number-currency-and-percent-fields.md"
+  },
+  {
+   "id": "sf-001798",
+   "area": "development",
+   "t": "NavigationMixin.Navigate takes an optional replace argument that defaults to false; true replaces the current browser history entry.",
+   "f": "NavigationMixin.Navigate takes an optional replace argument that defaults to true, so the current browser history entry is replaced unless set to false.",
+   "x": "By default navigation adds a new history entry so Back works as expected. Passing true swaps out the current entry instead.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:lightning-navigation-service",
+    "kt:lightning-web-components"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/lightning-navigation-service.md"
   }
  ]
 }

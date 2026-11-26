@@ -1,0 +1,17 @@
+id: sf-001724
+product_area: data-model
+true_statement: A custom multi-select picklist can have up to 500 values, and a user can select up to 100 of them on one record.
+false_statement: A custom multi-select picklist can have up to 500 values, and a user can select up to 50 of them on one record.
+explanation: Salesforce Help caps a custom multi-select picklist at 500 values, with at most 100 selectable at once on a record. Fifty understates the per-record selection limit.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/multi-select-picklists.md
+  commit: aa61ec09a51ccb85b28af42c8d47fabf8e48f2d6
+  blob: e27071d751d7454cc0578787d655be2951bf1dc1
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:multi-select-picklists
+difficulty: 2
+created: '2026-11-26'
+status: active

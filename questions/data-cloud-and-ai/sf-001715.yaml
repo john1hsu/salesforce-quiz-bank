@@ -1,0 +1,17 @@
+id: sf-001715
+product_area: data-cloud-and-ai
+true_statement: The Setup agent only performs tasks the admin already has permission to do and asks for approval before making a change.
+false_statement: The Setup agent can perform tasks beyond the admin's own permissions, provided the admin approves the change first.
+explanation: The agent acts within the requesting admin's permissions, so it never widens what they can change. Approval is an extra safeguard, not a way to exceed those permissions.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/agentforce-setup-agent.md
+  commit: aa61ec09a51ccb85b28af42c8d47fabf8e48f2d6
+  blob: ad99447a61198218a42aa8de25bb8c0f0ddc1f1a
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:agentforce-setup-agent
+difficulty: 2
+created: '2026-11-26'
+status: active

@@ -1,0 +1,18 @@
+id: sf-001753
+product_area: platform-architecture
+true_statement: The Dynamic Highlights Panel on a Lightning record page can hold at most 12 fields.
+false_statement: The Dynamic Highlights Panel on a Lightning record page can hold at most 20 fields.
+explanation: Salesforce caps the component at 12 fields, and practitioners suggest using far fewer so the summary stays easy to scan.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/dynamic-highlights-panel.md
+  commit: aa61ec09a51ccb85b28af42c8d47fabf8e48f2d6
+  blob: a7a0eab01d41e04e409d27bc67a559108afc4709
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:dynamic-highlights-panel
+- kt:lightning-app-builder
+difficulty: 1
+created: '2026-11-26'
+status: active

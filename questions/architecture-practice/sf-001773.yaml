@@ -1,0 +1,18 @@
+id: sf-001773
+product_area: architecture-practice
+true_statement: In the Launch Gate, a launch blocker fails the assessment automatically, but the customer still makes the final go-live decision.
+false_statement: In the Launch Gate, a launch blocker fails the assessment automatically, and the reviewers then make the final go-live decision.
+explanation: Blockers such as missing SSL certificates or a failed load test trigger an automatic fail and a recommendation to delay. The decision to launch anyway or wait stays with the customer.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/go-live-readiness-assessment.md
+  commit: aa61ec09a51ccb85b28af42c8d47fabf8e48f2d6
+  blob: be3a3c01441a130e51e82cae2c503546f13548da
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:go-live-readiness-assessment
+- kt:scale-test
+difficulty: 2
+created: '2026-11-26'
+status: active

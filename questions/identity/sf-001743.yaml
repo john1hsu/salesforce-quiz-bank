@@ -1,0 +1,18 @@
+id: sf-001743
+product_area: identity
+true_statement: When a managed package is licensed to the whole org, only an admin with Manage Users can grant the publisher login access.
+false_statement: When a managed package is licensed to the whole org, any user in the org can grant the publisher login access.
+explanation: Org-wide licensing means no individual user holds a package licence, so the publisher drops out of ordinary users' grant lists. An admin with Manage Users must grant the access instead.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/grant-login-access.md
+  commit: aa61ec09a51ccb85b28af42c8d47fabf8e48f2d6
+  blob: dc6bc4618d383486b52fd384a1ea616ca390e045
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:grant-login-access
+- kt:license-management-app
+difficulty: 3
+created: '2026-11-26'
+status: active

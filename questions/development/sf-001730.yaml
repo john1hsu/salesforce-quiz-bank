@@ -1,0 +1,18 @@
+id: sf-001730
+product_area: development
+true_statement: When an Apex variable is typed as a parent class, JSON.serialize outputs only the parent's fields, losing any subtype data.
+false_statement: When an Apex variable is typed as a parent class, JSON.serialize outputs the runtime subtype's fields, including any it adds.
+explanation: Serialization follows the declared type, so fields defined only on a subclass are dropped. Code that needs them should declare the variable as the subtype.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/apex-json-serialization.md
+  commit: aa61ec09a51ccb85b28af42c8d47fabf8e48f2d6
+  blob: 46c731cafcc6da38900c08c7f95367c6127a7502
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:apex-json-serialization
+- kt:apex-defined-types
+difficulty: 3
+created: '2026-11-26'
+status: active

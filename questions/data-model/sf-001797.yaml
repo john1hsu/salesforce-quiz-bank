@@ -1,0 +1,18 @@
+id: sf-001797
+product_area: data-model
+true_statement: Of the numeric field types, only Number can be an External ID field; Currency and Percent fields aren't eligible.
+false_statement: Number, Currency and Percent fields can all be marked as External ID fields for upserts.
+explanation: External IDs are limited to auto-number, email, number and text fields. Currency and Percent can't be used, so a numeric key for upserts must be a Number field.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/number-currency-and-percent-fields.md
+  commit: aa61ec09a51ccb85b28af42c8d47fabf8e48f2d6
+  blob: a70f87f5ab28249445af2e150d3d4cb70c1876bc
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:number-currency-and-percent-fields
+- kt:external-id-fields
+difficulty: 2
+created: '2026-11-26'
+status: active

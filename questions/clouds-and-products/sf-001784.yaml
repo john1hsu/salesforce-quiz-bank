@@ -1,0 +1,17 @@
+id: sf-001784
+product_area: clouds-and-products
+true_statement: A work order's Duration is independent of its line items' durations and isn't calculated as their sum.
+false_statement: A work order's Duration is a read-only roll-up calculated as the sum of its line items' durations.
+explanation: Duration on the work order stands on its own; when blank it can fall back to the work type's duration, but it never totals the line items.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/work-orders.md
+  commit: aa61ec09a51ccb85b28af42c8d47fabf8e48f2d6
+  blob: 06e7345b66aad432043bc3bed5921cd3f31dfe77
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:work-orders
+difficulty: 2
+created: '2026-11-26'
+status: active

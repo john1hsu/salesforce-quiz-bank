@@ -1,0 +1,18 @@
+id: sf-001752
+product_area: platform-architecture
+true_statement: The Group object ignores Dynamic Actions set in Lightning App Builder, keeping its actions on the Group Layouts page.
+false_statement: The Group object ignores page-layout actions, so its actions must be configured as Dynamic Actions in Lightning App Builder.
+explanation: 'Group is an exception to Dynamic Actions: its buttons still come from Group Layouts. Orgs that need to manage Group actions keep using the layout.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/dynamic-actions.md
+  commit: aa61ec09a51ccb85b28af42c8d47fabf8e48f2d6
+  blob: 4f84e91519850839b8d00ad0c2b5805f1b2b94e2
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:dynamic-actions
+- kt:page-layouts
+difficulty: 2
+created: '2026-11-26'
+status: active

@@ -1,0 +1,18 @@
+id: sf-001787
+product_area: data-cloud-and-ai
+true_statement: Slack actions such as Create a Slack Canvas fail in the Salesforce agent preview, so they must be tested inside Slack.
+false_statement: Slack actions such as Create a Slack Canvas run in the Salesforce agent preview, so they can be fully tested before installing in Slack.
+explanation: These standard actions need the Slack environment to execute. The builder's preview can't run them, so canvas and DM flows have to be tested in Slack itself.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/agentforce-in-slack.md
+  commit: aa61ec09a51ccb85b28af42c8d47fabf8e48f2d6
+  blob: 83ee0fd9829aeaeeea8b8301098544b69c551144
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:agentforce-in-slack
+- kt:agent-actions
+difficulty: 2
+created: '2026-11-26'
+status: active

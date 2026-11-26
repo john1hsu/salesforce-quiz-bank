@@ -1,0 +1,18 @@
+id: sf-001733
+product_area: devops-and-alm
+true_statement: Until an installer enters a package version's installation key, the package's name and component list stay hidden.
+false_statement: Before an installer enters a package version's installation key, the package's name and component list are shown so they can review it first.
+explanation: The key is the very first step of installation and it guards the package's contents, not just the install button. Nothing about the package is revealed until the key is supplied.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/package-installation-keys.md
+  commit: aa61ec09a51ccb85b28af42c8d47fabf8e48f2d6
+  blob: 8a8849b322d4738a9c6b03c0fd736c419f68979d
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:package-installation-keys
+- kt:unlocked-packages
+difficulty: 2
+created: '2026-11-26'
+status: active

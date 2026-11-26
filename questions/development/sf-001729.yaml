@@ -1,0 +1,18 @@
+id: sf-001729
+product_area: development
+true_statement: JSON.deserializeStrict throws on extra JSON attributes for Apex classes in every API version, but not for sObjects.
+false_statement: JSON.deserializeStrict throws on extra JSON attributes for sObjects in every API version, but not for Apex classes.
+explanation: Strict mode enforces that every attribute exists on an Apex class target. sObject targets are not held to that check by deserializeStrict, so the false statement reverses the two.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/apex-json-serialization.md
+  commit: aa61ec09a51ccb85b28af42c8d47fabf8e48f2d6
+  blob: 46c731cafcc6da38900c08c7f95367c6127a7502
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:apex-json-serialization
+- kt:apex
+difficulty: 3
+created: '2026-11-26'
+status: active

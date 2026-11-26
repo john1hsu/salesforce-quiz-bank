@@ -1,0 +1,18 @@
+id: sf-001748
+product_area: integration
+true_statement: The Telephony Integration API's voice call update is asynchronous, returns a pending status, and should be sent only once per call.
+false_statement: The Telephony Integration API's voice call update is synchronous, returns the saved record, and can be resent safely to correct durations.
+explanation: The PATCH returns a pending status whose result can't be polled. Sending it again overwrites the hold and interaction durations instead of correcting them.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/telephony-integration-api.md
+  commit: aa61ec09a51ccb85b28af42c8d47fabf8e48f2d6
+  blob: ff09c0ccb58b2fcbe4352cb1ac21a27e1919ee01
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:telephony-integration-api
+- kt:salesforce-voice
+difficulty: 3
+created: '2026-11-26'
+status: active

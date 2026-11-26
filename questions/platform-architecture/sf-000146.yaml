@@ -6,8 +6,8 @@ explanation: Hyperforce's resilience design keeps critical services and data in 
 source:
   repo: john1hsu/salesforce-knowledge-graph
   path: articles/platform-architecture/hyperforce.md
-  commit: 1a9626507b2858110c996adbfa985703bee41fd5
-  blob: fe8a9b039e4eef4b8cea4d69d39b6ca1579f98ad
+  commit: aa61ec09a51ccb85b28af42c8d47fabf8e48f2d6
+  blob: 6170510c17cee881b9ca8f179b32557302aa7b92
 verified_release: Winter '27
 feature_status: current
 concepts:

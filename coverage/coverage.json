@@ -1,45 +1,45 @@
 {
  "totals": {
-  "active": 1699,
+  "active": 1787,
   "retired": 2
  },
  "areas": {
   "architecture-practice": {
-   "active": 149
+   "active": 155
   },
   "automation": {
-   "active": 144
+   "active": 150
   },
   "clouds-and-products": {
-   "active": 144
+   "active": 153
   },
   "data-cloud-and-ai": {
-   "active": 144
+   "active": 156
   },
   "data-model": {
-   "active": 142
+   "active": 154
   },
   "development": {
-   "active": 141,
+   "active": 148,
    "retired": 1
   },
   "devops-and-alm": {
-   "active": 134
-  },
-  "identity": {
-   "active": 138
-  },
-  "integration": {
    "active": 140
   },
+  "identity": {
+   "active": 144
+  },
+  "integration": {
+   "active": 146
+  },
   "platform-architecture": {
-   "active": 142
+   "active": 148
   },
   "public-sector-and-compliance": {
-   "active": 142
+   "active": 148
   },
   "security-and-sharing": {
-   "active": 139,
+   "active": 145,
    "retired": 1
   }
  },
@@ -54,6 +54,9 @@
    "active": 3
   },
   "articles/architecture-practice/architecture-decision-records.md": {
+   "active": 3
+  },
+  "articles/architecture-practice/architecture-roadmaps.md": {
    "active": 3
   },
   "articles/architecture-practice/archiving-strategy.md": {
@@ -99,6 +102,9 @@
    "active": 3
   },
   "articles/architecture-practice/fit-gap-analysis.md": {
+   "active": 3
+  },
+  "articles/architecture-practice/go-live-readiness-assessment.md": {
    "active": 3
   },
   "articles/architecture-practice/heroku-architect-certification.md": {
@@ -260,6 +266,9 @@
   "articles/automation/flow-debugging.md": {
    "active": 3
   },
+  "articles/automation/flow-decision-element.md": {
+   "active": 3
+  },
   "articles/automation/flow-fault-handling.md": {
    "active": 1
   },
@@ -276,6 +285,9 @@
    "active": 3
   },
   "articles/automation/flow-orchestrator.md": {
+   "active": 3
+  },
+  "articles/automation/flow-run-context.md": {
    "active": 3
   },
   "articles/automation/flow-templates.md": {
@@ -416,6 +428,9 @@
   "articles/clouds-and-products/lead-conversion.md": {
    "active": 3
   },
+  "articles/clouds-and-products/lightning-service-console.md": {
+   "active": 3
+  },
   "articles/clouds-and-products/loyalty-management.md": {
    "active": 3
   },
@@ -479,6 +494,9 @@
   "articles/clouds-and-products/salesforce-voice.md": {
    "active": 3
   },
+  "articles/clouds-and-products/scheduling-console.md": {
+   "active": 3
+  },
   "articles/clouds-and-products/service-appointments.md": {
    "active": 3
   },
@@ -492,6 +510,9 @@
    "active": 3
   },
   "articles/clouds-and-products/tableau.md": {
+   "active": 3
+  },
+  "articles/clouds-and-products/work-orders.md": {
    "active": 3
   },
   "articles/data-cloud-and-ai/agent-actions.md": {
@@ -509,10 +530,16 @@
   "articles/data-cloud-and-ai/agentforce-employee-agents.md": {
    "active": 3
   },
+  "articles/data-cloud-and-ai/agentforce-in-slack.md": {
+   "active": 3
+  },
   "articles/data-cloud-and-ai/agentforce-observability.md": {
    "active": 3
   },
   "articles/data-cloud-and-ai/agentforce-sdr.md": {
+   "active": 3
+  },
+  "articles/data-cloud-and-ai/agentforce-setup-agent.md": {
    "active": 3
   },
   "articles/data-cloud-and-ai/agentforce-specialist-certification.md": {
@@ -599,6 +626,9 @@
   "articles/data-cloud-and-ai/digital-wallet.md": {
    "active": 3
   },
+  "articles/data-cloud-and-ai/einstein-generative-ai-setup.md": {
+   "active": 3
+  },
   "articles/data-cloud-and-ai/einstein-trust-layer.md": {
    "active": 3
   },
@@ -612,6 +642,9 @@
    "active": 3
   },
   "articles/data-cloud-and-ai/model-context-protocol-in-agentforce.md": {
+   "active": 3
+  },
+  "articles/data-cloud-and-ai/models-api.md": {
    "active": 3
   },
   "articles/data-cloud-and-ai/prompt-builder.md": {
@@ -689,6 +722,9 @@
   "articles/data-model/data-stewardship.md": {
    "active": 3
   },
+  "articles/data-model/deleted-fields-and-field-undelete.md": {
+   "active": 3
+  },
   "articles/data-model/divisions.md": {
    "active": 3
   },
@@ -713,6 +749,9 @@
   "articles/data-model/field-sets.md": {
    "active": 3
   },
+  "articles/data-model/field-type-conversion.md": {
+   "active": 3
+  },
   "articles/data-model/formula-fields.md": {
    "active": 1
   },
@@ -731,7 +770,13 @@
   "articles/data-model/lookup-vs-master-detail.md": {
    "active": 3
   },
+  "articles/data-model/multi-select-picklists.md": {
+   "active": 3
+  },
   "articles/data-model/multiple-currencies.md": {
+   "active": 3
+  },
+  "articles/data-model/number-currency-and-percent-fields.md": {
    "active": 3
   },
   "articles/data-model/object-relationships.md": {
@@ -785,6 +830,9 @@
   "articles/development/apex-callouts.md": {
    "active": 3
   },
+  "articles/development/apex-collections.md": {
+   "active": 3
+  },
   "articles/development/apex-continuations.md": {
    "active": 3
   },
@@ -795,6 +843,9 @@
    "active": 3
   },
   "articles/development/apex-flex-queue.md": {
+   "active": 3
+  },
+  "articles/development/apex-json-serialization.md": {
    "active": 3
   },
   "articles/development/apex-logging-and-debug-logs.md": {
@@ -847,6 +898,9 @@
   },
   "articles/development/lightning-message-service.md": {
    "active": 3
+  },
+  "articles/development/lightning-navigation-service.md": {
+   "active": 1
   },
   "articles/development/lightning-web-components.md": {
    "active": 3
@@ -996,6 +1050,9 @@
   "articles/devops-and-alm/package-dependencies.md": {
    "active": 3
   },
+  "articles/devops-and-alm/package-installation-keys.md": {
+   "active": 3
+  },
   "articles/devops-and-alm/package-versioning-and-ancestry.md": {
    "active": 3
   },
@@ -1018,6 +1075,9 @@
    "active": 3
   },
   "articles/devops-and-alm/release-updates.md": {
+   "active": 3
+  },
+  "articles/devops-and-alm/rollback-plan.md": {
    "active": 3
   },
   "articles/devops-and-alm/salesforce-cli.md": {
@@ -1086,6 +1146,9 @@
   "articles/identity/custom-domains.md": {
    "active": 3
   },
+  "articles/identity/delegated-administration.md": {
+   "active": 3
+  },
   "articles/identity/delegated-authentication.md": {
    "active": 1
   },
@@ -1099,6 +1162,9 @@
    "active": 3
   },
   "articles/identity/external-identity-license.md": {
+   "active": 3
+  },
+  "articles/identity/grant-login-access.md": {
    "active": 3
   },
   "articles/identity/headless-identity.md": {
@@ -1207,6 +1273,9 @@
    "active": 3
   },
   "articles/identity/web-server-flow.md": {
+   "active": 3
+  },
+  "articles/integration/amazon-connect.md": {
    "active": 3
   },
   "articles/integration/apex-rest-services.md": {
@@ -1350,6 +1419,9 @@
   "articles/integration/streaming-api.md": {
    "active": 3
   },
+  "articles/integration/telephony-integration-api.md": {
+   "active": 3
+  },
   "articles/integration/user-interface-api.md": {
    "active": 3
   },
@@ -1387,6 +1459,12 @@
    "active": 3
   },
   "articles/platform-architecture/distributed-computing.md": {
+   "active": 3
+  },
+  "articles/platform-architecture/dynamic-actions.md": {
+   "active": 3
+  },
+  "articles/platform-architecture/dynamic-highlights-panel.md": {
    "active": 3
   },
   "articles/platform-architecture/governor-limits.md": {
@@ -1527,6 +1605,9 @@
   "articles/public-sector-and-compliance/dod-cloud-computing-srg.md": {
    "active": 3
   },
+  "articles/public-sector-and-compliance/fedramp-20x.md": {
+   "active": 3
+  },
   "articles/public-sector-and-compliance/fedramp-high.md": {
    "active": 3
   },
@@ -1582,6 +1663,9 @@
    "active": 1
   },
   "articles/public-sector-and-compliance/it-governance.md": {
+   "active": 3
+  },
+  "articles/public-sector-and-compliance/key-security-indicators.md": {
    "active": 3
   },
   "articles/public-sector-and-compliance/management.md": {
@@ -1641,6 +1725,9 @@
   "articles/public-sector-and-compliance/zero-trust-architecture.md": {
    "active": 3
   },
+  "articles/security-and-sharing/account-teams.md": {
+   "active": 3
+  },
   "articles/security-and-sharing/apex-managed-sharing.md": {
    "active": 3
   },
@@ -1681,6 +1768,9 @@
    "active": 3
   },
   "articles/security-and-sharing/field-level-security.md": {
+   "active": 3
+  },
+  "articles/security-and-sharing/high-volume-experience-cloud-users.md": {
    "active": 3
   },
   "articles/security-and-sharing/implicit-sharing.md": {

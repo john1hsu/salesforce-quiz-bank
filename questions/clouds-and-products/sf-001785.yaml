@@ -1,0 +1,18 @@
+id: sf-001785
+product_area: clouds-and-products
+true_statement: A work order's FSL__VisitingHours__c limits when its appointments can be scheduled only if the scheduling policy includes the Visiting Hours work rule.
+false_statement: A work order's FSL__VisitingHours__c always limits when its appointments can be scheduled, whatever work rules the scheduling policy includes.
+explanation: The visiting-hours lookup is only enforced through the Visiting Hours work rule. Without that rule in the policy, the scheduler ignores the field.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/work-orders.md
+  commit: aa61ec09a51ccb85b28af42c8d47fabf8e48f2d6
+  blob: 06e7345b66aad432043bc3bed5921cd3f31dfe77
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:work-orders
+- kt:field-service-scheduling-policies
+difficulty: 3
+created: '2026-11-26'
+status: active

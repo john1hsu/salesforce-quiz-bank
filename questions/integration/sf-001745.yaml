@@ -1,0 +1,19 @@
+id: sf-001745
+product_area: integration
+true_statement: After each Amazon Connect call, contact record sync uses a Lambda function to copy contact record data into the Salesforce VoiceCall object.
+false_statement: After each Amazon Connect call, contact record sync uses a Salesforce platform event to copy contact record data into the VoiceCall object.
+explanation: Contact record sync is on by default and runs through a Lambda function. Because sync can occasionally fail, Salesforce suggests backing records up to S3 and resyncing gaps.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/amazon-connect.md
+  commit: aa61ec09a51ccb85b28af42c8d47fabf8e48f2d6
+  blob: b3f92531f76d5569024694c0350c5e4889e1323c
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:amazon-connect
+- kt:telephony-integration-api
+- kt:aws-lambda
+difficulty: 2
+created: '2026-11-26'
+status: active

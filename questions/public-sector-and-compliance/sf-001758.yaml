@@ -1,0 +1,18 @@
+id: sf-001758
+product_area: public-sector-and-compliance
+true_statement: In FedRAMP 20x, Class D is the High-impact equivalent and is still being developed, so High workloads rely on the Rev5 path for now.
+false_statement: In FedRAMP 20x, Class C is the High-impact equivalent and is available now, so High workloads can already use the 20x path.
+explanation: Class C covers common enterprise services, not High. Class D is the High equivalent and isn't open yet, so High-impact environments still go through Rev5.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/fedramp-20x.md
+  commit: aa61ec09a51ccb85b28af42c8d47fabf8e48f2d6
+  blob: aa35236a35fdaa93016776dc73a82fef5fea3d7e
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:fedramp-20x
+- kt:fedramp-high
+difficulty: 2
+created: '2026-11-26'
+status: active

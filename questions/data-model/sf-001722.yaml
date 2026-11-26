@@ -1,0 +1,18 @@
+id: sf-001722
+product_area: data-model
+true_statement: A destructive field type conversion publishes a single change event whose recordIds header is the object's key prefix plus an asterisk.
+false_statement: A destructive field type conversion publishes one change event per affected record, each listing that record's ID in recordIds.
+explanation: When a conversion nulls the field everywhere, Change Data Capture sends one event with a wildcard such as 001* instead of an event per record. Subscribers must treat it as affecting all records of the object.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/field-type-conversion.md
+  commit: aa61ec09a51ccb85b28af42c8d47fabf8e48f2d6
+  blob: f204bff8a9a7355b173885cc6fbc8988ead7bccc
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:field-type-conversion
+- kt:change-data-capture
+difficulty: 3
+created: '2026-11-26'
+status: active

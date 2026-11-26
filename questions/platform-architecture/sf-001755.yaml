@@ -1,0 +1,19 @@
+id: sf-001755
+product_area: platform-architecture
+true_statement: To show the Dynamic Highlights Panel in the Salesforce mobile app, an admin must turn on the setting it shares with Dynamic Forms for mobile.
+false_statement: The Dynamic Highlights Panel appears in the Salesforce mobile app as soon as the page is saved, with no separate mobile setting needed.
+explanation: Desktop users see the panel on save, but mobile needs Dynamic Forms and Dynamic Highlights Panel on Mobile enabled in Setup. Without it, mobile users get no highlights area unless a standard Highlights Panel is also on the page.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/dynamic-highlights-panel.md
+  commit: aa61ec09a51ccb85b28af42c8d47fabf8e48f2d6
+  blob: a7a0eab01d41e04e409d27bc67a559108afc4709
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:dynamic-highlights-panel
+- kt:salesforce-mobile-app
+- kt:dynamic-forms
+difficulty: 2
+created: '2026-11-26'
+status: active

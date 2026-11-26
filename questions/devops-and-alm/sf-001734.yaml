@@ -1,0 +1,18 @@
+id: sf-001734
+product_area: devops-and-alm
+true_statement: To change the installation key on an existing package version, run sf package version update with a new --installation-key value.
+false_statement: To change the installation key on an existing package version, run sf package install with a new --installation-key value.
+explanation: The update command targets the version by alias or 04t ID and sets the new key. The install command's --installation-key flag only supplies a key when installing; it cannot change one.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/package-installation-keys.md
+  commit: aa61ec09a51ccb85b28af42c8d47fabf8e48f2d6
+  blob: 8a8849b322d4738a9c6b03c0fd736c419f68979d
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:package-installation-keys
+- kt:salesforce-cli
+difficulty: 2
+created: '2026-11-26'
+status: active

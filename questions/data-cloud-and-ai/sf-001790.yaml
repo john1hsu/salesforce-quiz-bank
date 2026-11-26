@@ -1,0 +1,17 @@
+id: sf-001790
+product_area: data-cloud-and-ai
+true_statement: Models API calls made from Apex in a sandbox are limited to 500 requests per hour, while sandbox REST calls use the production limits.
+false_statement: Models API calls made over REST in a sandbox are limited to 500 requests per hour, while sandbox Apex calls use the production limits.
+explanation: The reduced sandbox quota applies to the Apex classes, not to REST. REST calls from a sandbox get the same limits as production.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/models-api.md
+  commit: aa61ec09a51ccb85b28af42c8d47fabf8e48f2d6
+  blob: 4002f4a3d9f88d8fdf9fc05f193e9647b0dd658e
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:models-api
+difficulty: 3
+created: '2026-11-26'
+status: active

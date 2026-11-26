@@ -1,0 +1,18 @@
+id: sf-001737
+product_area: devops-and-alm
+true_statement: The Salesforce CLI's --ignore-errors deploy flag shouldn't be used against production, because skipping failed components can leave the org inconsistent.
+false_statement: The Salesforce CLI's --ignore-errors deploy flag is recommended for production, because it rolls back failed components while keeping successful ones consistent.
+explanation: With --ignore-errors, components that succeed are saved and failures are skipped, so a release can land half-applied. The CLI reference warns against using it on production.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/rollback-plan.md
+  commit: aa61ec09a51ccb85b28af42c8d47fabf8e48f2d6
+  blob: a3a1e230d09a82867ad5193312503c0e9f555e6c
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:rollback-plan
+- kt:salesforce-cli
+difficulty: 2
+created: '2026-11-26'
+status: active

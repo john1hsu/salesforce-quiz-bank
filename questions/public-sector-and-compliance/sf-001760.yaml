@@ -1,0 +1,18 @@
+id: sf-001760
+product_area: public-sector-and-compliance
+true_statement: For each Key Security Indicator, the provider records its own minimum information and artifacts in a Security Decision Record, rather than following FedRAMP-set thresholds.
+false_statement: For each Key Security Indicator, FedRAMP sets the specific tools and numeric thresholds the provider must use, recorded in a Security Decision Record.
+explanation: FedRAMP mostly avoids prescribing tools or numbers for KSIs. The provider decides what evidence demonstrates each indicator and documents that choice itself.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/key-security-indicators.md
+  commit: aa61ec09a51ccb85b28af42c8d47fabf8e48f2d6
+  blob: cb4c74df0eded51f3179a50068f0b9f8955d30e3
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:key-security-indicators
+- kt:continuous-monitoring
+difficulty: 2
+created: '2026-11-26'
+status: active

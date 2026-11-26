@@ -1,0 +1,18 @@
+id: sf-001740
+product_area: identity
+true_statement: Choosing a role for a delegated administration group's user administration automatically includes all of that role's subordinate roles.
+false_statement: Choosing a role for a delegated administration group's user administration covers only that role; each subordinate role must be added separately.
+explanation: Delegation follows the role hierarchy downward, so listing a role brings its subordinates along. Delegates can then manage users anywhere beneath it.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/delegated-administration.md
+  commit: aa61ec09a51ccb85b28af42c8d47fabf8e48f2d6
+  blob: 4c1e54301444807b294ad782f81c6f4c3259c84b
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:delegated-administration
+- kt:role-hierarchy
+difficulty: 2
+created: '2026-11-26'
+status: active

@@ -1,0 +1,18 @@
+id: sf-001738
+product_area: identity
+true_statement: Only users with the View Setup and Configuration permission can be added as delegated administrators.
+false_statement: Only users with the Manage Users permission can be added as delegated administrators.
+explanation: Delegated administrators need View Setup and Configuration so they can reach the Setup pages they manage. Requiring Manage Users would defeat the purpose, since delegation exists to avoid handing out that broad permission.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/delegated-administration.md
+  commit: aa61ec09a51ccb85b28af42c8d47fabf8e48f2d6
+  blob: 4c1e54301444807b294ad782f81c6f4c3259c84b
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:delegated-administration
+- kt:user-management
+difficulty: 2
+created: '2026-11-26'
+status: active

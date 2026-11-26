@@ -1,0 +1,18 @@
+id: sf-001794
+product_area: data-model
+true_statement: An auto-number field keeps counting while it is deleted, so after an undelete it carries the correct current values.
+false_statement: An auto-number field stops counting while it is deleted, so after an undelete it resumes from the value it had when deleted.
+explanation: Numbering continues in the background during the soft-delete window. A restored auto-number field therefore picks up where the sequence actually is, not where it was at deletion.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/deleted-fields-and-field-undelete.md
+  commit: aa61ec09a51ccb85b28af42c8d47fabf8e48f2d6
+  blob: 86ba0361d990284e8da3e26f05e4c8eada3f101f
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:deleted-fields-and-field-undelete
+- kt:auto-number-fields
+difficulty: 2
+created: '2026-11-26'
+status: active

@@ -1,0 +1,18 @@
+id: sf-001769
+product_area: architecture-practice
+true_statement: A feature roadmap zooms into one capability and lists its supporting features, for business planning, budgeting and change management.
+false_statement: A component roadmap zooms into one business capability and lists its supporting features, for business planning, budgeting and change management.
+explanation: Feature roadmaps are a business roadmap type that drills into a single capability. Component roadmaps are a technology type covering specific technology components and their timeframes.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/architecture-roadmaps.md
+  commit: aa61ec09a51ccb85b28af42c8d47fabf8e48f2d6
+  blob: 1210dfd0450dc1605546e313199bfbde60872a6e
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:architecture-roadmaps
+- kt:capability-maps
+difficulty: 2
+created: '2026-11-26'
+status: active

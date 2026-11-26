@@ -1,0 +1,19 @@
+id: sf-001747
+product_area: integration
+true_statement: A Telephony Integration API caller signs its own RS256 JWT, with an exp no more than 24 hours out, and sends it as a bearer token.
+false_statement: A Telephony Integration API caller exchanges a signed JWT at the Salesforce OAuth token endpoint for an access token valid for up to 24 hours.
+explanation: 'The API has no OAuth token endpoint: the self-signed JWT itself is the bearer credential. That is the key difference from the OAuth JWT bearer flow.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/telephony-integration-api.md
+  commit: aa61ec09a51ccb85b28af42c8d47fabf8e48f2d6
+  blob: ff09c0ccb58b2fcbe4352cb1ac21a27e1919ee01
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:telephony-integration-api
+- kt:json-web-token
+- kt:jwt-bearer-flow
+difficulty: 3
+created: '2026-11-26'
+status: active

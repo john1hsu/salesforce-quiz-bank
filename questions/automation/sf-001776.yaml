@@ -1,0 +1,18 @@
+id: sf-001776
+product_area: automation
+true_statement: In a record-triggered flow, a Decision outcome can be set to count as met only when the record changes to meet its conditions.
+false_statement: In a record-triggered flow, only the Start element can require a record change to meet conditions; Decision outcomes always evaluate current values.
+explanation: Decision rules carry their own option to require that the record was changed to meet the criteria, similar to the Start element's setting for the whole flow. Both help avoid repeating actions on later edits.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/flow-decision-element.md
+  commit: aa61ec09a51ccb85b28af42c8d47fabf8e48f2d6
+  blob: c7a552cb965279e60a66ab8f8622a12039b75d00
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:flow-decision-element
+- kt:record-triggered-flow
+difficulty: 3
+created: '2026-11-26'
+status: active

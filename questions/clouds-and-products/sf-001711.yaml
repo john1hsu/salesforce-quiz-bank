@@ -1,0 +1,17 @@
+id: sf-001711
+product_area: clouds-and-products
+true_statement: In a Lightning console app, opening a record from the split view list panel creates a new workspace tab.
+false_statement: In a Lightning console app, opening a record from the split view list panel creates a subtab under the current workspace tab.
+explanation: Split view lets a rep step through a list, and each record picked from it opens in its own workspace tab. Subtabs are for related records opened from within a workspace tab.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/lightning-service-console.md
+  commit: aa61ec09a51ccb85b28af42c8d47fabf8e48f2d6
+  blob: 29cbf021b1c146206388beef1c2e234f6cfb184e
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:lightning-service-console
+difficulty: 2
+created: '2026-11-26'
+status: active

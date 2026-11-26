@@ -1,0 +1,18 @@
+id: sf-001731
+product_area: development
+true_statement: From API version 63.0, serializing custom exceptions and most built-in exceptions to JSON in Apex is unsupported.
+false_statement: From API version 63.0, Apex supports serializing custom exceptions and built-in exceptions to JSON with JSON.serialize.
+explanation: API 63.0 removed support for serializing most exceptions, including custom ones. Code that logged exceptions by serializing them needs to copy the message and details into its own class instead.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/apex-json-serialization.md
+  commit: aa61ec09a51ccb85b28af42c8d47fabf8e48f2d6
+  blob: 46c731cafcc6da38900c08c7f95367c6127a7502
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:apex-json-serialization
+- kt:custom-exceptions
+difficulty: 2
+created: '2026-11-26'
+status: active

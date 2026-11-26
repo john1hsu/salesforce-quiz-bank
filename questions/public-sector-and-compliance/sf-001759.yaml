@@ -1,0 +1,18 @@
+id: sf-001759
+product_area: public-sector-and-compliance
+true_statement: The FedRAMP indicator KSI-CMT-RMV prefers redeploying version-controlled resources over modifying them in place.
+false_statement: The FedRAMP indicator KSI-CMT-RMV prefers modifying running resources in place over redeploying them from version control.
+explanation: This change-management indicator favours immutable, version-controlled redeployment so changes are traceable. In-place modification is what it steers providers away from.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/key-security-indicators.md
+  commit: aa61ec09a51ccb85b28af42c8d47fabf8e48f2d6
+  blob: cb4c74df0eded51f3179a50068f0b9f8955d30e3
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:key-security-indicators
+- kt:fedramp-20x
+difficulty: 3
+created: '2026-11-26'
+status: active

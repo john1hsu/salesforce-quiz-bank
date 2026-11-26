@@ -1,0 +1,18 @@
+id: sf-001735
+product_area: devops-and-alm
+true_statement: Roll-up summary fields deleted through the Metadata API are purged immediately, even when purgeOnDelete isn't set.
+false_statement: Roll-up summary fields deleted through the Metadata API go to the Recycle Bin unless purgeOnDelete is set.
+explanation: Most deleted components land in the Recycle Bin unless purgeOnDelete is used, but roll-up summary fields are an exception and are purged regardless. A rollback plan should treat those deletions as permanent.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/rollback-plan.md
+  commit: aa61ec09a51ccb85b28af42c8d47fabf8e48f2d6
+  blob: a3a1e230d09a82867ad5193312503c0e9f555e6c
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:rollback-plan
+- kt:destructive-changes
+difficulty: 3
+created: '2026-11-26'
+status: active

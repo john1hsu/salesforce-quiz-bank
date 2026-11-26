@@ -1,0 +1,19 @@
+id: sf-001717
+product_area: data-cloud-and-ai
+true_statement: In a scratch org definition, einsteinGptSettings.enableEinsteinGptPlatform turns on Einstein, and agentPlatformSettings.enableAgentPlatform turns on Agentforce.
+false_statement: In a scratch org definition, agentPlatformSettings.enableAgentPlatform turns on Einstein, and einsteinGptSettings.enableEinsteinGptPlatform turns on Agentforce.
+explanation: The EinsteinGptSettings type carries the Einstein switch and AgentPlatformSettings carries the Agentforce switch. The false statement swaps which setting controls which feature.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/einstein-generative-ai-setup.md
+  commit: aa61ec09a51ccb85b28af42c8d47fabf8e48f2d6
+  blob: 7eee8ce1f557859497f831fa5b46b3a2d654468c
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:einstein-generative-ai-setup
+- kt:scratch-orgs
+- kt:metadata-api
+difficulty: 3
+created: '2026-11-26'
+status: active

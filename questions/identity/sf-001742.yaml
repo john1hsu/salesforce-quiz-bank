@@ -1,0 +1,18 @@
+id: sf-001742
+product_area: identity
+true_statement: Login flows assigned to either the admin's or the user's profile don't run during a Log In As session.
+false_statement: Login flows assigned to the impersonated user's profile run at the start of a Log In As session.
+explanation: Log In As skips login flows entirely, whichever profile they are on. Admins can't rely on a login flow to gate or log impersonation.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/grant-login-access.md
+  commit: aa61ec09a51ccb85b28af42c8d47fabf8e48f2d6
+  blob: dc6bc4618d383486b52fd384a1ea616ca390e045
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:grant-login-access
+- kt:login-flows
+difficulty: 3
+created: '2026-11-26'
+status: active

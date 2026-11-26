@@ -1,0 +1,18 @@
+id: sf-001786
+product_area: data-cloud-and-ai
+true_statement: Only Agentforce Employee Agent type agents can be built for Slack.
+false_statement: Both Agentforce Employee Agents and Agentforce Service Agents can be built for Slack using its starter templates.
+explanation: Slack deployment is limited to the Employee Agent type, and Slack's templates (Customer Insights, Employee Help and Onboarding) are all employee agents. Service agents there stay locked until an admin assigns access.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/agentforce-in-slack.md
+  commit: aa61ec09a51ccb85b28af42c8d47fabf8e48f2d6
+  blob: 83ee0fd9829aeaeeea8b8301098544b69c551144
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:agentforce-in-slack
+- kt:agentforce-employee-agents
+difficulty: 2
+created: '2026-11-26'
+status: active

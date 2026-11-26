@@ -1,0 +1,18 @@
+id: sf-001777
+product_area: automation
+true_statement: A flow in system context with sharing can use every object and field, but record visibility still follows the user's sharing settings.
+false_statement: A flow in system context with sharing sees every record regardless of sharing, but the user's object and field permissions still apply.
+explanation: '''With sharing'' keeps record-level rules such as org-wide defaults and sharing rules, while object and field permissions are not enforced. The false statement swaps which layer is enforced.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/flow-run-context.md
+  commit: aa61ec09a51ccb85b28af42c8d47fabf8e48f2d6
+  blob: f234053a0869668c9c58fdc3b4f567dedae6bddf
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:flow-run-context
+- kt:salesforce-sharing-model
+difficulty: 2
+created: '2026-11-26'
+status: active

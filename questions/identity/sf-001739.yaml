@@ -1,0 +1,17 @@
+id: sf-001739
+product_area: identity
+true_statement: Delegated administrators can't create or change relationships on a delegated custom object or set its org-wide sharing defaults.
+false_statement: Delegated administrators can create relationships on a delegated custom object and set its org-wide sharing defaults, but can't create a custom tab for it.
+explanation: Custom object delegation covers nearly everything, including creating a custom tab, but relationships and org-wide defaults stay with full admins. The false statement reverses which rights are excluded.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/delegated-administration.md
+  commit: aa61ec09a51ccb85b28af42c8d47fabf8e48f2d6
+  blob: 4c1e54301444807b294ad782f81c6f4c3259c84b
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:delegated-administration
+difficulty: 3
+created: '2026-11-26'
+status: active

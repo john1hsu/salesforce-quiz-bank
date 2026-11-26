@@ -1,0 +1,19 @@
+id: sf-001744
+product_area: integration
+true_statement: In Salesforce Voice with Amazon Connect, Amazon Transcribe covers only the first 15 minutes of a call, so Contact Lens suits longer calls.
+false_statement: In Salesforce Voice with Amazon Connect, Contact Lens covers only the first 15 minutes of a call, so Amazon Transcribe suits longer calls.
+explanation: A Lambda limitation stops Amazon Transcribe-based transcription after 15 minutes. Contact Lens has no such cutoff, which is why it is the option for long calls.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/amazon-connect.md
+  commit: aa61ec09a51ccb85b28af42c8d47fabf8e48f2d6
+  blob: b3f92531f76d5569024694c0350c5e4889e1323c
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:amazon-connect
+- kt:salesforce-voice
+- kt:aws-lambda
+difficulty: 2
+created: '2026-11-26'
+status: active

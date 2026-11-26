@@ -1,0 +1,18 @@
+id: sf-001728
+product_area: development
+true_statement: Calling List.sort() on a list of custom class objects throws a System.ListException unless the class implements Comparable.
+false_statement: Calling List.sort() on a list of custom class objects sorts them by their toString() value unless the class implements Comparable.
+explanation: Only primitives have a natural sort order, and sObjects have a built-in one. A custom element type needs a Comparable implementation, otherwise sort() raises a ListException instead of falling back to any default.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/apex-collections.md
+  commit: aa61ec09a51ccb85b28af42c8d47fabf8e48f2d6
+  blob: 6845b664d61392e21befcaf9b6aeec4fa34015c2
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:apex-collections
+- kt:apex-defined-types
+difficulty: 3
+created: '2026-11-26'
+status: active

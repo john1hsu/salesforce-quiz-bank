@@ -1,0 +1,18 @@
+id: sf-001796
+product_area: data-model
+true_statement: In the API, a numeric field's precision is its total number of digits and its scale is the digits after the decimal point.
+false_statement: In the API, a numeric field's precision is the digits before the decimal point and its scale is the digits after it.
+explanation: In the API, precision counts every digit, so the digits to the left equal precision minus scale; 256.99 has precision 5 and scale 2. The setup UI's Length means only the left-hand digits, which causes confusion.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/number-currency-and-percent-fields.md
+  commit: aa61ec09a51ccb85b28af42c8d47fabf8e48f2d6
+  blob: a70f87f5ab28249445af2e150d3d4cb70c1876bc
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:number-currency-and-percent-fields
+- kt:metadata-api
+difficulty: 3
+created: '2026-11-26'
+status: active

@@ -1,0 +1,18 @@
+id: sf-001725
+product_area: data-model
+true_statement: An import or API update to a multi-select picklist must include every value the record should keep, because the new string replaces the old one.
+false_statement: An import or API update to a multi-select picklist only needs the values to add, because new values are appended to the existing selection.
+explanation: The field stores one semicolon-delimited string, so an update overwrites the whole selection. Sending only new values drops the ones that were already selected.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/multi-select-picklists.md
+  commit: aa61ec09a51ccb85b28af42c8d47fabf8e48f2d6
+  blob: e27071d751d7454cc0578787d655be2951bf1dc1
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:multi-select-picklists
+- kt:data-quality
+difficulty: 2
+created: '2026-11-26'
+status: active

@@ -6,8 +6,8 @@ explanation: The Admins guidance recommends Is Empty because it covers null and 
 source:
   repo: john1hsu/salesforce-knowledge-graph
   path: articles/automation/get-records-element.md
-  commit: 5b0927c1ce57f15a133dc1bb705a26efad1acc40
-  blob: 3d758774a6d2a0d26106e481c154e3f5c0b98c9c
+  commit: aa61ec09a51ccb85b28af42c8d47fabf8e48f2d6
+  blob: c7666435461bafef31e39fb5b5f236cc77005f77
 verified_release: Winter '27
 feature_status: current
 concepts:

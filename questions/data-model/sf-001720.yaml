@@ -1,0 +1,18 @@
+id: sf-001720
+product_area: data-model
+true_statement: Converting a Text field to a Picklist fails if the field holds more than 4,000 unique values.
+false_statement: Converting a Text field to a Picklist fails if the field holds more than 400 unique values.
+explanation: The cap on distinct values for a Text-to-Picklist conversion is 4,000, counted case-insensitively and including soft-deleted values still in the Recycle Bin. 400 is far too low.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/field-type-conversion.md
+  commit: aa61ec09a51ccb85b28af42c8d47fabf8e48f2d6
+  blob: f204bff8a9a7355b173885cc6fbc8988ead7bccc
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:field-type-conversion
+- kt:custom-fields
+difficulty: 2
+created: '2026-11-26'
+status: active

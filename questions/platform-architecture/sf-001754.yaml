@@ -1,0 +1,18 @@
+id: sf-001754
+product_area: platform-architecture
+true_statement: If field-level security hides the Dynamic Highlights Panel's primary field from a user, the panel shows the record Name instead.
+false_statement: If field-level security hides the Dynamic Highlights Panel's primary field from a user, the panel shows the next field in its list instead.
+explanation: The primary field falls back to the record Name when the user can't see it. It also can't carry a visibility rule or be a cross-object field.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/dynamic-highlights-panel.md
+  commit: aa61ec09a51ccb85b28af42c8d47fabf8e48f2d6
+  blob: a7a0eab01d41e04e409d27bc67a559108afc4709
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:dynamic-highlights-panel
+- kt:field-level-security
+difficulty: 3
+created: '2026-11-26'
+status: active

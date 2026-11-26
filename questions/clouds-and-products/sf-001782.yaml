@@ -1,0 +1,18 @@
+id: sf-001782
+product_area: clouds-and-products
+true_statement: Trailhead states that the Scheduling Console is available only with Enhanced Scheduling and Optimization.
+false_statement: Trailhead states that the Scheduling Console works with either the legacy scheduling engine or Enhanced Scheduling and Optimization.
+explanation: The console requires the Enhanced Scheduling and Optimization engine, so orgs should plan that engine before moving dispatchers from the Classic Dispatch Console.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/scheduling-console.md
+  commit: aa61ec09a51ccb85b28af42c8d47fabf8e48f2d6
+  blob: 19bb21da249531cea98918085958838e3942f315
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:scheduling-console
+- kt:enhanced-scheduling-and-optimization
+difficulty: 2
+created: '2026-11-26'
+status: active

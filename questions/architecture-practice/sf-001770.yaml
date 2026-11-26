@@ -1,0 +1,18 @@
+id: sf-001770
+product_area: architecture-practice
+true_statement: In TOGAF Phase E, each Transition Architecture should deliver measurable business value, and transitions need not be evenly spaced.
+false_statement: In TOGAF Phase E, Transition Architectures should be evenly spaced in time, even if some deliver no measurable business value.
+explanation: TOGAF adds Transition Architectures where change must be incremental, and each one should deliver business value. Even spacing isn't required.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/architecture-roadmaps.md
+  commit: aa61ec09a51ccb85b28af42c8d47fabf8e48f2d6
+  blob: 1210dfd0450dc1605546e313199bfbde60872a6e
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:architecture-roadmaps
+- kt:togaf
+difficulty: 3
+created: '2026-11-26'
+status: active

@@ -1,0 +1,17 @@
+id: sf-001749
+product_area: integration
+true_statement: After a call transfer, transcripts sent to the Telephony Integration API must use the vendorCallKey of the first VoiceCall.
+false_statement: After a call transfer, transcripts sent to the Telephony Integration API must use the Salesforce record ID of the new VoiceCall.
+explanation: Transcript messages are posted by vendorCallKey, and after a transfer that key must be the original call's. Using a Salesforce record ID, or the transferred call's key, is wrong.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/telephony-integration-api.md
+  commit: aa61ec09a51ccb85b28af42c8d47fabf8e48f2d6
+  blob: ff09c0ccb58b2fcbe4352cb1ac21a27e1919ee01
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:telephony-integration-api
+difficulty: 3
+created: '2026-11-26'
+status: active

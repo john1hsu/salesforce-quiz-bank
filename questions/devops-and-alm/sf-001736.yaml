@@ -1,0 +1,18 @@
+id: sf-001736
+product_area: devops-and-alm
+true_statement: A destructive changes manifest doesn't support wildcards and is deployed with a companion package.xml that lists no components.
+false_statement: A destructive changes manifest supports wildcards such as * and is deployed with a companion package.xml that lists no components.
+explanation: Each component to delete must be named explicitly in the destructive manifest, because wildcards aren't accepted. The empty package.xml alongside it is required either way.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/rollback-plan.md
+  commit: aa61ec09a51ccb85b28af42c8d47fabf8e48f2d6
+  blob: a3a1e230d09a82867ad5193312503c0e9f555e6c
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:rollback-plan
+- kt:destructive-changes
+difficulty: 2
+created: '2026-11-26'
+status: active

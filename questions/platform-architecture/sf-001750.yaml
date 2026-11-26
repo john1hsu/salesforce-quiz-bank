@@ -1,0 +1,18 @@
+id: sf-001750
+product_area: platform-architecture
+true_statement: If a user can't access the field that a Dynamic Actions visibility filter checks, that criterion evaluates to true and the action can still appear.
+false_statement: If a user can't access the field that a Dynamic Actions visibility filter checks, that criterion evaluates to false and the action is hidden.
+explanation: An unreadable filter field counts as a match, so the action shows. That is why visibility rules on hidden fields aren't a reliable way to keep an action from someone.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/dynamic-actions.md
+  commit: aa61ec09a51ccb85b28af42c8d47fabf8e48f2d6
+  blob: 4f84e91519850839b8d00ad0c2b5805f1b2b94e2
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:dynamic-actions
+- kt:lightning-app-builder
+difficulty: 3
+created: '2026-11-26'
+status: active

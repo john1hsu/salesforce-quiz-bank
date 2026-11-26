@@ -1,0 +1,18 @@
+id: sf-001719
+product_area: data-cloud-and-ai
+true_statement: The Einstein Trust Layer's default masking leaves invalid credit card, SSN or phone values unmasked.
+false_statement: The Einstein Trust Layer's default masking also masks credit card, SSN or phone values that fail validation.
+explanation: Pattern-based masking only catches values that look valid, so malformed card, SSN or phone numbers can slip through to the model unmasked.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/einstein-generative-ai-setup.md
+  commit: aa61ec09a51ccb85b28af42c8d47fabf8e48f2d6
+  blob: 7eee8ce1f557859497f831fa5b46b3a2d654468c
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:einstein-generative-ai-setup
+- kt:einstein-trust-layer
+difficulty: 3
+created: '2026-11-26'
+status: active

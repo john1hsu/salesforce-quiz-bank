@@ -1,0 +1,18 @@
+id: sf-001741
+product_area: identity
+true_statement: The Administrators Can Log in as Any User setting is offered in Enterprise, Performance, Unlimited and Developer Editions, but not Professional Edition or lower.
+false_statement: The Administrators Can Log in as Any User setting is offered in Professional, Enterprise, Performance, Unlimited and Developer Editions.
+explanation: The any-user login setting can't be activated in Professional Edition or below. In eligible editions where the checkbox is missing, Salesforce has to provision it.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/grant-login-access.md
+  commit: aa61ec09a51ccb85b28af42c8d47fabf8e48f2d6
+  blob: dc6bc4618d383486b52fd384a1ea616ca390e045
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:grant-login-access
+- kt:user-management
+difficulty: 2
+created: '2026-11-26'
+status: active

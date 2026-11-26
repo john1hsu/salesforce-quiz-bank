@@ -1,0 +1,18 @@
+id: sf-001763
+product_area: security-and-sharing
+true_statement: An account team member's contact access level can't be set when the org's default contact access is Controlled by Parent.
+false_statement: An account team member's case access level can't be set when the org's default case access is Controlled by Parent.
+explanation: The contact grant, added in API version 10.0, is unavailable when contacts are Controlled by Parent, because contact access then simply follows the account. The restriction is specific to contacts.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/account-teams.md
+  commit: aa61ec09a51ccb85b28af42c8d47fabf8e48f2d6
+  blob: 00c6a5f973662bd6fe1b27767de3eb40c6af7534
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:account-teams
+- kt:organization-wide-defaults
+difficulty: 3
+created: '2026-11-26'
+status: active

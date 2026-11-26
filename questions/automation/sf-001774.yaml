@@ -1,0 +1,18 @@
+id: sf-001774
+product_area: automation
+true_statement: A Flow Decision element takes only the first outcome, in Outcome Order, whose conditions are met, even if later outcomes would also match.
+false_statement: A Flow Decision element runs every outcome whose conditions are met, one after another in Outcome Order.
+explanation: Decision outcomes are checked in sequence and the first match wins, so just one path runs. That is why the most specific outcome should go first.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/flow-decision-element.md
+  commit: aa61ec09a51ccb85b28af42c8d47fabf8e48f2d6
+  blob: c7a552cb965279e60a66ab8f8622a12039b75d00
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:flow-decision-element
+- kt:flow-builder
+difficulty: 1
+created: '2026-11-26'
+status: active

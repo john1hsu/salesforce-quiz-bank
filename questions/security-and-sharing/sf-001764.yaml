@@ -1,0 +1,18 @@
+id: sf-001764
+product_area: security-and-sharing
+true_statement: Account teams are off by default, and an admin turns them on in Setup by selecting Account Teams Enabled.
+false_statement: Account teams are on by default, and an admin only needs to add the Account Team related list to page layouts.
+explanation: The feature must be enabled first in the Account Teams settings. Choosing page layouts for the related list is part of that enablement, not a substitute for it.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/account-teams.md
+  commit: aa61ec09a51ccb85b28af42c8d47fabf8e48f2d6
+  blob: 00c6a5f973662bd6fe1b27767de3eb40c6af7534
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:account-teams
+- kt:sales-cloud
+difficulty: 1
+created: '2026-11-26'
+status: active

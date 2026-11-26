@@ -1,0 +1,17 @@
+id: sf-001781
+product_area: clouds-and-products
+true_statement: In the Scheduling Console, resource utilization is scheduled work plus travel time, divided by working hours minus absence hours.
+false_statement: In the Scheduling Console, resource utilization is scheduled work alone, divided by working hours including absence hours.
+explanation: Utilization counts travel as well as work, and the denominator removes absence hours from working hours. Leaving out travel and keeping absences would understate how busy a resource is.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/scheduling-console.md
+  commit: aa61ec09a51ccb85b28af42c8d47fabf8e48f2d6
+  blob: 19bb21da249531cea98918085958838e3942f315
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:scheduling-console
+difficulty: 3
+created: '2026-11-26'
+status: active

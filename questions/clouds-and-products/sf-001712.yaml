@@ -1,0 +1,18 @@
+id: sf-001712
+product_area: clouds-and-products
+true_statement: Every property of the standard Service Console app can be changed except its Developer Name.
+false_statement: Every property of the standard Service Console app can be changed except its assigned profiles.
+explanation: Admins can rename, rebrand and reassign the standard console app; only the Developer Name is locked. It is assigned to all standard and custom profiles by default, and that assignment is editable.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/lightning-service-console.md
+  commit: aa61ec09a51ccb85b28af42c8d47fabf8e48f2d6
+  blob: 29cbf021b1c146206388beef1c2e234f6cfb184e
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:lightning-service-console
+- kt:service-cloud
+difficulty: 2
+created: '2026-11-26'
+status: active

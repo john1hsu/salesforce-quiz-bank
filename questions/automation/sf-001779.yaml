@@ -1,0 +1,18 @@
+id: sf-001779
+product_area: automation
+true_statement: In a screen flow running in system context, components that query data themselves, such as lookups and file upload, still apply the user's permissions.
+false_statement: In a screen flow running in system context, components that query data themselves, such as lookups and file upload, also bypass the user's permissions.
+explanation: The flow's elevated context doesn't extend to screen components that run their own queries. Those components enforce the running user's access regardless of the flow's mode.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/flow-run-context.md
+  commit: aa61ec09a51ccb85b28af42c8d47fabf8e48f2d6
+  blob: f234053a0869668c9c58fdc3b4f567dedae6bddf
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:flow-run-context
+- kt:screen-flow
+difficulty: 3
+created: '2026-11-26'
+status: active

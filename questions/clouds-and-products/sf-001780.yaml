@@ -1,0 +1,18 @@
+id: sf-001780
+product_area: clouds-and-products
+true_statement: The Field Service Scheduling Console's Gantt runs in the service territory's time zone; individual user time zones aren't supported.
+false_statement: The Field Service Scheduling Console's Gantt runs in each dispatcher's own user time zone rather than the territory's.
+explanation: The Gantt always shows times in the service territory's time zone. Dispatchers in other zones can't switch it to their personal time zone.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/scheduling-console.md
+  commit: aa61ec09a51ccb85b28af42c8d47fabf8e48f2d6
+  blob: 19bb21da249531cea98918085958838e3942f315
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:scheduling-console
+- kt:field-service
+difficulty: 2
+created: '2026-11-26'
+status: active

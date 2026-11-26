@@ -1,0 +1,17 @@
+id: sf-001775
+product_area: automation
+true_statement: When an outcome in a Flow Decision has several conditions, Flow Builder applies All Conditions Are Met (AND) by default.
+false_statement: When an outcome in a Flow Decision has several conditions, Flow Builder applies Any Condition Is Met (OR) by default.
+explanation: New condition rows are combined with AND unless the builder switches the requirement to OR or custom logic.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/flow-decision-element.md
+  commit: aa61ec09a51ccb85b28af42c8d47fabf8e48f2d6
+  blob: c7a552cb965279e60a66ab8f8622a12039b75d00
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:flow-decision-element
+difficulty: 1
+created: '2026-11-26'
+status: active

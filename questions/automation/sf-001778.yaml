@@ -1,0 +1,18 @@
+id: sf-001778
+product_area: automation
+true_statement: The Run Flows permission lets a user run active, unrestricted flows, while running inactive flows requires Manage Flow.
+false_statement: The Run Flows permission lets a user run both active and inactive flows, while Manage Flow is needed only to edit them.
+explanation: Run Flows covers active flows whose access isn't restricted. Starting an inactive flow is a builder-level task that needs Manage Flow.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/flow-run-context.md
+  commit: aa61ec09a51ccb85b28af42c8d47fabf8e48f2d6
+  blob: f234053a0869668c9c58fdc3b4f567dedae6bddf
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:flow-run-context
+- kt:principle-of-least-privilege
+difficulty: 2
+created: '2026-11-26'
+status: active

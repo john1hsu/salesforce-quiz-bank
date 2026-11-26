@@ -1,0 +1,18 @@
+id: sf-001788
+product_area: data-cloud-and-ai
+true_statement: A Slack member without a Salesforce account needs a provisional Salesforce license before being mapped to use an Agentforce agent.
+false_statement: A Slack member without a Salesforce account can use an Agentforce agent in Slack without any Salesforce license or user mapping.
+explanation: Agents in Slack act on Salesforce permissions, so every member must map to a Salesforce user. Members who have no account get a provisional license first.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/agentforce-in-slack.md
+  commit: aa61ec09a51ccb85b28af42c8d47fabf8e48f2d6
+  blob: 83ee0fd9829aeaeeea8b8301098544b69c551144
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:agentforce-in-slack
+- kt:slack-platform
+difficulty: 2
+created: '2026-11-26'
+status: active

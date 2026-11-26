@@ -1,0 +1,18 @@
+id: sf-001768
+product_area: architecture-practice
+true_statement: Salesforce Architects describes a good architecture roadmap as a phased plan covering roughly the next 12 to 24 months.
+false_statement: Salesforce Architects describes a good architecture roadmap as a phased plan covering roughly the next three to five years.
+explanation: The guidance scopes a roadmap to about 12 to 24 months and explicitly says it is not a five-year long-range plan.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/architecture-roadmaps.md
+  commit: aa61ec09a51ccb85b28af42c8d47fabf8e48f2d6
+  blob: 1210dfd0450dc1605546e313199bfbde60872a6e
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:architecture-roadmaps
+- kt:salesforce-architect
+difficulty: 1
+created: '2026-11-26'
+status: active

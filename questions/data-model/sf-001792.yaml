@@ -1,0 +1,18 @@
+id: sf-001792
+product_area: data-model
+true_statement: An undeleted custom field comes back with a _del suffix on its developer name, so references to the old API name must be updated.
+false_statement: An undeleted custom field comes back with its original developer name, so references to the old API name keep working.
+explanation: Restoring a field brings back its data but appends _del to the developer name. Code, formulas or integrations that used the original API name have to be repointed.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/deleted-fields-and-field-undelete.md
+  commit: aa61ec09a51ccb85b28af42c8d47fabf8e48f2d6
+  blob: 86ba0361d990284e8da3e26f05e4c8eada3f101f
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:deleted-fields-and-field-undelete
+- kt:custom-fields
+difficulty: 2
+created: '2026-11-26'
+status: active

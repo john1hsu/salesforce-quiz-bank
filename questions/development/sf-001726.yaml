@@ -1,0 +1,18 @@
+id: sf-001726
+product_area: development
+true_statement: In Apex, String map keys are case-sensitive, so keys that differ only in case are stored as separate entries.
+false_statement: In Apex, String map keys are case-insensitive, so keys that differ only in case overwrite the same entry.
+explanation: Even though Apex code itself ignores case, map lookups on String keys compare exact case. 'Acme' and 'ACME' are two different keys for put, get, containsKey and remove.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/apex-collections.md
+  commit: aa61ec09a51ccb85b28af42c8d47fabf8e48f2d6
+  blob: 6845b664d61392e21befcaf9b6aeec4fa34015c2
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:apex-collections
+- kt:apex
+difficulty: 2
+created: '2026-11-26'
+status: active

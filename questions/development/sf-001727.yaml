@@ -1,0 +1,17 @@
+id: sf-001727
+product_area: development
+true_statement: Apex lists, sets and maps can nest other collections up to seven levels deep, for eight levels in total.
+false_statement: Apex lists, sets and maps can nest other collections up to three levels deep, for four levels in total.
+explanation: The Apex guide allows collections within collections to seven nested levels, eight counting the outer one. Three levels understates the limit.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/apex-collections.md
+  commit: aa61ec09a51ccb85b28af42c8d47fabf8e48f2d6
+  blob: 6845b664d61392e21befcaf9b6aeec4fa34015c2
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:apex-collections
+difficulty: 2
+created: '2026-11-26'
+status: active

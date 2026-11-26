@@ -1,0 +1,18 @@
+id: sf-001746
+product_area: integration
+true_statement: For Salesforce Voice with Amazon Connect, limits on concurrent active calls and reachable outbound countries come from AWS service quotas.
+false_statement: For Salesforce Voice with Amazon Connect, limits on concurrent active calls and reachable outbound countries come from Salesforce org limits.
+explanation: These caps are set on the AWS side, so increases are requested from AWS before go-live. Salesforce doesn't control them.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/amazon-connect.md
+  commit: aa61ec09a51ccb85b28af42c8d47fabf8e48f2d6
+  blob: b3f92531f76d5569024694c0350c5e4889e1323c
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:amazon-connect
+- kt:salesforce-voice
+difficulty: 2
+created: '2026-11-26'
+status: active

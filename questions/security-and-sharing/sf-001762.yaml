@@ -1,0 +1,18 @@
+id: sf-001762
+product_area: security-and-sharing
+true_statement: AccountShare rows with the Team row cause are read-only; integrations change them by writing account team member records instead.
+false_statement: AccountShare rows with the Team row cause can be inserted or updated directly by integrations, just like Manual rows.
+explanation: Only Manual share rows can be created, edited or deleted directly. Team rows follow team membership, so code must add or change team members to alter that access.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/account-teams.md
+  commit: aa61ec09a51ccb85b28af42c8d47fabf8e48f2d6
+  blob: 00c6a5f973662bd6fe1b27767de3eb40c6af7534
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:account-teams
+- kt:salesforce-sharing-model
+difficulty: 3
+created: '2026-11-26'
+status: active

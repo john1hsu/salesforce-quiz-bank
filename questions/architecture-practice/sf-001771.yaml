@@ -1,0 +1,18 @@
+id: sf-001771
+product_area: architecture-practice
+true_statement: Salesforce's B2C Commerce Launch Gate holds its first review two to three weeks before the planned go-live date.
+false_statement: Salesforce's B2C Commerce Launch Gate holds its first review two to three days before the planned go-live date.
+explanation: The first Launch Gate review comes two to three weeks out, which leaves time to fix blockers. A review just days before launch is the timing risk Microsoft's guidance warns about.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/go-live-readiness-assessment.md
+  commit: aa61ec09a51ccb85b28af42c8d47fabf8e48f2d6
+  blob: be3a3c01441a130e51e82cae2c503546f13548da
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:go-live-readiness-assessment
+- kt:release-management
+difficulty: 2
+created: '2026-11-26'
+status: active

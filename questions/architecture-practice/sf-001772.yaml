@@ -1,0 +1,17 @@
+id: sf-001772
+product_area: architecture-practice
+true_statement: The Launch Gate allows at most two reviews, and the second one re-checks only the items that failed the first.
+false_statement: The Launch Gate allows at most three reviews, and each one re-checks every item from the full assessment.
+explanation: Salesforce caps the Launch Gate at two reviews. The follow-up review is limited to the failed items rather than a full repeat.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/go-live-readiness-assessment.md
+  commit: aa61ec09a51ccb85b28af42c8d47fabf8e48f2d6
+  blob: be3a3c01441a130e51e82cae2c503546f13548da
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:go-live-readiness-assessment
+difficulty: 2
+created: '2026-11-26'
+status: active

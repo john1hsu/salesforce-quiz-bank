@@ -1,0 +1,18 @@
+id: sf-001795
+product_area: data-model
+true_statement: A Currency field with zero decimal places truncates entered values, so 23.5 is stored as 23.
+false_statement: A Currency field with zero decimal places rounds half away from zero, so 23.5 is stored as 24.
+explanation: Currency fields with at least one decimal place round half away from zero, but with zero decimal places they truncate instead. That is why 23.5 becomes 23.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/number-currency-and-percent-fields.md
+  commit: aa61ec09a51ccb85b28af42c8d47fabf8e48f2d6
+  blob: a70f87f5ab28249445af2e150d3d4cb70c1876bc
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:number-currency-and-percent-fields
+- kt:custom-fields
+difficulty: 3
+created: '2026-11-26'
+status: active

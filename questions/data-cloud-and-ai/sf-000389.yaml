@@ -6,8 +6,8 @@ explanation: 'Agent Script expressions are deliberately basic: addition and subt
 source:
   repo: john1hsu/salesforce-knowledge-graph
   path: articles/data-cloud-and-ai/agent-script.md
-  commit: 7581ad0b96602285af0f512d9ea7379718c7aea4
-  blob: 80b22b895947aeab977b2f2407b4154a798d3c1b
+  commit: aa61ec09a51ccb85b28af42c8d47fabf8e48f2d6
+  blob: 632cf4846d5d87932a9607fd55b440b4c0ae58cc
 verified_release: Winter '27
 feature_status: current
 concepts:

@@ -1,0 +1,19 @@
+id: sf-001716
+product_area: data-cloud-and-ai
+true_statement: Setup with Agentforce requires both Agentforce and Data 360 to be enabled in the org.
+false_statement: Setup with Agentforce requires only Agentforce to be enabled, running without Data 360 in the org.
+explanation: Data 360 is a prerequisite alongside Agentforce, and the enablement path starts with finishing Data 360 setup. Salesforce notes both come with Salesforce Foundations.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/agentforce-setup-agent.md
+  commit: aa61ec09a51ccb85b28af42c8d47fabf8e48f2d6
+  blob: ad99447a61198218a42aa8de25bb8c0f0ddc1f1a
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:agentforce-setup-agent
+- kt:data-cloud
+- kt:agentforce
+difficulty: 1
+created: '2026-11-26'
+status: active

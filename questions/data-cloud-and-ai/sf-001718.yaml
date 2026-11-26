@@ -1,0 +1,19 @@
+id: sf-001718
+product_area: data-cloud-and-ai
+true_statement: Salesforce recommends a sandbox rather than a scratch org when development needs Data 360 or Agentforce Data Library features.
+false_statement: Salesforce recommends a scratch org rather than a sandbox when development needs Data 360 or Agentforce Data Library features.
+explanation: Scratch orgs can be made Agentforce-ready, but for work that depends on Data 360 data or Data Library, Salesforce points developers to a sandbox instead.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/einstein-generative-ai-setup.md
+  commit: aa61ec09a51ccb85b28af42c8d47fabf8e48f2d6
+  blob: 7eee8ce1f557859497f831fa5b46b3a2d654468c
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:einstein-generative-ai-setup
+- kt:scratch-orgs
+- kt:data-cloud
+difficulty: 2
+created: '2026-11-26'
+status: active

@@ -1,0 +1,17 @@
+id: sf-001789
+product_area: data-cloud-and-ai
+true_statement: In production orgs, the Models API allows 10,000 generation requests per minute per org per endpoint, but only 1,000 per minute for embeddings.
+false_statement: In production orgs, the Models API allows 1,000 generation requests per minute per org per endpoint, but 10,000 per minute for embeddings.
+explanation: Generation endpoints get the higher 10,000-per-minute ceiling, while embeddings and feedback are each capped at 1,000 per minute. The false statement swaps the two.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/models-api.md
+  commit: aa61ec09a51ccb85b28af42c8d47fabf8e48f2d6
+  blob: 4002f4a3d9f88d8fdf9fc05f193e9647b0dd658e
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:models-api
+difficulty: 2
+created: '2026-11-26'
+status: active

@@ -1,0 +1,18 @@
+id: sf-001713
+product_area: clouds-and-products
+true_statement: Workspace API tab methods such as openTab, openSubtab and focusTab work only inside Lightning console apps.
+false_statement: Workspace API tab methods such as openTab, openSubtab and focusTab work in any Lightning app, including standard navigation apps.
+explanation: The tab-control methods depend on console navigation's workspace tabs and subtabs, so they only function in console apps. Standard navigation apps have no such tabs to control.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/lightning-service-console.md
+  commit: aa61ec09a51ccb85b28af42c8d47fabf8e48f2d6
+  blob: 29cbf021b1c146206388beef1c2e234f6cfb184e
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:lightning-service-console
+- kt:workspace-api
+difficulty: 2
+created: '2026-11-26'
+status: active

@@ -1,0 +1,18 @@
+id: sf-001767
+product_area: security-and-sharing
+true_statement: A custom object with no account or contact lookup can't be selected in a sharing set for high-volume users.
+false_statement: A custom object with no account or contact lookup can be selected in a sharing set, which then grants access through record ownership.
+explanation: Sharing sets work by matching a record's account or contact lookup to the user's own account or contact. Without such a lookup there is nothing to match, so the object can't be chosen.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/high-volume-experience-cloud-users.md
+  commit: aa61ec09a51ccb85b28af42c8d47fabf8e48f2d6
+  blob: 73e658c7c8008ef3c0900d6311cde8f6751b6b1e
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:high-volume-experience-cloud-users
+- kt:sharing-sets
+difficulty: 3
+created: '2026-11-26'
+status: active

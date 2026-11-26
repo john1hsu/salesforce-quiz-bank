@@ -1,0 +1,18 @@
+id: sf-001798
+product_area: development
+true_statement: NavigationMixin.Navigate takes an optional replace argument that defaults to false; true replaces the current browser history entry.
+false_statement: NavigationMixin.Navigate takes an optional replace argument that defaults to true, so the current browser history entry is replaced unless set to false.
+explanation: By default navigation adds a new history entry so Back works as expected. Passing true swaps out the current entry instead.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/lightning-navigation-service.md
+  commit: aa61ec09a51ccb85b28af42c8d47fabf8e48f2d6
+  blob: a9735732af9fec7a0b3fb484468c2449552382d3
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:lightning-navigation-service
+- kt:lightning-web-components
+difficulty: 2
+created: '2026-11-26'
+status: active

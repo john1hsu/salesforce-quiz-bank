@@ -1,0 +1,17 @@
+id: sf-001721
+product_area: data-model
+true_statement: Converting a Long Text Area field to Text keeps only the first 255 characters of each existing value.
+false_statement: Converting a Long Text Area field to Text is blocked whenever any existing value is longer than 255 characters.
+explanation: 'This conversion truncates rather than refusing: each value is cut to its first 255 characters. That silent truncation is why backing up data first matters.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/field-type-conversion.md
+  commit: aa61ec09a51ccb85b28af42c8d47fabf8e48f2d6
+  blob: f204bff8a9a7355b173885cc6fbc8988ead7bccc
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:field-type-conversion
+difficulty: 2
+created: '2026-11-26'
+status: active

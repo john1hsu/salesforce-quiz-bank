@@ -1,0 +1,18 @@
+id: sf-001714
+product_area: data-cloud-and-ai
+true_statement: Admins get access to Setup with Agentforce through the Setup with Agentforce User permission set group.
+false_statement: Admins get access to Setup with Agentforce automatically through the System Administrator profile, with no extra assignment.
+explanation: After the feature is turned on, each admin who will use it must be assigned the Setup with Agentforce User permission set group. Having the admin profile alone does not grant it.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/agentforce-setup-agent.md
+  commit: aa61ec09a51ccb85b28af42c8d47fabf8e48f2d6
+  blob: ad99447a61198218a42aa8de25bb8c0f0ddc1f1a
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:agentforce-setup-agent
+- kt:permission-set-groups
+difficulty: 2
+created: '2026-11-26'
+status: active

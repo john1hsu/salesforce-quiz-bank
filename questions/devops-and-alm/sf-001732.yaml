@@ -1,0 +1,19 @@
+id: sf-001732
+product_area: devops-and-alm
+true_statement: sf package version create requires either --installation-key or --installation-key-bypass, so every new version needs an explicit key decision.
+false_statement: sf package version create applies the previous version's installation key by default, so only the first version needs an explicit key decision.
+explanation: The key is set per package version, and the create command refuses to run without one of the two flags. CI scripts therefore have to pass a key or the bypass flag on every build.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/package-installation-keys.md
+  commit: aa61ec09a51ccb85b28af42c8d47fabf8e48f2d6
+  blob: 8a8849b322d4738a9c6b03c0fd736c419f68979d
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:package-installation-keys
+- kt:salesforce-cli
+- kt:package-versioning-and-ancestry
+difficulty: 2
+created: '2026-11-26'
+status: active

@@ -1,0 +1,18 @@
+id: sf-001751
+product_area: platform-architecture
+true_statement: Custom objects use Dynamic Actions on mobile by default, while standard objects need a setting in the Salesforce Mobile App area of Setup.
+false_statement: Standard objects use Dynamic Actions on mobile by default, while custom objects need a setting in the Salesforce Mobile App area of Setup.
+explanation: Mobile support for dynamic actions is automatic only for custom objects. For standard objects an admin must turn it on in the mobile app settings; the false statement swaps the two.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/dynamic-actions.md
+  commit: aa61ec09a51ccb85b28af42c8d47fabf8e48f2d6
+  blob: 4f84e91519850839b8d00ad0c2b5805f1b2b94e2
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:dynamic-actions
+- kt:salesforce-mobile-app
+difficulty: 3
+created: '2026-11-26'
+status: active
