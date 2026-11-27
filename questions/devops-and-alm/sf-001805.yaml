@@ -1,0 +1,18 @@
+id: sf-001805
+product_area: devops-and-alm
+true_statement: Trailhead advises allowing two to four weeks for the AgentExchange security review, and a listing can't publish until it passes.
+false_statement: Trailhead advises allowing two to four days for the AgentExchange security review, and a listing can publish while it is still pending.
+explanation: Partners should plan for a review of two to four weeks, and publishing waits on a pass. Neither a few days nor publishing during review matches the guidance.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/partner-console.md
+  commit: 73aa9df4d26c32cb773ed3adff949bf50175035c
+  blob: b3becd6e2164401d3f844b00938bdd554f0c6f69
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:partner-console
+- kt:appexchange-security-review
+difficulty: 2
+created: '2026-11-27'
+status: active

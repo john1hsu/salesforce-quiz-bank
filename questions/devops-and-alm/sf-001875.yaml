@@ -1,0 +1,19 @@
+id: sf-001875
+product_area: devops-and-alm
+true_statement: In second-generation packaging, enabling Subscriber Debug Logs for a package turns logging on for every package in that namespace.
+false_statement: In second-generation packaging, enabling Subscriber Debug Logs for a package turns logging on for that one package only.
+explanation: With 2GP the setting works at namespace level, so all packages sharing the namespace start logging and expose unobfuscated Apex until it is switched off. It is not limited to one package.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/subscriber-support-console.md
+  commit: 73aa9df4d26c32cb773ed3adff949bf50175035c
+  blob: dfe738932d6d367c55189caac8ec5de109e42eb2
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:subscriber-support-console
+- kt:second-generation-managed-packages
+- kt:apex-logging-and-debug-logs
+difficulty: 3
+created: '2026-11-27'
+status: active

@@ -1,0 +1,18 @@
+id: sf-001846
+product_area: automation
+true_statement: A before-save flow that changes the triggering record saves it only once, so assignment, workflow and auto-response rules run only once.
+false_statement: A before-save flow that changes the triggering record saves it a second time, so assignment, workflow and auto-response rules run again.
+explanation: Before-save changes are applied in the same save, which is why it is the faster choice for same-record updates. No extra save means the rules don't run a second time.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/flow-data-elements.md
+  commit: 73aa9df4d26c32cb773ed3adff949bf50175035c
+  blob: 68795c6c86fdfba7263ff8b85bf185609a72e59f
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:flow-data-elements
+- kt:record-triggered-flow
+difficulty: 2
+created: '2026-11-27'
+status: active

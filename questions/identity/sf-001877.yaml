@@ -1,0 +1,18 @@
+id: sf-001877
+product_area: identity
+true_statement: A frontdoor URL from the Single Access UI Bridge API is valid for up to one minute and can be used only once.
+false_statement: A frontdoor URL from the Single Access UI Bridge API is valid for up to fifteen minutes and can be used only once.
+explanation: The singleaccess endpoint issues a short-lived, single-use link that expires within a minute. Fifteen minutes is far longer than the documented window.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/frontdoor-jsp-session-bridging.md
+  commit: 73aa9df4d26c32cb773ed3adff949bf50175035c
+  blob: 23d622653a9541660c0c216d17b1196dfd60c003
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:frontdoor-jsp-session-bridging
+- kt:bearer-token-security
+difficulty: 2
+created: '2026-11-27'
+status: active

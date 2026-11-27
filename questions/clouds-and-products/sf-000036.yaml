@@ -6,8 +6,8 @@ explanation: Salesforce does not attach entitlements to new cases on its own, wh
 source:
   repo: john1hsu/salesforce-knowledge-graph
   path: articles/clouds-and-products/service-cloud.md
-  commit: 188a8f2cacccd9e347b4a76c24f78a795e563a9d
-  blob: e17933a9210b4921021d4d88071705c073a6acca
+  commit: 73aa9df4d26c32cb773ed3adff949bf50175035c
+  blob: fcfda5ef942c35bcec0dcc3a2a36920971aaf6af
 verified_release: Winter '27
 feature_status: current
 concepts:

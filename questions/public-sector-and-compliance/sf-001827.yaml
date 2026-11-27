@@ -1,0 +1,18 @@
+id: sf-001827
+product_area: public-sector-and-compliance
+true_statement: A full TX-RAMP certification is valid for three years if compliance is maintained, with renewal reminders 12 and 6 months before expiry.
+false_statement: A full TX-RAMP certification is valid for one year if compliance is maintained, with renewal reminders 3 and 1 months before expiry.
+explanation: DIR grants full certifications for three years and reminds providers a year and six months ahead. A one-year term is not how the program works.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/tx-ramp.md
+  commit: 73aa9df4d26c32cb773ed3adff949bf50175035c
+  blob: dfb5cf7922a269f4799d8b072752b9e49b783aad
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:tx-ramp
+- kt:continuous-monitoring
+difficulty: 2
+created: '2026-11-27'
+status: active

@@ -1,0 +1,18 @@
+id: sf-001820
+product_area: platform-architecture
+true_statement: A single Briefcase Builder rule can return at most 50,000 records, and when more match, the rule's orderBy decides which are kept.
+false_statement: A single Briefcase Builder rule can return at most 10,000 records, and when more match, the rule's orderBy decides which are kept.
+explanation: recordLimit caps a rule at 50,000 matching records, and results must also fit the 50,000 maximum across active briefcases. 10,000 understates the cap.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/briefcase-builder.md
+  commit: 73aa9df4d26c32cb773ed3adff949bf50175035c
+  blob: 87c579cdb4500f342f55944b66e12855749d1375
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:briefcase-builder
+- kt:metadata-api
+difficulty: 2
+created: '2026-11-27'
+status: active

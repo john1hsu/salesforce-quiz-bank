@@ -1,0 +1,18 @@
+id: sf-001860
+product_area: data-model
+true_statement: DATETIMEVALUE(TODAY()) produces midnight GMT, so a San Francisco user on daylight time sees 5:00 p.m. on the previous day.
+false_statement: DATETIMEVALUE(TODAY()) produces midnight in the user's time zone, so a San Francisco user on daylight time sees 12:00 a.m. that day.
+explanation: Text and Date conversions to Date/Time happen in GMT, and display then shifts to the viewer's zone. Formulas can't see the user's time zone, so local midnight isn't what you get.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/date-and-date-time-fields.md
+  commit: 73aa9df4d26c32cb773ed3adff949bf50175035c
+  blob: db9e4f9bbf5b29e16cf1a22737d6a4757a6fa5ee
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:date-and-date-time-fields
+- kt:formula-fields
+difficulty: 3
+created: '2026-11-27'
+status: active

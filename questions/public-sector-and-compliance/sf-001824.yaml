@@ -1,0 +1,18 @@
+id: sf-001824
+product_area: public-sector-and-compliance
+true_statement: ITAR's encrypted-storage carve-out requires FIPS 140-2 or successor modules, or other means at least comparable to AES-128.
+false_statement: ITAR's encrypted-storage carve-out requires FIPS 140-2 or successor modules, or other means at least comparable to AES-256.
+explanation: The carve-out sets its floor at AES-128-equivalent strength alongside validated FIPS modules and NIST-guided key management. AES-256 is stronger than what the rule demands.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/itar-and-export-controls.md
+  commit: 73aa9df4d26c32cb773ed3adff949bf50175035c
+  blob: 90eaa6de6eb4be3558fda14cfbd3b125fc5c935f
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:itar-and-export-controls
+- kt:shield-platform-encryption
+difficulty: 3
+created: '2026-11-27'
+status: active

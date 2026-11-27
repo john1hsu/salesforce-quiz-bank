@@ -1,0 +1,17 @@
+id: sf-001832
+product_area: security-and-sharing
+true_statement: Besides the owner, users with Full Access to the record, Modify All Records on the object or Modify All Data can create manual shares.
+false_statement: Besides the owner, users with Read access to the record, View All Records on the object or View All Data can create manual shares.
+explanation: 'Sharing a record manually takes owner-level privilege: Full Access, Modify All Records or Modify All Data. Read or View All permissions let a user see records but not share them.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/manual-sharing.md
+  commit: 73aa9df4d26c32cb773ed3adff949bf50175035c
+  blob: 12102ca1f576aef32ee0dce622dabfd645c98464
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:manual-sharing
+difficulty: 2
+created: '2026-11-27'
+status: active

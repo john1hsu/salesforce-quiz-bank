@@ -1,0 +1,19 @@
+id: sf-001801
+product_area: development
+true_statement: In the Lightning Console JavaScript API, the navigation item API works only in Aura, while the utility bar and workspace APIs also support LWC.
+false_statement: In the Lightning Console JavaScript API, the utility bar API works only in Aura, while the navigation item and workspace APIs also support LWC.
+explanation: Of the three console libraries, only the navigation item API is Aura-only; the utility bar and workspace APIs can be used from Lightning web components. The false statement swaps the Aura-only library.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/workspace-api.md
+  commit: 73aa9df4d26c32cb773ed3adff949bf50175035c
+  blob: 751ac38ceb9ed2be174e5f576788a8417237539d
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:workspace-api
+- kt:aura-components
+- kt:lightning-web-components
+difficulty: 2
+created: '2026-11-27'
+status: active

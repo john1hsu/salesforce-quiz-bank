@@ -1,0 +1,17 @@
+id: sf-001881
+product_area: identity
+true_statement: The Salesforce web OAuth scope includes visualforce, and visualforce on its own reaches only customer-built Visualforce pages.
+false_statement: The Salesforce visualforce OAuth scope includes web, and web on its own reaches only customer-built Visualforce pages.
+explanation: web is the broader scope for Salesforce-hosted pages and contains visualforce; visualforce alone is limited to customer-created Visualforce. The false statement reverses which scope contains the other.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/oauth-scopes.md
+  commit: 73aa9df4d26c32cb773ed3adff949bf50175035c
+  blob: c121638f51134e1a86ac7c601ca75a1e435244a6
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:oauth-scopes
+difficulty: 2
+created: '2026-11-27'
+status: active

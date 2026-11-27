@@ -1,0 +1,17 @@
+id: sf-001844
+product_area: automation
+true_statement: Records removed by a flow's Delete Records element go to the Recycle Bin.
+false_statement: Records removed by a flow's Delete Records element are hard-deleted and bypass the Recycle Bin.
+explanation: Delete Records behaves like a normal delete, so the records land in the Recycle Bin. Trailhead still advises deleting only records that should never have existed and testing in a sandbox first.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/flow-data-elements.md
+  commit: 73aa9df4d26c32cb773ed3adff949bf50175035c
+  blob: 68795c6c86fdfba7263ff8b85bf185609a72e59f
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:flow-data-elements
+difficulty: 1
+created: '2026-11-27'
+status: active

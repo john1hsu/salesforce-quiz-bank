@@ -1,0 +1,18 @@
+id: sf-001822
+product_area: platform-architecture
+true_statement: In Briefcase Builder, a custom metadata type can be the target only of a top-level rule, with one rule per type.
+false_statement: In Briefcase Builder, a custom metadata type can be the target only of a related object rule, with one rule per type.
+explanation: Custom metadata types can be primed, but only as top-level rule targets, one rule each and with no other fields. They can't be reached through related object rules.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/platform-architecture/briefcase-builder.md
+  commit: 73aa9df4d26c32cb773ed3adff949bf50175035c
+  blob: 87c579cdb4500f342f55944b66e12855749d1375
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:briefcase-builder
+- kt:custom-metadata-types
+difficulty: 3
+created: '2026-11-27'
+status: active

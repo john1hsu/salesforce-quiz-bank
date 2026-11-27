@@ -1,0 +1,18 @@
+id: sf-001854
+product_area: data-cloud-and-ai
+true_statement: When an Agent API session starts with bypassUser set to true, the agent runs as the user assigned to the agent rather than the access token's user.
+false_statement: When an Agent API session starts with bypassUser set to true, the agent runs as the access token's user rather than the user assigned to the agent.
+explanation: bypassUser true skips the token's identity in favour of the agent's assigned user; false makes record access follow the user behind the token. The false statement reverses the flag.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/agent-api.md
+  commit: 73aa9df4d26c32cb773ed3adff949bf50175035c
+  blob: 434d8eda714feff24e0537894b6d526bbc257742
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:agent-api
+- kt:client-credentials-flow
+difficulty: 3
+created: '2026-11-27'
+status: active

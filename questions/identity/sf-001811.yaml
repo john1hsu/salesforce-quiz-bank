@@ -1,0 +1,18 @@
+id: sf-001811
+product_area: identity
+true_statement: In Enhanced Mobile App Security, a Critical violation wipes the app's data and logs the user out, while Error blocks access without a logout.
+false_statement: In Enhanced Mobile App Security, an Error violation wipes the app's data and logs the user out, while Critical blocks access without a logout.
+explanation: 'Critical is the harshest severity: data wipe plus logout. Error only blocks access until the user fixes the problem. The false statement swaps the two levels.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/mobile-app-security-policies.md
+  commit: 73aa9df4d26c32cb773ed3adff949bf50175035c
+  blob: 2947e5af7be0a5ed0ee576490f478eaf7639587d
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:mobile-app-security-policies
+- kt:salesforce-mobile-app
+difficulty: 2
+created: '2026-11-27'
+status: active

@@ -1,0 +1,18 @@
+id: sf-001856
+product_area: data-cloud-and-ai
+true_statement: Agentforce linked variables are read-only and can't be objects or lists, unlike custom variables.
+false_statement: Agentforce custom variables are read-only and can't be objects or lists, unlike linked variables.
+explanation: Linked variables read from a source such as the messaging session, so the agent can't set them and they hold only simple values. Custom variables can be mutable and support object and list types.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/agent-variables.md
+  commit: 73aa9df4d26c32cb773ed3adff949bf50175035c
+  blob: 525b49d936ef381f142af1b50925991076bf2e59
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:agent-variables
+- kt:agent-script
+difficulty: 2
+created: '2026-11-27'
+status: active

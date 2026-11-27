@@ -1,0 +1,18 @@
+id: sf-001850
+product_area: clouds-and-products
+true_statement: In-day optimization runs are capped at 5 minutes with Enhanced Scheduling and Optimization, versus 10 minutes on the legacy engine.
+false_statement: In-day optimization runs are capped at 10 minutes with Enhanced Scheduling and Optimization, versus 5 minutes on the legacy engine.
+explanation: The enhanced engine shortens the in-day time budget to five minutes; the legacy engine allows ten. The false statement swaps the two caps.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/enhanced-scheduling-and-optimization.md
+  commit: 73aa9df4d26c32cb773ed3adff949bf50175035c
+  blob: 636bde777311371e1440b6a7a6d502ef7821ede8
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:enhanced-scheduling-and-optimization
+- kt:field-service
+difficulty: 2
+created: '2026-11-27'
+status: active

@@ -1,7 +1,7 @@
 {
  "version": 1,
- "count": 1787,
- "active": 1787,
+ "count": 1872,
+ "active": 1872,
  "questions": [
   {
    "id": "sf-000001",
@@ -30744,6 +30744,1429 @@
    "difficulty": 2,
    "status": "active",
    "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/lightning-navigation-service.md"
+  },
+  {
+   "id": "sf-001799",
+   "area": "development",
+   "t": "The lightning/platformWorkspaceApi module for Lightning web components requires API version 59.0 or later.",
+   "f": "The lightning/platformWorkspaceApi module for Lightning web components requires API version 55.0 or later.",
+   "x": "The LWC workspace module became generally available in Spring '24 and needs API 59.0 or later. Version 55.0 predates it, when LWC developers still had to wrap the Aura component.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:workspace-api",
+    "kt:lightning-web-components"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/workspace-api.md"
+  },
+  {
+   "id": "sf-001800",
+   "area": "development",
+   "t": "When openTab receives more than one target, pageReference takes priority over recordId, which takes priority over url.",
+   "f": "When openTab receives more than one target, url takes priority over recordId, which takes priority over pageReference.",
+   "x": "openTab uses pageReference first, then recordId, then url, ignoring the lower-priority values. The false statement reverses that order.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:workspace-api"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/workspace-api.md"
+  },
+  {
+   "id": "sf-001801",
+   "area": "development",
+   "t": "In the Lightning Console JavaScript API, the navigation item API works only in Aura, while the utility bar and workspace APIs also support LWC.",
+   "f": "In the Lightning Console JavaScript API, the utility bar API works only in Aura, while the navigation item and workspace APIs also support LWC.",
+   "x": "Of the three console libraries, only the navigation item API is Aura-only; the utility bar and workspace APIs can be used from Lightning web components. The false statement swaps the Aura-only library.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:workspace-api",
+    "kt:aura-components",
+    "kt:lightning-web-components"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/workspace-api.md"
+  },
+  {
+   "id": "sf-001802",
+   "area": "devops-and-alm",
+   "t": "For the AgentExchange Go-To-Market App, a customer counts as net-new per product, so one who bought App A offline can still buy App B through it.",
+   "f": "For the AgentExchange Go-To-Market App, a customer counts as net-new per partner, so one who bought any of the partner's apps offline can't buy another through it.",
+   "x": "Net-new status is judged product by product. Buying one app offline only means more licenses of that same app stay on the original channel until its contract ends; other products can still go through the GTM App.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:agentexchange-go-to-market-app",
+    "kt:channel-order-app"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/agentexchange-go-to-market-app.md"
+  },
+  {
+   "id": "sf-001803",
+   "area": "devops-and-alm",
+   "t": "In the AgentExchange Go-To-Market App, Stripe bundles settled customer payments into one daily payout to the partner, net of Salesforce fees.",
+   "f": "In the AgentExchange Go-To-Market App, Stripe bundles settled customer payments into one monthly payout to the partner, net of Salesforce fees.",
+   "x": "Payout records reflect a single payout per day that Stripe sends after deducting Salesforce's fees. Payouts are not batched monthly.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:agentexchange-go-to-market-app"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/agentexchange-go-to-market-app.md"
+  },
+  {
+   "id": "sf-001804",
+   "area": "devops-and-alm",
+   "t": "To move a Channel Order App contract to the Go-To-Market App, the partner cancels the service order at least 7 days before renewal.",
+   "f": "To move a Channel Order App contract to the Go-To-Market App, the partner cancels the service order at least 30 days before renewal.",
+   "x": "The migration path is to cancel the COA service order at least seven days ahead of renewal and send a GTM offer starting when the old order expires, so licenses don't lapse. Thirty days is not the stated lead time.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:agentexchange-go-to-market-app",
+    "kt:channel-order-app"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/agentexchange-go-to-market-app.md"
+  },
+  {
+   "id": "sf-001805",
+   "area": "devops-and-alm",
+   "t": "Trailhead advises allowing two to four weeks for the AgentExchange security review, and a listing can't publish until it passes.",
+   "f": "Trailhead advises allowing two to four days for the AgentExchange security review, and a listing can publish while it is still pending.",
+   "x": "Partners should plan for a review of two to four weeks, and publishing waits on a pass. Neither a few days nor publishing during review matches the guidance.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:partner-console",
+    "kt:appexchange-security-review"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/partner-console.md"
+  },
+  {
+   "id": "sf-001806",
+   "area": "devops-and-alm",
+   "t": "When a package is registered from the Partner Console, the default license applied at install is active and site-wide.",
+   "f": "When a package is registered from the Partner Console, the default license applied at install is a free trial with a set number of seats.",
+   "x": "Registration defaults to an active, site-wide license. A trial with a length in days or a per-seat license is something the partner has to choose instead.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:partner-console",
+    "kt:license-management-app"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/partner-console.md"
+  },
+  {
+   "id": "sf-001807",
+   "area": "devops-and-alm",
+   "t": "Registering a package for licensing is required for solutions sold through AgentExchange Checkout and optional for other pricing types.",
+   "f": "Registering a package for licensing is required for every AgentExchange solution, whatever its pricing type.",
+   "x": "License registration is only mandatory for Checkout-sold solutions; for other pricing models it is optional. The false statement widens the requirement to all listings.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:partner-console",
+    "kt:license-management-app"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/partner-console.md"
+  },
+  {
+   "id": "sf-001808",
+   "area": "identity",
+   "t": "A user's own App Launcher arrangement overrides the default app order an admin sets under Setup > App Menu.",
+   "f": "The default app order an admin sets under Setup > App Menu overrides a user's own App Launcher arrangement.",
+   "x": "Users can reorder their App Launcher, and that personal order wins. So later changes to the admin's default may never reach users who already customised theirs.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:app-launcher"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/app-launcher.md"
+  },
+  {
+   "id": "sf-001809",
+   "area": "identity",
+   "t": "All standard and custom apps start out visible in the App Launcher; hiding them all by default takes a request to Salesforce Customer Support.",
+   "f": "All standard and custom apps start out hidden in the App Launcher; showing them all by default takes a request to Salesforce Customer Support.",
+   "x": "Apps are visible by default and can be hidden one by one in App Menu. Only a blanket hidden-by-default setup needs Support's help, not the reverse.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:app-launcher"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/app-launcher.md"
+  },
+  {
+   "id": "sf-001810",
+   "area": "identity",
+   "t": "Viewing Setup > App Menu needs View Setup and Configuration, and changing app order or visibility there needs Customize Application.",
+   "f": "Viewing Setup > App Menu needs View Setup and Configuration, and changing app order or visibility there needs Modify All Data.",
+   "x": "The App Menu page is read with View Setup and Configuration and edited with Customize Application. Modify All Data is not the permission it asks for.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:app-launcher",
+    "kt:permission-sets"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/app-launcher.md"
+  },
+  {
+   "id": "sf-001811",
+   "area": "identity",
+   "t": "In Enhanced Mobile App Security, a Critical violation wipes the app's data and logs the user out, while Error blocks access without a logout.",
+   "f": "In Enhanced Mobile App Security, an Error violation wipes the app's data and logs the user out, while Critical blocks access without a logout.",
+   "x": "Critical is the harshest severity: data wipe plus logout. Error only blocks access until the user fixes the problem. The false statement swaps the two levels.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:mobile-app-security-policies",
+    "kt:salesforce-mobile-app"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/mobile-app-security-policies.md"
+  },
+  {
+   "id": "sf-001812",
+   "area": "identity",
+   "t": "For Mobile SDK biometric authentication, BIOMETRIC_AUTHENTICATION_TIMEOUT sets the minutes before the lock and defaults to 15 when omitted.",
+   "f": "For Mobile SDK biometric authentication, BIOMETRIC_AUTHENTICATION_TIMEOUT sets the minutes before the lock and defaults to 5 when omitted.",
+   "x": "The custom attribute on the connected app controls how long the app may sit in the background before locking, with a 15-minute default. Five minutes is not the default.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:mobile-app-security-policies",
+    "kt:mobile-sdk",
+    "kt:connected-apps"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/mobile-app-security-policies.md"
+  },
+  {
+   "id": "sf-001813",
+   "area": "identity",
+   "t": "Since Mobile SDK 9.2, app lock relies on the device's system passcode, so org-level PIN length settings are ignored.",
+   "f": "Since Mobile SDK 9.2, app lock relies on an app-specific PIN, so org-level PIN length settings are enforced.",
+   "x": "From 9.2 onward the SDK defers to the operating system passcode or biometrics, so older guidance on PIN length no longer applies. There is no separate app PIN governed by the org.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:mobile-app-security-policies",
+    "kt:mobile-sdk"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/mobile-app-security-policies.md"
+  },
+  {
+   "id": "sf-001814",
+   "area": "integration",
+   "t": "The original CloudHub is available only in the US and EU control planes, while CloudHub 2.0 is offered in every listed commercial cloud.",
+   "f": "CloudHub 2.0 is available only in the US and EU control planes, while the original CloudHub is offered in every listed commercial cloud.",
+   "x": "Runtime availability depends on the control plane: CloudHub 2.0 spans all the listed commercial clouds, but classic CloudHub is limited to the US and EU. The false statement swaps them.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:anypoint-runtime-manager",
+    "kt:cloudhub-2"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/anypoint-runtime-manager.md"
+  },
+  {
+   "id": "sf-001815",
+   "area": "integration",
+   "t": "Anypoint Platform Private Cloud Edition runs Runtime Manager on premises and can deploy to any target except CloudHub.",
+   "f": "Anypoint Platform Private Cloud Edition runs Runtime Manager on premises and can deploy to any target except Runtime Fabric.",
+   "x": "The on-premises edition of the platform cannot target MuleSoft-hosted CloudHub, so it needs an on-premises runtime plane. Runtime Fabric is not the excluded target.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:anypoint-runtime-manager",
+    "kt:mulesoft-anypoint-platform"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/anypoint-runtime-manager.md"
+  },
+  {
+   "id": "sf-001816",
+   "area": "integration",
+   "t": "Anypoint Studio deploys directly only to CloudHub; CloudHub 2.0, Runtime Fabric and hybrid targets are deployed through Runtime Manager.",
+   "f": "Anypoint Studio deploys directly only to CloudHub 2.0; classic CloudHub, Runtime Fabric and hybrid targets are deployed through Runtime Manager.",
+   "x": "Studio's direct deployment covers only the original CloudHub. The other targets, CloudHub 2.0 included, go through Runtime Manager.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:anypoint-runtime-manager",
+    "kt:runtime-fabric",
+    "kt:cloudhub-2"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/anypoint-runtime-manager.md"
+  },
+  {
+   "id": "sf-001817",
+   "area": "integration",
+   "t": "In the MuleSoft Platform Integration Architect exam outline, runtime plane technology architecture and Mule application design are the heaviest sections at 15% each.",
+   "f": "In the MuleSoft Platform Integration Architect exam outline, security and reliability are the heaviest sections at 15% each.",
+   "x": "Runtime plane architecture and designing Mule applications each carry 15%, with DevOps close behind at 14%. Security and reliability are only 8% each.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:mulesoft-platform-integration-architect-certification",
+    "kt:mule-runtime-engine"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/mulesoft-platform-integration-architect-certification.md"
+  },
+  {
+   "id": "sf-001818",
+   "area": "integration",
+   "t": "The MuleSoft Platform Integration Architect exam guide says its questions align to the Spring '24 release, so newer Anypoint features may be missing.",
+   "f": "The MuleSoft Platform Integration Architect exam guide says its questions align to the Winter '27 release, so the newest Anypoint features are covered.",
+   "x": "The question bank is tied to Spring '24 and lags the product. It is not refreshed to the current release, so recent features may not be tested.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:mulesoft-platform-integration-architect-certification"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/mulesoft-platform-integration-architect-certification.md"
+  },
+  {
+   "id": "sf-001819",
+   "area": "integration",
+   "t": "The MuleSoft Platform Integration Architect exam costs US$400 to register and US$200 for a retake, plus applicable taxes.",
+   "f": "The MuleSoft Platform Integration Architect exam costs US$400 to register and US$100 for a retake, plus applicable taxes.",
+   "x": "The official guide lists US$400 for registration and half that, US$200, for a retake. US$100 is not the retake fee.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:mulesoft-platform-integration-architect-certification"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/mulesoft-platform-integration-architect-certification.md"
+  },
+  {
+   "id": "sf-001820",
+   "area": "platform-architecture",
+   "t": "A single Briefcase Builder rule can return at most 50,000 records, and when more match, the rule's orderBy decides which are kept.",
+   "f": "A single Briefcase Builder rule can return at most 10,000 records, and when more match, the rule's orderBy decides which are kept.",
+   "x": "recordLimit caps a rule at 50,000 matching records, and results must also fit the 50,000 maximum across active briefcases. 10,000 understates the cap.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:briefcase-builder",
+    "kt:metadata-api"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/briefcase-builder.md"
+  },
+  {
+   "id": "sf-001821",
+   "area": "platform-architecture",
+   "t": "In a briefcase rule, the AssignedToMe query scope works only for the ServiceAppointment object.",
+   "f": "In a briefcase rule, the AssignedToMe query scope works only for the WorkOrder object.",
+   "x": "Of the Everything, AssignedToMe and Mine scopes, AssignedToMe is restricted to service appointments. Work orders can't use it.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:briefcase-builder",
+    "kt:field-service"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/briefcase-builder.md"
+  },
+  {
+   "id": "sf-001822",
+   "area": "platform-architecture",
+   "t": "In Briefcase Builder, a custom metadata type can be the target only of a top-level rule, with one rule per type.",
+   "f": "In Briefcase Builder, a custom metadata type can be the target only of a related object rule, with one rule per type.",
+   "x": "Custom metadata types can be primed, but only as top-level rule targets, one rule each and with no other fields. They can't be reached through related object rules.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:briefcase-builder",
+    "kt:custom-metadata-types"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/platform-architecture/briefcase-builder.md"
+  },
+  {
+   "id": "sf-001823",
+   "area": "public-sector-and-compliance",
+   "t": "ITAR is administered by the State Department's Directorate of Defense Trade Controls, while the EAR is administered by Commerce's Bureau of Industry and Security.",
+   "f": "ITAR is administered by Commerce's Bureau of Industry and Security, while the EAR is administered by the State Department's Directorate of Defense Trade Controls.",
+   "x": "DDTC at State runs ITAR for defense articles on the US Munitions List; BIS at Commerce runs the EAR for commercial and dual-use items. The false statement swaps the agencies.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:itar-and-export-controls"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/itar-and-export-controls.md"
+  },
+  {
+   "id": "sf-001824",
+   "area": "public-sector-and-compliance",
+   "t": "ITAR's encrypted-storage carve-out requires FIPS 140-2 or successor modules, or other means at least comparable to AES-128.",
+   "f": "ITAR's encrypted-storage carve-out requires FIPS 140-2 or successor modules, or other means at least comparable to AES-256.",
+   "x": "The carve-out sets its floor at AES-128-equivalent strength alongside validated FIPS modules and NIST-guided key management. AES-256 is stronger than what the rule demands.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:itar-and-export-controls",
+    "kt:shield-platform-encryption"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/itar-and-export-controls.md"
+  },
+  {
+   "id": "sf-001825",
+   "area": "public-sector-and-compliance",
+   "t": "The EAR's encrypted-storage carve-out bars intentional storage in Country Group D:5, while ITAR's bars countries proscribed under 22 CFR 126.1.",
+   "f": "ITAR's encrypted-storage carve-out bars intentional storage in Country Group D:5, while the EAR's bars countries proscribed under 22 CFR 126.1.",
+   "x": "The two regimes word their location condition differently: 15 CFR 734.18 refers to Country Group D:5, and ITAR refers to its own proscribed-country list in 126.1. The false statement swaps them.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:itar-and-export-controls",
+    "kt:data-residency"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/itar-and-export-controls.md"
+  },
+  {
+   "id": "sf-001826",
+   "area": "public-sector-and-compliance",
+   "t": "A TX-RAMP Provisional certification lets a Texas agency contract for a cloud service for up to 18 months while the provider pursues full certification.",
+   "f": "A TX-RAMP Provisional certification lets a Texas agency contract for a cloud service for up to 6 months while the provider pursues full certification.",
+   "x": "Provisional status is a bridge of at most 18 months toward a full Level 1 or Level 2 certification. Six months is too short.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:tx-ramp"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/tx-ramp.md"
+  },
+  {
+   "id": "sf-001827",
+   "area": "public-sector-and-compliance",
+   "t": "A full TX-RAMP certification is valid for three years if compliance is maintained, with renewal reminders 12 and 6 months before expiry.",
+   "f": "A full TX-RAMP certification is valid for one year if compliance is maintained, with renewal reminders 3 and 1 months before expiry.",
+   "x": "DIR grants full certifications for three years and reminds providers a year and six months ahead. A one-year term is not how the program works.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:tx-ramp",
+    "kt:continuous-monitoring"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/tx-ramp.md"
+  },
+  {
+   "id": "sf-001828",
+   "area": "public-sector-and-compliance",
+   "t": "A TX-RAMP certified provider must disclose any breach to the Texas Department of Information Resources within 48 hours of discovery.",
+   "f": "A TX-RAMP certified provider must disclose any breach to the Texas Department of Information Resources within 30 days of discovery.",
+   "x": "Breach disclosure to DIR is due within 48 hours, alongside annual or quarterly vulnerability reporting depending on level. A 30-day window is far longer than the rule allows.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:tx-ramp",
+    "kt:continuous-monitoring"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/public-sector-and-compliance/tx-ramp.md"
+  },
+  {
+   "id": "sf-001829",
+   "area": "security-and-sharing",
+   "t": "A categorized Knowledge article is visible only if the user can see at least one of its categories in each category group applied to it.",
+   "f": "A categorized Knowledge article is visible if the user can see at least one of its categories in any one of the category groups applied to it.",
+   "x": "Data category visibility is enforced group by group: every applied group must grant at least one matching category. Passing one group is not enough when the article is categorized in others.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:data-categories",
+    "kt:knowledge-base"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/data-categories.md"
+  },
+  {
+   "id": "sf-001830",
+   "area": "security-and-sharing",
+   "t": "SOQL's WITH DATA CATEGORY clause accepts at most three category conditions, joined only by AND.",
+   "f": "SOQL's WITH DATA CATEGORY clause accepts at most three category conditions, joined only by OR.",
+   "x": "Conditions in the clause can only be combined with AND, up to three of them. Several categories within one group go in a parenthesized list rather than an OR.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:data-categories",
+    "kt:soql"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/data-categories.md"
+  },
+  {
+   "id": "sf-001831",
+   "area": "security-and-sharing",
+   "t": "The Winter '27 Metadata API reference allows up to 100 categories in a data category group, arranged in up to 5 hierarchy levels.",
+   "f": "The Winter '27 Metadata API reference allows up to 100 categories in a data category group, arranged in up to 10 hierarchy levels.",
+   "x": "A category group is capped at 100 categories and five levels deep. Ten levels exceeds the documented hierarchy depth.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:data-categories",
+    "kt:metadata-api"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/data-categories.md"
+  },
+  {
+   "id": "sf-001832",
+   "area": "security-and-sharing",
+   "t": "Besides the owner, users with Full Access to the record, Modify All Records on the object or Modify All Data can create manual shares.",
+   "f": "Besides the owner, users with Read access to the record, View All Records on the object or View All Data can create manual shares.",
+   "x": "Sharing a record manually takes owner-level privilege: Full Access, Modify All Records or Modify All Data. Read or View All permissions let a user see records but not share them.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:manual-sharing"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/manual-sharing.md"
+  },
+  {
+   "id": "sf-001833",
+   "area": "security-and-sharing",
+   "t": "Inserting a higher-access manual share for a user who already has one on the record updates the existing share row rather than adding a second.",
+   "f": "Inserting a higher-access manual share for a user who already has one on the record adds a second share row alongside the existing one.",
+   "x": "Share rows are unique per record, user or group and row cause, so a higher grant upgrades the current row. No duplicate row is created.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:manual-sharing",
+    "kt:apex-managed-sharing"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/manual-sharing.md"
+  },
+  {
+   "id": "sf-001834",
+   "area": "security-and-sharing",
+   "t": "Detail records in a master-detail relationship have no share object of their own, so they can't be manually shared apart from their parent.",
+   "f": "Detail records in a master-detail relationship have their own share object, so they can be manually shared apart from their parent.",
+   "x": "Access to a detail record is controlled by its master, and there is no share table for the detail. Manual sharing has to happen on the parent record.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:manual-sharing",
+    "kt:salesforce-sharing-model"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/security-and-sharing/manual-sharing.md"
+  },
+  {
+   "id": "sf-001835",
+   "area": "architecture-practice",
+   "t": "The Tooling API FieldDefinition object returns DataType as UI-style text such as Text(40), not as API type names.",
+   "f": "The Tooling API FieldDefinition object returns DataType as API type names such as string, not as UI-style text like Text(40).",
+   "x": "FieldDefinition reports the type the way Setup displays it, so a dictionary built from it may need a mapping to API type names. The false statement reverses which form it returns.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:data-dictionary",
+    "kt:tooling-api"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/data-dictionary.md"
+  },
+  {
+   "id": "sf-001836",
+   "area": "architecture-practice",
+   "t": "Salesforce warns that FieldDefinition's DurableId may not stay stable between releases, so a data dictionary should be keyed on qualified API names.",
+   "f": "Salesforce warns that FieldDefinition's qualified API names may not stay stable between releases, so a data dictionary should be keyed on DurableId.",
+   "x": "DurableId isn't guaranteed to persist across releases and shouldn't be cached. Qualified API names are the stable key for matching dictionary rows to fields.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:data-dictionary",
+    "kt:tooling-api"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/data-dictionary.md"
+  },
+  {
+   "id": "sf-001837",
+   "area": "architecture-practice",
+   "t": "Tooling API queries on FieldDefinition must filter on the parent object, so a full-org data dictionary extract runs object by object.",
+   "f": "Tooling API queries on FieldDefinition can span every object at once, so a full-org data dictionary extract needs only a single query.",
+   "x": "FieldDefinition queries need a filter on the parent, for example EntityDefinition.QualifiedApiName. Exporting every field therefore means looping through the objects.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:data-dictionary",
+    "kt:tooling-api"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/data-dictionary.md"
+  },
+  {
+   "id": "sf-001838",
+   "area": "architecture-practice",
+   "t": "Salesforce's published user personas are task-based, describing the general work of a role rather than the CRM features it uses.",
+   "f": "Salesforce's published user personas are CRM-based, describing the CRM features a role uses rather than the general work it does.",
+   "x": "Salesforce built its personas around tasks because orgs often do the same work with different features or outside systems. Tying them to CRM features would make them less portable.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:user-personas"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/user-personas.md"
+  },
+  {
+   "id": "sf-001839",
+   "area": "architecture-practice",
+   "t": "Salesforce's research-based personas carry no name, photo or demographics, so they transfer between companies and avoid stereotypes.",
+   "f": "Salesforce's research-based personas each carry a name, photo and demographics, so they feel like real people and are easier to remember.",
+   "x": "The personas are deliberately abstract to stay reusable across organisations and to limit unconscious bias. Names, photos and demographic details are left out on purpose.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:user-personas"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/user-personas.md"
+  },
+  {
+   "id": "sf-001840",
+   "area": "architecture-practice",
+   "t": "Persona guidance for prioritisation is to pick one primary persona, two at most, whom the interface must satisfy, plus secondary personas.",
+   "f": "Persona guidance for prioritisation is to pick up to five primary personas whom the interface must satisfy, plus secondary personas.",
+   "x": "Limiting primary personas to one or two keeps scope focused; too many primaries makes scope too broad. Five primary personas defeats the purpose.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:user-personas",
+    "kt:user-stories"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/architecture-practice/user-personas.md"
+  },
+  {
+   "id": "sf-001841",
+   "area": "automation",
+   "t": "Rows in one Flow Assignment element run in the order listed, so a later row can use a value that an earlier row just set.",
+   "f": "Rows in one Flow Assignment element are evaluated together, so a later row sees only values from before the element ran.",
+   "x": "Salesforce executes Assignment rows sequentially, which makes row order meaningful. A later row reads the updated value, not a snapshot from before the element.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:flow-assignment-element",
+    "kt:flow-builder"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/flow-assignment-element.md"
+  },
+  {
+   "id": "sf-001842",
+   "area": "automation",
+   "t": "In a Flow Assignment element, a text variable offers only the Equals and Add operators.",
+   "f": "In a Flow Assignment element, a text variable offers the Equals, Add and Subtract operators.",
+   "x": "Text variables can be replaced with Equals or appended to with Add. Subtract is for number, currency and date values, not text.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:flow-assignment-element"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/flow-assignment-element.md"
+  },
+  {
+   "id": "sf-001843",
+   "area": "automation",
+   "t": "The Remove Uncommon operator in a Flow Assignment keeps only the collection items that also appear in a second collection.",
+   "f": "The Remove Uncommon operator in a Flow Assignment removes the collection items that also appear in a second collection.",
+   "x": "Remove Uncommon strips out items the second collection lacks, leaving the shared ones. Removing the shared items is the opposite of what it does.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:flow-assignment-element"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/flow-assignment-element.md"
+  },
+  {
+   "id": "sf-001844",
+   "area": "automation",
+   "t": "Records removed by a flow's Delete Records element go to the Recycle Bin.",
+   "f": "Records removed by a flow's Delete Records element are hard-deleted and bypass the Recycle Bin.",
+   "x": "Delete Records behaves like a normal delete, so the records land in the Recycle Bin. Trailhead still advises deleting only records that should never have existed and testing in a sandbox first.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:flow-data-elements"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/flow-data-elements.md"
+  },
+  {
+   "id": "sf-001845",
+   "area": "automation",
+   "t": "A flow's Create, Update and Delete Records elements can together write at most 10,000 records by DML in one transaction.",
+   "f": "A flow's Create, Update and Delete Records elements can together write at most 50,000 records by DML in one transaction.",
+   "x": "The per-transaction limit is 10,000 records created, updated or deleted, which is why an unfiltered scheduled flow touching every Contact can fail. 50,000 overstates it.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:flow-data-elements",
+    "kt:flow-limits",
+    "kt:governor-limits"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/flow-data-elements.md"
+  },
+  {
+   "id": "sf-001846",
+   "area": "automation",
+   "t": "A before-save flow that changes the triggering record saves it only once, so assignment, workflow and auto-response rules run only once.",
+   "f": "A before-save flow that changes the triggering record saves it a second time, so assignment, workflow and auto-response rules run again.",
+   "x": "Before-save changes are applied in the same save, which is why it is the faster choice for same-record updates. No extra save means the rules don't run a second time.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:flow-data-elements",
+    "kt:record-triggered-flow"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/automation/flow-data-elements.md"
+  },
+  {
+   "id": "sf-001847",
+   "area": "clouds-and-products",
+   "t": "Trailhead advises keeping a Marketing Cloud data extension's total byte size, the sum of its column lengths, under 8,000.",
+   "f": "Trailhead advises keeping a Marketing Cloud data extension's total byte size, the sum of its column lengths, under 80,000.",
+   "x": "The guidance is to stay under 8,000 bytes, so twenty 100-character columns fit but eight 1,000-character ones don't. 80,000 is ten times the recommended ceiling.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:data-extensions"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/data-extensions.md"
+  },
+  {
+   "id": "sf-001848",
+   "area": "clouds-and-products",
+   "t": "Email Studio's split function can divide a source data extension into as many as 12 random groups at once.",
+   "f": "Email Studio's split function can divide a source data extension into as many as 4 random groups at once.",
+   "x": "Random splits go up to 12 groups in one action, which is handy for test cells. Four groups understates it.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:data-extensions",
+    "kt:marketing-cloud-engagement"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/data-extensions.md"
+  },
+  {
+   "id": "sf-001849",
+   "area": "clouds-and-products",
+   "t": "Trailhead advises against primary keys on triggered-send data extensions, because a retried send could then deliver the same data twice.",
+   "f": "Trailhead requires primary keys on triggered-send data extensions, because a retried send could otherwise deliver the same data twice.",
+   "x": "Primary keys suit tables that are updated or appended to, but triggered-send tables should go without them to avoid duplicate deliveries on retry. The false statement reverses the advice.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:data-extensions"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/data-extensions.md"
+  },
+  {
+   "id": "sf-001850",
+   "area": "clouds-and-products",
+   "t": "In-day optimization runs are capped at 5 minutes with Enhanced Scheduling and Optimization, versus 10 minutes on the legacy engine.",
+   "f": "In-day optimization runs are capped at 10 minutes with Enhanced Scheduling and Optimization, versus 5 minutes on the legacy engine.",
+   "x": "The enhanced engine shortens the in-day time budget to five minutes; the legacy engine allows ten. The false statement swaps the two caps.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:enhanced-scheduling-and-optimization",
+    "kt:field-service"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/enhanced-scheduling-and-optimization.md"
+  },
+  {
+   "id": "sf-001851",
+   "area": "clouds-and-products",
+   "t": "Enhanced Scheduling and Optimization authenticates as a Platform Integration User, not the optimization user created by the legacy activation step.",
+   "f": "Enhanced Scheduling and Optimization authenticates as the optimization user created by the legacy activation step, not a Platform Integration User.",
+   "x": "The legacy Activate Field Service Schedule Optimization step creates an optimization user and profile; the enhanced engine uses a Platform Integration User instead. The false statement reverses them.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:enhanced-scheduling-and-optimization"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/enhanced-scheduling-and-optimization.md"
+  },
+  {
+   "id": "sf-001852",
+   "area": "clouds-and-products",
+   "t": "Orgs created from Summer '23 onward have Enhanced Scheduling and Optimization enabled for all service territories by default.",
+   "f": "Orgs created from Summer '25 onward have Enhanced Scheduling and Optimization enabled for all service territories by default.",
+   "x": "Summer '23 is the cutoff: newer orgs start on the enhanced engine, while older orgs must opt in. Summer '25 is the wrong release.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:enhanced-scheduling-and-optimization",
+    "kt:field-service"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/clouds-and-products/enhanced-scheduling-and-optimization.md"
+  },
+  {
+   "id": "sf-001853",
+   "area": "data-cloud-and-ai",
+   "t": "An Agent API call that runs past the API's 120-second timeout fails with HTTP 500, so long-running agent actions need design care.",
+   "f": "An Agent API call that runs past the API's 30-second timeout fails with HTTP 500, so long-running agent actions need design care.",
+   "x": "The Agent API allows 120 seconds before a request errors out with a 500. Thirty seconds understates the timeout.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:agent-api",
+    "kt:agentforce"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/agent-api.md"
+  },
+  {
+   "id": "sf-001854",
+   "area": "data-cloud-and-ai",
+   "t": "When an Agent API session starts with bypassUser set to true, the agent runs as the user assigned to the agent rather than the access token's user.",
+   "f": "When an Agent API session starts with bypassUser set to true, the agent runs as the access token's user rather than the user assigned to the agent.",
+   "x": "bypassUser true skips the token's identity in favour of the agent's assigned user; false makes record access follow the user behind the token. The false statement reverses the flag.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:agent-api",
+    "kt:client-credentials-flow"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/agent-api.md"
+  },
+  {
+   "id": "sf-001855",
+   "area": "data-cloud-and-ai",
+   "t": "Agents of the Agentforce (Default) type can't be reached through the Agent API, though other activated agents can.",
+   "f": "Only agents of the Agentforce (Default) type can be reached through the Agent API; other activated agents can't.",
+   "x": "The Agent API needs an activated agent that isn't of the Agentforce (Default) type. That type is the one excluded, not the only one supported.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:agent-api",
+    "kt:agentforce-studio"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/agent-api.md"
+  },
+  {
+   "id": "sf-001856",
+   "area": "data-cloud-and-ai",
+   "t": "Agentforce linked variables are read-only and can't be objects or lists, unlike custom variables.",
+   "f": "Agentforce custom variables are read-only and can't be objects or lists, unlike linked variables.",
+   "x": "Linked variables read from a source such as the messaging session, so the agent can't set them and they hold only simple values. Custom variables can be mutable and support object and list types.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:agent-variables",
+    "kt:agent-script"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/agent-variables.md"
+  },
+  {
+   "id": "sf-001857",
+   "area": "data-cloud-and-ai",
+   "t": "In Agent Script, a variable's visibility defaults to Internal, so the Agent API can set it only once it is marked External.",
+   "f": "In Agent Script, a variable's visibility defaults to External, so the Agent API can set it unless it is marked Internal.",
+   "x": "Internal is the default and lets only actions set the value; External corresponds to Allow value to be set by API in the builder. The false statement flips the default.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:agent-variables",
+    "kt:agent-api"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/agent-variables.md"
+  },
+  {
+   "id": "sf-001858",
+   "area": "data-cloud-and-ai",
+   "t": "An Agentforce variable name must start with a letter, contain no double underscore and be at most 80 characters long.",
+   "f": "An Agentforce variable name must start with a letter, contain no double underscore and be at most 255 characters long.",
+   "x": "Variable names are limited to 80 characters of letters, digits and underscores, with no trailing or double underscore. 255 is far beyond the allowed length.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:agent-variables"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-cloud-and-ai/agent-variables.md"
+  },
+  {
+   "id": "sf-001859",
+   "area": "data-model",
+   "t": "The SOQL literal LAST_N_DAYS:n includes today and so spans n+1 days, while NEXT_N_DAYS:n starts tomorrow.",
+   "f": "The SOQL literal NEXT_N_DAYS:n includes today and so spans n+1 days, while LAST_N_DAYS:n starts yesterday.",
+   "x": "LAST_N_DAYS counts the current day as well as the previous n, whereas NEXT_N_DAYS begins with tomorrow. The false statement swaps which literal includes today.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:date-and-date-time-fields",
+    "kt:soql"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/date-and-date-time-fields.md"
+  },
+  {
+   "id": "sf-001860",
+   "area": "data-model",
+   "t": "DATETIMEVALUE(TODAY()) produces midnight GMT, so a San Francisco user on daylight time sees 5:00 p.m. on the previous day.",
+   "f": "DATETIMEVALUE(TODAY()) produces midnight in the user's time zone, so a San Francisco user on daylight time sees 12:00 a.m. that day.",
+   "x": "Text and Date conversions to Date/Time happen in GMT, and display then shifts to the viewer's zone. Formulas can't see the user's time zone, so local midnight isn't what you get.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:date-and-date-time-fields",
+    "kt:formula-fields"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/date-and-date-time-fields.md"
+  },
+  {
+   "id": "sf-001861",
+   "area": "data-model",
+   "t": "In a Salesforce formula, subtracting one Time value from another returns a number of milliseconds.",
+   "f": "In a Salesforce formula, subtracting one Time value from another returns a number of minutes.",
+   "x": "Time differences come back in milliseconds, which is why the check-out example divides by 3,600,000 to get hours. Date differences are days and Date/Time differences are decimal days.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:date-and-date-time-fields",
+    "kt:formula-fields"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/date-and-date-time-fields.md"
+  },
+  {
+   "id": "sf-001862",
+   "area": "data-model",
+   "t": "Object Manager is available only in Lightning Experience; Salesforce Classic has no equivalent single view of standard and custom objects.",
+   "f": "Object Manager is available in both Lightning Experience and Salesforce Classic as the single view of standard and custom objects.",
+   "x": "Salesforce's style guide states Object Manager is Lightning-only, and the one-list view of all objects was billed as a Lightning advantage. Classic users reach object settings another way.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:object-manager"
+   ],
+   "difficulty": 1,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/object-manager.md"
+  },
+  {
+   "id": "sf-001863",
+   "area": "data-model",
+   "t": "While viewing a record, choosing Edit Object from the gear icon jumps straight to that object's page in Object Manager.",
+   "f": "While viewing a record, choosing Edit Page from the gear icon jumps straight to that object's page in Object Manager.",
+   "x": "Edit Object is the shortcut into Object Manager for the current object. Edit Page is a different menu item, so it isn't the route described.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:object-manager"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/object-manager.md"
+  },
+  {
+   "id": "sf-001864",
+   "area": "data-model",
+   "t": "Setup pages, including Object Manager, are served from the *.salesforce-setup.com domain, which locked-down networks may need to allow.",
+   "f": "Setup pages, including Object Manager, are served from the *.my.site.com domain, which locked-down networks may need to allow.",
+   "x": "Setup has its own salesforce-setup.com domain, so restrictive networks must allow it before Object Manager loads. my.site.com is not the Setup domain.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:object-manager"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/data-model/object-manager.md"
+  },
+  {
+   "id": "sf-001865",
+   "area": "development",
+   "t": "A Slack message can hold up to 50 Block Kit blocks, while a modal or App Home tab can hold up to 100.",
+   "f": "A Slack message can hold up to 100 Block Kit blocks, while a modal or App Home tab can hold up to 50.",
+   "x": "Messages are capped at 50 blocks and modals or the Home tab at 100. The false statement swaps the two limits.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:block-kit",
+    "kt:slack-platform"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/block-kit.md"
+  },
+  {
+   "id": "sf-001866",
+   "area": "development",
+   "t": "A Slack app must return HTTP 200 within 3 seconds of receiving an interaction payload, or the user sees an error.",
+   "f": "A Slack app must return HTTP 200 within 30 seconds of receiving an interaction payload, or the user sees an error.",
+   "x": "Slack expects an acknowledgement within three seconds, so slow work should happen after the app responds. Thirty seconds is far too generous.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:block-kit"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/block-kit.md"
+  },
+  {
+   "id": "sf-001867",
+   "area": "development",
+   "t": "A Block Kit interaction's response_url can be used up to 5 times within 30 minutes; after that, apps post through the normal messaging APIs.",
+   "f": "A Block Kit interaction's response_url can be used up to 5 times within 24 hours; after that, apps post through the normal messaging APIs.",
+   "x": "The response_url is short-lived: five uses inside half an hour. A 24-hour window greatly overstates how long it lasts.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:block-kit"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/block-kit.md"
+  },
+  {
+   "id": "sf-001868",
+   "area": "development",
+   "t": "Since Mobile SDK 11.0, the default login for Mobile SDK apps is the OAuth web server flow rather than the user-agent flow.",
+   "f": "Since Mobile SDK 11.0, the default login for Mobile SDK apps is the OAuth user-agent flow rather than the web server flow.",
+   "x": "Version 11.0 switched the default to the web server flow, in the same release that added biometric login. The false statement reverses the change.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:mobile-sdk",
+    "kt:oauth-2-flows-in-salesforce"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/mobile-sdk.md"
+  },
+  {
+   "id": "sf-001869",
+   "area": "development",
+   "t": "Among Mobile SDK app styles, only hybrid apps can host Lightning web components.",
+   "f": "Among Mobile SDK app styles, only React Native apps can host Lightning web components.",
+   "x": "The Mobile SDK guide says hybrid apps, built on a Cordova container, are the ones that can host LWCs. React Native renders native views and isn't the LWC host.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:mobile-sdk",
+    "kt:lightning-web-components"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/mobile-sdk.md"
+  },
+  {
+   "id": "sf-001870",
+   "area": "development",
+   "t": "A Mobile SDK app's boot configuration holds its external client app's callback URL and consumer key, and the app never uses a consumer secret.",
+   "f": "A Mobile SDK app's boot configuration holds its external client app's callback URL, consumer key and consumer secret.",
+   "x": "Mobile apps can't keep a secret safe, so Mobile SDK apps are configured with only the callback URL and consumer key. No consumer secret goes into the app.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:mobile-sdk",
+    "kt:external-client-apps"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/development/mobile-sdk.md"
+  },
+  {
+   "id": "sf-001871",
+   "area": "devops-and-alm",
+   "t": "OEM partners use the Channel Order App for revenue sharing and to provision Salesforce licenses, while ISV partners use it for revenue sharing only.",
+   "f": "ISV partners use the Channel Order App for revenue sharing and to provision Salesforce licenses, while OEM partners use it for revenue sharing only.",
+   "x": "Provisioning Salesforce licenses through COA is an OEM use case; ISVs report revenue through it but don't provision Salesforce licenses. The false statement swaps the partner types.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:channel-order-app",
+    "kt:agentexchange"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/channel-order-app.md"
+  },
+  {
+   "id": "sf-001872",
+   "area": "devops-and-alm",
+   "t": "The legacy Partner Order Submit API (ServiceOrderProcessor) works only in Channel Order App version 1.39 and earlier.",
+   "f": "The legacy Partner Order Submit API (ServiceOrderProcessor) works only in Channel Order App version 2 and later.",
+   "x": "ServiceOrderProcessor belongs to COA 1.39 and earlier; v2 replaced it with the Channel Order Apex API, which adds edit, recall and clone. The false statement ties the legacy API to the newer version.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:channel-order-app",
+    "kt:batch-apex"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/channel-order-app.md"
+  },
+  {
+   "id": "sf-001873",
+   "area": "devops-and-alm",
+   "t": "In the Channel Order App, only Draft service orders can be submitted, and the order's start date must be today or later.",
+   "f": "In the Channel Order App, only Draft service orders can be submitted, and the order's start date may be up to 30 days in the past.",
+   "x": "Submission requires Draft status and a start date no earlier than today. Backdating an order by 30 days isn't allowed.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:channel-order-app"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/channel-order-app.md"
+  },
+  {
+   "id": "sf-001874",
+   "area": "devops-and-alm",
+   "t": "The ISV Customer Debugger allows one session at a time per License Management Org, runs only in sandboxes and caps a session at 4 hours.",
+   "f": "The ISV Customer Debugger allows one session at a time per License Management Org, runs only in sandboxes and caps a session at 24 hours.",
+   "x": "A debugger session started from the Subscriber Support Console is limited to four hours, one at a time, in a subscriber sandbox. Twenty-four hours overstates the cap.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:subscriber-support-console",
+    "kt:isv-customer-debugger"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/subscriber-support-console.md"
+  },
+  {
+   "id": "sf-001875",
+   "area": "devops-and-alm",
+   "t": "In second-generation packaging, enabling Subscriber Debug Logs for a package turns logging on for every package in that namespace.",
+   "f": "In second-generation packaging, enabling Subscriber Debug Logs for a package turns logging on for that one package only.",
+   "x": "With 2GP the setting works at namespace level, so all packages sharing the namespace start logging and expose unobfuscated Apex until it is switched off. It is not limited to one package.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:subscriber-support-console",
+    "kt:second-generation-managed-packages",
+    "kt:apex-logging-and-debug-logs"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/subscriber-support-console.md"
+  },
+  {
+   "id": "sf-001876",
+   "area": "devops-and-alm",
+   "t": "Since Spring '22, License Management Org users must log in to the LMO with multi-factor authentication to use the Subscriber Support Console.",
+   "f": "Since Spring '25, License Management Org users must log in to the LMO with multi-factor authentication to use the Subscriber Support Console.",
+   "x": "The MFA requirement for console users in the LMO dates from Spring '22. Spring '25 is the wrong release.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:subscriber-support-console",
+    "kt:multi-factor-authentication"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/devops-and-alm/subscriber-support-console.md"
+  },
+  {
+   "id": "sf-001877",
+   "area": "identity",
+   "t": "A frontdoor URL from the Single Access UI Bridge API is valid for up to one minute and can be used only once.",
+   "f": "A frontdoor URL from the Single Access UI Bridge API is valid for up to fifteen minutes and can be used only once.",
+   "x": "The singleaccess endpoint issues a short-lived, single-use link that expires within a minute. Fifteen minutes is far longer than the documented window.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:frontdoor-jsp-session-bridging",
+    "kt:bearer-token-security"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/frontdoor-jsp-session-bridging.md"
+  },
+  {
+   "id": "sf-001878",
+   "area": "identity",
+   "t": "Calling the singleaccess endpoint again before its frontdoor URL expires returns the same URL without extending its expiry.",
+   "f": "Calling the singleaccess endpoint again before its frontdoor URL expires returns a new URL and resets the expiry.",
+   "x": "Within the one-minute window, repeat calls hand back the identical URL and its original expiry. A fresh URL is issued only after the first one has expired.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:frontdoor-jsp-session-bridging"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/frontdoor-jsp-session-bridging.md"
+  },
+  {
+   "id": "sf-001879",
+   "area": "identity",
+   "t": "The redirect_uri sent to the singleaccess endpoint must be a relative path; absolute URLs are rejected.",
+   "f": "The redirect_uri sent to the singleaccess endpoint must be an absolute URL; relative paths are rejected.",
+   "x": "The landing page is given as a path such as lightning/setup/ManageUsers/home, and absolute URLs fail. Without it, the user lands on the My Domain or site home page.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:frontdoor-jsp-session-bridging",
+    "kt:my-domain"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/frontdoor-jsp-session-bridging.md"
+  },
+  {
+   "id": "sf-001880",
+   "area": "identity",
+   "t": "In Salesforce, a token granted the full OAuth scope gets no refresh token unless the refresh_token scope is selected as well.",
+   "f": "In Salesforce, a token granted the full OAuth scope also gets a refresh token, so the refresh_token scope needn't be selected.",
+   "x": "Although full is described as covering all other scopes, it doesn't return a refresh token. Apps that must run unattended need refresh_token (offline_access) selected too.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:oauth-scopes",
+    "kt:refresh-token-policies"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/oauth-scopes.md"
+  },
+  {
+   "id": "sf-001881",
+   "area": "identity",
+   "t": "The Salesforce web OAuth scope includes visualforce, and visualforce on its own reaches only customer-built Visualforce pages.",
+   "f": "The Salesforce visualforce OAuth scope includes web, and web on its own reaches only customer-built Visualforce pages.",
+   "x": "web is the broader scope for Salesforce-hosted pages and contains visualforce; visualforce alone is limited to customer-created Visualforce. The false statement reverses which scope contains the other.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:oauth-scopes"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/oauth-scopes.md"
+  },
+  {
+   "id": "sf-001882",
+   "area": "identity",
+   "t": "From Mobile SDK 13.2, an app that requests no scopes receives all of the scopes configured on its app definition.",
+   "f": "From Mobile SDK 13.2, an app that requests no scopes receives only the api and refresh_token scopes from its app definition.",
+   "x": "Clients can ask for a subset of the configured scopes; in 13.2 and later, asking for none yields every scope set on the app. It isn't narrowed to api and refresh_token.",
+   "release": "Winter '27",
+   "featureStatus": "current",
+   "certs": [],
+   "concepts": [
+    "kt:oauth-scopes",
+    "kt:mobile-sdk"
+   ],
+   "difficulty": 3,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/identity/oauth-scopes.md"
+  },
+  {
+   "id": "sf-001883",
+   "area": "integration",
+   "t": "The Agent2Agent protocol carries JSON-RPC 2.0 payloads over HTTP(S) and uses Server-Sent Events for streaming.",
+   "f": "The Agent2Agent protocol carries JSON-RPC 2.0 payloads over HTTP(S) and uses WebSockets for streaming.",
+   "x": "A2A reuses existing web standards: HTTP(S) transport, JSON-RPC 2.0 messages and SSE for streamed responses. WebSockets are not its streaming mechanism.",
+   "release": "Winter '27",
+   "featureStatus": "concept",
+   "certs": [],
+   "concepts": [
+    "kt:agent-to-agent-protocol"
+   ],
+   "difficulty": 2,
+   "status": "active",
+   "source": "https://github.com/john1hsu/salesforce-knowledge-graph/blob/main/articles/integration/agent-to-agent-protocol.md"
   }
  ]
 }

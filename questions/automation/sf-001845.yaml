@@ -1,0 +1,19 @@
+id: sf-001845
+product_area: automation
+true_statement: A flow's Create, Update and Delete Records elements can together write at most 10,000 records by DML in one transaction.
+false_statement: A flow's Create, Update and Delete Records elements can together write at most 50,000 records by DML in one transaction.
+explanation: The per-transaction limit is 10,000 records created, updated or deleted, which is why an unfiltered scheduled flow touching every Contact can fail. 50,000 overstates it.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/flow-data-elements.md
+  commit: 73aa9df4d26c32cb773ed3adff949bf50175035c
+  blob: 68795c6c86fdfba7263ff8b85bf185609a72e59f
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:flow-data-elements
+- kt:flow-limits
+- kt:governor-limits
+difficulty: 2
+created: '2026-11-27'
+status: active

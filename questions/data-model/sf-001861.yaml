@@ -1,0 +1,18 @@
+id: sf-001861
+product_area: data-model
+true_statement: In a Salesforce formula, subtracting one Time value from another returns a number of milliseconds.
+false_statement: In a Salesforce formula, subtracting one Time value from another returns a number of minutes.
+explanation: Time differences come back in milliseconds, which is why the check-out example divides by 3,600,000 to get hours. Date differences are days and Date/Time differences are decimal days.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/date-and-date-time-fields.md
+  commit: 73aa9df4d26c32cb773ed3adff949bf50175035c
+  blob: db9e4f9bbf5b29e16cf1a22737d6a4757a6fa5ee
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:date-and-date-time-fields
+- kt:formula-fields
+difficulty: 2
+created: '2026-11-27'
+status: active

@@ -1,0 +1,17 @@
+id: sf-001809
+product_area: identity
+true_statement: All standard and custom apps start out visible in the App Launcher; hiding them all by default takes a request to Salesforce Customer Support.
+false_statement: All standard and custom apps start out hidden in the App Launcher; showing them all by default takes a request to Salesforce Customer Support.
+explanation: Apps are visible by default and can be hidden one by one in App Menu. Only a blanket hidden-by-default setup needs Support's help, not the reverse.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/app-launcher.md
+  commit: 73aa9df4d26c32cb773ed3adff949bf50175035c
+  blob: 9b26615193712ad5785fc8b58afc115d67e5c952
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:app-launcher
+difficulty: 2
+created: '2026-11-27'
+status: active

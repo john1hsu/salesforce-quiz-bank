@@ -1,0 +1,18 @@
+id: sf-001848
+product_area: clouds-and-products
+true_statement: Email Studio's split function can divide a source data extension into as many as 12 random groups at once.
+false_statement: Email Studio's split function can divide a source data extension into as many as 4 random groups at once.
+explanation: Random splits go up to 12 groups in one action, which is handy for test cells. Four groups understates it.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/data-extensions.md
+  commit: 73aa9df4d26c32cb773ed3adff949bf50175035c
+  blob: 69db5348d709dbde706542629fb33e635b290786
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:data-extensions
+- kt:marketing-cloud-engagement
+difficulty: 2
+created: '2026-11-27'
+status: active

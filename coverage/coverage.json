@@ -1,45 +1,45 @@
 {
  "totals": {
-  "active": 1787,
+  "active": 1872,
   "retired": 2
  },
  "areas": {
   "architecture-practice": {
-   "active": 155
+   "active": 161
   },
   "automation": {
-   "active": 150
-  },
-  "clouds-and-products": {
-   "active": 153
-  },
-  "data-cloud-and-ai": {
    "active": 156
   },
+  "clouds-and-products": {
+   "active": 159
+  },
+  "data-cloud-and-ai": {
+   "active": 162
+  },
   "data-model": {
-   "active": 154
+   "active": 160
   },
   "development": {
-   "active": 148,
+   "active": 157,
    "retired": 1
   },
   "devops-and-alm": {
-   "active": 140
+   "active": 152
   },
   "identity": {
-   "active": 144
+   "active": 156
   },
   "integration": {
-   "active": 146
+   "active": 153
   },
   "platform-architecture": {
-   "active": 148
+   "active": 151
   },
   "public-sector-and-compliance": {
-   "active": 148
+   "active": 154
   },
   "security-and-sharing": {
-   "active": 145,
+   "active": 151,
    "retired": 1
   }
  },
@@ -84,6 +84,9 @@
    "active": 3
   },
   "articles/architecture-practice/data-architecture.md": {
+   "active": 3
+  },
+  "articles/architecture-practice/data-dictionary.md": {
    "active": 3
   },
   "articles/architecture-practice/data-migration-strategy.md": {
@@ -200,6 +203,9 @@
   "articles/architecture-practice/user-acceptance-testing.md": {
    "active": 1
   },
+  "articles/architecture-practice/user-personas.md": {
+   "active": 3
+  },
   "articles/architecture-practice/well-architected-framework.md": {
    "active": 3
   },
@@ -254,6 +260,9 @@
   "articles/automation/escalation-rules.md": {
    "active": 3
   },
+  "articles/automation/flow-assignment-element.md": {
+   "active": 3
+  },
   "articles/automation/flow-builder.md": {
    "active": 3
   },
@@ -261,6 +270,9 @@
    "active": 3
   },
   "articles/automation/flow-choice-resources.md": {
+   "active": 3
+  },
+  "articles/automation/flow-data-elements.md": {
    "active": 3
   },
   "articles/automation/flow-debugging.md": {
@@ -389,7 +401,13 @@
   "articles/clouds-and-products/customer-360.md": {
    "active": 3
   },
+  "articles/clouds-and-products/data-extensions.md": {
+   "active": 3
+  },
   "articles/clouds-and-products/dispatcher-console.md": {
+   "active": 3
+  },
+  "articles/clouds-and-products/enhanced-scheduling-and-optimization.md": {
    "active": 3
   },
   "articles/clouds-and-products/entitlement-management.md": {
@@ -518,10 +536,16 @@
   "articles/data-cloud-and-ai/agent-actions.md": {
    "active": 3
   },
+  "articles/data-cloud-and-ai/agent-api.md": {
+   "active": 3
+  },
   "articles/data-cloud-and-ai/agent-development-lifecycle.md": {
    "active": 3
   },
   "articles/data-cloud-and-ai/agent-script.md": {
+   "active": 3
+  },
+  "articles/data-cloud-and-ai/agent-variables.md": {
    "active": 3
   },
   "articles/data-cloud-and-ai/agentforce-data-library.md": {
@@ -722,6 +746,9 @@
   "articles/data-model/data-stewardship.md": {
    "active": 3
   },
+  "articles/data-model/date-and-date-time-fields.md": {
+   "active": 3
+  },
   "articles/data-model/deleted-fields-and-field-undelete.md": {
    "active": 3
   },
@@ -777,6 +804,9 @@
    "active": 3
   },
   "articles/data-model/number-currency-and-percent-fields.md": {
+   "active": 3
+  },
+  "articles/data-model/object-manager.md": {
    "active": 3
   },
   "articles/data-model/object-relationships.md": {
@@ -872,6 +902,9 @@
   "articles/development/batch-apex.md": {
    "active": 3
   },
+  "articles/development/block-kit.md": {
+   "active": 3
+  },
   "articles/development/custom-exceptions.md": {
    "active": 3
   },
@@ -918,6 +951,9 @@
    "active": 3
   },
   "articles/development/mixed-dml-error.md": {
+   "active": 3
+  },
+  "articles/development/mobile-sdk.md": {
    "active": 3
   },
   "articles/development/omnistudio-developer-certification.md": {
@@ -981,6 +1017,12 @@
   "articles/development/wire-service.md": {
    "active": 3
   },
+  "articles/development/workspace-api.md": {
+   "active": 3
+  },
+  "articles/devops-and-alm/agentexchange-go-to-market-app.md": {
+   "active": 3
+  },
   "articles/devops-and-alm/agentforce-dx.md": {
    "active": 3
   },
@@ -997,6 +1039,9 @@
    "active": 3
   },
   "articles/devops-and-alm/change-sets.md": {
+   "active": 3
+  },
+  "articles/devops-and-alm/channel-order-app.md": {
    "active": 3
   },
   "articles/devops-and-alm/code-analyzer.md": {
@@ -1062,6 +1107,9 @@
   "articles/devops-and-alm/partner-business-org.md": {
    "active": 3
   },
+  "articles/devops-and-alm/partner-console.md": {
+   "active": 3
+  },
   "articles/devops-and-alm/permission-set-led-deployment.md": {
    "active": 3
   },
@@ -1113,6 +1161,9 @@
   "articles/devops-and-alm/source-tracking.md": {
    "active": 3
   },
+  "articles/devops-and-alm/subscriber-support-console.md": {
+   "active": 3
+  },
   "articles/devops-and-alm/tooling-api.md": {
    "active": 3
   },
@@ -1129,6 +1180,9 @@
    "active": 3
   },
   "articles/identity/api-access-control.md": {
+   "active": 3
+  },
+  "articles/identity/app-launcher.md": {
    "active": 3
   },
   "articles/identity/certificate-and-key-management.md": {
@@ -1162,6 +1216,9 @@
    "active": 3
   },
   "articles/identity/external-identity-license.md": {
+   "active": 3
+  },
+  "articles/identity/frontdoor-jsp-session-bridging.md": {
    "active": 3
   },
   "articles/identity/grant-login-access.md": {
@@ -1203,6 +1260,9 @@
   "articles/identity/login-ip-ranges-and-trusted-ip-ranges.md": {
    "active": 3
   },
+  "articles/identity/mobile-app-security-policies.md": {
+   "active": 3
+  },
   "articles/identity/multi-factor-authentication.md": {
    "active": 1
   },
@@ -1216,6 +1276,9 @@
    "active": 3
   },
   "articles/identity/oauth-2-flows-in-salesforce.md": {
+   "active": 3
+  },
+  "articles/identity/oauth-scopes.md": {
    "active": 3
   },
   "articles/identity/openid-connect-authentication-providers.md": {
@@ -1275,7 +1338,13 @@
   "articles/identity/web-server-flow.md": {
    "active": 3
   },
+  "articles/integration/agent-to-agent-protocol.md": {
+   "active": 1
+  },
   "articles/integration/amazon-connect.md": {
+   "active": 3
+  },
+  "articles/integration/anypoint-runtime-manager.md": {
    "active": 3
   },
   "articles/integration/apex-rest-services.md": {
@@ -1368,6 +1437,9 @@
   "articles/integration/mulesoft-composer.md": {
    "active": 3
   },
+  "articles/integration/mulesoft-platform-integration-architect-certification.md": {
+   "active": 3
+  },
   "articles/integration/named-credentials.md": {
    "active": 3
   },
@@ -1432,6 +1504,9 @@
    "active": 3
   },
   "articles/platform-architecture/api-version-lifecycle.md": {
+   "active": 3
+  },
+  "articles/platform-architecture/briefcase-builder.md": {
    "active": 3
   },
   "articles/platform-architecture/bulkification.md": {
@@ -1665,6 +1740,9 @@
   "articles/public-sector-and-compliance/it-governance.md": {
    "active": 3
   },
+  "articles/public-sector-and-compliance/itar-and-export-controls.md": {
+   "active": 3
+  },
   "articles/public-sector-and-compliance/key-security-indicators.md": {
    "active": 3
   },
@@ -1722,6 +1800,9 @@
   "articles/public-sector-and-compliance/trust-services-criteria.md": {
    "active": 3
   },
+  "articles/public-sector-and-compliance/tx-ramp.md": {
+   "active": 3
+  },
   "articles/public-sector-and-compliance/zero-trust-architecture.md": {
    "active": 3
   },
@@ -1755,6 +1836,9 @@
   "articles/security-and-sharing/data-breach-risk.md": {
    "active": 3
   },
+  "articles/security-and-sharing/data-categories.md": {
+   "active": 3
+  },
   "articles/security-and-sharing/data-detect.md": {
    "active": 3
   },
@@ -1774,6 +1858,9 @@
    "active": 3
   },
   "articles/security-and-sharing/implicit-sharing.md": {
+   "active": 3
+  },
+  "articles/security-and-sharing/manual-sharing.md": {
    "active": 3
   },
   "articles/security-and-sharing/opportunity-teams.md": {

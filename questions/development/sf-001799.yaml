@@ -1,0 +1,18 @@
+id: sf-001799
+product_area: development
+true_statement: The lightning/platformWorkspaceApi module for Lightning web components requires API version 59.0 or later.
+false_statement: The lightning/platformWorkspaceApi module for Lightning web components requires API version 55.0 or later.
+explanation: The LWC workspace module became generally available in Spring '24 and needs API 59.0 or later. Version 55.0 predates it, when LWC developers still had to wrap the Aura component.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/workspace-api.md
+  commit: 73aa9df4d26c32cb773ed3adff949bf50175035c
+  blob: 751ac38ceb9ed2be174e5f576788a8417237539d
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:workspace-api
+- kt:lightning-web-components
+difficulty: 2
+created: '2026-11-27'
+status: active

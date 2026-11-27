@@ -1,0 +1,19 @@
+id: sf-001812
+product_area: identity
+true_statement: For Mobile SDK biometric authentication, BIOMETRIC_AUTHENTICATION_TIMEOUT sets the minutes before the lock and defaults to 15 when omitted.
+false_statement: For Mobile SDK biometric authentication, BIOMETRIC_AUTHENTICATION_TIMEOUT sets the minutes before the lock and defaults to 5 when omitted.
+explanation: The custom attribute on the connected app controls how long the app may sit in the background before locking, with a 15-minute default. Five minutes is not the default.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/mobile-app-security-policies.md
+  commit: 73aa9df4d26c32cb773ed3adff949bf50175035c
+  blob: 2947e5af7be0a5ed0ee576490f478eaf7639587d
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:mobile-app-security-policies
+- kt:mobile-sdk
+- kt:connected-apps
+difficulty: 3
+created: '2026-11-27'
+status: active

@@ -1,0 +1,18 @@
+id: sf-001869
+product_area: development
+true_statement: Among Mobile SDK app styles, only hybrid apps can host Lightning web components.
+false_statement: Among Mobile SDK app styles, only React Native apps can host Lightning web components.
+explanation: The Mobile SDK guide says hybrid apps, built on a Cordova container, are the ones that can host LWCs. React Native renders native views and isn't the LWC host.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/mobile-sdk.md
+  commit: 73aa9df4d26c32cb773ed3adff949bf50175035c
+  blob: f92b74271b97935c1ca2a3eb8c1a3426a3dc7868
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:mobile-sdk
+- kt:lightning-web-components
+difficulty: 2
+created: '2026-11-27'
+status: active

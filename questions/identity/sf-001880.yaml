@@ -1,0 +1,18 @@
+id: sf-001880
+product_area: identity
+true_statement: In Salesforce, a token granted the full OAuth scope gets no refresh token unless the refresh_token scope is selected as well.
+false_statement: In Salesforce, a token granted the full OAuth scope also gets a refresh token, so the refresh_token scope needn't be selected.
+explanation: Although full is described as covering all other scopes, it doesn't return a refresh token. Apps that must run unattended need refresh_token (offline_access) selected too.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/oauth-scopes.md
+  commit: 73aa9df4d26c32cb773ed3adff949bf50175035c
+  blob: c121638f51134e1a86ac7c601ca75a1e435244a6
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:oauth-scopes
+- kt:refresh-token-policies
+difficulty: 3
+created: '2026-11-27'
+status: active

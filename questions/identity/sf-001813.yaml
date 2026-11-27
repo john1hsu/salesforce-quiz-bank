@@ -1,0 +1,18 @@
+id: sf-001813
+product_area: identity
+true_statement: Since Mobile SDK 9.2, app lock relies on the device's system passcode, so org-level PIN length settings are ignored.
+false_statement: Since Mobile SDK 9.2, app lock relies on an app-specific PIN, so org-level PIN length settings are enforced.
+explanation: From 9.2 onward the SDK defers to the operating system passcode or biometrics, so older guidance on PIN length no longer applies. There is no separate app PIN governed by the org.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/mobile-app-security-policies.md
+  commit: 73aa9df4d26c32cb773ed3adff949bf50175035c
+  blob: 2947e5af7be0a5ed0ee576490f478eaf7639587d
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:mobile-app-security-policies
+- kt:mobile-sdk
+difficulty: 2
+created: '2026-11-27'
+status: active

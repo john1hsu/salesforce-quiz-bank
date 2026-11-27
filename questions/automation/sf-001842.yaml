@@ -1,0 +1,17 @@
+id: sf-001842
+product_area: automation
+true_statement: In a Flow Assignment element, a text variable offers only the Equals and Add operators.
+false_statement: In a Flow Assignment element, a text variable offers the Equals, Add and Subtract operators.
+explanation: Text variables can be replaced with Equals or appended to with Add. Subtract is for number, currency and date values, not text.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/flow-assignment-element.md
+  commit: 73aa9df4d26c32cb773ed3adff949bf50175035c
+  blob: b2f062e767422759b014119bca216611a91b2a70
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:flow-assignment-element
+difficulty: 2
+created: '2026-11-27'
+status: active

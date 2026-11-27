@@ -1,0 +1,17 @@
+id: sf-001819
+product_area: integration
+true_statement: The MuleSoft Platform Integration Architect exam costs US$400 to register and US$200 for a retake, plus applicable taxes.
+false_statement: The MuleSoft Platform Integration Architect exam costs US$400 to register and US$100 for a retake, plus applicable taxes.
+explanation: The official guide lists US$400 for registration and half that, US$200, for a retake. US$100 is not the retake fee.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/mulesoft-platform-integration-architect-certification.md
+  commit: 73aa9df4d26c32cb773ed3adff949bf50175035c
+  blob: 624d082a7da7feb2a431fe2253d955f8fefde185
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:mulesoft-platform-integration-architect-certification
+difficulty: 1
+created: '2026-11-27'
+status: active

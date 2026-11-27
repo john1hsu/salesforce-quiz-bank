@@ -1,0 +1,17 @@
+id: sf-001864
+product_area: data-model
+true_statement: Setup pages, including Object Manager, are served from the *.salesforce-setup.com domain, which locked-down networks may need to allow.
+false_statement: Setup pages, including Object Manager, are served from the *.my.site.com domain, which locked-down networks may need to allow.
+explanation: Setup has its own salesforce-setup.com domain, so restrictive networks must allow it before Object Manager loads. my.site.com is not the Setup domain.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-model/object-manager.md
+  commit: 73aa9df4d26c32cb773ed3adff949bf50175035c
+  blob: 615afed435807988dd9d189c9a4c59577527e610
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:object-manager
+difficulty: 2
+created: '2026-11-27'
+status: active

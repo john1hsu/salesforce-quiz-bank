@@ -1,0 +1,18 @@
+id: sf-001825
+product_area: public-sector-and-compliance
+true_statement: The EAR's encrypted-storage carve-out bars intentional storage in Country Group D:5, while ITAR's bars countries proscribed under 22 CFR 126.1.
+false_statement: ITAR's encrypted-storage carve-out bars intentional storage in Country Group D:5, while the EAR's bars countries proscribed under 22 CFR 126.1.
+explanation: 'The two regimes word their location condition differently: 15 CFR 734.18 refers to Country Group D:5, and ITAR refers to its own proscribed-country list in 126.1. The false statement swaps them.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/itar-and-export-controls.md
+  commit: 73aa9df4d26c32cb773ed3adff949bf50175035c
+  blob: 90eaa6de6eb4be3558fda14cfbd3b125fc5c935f
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:itar-and-export-controls
+- kt:data-residency
+difficulty: 3
+created: '2026-11-27'
+status: active

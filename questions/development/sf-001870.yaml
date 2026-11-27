@@ -1,0 +1,18 @@
+id: sf-001870
+product_area: development
+true_statement: A Mobile SDK app's boot configuration holds its external client app's callback URL and consumer key, and the app never uses a consumer secret.
+false_statement: A Mobile SDK app's boot configuration holds its external client app's callback URL, consumer key and consumer secret.
+explanation: Mobile apps can't keep a secret safe, so Mobile SDK apps are configured with only the callback URL and consumer key. No consumer secret goes into the app.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/mobile-sdk.md
+  commit: 73aa9df4d26c32cb773ed3adff949bf50175035c
+  blob: f92b74271b97935c1ca2a3eb8c1a3426a3dc7868
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:mobile-sdk
+- kt:external-client-apps
+difficulty: 2
+created: '2026-11-27'
+status: active

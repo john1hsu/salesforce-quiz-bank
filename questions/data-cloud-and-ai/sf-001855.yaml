@@ -1,0 +1,18 @@
+id: sf-001855
+product_area: data-cloud-and-ai
+true_statement: Agents of the Agentforce (Default) type can't be reached through the Agent API, though other activated agents can.
+false_statement: Only agents of the Agentforce (Default) type can be reached through the Agent API; other activated agents can't.
+explanation: The Agent API needs an activated agent that isn't of the Agentforce (Default) type. That type is the one excluded, not the only one supported.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/agent-api.md
+  commit: 73aa9df4d26c32cb773ed3adff949bf50175035c
+  blob: 434d8eda714feff24e0537894b6d526bbc257742
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:agent-api
+- kt:agentforce-studio
+difficulty: 2
+created: '2026-11-27'
+status: active

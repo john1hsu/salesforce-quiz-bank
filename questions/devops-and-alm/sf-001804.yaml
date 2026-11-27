@@ -1,0 +1,18 @@
+id: sf-001804
+product_area: devops-and-alm
+true_statement: To move a Channel Order App contract to the Go-To-Market App, the partner cancels the service order at least 7 days before renewal.
+false_statement: To move a Channel Order App contract to the Go-To-Market App, the partner cancels the service order at least 30 days before renewal.
+explanation: The migration path is to cancel the COA service order at least seven days ahead of renewal and send a GTM offer starting when the old order expires, so licenses don't lapse. Thirty days is not the stated lead time.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/agentexchange-go-to-market-app.md
+  commit: 73aa9df4d26c32cb773ed3adff949bf50175035c
+  blob: 14a2711c79b9c6d0bfe4ae46de12a26b3a396e4b
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:agentexchange-go-to-market-app
+- kt:channel-order-app
+difficulty: 2
+created: '2026-11-27'
+status: active

@@ -1,0 +1,18 @@
+id: sf-001833
+product_area: security-and-sharing
+true_statement: Inserting a higher-access manual share for a user who already has one on the record updates the existing share row rather than adding a second.
+false_statement: Inserting a higher-access manual share for a user who already has one on the record adds a second share row alongside the existing one.
+explanation: Share rows are unique per record, user or group and row cause, so a higher grant upgrades the current row. No duplicate row is created.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/manual-sharing.md
+  commit: 73aa9df4d26c32cb773ed3adff949bf50175035c
+  blob: 12102ca1f576aef32ee0dce622dabfd645c98464
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:manual-sharing
+- kt:apex-managed-sharing
+difficulty: 3
+created: '2026-11-27'
+status: active

@@ -1,0 +1,18 @@
+id: sf-001806
+product_area: devops-and-alm
+true_statement: When a package is registered from the Partner Console, the default license applied at install is active and site-wide.
+false_statement: When a package is registered from the Partner Console, the default license applied at install is a free trial with a set number of seats.
+explanation: Registration defaults to an active, site-wide license. A trial with a length in days or a per-seat license is something the partner has to choose instead.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/partner-console.md
+  commit: 73aa9df4d26c32cb773ed3adff949bf50175035c
+  blob: b3becd6e2164401d3f844b00938bdd554f0c6f69
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:partner-console
+- kt:license-management-app
+difficulty: 2
+created: '2026-11-27'
+status: active

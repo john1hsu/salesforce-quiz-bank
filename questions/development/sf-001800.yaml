@@ -1,0 +1,17 @@
+id: sf-001800
+product_area: development
+true_statement: When openTab receives more than one target, pageReference takes priority over recordId, which takes priority over url.
+false_statement: When openTab receives more than one target, url takes priority over recordId, which takes priority over pageReference.
+explanation: openTab uses pageReference first, then recordId, then url, ignoring the lower-priority values. The false statement reverses that order.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/workspace-api.md
+  commit: 73aa9df4d26c32cb773ed3adff949bf50175035c
+  blob: 751ac38ceb9ed2be174e5f576788a8417237539d
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:workspace-api
+difficulty: 3
+created: '2026-11-27'
+status: active

@@ -1,0 +1,18 @@
+id: sf-001802
+product_area: devops-and-alm
+true_statement: For the AgentExchange Go-To-Market App, a customer counts as net-new per product, so one who bought App A offline can still buy App B through it.
+false_statement: For the AgentExchange Go-To-Market App, a customer counts as net-new per partner, so one who bought any of the partner's apps offline can't buy another through it.
+explanation: Net-new status is judged product by product. Buying one app offline only means more licenses of that same app stay on the original channel until its contract ends; other products can still go through the GTM App.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/agentexchange-go-to-market-app.md
+  commit: 73aa9df4d26c32cb773ed3adff949bf50175035c
+  blob: 14a2711c79b9c6d0bfe4ae46de12a26b3a396e4b
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:agentexchange-go-to-market-app
+- kt:channel-order-app
+difficulty: 3
+created: '2026-11-27'
+status: active

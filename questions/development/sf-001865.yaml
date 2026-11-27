@@ -1,0 +1,18 @@
+id: sf-001865
+product_area: development
+true_statement: A Slack message can hold up to 50 Block Kit blocks, while a modal or App Home tab can hold up to 100.
+false_statement: A Slack message can hold up to 100 Block Kit blocks, while a modal or App Home tab can hold up to 50.
+explanation: Messages are capped at 50 blocks and modals or the Home tab at 100. The false statement swaps the two limits.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/block-kit.md
+  commit: 73aa9df4d26c32cb773ed3adff949bf50175035c
+  blob: 774c598a7d2e044a5b0b8d0e283b720b96536ca3
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:block-kit
+- kt:slack-platform
+difficulty: 2
+created: '2026-11-27'
+status: active

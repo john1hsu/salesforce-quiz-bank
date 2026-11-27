@@ -1,0 +1,18 @@
+id: sf-001837
+product_area: architecture-practice
+true_statement: Tooling API queries on FieldDefinition must filter on the parent object, so a full-org data dictionary extract runs object by object.
+false_statement: Tooling API queries on FieldDefinition can span every object at once, so a full-org data dictionary extract needs only a single query.
+explanation: FieldDefinition queries need a filter on the parent, for example EntityDefinition.QualifiedApiName. Exporting every field therefore means looping through the objects.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/data-dictionary.md
+  commit: 73aa9df4d26c32cb773ed3adff949bf50175035c
+  blob: aa8aa8ad7ff01652fbf0d663156825326c9ff09e
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:data-dictionary
+- kt:tooling-api
+difficulty: 2
+created: '2026-11-27'
+status: active

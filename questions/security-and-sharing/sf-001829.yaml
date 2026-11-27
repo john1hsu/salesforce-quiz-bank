@@ -1,0 +1,18 @@
+id: sf-001829
+product_area: security-and-sharing
+true_statement: A categorized Knowledge article is visible only if the user can see at least one of its categories in each category group applied to it.
+false_statement: A categorized Knowledge article is visible if the user can see at least one of its categories in any one of the category groups applied to it.
+explanation: 'Data category visibility is enforced group by group: every applied group must grant at least one matching category. Passing one group is not enough when the article is categorized in others.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/data-categories.md
+  commit: 73aa9df4d26c32cb773ed3adff949bf50175035c
+  blob: c2cd76cee19e938400900b8687650f0d34af62f0
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:data-categories
+- kt:knowledge-base
+difficulty: 3
+created: '2026-11-27'
+status: active

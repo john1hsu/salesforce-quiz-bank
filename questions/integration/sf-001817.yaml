@@ -1,0 +1,18 @@
+id: sf-001817
+product_area: integration
+true_statement: In the MuleSoft Platform Integration Architect exam outline, runtime plane technology architecture and Mule application design are the heaviest sections at 15% each.
+false_statement: In the MuleSoft Platform Integration Architect exam outline, security and reliability are the heaviest sections at 15% each.
+explanation: Runtime plane architecture and designing Mule applications each carry 15%, with DevOps close behind at 14%. Security and reliability are only 8% each.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/mulesoft-platform-integration-architect-certification.md
+  commit: 73aa9df4d26c32cb773ed3adff949bf50175035c
+  blob: 624d082a7da7feb2a431fe2253d955f8fefde185
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:mulesoft-platform-integration-architect-certification
+- kt:mule-runtime-engine
+difficulty: 2
+created: '2026-11-27'
+status: active

@@ -1,0 +1,17 @@
+id: sf-001838
+product_area: architecture-practice
+true_statement: Salesforce's published user personas are task-based, describing the general work of a role rather than the CRM features it uses.
+false_statement: Salesforce's published user personas are CRM-based, describing the CRM features a role uses rather than the general work it does.
+explanation: Salesforce built its personas around tasks because orgs often do the same work with different features or outside systems. Tying them to CRM features would make them less portable.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/user-personas.md
+  commit: 73aa9df4d26c32cb773ed3adff949bf50175035c
+  blob: ba076f89c8b01c7515b731baeb8f2b893480fdfb
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:user-personas
+difficulty: 2
+created: '2026-11-27'
+status: active

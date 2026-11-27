@@ -1,0 +1,17 @@
+id: sf-001858
+product_area: data-cloud-and-ai
+true_statement: An Agentforce variable name must start with a letter, contain no double underscore and be at most 80 characters long.
+false_statement: An Agentforce variable name must start with a letter, contain no double underscore and be at most 255 characters long.
+explanation: Variable names are limited to 80 characters of letters, digits and underscores, with no trailing or double underscore. 255 is far beyond the allowed length.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/agent-variables.md
+  commit: 73aa9df4d26c32cb773ed3adff949bf50175035c
+  blob: 525b49d936ef381f142af1b50925991076bf2e59
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:agent-variables
+difficulty: 2
+created: '2026-11-27'
+status: active

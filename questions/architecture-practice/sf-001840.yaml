@@ -1,0 +1,18 @@
+id: sf-001840
+product_area: architecture-practice
+true_statement: Persona guidance for prioritisation is to pick one primary persona, two at most, whom the interface must satisfy, plus secondary personas.
+false_statement: Persona guidance for prioritisation is to pick up to five primary personas whom the interface must satisfy, plus secondary personas.
+explanation: Limiting primary personas to one or two keeps scope focused; too many primaries makes scope too broad. Five primary personas defeats the purpose.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/user-personas.md
+  commit: 73aa9df4d26c32cb773ed3adff949bf50175035c
+  blob: ba076f89c8b01c7515b731baeb8f2b893480fdfb
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:user-personas
+- kt:user-stories
+difficulty: 2
+created: '2026-11-27'
+status: active

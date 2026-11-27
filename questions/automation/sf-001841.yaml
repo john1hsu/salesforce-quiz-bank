@@ -1,0 +1,18 @@
+id: sf-001841
+product_area: automation
+true_statement: Rows in one Flow Assignment element run in the order listed, so a later row can use a value that an earlier row just set.
+false_statement: Rows in one Flow Assignment element are evaluated together, so a later row sees only values from before the element ran.
+explanation: Salesforce executes Assignment rows sequentially, which makes row order meaningful. A later row reads the updated value, not a snapshot from before the element.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/automation/flow-assignment-element.md
+  commit: 73aa9df4d26c32cb773ed3adff949bf50175035c
+  blob: b2f062e767422759b014119bca216611a91b2a70
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:flow-assignment-element
+- kt:flow-builder
+difficulty: 2
+created: '2026-11-27'
+status: active

@@ -1,0 +1,18 @@
+id: sf-001810
+product_area: identity
+true_statement: Viewing Setup > App Menu needs View Setup and Configuration, and changing app order or visibility there needs Customize Application.
+false_statement: Viewing Setup > App Menu needs View Setup and Configuration, and changing app order or visibility there needs Modify All Data.
+explanation: The App Menu page is read with View Setup and Configuration and edited with Customize Application. Modify All Data is not the permission it asks for.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/app-launcher.md
+  commit: 73aa9df4d26c32cb773ed3adff949bf50175035c
+  blob: 9b26615193712ad5785fc8b58afc115d67e5c952
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:app-launcher
+- kt:permission-sets
+difficulty: 2
+created: '2026-11-27'
+status: active

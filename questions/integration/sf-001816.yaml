@@ -1,0 +1,19 @@
+id: sf-001816
+product_area: integration
+true_statement: Anypoint Studio deploys directly only to CloudHub; CloudHub 2.0, Runtime Fabric and hybrid targets are deployed through Runtime Manager.
+false_statement: Anypoint Studio deploys directly only to CloudHub 2.0; classic CloudHub, Runtime Fabric and hybrid targets are deployed through Runtime Manager.
+explanation: Studio's direct deployment covers only the original CloudHub. The other targets, CloudHub 2.0 included, go through Runtime Manager.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/anypoint-runtime-manager.md
+  commit: 73aa9df4d26c32cb773ed3adff949bf50175035c
+  blob: b05bd7c13a72ae85beaff08623b979f1fc44dff2
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:anypoint-runtime-manager
+- kt:runtime-fabric
+- kt:cloudhub-2
+difficulty: 2
+created: '2026-11-27'
+status: active

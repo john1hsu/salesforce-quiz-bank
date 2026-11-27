@@ -1,0 +1,18 @@
+id: sf-001876
+product_area: devops-and-alm
+true_statement: Since Spring '22, License Management Org users must log in to the LMO with multi-factor authentication to use the Subscriber Support Console.
+false_statement: Since Spring '25, License Management Org users must log in to the LMO with multi-factor authentication to use the Subscriber Support Console.
+explanation: The MFA requirement for console users in the LMO dates from Spring '22. Spring '25 is the wrong release.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/subscriber-support-console.md
+  commit: 73aa9df4d26c32cb773ed3adff949bf50175035c
+  blob: dfe738932d6d367c55189caac8ec5de109e42eb2
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:subscriber-support-console
+- kt:multi-factor-authentication
+difficulty: 2
+created: '2026-11-27'
+status: active

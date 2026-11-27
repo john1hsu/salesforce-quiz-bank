@@ -1,0 +1,18 @@
+id: sf-001857
+product_area: data-cloud-and-ai
+true_statement: In Agent Script, a variable's visibility defaults to Internal, so the Agent API can set it only once it is marked External.
+false_statement: In Agent Script, a variable's visibility defaults to External, so the Agent API can set it unless it is marked Internal.
+explanation: Internal is the default and lets only actions set the value; External corresponds to Allow value to be set by API in the builder. The false statement flips the default.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/agent-variables.md
+  commit: 73aa9df4d26c32cb773ed3adff949bf50175035c
+  blob: 525b49d936ef381f142af1b50925991076bf2e59
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:agent-variables
+- kt:agent-api
+difficulty: 3
+created: '2026-11-27'
+status: active

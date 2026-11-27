@@ -1,0 +1,17 @@
+id: sf-001847
+product_area: clouds-and-products
+true_statement: Trailhead advises keeping a Marketing Cloud data extension's total byte size, the sum of its column lengths, under 8,000.
+false_statement: Trailhead advises keeping a Marketing Cloud data extension's total byte size, the sum of its column lengths, under 80,000.
+explanation: The guidance is to stay under 8,000 bytes, so twenty 100-character columns fit but eight 1,000-character ones don't. 80,000 is ten times the recommended ceiling.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/data-extensions.md
+  commit: 73aa9df4d26c32cb773ed3adff949bf50175035c
+  blob: 69db5348d709dbde706542629fb33e635b290786
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:data-extensions
+difficulty: 2
+created: '2026-11-27'
+status: active

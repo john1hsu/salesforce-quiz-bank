@@ -1,0 +1,18 @@
+id: sf-001882
+product_area: identity
+true_statement: From Mobile SDK 13.2, an app that requests no scopes receives all of the scopes configured on its app definition.
+false_statement: From Mobile SDK 13.2, an app that requests no scopes receives only the api and refresh_token scopes from its app definition.
+explanation: Clients can ask for a subset of the configured scopes; in 13.2 and later, asking for none yields every scope set on the app. It isn't narrowed to api and refresh_token.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/oauth-scopes.md
+  commit: 73aa9df4d26c32cb773ed3adff949bf50175035c
+  blob: c121638f51134e1a86ac7c601ca75a1e435244a6
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:oauth-scopes
+- kt:mobile-sdk
+difficulty: 3
+created: '2026-11-27'
+status: active

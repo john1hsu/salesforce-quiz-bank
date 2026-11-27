@@ -1,0 +1,18 @@
+id: sf-001815
+product_area: integration
+true_statement: Anypoint Platform Private Cloud Edition runs Runtime Manager on premises and can deploy to any target except CloudHub.
+false_statement: Anypoint Platform Private Cloud Edition runs Runtime Manager on premises and can deploy to any target except Runtime Fabric.
+explanation: The on-premises edition of the platform cannot target MuleSoft-hosted CloudHub, so it needs an on-premises runtime plane. Runtime Fabric is not the excluded target.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/anypoint-runtime-manager.md
+  commit: 73aa9df4d26c32cb773ed3adff949bf50175035c
+  blob: b05bd7c13a72ae85beaff08623b979f1fc44dff2
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:anypoint-runtime-manager
+- kt:mulesoft-anypoint-platform
+difficulty: 2
+created: '2026-11-27'
+status: active

@@ -1,0 +1,17 @@
+id: sf-001883
+product_area: integration
+true_statement: The Agent2Agent protocol carries JSON-RPC 2.0 payloads over HTTP(S) and uses Server-Sent Events for streaming.
+false_statement: The Agent2Agent protocol carries JSON-RPC 2.0 payloads over HTTP(S) and uses WebSockets for streaming.
+explanation: 'A2A reuses existing web standards: HTTP(S) transport, JSON-RPC 2.0 messages and SSE for streamed responses. WebSockets are not its streaming mechanism.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/integration/agent-to-agent-protocol.md
+  commit: 73aa9df4d26c32cb773ed3adff949bf50175035c
+  blob: 6499c72823e4aaf221cbbb913a649034bae6c95f
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:agent-to-agent-protocol
+difficulty: 2
+created: '2026-11-27'
+status: active

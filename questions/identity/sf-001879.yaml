@@ -1,0 +1,18 @@
+id: sf-001879
+product_area: identity
+true_statement: The redirect_uri sent to the singleaccess endpoint must be a relative path; absolute URLs are rejected.
+false_statement: The redirect_uri sent to the singleaccess endpoint must be an absolute URL; relative paths are rejected.
+explanation: The landing page is given as a path such as lightning/setup/ManageUsers/home, and absolute URLs fail. Without it, the user lands on the My Domain or site home page.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/frontdoor-jsp-session-bridging.md
+  commit: 73aa9df4d26c32cb773ed3adff949bf50175035c
+  blob: 23d622653a9541660c0c216d17b1196dfd60c003
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:frontdoor-jsp-session-bridging
+- kt:my-domain
+difficulty: 2
+created: '2026-11-27'
+status: active

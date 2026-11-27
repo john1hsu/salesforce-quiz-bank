@@ -1,0 +1,17 @@
+id: sf-001839
+product_area: architecture-practice
+true_statement: Salesforce's research-based personas carry no name, photo or demographics, so they transfer between companies and avoid stereotypes.
+false_statement: Salesforce's research-based personas each carry a name, photo and demographics, so they feel like real people and are easier to remember.
+explanation: The personas are deliberately abstract to stay reusable across organisations and to limit unconscious bias. Names, photos and demographic details are left out on purpose.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/user-personas.md
+  commit: 73aa9df4d26c32cb773ed3adff949bf50175035c
+  blob: ba076f89c8b01c7515b731baeb8f2b893480fdfb
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:user-personas
+difficulty: 1
+created: '2026-11-27'
+status: active

@@ -1,0 +1,18 @@
+id: sf-001828
+product_area: public-sector-and-compliance
+true_statement: A TX-RAMP certified provider must disclose any breach to the Texas Department of Information Resources within 48 hours of discovery.
+false_statement: A TX-RAMP certified provider must disclose any breach to the Texas Department of Information Resources within 30 days of discovery.
+explanation: Breach disclosure to DIR is due within 48 hours, alongside annual or quarterly vulnerability reporting depending on level. A 30-day window is far longer than the rule allows.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/public-sector-and-compliance/tx-ramp.md
+  commit: 73aa9df4d26c32cb773ed3adff949bf50175035c
+  blob: dfb5cf7922a269f4799d8b072752b9e49b783aad
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:tx-ramp
+- kt:continuous-monitoring
+difficulty: 2
+created: '2026-11-27'
+status: active

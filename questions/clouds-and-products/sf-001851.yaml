@@ -1,0 +1,17 @@
+id: sf-001851
+product_area: clouds-and-products
+true_statement: Enhanced Scheduling and Optimization authenticates as a Platform Integration User, not the optimization user created by the legacy activation step.
+false_statement: Enhanced Scheduling and Optimization authenticates as the optimization user created by the legacy activation step, not a Platform Integration User.
+explanation: The legacy Activate Field Service Schedule Optimization step creates an optimization user and profile; the enhanced engine uses a Platform Integration User instead. The false statement reverses them.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/enhanced-scheduling-and-optimization.md
+  commit: 73aa9df4d26c32cb773ed3adff949bf50175035c
+  blob: 636bde777311371e1440b6a7a6d502ef7821ede8
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:enhanced-scheduling-and-optimization
+difficulty: 3
+created: '2026-11-27'
+status: active

@@ -1,0 +1,17 @@
+id: sf-001849
+product_area: clouds-and-products
+true_statement: Trailhead advises against primary keys on triggered-send data extensions, because a retried send could then deliver the same data twice.
+false_statement: Trailhead requires primary keys on triggered-send data extensions, because a retried send could otherwise deliver the same data twice.
+explanation: Primary keys suit tables that are updated or appended to, but triggered-send tables should go without them to avoid duplicate deliveries on retry. The false statement reverses the advice.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/clouds-and-products/data-extensions.md
+  commit: 73aa9df4d26c32cb773ed3adff949bf50175035c
+  blob: 69db5348d709dbde706542629fb33e635b290786
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:data-extensions
+difficulty: 3
+created: '2026-11-27'
+status: active

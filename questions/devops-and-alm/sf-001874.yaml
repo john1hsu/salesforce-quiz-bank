@@ -1,0 +1,18 @@
+id: sf-001874
+product_area: devops-and-alm
+true_statement: The ISV Customer Debugger allows one session at a time per License Management Org, runs only in sandboxes and caps a session at 4 hours.
+false_statement: The ISV Customer Debugger allows one session at a time per License Management Org, runs only in sandboxes and caps a session at 24 hours.
+explanation: A debugger session started from the Subscriber Support Console is limited to four hours, one at a time, in a subscriber sandbox. Twenty-four hours overstates the cap.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/devops-and-alm/subscriber-support-console.md
+  commit: 73aa9df4d26c32cb773ed3adff949bf50175035c
+  blob: dfe738932d6d367c55189caac8ec5de109e42eb2
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:subscriber-support-console
+- kt:isv-customer-debugger
+difficulty: 2
+created: '2026-11-27'
+status: active

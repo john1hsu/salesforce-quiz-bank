@@ -1,0 +1,18 @@
+id: sf-001834
+product_area: security-and-sharing
+true_statement: Detail records in a master-detail relationship have no share object of their own, so they can't be manually shared apart from their parent.
+false_statement: Detail records in a master-detail relationship have their own share object, so they can be manually shared apart from their parent.
+explanation: Access to a detail record is controlled by its master, and there is no share table for the detail. Manual sharing has to happen on the parent record.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/security-and-sharing/manual-sharing.md
+  commit: 73aa9df4d26c32cb773ed3adff949bf50175035c
+  blob: 12102ca1f576aef32ee0dce622dabfd645c98464
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:manual-sharing
+- kt:salesforce-sharing-model
+difficulty: 2
+created: '2026-11-27'
+status: active

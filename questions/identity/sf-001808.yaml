@@ -1,0 +1,17 @@
+id: sf-001808
+product_area: identity
+true_statement: A user's own App Launcher arrangement overrides the default app order an admin sets under Setup > App Menu.
+false_statement: The default app order an admin sets under Setup > App Menu overrides a user's own App Launcher arrangement.
+explanation: Users can reorder their App Launcher, and that personal order wins. So later changes to the admin's default may never reach users who already customised theirs.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/identity/app-launcher.md
+  commit: 73aa9df4d26c32cb773ed3adff949bf50175035c
+  blob: 9b26615193712ad5785fc8b58afc115d67e5c952
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:app-launcher
+difficulty: 2
+created: '2026-11-27'
+status: active

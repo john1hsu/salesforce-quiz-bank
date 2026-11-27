@@ -1,0 +1,18 @@
+id: sf-001853
+product_area: data-cloud-and-ai
+true_statement: An Agent API call that runs past the API's 120-second timeout fails with HTTP 500, so long-running agent actions need design care.
+false_statement: An Agent API call that runs past the API's 30-second timeout fails with HTTP 500, so long-running agent actions need design care.
+explanation: The Agent API allows 120 seconds before a request errors out with a 500. Thirty seconds understates the timeout.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/data-cloud-and-ai/agent-api.md
+  commit: 73aa9df4d26c32cb773ed3adff949bf50175035c
+  blob: 434d8eda714feff24e0537894b6d526bbc257742
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:agent-api
+- kt:agentforce
+difficulty: 2
+created: '2026-11-27'
+status: active

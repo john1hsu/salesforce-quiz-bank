@@ -1,0 +1,18 @@
+id: sf-001836
+product_area: architecture-practice
+true_statement: Salesforce warns that FieldDefinition's DurableId may not stay stable between releases, so a data dictionary should be keyed on qualified API names.
+false_statement: Salesforce warns that FieldDefinition's qualified API names may not stay stable between releases, so a data dictionary should be keyed on DurableId.
+explanation: DurableId isn't guaranteed to persist across releases and shouldn't be cached. Qualified API names are the stable key for matching dictionary rows to fields.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/data-dictionary.md
+  commit: 73aa9df4d26c32cb773ed3adff949bf50175035c
+  blob: aa8aa8ad7ff01652fbf0d663156825326c9ff09e
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:data-dictionary
+- kt:tooling-api
+difficulty: 3
+created: '2026-11-27'
+status: active

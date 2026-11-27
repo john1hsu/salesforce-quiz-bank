@@ -1,0 +1,17 @@
+id: sf-001867
+product_area: development
+true_statement: A Block Kit interaction's response_url can be used up to 5 times within 30 minutes; after that, apps post through the normal messaging APIs.
+false_statement: A Block Kit interaction's response_url can be used up to 5 times within 24 hours; after that, apps post through the normal messaging APIs.
+explanation: 'The response_url is short-lived: five uses inside half an hour. A 24-hour window greatly overstates how long it lasts.'
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/development/block-kit.md
+  commit: 73aa9df4d26c32cb773ed3adff949bf50175035c
+  blob: 774c598a7d2e044a5b0b8d0e283b720b96536ca3
+verified_release: Winter '27
+feature_status: current
+concepts:
+- kt:block-kit
+difficulty: 3
+created: '2026-11-27'
+status: active

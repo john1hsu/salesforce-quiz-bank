@@ -1,0 +1,18 @@
+id: sf-001835
+product_area: architecture-practice
+true_statement: The Tooling API FieldDefinition object returns DataType as UI-style text such as Text(40), not as API type names.
+false_statement: The Tooling API FieldDefinition object returns DataType as API type names such as string, not as UI-style text like Text(40).
+explanation: FieldDefinition reports the type the way Setup displays it, so a dictionary built from it may need a mapping to API type names. The false statement reverses which form it returns.
+source:
+  repo: john1hsu/salesforce-knowledge-graph
+  path: articles/architecture-practice/data-dictionary.md
+  commit: 73aa9df4d26c32cb773ed3adff949bf50175035c
+  blob: aa8aa8ad7ff01652fbf0d663156825326c9ff09e
+verified_release: Winter '27
+feature_status: concept
+concepts:
+- kt:data-dictionary
+- kt:tooling-api
+difficulty: 2
+created: '2026-11-27'
+status: active
